@@ -1,0 +1,220 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>IDA - SMCProMax.exe C:\Users\Administrator\Desktop\SMCProMax\SMCProMax.exe</title>
+</head>
+<body class="c41">
+<span style="white-space: pre; font-family: JetBrainsMono Nerd Font Mono,monospace;" class="c1 c41">
+<span class="c23">bool __cdecl sub_401000</span><span class="c9">(</span><span class="c23">int a1</span><span class="c9">)
+</span><span class="c57"><span class="c9">{                                                                                                                             </span></span>
+  <span class="c33">char *v1</span><span class="c9">; </span><span class="c24">// eax
+  </span><span class="c33">DWORD flOldProtect</span><span class="c9">; </span><span class="c24">// [esp+Ch] [ebp-5Ch] BYREF
+  </span><span class="c23">char *v4</span><span class="c9">; </span><span class="c24">// [esp+10h] [ebp-58h]
+  </span><span class="c33">int i1</span><span class="c9">; </span><span class="c24">// [esp+14h] [ebp-54h]
+  </span><span class="c33">int nn</span><span class="c9">; </span><span class="c24">// [esp+18h] [ebp-50h]
+  </span><span class="c33">int mm</span><span class="c9">; </span><span class="c24">// [esp+1Ch] [ebp-4Ch]
+  </span><span class="c33">int kk</span><span class="c9">; </span><span class="c24">// [esp+20h] [ebp-48h]
+  </span><span class="c33">int jj</span><span class="c9">; </span><span class="c24">// [esp+24h] [ebp-44h]
+  </span><span class="c33">int ii</span><span class="c9">; </span><span class="c24">// [esp+28h] [ebp-40h]
+  </span><span class="c33">int n</span><span class="c9">; </span><span class="c24">// [esp+2Ch] [ebp-3Ch]
+  </span><span class="c33">int m</span><span class="c9">; </span><span class="c24">// [esp+30h] [ebp-38h]
+  </span><span class="c33">int k</span><span class="c9">; </span><span class="c24">// [esp+34h] [ebp-34h]
+  </span><span class="c33">int j</span><span class="c9">; </span><span class="c24">// [esp+38h] [ebp-30h]
+  </span><span class="c33">unsigned int i</span><span class="c9">; </span><span class="c24">// [esp+3Ch] [ebp-2Ch]
+  </span><span class="c33">int v16</span><span class="c9">; </span><span class="c24">// [esp+40h] [ebp-28h]
+  </span><span class="c33">int v17</span><span class="c9">; </span><span class="c24">// [esp+44h] [ebp-24h]
+  </span><span class="c33">int n264545711</span><span class="c9">; </span><span class="c24">// [esp+48h] [ebp-20h]
+  </span><span class="c33">int n965631658</span><span class="c9">; </span><span class="c24">// [esp+4Ch] [ebp-1Ch]
+  </span><span class="c33">int n987171458</span><span class="c9">; </span><span class="c24">// [esp+50h] [ebp-18h]
+  </span><span class="c33">int n86802781</span><span class="c9">; </span><span class="c24">// [esp+54h] [ebp-14h]
+  </span><span class="c33">int v22</span><span class="c9">; </span><span class="c24">// [esp+58h] [ebp-10h]
+  </span><span class="c33">int v23</span><span class="c9">; </span><span class="c24">// [esp+5Ch] [ebp-Ch]
+  </span><span class="c33">int v24</span><span class="c9">; </span><span class="c24">// [esp+60h] [ebp-8h]
+  </span><span class="c33">int n2053092702</span><span class="c9">; </span><span class="c24">// [esp+64h] [ebp-4h]
+
+  v4 </span><span class="c9">= (</span><span class="c23">char *</span><span class="c9">)&amp;</span><span class="c8">loc_40105E</span><span class="c9">;
+  </span><span class="c34">VirtualProtect</span><span class="c9">((</span><span class="c23">char *</span><span class="c9">)&amp;</span><span class="c8">loc_40105E </span><span class="c9">- </span><span class="c32">2</span><span class="c9">, </span><span class="c32">0xC8u</span><span class="c9">, </span><span class="c32">PAGE_EXECUTE_READWRITE</span><span class="c9">, &amp;</span><span class="c24">flOldProtect</span><span class="c9">);
+  </span><span class="c24">v1 </span><span class="c9">= </span><span class="c24">v4 </span><span class="c9">- </span><span class="c32">1</span><span class="c9">;
+  </span><span class="c32">do
+    </span><span class="c9">*++</span><span class="c24">v1 </span><span class="c9">^= </span><span class="c32">0x90u</span><span class="c9">;
+  </span><span class="c32">while </span><span class="c9">( </span><span class="c24">v1 </span><span class="c9">!= &amp;</span><span class="c8">byte_401427 </span><span class="c9">);
+  *</span><span class="c24">v1 </span><span class="c9">^= </span><span class="c32">0x90u</span><span class="c9">;
+  *(</span><span class="c23">_BYTE *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">23</span><span class="c9">) ^= </span><span class="c32">0x12u</span><span class="c9">;
+  </span><span class="c8">__rdtsc</span><span class="c9">();
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">i </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; *(</span><span class="c23">_BYTE *</span><span class="c9">)(</span><span class="c24">i </span><span class="c9">+ </span><span class="c24">a1</span><span class="c9">); ++</span><span class="c24">i </span><span class="c9">)
+    ;
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">i &lt; </span><span class="c32">0x28 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">n2053092702 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)</span><span class="c24">a1</span><span class="c9">;
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">j </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">j &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">j </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n2053092702 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">n2053092702 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">n2053092702 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">n2053092702 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n2053092702 </span><span class="c9">!= </span><span class="c32">2053092702 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">v24 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">4</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">k </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">k &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">k </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v24 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">v24 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">v24 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">v24 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v24 </span><span class="c9">!= </span><span class="c32">-490481854 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">v23 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">8</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">m </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">m &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">m </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v23 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">v23 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">v23 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">v23 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v23 </span><span class="c9">!= </span><span class="c32">-1704322843 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">v22 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">12</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">n </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">n &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">n </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v22 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">v22 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">v22 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">v22 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v22 </span><span class="c9">!= </span><span class="c32">-1418679088 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">n86802781 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">16</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">ii </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">ii &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">ii </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n86802781 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">n86802781 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">n86802781 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">n86802781 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n86802781 </span><span class="c9">!= </span><span class="c32">86802781 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">n987171458 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">20</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">jj </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">jj &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">jj </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n987171458 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">n987171458 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">n987171458 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">n987171458 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n987171458 </span><span class="c9">!= </span><span class="c32">987171458 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">n965631658 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">24</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">kk </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">kk &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">kk </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n965631658 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">n965631658 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">n965631658 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">n965631658 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n965631658 </span><span class="c9">!= </span><span class="c32">965631658 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">n264545711 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">28</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">mm </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">mm &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">mm </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n264545711 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">n264545711 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">n264545711 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">n264545711 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">n264545711 </span><span class="c9">!= </span><span class="c32">264545711 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">v17 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">32</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">nn </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">nn &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">nn </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v17 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">v17 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">v17 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">v17 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v17 </span><span class="c9">!= </span><span class="c32">-1342106783 </span><span class="c9">)
+    </span><span class="c32">return 0</span><span class="c9">;
+  </span><span class="c24">v16 </span><span class="c9">= *(</span><span class="c23">_DWORD *</span><span class="c9">)(</span><span class="c24">a1 </span><span class="c9">+ </span><span class="c32">36</span><span class="c9">);
+  </span><span class="c32">for </span><span class="c9">( </span><span class="c24">i1 </span><span class="c9">= </span><span class="c32">0</span><span class="c9">; </span><span class="c24">i1 &lt; </span><span class="c32">32</span><span class="c9">; ++</span><span class="c24">i1 </span><span class="c9">)
+  {
+    </span><span class="c32">if </span><span class="c9">( </span><span class="c24">v16 &gt;</span><span class="c9">= </span><span class="c32">0 </span><span class="c9">)
+    {
+      </span><span class="c24">v16 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+    </span><span class="c32">else
+    </span><span class="c9">{
+      </span><span class="c24">v16 </span><span class="c9">*= </span><span class="c32">2</span><span class="c9">;
+      </span><span class="c24">v16 </span><span class="c9">^= </span><span class="c32">0xC4F3B4B3</span><span class="c9">;
+    </span><span class="c32"></span><span class="c9">}
+  </span><span class="c1"></span><span class="c9">}
+  </span><span class="c32">return </span><span class="c24">v16 </span><span class="c9">== </span><span class="c32">-825370173</span><span class="c9">;
+</span><span class="c57"></span><span class="c32"></span><span class="c57"><span class="c9">}                                                                                                                             </span></span>
+</span><style type="text/css">
+/* line-fg-default */
+.c1 { color: blue; }
+/* line-bg-default */
+.c41 { background-color: white; }
+/* line-fg-hidden */
+.c23 { color: gray; }
+/* line-fg-punctuation */
+.c9 { color: navy; }
+/* user-defined-007f7f7f */
+.c57 { background-color: rgba(127, 127, 127, 0.000000); }
+/* line-fg-register-name */
+.c33 { color: navy; }
+/* line-fg-libfunc */
+.c24 { color: #8080FF; }
+/* line-fg-demangled-name */
+.c8 { color: blue; }
+/* line-fg-import-name */
+.c34 { color: fuchsia; }
+/* line-fg-keyword */
+.c32 { color: navy; }
+</style></body></html>
