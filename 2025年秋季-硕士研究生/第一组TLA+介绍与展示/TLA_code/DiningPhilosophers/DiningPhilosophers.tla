@@ -1,0 +1,211 @@
+---- MODULE DiningPhilosophers ----
+
+(*
+TLA+ / PlusCal 实现：哲学家就餐问题（Dining Philosophers）。
+
+说明：
+- 问题描述：N 位哲学家围坐圆桌，每对相邻哲学家之间放置一把叉子；
+    哲学家需要同时拿到左右两把叉子才能吃饭，否则处于思考或等待状态。
+- 难点：可能出现死锁（彼此互相等待）或饥饿（某些人永远等不到）。
+
+本规范采用 Chandy–Misra 解法：
+- 允许相邻哲学家之间直接“传递”叉子；
+- 叉子在进食后会变“脏”（clean = FALSE），需要先清洁（clean = TRUE）再传递；
+- 通过“持有者 + 干净/脏”两个维度刻画叉子的状态，避免环路等待。
+
+使用方式：
+- 可在 VS Code 的 TLA+ 插件或 TLA+ Toolbox 中解析与模型检查：
+    1) 解析 PlusCal，生成下方的 TLA+ 翻译段（保持两段一致性）。
+    2) 用 TLC 进行模型检查（死锁、类型不变式、互斥、活性等）。
+*)
+
+EXTENDS Integers, TLC
+
+CONSTANTS
+    \* 哲学家数量（正整数）
+    NP
+
+ASSUME
+    /\ NP \in Nat \ {0}
+
+(* --algorithm DiningPhilosophers
+
+variables
+    forks = [
+        fork \in 1..NP |-> [
+            \* 初始：每把叉子由编号较小的一侧先持有（避免一开始所有人都抢右手叉子）。
+            holder |-> IF fork = 2 THEN 1 ELSE fork,
+            \* 初始均为“脏”（FALSE）。进食会把叉子弄脏；传递前需要先清洁（置 TRUE）。
+            clean |-> FALSE
+        ]
+    ]
+
+define
+    LeftFork(p) == p
+    RightFork(p) == IF p = NP THEN 1 ELSE p + 1
+
+    LeftPhilosopher(p) == IF p = 1 THEN NP ELSE p - 1
+    RightPhilosopher(p) == IF p = NP THEN 1 ELSE p + 1
+
+    IsHoldingBothForks(p) ==
+        forks[LeftFork(p)].holder = p /\ forks[RightFork(p)].holder = p
+    BothForksAreClean(p) ==
+        forks[LeftFork(p)].clean /\ forks[RightFork(p)].clean
+
+    CanEat(p) == IsHoldingBothForks(p) /\ BothForksAreClean(p)
+end define;
+
+\* 并发生成 NP 个哲学家进程（编号 1..NP）。
+\* 'self' 为当前进程的编号（1..NP），可用来索引自身的局部状态或共享状态。
+\* 使用 fair 进程语义，避免进程被调度饿死（即某个进程永远不被执行）。
+fair process Philosopher \in 1..NP
+\* 这相当于每个进程的“成员变量”。实际实现为：系统维护一个以进程编号为键的数组。
+variables hungry = TRUE;
+begin
+Loop:
+    while TRUE do
+        \* 若自己持有“脏”的叉子，则先清洁并把它传递给相邻哲学家。
+        if
+            /\ forks[LeftFork(self)].holder = self
+            /\ ~forks[LeftFork(self)].clean
+        then
+            forks[LeftFork(self)] := [
+                holder |-> LeftPhilosopher(self),
+                clean |-> TRUE
+            ];
+        elsif
+            /\ forks[RightFork(self)].holder = self
+            /\ ~forks[RightFork(self)].clean
+        then
+            forks[RightFork(self)] := [
+                holder |-> RightPhilosopher(self),
+                clean |-> TRUE
+            ];
+        end if;
+        if hungry then
+            \* 饥饿且满足可进食（两把叉子且均干净）时，进入进食阶段。
+            if CanEat(self) then
+Eat:
+                hungry := FALSE;
+                forks[LeftFork(self)].clean := FALSE ||
+                forks[RightFork(self)].clean := FALSE;
+            end if;
+        else
+Think:
+            \* 进食结束后进入思考；随后重新变为饥饿，形成循环。
+            hungry := TRUE;
+        end if;
+    end while;
+end process;
+
+end algorithm; *)
+\* BEGIN TRANSLATION (chksum(pcal) = "a2c1c052" /\ chksum(tla) = "fb5644d8")
+VARIABLES pc, forks
+
+(* define statement *)
+LeftFork(p) == p
+RightFork(p) == IF p = NP THEN 1 ELSE p + 1
+
+LeftPhilosopher(p) == IF p = 1 THEN NP ELSE p - 1
+RightPhilosopher(p) == IF p = NP THEN 1 ELSE p + 1
+
+IsHoldingBothForks(p) ==
+    forks[LeftFork(p)].holder = p /\ forks[RightFork(p)].holder = p
+BothForksAreClean(p) ==
+    forks[LeftFork(p)].clean /\ forks[RightFork(p)].clean
+
+CanEat(p) == IsHoldingBothForks(p) /\ BothForksAreClean(p)
+
+VARIABLE hungry
+
+vars == << forks, pc, hungry >>
+
+ProcSet == (1..NP)
+
+Init == (* Global variables *)
+        /\ forks =         [
+                       fork \in 1..NP |-> [
+                   
+                   
+                           holder |-> IF fork = 2 THEN 1 ELSE fork,
+                   
+                   
+                   
+                           clean |-> FALSE
+                       ]
+                   ]
+        (* Process Philosopher *)
+        /\ hungry = [self \in 1..NP |-> TRUE]
+        /\ pc = [self \in ProcSet |-> "Loop"]
+
+Loop(self) == /\ pc[self] = "Loop"
+              /\ IF /\ forks[LeftFork(self)].holder = self
+                    /\ ~forks[LeftFork(self)].clean
+                    THEN /\ forks' = [forks EXCEPT ![LeftFork(self)] =                          [
+                                                                           holder |-> LeftPhilosopher(self),
+                                                                           clean |-> TRUE
+                                                                       ]]
+                    ELSE /\ IF /\ forks[RightFork(self)].holder = self
+                               /\ ~forks[RightFork(self)].clean
+                               THEN /\ forks' = [forks EXCEPT ![RightFork(self)] =                           [
+                                                                                       holder |-> RightPhilosopher(self),
+                                                                                       clean |-> TRUE
+                                                                                   ]]
+                               ELSE /\ TRUE
+                                    /\ forks' = forks
+              /\ IF hungry[self]
+                    THEN /\ IF CanEat(self)
+                               THEN /\ pc' = [pc EXCEPT ![self] = "Eat"]
+                               ELSE /\ pc' = [pc EXCEPT ![self] = "Loop"]
+                    ELSE /\ pc' = [pc EXCEPT ![self] = "Think"]
+              /\ UNCHANGED hungry
+
+Think(self) == /\ pc[self] = "Think"
+               /\ hungry' = [hungry EXCEPT ![self] = TRUE]
+               /\ pc' = [pc EXCEPT ![self] = "Loop"]
+               /\ forks' = forks
+
+Eat(self) == /\ pc[self] = "Eat"
+             /\ hungry' = [hungry EXCEPT ![self] = FALSE]
+             /\ forks' = [forks EXCEPT ![LeftFork(self)].clean = FALSE,
+                                       ![RightFork(self)].clean = FALSE]
+             /\ pc' = [pc EXCEPT ![self] = "Loop"]
+
+Philosopher(self) == Loop(self) \/ Think(self) \/ Eat(self)
+
+Next == (\E self \in 1..NP: Philosopher(self))
+
+Spec == /\ Init /\ [][Next]_vars
+        /\ \A self \in 1..NP : WF_vars(Philosopher(self))
+        
+\* END TRANSLATION
+
+----
+(* 不变式辅助定义 *)
+----
+(* 当且仅当两位哲学家 p 与 q 共享同一把叉子时为真。*)
+ShareFork(p, q) ==
+    {LeftFork(p), RightFork(p)} \cap {LeftFork(q), RightFork(q)} /= {}
+----
+
+(*
+类型不变式：TLA+/PlusCal 为动态类型，这里用不变式进行显式类型约束：
+- forks：从 1..NP 到记录 {holder: 1..NP, clean: BOOLEAN} 的映射；
+- hungry：从 1..NP 到 BOOLEAN 的映射；
+- pc：从 1..NP 到 {"Loop", "Eat", "Think"} 的映射。
+*)
+TypeOK ==
+    /\ forks \in [1..NP -> [holder: 1..NP, clean: BOOLEAN]]
+    /\ hungry \in [1..NP -> BOOLEAN]
+    /\ pc \in [1..NP -> {"Loop", "Eat", "Think"}]
+
+(* 若两位哲学家共享同一把叉子，则不可能同时处于进食状态（互斥）。*)
+ExclusiveAccess ==
+    \A p,q \in 1..NP:
+        p /= q /\ ShareFork(p, q) => ~(pc[p] = "Eat" /\ pc[q] = "Eat")
+
+
+(* 无饥饿：每位哲学家都会无限次地再次进入“非饥饿”状态。*)
+NobodyStarves == \A p \in 1..NP: []<>(~hungry[p])
+
+====
