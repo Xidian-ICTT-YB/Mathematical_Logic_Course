@@ -1,0 +1,35 @@
+{
+  "sources": [
+    "https://datatracker.ietf.org/doc/html/rfc9293"
+  ],
+  "authors": [
+    "Markus Kuppe"
+  ],
+  "tags": [],
+  "modules": [
+    {
+      "path": "specifications/tcp/MCtcp.tla",
+      "communityDependencies": [],
+      "features": [],
+      "models": [
+        {
+          "path": "specifications/tcp/MCtcp.cfg",
+          "runtime": "00:00:01",
+          "mode": "exhaustive search",
+          "result": "success",
+          "distinctStates": 1182,
+          "totalStates": 6322,
+          "stateDepth": 14
+        }
+      ]
+    },
+    {
+      "path": "specifications/tcp/tcp.tla",
+      "communityDependencies": [
+        "SequencesExt"
+      ],
+      "features": [],
+      "models": []
+    }
+  ]
+}
