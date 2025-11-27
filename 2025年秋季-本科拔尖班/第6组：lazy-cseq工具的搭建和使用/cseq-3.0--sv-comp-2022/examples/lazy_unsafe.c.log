@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<key attr.name="programFile" attr.type="string" for="graph" id="programfile"/>
+<key attr.name="programHash" attr.type="string" for="graph" id="programhash"/>
+<key attr.name="specification" attr.type="string" for="graph" id="specification"/>
+<key attr.name="architecture" attr.type="string" for="graph" id="architecture"/>
+<key attr.name="producer" attr.type="string" for="graph" id="producer"/>
+<key attr.name="creationTime" attr.type="string" for="graph" id="creationtime"/>
+<key attr.name="inputWitnessHash" attr.type="string" for="graph" id="inputwitnesshash"/>
+<key attr.name="witness-type" attr.type="string" for="graph" id="witness-type"/>
+
+<key attr.name="isViolationNode" attr.type="boolean" for="node" id="violation"><default>false</default></key>
+<key attr.name="isEntryNode" attr.type="boolean" for="node" id="entry"><default>false</default></key>
+<key attr.name="isSinkNode" attr.type="boolean" for="node" id="sink"><default>false</default></key>
+<key attr.name="violatedProperty" attr.type="string" for="node" id="violatedProperty"/>
+
+<key attr.name="threadId" attr.type="string" for="edge" id="threadId"/>
+<key attr.name="createThread" attr.type="string" for="edge" id="createThread"/>
+<key attr.name="sourcecodeLanguage" attr.type="string" for="graph" id="sourcecodelang"/>
+<key attr.name="startline" attr.type="int" for="edge" id="startline"/>
+<key attr.name="endline" attr.type="int" for="edge" id="endline"/>
+<key attr.name="startoffset" attr.type="int" for="edge" id="startoffset"/>
+<key attr.name="endoffset" attr.type="int" for="edge" id="endoffset"/>
+<key attr.name="control" attr.type="string" for="edge" id="control"/>
+<key attr.name="enterFunction" attr.type="string" for="edge" id="enterFunction"/>
+<key attr.name="returnFromFunction" attr.type="string" for="edge" id="returnFrom"/>
+
+<graph edgedefault="directed">
+<data key="witness-type">violation_witness</data>
+<data key="sourcecodelang">C</data>
+<data key="producer">CSeq</data>
+<data key="specification">CHECK( init(main()), LTL(G ! call(__VERIFIER_error())) )</data>
+<data key="programfile">examples/lazy_unsafe.c</data>
+<data key="programhash">d61c0b699ad9d2423d295180723e695adb792663c5344cf85720043879763f43</data>
+<data key="creationtime">2019-03-13T16:25:33</data>
+<data key="architecture">32bit</data>
+
+<node id="START"><data key="entry">true</data></node>
+<node id="SINK"><data key="sink">true</data></node>
+
+<node id="S1"/>
+<edge source="START" target="S1">
+<data key="threadId">0</data>
+<data key="startline">36</data>
+<data key="endline">36</data>
+<data key="enterFunction">main</data>
+</edge>
+
+<node id="S53"/>
+<edge source="S1" target="S53">
+<data key="threadId">0</data>
+<data key="startline">42</data>
+<data key="endline">42</data>
+<data key="assumption">func==thread1_0;</data></edge>
+
+<node id="S55"/>
+<edge source="S53" target="S55">
+<data key="threadId">0</data>
+<data key="startline">42</data>
+<data key="endline">42</data>
+<data key="createThread">1</data></edge>
+
+<node id="S55-2"/>
+<edge source="S55" target="S55-2">
+<data key="threadId">1</data>
+<data key="startline">42</data>
+<data key="endline">42</data>
+<data key="enterFunction">thread1</data></edge>
+
+<node id="S71"/>
+<edge source="S55-2" target="S71">
+<data key="threadId">0</data>
+<data key="startline">43</data>
+<data key="endline">43</data>
+<data key="assumption">func==thread2_0;</data></edge>
+
+<node id="S73"/>
+<edge source="S71" target="S73">
+<data key="threadId">0</data>
+<data key="startline">43</data>
+<data key="endline">43</data>
+<data key="createThread">2</data></edge>
+
+<node id="S73-2"/>
+<edge source="S73" target="S73-2">
+<data key="threadId">2</data>
+<data key="startline">43</data>
+<data key="endline">43</data>
+<data key="enterFunction">thread2</data></edge>
+
+<node id="S89"/>
+<edge source="S73-2" target="S89">
+<data key="threadId">0</data>
+<data key="startline">44</data>
+<data key="endline">44</data>
+<data key="assumption">func==thread3_0;</data></edge>
+
+<node id="S91"/>
+<edge source="S89" target="S91">
+<data key="threadId">0</data>
+<data key="startline">44</data>
+<data key="endline">44</data>
+<data key="createThread">3</data></edge>
+
+<node id="S91-2"/>
+<edge source="S91" target="S91-2">
+<data key="threadId">3</data>
+<data key="startline">44</data>
+<data key="endline">44</data>
+<data key="enterFunction">thread3</data></edge>
+
+<node id="S139"/>
+<edge source="S91-2" target="S139">
+<data key="threadId">1</data>
+<data key="startline">12</data>
+<data key="endline">12</data>
+<data key="assumption">data==1;</data></edge>
+
+<node id="S161"/>
+<edge source="S139" target="S161">
+<data key="threadId">1</data>
+<data key="startline">13</data>
+<data key="endline">13</data>
+<data key="returnFrom">thread1</data></edge>
+
+<node id="S187"/>
+<edge source="S161" target="S187">
+<data key="threadId">2</data>
+<data key="startline">20</data>
+<data key="endline">20</data>
+<data key="assumption">data==3;</data></edge>
+
+<node id="S209"/>
+<edge source="S187" target="S209">
+<data key="threadId">2</data>
+<data key="startline">21</data>
+<data key="endline">21</data>
+<data key="returnFrom">thread2</data></edge>
+
+<node id="S235"/>
+<edge source="S209" target="S235">
+<data key="threadId">3</data>
+<data key="startline">28</data>
+<data key="endline">28</data>
+<data key="control">condition-true</data></edge>
+
+<node id="S235-2"/>
+<edge source="S209" target="SINK">
+<data key="threadId">3</data>
+<data key="startline">28</data>
+<data key="endline">28</data>
+<data key="control">condition-false</data></edge>
+
+<edge source="S235" target="STOP"/>
+<node id="STOP"><data key="violation">true</data></node>
+</graph>
+</graphml>
