@@ -1,4 +1,0 @@
-## For context-bounded analysis, please use -l lazy --contexts instead.
-noop
-
-
