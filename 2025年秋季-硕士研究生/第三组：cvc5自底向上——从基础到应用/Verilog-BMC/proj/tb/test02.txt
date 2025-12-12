@@ -1,0 +1,11 @@
+[CLOCK]
+; 时钟周期为 2 步 (k=0,1 为 0; k=2,3 为 1; k=4,5 为 0; ...)
+clk = 2
+
+[PROPERTY]
+out == 2
+
+[PROCESS]
+; 立即释放复位
+initval = 0
+rst_n = 1

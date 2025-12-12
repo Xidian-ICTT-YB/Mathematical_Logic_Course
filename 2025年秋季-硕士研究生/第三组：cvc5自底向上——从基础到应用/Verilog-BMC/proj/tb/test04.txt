@@ -1,0 +1,16 @@
+[CLOCK]
+clk = 1
+
+[PROPERTY]
+; 检查 'out' 是否 *曾经* 能达到 15
+out == 15
+
+[PROCESS]
+; 1. 保持复位 2 步
+rst_n = 0
+; --- 注意：'shortcut' 在此未被约束 ---
+#2
+
+; 2. 释放复位并开始计数
+rst_n = 1
+; --- 'shortcut' 仍然未被约束 ---
