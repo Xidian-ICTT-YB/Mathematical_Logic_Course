@@ -1,0 +1,9 @@
+[project]
+name = "cvc5-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "cvc5>=1.3.1",
+]
