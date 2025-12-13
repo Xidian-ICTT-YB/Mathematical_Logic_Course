@@ -1,0 +1,39 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "cvc5"
+version = "1.3.1"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a0/a4/b92bdeef63210c6b21f0641c8db39ac8701c882e98b6f5d3ff39b40209d2/cvc5-1.3.1-cp312-cp312-macosx_10_13_x86_64.whl", hash = "sha256:89c025e3485bd8ddcd1e8e0439a884e20bf2fa3b610a402433c0494783688a7e", size = 11105234, upload-time = "2025-09-24T21:21:40.787Z" },
+    { url = "https://files.pythonhosted.org/packages/e3/56/22645d217dacea75f2ef01f2b070bb274c8ab97e607055cd4dbfcd89368c/cvc5-1.3.1-cp312-cp312-macosx_11_0_arm64.whl", hash = "sha256:bc18bb29d3804cf268373ce4316a445308d14cb5df62db83641958535d7cd891", size = 9644706, upload-time = "2025-09-24T21:00:31.247Z" },
+    { url = "https://files.pythonhosted.org/packages/08/96/f571954f1472e13f9f6d1f6672296a5fec8ff4ca0a2b04ea565230bbb3d4/cvc5-1.3.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:d7f8683a6f6a1795c0ce2ae26c6db9a121cc5dba6c9ee1671f3a5fa67d3107c5", size = 12926530, upload-time = "2025-09-24T20:57:04.074Z" },
+    { url = "https://files.pythonhosted.org/packages/fc/b8/c3fbcdf6fe91451606925b710447addee197acee142be422aee31683cd45/cvc5-1.3.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:85a6c5ad50fc8a8ac4c99217311b3f1467006d2c7db6cf144a6ad9cff195c090", size = 13554077, upload-time = "2025-09-24T20:58:38.086Z" },
+    { url = "https://files.pythonhosted.org/packages/8d/84/5fd7386fc6f639e379ecb54ac59a6e5cde894ec7c19c1be5ff77e776f94d/cvc5-1.3.1-cp312-cp312-win_amd64.whl", hash = "sha256:0f62eb3a097f84138f76540585a398a11790767ce86ce836fd6ae8c96608843f", size = 13473323, upload-time = "2025-09-24T20:59:29.094Z" },
+    { url = "https://files.pythonhosted.org/packages/dc/da/f197e57460a4c219cf77c175f5c7fddfa5c6d358e1bfea0f8b7b6500c511/cvc5-1.3.1-cp312-cp312-win_arm64.whl", hash = "sha256:ff8f97ea1b6706ea8d1a184ede461433b2816b7c78c553f161d5d227e91a7d7a", size = 10316341, upload-time = "2025-09-24T20:56:09.569Z" },
+    { url = "https://files.pythonhosted.org/packages/07/4a/4fa8aa602933a892eccf7ac92d2aef0b5022410ee6e13e4e2711d3812e1a/cvc5-1.3.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:3abe2fac25b1bd637153e4cd4648bbee600306a034f9e94c69e599d1a55b6bae", size = 11100863, upload-time = "2025-09-24T21:21:44.216Z" },
+    { url = "https://files.pythonhosted.org/packages/21/74/b57b2f858974a71b78ce4cbd0ac10a363e95051c9ef1128f63e90417f3ff/cvc5-1.3.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:728f52bc26d93952a4943d4004df4170bd0aa09c82c96fc459401038254a4005", size = 9641472, upload-time = "2025-09-24T21:00:34.25Z" },
+    { url = "https://files.pythonhosted.org/packages/b7/71/148e56cc55897012d546546248b96ab53677db6b6b814bc7d21b8ec2a324/cvc5-1.3.1-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:3265675af16cc4d10ce41802bcbc4b1e62c4bcd922bbcbb2dc4de2fabc8fe72a", size = 12902354, upload-time = "2025-09-24T20:57:07.258Z" },
+    { url = "https://files.pythonhosted.org/packages/b8/b1/142ece7f1f840f2bd4dfdb6b7fb62d294f28ddb8d07235fa28223b6fcc69/cvc5-1.3.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:ea6c403a64bc43b9f060a42ffffa20e46538eb6750e03cea8e3479426acadfd5", size = 13539474, upload-time = "2025-09-24T20:58:40.428Z" },
+    { url = "https://files.pythonhosted.org/packages/fd/7d/52ca4b203f650c2371758faac3d44baac5e0ba98ae57b6a3ec38b6c31f0b/cvc5-1.3.1-cp313-cp313-win_amd64.whl", hash = "sha256:c26f59a743251d97b5349b2c18211aa368fd9fe01bbd45d309dd2714dc0bb4e0", size = 13475138, upload-time = "2025-09-24T20:59:32.302Z" },
+    { url = "https://files.pythonhosted.org/packages/d8/0b/0876e439773bbcd1063b2408d5460b31e6b9c04a32b6cecac7daaf4aa677/cvc5-1.3.1-cp313-cp313-win_arm64.whl", hash = "sha256:d603d50c5c42abd685bfacc1f30090cf62a7919539b5989bf2bad102d742b762", size = 10315214, upload-time = "2025-09-24T20:56:13.394Z" },
+    { url = "https://files.pythonhosted.org/packages/82/16/65e3c94498d9875042a35ded06ac0a6bd1560cbbc4e14489cdb05789c3f1/cvc5-1.3.1-cp314-cp314-macosx_10_13_x86_64.whl", hash = "sha256:22af3c04c152e34b2e8f83f5823f6210f738e4ba088943882401bdd95f6883bd", size = 11098583, upload-time = "2025-09-24T21:21:48.684Z" },
+    { url = "https://files.pythonhosted.org/packages/c2/08/0f8cc8ae8f166ae52a29c1f5c0509de5bef35a480ae89d6ccf9417d96b2c/cvc5-1.3.1-cp314-cp314-macosx_11_0_arm64.whl", hash = "sha256:6cf849bba29aa7bde0758b48e2bf680f108e37843a10613cdc9f3ad1783cba79", size = 9644098, upload-time = "2025-09-24T21:00:37.059Z" },
+    { url = "https://files.pythonhosted.org/packages/0e/c0/728a8a8905e3ad5356b217ebd4992718d84483fc18e2167543309f759bea/cvc5-1.3.1-cp314-cp314-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:fa9d8a7646a1da8a4a15f34a6be41396ec4689440fe491a520dae16a4c9ec9ee", size = 12909948, upload-time = "2025-09-24T20:57:10.315Z" },
+    { url = "https://files.pythonhosted.org/packages/b0/2e/775678e20dc59b980a0835e6446cbb10a8dc45b0088aef3fe3d63c471951/cvc5-1.3.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:1f9936778efd6c2a6f943dbdd721bb6b43b18f6692d8a31d85c3de6a16bbeb11", size = 13544327, upload-time = "2025-09-24T20:58:42.739Z" },
+    { url = "https://files.pythonhosted.org/packages/5e/44/3bbf878d94db75c17f5b91430ec1c013a57a00ffaf6f86b90afe6de6b906/cvc5-1.3.1-cp314-cp314-win_amd64.whl", hash = "sha256:e5047e038e7104480c4e51a2f2fecc135737d39c1c421627fc254e4d4456d76a", size = 13791802, upload-time = "2025-09-24T20:59:35.839Z" },
+    { url = "https://files.pythonhosted.org/packages/af/f5/5684c47f44f7cebe53dce220215df47c756b30b23dfc2ea04196aa3564d4/cvc5-1.3.1-cp314-cp314-win_arm64.whl", hash = "sha256:42060eb70cda7c1b6f983d798520690ea83d5244eb151b531483094cb4d34c26", size = 10777825, upload-time = "2025-09-24T20:56:16.957Z" },
+]
+
+[[package]]
+name = "cvc5-demo"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "cvc5" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "cvc5", specifier = ">=1.3.1" }]
