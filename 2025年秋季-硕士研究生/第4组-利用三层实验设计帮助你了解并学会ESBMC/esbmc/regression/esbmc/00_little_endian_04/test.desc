@@ -1,0 +1,4 @@
+CORE
+main.c
+--little-endian --bv -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

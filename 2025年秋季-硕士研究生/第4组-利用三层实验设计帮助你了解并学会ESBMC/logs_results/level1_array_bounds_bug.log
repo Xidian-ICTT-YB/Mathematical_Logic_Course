@@ -1,0 +1,80 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level1/level1_array_bounds.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.156s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file code/level1/level1_array_bounds.c line 25 column 3 function faulty_window_sum
+Unwinding loop 2 iteration 2   file code/level1/level1_array_bounds.c line 25 column 3 function faulty_window_sum
+Unwinding loop 2 iteration 3   file code/level1/level1_array_bounds.c line 25 column 3 function faulty_window_sum
+Unwinding loop 2 iteration 4   file code/level1/level1_array_bounds.c line 25 column 3 function faulty_window_sum
+Not unwinding loop 2 iteration 5   file code/level1/level1_array_bounds.c line 25 column 3 function faulty_window_sum
+Symex completed in: 0.001s (73 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 11 VCC(s), 11 remaining after simplification (48 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.008s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file code/level1/level1_array_bounds.c line 59 column 3 function main thread 0
+----------------------------------------------------
+  anchor = 5 (00000000 00000000 00000000 00000101)
+
+State 3 file code/level1/level1_array_bounds.c line 22 column 3 function faulty_window_sum thread 0
+----------------------------------------------------
+  dynamic_window = 3 (00000000 00000000 00000000 00000011)
+
+State 4 file code/level1/level1_array_bounds.c line 27 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  index = 4 (00000000 00000000 00000000 00000100)
+
+State 7 file code/level1/level1_array_bounds.c line 32 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  sum = 9 (00000000 00000000 00000000 00001001)
+
+State 8 file code/level1/level1_array_bounds.c line 27 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  index = 5 (00000000 00000000 00000000 00000101)
+
+State 11 file code/level1/level1_array_bounds.c line 32 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  sum = 24 (00000000 00000000 00000000 00011000)
+
+State 12 file code/level1/level1_array_bounds.c line 27 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  index = 6 (00000000 00000000 00000000 00000110)
+
+State 15 file code/level1/level1_array_bounds.c line 32 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  sum = 35 (00000000 00000000 00000000 00100011)
+
+State 16 file code/level1/level1_array_bounds.c line 27 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  index = 7 (00000000 00000000 00000000 00000111)
+
+State 19 file code/level1/level1_array_bounds.c line 32 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  sum = 40 (00000000 00000000 00000000 00101000)
+
+State 20 file code/level1/level1_array_bounds.c line 27 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+  index = 8 (00000000 00000000 00000000 00001000)
+
+State 22 file code/level1/level1_array_bounds.c line 32 column 5 function faulty_window_sum thread 0
+----------------------------------------------------
+Violated property:
+  file code/level1/level1_array_bounds.c line 32 column 5 function faulty_window_sum
+  array bounds violated: array `sensor_table' upper bound
+  (signed long int)index < 8
+
+
+VERIFICATION FAILED

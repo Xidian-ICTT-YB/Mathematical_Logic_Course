@@ -1,0 +1,4 @@
+THOROUGH
+contract.solast
+--function func --sol contract.sol --incremental-bmc
+^VERIFICATION FAILED$

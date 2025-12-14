@@ -1,0 +1,4 @@
+CORE
+memset-good.c
+--bitwuzla -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

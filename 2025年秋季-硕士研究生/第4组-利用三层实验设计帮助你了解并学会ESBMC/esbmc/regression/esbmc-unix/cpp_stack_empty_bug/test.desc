@@ -1,0 +1,4 @@
+THOROUGH
+main.cpp
+--k-induction 
+^VERIFICATION FAILED$

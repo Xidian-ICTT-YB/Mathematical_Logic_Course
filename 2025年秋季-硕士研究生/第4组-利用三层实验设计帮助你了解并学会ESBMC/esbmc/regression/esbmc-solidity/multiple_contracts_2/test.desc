@@ -1,0 +1,4 @@
+THOROUGH
+mul.solast
+--function empty --contract A --sol mul.sol --no-standard-checks --k-induction --bound
+^VERIFICATION SUCCESSFUL$

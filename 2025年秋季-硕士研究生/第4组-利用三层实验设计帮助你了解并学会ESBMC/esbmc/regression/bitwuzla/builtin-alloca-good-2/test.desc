@@ -1,0 +1,4 @@
+THOROUGH
+builtin_alloca_test_2.c
+--bitwuzla -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

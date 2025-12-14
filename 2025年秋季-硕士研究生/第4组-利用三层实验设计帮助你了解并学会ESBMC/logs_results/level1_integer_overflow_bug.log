@@ -1,0 +1,124 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level1/level1_integer_overflow.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.115s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 2   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 3   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 4   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 5   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 6   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 7   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 8   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 9   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 10   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 11   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 12   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 13   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 14   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 15   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 16   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 17   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 18   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 19   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 20   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 21   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 22   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 23   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Unwinding loop 2 iteration 24   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Not unwinding loop 2 iteration 25   file code/level1/level1_integer_overflow.c line 22 column 3 function faulty_integrator
+Symex completed in: 0.002s (225 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.002s (removed 62 assignments)
+Generated 76 VCC(s), 76 remaining after simplification (163 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.077s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file code/level1/level1_integer_overflow.c line 53 column 3 function main thread 0
+----------------------------------------------------
+  baseline = 134377866 (00001000 00000010 01110001 10001010)
+
+State 2 file code/level1/level1_integer_overflow.c line 54 column 3 function main thread 0
+----------------------------------------------------
+  cycles = 18 (00000000 00000000 00000000 00010010)
+
+State 5 file code/level1/level1_integer_overflow.c line 21 column 3 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 134377866 (00001000 00000010 01110001 10001010)
+
+State 9 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 268755732 (00010000 00000100 11100011 00010100)
+
+State 13 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 403133662 (00011000 00000111 01010100 11011110)
+
+State 17 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 537511656 (00100000 00001001 11000110 11101000)
+
+State 21 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 671889714 (00101000 00001100 00111001 00110010)
+
+State 25 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 806267836 (00110000 00001110 10101011 10111100)
+
+State 29 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 940646022 (00111000 00010001 00011110 10000110)
+
+State 33 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1075024272 (01000000 00010011 10010001 10010000)
+
+State 37 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1209402586 (01001000 00010110 00000100 11011010)
+
+State 41 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1343780964 (01010000 00011000 01111000 01100100)
+
+State 45 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1478159406 (01011000 00011010 11101100 00101110)
+
+State 49 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1612537912 (01100000 00011101 01100000 00111000)
+
+State 53 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1746916482 (01101000 00011111 11010100 10000010)
+
+State 57 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 1881295116 (01110000 00100010 01001001 00001100)
+
+State 61 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+  total = 2015673814 (01111000 00100100 10111101 11010110)
+
+State 64 file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator thread 0
+----------------------------------------------------
+Violated property:
+  file code/level1/level1_integer_overflow.c line 24 column 5 function faulty_integrator
+  arithmetic overflow on add
+  !overflow("+", total, baseline + (signed int)step * 64)
+
+
+VERIFICATION FAILED

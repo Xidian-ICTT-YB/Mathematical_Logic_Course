@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--incremental-bmc --force-malloc-success --context-bound 2 -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

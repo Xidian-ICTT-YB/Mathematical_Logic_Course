@@ -1,0 +1,28 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level2/level2_linked_list_memory.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.138s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Unwinding loop 15 iteration 1   file code/level2/level2_linked_list_memory.c line 79 column 3 function safe_prune
+Unwinding loop 15 iteration 2   file code/level2/level2_linked_list_memory.c line 79 column 3 function safe_prune
+Unwinding loop 15 iteration 3   file code/level2/level2_linked_list_memory.c line 79 column 3 function safe_prune
+Not unwinding loop 15 iteration 4   file code/level2/level2_linked_list_memory.c line 79 column 3 function safe_prune
+Unwinding loop 16 iteration 1   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Unwinding loop 16 iteration 2   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Unwinding loop 16 iteration 3   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Not unwinding loop 16 iteration 4   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Symex completed in: 0.008s (333 assignments)
+Caching time: 0.001s (removed 31 assertions)
+Slicing time: 0.001s (removed 57 assignments)
+Generated 193 VCC(s), 85 remaining after simplification (245 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.048s
+BMC program time: 0.067s
+
+VERIFICATION SUCCESSFUL

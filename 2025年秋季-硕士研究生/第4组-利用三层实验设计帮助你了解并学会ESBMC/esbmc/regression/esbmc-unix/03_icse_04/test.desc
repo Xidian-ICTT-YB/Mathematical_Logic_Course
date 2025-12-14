@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--no-slice --no-por
+^VERIFICATION FAILED$

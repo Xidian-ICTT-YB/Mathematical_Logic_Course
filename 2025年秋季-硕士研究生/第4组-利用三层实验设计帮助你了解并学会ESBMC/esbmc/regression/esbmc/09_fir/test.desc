@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--unwind 34 --no-library
+^VERIFICATION SUCCESSFUL$

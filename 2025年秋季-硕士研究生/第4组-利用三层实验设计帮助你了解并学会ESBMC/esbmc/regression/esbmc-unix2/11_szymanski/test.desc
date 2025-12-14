@@ -1,0 +1,4 @@
+THOROUGH
+szymanski.c
+--unwind 1 --no-unwinding-assertions -Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types
+^VERIFICATION SUCCESSFUL$

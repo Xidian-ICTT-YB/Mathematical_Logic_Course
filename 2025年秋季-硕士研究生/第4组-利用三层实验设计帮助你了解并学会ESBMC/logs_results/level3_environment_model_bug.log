@@ -1,0 +1,97 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level3/level3_environment_model.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.141s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 2   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 3   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 4   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 5   file code/level3/level3_environment_model.c line 83 column 3 function main
+Not unwinding loop 2 iteration 6   file code/level3/level3_environment_model.c line 83 column 3 function main
+Symex completed in: 0.007s (157 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 47 assignments)
+Generated 114 VCC(s), 6 remaining after simplification (110 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.017s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file code/level3/level3_environment_model.c line 85 column 5 function main thread 0
+----------------------------------------------------
+  heartbeat = 1
+
+State 2 file code/level3/level3_environment_model.c line 86 column 5 function main thread 0
+----------------------------------------------------
+  bus_idle = 0
+
+State 5 file code/level3/level3_environment_model.c line 85 column 5 function main thread 0
+----------------------------------------------------
+  heartbeat = 1
+
+State 6 file code/level3/level3_environment_model.c line 86 column 5 function main thread 0
+----------------------------------------------------
+  bus_idle = 1
+
+State 9 file code/level3/level3_environment_model.c line 85 column 5 function main thread 0
+----------------------------------------------------
+  heartbeat = 1
+
+State 10 file code/level3/level3_environment_model.c line 86 column 5 function main thread 0
+----------------------------------------------------
+  bus_idle = 0
+
+State 12 file code/level3/level3_environment_model.c line 36 column 7 function faulty_tick thread 0
+----------------------------------------------------
+  ctx->countdown = { .countdown=2, .pending_feed=0, .anon_pad$2=0 }
+
+State 14 file code/level3/level3_environment_model.c line 85 column 5 function main thread 0
+----------------------------------------------------
+  heartbeat = 0
+
+State 15 file code/level3/level3_environment_model.c line 86 column 5 function main thread 0
+----------------------------------------------------
+  bus_idle = 1
+
+State 16 file code/level3/level3_environment_model.c line 94 column 7 function main thread 0
+----------------------------------------------------
+  since_last_heartbeat = 1 (00000000 00000000 00000000 00000001)
+
+State 18 file code/level3/level3_environment_model.c line 36 column 7 function faulty_tick thread 0
+----------------------------------------------------
+  ctx->countdown = { .countdown=1, .pending_feed=0, .anon_pad$2=0 }
+
+State 20 file code/level3/level3_environment_model.c line 85 column 5 function main thread 0
+----------------------------------------------------
+  heartbeat = 0
+
+State 21 file code/level3/level3_environment_model.c line 86 column 5 function main thread 0
+----------------------------------------------------
+  bus_idle = 0
+
+State 22 file code/level3/level3_environment_model.c line 94 column 7 function main thread 0
+----------------------------------------------------
+  since_last_heartbeat = 2 (00000000 00000000 00000000 00000010)
+
+State 24 file code/level3/level3_environment_model.c line 36 column 7 function faulty_tick thread 0
+----------------------------------------------------
+  ctx->countdown = { .countdown=0, .pending_feed=0, .anon_pad$2=0 }
+
+State 25 file code/level3/level3_environment_model.c line 107 column 5 function main thread 0
+----------------------------------------------------
+Violated property:
+  file code/level3/level3_environment_model.c line 107 column 5 function main
+  assertion ctx.countdown > 0
+  ctx.countdown > 0
+
+
+VERIFICATION FAILED

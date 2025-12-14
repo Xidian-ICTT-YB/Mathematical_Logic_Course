@@ -1,0 +1,1069 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level3/level3_concurrency_race.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.130s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.002s (66 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 64 assignments)
+Generated 3 VCC(s), 0 remaining after simplification (2 assignments)
+BMC program time: 0.002s
+Thread interleavings 2
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 81 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+BMC program time: 0.008s
+Thread interleavings 3
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (90 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 79 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.010s
+Thread interleavings 4
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (88 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 77 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.010s
+Thread interleavings 5
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (86 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 75 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 6
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (84 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 73 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 7
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (82 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 71 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 8
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (80 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 69 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.007s
+Thread interleavings 9
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (78 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 67 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 10
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (76 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 65 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.007s
+Thread interleavings 11
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (74 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 63 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 12
+Unwinding loop 4 iteration 1   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.002s (88 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 83 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.002s
+Thread interleavings 13
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (90 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 85 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.001s
+Thread interleavings 14
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 87 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.000s
+Thread interleavings 15
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (94 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 89 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.001s
+Thread interleavings 16
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (96 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 91 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.001s
+Thread interleavings 17
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (98 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 93 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.000s
+Thread interleavings 18
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (100 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 95 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.000s
+Thread interleavings 19
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (102 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 97 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.001s
+Thread interleavings 20
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (104 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 99 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.001s
+Thread interleavings 21
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (106 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 101 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.000s
+Thread interleavings 22
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (80 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 76 assignments)
+Generated 5 VCC(s), 0 remaining after simplification (4 assignments)
+BMC program time: 0.001s
+Thread interleavings 23
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 81 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 24
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (90 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 79 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 25
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (88 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 77 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.005s
+Thread interleavings 26
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (86 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 75 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 27
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (84 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 73 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 28
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (82 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 71 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 29
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (80 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 69 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 30
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (78 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 67 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 31
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (76 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 65 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+BMC program time: 0.006s
+Thread interleavings 32
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (74 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 63 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 33
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (80 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 75 assignments)
+Generated 5 VCC(s), 0 remaining after simplification (5 assignments)
+BMC program time: 0.002s
+Thread interleavings 34
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (106 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 100 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.000s
+Thread interleavings 35
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 81 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 36
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (104 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 98 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.001s
+Thread interleavings 37
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.001s (90 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 79 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 38
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (102 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 96 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.001s
+Thread interleavings 39
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (88 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 77 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+BMC program time: 0.006s
+Thread interleavings 40
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (100 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 94 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.000s
+Thread interleavings 41
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (86 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 75 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.008s
+Thread interleavings 42
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (98 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 92 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.000s
+Thread interleavings 43
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (84 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 73 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.005s
+Thread interleavings 44
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (96 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 90 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.000s
+Thread interleavings 45
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (82 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 71 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.009s
+Thread interleavings 46
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (94 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 88 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.001s
+Thread interleavings 47
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (80 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 69 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 48
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 86 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.001s
+Thread interleavings 49
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (78 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 67 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.001s
+BMC program time: 0.009s
+Thread interleavings 50
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (90 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 84 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.000s
+Thread interleavings 51
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (76 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 65 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.005s
+Thread interleavings 52
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (88 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 82 assignments)
+Generated 6 VCC(s), 0 remaining after simplification (6 assignments)
+BMC program time: 0.000s
+Thread interleavings 53
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Symex completed in: 0.000s (74 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 63 assignments)
+Generated 10 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.008s
+Thread interleavings 54
+Unwinding loop 4 iteration 2   file code/level3/level3_concurrency_race.c line 42 column 3 function main
+Unwinding loop 5 iteration 1   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 5 iteration 2   file code/level3/level3_concurrency_race.c line 47 column 3 function main
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (101 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 90 assignments)
+Generated 11 VCC(s), 1 remaining after simplification (11 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.000s
+BMC program time: 0.006s
+Thread interleavings 55
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (102 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 92 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 56
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (104 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 94 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 57
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (106 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 96 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 58
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (108 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 98 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 59
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (110 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 100 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 60
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (112 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 102 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 61
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (114 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 104 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 62
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (116 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 106 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 63
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (118 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 108 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 64
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 83 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (9 assignments)
+BMC program time: 0.000s
+Thread interleavings 65
+Symex completed in: 0.000s (91 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 81 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 66
+Symex completed in: 0.000s (89 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 79 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 67
+Symex completed in: 0.000s (87 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 77 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 68
+Symex completed in: 0.000s (85 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 75 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 69
+Symex completed in: 0.000s (83 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 73 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 70
+Symex completed in: 0.000s (81 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 71 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 71
+Symex completed in: 0.000s (79 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 69 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 72
+Symex completed in: 0.000s (77 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 67 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 73
+Symex completed in: 0.000s (75 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 65 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 74
+Symex completed in: 0.000s (73 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 63 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 75
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (92 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 83 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (9 assignments)
+BMC program time: 0.001s
+Thread interleavings 76
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (118 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 108 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 77
+Symex completed in: 0.000s (91 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 81 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 78
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (116 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 106 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 79
+Symex completed in: 0.000s (89 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 79 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 80
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (114 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 104 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 81
+Symex completed in: 0.001s (87 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 77 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 82
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (112 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 102 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 83
+Symex completed in: 0.000s (85 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 75 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 84
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (110 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 100 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 85
+Symex completed in: 0.000s (83 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 73 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 86
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (108 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 98 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 87
+Symex completed in: 0.000s (81 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 71 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 88
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (106 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 96 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 89
+Symex completed in: 0.000s (79 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 69 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 90
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.001s (104 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 94 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 91
+Symex completed in: 0.000s (77 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 67 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 92
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (102 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 92 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.001s
+Thread interleavings 93
+Symex completed in: 0.000s (75 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 65 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 94
+Unwinding loop 3 iteration 1   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 2   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 3   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Unwinding loop 3 iteration 4   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Not unwinding loop 3 iteration 5   file code/level3/level3_concurrency_race.c line 27 column 3 function worker
+Symex completed in: 0.000s (100 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 90 assignments)
+Generated 10 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 95
+Symex completed in: 0.000s (73 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 63 assignments)
+Generated 9 VCC(s), 0 remaining after simplification (10 assignments)
+BMC program time: 0.000s
+Thread interleavings 96
+Symex completed in: 0.000s (64 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 56 assignments)
+Generated 8 VCC(s), 0 remaining after simplification (8 assignments)
+BMC program time: 0.000s
+
+VERIFICATION SUCCESSFUL

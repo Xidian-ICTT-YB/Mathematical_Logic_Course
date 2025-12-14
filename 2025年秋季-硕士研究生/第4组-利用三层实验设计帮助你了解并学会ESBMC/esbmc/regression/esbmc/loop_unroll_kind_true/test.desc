@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--k-induction --goto-unwind
+^VERIFICATION FAILED$

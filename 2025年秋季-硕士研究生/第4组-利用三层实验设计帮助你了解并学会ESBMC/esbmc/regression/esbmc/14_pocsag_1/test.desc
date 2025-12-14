@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--claim 2 --unwind 42 --no-library
+^VERIFICATION SUCCESSFUL$

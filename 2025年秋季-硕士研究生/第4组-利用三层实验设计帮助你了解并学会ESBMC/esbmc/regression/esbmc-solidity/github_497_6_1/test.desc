@@ -1,0 +1,5 @@
+CORE
+MyContract_satisfiability_1.solast
+--sol MyContract_satisfiability_1.sol --k-induction
+.*function func_sat$
+^VERIFICATION FAILED$

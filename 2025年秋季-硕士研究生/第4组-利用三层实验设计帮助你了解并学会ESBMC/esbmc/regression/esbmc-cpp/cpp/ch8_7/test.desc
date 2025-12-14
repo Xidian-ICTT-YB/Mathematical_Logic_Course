@@ -1,0 +1,4 @@
+CORE
+main.cpp
+Complex1.cpp --unwind 10 --no-unwinding-assertions --timeout 900
+^VERIFICATION SUCCESSFUL$
