@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 位向量操作验证
 """
@@ -29,4 +28,5 @@ def bitvector_verification():
     slv.pop()
 
 if __name__ == "__main__":
+
     bitvector_verification()
