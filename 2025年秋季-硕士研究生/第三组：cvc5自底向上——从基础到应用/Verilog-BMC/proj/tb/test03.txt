@@ -1,0 +1,31 @@
+[CLOCK]
+clk = 1
+
+[PROPERTY]
+; 我们要检查它是否 *曾经* 达到 6
+; 根据我们的激励，它永远不应该达到 6
+out == 6
+
+[PROCESS]
+; 1. 启动时，释放复位，不加载
+rst_n = 1
+load = 0
+initval = 0 ; (不关心)
+
+; 2. 计数 4 个周期 (k=0 到 k=3)
+; k=1 (Posedge) -> out' = 1
+; k=3 (Posedge) -> out' = 2
+#4
+
+; 3. 在 k=4 时, 加载一个新值 10
+; (out 此时为 2)
+load = 1
+initval = 10
+
+; 4. 保持 2 步 (k=4, 5)
+; k=5 (Posedge) -> load=1, out' = initval (10)
+#2
+
+; 5. 在 k=6 时, 停止加载并继续计数
+; (out 此时为 10)
+load = 0
