@@ -1,0 +1,4 @@
+CORE
+main.cpp
+time5.cpp --unwind 10 --no-unwinding-assertions --timeout 900
+^ERROR: PARSING ERROR$

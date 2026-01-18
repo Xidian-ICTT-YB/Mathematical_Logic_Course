@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--overflow-check -Wno-error=implicit-function-declaration -Wno-error=implicit-int
+^VERIFICATION FAILED$

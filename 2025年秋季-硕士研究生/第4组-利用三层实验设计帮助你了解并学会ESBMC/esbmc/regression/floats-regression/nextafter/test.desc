@@ -1,0 +1,4 @@
+CORE
+main.c
+--floatbv --32 --interval-analysis
+^VERIFICATION SUCCESSFUL$

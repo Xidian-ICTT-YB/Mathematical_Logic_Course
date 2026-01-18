@@ -1,0 +1,4 @@
+CORE
+main.c
+--floatbv -Wno-error=implicit-int
+^VERIFICATION SUCCESSFUL$

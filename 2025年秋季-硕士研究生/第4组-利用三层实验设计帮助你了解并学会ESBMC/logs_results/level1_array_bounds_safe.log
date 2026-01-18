@@ -1,0 +1,25 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level1/level1_array_bounds.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.130s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Unwinding loop 3 iteration 1   file code/level1/level1_array_bounds.c line 44 column 3 function safe_window_sum
+Unwinding loop 3 iteration 2   file code/level1/level1_array_bounds.c line 44 column 3 function safe_window_sum
+Unwinding loop 3 iteration 3   file code/level1/level1_array_bounds.c line 44 column 3 function safe_window_sum
+Unwinding loop 3 iteration 4   file code/level1/level1_array_bounds.c line 44 column 3 function safe_window_sum
+Not unwinding loop 3 iteration 5   file code/level1/level1_array_bounds.c line 44 column 3 function safe_window_sum
+Symex completed in: 0.001s (73 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.000s (removed 25 assignments)
+Generated 11 VCC(s), 11 remaining after simplification (48 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.000s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.006s
+BMC program time: 0.014s
+
+VERIFICATION SUCCESSFUL

@@ -1,0 +1,4 @@
+THOROUGH
+contract.solast
+--function D --contract DD --sol contract.sol --k-induction --bound
+^VERIFICATION FAILED$

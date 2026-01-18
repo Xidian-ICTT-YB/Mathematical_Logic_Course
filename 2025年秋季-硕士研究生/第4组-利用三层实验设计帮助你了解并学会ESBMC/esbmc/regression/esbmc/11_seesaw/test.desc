@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--unwind 20 --no-unwinding-assertions -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

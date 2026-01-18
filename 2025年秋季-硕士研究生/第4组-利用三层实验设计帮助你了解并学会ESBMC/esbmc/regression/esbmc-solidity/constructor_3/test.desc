@@ -1,0 +1,4 @@
+THOROUGH
+contract.solast
+--contract Derive --sol contract.sol --unwind 3 --no-unwinding-assertions --bound
+^VERIFICATION FAILED$

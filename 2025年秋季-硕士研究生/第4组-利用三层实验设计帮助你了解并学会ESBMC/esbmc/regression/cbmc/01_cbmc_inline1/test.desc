@@ -1,0 +1,4 @@
+CORE
+main.c
+module.c -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

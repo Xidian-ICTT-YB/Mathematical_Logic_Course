@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--ir --z3 -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

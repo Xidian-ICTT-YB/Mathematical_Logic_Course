@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--smt-during-symex --smt-symex-assert --incremental-bmc --unlimited-k-steps --z3
+^VERIFICATION FAILED$

@@ -1,0 +1,46 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level1/level1_null_pointer.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.118s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Symex completed in: 0.002s (38 assignments)
+Caching time: 0.000s (removed 2 assertions)
+Slicing time: 0.000s (removed 16 assignments)
+Generated 21 VCC(s), 5 remaining after simplification (20 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.012s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file code/level1/level1_null_pointer.c line 61 column 3 function main thread 0
+----------------------------------------------------
+  pkt = { .length=0, .anon_pad$1=0, .payload=nondet_symbol(symex::nondet0).payload }
+
+State 2 file code/level1/level1_null_pointer.c line 62 column 16 function main thread 0
+----------------------------------------------------
+  pkt.length = { .length=0, .anon_pad$1=0, .payload=pkt.payload }
+
+State 3 file code/level1/level1_null_pointer.c line 63 column 3 function main thread 0
+----------------------------------------------------
+  has_payload = 0
+
+State 5 file code/level1/level1_null_pointer.c line 72 column 5 function main thread 0
+----------------------------------------------------
+  pkt.payload = { .length = 0 }
+
+State 7 file code/level1/level1_null_pointer.c line 37 column 5 function faulty_parser thread 0
+----------------------------------------------------
+Violated property:
+  file code/level1/level1_null_pointer.c line 37 column 5 function faulty_parser
+  dereference failure: NULL pointer
+
+
+VERIFICATION FAILED

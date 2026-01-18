@@ -1,0 +1,4 @@
+THOROUGH
+main.c
+--incremental-bmc --memory-leak-check --force-malloc-success
+^VERIFICATION SUCCESSFUL$

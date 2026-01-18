@@ -1,0 +1,4 @@
+THOROUGH
+main.cpp
+--unwind 15 --no-unwinding-assertions --timeout 900
+^VERIFICATION FAILED$

@@ -1,0 +1,249 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level2/level2_loop_logic.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.118s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 1   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 2   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 3   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 4   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 5   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 6   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 7   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 8   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 3 iteration 9   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Unwinding loop 2 iteration 1   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 2   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 3   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 4   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 5   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 6   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 7   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 8   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Unwinding loop 2 iteration 9   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 2 iteration 10   file code/level2/level2_loop_logic.c line 35 column 5 function faulty_dispatch
+Not unwinding loop 3 iteration 10   file code/level2/level2_loop_logic.c line 32 column 3 function faulty_dispatch
+Symex completed in: 0.011s (911 assignments)
+Caching time: 0.001s (removed 0 assertions)
+Slicing time: 0.012s (removed 372 assignments)
+Generated 11 VCC(s), 11 remaining after simplification (539 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.003s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.046s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file code/level2/level2_loop_logic.c line 76 column 3 function main thread 0
+----------------------------------------------------
+  demand = 5 (00000000 00000000 00000000 00000101)
+
+State 2 file code/level2/level2_loop_logic.c line 77 column 3 function main thread 0
+----------------------------------------------------
+  chunk = 3 (00000000 00000000 00000000 00000011)
+
+State 6 file code/level2/level2_loop_logic.c line 19 column 3 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 1 (00000000 00000000 00000000 00000001)
+
+State 7 file code/level2/level2_loop_logic.c line 34 column 5 function faulty_dispatch thread 0
+----------------------------------------------------
+  local_budget = 1 (00000000 00000000 00000000 00000001)
+
+State 9 file code/level2/level2_loop_logic.c line 19 column 3 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 2 (00000000 00000000 00000000 00000010)
+
+State 10 file code/level2/level2_loop_logic.c line 22 column 5 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 3 (00000000 00000000 00000000 00000011)
+
+State 11 file code/level2/level2_loop_logic.c line 34 column 5 function faulty_dispatch thread 0
+----------------------------------------------------
+  local_budget = 3 (00000000 00000000 00000000 00000011)
+
+State 12 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 9 (00000000 00000000 00000000 00001001)
+
+State 13 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 12 (00000000 00000000 00000000 00001100)
+
+State 14 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 15 (00000000 00000000 00000000 00001111)
+
+State 15 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 18 (00000000 00000000 00000000 00010010)
+
+State 17 file code/level2/level2_loop_logic.c line 19 column 3 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 3 (00000000 00000000 00000000 00000011)
+
+State 18 file code/level2/level2_loop_logic.c line 34 column 5 function faulty_dispatch thread 0
+----------------------------------------------------
+  local_budget = 3 (00000000 00000000 00000000 00000011)
+
+State 19 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 21 (00000000 00000000 00000000 00010101)
+
+State 20 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 24 (00000000 00000000 00000000 00011000)
+
+State 21 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 27 (00000000 00000000 00000000 00011011)
+
+State 22 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 30 (00000000 00000000 00000000 00011110)
+
+State 24 file code/level2/level2_loop_logic.c line 19 column 3 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 1 (00000000 00000000 00000000 00000001)
+
+State 25 file code/level2/level2_loop_logic.c line 22 column 5 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 2 (00000000 00000000 00000000 00000010)
+
+State 26 file code/level2/level2_loop_logic.c line 34 column 5 function faulty_dispatch thread 0
+----------------------------------------------------
+  local_budget = 2 (00000000 00000000 00000000 00000010)
+
+State 27 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 33 (00000000 00000000 00000000 00100001)
+
+State 28 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 36 (00000000 00000000 00000000 00100100)
+
+State 29 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 39 (00000000 00000000 00000000 00100111)
+
+State 31 file code/level2/level2_loop_logic.c line 19 column 3 function compute_local_budget thread 0
+----------------------------------------------------
+  base = 2 (00000000 00000000 00000000 00000010)
+
+State 32 file code/level2/level2_loop_logic.c line 34 column 5 function faulty_dispatch thread 0
+----------------------------------------------------
+  local_budget = 2 (00000000 00000000 00000000 00000010)
+
+State 33 file code/level2/level2_loop_logic.c line 37 column 7 function faulty_dispatch thread 0
+----------------------------------------------------
+  delivered = 42 (00000000 00000000 00000000 00101010)
+
+State 34 file code/level2/level2_loop_logic.c line 85 column 3 function main thread 0
+----------------------------------------------------
+  delivered = 42 (00000000 00000000 00000000 00101010)
+
+State 35 file code/level2/level2_loop_logic.c line 89 column 3 function main thread 0
+----------------------------------------------------
+Violated property:
+  file code/level2/level2_loop_logic.c line 89 column 3 function main
+  assertion delivered <= MAX_DELIVERY
+  delivered <= 40
+
+
+VERIFICATION FAILED

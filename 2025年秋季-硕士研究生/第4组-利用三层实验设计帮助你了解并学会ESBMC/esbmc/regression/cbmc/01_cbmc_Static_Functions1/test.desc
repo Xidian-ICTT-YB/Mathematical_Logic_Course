@@ -1,0 +1,4 @@
+CORE
+file1.c
+file2.c -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$

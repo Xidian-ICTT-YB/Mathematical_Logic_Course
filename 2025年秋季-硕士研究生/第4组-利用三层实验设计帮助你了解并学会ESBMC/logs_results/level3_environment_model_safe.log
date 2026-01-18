@@ -1,0 +1,26 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level3/level3_environment_model.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.121s
+GOTO program processing time: 0.000s
+Starting Bounded Model Checking
+Unwinding loop 2 iteration 1   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 2   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 3   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 4   file code/level3/level3_environment_model.c line 83 column 3 function main
+Unwinding loop 2 iteration 5   file code/level3/level3_environment_model.c line 83 column 3 function main
+Not unwinding loop 2 iteration 6   file code/level3/level3_environment_model.c line 83 column 3 function main
+Symex completed in: 0.010s (211 assignments)
+Caching time: 0.000s (removed 0 assertions)
+Slicing time: 0.001s (removed 72 assignments)
+Generated 204 VCC(s), 6 remaining after simplification (139 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.001s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.134s
+BMC program time: 0.152s
+
+VERIFICATION SUCCESSFUL

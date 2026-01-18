@@ -1,0 +1,4 @@
+CORE
+contract.solast
+--function test --sol contract.sol --overflow-check --incremental-bmc
+^VERIFICATION FAILED$

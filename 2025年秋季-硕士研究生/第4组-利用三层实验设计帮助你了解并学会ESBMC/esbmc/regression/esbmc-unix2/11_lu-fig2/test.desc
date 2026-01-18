@@ -1,0 +1,4 @@
+THOROUGH
+lu-fig2.c
+ --incremental-bmc --context-bound 2 -Wno-error=implicit-function-declaration -Wno-error=incompatible-function-pointer-types
+^VERIFICATION FAILED$

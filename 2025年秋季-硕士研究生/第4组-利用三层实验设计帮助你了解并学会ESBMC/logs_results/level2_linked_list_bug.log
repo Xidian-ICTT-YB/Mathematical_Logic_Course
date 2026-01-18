@@ -1,0 +1,126 @@
+ESBMC version 7.11.0 64-bit x86_64 linux
+Target: 64-bit little-endian x86_64-unknown-linux with esbmclibc
+Parsing code/level2/level2_linked_list_memory.c
+Converting
+Generating GOTO Program
+GOTO program creation time: 0.143s
+GOTO program processing time: 0.001s
+Starting Bounded Model Checking
+Unwinding loop 14 iteration 1   file code/level2/level2_linked_list_memory.c line 40 column 3 function faulty_prune
+Unwinding loop 14 iteration 2   file code/level2/level2_linked_list_memory.c line 40 column 3 function faulty_prune
+Unwinding loop 14 iteration 3   file code/level2/level2_linked_list_memory.c line 40 column 3 function faulty_prune
+Not unwinding loop 14 iteration 4   file code/level2/level2_linked_list_memory.c line 40 column 3 function faulty_prune
+Unwinding loop 16 iteration 1   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Unwinding loop 16 iteration 2   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Unwinding loop 16 iteration 3   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Not unwinding loop 16 iteration 4   file code/level2/level2_linked_list_memory.c line 108 column 3 function free_list
+Symex completed in: 0.011s (455 assignments)
+Caching time: 0.002s (removed 57 assertions)
+Slicing time: 0.002s (removed 72 assignments)
+Generated 323 VCC(s), 132 remaining after simplification (326 assignments)
+No solver specified; defaulting to z3
+Encoding remaining VCC(s) using bit-vector/floating-point arithmetic
+Encoding to solver time: 0.002s
+Solving with solver Z3 v4.8.12
+Runtime decision procedure: 0.072s
+Building error trace
+
+[Counterexample]
+
+
+State 1 file code/level2/level2_linked_list_memory.c line 27 column 3 function push_front thread 0
+----------------------------------------------------
+  n = ( struct node *)(&dynamic_3_value)
+
+State 6 file code/level2/level2_linked_list_memory.c line 29 column 3 function push_front thread 0
+----------------------------------------------------
+  n->data = { .data=0, .anon_pad$1=0, .next=dynamic_3_value.next }
+
+State 8 file code/level2/level2_linked_list_memory.c line 30 column 3 function push_front thread 0
+----------------------------------------------------
+  n->next = { .data = 0 }
+
+State 9 file code/level2/level2_linked_list_memory.c line 27 column 3 function push_front thread 0
+----------------------------------------------------
+  n = ( struct node *)(&dynamic_6_value)
+
+State 14 file code/level2/level2_linked_list_memory.c line 29 column 3 function push_front thread 0
+----------------------------------------------------
+  n->data = { .data=0, .anon_pad$1=0, .next=dynamic_6_value.next }
+
+State 16 file code/level2/level2_linked_list_memory.c line 30 column 3 function push_front thread 0
+----------------------------------------------------
+  n->next = { .data=0, .anon_pad$1=0, .next=&dynamic_3_value }
+
+State 17 file code/level2/level2_linked_list_memory.c line 27 column 3 function push_front thread 0
+----------------------------------------------------
+  n = ( struct node *)(&dynamic_9_value)
+
+State 22 file code/level2/level2_linked_list_memory.c line 29 column 3 function push_front thread 0
+----------------------------------------------------
+  n->data = { .data=1, .anon_pad$1=0, .next=dynamic_9_value.next }
+
+State 24 file code/level2/level2_linked_list_memory.c line 30 column 3 function push_front thread 0
+----------------------------------------------------
+  n->next = { .data=1, .anon_pad$1=0, .next=&dynamic_6_value }
+
+State 25 file code/level2/level2_linked_list_memory.c line 123 column 3 function main thread 0
+----------------------------------------------------
+  threshold = 1 (00000000 00000000 00000000 00000001)
+
+State 27 file code/level2/level2_linked_list_memory.c line 38 column 3 function faulty_prune thread 0
+----------------------------------------------------
+  curr = &dynamic_9_value
+
+State 33 file code/level2/level2_linked_list_memory.c line 46 column 9 function faulty_prune thread 0
+----------------------------------------------------
+  head = dynamic_9_value.next
+
+State 37 file code/level2/level2_linked_list_memory.c line 56 column 9 function faulty_prune thread 0
+----------------------------------------------------
+  prev = &dynamic_9_value
+
+State 40 file code/level2/level2_linked_list_memory.c line 57 column 9 function faulty_prune thread 0
+----------------------------------------------------
+  curr = dynamic_9_value.next
+
+State 45 file code/level2/level2_linked_list_memory.c line 66 column 5 function faulty_prune thread 0
+----------------------------------------------------
+  prev = &dynamic_6_value
+
+State 49 file code/level2/level2_linked_list_memory.c line 67 column 5 function faulty_prune thread 0
+----------------------------------------------------
+  curr = dynamic_6_value.next
+
+State 53 file code/level2/level2_linked_list_memory.c line 66 column 5 function faulty_prune thread 0
+----------------------------------------------------
+  prev = &dynamic_3_value
+
+State 56 file code/level2/level2_linked_list_memory.c line 67 column 5 function faulty_prune thread 0
+----------------------------------------------------
+  curr = dynamic_3_value.next
+
+State 61 file code/level2/level2_linked_list_memory.c line 110 column 5 function free_list thread 0
+----------------------------------------------------
+  next = dynamic_6_value.next
+
+State 65 file code/level2/level2_linked_list_memory.c line 112 column 5 function free_list thread 0
+----------------------------------------------------
+  head = &dynamic_3_value
+
+State 69 file code/level2/level2_linked_list_memory.c line 110 column 5 function free_list thread 0
+----------------------------------------------------
+  next = dynamic_3_value.next
+
+State 72 file code/level2/level2_linked_list_memory.c line 112 column 5 function free_list thread 0
+----------------------------------------------------
+  head = 0
+
+State 75 file code/level2/level2_linked_list_memory.c line 137 column 1 function main thread 0
+----------------------------------------------------
+Violated property:
+  file code/level2/level2_linked_list_memory.c line 137 column 1 function main
+  dereference failure: forgotten memory: dynamic_9_value
+
+
+VERIFICATION FAILED

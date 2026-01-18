@@ -1,0 +1,4 @@
+CORE
+main.c
+--smt-during-symex --smt-symex-assert -Wno-error=implicit-function-declaration
+^VERIFICATION SUCCESSFUL$
