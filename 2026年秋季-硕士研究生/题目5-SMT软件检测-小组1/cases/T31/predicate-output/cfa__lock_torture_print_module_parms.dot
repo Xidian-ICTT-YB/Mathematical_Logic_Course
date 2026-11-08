@@ -1,0 +1,7 @@
+digraph lock_torture_print_module_parms {
+394 [shape="circle" label="N394\n3"]
+395 [shape="circle" label="N395\n2"]
+395 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">395</td><td align="left">printk(\"\t%s-torture:--- %s: nwriters_stress=%d stat_interval=%d verbose=%d shuffle_interval=%d stutter=%d shutdown_secs=%d onoff_interval=%d onoff_holdoff=%d\n\", torture_type, tag, nrealwriters_stress, stat_interval, (int)verbose, shuffle_interval, stutter, shutdown_secs, onoff_interval, onoff_holdoff);</td></tr><tr><td align="right">396</td><td align="left">return;</td></tr></table>>]
+395 -> 393[label=""]
+394 -> 395 [label="Function start dummy edge" fontname="Courier New"]
+}

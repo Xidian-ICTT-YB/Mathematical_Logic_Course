@@ -1,0 +1,7 @@
+digraph expired {
+1548 [shape="circle" label="N1548\n14"]
+1549 [shape="circle" label="N1549\n13"]
+1549 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1549</td><td align="left">long __cil_tmp6;</td></tr><tr><td align="right">1550</td><td align="left">unsigned long __cil_tmp7;</td></tr><tr><td align="right">1551</td><td align="left">unsigned long __cil_tmp8;</td></tr><tr><td align="right">1552</td><td align="left">unsigned long __cil_tmp9;</td></tr><tr><td align="right">1553</td><td align="left">long __cil_tmp10;</td></tr><tr><td align="right">1554</td><td align="left">long __cil_tmp11;</td></tr><tr><td align="right">1555</td><td align="left">__cil_tmp6 = (long)jiffies;</td></tr><tr><td align="right">1556</td><td align="left">__cil_tmp7 = (unsigned long)rxts;</td></tr><tr><td align="right">1557</td><td align="left">__cil_tmp8 = __cil_tmp7 + 16;</td></tr><tr><td align="right">1558</td><td align="left">__cil_tmp9 = *((unsigned long *)__cil_tmp8);</td></tr><tr><td align="right">1559</td><td align="left">__cil_tmp10 = (long)__cil_tmp9;</td></tr><tr><td align="right">1560</td><td align="left">__cil_tmp11 = __cil_tmp10 - __cil_tmp6;</td></tr><tr><td align="right">1561</td><td align="left">return __cil_tmp11 &lt; 0L;</td></tr></table>>]
+1549 -> 1547[label=""]
+1548 -> 1549 [label="Function start dummy edge" fontname="Courier New"]
+}

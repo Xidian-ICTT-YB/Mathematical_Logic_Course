@@ -1,0 +1,65 @@
+2026-10-16 02:00:16,020 - INFO - Unable to find pqos_wrapper, please install it for cache allocation and monitoring if your CPU supports Intel RDT (cf. https://gitlab.com/sosy-lab/software/pqos-wrapper).
+
+executing run set 'PredicateAbstraction.drivers50'     (50 files)
+02:00:16   ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--misc--sisusbvga--sisusbvga.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c                    TIMEOUT                    903.83  735.00
+02:12:31   ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c                                                                     ERROR (recursion)            8.90    5.90
+02:12:37   ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-43_2a-drivers--media--i2c--cx25840--cx25840.ko-entry_point_true-unreach-call.cil.out.c                                                TIMEOUT                    908.03  891.39
+02:27:28   ldv-commit-tester/m0_true-unreach-call_drivers-media-video-cx88-cx8802-ko--32_7a--d47b389.c                                                                                  ERROR (recursion)            5.02    2.76
+02:27:31   ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--input--joystick--stinger.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c    true                         3.00    1.83
+02:27:33   ldv-linux-3.0/module_get_put-drivers-hwmon-it87.ko_true-unreach-call.cil.out.i.pp.i                                                                                          true                        55.95   52.85
+02:28:26   ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--staging--media--solo6x10--solo6x10.ko-entry_point_true-unreach-call.cil.out.c                      TIMEOUT                    911.85  901.97
+02:43:28   ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c                                                       ERROR (recursion)            5.06    2.88
+02:43:31   ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--infiniband--hw--mthca--ib_mthca.ko-main.cil.out.c                                                      TIMEOUT                    903.29  885.77
+02:58:17   ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-43_2a-drivers--net--xen-netfront.ko-entry_point_true-unreach-call.cil.out.c                                                           true                        33.64   25.95
+02:58:43   ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-32_7a-drivers--video--via--viafb.ko-ldv_main12_sequence_infinite_withcheck_stateful.cil.out.c                   TIMEOUT                    931.95  594.40
+03:08:38   ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--mpt2sas--mpt2sas.ko-ldv_main4_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c                             ERROR (recursion)            7.90    4.27
+03:08:42   ldv-commit-tester/m0_true-unreach-call_drivers-net-myri10ge-myri10ge-ko--138_1a--7cb2521.c                                                                                   TIMEOUT                   1001.48  522.40
+03:17:25   ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--wireless--ti--wlcore--wlcore_spi.ko-entry_point_true-unreach-call.cil.out.c                                    true                         4.50    2.74
+03:17:27   ldv-linux-3.16-rc1/205_9a_array_safes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--caif--caif_virtio.ko-entry_point_true-unreach-call.cil.out.c                                ERROR (recursion)            4.47    2.50
+03:17:30   ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--usb--dwc3--dwc3-pci.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c           true                         2.60    1.49
+03:17:32   ldv-linux-3.0/usb_urb-drivers-mtd-sm_ftl.ko_true-unreach-call.cil.out.i.pp.i                                                                                                 ERROR (recursion)            3.64    2.01
+03:17:34   ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-43_2a-drivers--net--ethernet--dec--tulip--uli526x.ko-entry_point_true-unreach-call.cil.out.c                                          true                        13.05    7.84
+03:17:42   ldv-linux-3.0/usb_urb-drivers-video-arkfb.ko_true-unreach-call.cil.out.i.pp.i                                                                                                ERROR                        3.80    2.14
+03:17:44   ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--media--usb--pvrusb2--pvrusb2.ko-entry_point_true-unreach-call.cil.out.c                            TIMEOUT                    901.56  887.70
+03:32:32   ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--net--phy--dp83640.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c               false                       14.75   12.17
+03:32:44   ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_false-unreach-call.cil.out.c                                                    ERROR (recursion)            6.05    3.23
+03:32:48   ldv-linux-3.16-rc1/205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--ethernet--qlogic--qlge--qlge.ko-entry_point_false-unreach-call.cil.out.c                  OUT OF JAVA MEMORY         599.54  330.47
+03:38:18   ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c                                                                                    OUT OF NATIVE MEMORY        18.66   26.14
+03:38:44   ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--ttusb-dec--ttusb_dec.ko-entry_point_false-unreach-call.cil.out.c                                        ERROR (recursion)            6.36    3.94
+03:38:48   ldv-validator-v0.6/linux-stable-431e8d4-1-102_1a-drivers--net--r8169.ko-entry_point_false-unreach-call.cil.out.c                                                             ERROR (recursion)            5.55    3.02
+03:38:52   ldv-commit-tester/main0_false-unreach-call_drivers-net-wireless-ath-carl9170-carl9170-ko--32_7a--8a9f335-1.c                                                                 SEGMENTATION FAULT         687.53  720.67
+03:50:52   ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main11_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c                               ERROR                       10.47    5.48
+03:50:58   ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-drivers--gpu--drm--vmwgfx--vmwgfx.ko-ldv_main2_sequence_infinite_withcheck_stateful.cil.out.c            ERROR (recursion)           42.43   38.23
+03:51:36   ldv-validator-v0.8/linux-stable-a9e7fb5-1-32_7a-drivers--media--rc--imon.ko-entry_point_ldv-val-v0.8_false-unreach-call.cil.out.c                                            TIMEOUT                    901.01  881.93
+04:06:18   ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-kernel--locking--locktorture.ko-entry_point_true-unreach-call.cil.out.c                                     true                       186.22  181.98
+04:09:21   ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main1_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c                                 ERROR                        9.63    5.13
+04:09:26   ldv-commit-tester/m0_true-unreach-call_drivers-media-video-cx88-cx88-blackbird-ko--32_7a--d47b389-1.c                                                                        true                        93.19   83.19
+04:10:49   ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--mtd--mtdoops.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c                  true                         3.12    1.77
+04:10:51   ldv-linux-3.0/module_get_put-drivers-char-ipmi-ipmi_watchdog.ko_true-unreach-call.cil.out.i.pp.i                                                                             ERROR (recursion)            3.76    2.10
+04:10:53   ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c                                        true                         8.26    4.84
+04:10:58   ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-43_2a-drivers--usb--host--fusbh200-hcd.ko-entry_point_true-unreach-call.cil.out.c                                                     TIMEOUT                    901.82  886.12
+04:25:45   ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-32_7a-drivers--block--paride--pg.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c                    true                        43.50   36.24
+04:26:21   ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-32_7a-drivers--net--wireless--ath--ath5k--ath5k.ko-ldv_main16_sequence_infinite_withcheck_stateful.cil.out.c    TIMEOUT                    901.43  888.69
+04:41:10   ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--ata--sata_sx4.ko-entry_point_true-unreach-call.cil.out.c                                           true                         6.90    4.21
+04:41:14   ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c                                         ERROR (recursion)            6.62    3.53
+04:41:18   ldv-linux-3.0/usb_urb-drivers-uwb-i1480-dfu-i1480-dfu-usb.ko_true-unreach-call.cil.out.i.pp.i                                                                                ERROR (recursion)           21.01   12.16
+04:41:30   ldv-commit-tester/m0_true-unreach-call_drivers-hwmon-s3c-hwmon-ko--130_7a--af3071a.c                                                                                         TIMEOUT                    900.54  893.70
+04:56:24   ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--infiniband--hw--mlx5--mlx5_ib.ko-entry_point_true-unreach-call.cil.out.c                                               ERROR (recursion)            7.37    3.88
+04:56:28   ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--can--usb--esd_usb2.ko-entry_point_true-unreach-call.cil.out.c                                                  ERROR (recursion)            3.83    2.10
+04:56:30   ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--broadcom--bnx2x--bnx2x.ko-ldv_main3_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c             TIMEOUT                    903.12  891.19
+05:11:21   ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--smsc95xx.ko-entry_point_false-unreach-call.cil.out.c                                                      OUT OF MEMORY              710.73  690.86
+05:22:53   ldv-validator-v0.6/linux-stable-4a349aa-1-32_7a-drivers--media--video--tlg2300--poseidon.ko-entry_point_false-unreach-call.cil.out.c                                         ERROR (recursion)           43.04   35.12
+05:23:28   ldv-linux-3.16-rc1/43_2a_bitvector_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--gadget--pch_udc.ko-entry_point_false-unreach-call.cil.out.c                                     ERROR (recursion)            4.13    2.30
+05:23:31   ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--gpu--drm--vmwgfx--vmwgfx.ko-main.cil.out.c                                                            ERROR (recursion)            7.78    4.21
+
+Statistics:             50 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:              37
+
+In order to get HTML and CSV tables, run
+table-generator /home/zhuihong/smt-project/results/round2-50-900s-20261015-162356/predicate/predicate-50.2026-10-16_02-00-15.results.PredicateAbstraction.drivers50.xml.bz2

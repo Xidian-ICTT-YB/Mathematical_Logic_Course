@@ -1,0 +1,12 @@
+digraph spin_unlock_irqrestore {
+124 [shape="circle" label="N124\n10"]
+125 [shape="circle" label="N125\n9"]
+127 [shape="doubleoctagon" label="N127\n7"]
+128 [shape="circle" label="N128\n6"]
+125 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">125</td><td align="left">struct raw_spinlock *__cil_tmp5;</td></tr><tr><td align="right">126</td><td align="left">while</td></tr></table>>]
+125 -> 127[label=""]
+128 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">128</td><td align="left">Label: while_continue</td></tr><tr><td align="right">130</td><td align="left">__cil_tmp5 = (struct raw_spinlock *)lock;</td></tr><tr><td align="right">131</td><td align="left">_raw_spin_unlock_irqrestore(__cil_tmp5, flags);</td></tr><tr><td align="right">132</td><td align="left">Goto: while_break</td></tr><tr><td align="right">134</td><td align="left">Label: while_break</td></tr><tr><td align="right">135</td><td align="left">return;</td></tr></table>>]
+128 -> 123[label=""]
+124 -> 125 [label="Function start dummy edge" fontname="Courier New"]
+127 -> 128 [label="" fontname="Courier New"]
+}

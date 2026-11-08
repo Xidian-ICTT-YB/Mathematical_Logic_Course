@@ -1,0 +1,15 @@
+digraph spin_lock {
+888 [shape="circle" label="N888\n4"]
+889 [shape="circle" label="N889\n3"]
+890 [shape="circle" label="N890\n2"]
+891 [shape="circle" label="N891\n1"]
+887 [shape="circle" label="N887\n0"]
+888 -> 889 [label="Function start dummy edge" fontname="Courier New"]
+100035 [shape="component" label="ldv_spin_lock"]
+889 -> 100035 [label="ldv_spin_lock();" fontname="Courier New"]
+100035 -> 890 [label="" fontname="Courier New"]
+100036 [shape="component" label="ldv_spin_lock_1"]
+890 -> 100036 [label="ldv_spin_lock_1(lock);" fontname="Courier New"]
+100036 -> 891 [label="" fontname="Courier New"]
+891 -> 887 [label="return;" fontname="Courier New"]
+}

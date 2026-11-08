@@ -1,0 +1,14 @@
+digraph dp83640_clock_put {
+3300 [shape="circle" label="N3300\n9"]
+3301 [shape="circle" label="N3301\n8"]
+3307 [shape="circle" label="N3307\n2"]
+3308 [shape="circle" label="N3308\n1"]
+3299 [shape="circle" label="N3299\n0"]
+3301 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">3301</td><td align="left">unsigned long __cil_tmp2;</td></tr><tr><td align="right">3302</td><td align="left">unsigned long __cil_tmp3;</td></tr><tr><td align="right">3303</td><td align="left">struct mutex *__cil_tmp4;</td></tr><tr><td align="right">3304</td><td align="left">__cil_tmp2 = (unsigned long)clock;</td></tr><tr><td align="right">3305</td><td align="left">__cil_tmp3 = __cil_tmp2 + 192;</td></tr><tr><td align="right">3306</td><td align="left">__cil_tmp4 = (struct mutex *)__cil_tmp3;</td></tr></table>>]
+3301 -> 3307[label=""]
+3300 -> 3301 [label="Function start dummy edge" fontname="Courier New"]
+100034 [shape="component" label="mutex_unlock"]
+3307 -> 100034 [label="mutex_unlock(__cil_tmp4);" fontname="Courier New"]
+100034 -> 3308 [label="" fontname="Courier New"]
+3308 -> 3299 [label="return;" fontname="Courier New"]
+}

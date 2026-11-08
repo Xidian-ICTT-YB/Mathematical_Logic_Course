@@ -1,0 +1,7 @@
+digraph div_u64_rem {
+38 [shape="circle" label="N38\n9"]
+39 [shape="circle" label="N39\n8"]
+39 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">39</td><td align="left">unsigned long long __cil_tmp4;</td></tr><tr><td align="right">40</td><td align="left">unsigned long long __cil_tmp5;</td></tr><tr><td align="right">41</td><td align="left">unsigned long long __cil_tmp6;</td></tr><tr><td align="right">42</td><td align="left">__cil_tmp4 = (unsigned long long)divisor;</td></tr><tr><td align="right">43</td><td align="left">__cil_tmp5 = dividend % __cil_tmp4;</td></tr><tr><td align="right">44</td><td align="left">*remainder = (u32 )__cil_tmp5;</td></tr><tr><td align="right">45</td><td align="left">__cil_tmp6 = (u64 )divisor;</td></tr><tr><td align="right">46</td><td align="left">return dividend / __cil_tmp6;</td></tr></table>>]
+39 -> 37[label=""]
+38 -> 39 [label="Function start dummy edge" fontname="Courier New"]
+}

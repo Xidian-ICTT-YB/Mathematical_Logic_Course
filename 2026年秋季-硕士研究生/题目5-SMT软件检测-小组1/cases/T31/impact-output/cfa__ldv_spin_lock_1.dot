@@ -1,0 +1,7 @@
+digraph ldv_spin_lock_1 {
+49 [shape="circle" label="N49\n3"]
+50 [shape="circle" label="N50\n2"]
+50 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">50</td><td align="left">_raw_spin_lock(&amp;(lock-&gt;ldv_6347.rlock));</td></tr><tr><td align="right">51</td><td align="left">return;</td></tr></table>>]
+50 -> 48[label=""]
+49 -> 50 [label="Function start dummy edge" fontname="Courier New"]
+}

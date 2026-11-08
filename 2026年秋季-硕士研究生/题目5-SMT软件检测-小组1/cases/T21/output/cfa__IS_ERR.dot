@@ -1,0 +1,14 @@
+digraph IS_ERR {
+60 [shape="circle" label="N60\n14"]
+61 [shape="circle" label="N61\n13"]
+72 [shape="circle" label="N72\n2"]
+73 [shape="circle" label="N73\n1"]
+59 [shape="circle" label="N59\n0"]
+61 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">61</td><td align="left">long tmp;</td></tr><tr><td align="right">62</td><td align="left">unsigned long __cil_tmp3;</td></tr><tr><td align="right">63</td><td align="left">int __cil_tmp4;</td></tr><tr><td align="right">64</td><td align="left">int __cil_tmp5;</td></tr><tr><td align="right">65</td><td align="left">int __cil_tmp6;</td></tr><tr><td align="right">66</td><td align="left">long __cil_tmp7;</td></tr><tr><td align="right">67</td><td align="left">__cil_tmp3 = (unsigned long)ptr;</td></tr><tr><td align="right">68</td><td align="left">__cil_tmp4 = __cil_tmp3 &gt;= 18446744073709547521UL;</td></tr><tr><td align="right">69</td><td align="left">__cil_tmp5 = 0 == __cil_tmp4;</td></tr><tr><td align="right">70</td><td align="left">__cil_tmp6 = 0 == __cil_tmp5;</td></tr><tr><td align="right">71</td><td align="left">__cil_tmp7 = (long)__cil_tmp6;</td></tr></table>>]
+61 -> 72[label=""]
+60 -> 61 [label="Function start dummy edge" fontname="Courier New"]
+100193 [shape="component" label="ldv__builtin_expect"]
+72 -> 100193 [label="tmp = ldv__builtin_expect(__cil_tmp7, 0L);" fontname="Courier New"]
+100193 -> 73 [label="" fontname="Courier New"]
+73 -> 59 [label="return tmp;" fontname="Courier New"]
+}

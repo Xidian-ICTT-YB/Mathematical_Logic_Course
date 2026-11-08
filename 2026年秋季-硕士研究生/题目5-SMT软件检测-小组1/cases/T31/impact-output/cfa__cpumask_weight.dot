@@ -1,0 +1,13 @@
+digraph cpumask_weight {
+34 [shape="circle" label="N34\n4"]
+35 [shape="circle" label="N35\n3"]
+36 [shape="circle" label="N36\n2"]
+37 [shape="circle" label="N37\n1"]
+33 [shape="circle" label="N33\n0"]
+34 -> 35 [label="Function start dummy edge" fontname="Courier New"]
+100034 [shape="component" label="bitmap_weight"]
+36 -> 100034 [label="tmp = bitmap_weight((const unsigned long *)(&(srcp->bits)), nr_cpu_ids);" fontname="Courier New"]
+100034 -> 37 [label="" fontname="Courier New"]
+35 -> 36 [label="int tmp;" fontname="Courier New"]
+37 -> 33 [label="return (unsigned int)tmp;" fontname="Courier New"]
+}

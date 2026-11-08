@@ -1,0 +1,13 @@
+digraph init_module {
+4564 [shape="circle" label="N4564\n4"]
+4565 [shape="circle" label="N4565\n3"]
+4566 [shape="circle" label="N4566\n2"]
+4567 [shape="circle" label="N4567\n1"]
+4563 [shape="circle" label="N4563\n0"]
+4564 -> 4565 [label="Function start dummy edge" fontname="Courier New"]
+100084 [shape="component" label="dp83640_init"]
+4566 -> 100084 [label="tmp___7 = dp83640_init();" fontname="Courier New"]
+100084 -> 4567 [label="" fontname="Courier New"]
+4565 -> 4566 [label="int tmp___7;" fontname="Courier New"]
+4567 -> 4563 [label="return tmp___7;" fontname="Courier New"]
+}

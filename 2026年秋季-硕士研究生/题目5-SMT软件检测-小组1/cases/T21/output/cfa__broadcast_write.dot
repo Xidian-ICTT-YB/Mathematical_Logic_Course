@@ -1,0 +1,7 @@
+digraph broadcast_write {
+387 [shape="circle" label="N387\n4"]
+388 [shape="circle" label="N388\n3"]
+388 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">388</td><td align="left">int tmp___7;</td></tr><tr><td align="right">389</td><td align="left">tmp___7 = mdiobus_write(bus, 31, regnum, val);</td></tr><tr><td align="right">390</td><td align="left">return tmp___7;</td></tr></table>>]
+388 -> 386[label=""]
+387 -> 388 [label="Function start dummy edge" fontname="Courier New"]
+}

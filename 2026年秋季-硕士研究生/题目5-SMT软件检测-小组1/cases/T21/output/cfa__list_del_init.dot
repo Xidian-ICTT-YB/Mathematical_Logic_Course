@@ -1,0 +1,13 @@
+digraph list_del_init {
+104 [shape="circle" label="N104\n4"]
+105 [shape="circle" label="N105\n3"]
+106 [shape="circle" label="N106\n2"]
+107 [shape="circle" label="N107\n1"]
+103 [shape="circle" label="N103\n0"]
+104 -> 105 [label="Function start dummy edge" fontname="Courier New"]
+100085 [shape="component" label="INIT_LIST_HEAD"]
+106 -> 100085 [label="INIT_LIST_HEAD(entry);" fontname="Courier New"]
+100085 -> 107 [label="" fontname="Courier New"]
+105 -> 106 [label="__list_del_entry(entry);" fontname="Courier New"]
+107 -> 103 [label="return;" fontname="Courier New"]
+}

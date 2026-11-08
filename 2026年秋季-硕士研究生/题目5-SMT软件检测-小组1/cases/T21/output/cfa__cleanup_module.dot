@@ -1,0 +1,11 @@
+digraph cleanup_module {
+4570 [shape="circle" label="N4570\n3"]
+4571 [shape="circle" label="N4571\n2"]
+4572 [shape="circle" label="N4572\n1"]
+4569 [shape="circle" label="N4569\n0"]
+4570 -> 4571 [label="Function start dummy edge" fontname="Courier New"]
+100051 [shape="component" label="dp83640_exit"]
+4571 -> 100051 [label="dp83640_exit();" fontname="Courier New"]
+100051 -> 4572 [label="" fontname="Courier New"]
+4572 -> 4569 [label="return;" fontname="Courier New"]
+}

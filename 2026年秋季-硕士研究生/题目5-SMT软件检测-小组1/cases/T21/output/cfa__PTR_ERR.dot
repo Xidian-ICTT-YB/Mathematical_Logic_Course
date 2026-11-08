@@ -1,0 +1,7 @@
+digraph PTR_ERR {
+56 [shape="circle" label="N56\n2"]
+57 [shape="circle" label="N57\n1"]
+55 [shape="circle" label="N55\n0"]
+56 -> 57 [label="Function start dummy edge" fontname="Courier New"]
+57 -> 55 [label="return (long)ptr;" fontname="Courier New"]
+}

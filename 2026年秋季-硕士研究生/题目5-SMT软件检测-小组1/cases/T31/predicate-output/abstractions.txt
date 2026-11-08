@@ -1,0 +1,40 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun ldv_spin () (_ BitVec 32))
+(declare-fun ldv_state_variable_1 () (_ BitVec 32))
+(declare-fun ldv_state_variable_2 () (_ BitVec 32))
+(declare-fun ldv_state_variable_3 () (_ BitVec 32))
+(declare-fun writer_tasks () (_ BitVec 64))
+
+552 (561,563,553,583) @637:
+(assert (let ((.def_11455 (= writer_tasks (_ bv0 64))))(let ((.def_6371 (= ldv_state_variable_3 (_ bv0 32))))(let ((.def_11460 (and .def_6371 .def_11455)))(let ((.def_4730 (= ldv_state_variable_2 (_ bv0 32))))(let ((.def_11461 (and .def_4730 .def_11460)))(let ((.def_4727 (= ldv_state_variable_1 (_ bv0 32))))(let ((.def_11462 (and .def_4727 .def_11461)))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_11463 (and .def_1638 .def_11462))).def_11463))))))))))
+
+563 (564,573) @477:
+(assert (let ((.def_11455 (= writer_tasks (_ bv0 64))))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_11482 (and .def_1638 .def_11455))).def_11482))))
+
+574 () @494:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+
+583 () @637:
+(assert (let ((.def_11455 (= writer_tasks (_ bv0 64))))(let ((.def_6371 (= ldv_state_variable_3 (_ bv0 32))))(let ((.def_11460 (and .def_6371 .def_11455)))(let ((.def_4730 (= ldv_state_variable_2 (_ bv0 32))))(let ((.def_11461 (and .def_4730 .def_11460)))(let ((.def_4727 (= ldv_state_variable_1 (_ bv0 32))))(let ((.def_11462 (and .def_4727 .def_11461)))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_11463 (and .def_1638 .def_11462))).def_11463))))))))))
+
+564 () @477:
+(assert (let ((.def_11455 (= writer_tasks (_ bv0 64))))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_11482 (and .def_1638 .def_11455))).def_11482))))
+
+573 (574) @494:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+
+554 () @125:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+
+561 (562) @125:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+
+0 (552) @612:
+(assert true)
+
+562 () @125:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+
+553 (554) @125:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+

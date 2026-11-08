@@ -1,0 +1,7 @@
+digraph phy2txts {
+677 [shape="circle" label="N677\n47"]
+678 [shape="circle" label="N678\n46"]
+678 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 678 and 723"]
+678 -> 676[label=""]
+677 -> 678 [label="Function start dummy edge" fontname="Courier New"]
+}
