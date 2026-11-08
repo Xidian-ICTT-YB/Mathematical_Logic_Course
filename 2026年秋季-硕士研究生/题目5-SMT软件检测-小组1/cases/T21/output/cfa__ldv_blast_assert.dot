@@ -1,0 +1,7 @@
+digraph ldv_blast_assert {
+4675 [shape="circle" label="N4675\n4"]
+4676 [shape="circle" label="N4676\n3"]
+4676 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4676</td><td align="left">Label: ERROR</td></tr><tr><td align="right">4677</td><td align="left">__VERIFIER_error();</td></tr><tr><td align="right">4678</td><td align="left">default return</td></tr></table>>]
+4676 -> 4674[label=""]
+4675 -> 4676 [label="Function start dummy edge" fontname="Courier New"]
+}

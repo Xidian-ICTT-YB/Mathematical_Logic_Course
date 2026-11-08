@@ -1,0 +1,54 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun ldv_mutex () (_ BitVec 32))
+
+prune_rx_ts N1592:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3970 (not .def_3939)))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_3971 (and .def_3934 .def_3970))).def_3971)))))
+
+recalibrate N1921:
+(assert false)
+
+recalibrate N2003:
+(assert false)
+
+recalibrate N2114:
+(assert false)
+
+recalibrate N2199:
+(assert false)
+
+decode_evnt N2376:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3970 (not .def_3939)))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_3971 (and .def_3934 .def_3970))).def_3971)))))
+
+decode_status_frame N2604:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3970 (not .def_3939)))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_3971 (and .def_3934 .def_3970))).def_3971)))))
+
+dp83640_free_clocks N2967:
+(assert false)
+
+dp83640_free_clocks N2998:
+(assert false)
+
+dp83640_clock_get_bus N3252:
+(assert false)
+
+dp83640_probe N3487:
+(assert false)
+
+dp83640_remove N3703:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3970 (not .def_3939)))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_3971 (and .def_3934 .def_3970))).def_3971)))))
+
+dp83640_remove N3721:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3970 (not .def_3939)))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_3971 (and .def_3934 .def_3970))).def_3971)))))
+
+dp83640_remove N3765:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_7050 (or .def_3934 .def_3939)))(let ((.def_7048 (not .def_3934)))(let ((.def_3970 (not .def_3939)))(let ((.def_7049 (or .def_3970 .def_7048)))(let ((.def_7051 (and .def_7049 .def_7050))).def_7051))))))))
+
+rx_timestamp_work N4307:
+(assert false)
+
+rx_timestamp_work N4352:
+(assert false)
+
+main N4595:
+(assert (let ((.def_3939 (= ldv_mutex (_ bv2 32))))(let ((.def_3970 (not .def_3939)))(let ((.def_3934 (= ldv_mutex (_ bv1 32))))(let ((.def_3971 (and .def_3934 .def_3970))).def_3971)))))
+

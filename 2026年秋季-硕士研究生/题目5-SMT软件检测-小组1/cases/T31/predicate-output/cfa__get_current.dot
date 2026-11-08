@@ -1,0 +1,7 @@
+digraph get_current {
+1 [shape="circle" label="N1\n7"]
+2 [shape="circle" label="N2\n6"]
+2 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">2</td><td align="left">struct task_struct *pfo_ret__;</td></tr><tr><td align="right">3</td><td align="left">switch (8UL)</td></tr><tr><td align="right">4</td><td align="left">__case__[8UL == 8UL]</td></tr><tr><td align="right">19</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">21</td><td align="left">Goto: ldv_3067</td></tr><tr><td align="right">25</td><td align="left">return pfo_ret__;</td></tr></table>>]
+2 -> 0[label=""]
+1 -> 2 [label="Function start dummy edge" fontname="Courier New"]
+}

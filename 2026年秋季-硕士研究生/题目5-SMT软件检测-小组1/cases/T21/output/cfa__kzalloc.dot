@@ -1,0 +1,14 @@
+digraph kzalloc {
+154 [shape="circle" label="N154\n6"]
+155 [shape="circle" label="N155\n5"]
+158 [shape="circle" label="N158\n2"]
+159 [shape="circle" label="N159\n1"]
+153 [shape="circle" label="N153\n0"]
+155 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">155</td><td align="left">void *tmp___7;</td></tr><tr><td align="right">156</td><td align="left">unsigned int __cil_tmp4;</td></tr><tr><td align="right">157</td><td align="left">__cil_tmp4 = flags &amp;#124; 32768U;</td></tr></table>>]
+155 -> 158[label=""]
+154 -> 155 [label="Function start dummy edge" fontname="Courier New"]
+100093 [shape="component" label="kmalloc"]
+158 -> 100093 [label="tmp___7 = kmalloc(size, __cil_tmp4);" fontname="Courier New"]
+100093 -> 159 [label="" fontname="Courier New"]
+159 -> 153 [label="return tmp___7;" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph exts_chan_to_edata {
+2239 [shape="circle" label="N2239\n8"]
+2240 [shape="circle" label="N2240\n7"]
+2240 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">2240</td><td align="left">int __cil_tmp2;</td></tr><tr><td align="right">2241</td><td align="left">int __cil_tmp3;</td></tr><tr><td align="right">2242</td><td align="left">int __cil_tmp4;</td></tr><tr><td align="right">2243</td><td align="left">__cil_tmp2 = ch + 1;</td></tr><tr><td align="right">2244</td><td align="left">__cil_tmp3 = __cil_tmp2 * 2;</td></tr><tr><td align="right">2245</td><td align="left">__cil_tmp4 = 1 &lt;&lt; __cil_tmp3;</td></tr><tr><td align="right">2246</td><td align="left">return (u16 )__cil_tmp4;</td></tr></table>>]
+2240 -> 2238[label=""]
+2239 -> 2240 [label="Function start dummy edge" fontname="Courier New"]
+}

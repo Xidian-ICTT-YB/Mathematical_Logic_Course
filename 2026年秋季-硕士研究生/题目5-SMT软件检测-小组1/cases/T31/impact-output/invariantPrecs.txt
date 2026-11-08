@@ -1,0 +1,44 @@
+(set-info :source |printed by MathSAT|)
+(declare-fun ldv_spin () (_ BitVec 32))
+(declare-fun ldv_state_variable_1 () (_ BitVec 32))
+(declare-fun ldv_state_variable_2 () (_ BitVec 32))
+(declare-fun writer_tasks () (_ BitVec 64))
+(declare-fun ldv_state_variable_0 () (_ BitVec 32))
+(declare-fun |torture_lock_busted_write_delay::__ms| () (_ BitVec 64))
+
+ldv_stop N125:
+(assert true)
+
+torture_lock_busted_write_delay N157:
+(assert (let ((.def_5640 (= ldv_state_variable_0 (_ bv1 32))))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_5641 (and .def_1638 .def_5640)))(let ((.def_4948 (= ldv_state_variable_1 (_ bv0 32))))(let ((.def_5709 (and .def_4948 .def_5641)))(let ((.def_4983 (= writer_tasks (_ bv0 64))))(let ((.def_4951 (= ldv_state_variable_2 (_ bv0 32))))(let ((.def_5411 (and .def_4951 .def_4983)))(let ((.def_5710 (and .def_5411 .def_5709)))(let ((.def_4949 (and .def_1638 .def_4948)))(let ((.def_5426 (and .def_4949 .def_4983)))(let ((.def_5427 (and .def_4951 .def_5426)))(let ((.def_5430 (and .def_1638 .def_5427)))(let ((.def_5713 (and .def_5430 .def_5710)))(let ((.def_5694 (and .def_4948 .def_5411)))(let ((.def_5695 (and .def_1638 .def_5694)))(let ((.def_5696 (and .def_5640 .def_5695)))(let ((.def_5412 (and .def_1638 .def_5411)))(let ((.def_5413 (and .def_4948 .def_5412)))(let ((.def_5416 (and .def_1638 .def_5413)))(let ((.def_5699 (and .def_5416 .def_5696)))(let ((.def_6284 (or .def_5699 .def_5713)))(let ((.def_6285 (or .def_5699 .def_6284)))(let ((.def_6286 (or .def_5713 .def_6285)))(let ((.def_6085 (and .def_1638 .def_4951)))(let ((.def_6086 (and .def_5640 .def_6085)))(let ((.def_6087 (and .def_4948 .def_6086)))(let ((.def_6088 (not .def_6087)))(let ((.def_6081 (and .def_4948 .def_5640)))(let ((.def_6082 (and .def_4951 .def_6081)))(let ((.def_6083 (and .def_1638 .def_6082)))(let ((.def_6084 (not .def_6083)))(let ((.def_6089 (and .def_6084 .def_6088)))(let ((.def_6078 (and .def_4949 .def_5640)))(let ((.def_6079 (and .def_4951 .def_6078)))(let ((.def_6080 (not .def_6079)))(let ((.def_6090 (and .def_6080 .def_6089)))(let ((.def_6091 (not .def_6090)))(let ((.def_6092 (and .def_4983 .def_6091)))(let ((.def_6291 (or .def_6092 .def_6286)))(let ((.def_6292 (or .def_6092 .def_6291)))(let ((.def_6021 (= |torture_lock_busted_write_delay::__ms| (_ bv0 64))))(let ((.def_6022 (not .def_6021)))(let ((.def_6273 (and .def_6022 .def_6092)))(let ((.def_6293 (or .def_6273 .def_6292)))(let ((.def_6294 (or .def_6092 .def_6293)))(let ((.def_6297 (or .def_6092 .def_6294))).def_6297))))))))))))))))))))))))))))))))))))))))))))))))
+
+torture_spin_lock_write_delay N194:
+(assert false)
+
+lock_torture_writer N249:
+(assert false)
+
+lock_torture_printk N328:
+(assert false)
+
+lock_torture_stats N377:
+(assert false)
+
+lock_torture_cleanup N419:
+(assert (let ((.def_1638 (= ldv_spin (_ bv0 32)))).def_1638))
+
+lock_torture_init N477:
+(assert (let ((.def_4983 (= writer_tasks (_ bv0 64))))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_4991 (and .def_1638 .def_4983)))(let ((.def_5445 (and .def_1638 .def_4991)))(let ((.def_6287 (or .def_4991 .def_5445)))(let ((.def_6295 (or .def_4991 .def_6287)))(let ((.def_6296 (or .def_4991 .def_6295))).def_6296))))))))
+
+lock_torture_init N494:
+(assert true)
+
+lock_torture_init N533:
+(assert false)
+
+lock_torture_init N591:
+(assert false)
+
+main N637:
+(assert (let ((.def_4983 (= writer_tasks (_ bv0 64))))(let ((.def_4951 (= ldv_state_variable_2 (_ bv0 32))))(let ((.def_5411 (and .def_4951 .def_4983)))(let ((.def_4948 (= ldv_state_variable_1 (_ bv0 32))))(let ((.def_5694 (and .def_4948 .def_5411)))(let ((.def_1638 (= ldv_spin (_ bv0 32))))(let ((.def_5695 (and .def_1638 .def_5694)))(let ((.def_5640 (= ldv_state_variable_0 (_ bv1 32))))(let ((.def_5696 (and .def_5640 .def_5695)))(let ((.def_5412 (and .def_1638 .def_5411)))(let ((.def_5413 (and .def_4948 .def_5412)))(let ((.def_5416 (and .def_1638 .def_5413)))(let ((.def_5699 (and .def_5416 .def_5696)))(let ((.def_5641 (and .def_1638 .def_5640)))(let ((.def_4949 (and .def_1638 .def_4948)))(let ((.def_4952 (and .def_4949 .def_4951)))(let ((.def_4955 (and .def_1638 .def_4952)))(let ((.def_4987 (and .def_4955 .def_4983)))(let ((.def_5644 (and .def_4987 .def_5641)))(let ((.def_6288 (or .def_5644 .def_5699)))(let ((.def_6289 (or .def_5699 .def_6288)))(let ((.def_6085 (and .def_1638 .def_4951)))(let ((.def_6086 (and .def_5640 .def_6085)))(let ((.def_6087 (and .def_4948 .def_6086)))(let ((.def_6088 (not .def_6087)))(let ((.def_6081 (and .def_4948 .def_5640)))(let ((.def_6082 (and .def_4951 .def_6081)))(let ((.def_6083 (and .def_1638 .def_6082)))(let ((.def_6084 (not .def_6083)))(let ((.def_6089 (and .def_6084 .def_6088)))(let ((.def_6078 (and .def_4949 .def_5640)))(let ((.def_6079 (and .def_4951 .def_6078)))(let ((.def_6080 (not .def_6079)))(let ((.def_6090 (and .def_6080 .def_6089)))(let ((.def_6091 (not .def_6090)))(let ((.def_6092 (and .def_4983 .def_6091)))(let ((.def_6046 (= ldv_state_variable_2 (_ bv2 32))))(let ((.def_6047 (not .def_6046)))(let ((.def_6006 (= ldv_state_variable_2 (_ bv1 32))))(let ((.def_6007 (not .def_6006)))(let ((.def_4991 (and .def_1638 .def_4983)))(let ((.def_6010 (and .def_4991 .def_6007)))(let ((.def_6050 (and .def_6010 .def_6047)))(let ((.def_6095 (and .def_6050 .def_6092)))(let ((.def_6290 (or .def_6095 .def_6289)))(let ((.def_6298 (or .def_6092 .def_6290)))(let ((.def_6260 (and .def_6084 .def_6090)))(let ((.def_6261 (not .def_6260)))(let ((.def_6262 (and .def_4983 .def_6261)))(let ((.def_6299 (or .def_6262 .def_6298)))(let ((.def_6300 (or .def_6092 .def_6299))).def_6300))))))))))))))))))))))))))))))))))))))))))))))))))))
+

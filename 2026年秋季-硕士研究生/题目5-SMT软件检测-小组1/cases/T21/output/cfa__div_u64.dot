@@ -1,0 +1,11 @@
+digraph div_u64 {
+52 [shape="circle" label="N52\n2"]
+53 [shape="circle" label="N53\n1"]
+48 [shape="circle" label="N48\n0"]
+49 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">49</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">50</td><td align="left">unsigned int remainder;</td></tr><tr><td align="right">51</td><td align="left">unsigned long long tmp;</td></tr></table>>]
+49 -> 52[label=""]
+100005 [shape="component" label="div_u64_rem"]
+52 -> 100005 [label="tmp = div_u64_rem(dividend, divisor, &remainder);" fontname="Courier New"]
+100005 -> 53 [label="" fontname="Courier New"]
+53 -> 48 [label="return tmp;" fontname="Courier New"]
+}

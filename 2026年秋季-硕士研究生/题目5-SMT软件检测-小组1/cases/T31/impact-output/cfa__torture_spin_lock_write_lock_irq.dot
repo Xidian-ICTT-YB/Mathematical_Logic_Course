@@ -1,0 +1,13 @@
+digraph torture_spin_lock_write_lock_irq {
+213 [shape="circle" label="N213\n5"]
+214 [shape="circle" label="N214\n4"]
+215 [shape="circle" label="N215\n3"]
+216 [shape="circle" label="N216\n2"]
+216 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">216</td><td align="left">cur_ops-&gt;flags = flags;</td></tr><tr><td align="right">217</td><td align="left">return 0;</td></tr></table>>]
+216 -> 212[label=""]
+213 -> 214 [label="Function start dummy edge" fontname="Courier New"]
+100061 [shape="component" label="ldv_spin_lock"]
+215 -> 100061 [label="ldv_spin_lock();" fontname="Courier New"]
+100061 -> 216 [label="" fontname="Courier New"]
+214 -> 215 [label="unsigned long flags;" fontname="Courier New"]
+}

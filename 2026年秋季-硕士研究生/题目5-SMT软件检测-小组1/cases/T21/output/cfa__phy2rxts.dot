@@ -1,0 +1,7 @@
+digraph phy2rxts {
+555 [shape="circle" label="N555\n120"]
+556 [shape="circle" label="N556\n119"]
+556 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 556 and 674"]
+556 -> 554[label=""]
+555 -> 556 [label="Function start dummy edge" fontname="Courier New"]
+}

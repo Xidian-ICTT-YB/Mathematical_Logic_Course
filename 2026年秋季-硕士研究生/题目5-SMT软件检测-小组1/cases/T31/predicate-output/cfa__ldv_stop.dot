@@ -1,0 +1,8 @@
+digraph ldv_stop {
+123 [shape="circle" label="N123\n2"]
+124 [shape="circle" label="N124\n1"]
+125 [shape="doublecircle" label="N125\n0"]
+123 -> 124 [label="Function start dummy edge" fontname="Courier New"]
+125 -> 125 [label="Goto: LDV_STOP" fontname="Courier New"]
+124 -> 125 [label="Label: LDV_STOP" fontname="Courier New"]
+}

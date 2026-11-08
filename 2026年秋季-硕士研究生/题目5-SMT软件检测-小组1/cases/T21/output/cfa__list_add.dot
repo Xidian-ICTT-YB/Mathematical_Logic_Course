@@ -1,0 +1,7 @@
+digraph list_add {
+86 [shape="circle" label="N86\n5"]
+87 [shape="circle" label="N87\n4"]
+87 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">87</td><td align="left">struct list_head *__cil_tmp3;</td></tr><tr><td align="right">88</td><td align="left">__cil_tmp3 = *((struct list_head **)head);</td></tr><tr><td align="right">89</td><td align="left">__list_add(new, head, __cil_tmp3);</td></tr><tr><td align="right">90</td><td align="left">return;</td></tr></table>>]
+87 -> 85[label=""]
+86 -> 87 [label="Function start dummy edge" fontname="Courier New"]
+}

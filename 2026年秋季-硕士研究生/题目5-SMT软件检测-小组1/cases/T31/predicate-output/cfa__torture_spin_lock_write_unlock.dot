@@ -1,0 +1,11 @@
+digraph torture_spin_lock_write_unlock {
+208 [shape="circle" label="N208\n3"]
+209 [shape="circle" label="N209\n2"]
+210 [shape="circle" label="N210\n1"]
+207 [shape="circle" label="N207\n0"]
+208 -> 209 [label="Function start dummy edge" fontname="Courier New"]
+100075 [shape="component" label="spin_unlock"]
+209 -> 100075 [label="spin_unlock(&torture_spinlock);" fontname="Courier New"]
+100075 -> 210 [label="" fontname="Courier New"]
+210 -> 207 [label="return;" fontname="Courier New"]
+}

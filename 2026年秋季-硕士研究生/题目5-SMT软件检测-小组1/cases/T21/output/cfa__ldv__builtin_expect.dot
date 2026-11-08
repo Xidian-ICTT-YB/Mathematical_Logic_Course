@@ -1,0 +1,7 @@
+digraph ldv__builtin_expect {
+4766 [shape="circle" label="N4766\n2"]
+4767 [shape="circle" label="N4767\n1"]
+4765 [shape="circle" label="N4765\n0"]
+4766 -> 4767 [label="Function start dummy edge" fontname="Courier New"]
+4767 -> 4765 [label="return val;" fontname="Courier New"]
+}
