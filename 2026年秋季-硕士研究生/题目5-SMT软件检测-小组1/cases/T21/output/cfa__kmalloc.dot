@@ -1,0 +1,4 @@
+digraph kmalloc {
+148 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">148</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">149</td><td align="left">void *tmp___10;</td></tr><tr><td align="right">150</td><td align="left">tmp___10 = __kmalloc(size, flags);</td></tr><tr><td align="right">151</td><td align="left">return tmp___10;</td></tr></table>>]
+148 -> 147[label=""]
+}

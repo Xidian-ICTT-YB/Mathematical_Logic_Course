@@ -1,0 +1,28 @@
+2026-10-15T16:23:56+08:00
+NAME="Ubuntu"
+VERSION="20.04.6 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.6 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+Linux zhuihong-virtual-machine 5.15.0-139-generic #149~20.04.1-Ubuntu SMP Wed Apr 16 08:29:56 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+openjdk version "1.8.0_452"
+OpenJDK Runtime Environment (build 1.8.0_452-8u452-ga~us1-0ubuntu1~20.04-b09)
+OpenJDK 64-Bit Server VM (build 25.452-b09, mixed mode)
+Python 3.8.10
+benchexec 3.25
+              total        used        free      shared  buff/cache   available
+Mem:          7.7Gi       1.4Gi       4.4Gi       2.0Mi       1.9Gi       6.0Gi
+Swap:         2.0Gi          0B       2.0Gi
+dbb9372541d3c068d970a2b76a92d8fa8f9a9d48
+1414dfa75f893082b7bb0fcdba4bc96a934a60ad3428ce7b852b01517eae230a  /home/zhuihong/smt-project/results/round2-50-900s-20261015-162356/bmc-50.xml
+4ff46b1a37f29f1f07f610f837bcedfe5436a843aa68d9901e5e05a4327d9c79  /home/zhuihong/smt-project/results/round2-50-900s-20261015-162356/impact-50.xml
+7db16d4546cb124ae994f0e965583f9c225af186973d148910a8815acdad300f  /home/zhuihong/smt-project/results/round2-50-900s-20261015-162356/k-induction-50.xml
+5a735a8b11b57aca8a22cf9afdadb1853d073a67947bbd1a3cfb422d4ea73f85  /home/zhuihong/smt-project/results/round2-50-900s-20261015-162356/predicate-50.xml
+0d8978bd7ea9b748004f37d056c213181cccfe4a4457ae812bbb8d0d875c23b2  /home/zhuihong/smt-project/results/round2-50-900s-20261015-162356/tasks.csv

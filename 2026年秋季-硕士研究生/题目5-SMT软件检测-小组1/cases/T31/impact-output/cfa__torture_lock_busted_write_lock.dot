@@ -1,0 +1,7 @@
+digraph torture_lock_busted_write_lock {
+137 [shape="circle" label="N137\n2"]
+138 [shape="circle" label="N138\n1"]
+136 [shape="circle" label="N136\n0"]
+137 -> 138 [label="Function start dummy edge" fontname="Courier New"]
+138 -> 136 [label="return 0;" fontname="Courier New"]
+}

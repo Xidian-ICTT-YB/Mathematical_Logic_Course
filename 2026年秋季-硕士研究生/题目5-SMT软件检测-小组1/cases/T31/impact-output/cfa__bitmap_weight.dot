@@ -1,0 +1,7 @@
+digraph bitmap_weight {
+28 [shape="circle" label="N28\n4"]
+29 [shape="circle" label="N29\n3"]
+29 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">29</td><td align="left">int tmp___0;</td></tr><tr><td align="right">30</td><td align="left">tmp___0 = __bitmap_weight(src, nbits);</td></tr><tr><td align="right">31</td><td align="left">return tmp___0;</td></tr></table>>]
+29 -> 27[label=""]
+28 -> 29 [label="Function start dummy edge" fontname="Courier New"]
+}

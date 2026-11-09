@@ -1,0 +1,85 @@
+2026-10-16 14:16:33:407	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2026-10-16 14:16:33:435	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-10-16 14:16:33:934	INFO	CFACreationUtils.addEdgeToCFA	line 1848: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+
+2026-10-16 14:16:33:935	INFO	CFACreationUtils.addEdgeToCFA	line 1851: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+
+2026-10-16 14:16:33:935	INFO	CFACreationUtils.addEdgeToCFA	line 1854: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+
+2026-10-16 14:16:33:938	INFO	CFACreationUtils.addEdgeToCFA	none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_3067;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_3067;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_3067;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_3067;
+  default: 
+  __bad_percpu_size();
+  }
+
+2026-10-16 14:16:34:004	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-10-16 14:16:34:352	WARNING	PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-10-16 14:16:34:376	INFO	PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-10-16 14:16:34:495	INFO	PredicateCPA:PredicateCPARefiner.<init>	Using refinement for predicate analysis with ImpactRefinementStrategy strategy.
+
+2026-10-16 14:16:34:506	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ counterexample.checker.config 
+
+
+2026-10-16 14:16:34:506	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-10-16 14:16:34:626	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-10-16 14:16:34:638	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_probe_2 to be a constant function.
+
+2026-10-16 14:16:34:640	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_release_2 to be a constant function.
+
+2026-10-16 14:16:34:646	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function torture_random to be a pure function.
+
+2026-10-16 14:16:34:655	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __udelay to be a pure function.
+
+2026-10-16 14:16:34:658	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __const_udelay to be a pure function.
+
+2026-10-16 14:16:34:684	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock to be a pure function.
+
+2026-10-16 14:16:34:692	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_lock to be a pure function.
+
+2026-10-16 14:16:34:700	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_probe_3 to be a constant function.
+
+2026-10-16 14:16:34:701	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_release_3 to be a constant function.
+
+2026-10-16 14:16:34:737	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function torture_init_begin to be a pure function.
+
+2026-10-16 14:16:34:746	WARNING	PredicateCPA:ExpressionToFormulaVisitor.visit	line 2548: Ignoring function call through function pointer *(cur_ops->init): (*(cur_ops->init))();
+
+2026-10-16 14:16:34:748	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock_irqrestore to be a pure function.
+
+2026-10-16 14:16:34:753	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function torture_cleanup to be a constant function.
+
+2026-10-16 14:16:34:755	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _torture_stop_kthread to be a pure function.
+
+2026-10-16 14:16:35:619	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function torture_onoff_failures to be a constant function.
+
+2026-10-16 14:16:35:633	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __bitmap_weight to be a pure function.
+
+2026-10-16 14:16:35:667	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function torture_init_end to be a constant function.
+
+2026-10-16 14:16:35:808	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_final_state to be a constant function.
+
+2026-10-16 14:16:35:812	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_probe_1 to be a constant function.
+
+2026-10-16 14:16:35:814	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_release_1 to be a constant function.
+
+2026-10-16 14:18:52:953	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

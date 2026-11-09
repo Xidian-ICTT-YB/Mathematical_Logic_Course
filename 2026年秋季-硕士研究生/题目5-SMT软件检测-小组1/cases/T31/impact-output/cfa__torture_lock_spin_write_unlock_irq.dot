@@ -1,0 +1,11 @@
+digraph torture_lock_spin_write_unlock_irq {
+220 [shape="circle" label="N220\n3"]
+221 [shape="circle" label="N221\n2"]
+222 [shape="circle" label="N222\n1"]
+219 [shape="circle" label="N219\n0"]
+220 -> 221 [label="Function start dummy edge" fontname="Courier New"]
+100027 [shape="component" label="spin_unlock_irqrestore"]
+221 -> 100027 [label="spin_unlock_irqrestore(&torture_spinlock, cur_ops->flags);" fontname="Courier New"]
+100027 -> 222 [label="" fontname="Courier New"]
+222 -> 219 [label="return;" fontname="Courier New"]
+}

@@ -1,0 +1,15 @@
+digraph kmalloc {
+906 [shape="circle" label="N906\n4"]
+907 [shape="circle" label="N907\n3"]
+908 [shape="circle" label="N908\n2"]
+909 [shape="circle" label="N909\n1"]
+905 [shape="circle" label="N905\n0"]
+906 -> 907 [label="Function start dummy edge" fontname="Courier New"]
+100030 [shape="component" label="ldv_check_alloc_flags"]
+907 -> 100030 [label="ldv_check_alloc_flags(flags);" fontname="Courier New"]
+100030 -> 908 [label="" fontname="Courier New"]
+100031 [shape="component" label="ldv_kmalloc_12"]
+908 -> 100031 [label="ldv_kmalloc_12(size, flags);" fontname="Courier New"]
+100031 -> 909 [label="" fontname="Courier New"]
+909 -> 905 [label="return (void *)0;" fontname="Courier New"]
+}

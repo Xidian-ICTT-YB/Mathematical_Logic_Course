@@ -1,0 +1,7 @@
+digraph spinlock_check {
+120 [shape="circle" label="N120\n2"]
+121 [shape="circle" label="N121\n1"]
+119 [shape="circle" label="N119\n0"]
+120 -> 121 [label="Function start dummy edge" fontname="Courier New"]
+121 -> 119 [label="return (struct raw_spinlock *)lock;" fontname="Courier New"]
+}

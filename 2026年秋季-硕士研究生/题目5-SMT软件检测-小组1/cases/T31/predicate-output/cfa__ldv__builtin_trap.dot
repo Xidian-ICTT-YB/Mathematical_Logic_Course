@@ -1,0 +1,11 @@
+digraph ldv__builtin_trap {
+132 [shape="circle" label="N132\n3"]
+133 [shape="circle" label="N133\n2"]
+134 [shape="circle" label="N134\n1"]
+131 [shape="circle" label="N131\n0"]
+132 -> 133 [label="Function start dummy edge" fontname="Courier New"]
+100062 [shape="component" label="ldv_error"]
+133 -> 100062 [label="ldv_error();" fontname="Courier New"]
+100062 -> 134 [label="" fontname="Courier New"]
+134 -> 131 [label="return;" fontname="Courier New"]
+}

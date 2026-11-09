@@ -1,0 +1,7 @@
+digraph ldv_spin_lock {
+951 [shape="circle" label="N951\n3"]
+952 [shape="circle" label="N952\n2"]
+952 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">952</td><td align="left">ldv_spin = 1;</td></tr><tr><td align="right">953</td><td align="left">return;</td></tr></table>>]
+952 -> 950[label=""]
+951 -> 952 [label="Function start dummy edge" fontname="Courier New"]
+}

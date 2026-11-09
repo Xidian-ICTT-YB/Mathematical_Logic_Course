@@ -1,0 +1,15 @@
+digraph spin_unlock_irqrestore {
+900 [shape="circle" label="N900\n4"]
+901 [shape="circle" label="N901\n3"]
+902 [shape="circle" label="N902\n2"]
+903 [shape="circle" label="N903\n1"]
+899 [shape="circle" label="N899\n0"]
+900 -> 901 [label="Function start dummy edge" fontname="Courier New"]
+100063 [shape="component" label="ldv_spin_unlock"]
+901 -> 100063 [label="ldv_spin_unlock();" fontname="Courier New"]
+100063 -> 902 [label="" fontname="Courier New"]
+100064 [shape="component" label="ldv_spin_unlock_irqrestore_8"]
+902 -> 100064 [label="ldv_spin_unlock_irqrestore_8(lock, flags);" fontname="Courier New"]
+100064 -> 903 [label="" fontname="Courier New"]
+903 -> 899 [label="return;" fontname="Courier New"]
+}

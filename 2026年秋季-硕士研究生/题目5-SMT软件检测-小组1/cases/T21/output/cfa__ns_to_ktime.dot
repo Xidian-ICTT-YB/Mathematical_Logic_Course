@@ -1,0 +1,7 @@
+digraph ns_to_ktime {
+138 [shape="circle" label="N138\n8"]
+139 [shape="circle" label="N139\n7"]
+139 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">139</td><td align="left">union ktime __r_expr_0;</td></tr><tr><td align="right">140</td><td align="left">unsigned long long __cil_tmp3;</td></tr><tr><td align="right">141</td><td align="left">unsigned long long __cil_tmp4;</td></tr><tr><td align="right">142</td><td align="left">__cil_tmp3 = (u64 )(ktime_zero.tv64);</td></tr><tr><td align="right">143</td><td align="left">__cil_tmp4 = __cil_tmp3 + ns;</td></tr><tr><td align="right">144</td><td align="left">__r_expr_0.tv64 = (s64 )__cil_tmp4;</td></tr><tr><td align="right">145</td><td align="left">return __r_expr_0;</td></tr></table>>]
+139 -> 137[label=""]
+138 -> 139 [label="Function start dummy edge" fontname="Courier New"]
+}

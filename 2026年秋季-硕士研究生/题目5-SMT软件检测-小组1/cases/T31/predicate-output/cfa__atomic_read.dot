@@ -1,0 +1,7 @@
+digraph atomic_read {
+40 [shape="circle" label="N40\n2"]
+41 [shape="circle" label="N41\n1"]
+39 [shape="circle" label="N39\n0"]
+40 -> 41 [label="Function start dummy edge" fontname="Courier New"]
+41 -> 39 [label="return (int)(*((volatile int *)(&(v->counter))));" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph ldv_spin_unlock_irqrestore_8 {
+59 [shape="circle" label="N59\n3"]
+60 [shape="circle" label="N60\n2"]
+60 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">60</td><td align="left">_raw_spin_unlock_irqrestore(&amp;(lock-&gt;ldv_6347.rlock), flags);</td></tr><tr><td align="right">61</td><td align="left">return;</td></tr></table>>]
+60 -> 58[label=""]
+59 -> 60 [label="Function start dummy edge" fontname="Courier New"]
+}

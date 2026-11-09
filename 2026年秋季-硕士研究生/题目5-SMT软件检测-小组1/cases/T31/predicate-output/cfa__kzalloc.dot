@@ -1,0 +1,11 @@
+digraph kzalloc {
+918 [shape="circle" label="N918\n3"]
+919 [shape="circle" label="N919\n2"]
+920 [shape="circle" label="N920\n1"]
+917 [shape="circle" label="N917\n0"]
+918 -> 919 [label="Function start dummy edge" fontname="Courier New"]
+100029 [shape="component" label="ldv_check_alloc_flags"]
+919 -> 100029 [label="ldv_check_alloc_flags(flags);" fontname="Courier New"]
+100029 -> 920 [label="" fontname="Courier New"]
+920 -> 917 [label="return (void *)0;" fontname="Courier New"]
+}

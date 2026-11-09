@@ -1,0 +1,11 @@
+digraph dp83640_exit {
+4558 [shape="circle" label="N4558\n4"]
+4559 [shape="circle" label="N4559\n3"]
+4560 [shape="circle" label="N4560\n2"]
+4560 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4560</td><td align="left">phy_driver_unregister(&amp;dp83640_driver);</td></tr><tr><td align="right">4561</td><td align="left">return;</td></tr></table>>]
+4560 -> 4557[label=""]
+4558 -> 4559 [label="Function start dummy edge" fontname="Courier New"]
+100047 [shape="component" label="dp83640_free_clocks"]
+4559 -> 100047 [label="dp83640_free_clocks();" fontname="Courier New"]
+100047 -> 4560 [label="" fontname="Courier New"]
+}
