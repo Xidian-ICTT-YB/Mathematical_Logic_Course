@@ -1,0 +1,12 @@
+digraph test_tsk_thread_flag {
+417 [shape="circle" label="N417\n2"]
+418 [shape="circle" label="N418\n1"]
+406 [shape="circle" label="N406\n0"]
+407 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">407</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">408</td><td align="left">int tmp___7;</td></tr><tr><td align="right">409</td><td align="left">unsigned long __cil_tmp4;</td></tr><tr><td align="right">410</td><td align="left">unsigned long __cil_tmp5;</td></tr><tr><td align="right">411</td><td align="left">void *__cil_tmp6;</td></tr><tr><td align="right">412</td><td align="left">struct thread_info *__cil_tmp7;</td></tr><tr><td align="right">413</td><td align="left">__cil_tmp4 = (unsigned long)tsk;</td></tr><tr><td align="right">414</td><td align="left">__cil_tmp5 = __cil_tmp4 + 8;</td></tr><tr><td align="right">415</td><td align="left">__cil_tmp6 = *((void **)__cil_tmp5);</td></tr><tr><td align="right">416</td><td align="left">__cil_tmp7 = (struct thread_info *)__cil_tmp6;</td></tr></table>>]
+407 -> 417[label=""]
+100271 [shape="component" label="test_ti_thread_flag"]
+417 -> 100271 [label="tmp___7 = test_ti_thread_flag(__cil_tmp7, flag);" fontname="Courier New"]
+100271 -> 418 [label="" fontname="Courier New"]
+417 -> 418 [label="tmp___7 = test_ti_thread_flag(__cil_tmp7, flag);" fontname="Courier New"]
+418 -> 406 [label="return tmp___7;" fontname="Courier New"]
+}

@@ -1,0 +1,18 @@
+digraph get_capi_ctr_by_nr {
+458 [shape="circle" label="N458\n19"]
+459 [shape="circle" label="N459\n18"]
+468 [shape="diamond" label="N468\n9"]
+470 [shape="circle" label="N470\n2"]
+471 [shape="circle" label="N471\n8"]
+472 [shape="circle" label="N472\n1"]
+457 [shape="circle" label="N457\n0"]
+459 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">459</td><td align="left">int __cil_tmp2;</td></tr><tr><td align="right">460</td><td align="left">int __cil_tmp3;</td></tr><tr><td align="right">461</td><td align="left">void *__cil_tmp4;</td></tr><tr><td align="right">462</td><td align="left">int __cil_tmp5;</td></tr><tr><td align="right">463</td><td align="left">int __cil_tmp6;</td></tr><tr><td align="right">464</td><td align="left">unsigned long __cil_tmp7;</td></tr><tr><td align="right">465</td><td align="left">unsigned long __cil_tmp8;</td></tr><tr><td align="right">466</td><td align="left">__cil_tmp2 = (int)contr;</td></tr><tr><td align="right">467</td><td align="left">__cil_tmp3 = __cil_tmp2 - 1;</td></tr></table>>]
+459 -> 468[label=""]
+471 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">471</td><td align="left"></td></tr><tr><td align="right">469</td><td align="left">__cil_tmp5 = (int)contr;</td></tr><tr><td align="right">474</td><td align="left">__cil_tmp6 = __cil_tmp5 - 1;</td></tr><tr><td align="right">475</td><td align="left">__cil_tmp7 = __cil_tmp6 * 8UL;</td></tr><tr><td align="right">476</td><td align="left">__cil_tmp8 = ((unsigned long)capi_controller) + __cil_tmp7;</td></tr><tr><td align="right">477</td><td align="left">return *((struct capi_ctr **)__cil_tmp8);</td></tr></table>>]
+471 -> 457[label=""]
+458 -> 459 [label="Function start dummy edge" fontname="Courier New"]
+468 -> 470 [label="[__cil_tmp3 >= 32]" fontname="Courier New"]
+468 -> 471 [label="[!(__cil_tmp3 >= 32)]" fontname="Courier New"]
+470 -> 472 [label="__cil_tmp4 = (void *)0;" fontname="Courier New"]
+472 -> 457 [label="return (struct capi_ctr *)__cil_tmp4;" fontname="Courier New"]
+}

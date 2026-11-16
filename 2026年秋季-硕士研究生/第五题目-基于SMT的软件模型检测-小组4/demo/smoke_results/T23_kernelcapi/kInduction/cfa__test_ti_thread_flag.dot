@@ -1,0 +1,15 @@
+digraph test_ti_thread_flag {
+132 [shape="circle" label="N132\n14"]
+133 [shape="circle" label="N133\n13"]
+144 [shape="circle" label="N144\n2"]
+145 [shape="circle" label="N145\n1"]
+131 [shape="circle" label="N131\n0"]
+133 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">133</td><td align="left">int tmp___0;</td></tr><tr><td align="right">134</td><td align="left">unsigned long __cil_tmp5;</td></tr><tr><td align="right">135</td><td align="left">unsigned long __cil_tmp6;</td></tr><tr><td align="right">136</td><td align="left">__u32 *__cil_tmp7;</td></tr><tr><td align="right">137</td><td align="left">unsigned long *__cil_tmp8;</td></tr><tr><td align="right">138</td><td align="left">volatile unsigned long *__cil_tmp9;</td></tr><tr><td align="right">139</td><td align="left">__cil_tmp5 = (unsigned long)ti;</td></tr><tr><td align="right">140</td><td align="left">__cil_tmp6 = __cil_tmp5 + 16;</td></tr><tr><td align="right">141</td><td align="left">__cil_tmp7 = (__u32 *)__cil_tmp6;</td></tr><tr><td align="right">142</td><td align="left">__cil_tmp8 = (unsigned long *)__cil_tmp7;</td></tr><tr><td align="right">143</td><td align="left">__cil_tmp9 = (volatile unsigned long *)__cil_tmp8;</td></tr></table>>]
+133 -> 144[label=""]
+132 -> 133 [label="Function start dummy edge" fontname="Courier New"]
+100270 [shape="component" label="variable_test_bit"]
+144 -> 100270 [label="tmp___0 = variable_test_bit(flag, __cil_tmp9);" fontname="Courier New"]
+100270 -> 145 [label="" fontname="Courier New"]
+144 -> 145 [label="tmp___0 = variable_test_bit(flag, __cil_tmp9);" fontname="Courier New"]
+145 -> 131 [label="return tmp___0;" fontname="Courier New"]
+}

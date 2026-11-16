@@ -1,0 +1,18 @@
+digraph controller_next {
+8792 [shape="circle" label="N8792\n18"]
+8793 [shape="circle" label="N8793\n17"]
+8802 [shape="diamond" label="N8802\n8"]
+8804 [shape="circle" label="N8804\n5"]
+8805 [shape="circle" label="N8805\n7"]
+8806 [shape="circle" label="N8806\n4"]
+8793 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8793</td><td align="left">long long __cil_tmp4;</td></tr><tr><td align="right">8794</td><td align="left">long long __cil_tmp5;</td></tr><tr><td align="right">8795</td><td align="left">long long __cil_tmp6;</td></tr><tr><td align="right">8796</td><td align="left">unsigned long __cil_tmp7;</td></tr><tr><td align="right">8797</td><td align="left">unsigned long __cil_tmp8;</td></tr><tr><td align="right">8798</td><td align="left">struct capi_ctr **__cil_tmp9;</td></tr><tr><td align="right">8799</td><td align="left">__cil_tmp4 = *pos;</td></tr><tr><td align="right">8800</td><td align="left">*pos = __cil_tmp4 + 1LL;</td></tr><tr><td align="right">8801</td><td align="left">__cil_tmp5 = *pos;</td></tr></table>>]
+8793 -> 8802[label=""]
+8805 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8805</td><td align="left"></td></tr><tr><td align="right">8803</td><td align="left">return (void *)0;</td></tr></table>>]
+8805 -> 8791[label=""]
+8806 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8806</td><td align="left">__cil_tmp7 = __cil_tmp6 * 8UL;</td></tr><tr><td align="right">8807</td><td align="left">__cil_tmp8 = ((unsigned long)capi_controller) + __cil_tmp7;</td></tr><tr><td align="right">8808</td><td align="left">__cil_tmp9 = (struct capi_ctr **)__cil_tmp8;</td></tr><tr><td align="right">8809</td><td align="left">return (void *)__cil_tmp9;</td></tr></table>>]
+8806 -> 8791[label=""]
+8792 -> 8793 [label="Function start dummy edge" fontname="Courier New"]
+8802 -> 8804 [label="[__cil_tmp5 < 32LL]" fontname="Courier New"]
+8802 -> 8805 [label="[!(__cil_tmp5 < 32LL)]" fontname="Courier New"]
+8804 -> 8806 [label="__cil_tmp6 = *pos;" fontname="Courier New"]
+}

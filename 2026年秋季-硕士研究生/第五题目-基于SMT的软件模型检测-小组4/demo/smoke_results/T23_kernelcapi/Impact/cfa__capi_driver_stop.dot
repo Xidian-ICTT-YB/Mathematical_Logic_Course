@@ -1,0 +1,11 @@
+digraph capi_driver_stop {
+9086 [shape="circle" label="N9086\n3"]
+9087 [shape="circle" label="N9087\n2"]
+9088 [shape="circle" label="N9088\n1"]
+9085 [shape="circle" label="N9085\n0"]
+9086 -> 9087 [label="Function start dummy edge" fontname="Courier New"]
+100230 [shape="component" label="mutex_unlock"]
+9087 -> 100230 [label="mutex_unlock(&capi_drivers_lock);" fontname="Courier New"]
+100230 -> 9088 [label="" fontname="Courier New"]
+9088 -> 9085 [label="return;" fontname="Courier New"]
+}

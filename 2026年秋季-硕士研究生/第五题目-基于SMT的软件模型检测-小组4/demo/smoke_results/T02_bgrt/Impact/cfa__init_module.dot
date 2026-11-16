@@ -1,0 +1,13 @@
+digraph init_module {
+304 [shape="circle" label="N304\n4"]
+305 [shape="circle" label="N305\n3"]
+306 [shape="circle" label="N306\n2"]
+307 [shape="circle" label="N307\n1"]
+303 [shape="circle" label="N303\n0"]
+304 -> 305 [label="Function start dummy edge" fontname="Courier New"]
+100003 [shape="component" label="bgrt_init"]
+306 -> 100003 [label="tmp___7 = bgrt_init();" fontname="Courier New"]
+100003 -> 307 [label="" fontname="Courier New"]
+305 -> 306 [label="int tmp___7;" fontname="Courier New"]
+307 -> 303 [label="return tmp___7;" fontname="Courier New"]
+}

@@ -1,0 +1,18 @@
+digraph capi_ctr_resume_output {
+1677 [shape="circle" label="N1677\n21"]
+1678 [shape="circle" label="N1678\n20"]
+1687 [shape="diamond" label="N1687\n11"]
+1690 [shape="circle" label="N1690\n2"]
+1689 [shape="circle" label="N1689\n10"]
+1688 [shape="circle" label="N1688\n1"]
+1676 [shape="circle" label="N1676\n0"]
+1678 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1678</td><td align="left">unsigned long __cil_tmp2;</td></tr><tr><td align="right">1679</td><td align="left">unsigned long __cil_tmp3;</td></tr><tr><td align="right">1680</td><td align="left">unsigned long __cil_tmp4;</td></tr><tr><td align="right">1681</td><td align="left">unsigned long __cil_tmp5;</td></tr><tr><td align="right">1682</td><td align="left">int __cil_tmp6;</td></tr><tr><td align="right">1683</td><td align="left">unsigned long __cil_tmp7;</td></tr><tr><td align="right">1684</td><td align="left">unsigned long __cil_tmp8;</td></tr><tr><td align="right">1685</td><td align="left">__cil_tmp2 = (unsigned long)ctr;</td></tr><tr><td align="right">1686</td><td align="left">__cil_tmp3 = __cil_tmp2 + 304;</td></tr></table>>]
+1678 -> 1687[label=""]
+1689 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1689</td><td align="left">__cil_tmp4 = (unsigned long)ctr;</td></tr><tr><td align="right">1691</td><td align="left">__cil_tmp5 = __cil_tmp4 + 296;</td></tr><tr><td align="right">1692</td><td align="left">__cil_tmp6 = *((int *)__cil_tmp5);</td></tr><tr><td align="right">1693</td><td align="left">printk(\"&lt;7&gt;kcapi: controller [%03d] resumed\n\", __cil_tmp6);</td></tr><tr><td align="right">1694</td><td align="left">__cil_tmp7 = (unsigned long)ctr;</td></tr><tr><td align="right">1695</td><td align="left">__cil_tmp8 = __cil_tmp7 + 304;</td></tr><tr><td align="right">1696</td><td align="left">*((int *)__cil_tmp8) = 0;</td></tr><tr><td align="right">1697</td><td align="left"></td></tr></table>>]
+1689 -> 1688[label=""]
+1677 -> 1678 [label="Function start dummy edge" fontname="Courier New"]
+1687 -> 1690 [label="[(*((int *)__cil_tmp3)) == 0]" fontname="Courier New"]
+1687 -> 1689 [label="[!((*((int *)__cil_tmp3)) == 0)]" fontname="Courier New"]
+1688 -> 1676 [label="return;" fontname="Courier New"]
+1690 -> 1688 [label="" fontname="Courier New"]
+}

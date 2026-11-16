@@ -1,0 +1,7 @@
+digraph seq_capi_driver_open {
+9134 [shape="circle" label="N9134\n4"]
+9135 [shape="circle" label="N9135\n3"]
+9135 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">9135</td><td align="left">int err;</td></tr><tr><td align="right">9136</td><td align="left">err = seq_open(file, &amp;seq_capi_driver_ops);</td></tr><tr><td align="right">9137</td><td align="left">return err;</td></tr></table>>]
+9135 -> 9133[label=""]
+9134 -> 9135 [label="Function start dummy edge" fontname="Courier New"]
+}

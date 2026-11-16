@@ -1,0 +1,12 @@
+digraph applications_stop {
+8974 [shape="circle" label="N8974\n3"]
+8975 [shape="circle" label="N8975\n2"]
+8976 [shape="circle" label="N8976\n1"]
+8973 [shape="circle" label="N8973\n0"]
+8974 -> 8975 [label="Function start dummy edge" fontname="Courier New"]
+100280 [shape="component" label="mutex_unlock"]
+8975 -> 100280 [label="mutex_unlock(&capi_controller_lock);" fontname="Courier New"]
+100280 -> 8976 [label="" fontname="Courier New"]
+8975 -> 8976 [label="mutex_unlock(&capi_controller_lock);" fontname="Courier New"]
+8976 -> 8973 [label="return;" fontname="Courier New"]
+}

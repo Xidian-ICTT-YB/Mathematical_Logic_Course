@@ -1,0 +1,7 @@
+digraph __skb_queue_head_init {
+357 [shape="circle" label="N357\n15"]
+358 [shape="circle" label="N358\n14"]
+358 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">358</td><td align="left">struct sk_buff *tmp;</td></tr><tr><td align="right">359</td><td align="left">unsigned long __cil_tmp3;</td></tr><tr><td align="right">360</td><td align="left">unsigned long __cil_tmp4;</td></tr><tr><td align="right">361</td><td align="left">unsigned long __cil_tmp5;</td></tr><tr><td align="right">362</td><td align="left">unsigned long __cil_tmp6;</td></tr><tr><td align="right">363</td><td align="left">tmp = (struct sk_buff *)list;</td></tr><tr><td align="right">364</td><td align="left">*((struct sk_buff **)list) = tmp;</td></tr><tr><td align="right">365</td><td align="left">__cil_tmp3 = (unsigned long)list;</td></tr><tr><td align="right">366</td><td align="left">__cil_tmp4 = __cil_tmp3 + 8;</td></tr><tr><td align="right">367</td><td align="left">*((struct sk_buff **)__cil_tmp4) = tmp;</td></tr><tr><td align="right">368</td><td align="left">__cil_tmp5 = (unsigned long)list;</td></tr><tr><td align="right">369</td><td align="left">__cil_tmp6 = __cil_tmp5 + 16;</td></tr><tr><td align="right">370</td><td align="left">*((__u32 *)__cil_tmp6) = (__u32 )0;</td></tr><tr><td align="right">371</td><td align="left">return;</td></tr></table>>]
+358 -> 356[label=""]
+357 -> 358 [label="Function start dummy edge" fontname="Courier New"]
+}

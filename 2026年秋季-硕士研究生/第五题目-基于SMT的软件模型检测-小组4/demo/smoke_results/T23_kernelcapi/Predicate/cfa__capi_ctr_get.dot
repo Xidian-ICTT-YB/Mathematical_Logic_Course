@@ -1,0 +1,18 @@
+digraph capi_ctr_get {
+437 [shape="circle" label="N437\n11"]
+438 [shape="circle" label="N438\n10"]
+443 [shape="diamond" label="N443\n5"]
+446 [shape="circle" label="N446\n2"]
+445 [shape="circle" label="N445\n4"]
+447 [shape="circle" label="N447\n1"]
+436 [shape="circle" label="N436\n0"]
+438 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">438</td><td align="left">_Bool tmp___7;</td></tr><tr><td align="right">439</td><td align="left">struct module *__cil_tmp3;</td></tr><tr><td align="right">440</td><td align="left">void *__cil_tmp4;</td></tr><tr><td align="right">441</td><td align="left">__cil_tmp3 = *((struct module **)ctr);</td></tr><tr><td align="right">442</td><td align="left">tmp___7 = try_module_get(__cil_tmp3);</td></tr></table>>]
+438 -> 443[label=""]
+445 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">445</td><td align="left"></td></tr><tr><td align="right">444</td><td align="left">return ctr;</td></tr></table>>]
+445 -> 436[label=""]
+437 -> 438 [label="Function start dummy edge" fontname="Courier New"]
+443 -> 446 [label="[tmp___7 == 0]" fontname="Courier New"]
+443 -> 445 [label="[!(tmp___7 == 0)]" fontname="Courier New"]
+446 -> 447 [label="__cil_tmp4 = (void *)0;" fontname="Courier New"]
+447 -> 436 [label="return (struct capi_ctr *)__cil_tmp4;" fontname="Courier New"]
+}

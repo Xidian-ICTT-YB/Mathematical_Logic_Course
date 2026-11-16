@@ -1,0 +1,166 @@
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            4 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         4 (100%)
+  Times precision was empty:       4 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         108
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       121
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.880s
+  Time for path formula creation:        0.865s
+Time for strengthen operator:            0.027s
+Time for prec operator:                  0.026s
+  Time for abstraction:                  0.008s (Max:     0.008s, Count: 4)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.088s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                  42804 (count: 2738, min: 0, max: 29, avg: 15.63)
+Number of global variables:                           25373 (count: 2738, min: 0, max: 13, avg: 9.27)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    2791
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.100s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                88
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                  200
+Number of deterministic Assumptions:                     40
+Level of Determinism:                              20%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.019s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         2791 (count: 2795, min: 0, max: 1, avg: 1.00) [0 x 4, 1 x 2791]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            2720
+Max size of waitlist:            28
+Average size of waitlist:        9
+Number of computed successors:   2791
+Max successors for one state:    2
+Number of times merged:          54
+Number of times stopped:         54
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.792s (Max:     1.792s)
+  Time for choose from waitlist:      0.023s
+  Time for precision adjustment:      0.234s
+  Time for transfer relation:         1.324s
+  Time for merge operator:            0.110s
+  Time for stop operator:             0.017s
+  Time for adding to reached set:     0.038s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           3.373s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.272
+  Visited lines:          1999
+  Total lines:            8577
+  Line coverage:          0.233
+  Visited conditions:     150
+  Total conditions:       962
+  Condition coverage:     0.156
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     9589
+Number of CFA edges:             10237
+Number of relevant variables:    2188
+Number of functions:             125
+Number of loops:                 28
+Size of reached set:             2738
+  Number of reached locations:   2313 (24%)
+    Avg states per location:     1
+    Max states per location:     8 (at node N4061)
+  Number of reached functions:   34 (27%)
+  Number of partitions:          2738
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       4
+  Size of final wait list        19
+
+Time for analysis setup:          5.735s
+  Time for loading CPAs:          1.819s
+  Time for loading parser:        0.302s
+  Time for CFA construction:      3.539s
+    Time for parsing file(s):     0.790s
+    Time for AST to CFA:          1.355s
+    Time for CFA sanity check:    0.295s
+    Time for post-processing:     1.102s
+      Time for var class.:        0.622s
+    Time for CFA export:          1.645s
+Time for Analysis:                2.300s
+CPU time for analysis:            4.150s
+Total time for CPAchecker:        8.047s
+Total CPU time for CPAchecker:   15.130s
+Time for statistics:             13.953s
+
+Time for Garbage Collector:       0.818s (in 325 runs)
+Garbage Collector(s) used:    Copy, MarkSweepCompact
+Used heap memory:                 68MB (    64 MiB) max;     39MB (    38 MiB) avg;     90MB (    86 MiB) peak
+Used non-heap memory:             46MB (    44 MiB) max;     33MB (    32 MiB) avg;     50MB (    48 MiB) peak
+Allocated heap memory:            86MB (    82 MiB) max;     62MB (    59 MiB) avg
+Allocated non-heap memory:        47MB (    45 MiB) max;     34MB (    33 MiB) avg
+Total process virtual memory:   3659MB (  3489 MiB) max;   3607MB (  3440 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/work/demo/smoke_results/T23_kernelcapi/BMC".

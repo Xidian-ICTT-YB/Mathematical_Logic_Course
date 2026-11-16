@@ -1,0 +1,68 @@
+2026-11-15 13:47:55:096	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 60s
+
+2026-11-15 13:47:55:155	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-15 13:47:57:186	INFO	CFACreationUtils.addEdgeToCFA	line 2818: Dead code detected: Goto: case_1
+
+2026-11-15 13:47:57:188	INFO	CFACreationUtils.addEdgeToCFA	line 2821: Dead code detected: Goto: case_2
+
+2026-11-15 13:47:57:188	INFO	CFACreationUtils.addEdgeToCFA	line 2824: Dead code detected: Goto: case_4
+
+2026-11-15 13:47:57:188	INFO	CFACreationUtils.addEdgeToCFA	line 2830: Dead code detected: Goto: switch_default
+
+2026-11-15 13:47:57:192	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-15 13:47:57:193	INFO	CFAFunctionBuilder.leave	Dead code detected: Label case_4 is not reachable.
+
+2026-11-15 13:47:57:193	INFO	CFAFunctionBuilder.leave	Dead code detected: Label case_1 is not reachable.
+
+2026-11-15 13:47:57:194	INFO	CFAFunctionBuilder.leave	Dead code detected: Label case_2 is not reachable.
+
+2026-11-15 13:47:57:198	INFO	CFACreationUtils.addEdgeToCFA	line 2903: Dead code detected: Goto: case_1
+
+2026-11-15 13:47:57:198	INFO	CFACreationUtils.addEdgeToCFA	line 2906: Dead code detected: Goto: case_2
+
+2026-11-15 13:47:57:198	INFO	CFACreationUtils.addEdgeToCFA	line 2909: Dead code detected: Goto: case_4
+
+2026-11-15 13:47:57:199	INFO	CFACreationUtils.addEdgeToCFA	line 2915: Dead code detected: Goto: switch_default
+
+2026-11-15 13:47:57:201	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-15 13:47:57:201	INFO	CFAFunctionBuilder.leave	Dead code detected: Label case_4 is not reachable.
+
+2026-11-15 13:47:57:201	INFO	CFAFunctionBuilder.leave	Dead code detected: Label case_1 is not reachable.
+
+2026-11-15 13:47:57:201	INFO	CFAFunctionBuilder.leave	Dead code detected: Label case_2 is not reachable.
+
+2026-11-15 13:47:57:727	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_break is not reachable.
+
+2026-11-15 13:47:57:895	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_break is not reachable.
+
+2026-11-15 13:47:57:916	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-15 13:48:00:503	WARNING	PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:48:00:584	INFO	PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-15 13:48:00:801	INFO	PredicateCPA:PredicateCPARefiner.<init>	Using refinement for predicate analysis with ImpactRefinementStrategy strategy.
+
+2026-11-15 13:48:00:815	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ counterexample.checker.config 
+
+
+2026-11-15 13:48:00:815	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-15 13:48:01:185	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-15 13:48:01:294	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function seq_open to be a pure function.
+
+2026-11-15 13:48:01:326	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_return_value to be a pure function.
+
+2026-11-15 13:48:01:337	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function seq_printf to be a pure function.
+
+2026-11-15 13:48:02:467	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-15 13:48:02:853	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found and confirmed by counterexample check with CBMC.
+
+2026-11-15 13:48:02:855	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

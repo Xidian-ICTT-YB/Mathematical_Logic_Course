@@ -1,0 +1,994 @@
+none:	N9228 -{INIT GLOBAL VARS}-> N9720
+line 1:	N9720 -{void __VERIFIER_error();}-> N9721
+line 6:	N9721 -{typedef signed char __s8;}-> N9722
+line 7:	N9722 -{typedef unsigned char __u8;}-> N9723
+line 8:	N9723 -{typedef short __s16;}-> N9724
+line 9:	N9724 -{typedef unsigned short __u16;}-> N9725
+line 10:	N9725 -{typedef int __s32;}-> N9726
+line 11:	N9726 -{typedef unsigned int __u32;}-> N9727
+line 12:	N9727 -{typedef long long __s64;}-> N9728
+line 13:	N9728 -{typedef unsigned long long __u64;}-> N9729
+line 14:	N9729 -{typedef unsigned char u8;}-> N9730
+line 15:	N9730 -{typedef short s16;}-> N9731
+line 16:	N9731 -{typedef unsigned short u16;}-> N9732
+line 17:	N9732 -{typedef int s32;}-> N9733
+line 18:	N9733 -{typedef unsigned int u32;}-> N9734
+line 19:	N9734 -{typedef long long s64;}-> N9735
+line 20:	N9735 -{typedef unsigned long long u64;}-> N9736
+line 21:	N9736 -{typedef long __kernel_long_t;}-> N9737
+line 22:	N9737 -{typedef unsigned long __kernel_ulong_t;}-> N9738
+line 23:	N9738 -{typedef __kernel_ulong_t __kernel_nlink_t;}-> N9739
+line 24:	N9739 -{typedef int __kernel_pid_t;}-> N9740
+line 25:	N9740 -{typedef unsigned int __kernel_uid32_t;}-> N9741
+line 26:	N9741 -{typedef unsigned int __kernel_gid32_t;}-> N9742
+line 27:	N9742 -{typedef __kernel_ulong_t __kernel_size_t;}-> N9743
+line 28:	N9743 -{typedef __kernel_long_t __kernel_ssize_t;}-> N9744
+line 29:	N9744 -{typedef __kernel_long_t __kernel_off_t;}-> N9745
+line 30:	N9745 -{typedef long long __kernel_loff_t;}-> N9746
+line 31:	N9746 -{typedef __kernel_long_t __kernel_time_t;}-> N9747
+line 32:	N9747 -{typedef __kernel_long_t __kernel_clock_t;}-> N9748
+line 33:	N9748 -{typedef int __kernel_timer_t;}-> N9749
+line 34:	N9749 -{typedef int __kernel_clockid_t;}-> N9750
+line 35:	N9750 -{typedef __u32 __kernel_dev_t;}-> N9751
+line 36:	N9751 -{typedef __kernel_dev_t dev_t;}-> N9752
+line 37:	N9752 -{typedef unsigned short umode_t;}-> N9753
+line 38:	N9753 -{typedef __kernel_nlink_t nlink_t;}-> N9754
+line 39:	N9754 -{typedef __kernel_off_t off_t;}-> N9755
+line 40:	N9755 -{typedef __kernel_pid_t pid_t;}-> N9756
+line 41:	N9756 -{typedef __kernel_clockid_t clockid_t;}-> N9757
+line 42:	N9757 -{typedef _Bool bool;}-> N9758
+line 43:	N9758 -{typedef __kernel_uid32_t uid_t;}-> N9759
+line 44:	N9759 -{typedef __kernel_gid32_t gid_t;}-> N9760
+line 45:	N9760 -{typedef __kernel_loff_t loff_t;}-> N9761
+line 46:	N9761 -{typedef __kernel_size_t size_t;}-> N9762
+line 47:	N9762 -{typedef __kernel_ssize_t ssize_t;}-> N9763
+line 48:	N9763 -{typedef __kernel_time_t time_t;}-> N9764
+line 49:	N9764 -{typedef unsigned char u_char;}-> N9765
+line 50:	N9765 -{typedef __s32 int32_t;}-> N9766
+line 51:	N9766 -{typedef __u32 uint32_t;}-> N9767
+line 52:	N9767 -{typedef unsigned long sector_t;}-> N9768
+line 53:	N9768 -{typedef unsigned long blkcnt_t;}-> N9769
+line 54:	N9769 -{typedef __u16 __be16;}-> N9770
+line 55:	N9770 -{typedef __u32 __wsum;}-> N9771
+line 56:	N9771 -{typedef unsigned int gfp_t;}-> N9772
+line 57:	N9772 -{typedef unsigned int fmode_t;}-> N9773
+lines 58-60:	N9773 -{struct __anonstruct_atomic_t_7 {   int counter; } ;}-> N9774
+line 61:	N9774 -{typedef struct __anonstruct_atomic_t_7 atomic_t;}-> N9775
+lines 62-64:	N9775 -{struct __anonstruct_atomic64_t_8 {   long counter; } ;}-> N9776
+line 65:	N9776 -{typedef struct __anonstruct_atomic64_t_8 atomic64_t;}-> N9777
+lines 66-69:	N9777 -{struct list_head {   struct list_head *next;   struct list_head *prev; } ;}-> N9778
+line 70:	N9778 -{struct hlist_node ;}-> N9779
+lines 71-73:	N9779 -{struct hlist_head {   struct hlist_node *first; } ;}-> N9780
+lines 74-77:	N9780 -{struct hlist_node {   struct hlist_node *next;   struct hlist_node **pprev; } ;}-> N9781
+lines 78-81:	N9781 -{struct rcu_head {   struct rcu_head *next;   void (*func)(struct rcu_head *head); } ;}-> N9782
+line 82:	N9782 -{struct module ;}-> N9783
+line 83:	N9783 -{typedef void (*ctor_fn_t)();}-> N9784
+line 84:	N9784 -{struct net_device ;}-> N9785
+line 85:	N9785 -{struct completion ;}-> N9786
+line 86:	N9786 -{struct pt_regs ;}-> N9787
+line 87:	N9787 -{struct pid ;}-> N9788
+line 88:	N9788 -{struct timespec ;}-> N9789
+line 89:	N9789 -{struct compat_timespec ;}-> N9790
+lines 90-97:	N9790 -{struct __anonstruct_futex_11 {   u32 *uaddr;   u32 val;   u32 flags;   u32 bitset;   u64 time;   u32 *uaddr2; } ;}-> N9791
+lines 98-103:	N9791 -{struct __anonstruct_nanosleep_12 {   clockid_t clockid;   struct timespec *rmtp;   struct compat_timespec *compat_rmtp;   u64 expires; } ;}-> N9792
+line 104:	N9792 -{struct pollfd ;}-> N9793
+lines 105-111:	N9793 -{struct __anonstruct_poll_13 {   struct pollfd *ufds;   int nfds;   int has_timeout;   unsigned long tv_sec;   unsigned long tv_nsec; } ;}-> N9794
+lines 112-116:	N9794 -{union __anonunion____missing_field_name_10 {   struct __anonstruct_futex_11 futex;   struct __anonstruct_nanosleep_12 nanosleep;   struct __anonstruct_poll_13 poll; } ;}-> N9795
+lines 117-120:	N9795 -{struct restart_block {   long int (*fn)(struct restart_block *);   union __anonunion____missing_field_name_10 __annonCompField4; } ;}-> N9796
+line 121:	N9796 -{struct page ;}-> N9797
+line 122:	N9797 -{struct task_struct ;}-> N9798
+line 123:	N9798 -{struct exec_domain ;}-> N9799
+line 124:	N9799 -{struct mm_struct ;}-> N9800
+lines 125-147:	N9800 -{struct pt_regs {   unsigned long r15;   unsigned long r14;   unsigned long r13;   unsigned long r12;   unsigned long bp;   unsigned long bx;   unsigned long r11;   unsigned long r10;   unsigned long r9;   unsigned long r8;   unsigned long ax;   unsigned long cx;   unsigned long dx;   unsigned long si;   unsigned long di;   unsigned long orig_ax;   unsigned long ip;   unsigned long cs;   unsigned long flags;   unsigned long sp;   unsigned long ss; } ;}-> N9801
+lines 148-151:	N9801 -{struct __anonstruct____missing_field_name_15 {   unsigned int a;   unsigned int b; } ;}-> N9802
+lines 152-166:	N9802 -{struct __anonstruct____missing_field_name_16 {   u16 limit0;   u16 base0;   unsigned int base1;   unsigned int type;   unsigned int s;   unsigned int dpl;   unsigned int p;   unsigned int limit;   unsigned int avl;   unsigned int l;   unsigned int d;   unsigned int g;   unsigned int base2; } ;}-> N9803
+lines 167-170:	N9803 -{union __anonunion____missing_field_name_14 {   struct __anonstruct____missing_field_name_15 __annonCompField5;   struct __anonstruct____missing_field_name_16 __annonCompField6; } ;}-> N9804
+lines 171-173:	N9804 -{struct desc_struct {   union __anonunion____missing_field_name_14 __annonCompField7; } ;}-> N9805
+line 174:	N9805 -{typedef unsigned long pgdval_t;}-> N9806
+line 175:	N9806 -{typedef unsigned long pgprotval_t;}-> N9807
+lines 176-178:	N9807 -{struct pgprot {   pgprotval_t pgprot; } ;}-> N9808
+line 179:	N9808 -{typedef struct pgprot pgprot_t;}-> N9809
+lines 180-182:	N9809 -{struct __anonstruct_pgd_t_20 {   pgdval_t pgd; } ;}-> N9810
+line 183:	N9810 -{typedef struct __anonstruct_pgd_t_20 pgd_t;}-> N9811
+line 184:	N9811 -{typedef struct page *pgtable_t;}-> N9812
+line 185:	N9812 -{struct file ;}-> N9813
+line 186:	N9813 -{struct seq_file ;}-> N9814
+line 187:	N9814 -{struct thread_struct ;}-> N9815
+line 188:	N9815 -{struct cpumask ;}-> N9816
+line 189:	N9816 -{struct arch_spinlock ;}-> N9817
+lines 190-200:	N9817 -{struct kernel_vm86_regs {   struct pt_regs pt;   unsigned short es;   unsigned short __esh;   unsigned short ds;   unsigned short __dsh;   unsigned short fs;   unsigned short __fsh;   unsigned short gs;   unsigned short __gsh; } ;}-> N9818
+lines 201-204:	N9818 -{union __anonunion____missing_field_name_24 {   struct pt_regs *regs;   struct kernel_vm86_regs *vm86; } ;}-> N9819
+lines 205-208:	N9819 -{struct math_emu_info {   long ___orig_eip;   union __anonunion____missing_field_name_24 __annonCompField8; } ;}-> N9820
+lines 209-214:	N9820 -{struct bug_entry {   int bug_addr_disp;   int file_disp;   unsigned short line;   unsigned short flags; } ;}-> N9821
+lines 215-217:	N9821 -{struct cpumask {   unsigned long bits[64UL]; } ;}-> N9822
+line 218:	N9822 -{typedef struct cpumask cpumask_t;}-> N9823
+line 219:	N9823 -{typedef struct cpumask *cpumask_var_t;}-> N9824
+line 220:	N9824 -{struct static_key ;}-> N9825
+line 221:	N9825 -{struct map_segment ;}-> N9826
+lines 222-235:	N9826 -{struct exec_domain {   char *name;   void (*handler)(int, struct pt_regs *);   unsigned char pers_low;   unsigned char pers_high;   unsigned long *signal_map;   unsigned long *signal_invmap;   struct map_segment *err_map;   struct map_segment *socktype_map;   struct map_segment *sockopt_map;   struct map_segment *af_map;   struct module *module;   struct exec_domain *next; } ;}-> N9827
+line 236:	N9827 -{struct seq_operations ;}-> N9828
+lines 237-247:	N9828 -{struct i387_fsave_struct {   u32 cwd;   u32 swd;   u32 twd;   u32 fip;   u32 fcs;   u32 foo;   u32 fos;   u32 st_space[20];   u32 status; } ;}-> N9829
+lines 248-251:	N9829 -{struct __anonstruct____missing_field_name_31 {   u64 rip;   u64 rdp; } ;}-> N9830
+lines 252-257:	N9830 -{struct __anonstruct____missing_field_name_32 {   u32 fip;   u32 fcs;   u32 foo;   u32 fos; } ;}-> N9831
+lines 258-261:	N9831 -{union __anonunion____missing_field_name_30 {   struct __anonstruct____missing_field_name_31 __annonCompField12;   struct __anonstruct____missing_field_name_32 __annonCompField13; } ;}-> N9832
+lines 262-265:	N9832 -{union __anonunion____missing_field_name_33 {   u32 padding1[12];   u32 sw_reserved[12]; } ;}-> N9833
+lines 266-278:	N9833 -{struct i387_fxsave_struct {   u16 cwd;   u16 swd;   u16 twd;   u16 fop;   union __anonunion____missing_field_name_30 __annonCompField14;   u32 mxcsr;   u32 mxcsr_mask;   u32 st_space[32];   u32 xmm_space[64];   u32 padding[12];   union __anonunion____missing_field_name_33 __annonCompField15; } ;}-> N9834
+lines 279-296:	N9834 -{struct i387_soft_struct {   u32 cwd;   u32 swd;   u32 twd;   u32 fip;   u32 fcs;   u32 foo;   u32 fos;   u32 st_space[20];   u8 ftop;   u8 changed;   u8 lookahead;   u8 no_update;   u8 rm;   u8 alimit;   struct math_emu_info *info;   u32 entry_eip; } ;}-> N9835
+lines 297-299:	N9835 -{struct ymmh_struct {   u32 ymmh_space[64]; } ;}-> N9836
+lines 300-304:	N9836 -{struct xsave_hdr_struct {   u64 xstate_bv;   u64 reserved1[2];   u64 reserved2[5]; } ;}-> N9837
+lines 305-309:	N9837 -{struct xsave_struct {   struct i387_fxsave_struct i387;   struct xsave_hdr_struct xsave_hdr;   struct ymmh_struct ymmh; } ;}-> N9838
+lines 310-315:	N9838 -{union thread_xstate {   struct i387_fsave_struct fsave;   struct i387_fxsave_struct fxsave;   struct i387_soft_struct soft;   struct xsave_struct xsave; } ;}-> N9839
+lines 316-320:	N9839 -{struct fpu {   unsigned int last_cpu;   unsigned int has_fpu;   union thread_xstate *state; } ;}-> N9840
+line 321:	N9840 -{struct kmem_cache ;}-> N9841
+line 322:	N9841 -{struct perf_event ;}-> N9842
+lines 323-344:	N9842 -{struct thread_struct {   struct desc_struct tls_array[3];   unsigned long sp0;   unsigned long sp;   unsigned long usersp;   unsigned short es;   unsigned short ds;   unsigned short fsindex;   unsigned short gsindex;   unsigned long fs;   unsigned long gs;   struct perf_event *ptrace_bps[4];   unsigned long debugreg6;   unsigned long ptrace_dr7;   unsigned long cr2;   unsigned long trap_nr;   unsigned long error_code;   struct fpu fpu;   unsigned long *io_bitmap_ptr;   unsigned long iopl;   unsigned int io_bitmap_max; } ;}-> N9843
+lines 345-347:	N9843 -{struct __anonstruct_mm_segment_t_35 {   unsigned long seg; } ;}-> N9844
+line 348:	N9844 -{typedef struct __anonstruct_mm_segment_t_35 mm_segment_t;}-> N9845
+line 349:	N9845 -{typedef atomic64_t atomic_long_t;}-> N9846
+lines 350-362:	N9846 -{struct thread_info {   struct task_struct *task;   struct exec_domain *exec_domain;   __u32 flags;   __u32 status;   __u32 cpu;   int preempt_count;   mm_segment_t addr_limit;   struct restart_block restart_block;   void *sysenter_return;   unsigned int sig_on_uaccess_error;   unsigned int uaccess_err; } ;}-> N9847
+line 363:	N9847 -{typedef u16 __ticket_t;}-> N9848
+line 364:	N9848 -{typedef u32 __ticketpair_t;}-> N9849
+lines 365-368:	N9849 -{struct __raw_tickets {   __ticket_t head;   __ticket_t tail; } ;}-> N9850
+lines 369-372:	N9850 -{union __anonunion____missing_field_name_36 {   __ticketpair_t head_tail;   struct __raw_tickets tickets; } ;}-> N9851
+lines 373-375:	N9851 -{struct arch_spinlock {   union __anonunion____missing_field_name_36 __annonCompField17; } ;}-> N9852
+line 376:	N9852 -{typedef struct arch_spinlock arch_spinlock_t;}-> N9853
+lines 377-380:	N9853 -{struct __anonstruct____missing_field_name_38 {   u32 read;   s32 write; } ;}-> N9854
+lines 381-384:	N9854 -{union __anonunion_arch_rwlock_t_37 {   s64 lock;   struct __anonstruct____missing_field_name_38 __annonCompField18; } ;}-> N9855
+line 385:	N9855 -{typedef union __anonunion_arch_rwlock_t_37 arch_rwlock_t;}-> N9856
+lines 386-388:	N9856 -{struct lock_class_key { } ;}-> N9857
+lines 389-394:	N9857 -{struct raw_spinlock {   arch_spinlock_t raw_lock;   unsigned int magic;   unsigned int owner_cpu;   void *owner; } ;}-> N9858
+line 395:	N9858 -{typedef struct raw_spinlock raw_spinlock_t;}-> N9859
+lines 396-398:	N9859 -{union __anonunion____missing_field_name_39 {   struct raw_spinlock rlock; } ;}-> N9860
+lines 399-401:	N9860 -{struct spinlock {   union __anonunion____missing_field_name_39 __annonCompField19; } ;}-> N9861
+line 402:	N9861 -{typedef struct spinlock spinlock_t;}-> N9862
+lines 403-408:	N9862 -{struct __anonstruct_rwlock_t_40 {   arch_rwlock_t raw_lock;   unsigned int magic;   unsigned int owner_cpu;   void *owner; } ;}-> N9863
+line 409:	N9863 -{typedef struct __anonstruct_rwlock_t_40 rwlock_t;}-> N9864
+lines 410-414:	N9864 -{struct capi_register_params {   __u32 level3cnt;   __u32 datablkcnt;   __u32 datablklen; } ;}-> N9865
+line 415:	N9865 -{typedef struct capi_register_params capi_register_params;}-> N9866
+lines 416-421:	N9866 -{struct capi_version {   __u32 majorversion;   __u32 minorversion;   __u32 majormanuversion;   __u32 minormanuversion; } ;}-> N9867
+line 422:	N9867 -{typedef struct capi_version capi_version;}-> N9868
+lines 423-432:	N9868 -{struct capi_profile {   __u16 ncontroller;   __u16 nbchannel;   __u32 goptions;   __u32 support1;   __u32 support2;   __u32 support3;   __u32 reserved[6];   __u32 manu[5]; } ;}-> N9869
+line 433:	N9869 -{typedef struct capi_profile capi_profile;}-> N9870
+lines 434-437:	N9870 -{struct kcapi_flagdef {   int contr;   int flag; } ;}-> N9871
+line 438:	N9871 -{typedef struct kcapi_flagdef kcapi_flagdef;}-> N9872
+lines 439-445:	N9872 -{struct kcapi_carddef {   char driver[32];   unsigned int port;   unsigned int irq;   unsigned int membase;   int cardnr; } ;}-> N9873
+line 446:	N9873 -{typedef struct kcapi_carddef kcapi_carddef;}-> N9874
+line 447:	N9874 -{struct prio_tree_node ;}-> N9875
+lines 448-452:	N9875 -{struct raw_prio_tree_node {   struct prio_tree_node *left;   struct prio_tree_node *right;   struct prio_tree_node *parent; } ;}-> N9876
+lines 453-459:	N9876 -{struct prio_tree_node {   struct prio_tree_node *left;   struct prio_tree_node *right;   struct prio_tree_node *parent;   unsigned long start;   unsigned long last; } ;}-> N9877
+lines 460-464:	N9877 -{struct prio_tree_root {   struct prio_tree_node *prio_tree_node;   unsigned short index_bits;   unsigned short raw; } ;}-> N9878
+lines 465-469:	N9878 -{struct rb_node {   unsigned long rb_parent_color;   struct rb_node *rb_right;   struct rb_node *rb_left; } ;}-> N9879
+lines 470-472:	N9879 -{struct rb_root {   struct rb_node *rb_node; } ;}-> N9880
+line 473:	N9880 -{struct rw_semaphore ;}-> N9881
+lines 474-478:	N9881 -{struct rw_semaphore {   long count;   raw_spinlock_t wait_lock;   struct list_head wait_list; } ;}-> N9882
+line 479:	N9882 -{struct __wait_queue ;}-> N9883
+line 480:	N9883 -{typedef struct __wait_queue wait_queue_t;}-> N9884
+lines 481-486:	N9884 -{struct __wait_queue {   unsigned int flags;   void *private;   int (*func)(wait_queue_t *wait, unsigned int mode, int flags, void *key);   struct list_head task_list; } ;}-> N9885
+lines 487-490:	N9885 -{struct __wait_queue_head {   spinlock_t lock;   struct list_head task_list; } ;}-> N9886
+line 491:	N9886 -{typedef struct __wait_queue_head wait_queue_head_t;}-> N9887
+lines 492-495:	N9887 -{struct completion {   unsigned int done;   wait_queue_head_t wait; } ;}-> N9888
+lines 496-503:	N9888 -{struct mutex {   atomic_t count;   spinlock_t wait_lock;   struct list_head wait_list;   struct task_struct *owner;   char *name;   void *magic; } ;}-> N9889
+lines 504-508:	N9889 -{struct mutex_waiter {   struct list_head list;   struct task_struct *task;   void *magic; } ;}-> N9890
+lines 509-515:	N9890 -{struct __anonstruct_mm_context_t_41 {   void *ldt;   int size;   unsigned short ia32_compat;   struct mutex lock;   void *vdso; } ;}-> N9891
+line 516:	N9891 -{typedef struct __anonstruct_mm_context_t_41 mm_context_t;}-> N9892
+line 517:	N9892 -{struct address_space ;}-> N9893
+lines 518-521:	N9893 -{union __anonunion____missing_field_name_43 {   unsigned long index;   void *freelist; } ;}-> N9894
+lines 522-526:	N9894 -{struct __anonstruct____missing_field_name_47 {   unsigned int inuse;   unsigned int objects;   unsigned int frozen; } ;}-> N9895
+lines 527-530:	N9895 -{union __anonunion____missing_field_name_46 {   atomic_t _mapcount;   struct __anonstruct____missing_field_name_47 __annonCompField21; } ;}-> N9896
+lines 531-534:	N9896 -{struct __anonstruct____missing_field_name_45 {   union __anonunion____missing_field_name_46 __annonCompField22;   atomic_t _count; } ;}-> N9897
+lines 535-538:	N9897 -{union __anonunion____missing_field_name_44 {   unsigned long counters;   struct __anonstruct____missing_field_name_45 __annonCompField23; } ;}-> N9898
+lines 539-542:	N9898 -{struct __anonstruct____missing_field_name_42 {   union __anonunion____missing_field_name_43 __annonCompField20;   union __anonunion____missing_field_name_44 __annonCompField24; } ;}-> N9899
+lines 543-547:	N9899 -{struct __anonstruct____missing_field_name_49 {   struct page *next;   int pages;   int pobjects; } ;}-> N9900
+lines 548-551:	N9900 -{union __anonunion____missing_field_name_48 {   struct list_head lru;   struct __anonstruct____missing_field_name_49 __annonCompField26; } ;}-> N9901
+lines 552-556:	N9901 -{union __anonunion____missing_field_name_50 {   unsigned long private;   struct kmem_cache *slab;   struct page *first_page; } ;}-> N9902
+lines 557-564:	N9902 -{struct page {   unsigned long flags;   struct address_space *mapping;   struct __anonstruct____missing_field_name_42 __annonCompField25;   union __anonunion____missing_field_name_48 __annonCompField27;   union __anonunion____missing_field_name_50 __annonCompField28;   unsigned long debug_flags; } ;}-> N9903
+lines 565-569:	N9903 -{struct __anonstruct_vm_set_52 {   struct list_head list;   void *parent;   struct vm_area_struct *head; } ;}-> N9904
+lines 570-573:	N9904 -{union __anonunion_shared_51 {   struct __anonstruct_vm_set_52 vm_set;   struct raw_prio_tree_node prio_tree_node; } ;}-> N9905
+line 574:	N9905 -{struct anon_vma ;}-> N9906
+line 575:	N9906 -{struct vm_operations_struct ;}-> N9907
+line 576:	N9907 -{struct mempolicy ;}-> N9908
+lines 577-594:	N9908 -{struct vm_area_struct {   struct mm_struct *vm_mm;   unsigned long vm_start;   unsigned long vm_end;   struct vm_area_struct *vm_next;   struct vm_area_struct *vm_prev;   pgprot_t vm_page_prot;   unsigned long vm_flags;   struct rb_node vm_rb;   union __anonunion_shared_51 shared;   struct list_head anon_vma_chain;   struct anon_vma *anon_vma;   struct vm_operations_struct *vm_ops;   unsigned long vm_pgoff;   struct file *vm_file;   void *vm_private_data;   struct mempolicy *vm_policy; } ;}-> N9909
+lines 595-598:	N9909 -{struct core_thread {   struct task_struct *task;   struct core_thread *next; } ;}-> N9910
+lines 599-603:	N9910 -{struct core_state {   atomic_t nr_threads;   struct core_thread dumper;   struct completion startup; } ;}-> N9911
+lines 604-606:	N9911 -{struct mm_rss_stat {   atomic_long_t count[3]; } ;}-> N9912
+line 607:	N9912 -{struct linux_binfmt ;}-> N9913
+line 608:	N9913 -{struct mmu_notifier_mm ;}-> N9914
+lines 609-667:	N9914 -{struct mm_struct {   struct vm_area_struct *mmap;   struct rb_root mm_rb;   struct vm_area_struct *mmap_cache;   unsigned long int (*get_unmapped_area)(struct file *filp, unsigned long addr, unsigned long len, unsigned long pgoff, unsigned long flags);   void (*unmap_area)(struct mm_struct *mm, unsigned long addr);   unsigned long mmap_base;   unsigned long task_size;   unsigned long cached_hole_size;   unsigned long free_area_cache;   pgd_t *pgd;   atomic_t mm_users;   atomic_t mm_count;   int map_count;   spinlock_t page_table_lock;   struct rw_semaphore mmap_sem;   struct list_head mmlist;   unsigned long hiwater_rss;   unsigned long hiwater_vm;   unsigned long total_vm;   unsigned long locked_vm;   unsigned long pinned_vm;   unsigned long shared_vm;   unsigned long exec_vm;   unsigned long stack_vm;   unsigned long reserved_vm;   unsigned long def_flags;   unsigned long nr_ptes;   unsigned long start_code;   unsigned long end_code;   unsigned long start_data;   unsigned long end_data;   unsigned long start_brk;   unsigned long brk;   unsigned long start_stack;   unsigned long arg_start;   unsigned long arg_end;   unsigned long env_start;   unsigned long env_end;   unsigned long saved_auxv[44];   struct mm_rss_stat rss_stat;   struct linux_binfmt *binfmt;   cpumask_var_t cpu_vm_mask_var;   mm_context_t context;   unsigned int faultstamp;   unsigned int token_priority;   unsigned int last_interval;   unsigned long flags;   struct core_state *core_state;   spinlock_t ioctx_lock;   struct hlist_head ioctx_list;   struct task_struct *owner;   struct file *exe_file;   unsigned long num_exe_file_vmas;   struct mmu_notifier_mm *mmu_notifier_mm;   pgtable_t pmd_huge_pte;   struct cpumask cpumask_allocation; } ;}-> N9915
+lines 668-670:	N9915 -{struct seqcount {   unsigned int sequence; } ;}-> N9916
+line 671:	N9916 -{typedef struct seqcount seqcount_t;}-> N9917
+lines 672-675:	N9917 -{struct timespec {   __kernel_time_t tv_sec;   long tv_nsec; } ;}-> N9918
+lines 676-679:	N9918 -{struct iovec {   void *iov_base;   __kernel_size_t iov_len; } ;}-> N9919
+line 680:	N9919 -{struct cred ;}-> N9920
+line 681:	N9920 -{struct notifier_block ;}-> N9921
+line 682:	N9921 -{struct poll_table_struct ;}-> N9922
+line 683:	N9922 -{struct pipe_inode_info ;}-> N9923
+line 684:	N9923 -{struct inode ;}-> N9924
+line 685:	N9924 -{struct fasync_struct ;}-> N9925
+line 686:	N9925 -{struct sock ;}-> N9926
+line 687:	N9926 -{struct kiocb ;}-> N9927
+lines 688-690:	N9927 -{struct __anonstruct_nodemask_t_57 {   unsigned long bits[16UL]; } ;}-> N9928
+line 691:	N9928 -{typedef struct __anonstruct_nodemask_t_57 nodemask_t;}-> N9929
+lines 692-696:	N9929 -{struct notifier_block {   int (*notifier_call)(struct notifier_block *, unsigned long, void *);   struct notifier_block *next;   int priority; } ;}-> N9930
+lines 697-700:	N9930 -{struct blocking_notifier_head {   struct rw_semaphore rwsem;   struct notifier_block *head; } ;}-> N9931
+lines 701-703:	N9931 -{union ktime {   s64 tv64; } ;}-> N9932
+line 704:	N9932 -{typedef union ktime ktime_t;}-> N9933
+line 705:	N9933 -{struct tvec_base ;}-> N9934
+lines 706-716:	N9934 -{struct timer_list {   struct list_head entry;   unsigned long expires;   struct tvec_base *base;   void (*function)(unsigned long);   unsigned long data;   int slack;   int start_pid;   void *start_site;   char start_comm[16]; } ;}-> N9935
+line 717:	N9935 -{struct hrtimer ;}-> N9936
+line 718:	N9936 -{enum hrtimer_restart ;}-> N9937
+line 719:	N9937 -{struct workqueue_struct ;}-> N9938
+line 720:	N9938 -{struct work_struct ;}-> N9939
+lines 721-725:	N9939 -{struct work_struct {   atomic_long_t data;   struct list_head entry;   void (*func)(struct work_struct *work); } ;}-> N9940
+lines 726-729:	N9940 -{struct delayed_work {   struct work_struct work;   struct timer_list timer; } ;}-> N9941
+line 730:	N9941 -{struct kobject ;}-> N9942
+lines 731-735:	N9942 -{enum kobj_ns_type {   KOBJ_NS_TYPE_NONE = 0,   KOBJ_NS_TYPE_NET = 1,   KOBJ_NS_TYPES = 2 } ;}-> N9943
+lines 736-742:	N9943 -{struct kobj_ns_type_operations {   enum kobj_ns_type type;   void * (*grab_current_ns)();   void * (*netlink_ns)(struct sock *sk);   void * (*initial_ns)();   void (*drop_ns)(void *); } ;}-> N9944
+lines 744-747:	N9944 -{struct attribute {   char *name;   umode_t mode; } ;}-> N9945
+lines 748-752:	N9945 -{struct sysfs_ops {   ssize_t  (*show)(struct kobject *, struct attribute *, char *);   ssize_t  (*store)(struct kobject *, struct attribute *, char *, size_t );   void * (*namespace)(struct kobject *, struct attribute *); } ;}-> N9946
+line 753:	N9946 -{struct sysfs_dirent ;}-> N9947
+lines 754-756:	N9947 -{struct kref {   atomic_t refcount; } ;}-> N9948
+line 757:	N9948 -{struct kset ;}-> N9949
+line 758:	N9949 -{struct kobj_type ;}-> N9950
+lines 759-772:	N9950 -{struct kobject {   char *name;   struct list_head entry;   struct kobject *parent;   struct kset *kset;   struct kobj_type *ktype;   struct sysfs_dirent *sd;   struct kref kref;   unsigned int state_initialized;   unsigned int state_in_sysfs;   unsigned int state_add_uevent_sent;   unsigned int state_remove_uevent_sent;   unsigned int uevent_suppress; } ;}-> N9951
+lines 773-779:	N9951 -{struct kobj_type {   void (*release)(struct kobject *kobj);   struct sysfs_ops *sysfs_ops;   struct attribute **default_attrs;   struct kobj_ns_type_operations * (*child_ns_type)(struct kobject *kobj);   void * (*namespace)(struct kobject *kobj); } ;}-> N9952
+lines 780-785:	N9952 -{struct kobj_uevent_env {   char *envp[32];   int envp_idx;   char buf[2048];   int buflen; } ;}-> N9953
+lines 786-790:	N9953 -{struct kset_uevent_ops {   int (*filter)(struct kset *kset, struct kobject *kobj);   char * (*name)(struct kset *kset, struct kobject *kobj);   int (*uevent)(struct kset *kset, struct kobject *kobj, struct kobj_uevent_env *env); } ;}-> N9954
+lines 791-796:	N9954 -{struct kset {   struct list_head list;   spinlock_t list_lock;   struct kobject kobj;   struct kset_uevent_ops *uevent_ops; } ;}-> N9955
+lines 797-804:	N9955 -{struct kmem_cache_cpu {   void **freelist;   unsigned long tid;   struct page *page;   struct page *partial;   int node;   unsigned int stat[26]; } ;}-> N9956
+lines 805-812:	N9956 -{struct kmem_cache_node {   spinlock_t list_lock;   unsigned long nr_partial;   struct list_head partial;   atomic_long_t nr_slabs;   atomic_long_t total_objects;   struct list_head full; } ;}-> N9957
+lines 813-815:	N9957 -{struct kmem_cache_order_objects {   unsigned long x; } ;}-> N9958
+lines 816-838:	N9958 -{struct kmem_cache {   struct kmem_cache_cpu *cpu_slab;   unsigned long flags;   unsigned long min_partial;   int size;   int objsize;   int offset;   int cpu_partial;   struct kmem_cache_order_objects oo;   struct kmem_cache_order_objects max;   struct kmem_cache_order_objects min;   gfp_t allocflags;   int refcount;   void (*ctor)(void *);   int inuse;   int align;   int reserved;   char *name;   struct list_head list;   struct kobject kobj;   int remote_node_defrag_ratio;   struct kmem_cache_node *node[1024]; } ;}-> N9959
+lines 839-842:	N9959 -{struct exception_table_entry {   unsigned long insn;   unsigned long fixup; } ;}-> N9960
+line 843:	N9960 -{struct sk_buff ;}-> N9961
+lines 844-847:	N9961 -{struct shrink_control {   gfp_t gfp_mask;   unsigned long nr_to_scan; } ;}-> N9962
+lines 848-854:	N9962 -{struct shrinker {   int (*shrink)(struct shrinker *, struct shrink_control *sc);   int seeks;   long batch;   struct list_head list;   atomic_long_t nr_in_batch; } ;}-> N9963
+line 855:	N9963 -{struct file_ra_state ;}-> N9964
+line 856:	N9964 -{struct user_struct ;}-> N9965
+line 857:	N9965 -{struct writeback_control ;}-> N9966
+lines 858-863:	N9966 -{struct vm_fault {   unsigned int flags;   unsigned long pgoff;   void *virtual_address;   struct page *page; } ;}-> N9967
+lines 864-875:	N9967 -{struct vm_operations_struct {   void (*open)(struct vm_area_struct *area);   void (*close)(struct vm_area_struct *area);   int (*fault)(struct vm_area_struct *vma, struct vm_fault *vmf);   int (*page_mkwrite)(struct vm_area_struct *vma, struct vm_fault *vmf);   int (*access)(struct vm_area_struct *vma, unsigned long addr, void *buf, int len, int write);   int (*set_policy)(struct vm_area_struct *vma, struct mempolicy *new);   struct mempolicy * (*get_policy)(struct vm_area_struct *vma, unsigned long addr);   int (*migrate)(struct vm_area_struct *vma, nodemask_t *from, nodemask_t *to, unsigned long flags); } ;}-> N9968
+line 876:	N9968 -{typedef s32 dma_cookie_t;}-> N9969
+lines 877-880:	N9969 -{struct timerqueue_node {   struct rb_node node;   ktime_t expires; } ;}-> N9970
+lines 881-884:	N9970 -{struct timerqueue_head {   struct rb_root head;   struct timerqueue_node *next; } ;}-> N9971
+line 885:	N9971 -{struct hrtimer_clock_base ;}-> N9972
+line 886:	N9972 -{struct hrtimer_cpu_base ;}-> N9973
+lines 887-890:	N9973 -{enum hrtimer_restart {   HRTIMER_NORESTART = 0,   HRTIMER_RESTART = 1 } ;}-> N9974
+lines 891-900:	N9974 -{struct hrtimer {   struct timerqueue_node node;   ktime_t _softexpires;   enum hrtimer_restart  (*function)(struct hrtimer *);   struct hrtimer_clock_base *base;   unsigned long state;   int start_pid;   void *start_site;   char start_comm[16]; } ;}-> N9975
+lines 901-910:	N9975 -{struct hrtimer_clock_base {   struct hrtimer_cpu_base *cpu_base;   int index;   clockid_t clockid;   struct timerqueue_head active;   ktime_t resolution;   ktime_t  (*get_time)();   ktime_t softirq_time;   ktime_t offset; } ;}-> N9976
+lines 911-922:	N9976 -{struct hrtimer_cpu_base {   raw_spinlock_t lock;   unsigned long active_bases;   ktime_t expires_next;   int hres_active;   int hang_detected;   unsigned long nr_events;   unsigned long nr_retries;   unsigned long nr_hangs;   ktime_t max_hang_time;   struct hrtimer_clock_base clock_base[3]; } ;}-> N9977
+lines 923-925:	N9977 -{struct nf_conntrack {   atomic_t use; } ;}-> N9978
+lines 926-932:	N9978 -{struct nf_bridge_info {   atomic_t use;   struct net_device *physindev;   struct net_device *physoutdev;   unsigned int mask;   unsigned long data[4UL]; } ;}-> N9979
+lines 933-938:	N9979 -{struct sk_buff_head {   struct sk_buff *next;   struct sk_buff *prev;   __u32 qlen;   spinlock_t lock; } ;}-> N9980
+line 939:	N9980 -{typedef unsigned int sk_buff_data_t;}-> N9981
+line 940:	N9981 -{struct sec_path ;}-> N9982
+lines 941-944:	N9982 -{struct __anonstruct____missing_field_name_160 {   __u16 csum_start;   __u16 csum_offset; } ;}-> N9983
+lines 945-948:	N9983 -{union __anonunion____missing_field_name_159 {   __wsum csum;   struct __anonstruct____missing_field_name_160 __annonCompField39; } ;}-> N9984
+lines 949-953:	N9984 -{union __anonunion____missing_field_name_161 {   __u32 mark;   __u32 dropcount;   __u32 avail_size; } ;}-> N9985
+lines 954-1008:	N9985 -{struct sk_buff {   struct sk_buff *next;   struct sk_buff *prev;   ktime_t tstamp;   struct sock *sk;   struct net_device *dev;   char cb[48];   unsigned long _skb_refdst;   struct sec_path *sp;   unsigned int len;   unsigned int data_len;   __u16 mac_len;   __u16 hdr_len;   union __anonunion____missing_field_name_159 __annonCompField40;   __u32 priority;   __u8 local_df;   __u8 cloned;   __u8 ip_summed;   __u8 nohdr;   __u8 nfctinfo;   __u8 pkt_type;   __u8 fclone;   __u8 ipvs_property;   __u8 peeked;   __u8 nf_trace;   __be16 protocol;   void (*destructor)(struct sk_buff *skb);   struct nf_conntrack *nfct;   struct sk_buff *nfct_reasm;   struct nf_bridge_info *nf_bridge;   int skb_iif;   __u32 rxhash;   __u16 vlan_tci;   __u16 tc_index;   __u16 tc_verd;   __u16 queue_mapping;   __u8 ndisc_nodetype;   __u8 ooo_okay;   __u8 l4_rxhash;   __u8 wifi_acked_valid;   __u8 wifi_acked;   __u8 no_fcs;   dma_cookie_t dma_cookie;   __u32 secmark;   union __anonunion____missing_field_name_161 __annonCompField41;   sk_buff_data_t transport_header;   sk_buff_data_t network_header;   sk_buff_data_t mac_header;   sk_buff_data_t tail;   sk_buff_data_t end;   unsigned char *head;   unsigned char *data;   unsigned int truesize;   atomic_t users; } ;}-> N9986
+lines 1009-1022:	N9986 -{struct capi20_appl {   u16 applid;   capi_register_params rparam;   void (*recv_message)(struct capi20_appl *ap, struct sk_buff *skb);   void *private;   unsigned long nrecvctlpkt;   unsigned long nrecvdatapkt;   unsigned long nsentctlpkt;   unsigned long nsentdatapkt;   struct mutex recv_mtx;   struct sk_buff_head recv_queue;   struct work_struct recv_work;   int release_in_progress; } ;}-> N9987
+lines 1023-1027:	N9987 -{struct capiloaddatapart {   int user;   int len;   unsigned char *data; } ;}-> N9988
+line 1028:	N9988 -{typedef struct capiloaddatapart capiloaddatapart;}-> N9989
+lines 1029-1032:	N9989 -{struct capiloaddata {   capiloaddatapart firmware;   capiloaddatapart configuration; } ;}-> N9990
+line 1033:	N9990 -{typedef struct capiloaddata capiloaddata;}-> N9991
+lines 1034-1040:	N9991 -{struct capicardparams {   unsigned int port;   unsigned int irq;   int cardtype;   int cardnr;   unsigned int membase; } ;}-> N9992
+line 1041:	N9992 -{typedef struct capicardparams capicardparams;}-> N9993
+line 1042:	N9993 -{struct file_operations ;}-> N9994
+line 1043:	N9994 -{struct proc_dir_entry ;}-> N9995
+lines 1044-1071:	N9995 -{struct capi_ctr {   struct module *owner;   void *driverdata;   char name[32];   char *driver_name;   int (*load_firmware)(struct capi_ctr *, capiloaddata *);   void (*reset_ctr)(struct capi_ctr *);   void (*register_appl)(struct capi_ctr *, u16 appl, capi_register_params *);   void (*release_appl)(struct capi_ctr *, u16 appl);   u16  (*send_message)(struct capi_ctr *, struct sk_buff *skb);   char * (*procinfo)(struct capi_ctr *);   struct file_operations *proc_fops;   u8 manu[64];   capi_version version;   capi_profile profile;   u8 serial[8];   unsigned long nrecvctlpkt;   unsigned long nrecvdatapkt;   unsigned long nsentctlpkt;   unsigned long nsentdatapkt;   int cnr;   unsigned short state;   int blocked;   int traceflag;   wait_queue_head_t state_wait_queue;   struct proc_dir_entry *procent;   char procfn[128]; } ;}-> N9996
+lines 1072-1077:	N9996 -{struct capi_driver {   char name[32];   char revision[32];   int (*add_card)(struct capi_driver *driver, capicardparams *data);   struct list_head list; } ;}-> N9997
+lines 1078-1092:	N9997 -{struct kstat {   u64 ino;   dev_t dev;   umode_t mode;   unsigned int nlink;   uid_t uid;   gid_t gid;   dev_t rdev;   loff_t size;   struct timespec atime;   struct timespec mtime;   struct timespec ctime;   unsigned long blksize;   unsigned long long blocks; } ;}-> N9998
+line 1093:	N9998 -{struct nsproxy ;}-> N9999
+line 1094:	N9999 -{typedef __u64 Elf64_Addr;}-> N10000
+line 1095:	N10000 -{typedef __u16 Elf64_Half;}-> N10001
+line 1096:	N10001 -{typedef __u32 Elf64_Word;}-> N10002
+line 1097:	N10002 -{typedef __u64 Elf64_Xword;}-> N10003
+lines 1098-1105:	N10003 -{struct elf64_sym {   Elf64_Word st_name;   unsigned char st_info;   unsigned char st_other;   Elf64_Half st_shndx;   Elf64_Addr st_value;   Elf64_Xword st_size; } ;}-> N10004
+line 1106:	N10004 -{typedef struct elf64_sym Elf64_Sym;}-> N10005
+line 1107:	N10005 -{struct kernel_param ;}-> N10006
+lines 1108-1112:	N10006 -{struct kernel_param_ops {   int (*set)(char *val, struct kernel_param *kp);   int (*get)(char *buffer, struct kernel_param *kp);   void (*free)(void *arg); } ;}-> N10007
+line 1113:	N10007 -{struct kparam_string ;}-> N10008
+line 1114:	N10008 -{struct kparam_array ;}-> N10009
+lines 1115-1119:	N10009 -{union __anonunion____missing_field_name_227 {   void *arg;   struct kparam_string *str;   struct kparam_array *arr; } ;}-> N10010
+lines 1120-1126:	N10010 -{struct kernel_param {   char *name;   struct kernel_param_ops *ops;   u16 perm;   s16 level;   union __anonunion____missing_field_name_227 __annonCompField44; } ;}-> N10011
+lines 1127-1130:	N10011 -{struct kparam_string {   unsigned int maxlen;   char *string; } ;}-> N10012
+lines 1131-1137:	N10012 -{struct kparam_array {   unsigned int max;   unsigned int elemsize;   unsigned int *num;   struct kernel_param_ops *ops;   void *elem; } ;}-> N10013
+lines 1138-1140:	N10013 -{struct static_key {   atomic_t enabled; } ;}-> N10014
+line 1141:	N10014 -{struct tracepoint ;}-> N10015
+lines 1142-1145:	N10015 -{struct tracepoint_func {   void *func;   void *data; } ;}-> N10016
+lines 1146-1152:	N10016 -{struct tracepoint {   char *name;   struct static_key key;   void (*regfunc)();   void (*unregfunc)();   struct tracepoint_func *funcs; } ;}-> N10017
+lines 1153-1156:	N10017 -{struct kernel_symbol {   unsigned long value;   char *name; } ;}-> N10018
+lines 1157-1159:	N10018 -{struct mod_arch_specific { } ;}-> N10019
+line 1160:	N10019 -{struct module_param_attrs ;}-> N10020
+lines 1161-1166:	N10020 -{struct module_kobject {   struct kobject kobj;   struct module *mod;   struct kobject *drivers_dir;   struct module_param_attrs *mp; } ;}-> N10021
+lines 1167-1175:	N10021 -{struct module_attribute {   struct attribute attr;   ssize_t  (*show)(struct module_attribute *, struct module_kobject *, char *);   ssize_t  (*store)(struct module_attribute *, struct module_kobject *, char *, size_t count);   void (*setup)(struct module *, char *);   int (*test)(struct module *);   void (*free)(struct module *); } ;}-> N10022
+lines 1176-1180:	N10022 -{enum module_state {   MODULE_STATE_LIVE = 0,   MODULE_STATE_COMING = 1,   MODULE_STATE_GOING = 2 } ;}-> N10023
+lines 1181-1184:	N10023 -{struct module_ref {   unsigned long incs;   unsigned long decs; } ;}-> N10024
+line 1185:	N10024 -{struct module_sect_attrs ;}-> N10025
+line 1186:	N10025 -{struct module_notes_attrs ;}-> N10026
+line 1187:	N10026 -{struct ftrace_event_call ;}-> N10027
+lines 1188-1254:	N10027 -{struct module {   enum module_state state;   struct list_head list;   char name[56UL];   struct module_kobject mkobj;   struct module_attribute *modinfo_attrs;   char *version;   char *srcversion;   struct kobject *holders_dir;   struct kernel_symbol *syms;   unsigned long *crcs;   unsigned int num_syms;   struct kernel_param *kp;   unsigned int num_kp;   unsigned int num_gpl_syms;   struct kernel_symbol *gpl_syms;   unsigned long *gpl_crcs;   struct kernel_symbol *unused_syms;   unsigned long *unused_crcs;   unsigned int num_unused_syms;   unsigned int num_unused_gpl_syms;   struct kernel_symbol *unused_gpl_syms;   unsigned long *unused_gpl_crcs;   struct kernel_symbol *gpl_future_syms;   unsigned long *gpl_future_crcs;   unsigned int num_gpl_future_syms;   unsigned int num_exentries;   struct exception_table_entry *extable;   int (*init)();   void *module_init;   void *module_core;   unsigned int init_size;   unsigned int core_size;   unsigned int init_text_size;   unsigned int core_text_size;   unsigned int init_ro_size;   unsigned int core_ro_size;   struct mod_arch_specific arch;   unsigned int taints;   unsigned int num_bugs;   struct list_head bug_list;   struct bug_entry *bug_table;   Elf64_Sym *symtab;   Elf64_Sym *core_symtab;   unsigned int num_symtab;   unsigned int core_num_syms;   char *strtab;   char *core_strtab;   struct module_sect_attrs *sect_attrs;   struct module_notes_attrs *notes_attrs;   char *args;   void *percpu;   unsigned int percpu_size;   unsigned int num_tracepoints;   struct tracepoint **tracepoints_ptrs;   unsigned int num_trace_bprintk_fmt;   char **trace_bprintk_fmt_start;   struct ftrace_event_call **trace_events;   unsigned int num_trace_events;   struct list_head source_list;   struct list_head target_list;   struct task_struct *waiter;   void (*exit)();   struct module_ref *refptr;   ctor_fn_t *ctors;   unsigned int num_ctors; } ;}-> N10028
+line 1255:	N10028 -{struct block_device ;}-> N10029
+line 1256:	N10029 -{struct hlist_bl_node ;}-> N10030
+lines 1257-1259:	N10030 -{struct hlist_bl_head {   struct hlist_bl_node *first; } ;}-> N10031
+lines 1260-1263:	N10031 -{struct hlist_bl_node {   struct hlist_bl_node *next;   struct hlist_bl_node **pprev; } ;}-> N10032
+line 1264:	N10032 -{struct nameidata ;}-> N10033
+line 1265:	N10033 -{struct path ;}-> N10034
+line 1266:	N10034 -{struct vfsmount ;}-> N10035
+lines 1267-1271:	N10035 -{struct qstr {   unsigned int hash;   unsigned int len;   unsigned char *name; } ;}-> N10036
+line 1272:	N10036 -{struct dentry_operations ;}-> N10037
+line 1273:	N10037 -{struct super_block ;}-> N10038
+lines 1274-1277:	N10038 -{union __anonunion_d_u_237 {   struct list_head d_child;   struct rcu_head d_rcu; } ;}-> N10039
+lines 1278-1296:	N10039 -{struct dentry {   unsigned int d_flags;   seqcount_t d_seq;   struct hlist_bl_node d_hash;   struct dentry *d_parent;   struct qstr d_name;   struct inode *d_inode;   unsigned char d_iname[32];   unsigned int d_count;   spinlock_t d_lock;   struct dentry_operations *d_op;   struct super_block *d_sb;   unsigned long d_time;   void *d_fsdata;   struct list_head d_lru;   union __anonunion_d_u_237 d_u;   struct list_head d_subdirs;   struct list_head d_alias; } ;}-> N10040
+lines 1297-1309:	N10040 -{struct dentry_operations {   int (*d_revalidate)(struct dentry *, struct nameidata *);   int (*d_hash)(struct dentry *, struct inode *, struct qstr *);   int (*d_compare)(struct dentry *, struct inode *, const struct dentry *, struct inode *, unsigned int, char *, const struct qstr *);   int (*d_delete)(struct dentry *);   void (*d_release)(struct dentry *);   void (*d_prune)(struct dentry *);   void (*d_iput)(struct dentry *, struct inode *);   char * (*d_dname)(struct dentry *, char *, int);   struct vfsmount * (*d_automount)(struct path *);   int (*d_manage)(struct dentry *, bool ); } ;}-> N10041
+lines 1310-1313:	N10041 -{struct path {   struct vfsmount *mnt;   struct dentry *dentry; } ;}-> N10042
+line 1314:	N10042 -{struct radix_tree_node ;}-> N10043
+lines 1315-1319:	N10043 -{struct radix_tree_root {   unsigned int height;   gfp_t gfp_mask;   struct radix_tree_node *rnode; } ;}-> N10044
+lines 1320-1325:	N10044 -{enum pid_type {   PIDTYPE_PID = 0,   PIDTYPE_PGID = 1,   PIDTYPE_SID = 2,   PIDTYPE_MAX = 3 } ;}-> N10045
+line 1326:	N10045 -{struct pid_namespace ;}-> N10046
+lines 1327-1331:	N10046 -{struct upid {   int nr;   struct pid_namespace *ns;   struct hlist_node pid_chain; } ;}-> N10047
+lines 1332-1338:	N10047 -{struct pid {   atomic_t count;   unsigned int level;   struct hlist_head tasks[3];   struct rcu_head rcu;   struct upid numbers[1]; } ;}-> N10048
+lines 1339-1342:	N10048 -{struct pid_link {   struct hlist_node node;   struct pid *pid; } ;}-> N10049
+lines 1343-1345:	N10049 -{struct kernel_cap_struct {   __u32 cap[2]; } ;}-> N10050
+line 1346:	N10050 -{typedef struct kernel_cap_struct kernel_cap_t;}-> N10051
+line 1347:	N10051 -{struct user_namespace ;}-> N10052
+lines 1348-1355:	N10052 -{struct fiemap_extent {   __u64 fe_logical;   __u64 fe_physical;   __u64 fe_length;   __u64 fe_reserved64[2];   __u32 fe_flags;   __u32 fe_reserved[3]; } ;}-> N10053
+lines 1356-1360:	N10053 -{enum migrate_mode {   MIGRATE_ASYNC = 0,   MIGRATE_SYNC_LIGHT = 1,   MIGRATE_SYNC = 2 } ;}-> N10054
+line 1361:	N10054 -{struct export_operations ;}-> N10055
+line 1362:	N10055 -{struct kstatfs ;}-> N10056
+lines 1363-1373:	N10056 -{struct iattr {   unsigned int ia_valid;   umode_t ia_mode;   uid_t ia_uid;   gid_t ia_gid;   loff_t ia_size;   struct timespec ia_atime;   struct timespec ia_mtime;   struct timespec ia_ctime;   struct file *ia_file; } ;}-> N10057
+lines 1374-1379:	N10057 -{struct if_dqinfo {   __u64 dqi_bgrace;   __u64 dqi_igrace;   __u32 dqi_flags;   __u32 dqi_valid; } ;}-> N10058
+lines 1380-1403:	N10058 -{struct fs_disk_quota {   __s8 d_version;   __s8 d_flags;   __u16 d_fieldmask;   __u32 d_id;   __u64 d_blk_hardlimit;   __u64 d_blk_softlimit;   __u64 d_ino_hardlimit;   __u64 d_ino_softlimit;   __u64 d_bcount;   __u64 d_icount;   __s32 d_itimer;   __s32 d_btimer;   __u16 d_iwarns;   __u16 d_bwarns;   __s32 d_padding2;   __u64 d_rtb_hardlimit;   __u64 d_rtb_softlimit;   __u64 d_rtbcount;   __s32 d_rtbtimer;   __u16 d_rtbwarns;   __s16 d_padding3;   char d_padding4[8]; } ;}-> N10059
+lines 1404-1408:	N10059 -{struct fs_qfilestat {   __u64 qfs_ino;   __u64 qfs_nblks;   __u32 qfs_nextents; } ;}-> N10060
+line 1409:	N10060 -{typedef struct fs_qfilestat fs_qfilestat_t;}-> N10061
+lines 1410-1422:	N10061 -{struct fs_quota_stat {   __s8 qs_version;   __u16 qs_flags;   __s8 qs_pad;   fs_qfilestat_t qs_uquota;   fs_qfilestat_t qs_gquota;   __u32 qs_incoredqs;   __s32 qs_btimelimit;   __s32 qs_itimelimit;   __s32 qs_rtbtimelimit;   __u16 qs_bwarnlimit;   __u16 qs_iwarnlimit; } ;}-> N10062
+line 1423:	N10062 -{struct dquot ;}-> N10063
+line 1424:	N10063 -{typedef __kernel_uid32_t qid_t;}-> N10064
+line 1425:	N10064 -{typedef long long qsize_t;}-> N10065
+lines 1426-1436:	N10065 -{struct mem_dqblk {   qsize_t dqb_bhardlimit;   qsize_t dqb_bsoftlimit;   qsize_t dqb_curspace;   qsize_t dqb_rsvspace;   qsize_t dqb_ihardlimit;   qsize_t dqb_isoftlimit;   qsize_t dqb_curinodes;   time_t dqb_btime;   time_t dqb_itime; } ;}-> N10066
+line 1437:	N10066 -{struct quota_format_type ;}-> N10067
+lines 1438-1448:	N10067 -{struct mem_dqinfo {   struct quota_format_type *dqi_format;   int dqi_fmt_id;   struct list_head dqi_dirty_list;   unsigned long dqi_flags;   unsigned int dqi_bgrace;   unsigned int dqi_igrace;   qsize_t dqi_maxblimit;   qsize_t dqi_maxilimit;   void *dqi_priv; } ;}-> N10068
+lines 1449-1463:	N10068 -{struct dquot {   struct hlist_node dq_hash;   struct list_head dq_inuse;   struct list_head dq_free;   struct list_head dq_dirty;   struct mutex dq_lock;   atomic_t dq_count;   wait_queue_head_t dq_wait_unused;   struct super_block *dq_sb;   unsigned int dq_id;   loff_t dq_off;   unsigned long dq_flags;   short dq_type;   struct mem_dqblk dq_dqb; } ;}-> N10069
+lines 1464-1472:	N10069 -{struct quota_format_ops {   int (*check_quota_file)(struct super_block *sb, int type);   int (*read_file_info)(struct super_block *sb, int type);   int (*write_file_info)(struct super_block *sb, int type);   int (*free_file_info)(struct super_block *sb, int type);   int (*read_dqblk)(struct dquot *dquot);   int (*commit_dqblk)(struct dquot *dquot);   int (*release_dqblk)(struct dquot *dquot); } ;}-> N10070
+lines 1473-1482:	N10070 -{struct dquot_operations {   int (*write_dquot)(struct dquot *);   struct dquot * (*alloc_dquot)(struct super_block *, int);   void (*destroy_dquot)(struct dquot *);   int (*acquire_dquot)(struct dquot *);   int (*release_dquot)(struct dquot *);   int (*mark_dirty)(struct dquot *);   int (*write_info)(struct super_block *, int);   qsize_t * (*get_reserved_space)(struct inode *); } ;}-> N10071
+lines 1483-1494:	N10071 -{struct quotactl_ops {   int (*quota_on)(struct super_block *, int, int, struct path *);   int (*quota_on_meta)(struct super_block *, int, int);   int (*quota_off)(struct super_block *, int);   int (*quota_sync)(struct super_block *, int, int);   int (*get_info)(struct super_block *, int, struct if_dqinfo *);   int (*set_info)(struct super_block *, int, struct if_dqinfo *);   int (*get_dqblk)(struct super_block *, int, qid_t , struct fs_disk_quota *);   int (*set_dqblk)(struct super_block *, int, qid_t , struct fs_disk_quota *);   int (*get_xstate)(struct super_block *, struct fs_quota_stat *);   int (*set_xstate)(struct super_block *, unsigned int, int); } ;}-> N10072
+lines 1495-1500:	N10072 -{struct quota_format_type {   int qf_fmt_id;   struct quota_format_ops *qf_ops;   struct module *qf_owner;   struct quota_format_type *qf_next; } ;}-> N10073
+lines 1501-1509:	N10073 -{struct quota_info {   unsigned int flags;   struct mutex dqio_mutex;   struct mutex dqonoff_mutex;   struct rw_semaphore dqptr_sem;   struct inode *files[2];   struct mem_dqinfo info[2];   struct quota_format_ops *ops[2]; } ;}-> N10074
+lines 1510-1513:	N10074 -{union __anonunion_arg_245 {   char *buf;   void *data; } ;}-> N10075
+lines 1514-1519:	N10075 -{struct __anonstruct_read_descriptor_t_244 {   size_t written;   size_t count;   union __anonunion_arg_245 arg;   int error; } ;}-> N10076
+line 1520:	N10076 -{typedef struct __anonstruct_read_descriptor_t_244 read_descriptor_t;}-> N10077
+lines 1521-1544:	N10077 -{struct address_space_operations {   int (*writepage)(struct page *page, struct writeback_control *wbc);   int (*readpage)(struct file *, struct page *);   int (*writepages)(struct address_space *, struct writeback_control *);   int (*set_page_dirty)(struct page *page);   int (*readpages)(struct file *filp, struct address_space *mapping, struct list_head *pages, unsigned int nr_pages);   int (*write_begin)(struct file *, struct address_space *mapping, loff_t pos, unsigned int len, unsigned int flags, struct page **pagep, void **fsdata);   int (*write_end)(struct file *, struct address_space *mapping, loff_t pos, unsigned int len, unsigned int copied, struct page *page, void *fsdata);   sector_t  (*bmap)(struct address_space *, sector_t );   void (*invalidatepage)(struct page *, unsigned long);   int (*releasepage)(struct page *, gfp_t );   void (*freepage)(struct page *);   ssize_t  (*direct_IO)(int, struct kiocb *, struct iovec *iov, loff_t offset, unsigned long nr_segs);   int (*get_xip_mem)(struct address_space *, unsigned long, int, void **, unsigned long *);   int (*migratepage)(struct address_space *, struct page *, struct page *, enum migrate_mode );   int (*launder_page)(struct page *);   int (*is_partially_uptodate)(struct page *, read_descriptor_t *, unsigned long);   int (*error_remove_page)(struct address_space *, struct page *); } ;}-> N10078
+line 1545:	N10078 -{struct backing_dev_info ;}-> N10079
+lines 1546-1562:	N10079 -{struct address_space {   struct inode *host;   struct radix_tree_root page_tree;   spinlock_t tree_lock;   unsigned int i_mmap_writable;   struct prio_tree_root i_mmap;   struct list_head i_mmap_nonlinear;   struct mutex i_mmap_mutex;   unsigned long nrpages;   unsigned long writeback_index;   struct address_space_operations *a_ops;   unsigned long flags;   struct backing_dev_info *backing_dev_info;   spinlock_t private_lock;   struct list_head private_list;   struct address_space *assoc_mapping; } ;}-> N10080
+line 1563:	N10080 -{struct request_queue ;}-> N10081
+line 1564:	N10081 -{struct hd_struct ;}-> N10082
+line 1565:	N10082 -{struct gendisk ;}-> N10083
+lines 1566-1589:	N10083 -{struct block_device {   dev_t bd_dev;   int bd_openers;   struct inode *bd_inode;   struct super_block *bd_super;   struct mutex bd_mutex;   struct list_head bd_inodes;   void *bd_claiming;   void *bd_holder;   int bd_holders;   bool bd_write_holder;   struct list_head bd_holder_disks;   struct block_device *bd_contains;   unsigned int bd_block_size;   struct hd_struct *bd_part;   unsigned int bd_part_count;   int bd_invalidated;   struct gendisk *bd_disk;   struct request_queue *bd_queue;   struct list_head bd_list;   unsigned long bd_private;   int bd_fsfreeze_count;   struct mutex bd_fsfreeze_mutex; } ;}-> N10084
+line 1590:	N10084 -{struct posix_acl ;}-> N10085
+line 1591:	N10085 -{struct inode_operations ;}-> N10086
+lines 1592-1595:	N10086 -{union __anonunion____missing_field_name_246 {   unsigned int i_nlink;   unsigned int __i_nlink; } ;}-> N10087
+lines 1596-1599:	N10087 -{union __anonunion____missing_field_name_247 {   struct list_head i_dentry;   struct rcu_head i_rcu; } ;}-> N10088
+line 1600:	N10088 -{struct file_lock ;}-> N10089
+line 1601:	N10089 -{struct cdev ;}-> N10090
+lines 1602-1606:	N10090 -{union __anonunion____missing_field_name_248 {   struct pipe_inode_info *i_pipe;   struct block_device *i_bdev;   struct cdev *i_cdev; } ;}-> N10091
+lines 1607-1653:	N10091 -{struct inode {   umode_t i_mode;   unsigned short i_opflags;   uid_t i_uid;   gid_t i_gid;   unsigned int i_flags;   struct posix_acl *i_acl;   struct posix_acl *i_default_acl;   struct inode_operations *i_op;   struct super_block *i_sb;   struct address_space *i_mapping;   void *i_security;   unsigned long i_ino;   union __anonunion____missing_field_name_246 __annonCompField45;   dev_t i_rdev;   struct timespec i_atime;   struct timespec i_mtime;   struct timespec i_ctime;   spinlock_t i_lock;   unsigned short i_bytes;   blkcnt_t i_blocks;   loff_t i_size;   unsigned long i_state;   struct mutex i_mutex;   unsigned long dirtied_when;   struct hlist_node i_hash;   struct list_head i_wb_list;   struct list_head i_lru;   struct list_head i_sb_list;   union __anonunion____missing_field_name_247 __annonCompField46;   atomic_t i_count;   unsigned int i_blkbits;   u64 i_version;   atomic_t i_dio_count;   atomic_t i_writecount;   struct file_operations *i_fop;   struct file_lock *i_flock;   struct address_space i_data;   struct dquot *i_dquot[2];   struct list_head i_devices;   union __anonunion____missing_field_name_248 __annonCompField47;   __u32 i_generation;   __u32 i_fsnotify_mask;   struct hlist_head i_fsnotify_marks;   atomic_t i_readcount;   void *i_private; } ;}-> N10092
+lines 1654-1661:	N10092 -{struct fown_struct {   rwlock_t lock;   struct pid *pid;   enum pid_type pid_type;   uid_t uid;   uid_t euid;   int signum; } ;}-> N10093
+lines 1662-1669:	N10093 -{struct file_ra_state {   unsigned long start;   unsigned int size;   unsigned int async_size;   unsigned int ra_pages;   unsigned int mmap_miss;   loff_t prev_pos; } ;}-> N10094
+lines 1670-1673:	N10094 -{union __anonunion_f_u_249 {   struct list_head fu_list;   struct rcu_head fu_rcuhead; } ;}-> N10095
+lines 1674-1694:	N10095 -{struct file {   union __anonunion_f_u_249 f_u;   struct path f_path;   struct file_operations *f_op;   spinlock_t f_lock;   int f_sb_list_cpu;   atomic_long_t f_count;   unsigned int f_flags;   fmode_t f_mode;   loff_t f_pos;   struct fown_struct f_owner;   struct cred *f_cred;   struct file_ra_state f_ra;   u64 f_version;   void *f_security;   void *private_data;   struct list_head f_ep_links;   struct list_head f_tfile_llink;   struct address_space *f_mapping;   unsigned long f_mnt_write_state; } ;}-> N10096
+line 1695:	N10096 -{struct files_struct ;}-> N10097
+line 1696:	N10097 -{typedef struct files_struct *fl_owner_t;}-> N10098
+lines 1697-1700:	N10098 -{struct file_lock_operations {   void (*fl_copy_lock)(struct file_lock *, struct file_lock *);   void (*fl_release_private)(struct file_lock *); } ;}-> N10099
+lines 1701-1708:	N10099 -{struct lock_manager_operations {   int (*lm_compare_owner)(struct file_lock *, struct file_lock *);   void (*lm_notify)(struct file_lock *);   int (*lm_grant)(struct file_lock *, struct file_lock *, int);   void (*lm_release_private)(struct file_lock *);   void (*lm_break)(struct file_lock *);   int (*lm_change)(struct file_lock **, int); } ;}-> N10100
+line 1709:	N10100 -{struct nlm_lockowner ;}-> N10101
+lines 1710-1714:	N10101 -{struct nfs_lock_info {   u32 state;   struct nlm_lockowner *owner;   struct list_head list; } ;}-> N10102
+line 1715:	N10102 -{struct nfs4_lock_state ;}-> N10103
+lines 1716-1718:	N10103 -{struct nfs4_lock_info {   struct nfs4_lock_state *owner; } ;}-> N10104
+lines 1719-1722:	N10104 -{struct __anonstruct_afs_251 {   struct list_head link;   int state; } ;}-> N10105
+lines 1723-1727:	N10105 -{union __anonunion_fl_u_250 {   struct nfs_lock_info nfs_fl;   struct nfs4_lock_info nfs4_fl;   struct __anonstruct_afs_251 afs; } ;}-> N10106
+lines 1728-1747:	N10106 -{struct file_lock {   struct file_lock *fl_next;   struct list_head fl_link;   struct list_head fl_block;   fl_owner_t fl_owner;   unsigned int fl_flags;   unsigned char fl_type;   unsigned int fl_pid;   struct pid *fl_nspid;   wait_queue_head_t fl_wait;   struct file *fl_file;   loff_t fl_start;   loff_t fl_end;   struct fasync_struct *fl_fasync;   unsigned long fl_break_time;   unsigned long fl_downgrade_time;   struct file_lock_operations *fl_ops;   struct lock_manager_operations *fl_lmops;   union __anonunion_fl_u_250 fl_u; } ;}-> N10107
+lines 1748-1755:	N10107 -{struct fasync_struct {   spinlock_t fa_lock;   int magic;   int fa_fd;   struct fasync_struct *fa_next;   struct file *fa_file;   struct rcu_head fa_rcu; } ;}-> N10108
+line 1756:	N10108 -{struct file_system_type ;}-> N10109
+line 1757:	N10109 -{struct super_operations ;}-> N10110
+line 1758:	N10110 -{struct xattr_handler ;}-> N10111
+line 1759:	N10111 -{struct mtd_info ;}-> N10112
+lines 1760-1811:	N10112 -{struct super_block {   struct list_head s_list;   dev_t s_dev;   unsigned char s_dirt;   unsigned char s_blocksize_bits;   unsigned long s_blocksize;   loff_t s_maxbytes;   struct file_system_type *s_type;   struct super_operations *s_op;   struct dquot_operations *dq_op;   struct quotactl_ops *s_qcop;   struct export_operations *s_export_op;   unsigned long s_flags;   unsigned long s_magic;   struct dentry *s_root;   struct rw_semaphore s_umount;   struct mutex s_lock;   int s_count;   atomic_t s_active;   void *s_security;   struct xattr_handler **s_xattr;   struct list_head s_inodes;   struct hlist_bl_head s_anon;   struct list_head *s_files;   struct list_head s_mounts;   struct list_head s_dentry_lru;   int s_nr_dentry_unused;   spinlock_t s_inode_lru_lock;   struct list_head s_inode_lru;   int s_nr_inodes_unused;   struct block_device *s_bdev;   struct backing_dev_info *s_bdi;   struct mtd_info *s_mtd;   struct hlist_node s_instances;   struct quota_info s_dquot;   int s_frozen;   wait_queue_head_t s_wait_unfrozen;   char s_id[32];   u8 s_uuid[16];   void *s_fs_info;   unsigned int s_max_links;   fmode_t s_mode;   u32 s_time_gran;   struct mutex s_vfs_rename_mutex;   char *s_subtype;   char *s_options;   struct dentry_operations *s_d_op;   int cleancache_poolid;   struct shrinker s_shrink;   atomic_long_t s_remove_count;   int s_readonly_remount; } ;}-> N10113
+lines 1812-1817:	N10113 -{struct fiemap_extent_info {   unsigned int fi_flags;   unsigned int fi_extents_mapped;   unsigned int fi_extents_max;   struct fiemap_extent *fi_extents_start; } ;}-> N10114
+lines 1818-1852:	N10114 -{struct file_operations {   struct module *owner;   loff_t  (*llseek)(struct file *, loff_t , int);   ssize_t  (*read)(struct file *, char *, size_t , loff_t *);   ssize_t  (*write)(struct file *, char *, size_t , loff_t *);   ssize_t  (*aio_read)(struct kiocb *, struct iovec *, unsigned long, loff_t );   ssize_t  (*aio_write)(struct kiocb *, struct iovec *, unsigned long, loff_t );   int (*readdir)(struct file *, void *, int (*)(void *, char *, int, loff_t , u64 , unsigned int));   unsigned int (*poll)(struct file *, struct poll_table_struct *);   long int (*unlocked_ioctl)(struct file *, unsigned int, unsigned long);   long int (*compat_ioctl)(struct file *, unsigned int, unsigned long);   int (*mmap)(struct file *, struct vm_area_struct *);   int (*open)(struct inode *, struct file *);   int (*flush)(struct file *, fl_owner_t id);   int (*release)(struct inode *, struct file *);   int (*fsync)(struct file *, loff_t , loff_t , int datasync);   int (*aio_fsync)(struct kiocb *, int datasync);   int (*fasync)(int, struct file *, int);   int (*lock)(struct file *, int, struct file_lock *);   ssize_t  (*sendpage)(struct file *, struct page *, int, size_t , loff_t *, int);   unsigned long int (*get_unmapped_area)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long);   int (*check_flags)(int);   int (*flock)(struct file *, int, struct file_lock *);   ssize_t  (*splice_write)(struct pipe_inode_info *, struct file *, loff_t *, size_t , unsigned int);   ssize_t  (*splice_read)(struct file *, loff_t *, struct pipe_inode_info *, size_t , unsigned int);   int (*setlease)(struct file *, long, struct file_lock **);   long int (*fallocate)(struct file *file, int mode, loff_t offset, loff_t len); } ;}-> N10115
+lines 1853-1877:	N10115 -{struct inode_operations {   struct dentry * (*lookup)(struct inode *, struct dentry *, struct nameidata *);   void * (*follow_link)(struct dentry *, struct nameidata *);   int (*permission)(struct inode *, int);   struct posix_acl * (*get_acl)(struct inode *, int);   int (*readlink)(struct dentry *, char *, int);   void (*put_link)(struct dentry *, struct nameidata *, void *);   int (*create)(struct inode *, struct dentry *, umode_t , struct nameidata *);   int (*link)(struct dentry *, struct inode *, struct dentry *);   int (*unlink)(struct inode *, struct dentry *);   int (*symlink)(struct inode *, struct dentry *, char *);   int (*mkdir)(struct inode *, struct dentry *, umode_t );   int (*rmdir)(struct inode *, struct dentry *);   int (*mknod)(struct inode *, struct dentry *, umode_t , dev_t );   int (*rename)(struct inode *, struct dentry *, struct inode *, struct dentry *);   void (*truncate)(struct inode *);   int (*setattr)(struct dentry *, struct iattr *);   int (*getattr)(struct vfsmount *mnt, struct dentry *, struct kstat *);   int (*setxattr)(struct dentry *, char *, void *, size_t , int);   ssize_t  (*getxattr)(struct dentry *, char *, void *, size_t );   ssize_t  (*listxattr)(struct dentry *, char *, size_t );   int (*removexattr)(struct dentry *, char *);   void (*truncate_range)(struct inode *, loff_t , loff_t );   int (*fiemap)(struct inode *, struct fiemap_extent_info *, u64 start, u64 len); } ;}-> N10116
+lines 1878-1903:	N10116 -{struct super_operations {   struct inode * (*alloc_inode)(struct super_block *sb);   void (*destroy_inode)(struct inode *);   void (*dirty_inode)(struct inode *, int flags);   int (*write_inode)(struct inode *, struct writeback_control *wbc);   int (*drop_inode)(struct inode *);   void (*evict_inode)(struct inode *);   void (*put_super)(struct super_block *);   void (*write_super)(struct super_block *);   int (*sync_fs)(struct super_block *sb, int wait);   int (*freeze_fs)(struct super_block *);   int (*unfreeze_fs)(struct super_block *);   int (*statfs)(struct dentry *, struct kstatfs *);   int (*remount_fs)(struct super_block *, int *, char *);   void (*umount_begin)(struct super_block *);   int (*show_options)(struct seq_file *, struct dentry *);   int (*show_devname)(struct seq_file *, struct dentry *);   int (*show_path)(struct seq_file *, struct dentry *);   int (*show_stats)(struct seq_file *, struct dentry *);   ssize_t  (*quota_read)(struct super_block *, int, char *, size_t , loff_t );   ssize_t  (*quota_write)(struct super_block *, int, char *, size_t , loff_t );   int (*bdev_try_to_free_page)(struct super_block *, struct page *, gfp_t );   int (*nr_cached_objects)(struct super_block *);   void (*free_cached_objects)(struct super_block *, int); } ;}-> N10117
+lines 1904-1918:	N10117 -{struct file_system_type {   char *name;   int fs_flags;   struct dentry * (*mount)(struct file_system_type *, int, char *, void *);   void (*kill_sb)(struct super_block *);   struct module *owner;   struct file_system_type *next;   struct hlist_head fs_supers;   struct lock_class_key s_lock_key;   struct lock_class_key s_umount_key;   struct lock_class_key s_vfs_rename_key;   struct lock_class_key i_lock_key;   struct lock_class_key i_mutex_key;   struct lock_class_key i_mutex_dir_key; } ;}-> N10118
+lines 1919-1920:	N10118 -{typedef int read_proc_t(char *page, char **start, off_t off, int count, int *eof, void *data);}-> N10119
+lines 1921-1922:	N10119 -{typedef int write_proc_t(struct file *file, char *buffer, unsigned long count, void *data);}-> N10120
+lines 1923-1945:	N10120 -{struct proc_dir_entry {   unsigned int low_ino;   umode_t mode;   nlink_t nlink;   uid_t uid;   gid_t gid;   loff_t size;   struct inode_operations *proc_iops;   struct file_operations *proc_fops;   struct proc_dir_entry *next;   struct proc_dir_entry *parent;   struct proc_dir_entry *subdir;   void *data;   read_proc_t *read_proc;   write_proc_t *write_proc;   atomic_t count;   int pde_users;   struct completion *pde_unload_completion;   struct list_head pde_openers;   spinlock_t pde_unload_lock;   u8 namelen;   char name[]; } ;}-> N10121
+line 1946:	N10121 -{typedef unsigned long cputime_t;}-> N10122
+line 1947:	N10122 -{struct sem_undo_list ;}-> N10123
+lines 1948-1950:	N10123 -{struct sysv_sem {   struct sem_undo_list *undo_list; } ;}-> N10124
+line 1951:	N10124 -{struct siginfo ;}-> N10125
+lines 1952-1954:	N10125 -{struct __anonstruct_sigset_t_255 {   unsigned long sig[1]; } ;}-> N10126
+line 1955:	N10126 -{typedef struct __anonstruct_sigset_t_255 sigset_t;}-> N10127
+line 1956:	N10127 -{typedef void __signalfn_t(int);}-> N10128
+line 1957:	N10128 -{typedef __signalfn_t *__sighandler_t;}-> N10129
+line 1958:	N10129 -{typedef void __restorefn_t();}-> N10130
+line 1959:	N10130 -{typedef __restorefn_t *__sigrestore_t;}-> N10131
+lines 1960-1965:	N10131 -{struct sigaction {   __sighandler_t sa_handler;   unsigned long sa_flags;   __sigrestore_t sa_restorer;   sigset_t sa_mask; } ;}-> N10132
+lines 1966-1968:	N10132 -{struct k_sigaction {   struct sigaction sa; } ;}-> N10133
+lines 1969-1972:	N10133 -{union sigval {   int sival_int;   void *sival_ptr; } ;}-> N10134
+line 1973:	N10134 -{typedef union sigval sigval_t;}-> N10135
+lines 1974-1977:	N10135 -{struct __anonstruct__kill_257 {   __kernel_pid_t _pid;   __kernel_uid32_t _uid; } ;}-> N10136
+lines 1978-1984:	N10136 -{struct __anonstruct__timer_258 {   __kernel_timer_t _tid;   int _overrun;   char _pad[0];   sigval_t _sigval;   int _sys_private; } ;}-> N10137
+lines 1985-1989:	N10137 -{struct __anonstruct__rt_259 {   __kernel_pid_t _pid;   __kernel_uid32_t _uid;   sigval_t _sigval; } ;}-> N10138
+lines 1990-1996:	N10138 -{struct __anonstruct__sigchld_260 {   __kernel_pid_t _pid;   __kernel_uid32_t _uid;   int _status;   __kernel_clock_t _utime;   __kernel_clock_t _stime; } ;}-> N10139
+lines 1997-2000:	N10139 -{struct __anonstruct__sigfault_261 {   void *_addr;   short _addr_lsb; } ;}-> N10140
+lines 2001-2004:	N10140 -{struct __anonstruct__sigpoll_262 {   long _band;   int _fd; } ;}-> N10141
+lines 2005-2013:	N10141 -{union __anonunion__sifields_256 {   int _pad[28UL];   struct __anonstruct__kill_257 _kill;   struct __anonstruct__timer_258 _timer;   struct __anonstruct__rt_259 _rt;   struct __anonstruct__sigchld_260 _sigchld;   struct __anonstruct__sigfault_261 _sigfault;   struct __anonstruct__sigpoll_262 _sigpoll; } ;}-> N10142
+lines 2014-2019:	N10142 -{struct siginfo {   int si_signo;   int si_errno;   int si_code;   union __anonunion__sifields_256 _sifields; } ;}-> N10143
+line 2020:	N10143 -{typedef struct siginfo siginfo_t;}-> N10144
+lines 2021-2024:	N10144 -{struct sigpending {   struct list_head list;   sigset_t signal; } ;}-> N10145
+lines 2025-2027:	N10145 -{struct __anonstruct_seccomp_t_265 {   int mode; } ;}-> N10146
+line 2028:	N10146 -{typedef struct __anonstruct_seccomp_t_265 seccomp_t;}-> N10147
+lines 2029-2031:	N10147 -{struct plist_head {   struct list_head node_list; } ;}-> N10148
+lines 2032-2036:	N10148 -{struct plist_node {   int prio;   struct list_head prio_list;   struct list_head node_list; } ;}-> N10149
+line 2037:	N10149 -{struct rt_mutex_waiter ;}-> N10150
+lines 2038-2041:	N10150 -{struct rlimit {   unsigned long rlim_cur;   unsigned long rlim_max; } ;}-> N10151
+lines 2042-2050:	N10151 -{struct task_io_accounting {   u64 rchar;   u64 wchar;   u64 syscr;   u64 syscw;   u64 read_bytes;   u64 write_bytes;   u64 cancelled_write_bytes; } ;}-> N10152
+lines 2051-2056:	N10152 -{struct latency_record {   unsigned long backtrace[12];   unsigned int count;   unsigned long time;   unsigned long max; } ;}-> N10153
+line 2057:	N10153 -{typedef int32_t key_serial_t;}-> N10154
+line 2058:	N10154 -{typedef uint32_t key_perm_t;}-> N10155
+line 2059:	N10155 -{struct key ;}-> N10156
+line 2060:	N10156 -{struct signal_struct ;}-> N10157
+line 2061:	N10157 -{struct key_type ;}-> N10158
+line 2062:	N10158 -{struct keyring_list ;}-> N10159
+line 2063:	N10159 -{struct key_user ;}-> N10160
+lines 2064-2067:	N10160 -{union __anonunion____missing_field_name_266 {   time_t expiry;   time_t revoked_at; } ;}-> N10161
+lines 2068-2073:	N10161 -{union __anonunion_type_data_267 {   struct list_head link;   unsigned long x[2];   void *p[2];   int reject_error; } ;}-> N10162
+lines 2074-2079:	N10162 -{union __anonunion_payload_268 {   unsigned long value;   void *rcudata;   void *data;   struct keyring_list *subscriptions; } ;}-> N10163
+lines 2080-2098:	N10163 -{struct key {   atomic_t usage;   key_serial_t serial;   struct rb_node serial_node;   struct key_type *type;   struct rw_semaphore sem;   struct key_user *user;   void *security;   union __anonunion____missing_field_name_266 __annonCompField48;   uid_t uid;   gid_t gid;   key_perm_t perm;   unsigned short quotalen;   unsigned short datalen;   unsigned long flags;   char *description;   union __anonunion_type_data_267 type_data;   union __anonunion_payload_268 payload; } ;}-> N10164
+line 2099:	N10164 -{struct audit_context ;}-> N10165
+lines 2100-2106:	N10165 -{struct group_info {   atomic_t usage;   int ngroups;   int nblocks;   gid_t small_block[32];   gid_t *blocks[0]; } ;}-> N10166
+lines 2107-2114:	N10166 -{struct thread_group_cred {   atomic_t usage;   pid_t tgid;   spinlock_t lock;   struct key *session_keyring;   struct key *process_keyring;   struct rcu_head rcu; } ;}-> N10167
+lines 2115-2142:	N10167 -{struct cred {   atomic_t usage;   atomic_t subscribers;   void *put_addr;   unsigned int magic;   uid_t uid;   gid_t gid;   uid_t suid;   gid_t sgid;   uid_t euid;   gid_t egid;   uid_t fsuid;   gid_t fsgid;   unsigned int securebits;   kernel_cap_t cap_inheritable;   kernel_cap_t cap_permitted;   kernel_cap_t cap_effective;   kernel_cap_t cap_bset;   unsigned char jit_keyring;   struct key *thread_keyring;   struct key *request_key_auth;   struct thread_group_cred *tgcred;   void *security;   struct user_struct *user;   struct user_namespace *user_ns;   struct group_info *group_info;   struct rcu_head rcu; } ;}-> N10168
+line 2143:	N10168 -{struct llist_node ;}-> N10169
+lines 2144-2146:	N10169 -{struct llist_node {   struct llist_node *next; } ;}-> N10170
+line 2147:	N10170 -{struct futex_pi_state ;}-> N10171
+line 2148:	N10171 -{struct robust_list_head ;}-> N10172
+line 2149:	N10172 -{struct bio_list ;}-> N10173
+line 2150:	N10173 -{struct fs_struct ;}-> N10174
+line 2151:	N10174 -{struct perf_event_context ;}-> N10175
+line 2152:	N10175 -{struct blk_plug ;}-> N10176
+line 2153:	N10176 -{struct cfs_rq ;}-> N10177
+lines 2154-2159:	N10177 -{struct io_event {   __u64 data;   __u64 obj;   __s64 res;   __s64 res2; } ;}-> N10178
+line 2160:	N10178 -{struct kioctx ;}-> N10179
+lines 2161-2164:	N10179 -{union __anonunion_ki_obj_270 {   void *user;   struct task_struct *tsk; } ;}-> N10180
+line 2165:	N10180 -{struct eventfd_ctx ;}-> N10181
+lines 2166-2191:	N10181 -{struct kiocb {   struct list_head ki_run_list;   unsigned long ki_flags;   int ki_users;   unsigned int ki_key;   struct file *ki_filp;   struct kioctx *ki_ctx;   int (*ki_cancel)(struct kiocb *, struct io_event *);   ssize_t  (*ki_retry)(struct kiocb *);   void (*ki_dtor)(struct kiocb *);   union __anonunion_ki_obj_270 ki_obj;   __u64 ki_user_data;   loff_t ki_pos;   void *private;   unsigned short ki_opcode;   size_t ki_nbytes;   char *ki_buf;   size_t ki_left;   struct iovec ki_inline_vec;   struct iovec *ki_iovec;   unsigned long ki_nr_segs;   unsigned long ki_cur_seg;   struct list_head ki_list;   struct list_head ki_batch;   struct eventfd_ctx *ki_eventfd; } ;}-> N10182
+lines 2192-2201:	N10182 -{struct aio_ring_info {   unsigned long mmap_base;   unsigned long mmap_size;   struct page **ring_pages;   spinlock_t ring_lock;   long nr_pages;   unsigned int nr;   unsigned int tail;   struct page *internal_pages[8]; } ;}-> N10183
+lines 2202-2217:	N10183 -{struct kioctx {   atomic_t users;   int dead;   struct mm_struct *mm;   unsigned long user_id;   struct hlist_node list;   wait_queue_head_t wait;   spinlock_t ctx_lock;   int reqs_active;   struct list_head active_reqs;   struct list_head run_list;   unsigned int max_reqs;   struct aio_ring_info ring_info;   struct delayed_work wq;   struct rcu_head rcu_head; } ;}-> N10184
+lines 2218-2223:	N10184 -{struct sighand_struct {   atomic_t count;   struct k_sigaction action[64];   spinlock_t siglock;   wait_queue_head_t signalfd_wqh; } ;}-> N10185
+lines 2224-2232:	N10185 -{struct pacct_struct {   int ac_flag;   long ac_exitcode;   unsigned long ac_mem;   cputime_t ac_utime;   cputime_t ac_stime;   unsigned long ac_minflt;   unsigned long ac_majflt; } ;}-> N10186
+lines 2233-2238:	N10186 -{struct cpu_itimer {   cputime_t expires;   cputime_t incr;   u32 error;   u32 incr_error; } ;}-> N10187
+lines 2239-2243:	N10187 -{struct task_cputime {   cputime_t utime;   cputime_t stime;   unsigned long long sum_exec_runtime; } ;}-> N10188
+lines 2244-2248:	N10188 -{struct thread_group_cputimer {   struct task_cputime cputime;   int running;   raw_spinlock_t lock; } ;}-> N10189
+line 2249:	N10189 -{struct autogroup ;}-> N10190
+line 2250:	N10190 -{struct tty_struct ;}-> N10191
+line 2251:	N10191 -{struct taskstats ;}-> N10192
+line 2252:	N10192 -{struct tty_audit_buf ;}-> N10193
+lines 2253-2313:	N10193 -{struct signal_struct {   atomic_t sigcnt;   atomic_t live;   int nr_threads;   wait_queue_head_t wait_chldexit;   struct task_struct *curr_target;   struct sigpending shared_pending;   int group_exit_code;   int notify_count;   struct task_struct *group_exit_task;   int group_stop_count;   unsigned int flags;   unsigned int is_child_subreaper;   unsigned int has_child_subreaper;   struct list_head posix_timers;   struct hrtimer real_timer;   struct pid *leader_pid;   ktime_t it_real_incr;   struct cpu_itimer it[2];   struct thread_group_cputimer cputimer;   struct task_cputime cputime_expires;   struct list_head cpu_timers[3];   struct pid *tty_old_pgrp;   int leader;   struct tty_struct *tty;   struct autogroup *autogroup;   cputime_t utime;   cputime_t stime;   cputime_t cutime;   cputime_t cstime;   cputime_t gtime;   cputime_t cgtime;   cputime_t prev_utime;   cputime_t prev_stime;   unsigned long nvcsw;   unsigned long nivcsw;   unsigned long cnvcsw;   unsigned long cnivcsw;   unsigned long min_flt;   unsigned long maj_flt;   unsigned long cmin_flt;   unsigned long cmaj_flt;   unsigned long inblock;   unsigned long oublock;   unsigned long cinblock;   unsigned long coublock;   unsigned long maxrss;   unsigned long cmaxrss;   struct task_io_accounting ioac;   unsigned long long sum_sched_runtime;   struct rlimit rlim[16];   struct pacct_struct pacct;   struct taskstats *stats;   unsigned int audit_tty;   struct tty_audit_buf *tty_audit_buf;   struct rw_semaphore group_rwsem;   int oom_adj;   int oom_score_adj;   int oom_score_adj_min;   struct mutex cred_guard_mutex; } ;}-> N10194
+lines 2314-2331:	N10194 -{struct user_struct {   atomic_t __count;   atomic_t processes;   atomic_t files;   atomic_t sigpending;   atomic_t inotify_watches;   atomic_t inotify_devs;   atomic_t fanotify_listeners;   atomic_long_t epoll_watches;   unsigned long mq_bytes;   unsigned long locked_shm;   struct key *uid_keyring;   struct key *session_keyring;   struct hlist_node uidhash_node;   uid_t uid;   struct user_namespace *user_ns;   atomic_long_t locked_vm; } ;}-> N10195
+line 2332:	N10195 -{struct reclaim_state ;}-> N10196
+lines 2333-2338:	N10196 -{struct sched_info {   unsigned long pcount;   unsigned long long run_delay;   unsigned long long last_arrival;   unsigned long long last_queued; } ;}-> N10197
+lines 2339-2352:	N10197 -{struct task_delay_info {   spinlock_t lock;   unsigned int flags;   struct timespec blkio_start;   struct timespec blkio_end;   u64 blkio_delay;   u64 swapin_delay;   u32 blkio_count;   u32 swapin_count;   struct timespec freepages_start;   struct timespec freepages_end;   u64 freepages_delay;   u32 freepages_count; } ;}-> N10198
+line 2353:	N10198 -{struct io_context ;}-> N10199
+line 2354:	N10199 -{struct rq ;}-> N10200
+lines 2355-2380:	N10200 -{struct sched_class {   struct sched_class *next;   void (*enqueue_task)(struct rq *rq, struct task_struct *p, int flags);   void (*dequeue_task)(struct rq *rq, struct task_struct *p, int flags);   void (*yield_task)(struct rq *rq);   bool  (*yield_to_task)(struct rq *rq, struct task_struct *p, bool preempt);   void (*check_preempt_curr)(struct rq *rq, struct task_struct *p, int flags);   struct task_struct * (*pick_next_task)(struct rq *rq);   void (*put_prev_task)(struct rq *rq, struct task_struct *p);   int (*select_task_rq)(struct task_struct *p, int sd_flag, int flags);   void (*pre_schedule)(struct rq *this_rq, struct task_struct *task);   void (*post_schedule)(struct rq *this_rq);   void (*task_waking)(struct task_struct *task);   void (*task_woken)(struct rq *this_rq, struct task_struct *task);   void (*set_cpus_allowed)(struct task_struct *p, struct cpumask *newmask);   void (*rq_online)(struct rq *rq);   void (*rq_offline)(struct rq *rq);   void (*set_curr_task)(struct rq *rq);   void (*task_tick)(struct rq *rq, struct task_struct *p, int queued);   void (*task_fork)(struct task_struct *p);   void (*switched_from)(struct rq *this_rq, struct task_struct *task);   void (*switched_to)(struct rq *this_rq, struct task_struct *task);   void (*prio_changed)(struct rq *this_rq, struct task_struct *task, int oldprio);   unsigned int (*get_rr_interval)(struct rq *rq, struct task_struct *task);   void (*task_move_group)(struct task_struct *p, int on_rq); } ;}-> N10201
+lines 2381-2384:	N10201 -{struct load_weight {   unsigned long weight;   unsigned long inv_weight; } ;}-> N10202
+lines 2385-2413:	N10202 -{struct sched_statistics {   u64 wait_start;   u64 wait_max;   u64 wait_count;   u64 wait_sum;   u64 iowait_count;   u64 iowait_sum;   u64 sleep_start;   u64 sleep_max;   s64 sum_sleep_runtime;   u64 block_start;   u64 block_max;   u64 exec_max;   u64 slice_max;   u64 nr_migrations_cold;   u64 nr_failed_migrations_affine;   u64 nr_failed_migrations_running;   u64 nr_failed_migrations_hot;   u64 nr_forced_migrations;   u64 nr_wakeups;   u64 nr_wakeups_sync;   u64 nr_wakeups_migrate;   u64 nr_wakeups_local;   u64 nr_wakeups_remote;   u64 nr_wakeups_affine;   u64 nr_wakeups_affine_attempts;   u64 nr_wakeups_passive;   u64 nr_wakeups_idle; } ;}-> N10203
+lines 2414-2428:	N10203 -{struct sched_entity {   struct load_weight load;   struct rb_node run_node;   struct list_head group_node;   unsigned int on_rq;   u64 exec_start;   u64 sum_exec_runtime;   u64 vruntime;   u64 prev_sum_exec_runtime;   u64 nr_migrations;   struct sched_statistics statistics;   struct sched_entity *parent;   struct cfs_rq *cfs_rq;   struct cfs_rq *my_q; } ;}-> N10204
+line 2429:	N10204 -{struct rt_rq ;}-> N10205
+lines 2430-2439:	N10205 -{struct sched_rt_entity {   struct list_head run_list;   unsigned long timeout;   unsigned int time_slice;   int nr_cpus_allowed;   struct sched_rt_entity *back;   struct sched_rt_entity *parent;   struct rt_rq *rt_rq;   struct rt_rq *my_q; } ;}-> N10206
+line 2440:	N10206 -{struct css_set ;}-> N10207
+line 2441:	N10207 -{struct compat_robust_list_head ;}-> N10208
+line 2442:	N10208 -{struct mem_cgroup ;}-> N10209
+lines 2443-2448:	N10209 -{struct memcg_batch_info {   int do_batch;   struct mem_cgroup *memcg;   unsigned long nr_pages;   unsigned long memsw_nr_pages; } ;}-> N10210
+lines 2449-2608:	N10210 -{struct task_struct {   volatile long state;   void *stack;   atomic_t usage;   unsigned int flags;   unsigned int ptrace;   struct llist_node wake_entry;   int on_cpu;   int on_rq;   int prio;   int static_prio;   int normal_prio;   unsigned int rt_priority;   struct sched_class *sched_class;   struct sched_entity se;   struct sched_rt_entity rt;   struct hlist_head preempt_notifiers;   unsigned char fpu_counter;   unsigned int policy;   cpumask_t cpus_allowed;   struct sched_info sched_info;   struct list_head tasks;   struct plist_node pushable_tasks;   struct mm_struct *mm;   struct mm_struct *active_mm;   unsigned int brk_randomized;   int exit_state;   int exit_code;   int exit_signal;   int pdeath_signal;   unsigned int jobctl;   unsigned int personality;   unsigned int did_exec;   unsigned int in_execve;   unsigned int in_iowait;   unsigned int sched_reset_on_fork;   unsigned int sched_contributes_to_load;   unsigned int irq_thread;   pid_t pid;   pid_t tgid;   unsigned long stack_canary;   struct task_struct *real_parent;   struct task_struct *parent;   struct list_head children;   struct list_head sibling;   struct task_struct *group_leader;   struct list_head ptraced;   struct list_head ptrace_entry;   struct pid_link pids[3];   struct list_head thread_group;   struct completion *vfork_done;   int *set_child_tid;   int *clear_child_tid;   cputime_t utime;   cputime_t stime;   cputime_t utimescaled;   cputime_t stimescaled;   cputime_t gtime;   cputime_t prev_utime;   cputime_t prev_stime;   unsigned long nvcsw;   unsigned long nivcsw;   struct timespec start_time;   struct timespec real_start_time;   unsigned long min_flt;   unsigned long maj_flt;   struct task_cputime cputime_expires;   struct list_head cpu_timers[3];   struct cred *real_cred;   struct cred *cred;   struct cred *replacement_session_keyring;   char comm[16];   int link_count;   int total_link_count;   struct sysv_sem sysvsem;   unsigned long last_switch_count;   struct thread_struct thread;   struct fs_struct *fs;   struct files_struct *files;   struct nsproxy *nsproxy;   struct signal_struct *signal;   struct sighand_struct *sighand;   sigset_t blocked;   sigset_t real_blocked;   sigset_t saved_sigmask;   struct sigpending pending;   unsigned long sas_ss_sp;   size_t sas_ss_size;   int (*notifier)(void *priv);   void *notifier_data;   sigset_t *notifier_mask;   struct audit_context *audit_context;   uid_t loginuid;   unsigned int sessionid;   seccomp_t seccomp;   u32 parent_exec_id;   u32 self_exec_id;   spinlock_t alloc_lock;   raw_spinlock_t pi_lock;   struct plist_head pi_waiters;   struct rt_mutex_waiter *pi_blocked_on;   struct mutex_waiter *blocked_on;   unsigned int irq_events;   unsigned long hardirq_enable_ip;   unsigned long hardirq_disable_ip;   unsigned int hardirq_enable_event;   unsigned int hardirq_disable_event;   int hardirqs_enabled;   int hardirq_context;   unsigned long softirq_disable_ip;   unsigned long softirq_enable_ip;   unsigned int softirq_disable_event;   unsigned int softirq_enable_event;   int softirqs_enabled;   int softirq_context;   void *journal_info;   struct bio_list *bio_list;   struct blk_plug *plug;   struct reclaim_state *reclaim_state;   struct backing_dev_info *backing_dev_info;   struct io_context *io_context;   unsigned long ptrace_message;   siginfo_t *last_siginfo;   struct task_io_accounting ioac;   u64 acct_rss_mem1;   u64 acct_vm_mem1;   cputime_t acct_timexpd;   nodemask_t mems_allowed;   seqcount_t mems_allowed_seq;   int cpuset_mem_spread_rotor;   int cpuset_slab_spread_rotor;   struct css_set *cgroups;   struct list_head cg_list;   struct robust_list_head *robust_list;   struct compat_robust_list_head *compat_robust_list;   struct list_head pi_state_list;   struct futex_pi_state *pi_state_cache;   struct perf_event_context *perf_event_ctxp[2];   struct mutex perf_event_mutex;   struct list_head perf_event_list;   struct mempolicy *mempolicy;   short il_next;   short pref_node_fork;   struct rcu_head rcu;   struct pipe_inode_info *splice_pipe;   struct task_delay_info *delays;   int make_it_fail;   int nr_dirtied;   int nr_dirtied_pause;   unsigned long dirty_paused_when;   int latency_record_count;   struct latency_record latency_record[32];   unsigned long timer_slack_ns;   unsigned long default_timer_slack_ns;   struct list_head *scm_work_list;   unsigned long trace;   unsigned long trace_recursion;   struct memcg_batch_info memcg_batch;   atomic_t ptrace_bp_refcnt; } ;}-> N10211
+lines 2609-2621:	N10211 -{struct seq_file {   char *buf;   size_t size;   size_t from;   size_t count;   loff_t index;   loff_t read_pos;   u64 version;   struct mutex lock;   struct seq_operations *op;   int poll_event;   void *private; } ;}-> N10212
+lines 2622-2627:	N10212 -{struct seq_operations {   void * (*start)(struct seq_file *m, loff_t *pos);   void (*stop)(struct seq_file *m, void *v);   void * (*next)(struct seq_file *m, void *v, loff_t *pos);   int (*show)(struct seq_file *m, void *v); } ;}-> N10213
+lines 2628-2633:	N10213 -{struct __anonstruct__cdebbuf_275 {   u_char *buf;   u_char *p;   size_t size;   size_t pos; } ;}-> N10214
+line 2634:	N10214 -{typedef struct __anonstruct__cdebbuf_275 _cdebbuf;}-> N10215
+lines 2635-2638:	N10215 -{struct avmb1_t4file {   int len;   unsigned char *data; } ;}-> N10216
+line 2639:	N10216 -{typedef struct avmb1_t4file avmb1_t4file;}-> N10217
+lines 2640-2643:	N10217 -{struct avmb1_loaddef {   int contr;   avmb1_t4file t4file; } ;}-> N10218
+line 2644:	N10218 -{typedef struct avmb1_loaddef avmb1_loaddef;}-> N10219
+lines 2645-2649:	N10219 -{struct avmb1_loadandconfigdef {   int contr;   avmb1_t4file t4file;   avmb1_t4file t4config; } ;}-> N10220
+line 2650:	N10220 -{typedef struct avmb1_loadandconfigdef avmb1_loadandconfigdef;}-> N10221
+lines 2651-2653:	N10221 -{struct avmb1_resetdef {   int contr; } ;}-> N10222
+line 2654:	N10222 -{typedef struct avmb1_resetdef avmb1_resetdef;}-> N10223
+lines 2655-2658:	N10223 -{struct avmb1_carddef {   int port;   int irq; } ;}-> N10224
+line 2659:	N10224 -{typedef struct avmb1_carddef avmb1_carddef;}-> N10225
+lines 2660-2665:	N10225 -{struct avmb1_extcarddef {   int port;   int irq;   int cardtype;   int cardnr; } ;}-> N10226
+line 2666:	N10226 -{typedef struct avmb1_extcarddef avmb1_extcarddef;}-> N10227
+lines 2667-2671:	N10227 -{struct capictr_event {   struct work_struct work;   unsigned int type;   u32 controller; } ;}-> N10228
+line 2672:	N10228 -{typedef unsigned long u_long;}-> N10229
+line 2673:	N10229 -{typedef __builtin_va_list __gnuc_va_list;}-> N10230
+line 2674:	N10230 -{typedef __gnuc_va_list va_list;}-> N10231
+line 2676:	N10231 -{typedef __u8 *_cstruct;}-> N10232
+lines 2677-2680:	N10232 -{enum __anonenum__cmstruct_213 {   CAPI_COMPOSE = 0,   CAPI_DEFAULT = 1 } ;}-> N10233
+line 2681:	N10233 -{typedef enum __anonenum__cmstruct_213 _cmstruct;}-> N10234
+lines 2682-2686:	N10234 -{union __anonunion_adr_215 {   __u32 adrController;   __u32 adrPLCI;   __u32 adrNCCI; } ;}-> N10235
+lines 2687-2742:	N10235 -{struct __anonstruct__cmsg_214 {   __u16 ApplId;   __u8 Command;   __u8 Subcommand;   __u16 Messagenumber;   union __anonunion_adr_215 adr;   _cmstruct AdditionalInfo;   _cstruct B1configuration;   __u16 B1protocol;   _cstruct B2configuration;   __u16 B2protocol;   _cstruct B3configuration;   __u16 B3protocol;   _cstruct BC;   _cstruct BChannelinformation;   _cmstruct BProtocol;   _cstruct CalledPartyNumber;   _cstruct CalledPartySubaddress;   _cstruct CallingPartyNumber;   _cstruct CallingPartySubaddress;   __u32 CIPmask;   __u32 CIPmask2;   __u16 CIPValue;   __u32 Class;   _cstruct ConnectedNumber;   _cstruct ConnectedSubaddress;   __u32 Data;   __u16 DataHandle;   __u16 DataLength;   _cstruct FacilityConfirmationParameter;   _cstruct Facilitydataarray;   _cstruct FacilityIndicationParameter;   _cstruct FacilityRequestParameter;   __u16 FacilitySelector;   __u16 Flags;   __u32 Function;   _cstruct HLC;   __u16 Info;   _cstruct InfoElement;   __u32 InfoMask;   __u16 InfoNumber;   _cstruct Keypadfacility;   _cstruct LLC;   _cstruct ManuData;   __u32 ManuID;   _cstruct NCPI;   __u16 Reason;   __u16 Reason_B3;   __u16 Reject;   _cstruct Useruserdata;   unsigned int l;   unsigned int p;   unsigned char *par;   __u8 *m;   __u8 buf[180]; } ;}-> N10236
+line 2743:	N10236 -{typedef struct __anonstruct__cmsg_214 _cmsg;}-> N10237
+lines 2744-2747:	N10237 -{struct __anonstruct__cdef_217 {   int typ;   size_t off; } ;}-> N10238
+line 2748:	N10238 -{typedef struct __anonstruct__cdef_217 _cdef;}-> N10239
+line 2749:	N10239 -{typedef unsigned int u_int;}-> N10240
+lines 2751-2754:	N10240 -{struct capilib_msgidqueue {   struct capilib_msgidqueue *next;   u16 msgid; } ;}-> N10241
+lines 2755-2765:	N10241 -{struct capilib_ncci {   struct list_head list;   u16 applid;   u32 ncci;   u32 winsize;   int nmsg;   struct capilib_msgidqueue *msgidqueue;   struct capilib_msgidqueue *msgidlast;   struct capilib_msgidqueue *msgidfree;   struct capilib_msgidqueue msgidpool[8]; } ;}-> N10242
+line 2769:	N10242 -{long int ldv__builtin_expect(long val, long res);}-> N10243
+line 2770:	N10243 -{int variable_test_bit(int nr, volatile unsigned long *addr);}-> N10244
+line 2782:	N10244 -{int printk(char *fmt, ...);}-> N10245
+line 2783:	N10245 -{void __might_sleep(char *file, int line, int preempt_offset);}-> N10246
+line 2784:	N10246 -{void might_fault();}-> N10247
+line 2809:	N10247 -{int sprintf(char *buf, char *fmt, ...);}-> N10248
+line 2810:	N10248 -{void __bad_percpu_size();}-> N10249
+line 2811:	N10249 -{extern struct task_struct *current_task;}-> N10250
+line 2812:	N10250 -{struct task_struct * get_current();}-> N10251
+line 2884:	N10251 -{void * __memcpy(void *to, void *from, size_t len);}-> N10252
+line 2885:	N10252 -{void * memset(void *s, int c, size_t n);}-> N10253
+line 2886:	N10253 -{int strcmp(char *cs, char *ct);}-> N10254
+line 2887:	N10254 -{size_t  strlcpy(char *, char *, size_t );}-> N10255
+lines 2888-2889:	N10255 -{void warn_slowpath_fmt(char *file, int line, char *fmt, ...);}-> N10256
+line 2890:	N10256 -{extern unsigned long kernel_stack;}-> N10257
+line 2891:	N10257 -{struct thread_info * current_thread_info();}-> N10258
+line 2975:	N10258 -{int test_ti_thread_flag(struct thread_info *ti, int flag);}-> N10259
+line 2996:	N10259 -{void INIT_LIST_HEAD(struct list_head *list);}-> N10260
+line 3009:	N10260 -{void __list_add(struct list_head *new, struct list_head *prev, struct list_head *next);}-> N10261
+line 3010:	N10261 -{void list_add_tail(struct list_head *new, struct list_head *head);}-> N10262
+line 3026:	N10262 -{void list_del(struct list_head *entry);}-> N10263
+line 3027:	N10263 -{void __raw_spin_lock_init(raw_spinlock_t *lock, char *name, struct lock_class_key *key);}-> N10264
+line 3028:	N10264 -{raw_spinlock_t * spinlock_check(spinlock_t *lock);}-> N10265
+line 3036:	N10265 -{void __init_waitqueue_head(wait_queue_head_t *q, char *name, struct lock_class_key *);}-> N10266
+line 3037:	N10266 -{void __wake_up(wait_queue_head_t *q, unsigned int mode, int nr, void *key);}-> N10267
+line 3038:	N10267 -{void prepare_to_wait(wait_queue_head_t *q, wait_queue_t *wait, int state);}-> N10268
+line 3039:	N10268 -{void finish_wait(wait_queue_head_t *q, wait_queue_t *wait);}-> N10269
+lines 3040-3041:	N10269 -{int autoremove_wake_function(wait_queue_t *wait, unsigned int mode, int sync, void *key);}-> N10270
+line 3042:	N10270 -{void __mutex_init(struct mutex *lock, char *name, struct lock_class_key *key);}-> N10271
+line 3043:	N10271 -{void mutex_lock(struct mutex *lock);}-> N10272
+line 3044:	N10272 -{int mutex_lock_interruptible(struct mutex *lock);}-> N10273
+line 3045:	N10273 -{int mutex_lock_killable(struct mutex *lock);}-> N10274
+line 3046:	N10274 -{int mutex_trylock(struct mutex *lock);}-> N10275
+line 3047:	N10275 -{void mutex_unlock(struct mutex *lock);}-> N10276
+line 3048:	N10276 -{int atomic_dec_and_mutex_lock(atomic_t *cnt, struct mutex *lock);}-> N10277
+line 3049:	N10277 -{void synchronize_sched();}-> N10278
+line 3050:	N10278 -{void __rcu_read_lock();}-> N10279
+line 3087:	N10279 -{void __rcu_read_unlock();}-> N10280
+line 3139:	N10280 -{void synchronize_rcu();}-> N10281
+line 3150:	N10281 -{void rcu_read_lock();}-> N10282
+line 3175:	N10282 -{void rcu_read_unlock();}-> N10283
+line 3200:	N10283 -{int blocking_notifier_chain_register(struct blocking_notifier_head *nh, struct notifier_block *nb);}-> N10284
+lines 3201-3202:	N10284 -{int blocking_notifier_chain_unregister(struct blocking_notifier_head *nh, struct notifier_block *nb);}-> N10285
+lines 3203-3204:	N10285 -{int blocking_notifier_call_chain(struct blocking_notifier_head *nh, unsigned long val, void *v);}-> N10286
+line 3205:	N10286 -{void __init_work(struct work_struct *work, int onstack);}-> N10287
+lines 3206-3211:	N10287 -{struct workqueue_struct * __alloc_workqueue_key(char *fmt, unsigned int flags, int max_active, struct lock_class_key *key, char *lock_name, ...);}-> N10288
+line 3212:	N10288 -{void destroy_workqueue(struct workqueue_struct *wq);}-> N10289
+line 3213:	N10289 -{int queue_work(struct workqueue_struct *wq, struct work_struct *work);}-> N10290
+line 3214:	N10290 -{void flush_workqueue(struct workqueue_struct *wq);}-> N10291
+line 3215:	N10291 -{void kfree(void *);}-> N10292
+line 3216:	N10292 -{void * __kmalloc(size_t size, gfp_t flags);}-> N10293
+lines 3217-3218:	N10293 -{void * kmalloc(size_t size, gfp_t flags);}-> N10294
+lines 3230-3232:	N10294 -{unsigned long int _copy_from_user(void *to, void *from, unsigned int len);}-> N10295
+lines 3233-3235:	N10295 -{unsigned long int copy_from_user(void *to, void *from, unsigned long n);}-> N10296
+line 3310:	N10296 -{void kfree_skb(struct sk_buff *skb);}-> N10297
+line 3311:	N10297 -{void __skb_queue_head_init(struct sk_buff_head *list);}-> N10298
+line 3331:	N10298 -{struct lock_class_key __key___2 = {  };}-> N10299
+line 3332:	N10299 -{void skb_queue_head_init(struct sk_buff_head *list);}-> N10300
+line 3374:	N10300 -{void skb_queue_tail(struct sk_buff_head *list, struct sk_buff *newsk);}-> N10301
+line 3375:	N10301 -{struct sk_buff * skb_dequeue(struct sk_buff_head *list);}-> N10302
+line 3376:	N10302 -{void skb_queue_purge(struct sk_buff_head *list);}-> N10303
+line 3377:	N10303 -{u16  capi20_isinstalled();}-> N10304
+line 3378:	N10304 -{u16  capi20_register(struct capi20_appl *ap);}-> N10305
+line 3379:	N10305 -{u16  capi20_release(struct capi20_appl *ap);}-> N10306
+line 3380:	N10306 -{u16  capi20_put_message(struct capi20_appl *ap, struct sk_buff *skb);}-> N10307
+line 3381:	N10307 -{u16  capi20_get_manufacturer(u32 contr, u8 *buf);}-> N10308
+line 3382:	N10308 -{u16  capi20_get_version(u32 contr, struct capi_version *verp);}-> N10309
+line 3383:	N10309 -{u16  capi20_get_serial(u32 contr, u8 *serial);}-> N10310
+line 3384:	N10310 -{u16  capi20_get_profile(u32 contr, struct capi_profile *profp);}-> N10311
+line 3385:	N10311 -{int capi20_manufacturer(unsigned int cmd, void *data);}-> N10312
+line 3386:	N10312 -{int register_capictr_notifier(struct notifier_block *nb);}-> N10313
+line 3387:	N10313 -{int unregister_capictr_notifier(struct notifier_block *nb);}-> N10314
+line 3388:	N10314 -{int attach_capi_ctr(struct capi_ctr *ctr);}-> N10315
+line 3389:	N10315 -{int detach_capi_ctr(struct capi_ctr *ctr);}-> N10316
+line 3390:	N10316 -{void capi_ctr_ready(struct capi_ctr *ctr);}-> N10317
+line 3391:	N10317 -{void capi_ctr_down(struct capi_ctr *ctr);}-> N10318
+line 3392:	N10318 -{void capi_ctr_suspend_output(struct capi_ctr *ctr);}-> N10319
+line 3393:	N10319 -{void capi_ctr_resume_output(struct capi_ctr *ctr);}-> N10320
+line 3394:	N10320 -{void capi_ctr_handle_message(struct capi_ctr *ctr, u16 appl, struct sk_buff *skb);}-> N10321
+line 3395:	N10321 -{void register_capi_driver(struct capi_driver *driver);}-> N10322
+line 3396:	N10322 -{void unregister_capi_driver(struct capi_driver *driver);}-> N10323
+line 3397:	N10323 -{struct list_head capi_drivers;}-> N10324
+line 3398:	N10324 -{struct mutex capi_drivers_lock;}-> N10325
+line 3399:	N10325 -{struct capi_ctr *capi_controller[32] = {  };}-> N10326
+line 3400:	N10326 -{struct mutex capi_controller_lock;}-> N10327
+line 3401:	N10327 -{struct capi20_appl *capi_applications[240] = {  };}-> N10328
+line 3402:	N10328 -{void kcapi_proc_init();}-> N10329
+line 3403:	N10329 -{void kcapi_proc_exit();}-> N10330
+line 3404:	N10330 -{extern struct kernel_param_ops param_ops_uint;}-> N10331
+line 3405:	N10331 -{int init_module();}-> N10332
+line 3406:	N10332 -{void cleanup_module();}-> N10333
+line 3407:	N10333 -{bool  try_module_get(struct module *module);}-> N10334
+line 3408:	N10334 -{void module_put(struct module *module);}-> N10335
+lines 3409-3411:	N10335 -{struct proc_dir_entry * proc_create_data(char *name, umode_t mode, struct proc_dir_entry *parent, struct file_operations *proc_fops, void *data);}-> N10336
+line 3412:	N10336 -{void remove_proc_entry(char *name, struct proc_dir_entry *parent);}-> N10337
+line 3413:	N10337 -{void schedule();}-> N10338
+line 3414:	N10338 -{int test_tsk_thread_flag(struct task_struct *tsk, int flag);}-> N10339
+line 3433:	N10339 -{int signal_pending(struct task_struct *p);}-> N10340
+line 3456:	N10340 -{char * capi_cmd2str(unsigned char cmd, unsigned char subcmd);}-> N10341
+line 3457:	N10341 -{void cdebbuf_free(_cdebbuf *cdb);}-> N10342
+line 3458:	N10342 -{int cdebug_init();}-> N10343
+line 3459:	N10343 -{void cdebug_exit();}-> N10344
+line 3460:	N10344 -{_cdebbuf * capi_message2str(unsigned char *msg);}-> N10345
+line 3461:	N10345 -{int showcapimsgs = 0;}-> N10346
+	showcapimsgs == 0;
+line 3462:	N10346 -{struct workqueue_struct *kcapi_wq = 0;}-> N10347
+	kcapi_wq == 0LL;
+lines 3463-3475:	N10347 -{char __mod_description44[42] = { 100, 101, 115, 99, 114, 105, 112, 116, 105, 111, 110, 61, 67, 65, 80, 73, 52, 76, 105, 110, 117, 120, 58, 32, 107, 101, 114, 110, 101, 108, 32, 67, 65, 80, 73, 32, 108, 97, 121, 101, 114, 0 };}-> N10348
+lines 3476-3483:	N10348 -{char __mod_author45[21] = { 97, 117, 116, 104, 111, 114, 61, 67, 97, 114, 115, 116, 101, 110, 32, 80, 97, 101, 116, 104, 0 };}-> N10349
+lines 3484-3488:	N10349 -{char __mod_license46[12] = { 108, 105, 99, 101, 110, 115, 101, 61, 71, 80, 76, 0 };}-> N10350
+lines 3489-3493:	N10350 -{char __param_str_showcapimsgs[13] = { 115, 104, 111, 119, 99, 97, 112, 105, 109, 115, 103, 115, 0 };}-> N10351
+lines 3494-3496:	N10351 -{struct kernel_param __param_showcapimsgs = { __param_str_showcapimsgs, (struct kernel_param_ops *)(&param_ops_uint), (u16 )0, (s16 )0, { (void *)(&showcapimsgs) } };}-> N10352
+lines 3497-3505:	N10352 -{char __mod_showcapimsgstype47[27] = { 112, 97, 114, 109, 116, 121, 112, 101, 61, 115, 104, 111, 119, 99, 97, 112, 105, 109, 115, 103, 115, 58, 117, 105, 110, 116, 0 };}-> N10353
+line 3506:	N10353 -{struct capi_version driver_version = { (__u32 )2, (__u32 )0, (__u32 )1, (__u32 )16 };}-> N10354
+lines 3507-3509:	N10354 -{char driver_serial[8] = { 48, 48, 48, 52, 55, 49, 49, 0 };}-> N10355
+lines 3510-3513:	N10355 -{char capi_manufakturer[64] = { 65, 86, 77, 32, 66, 101, 114, 108, 105, 110, 0 };}-> N10356
+line 3514:	N10356 -{struct list_head capi_drivers = { &capi_drivers, &capi_drivers };}-> N10357
+lines 3515-3517:	N10357 -{struct mutex capi_drivers_lock = { { 1 }, { { { { { (__ticketpair_t )0 } }, 3735899821U, 4294967295U, (void *)-1L } } }, { &(capi_drivers_lock.wait_list), &(capi_drivers_lock.wait_list) }, (struct task_struct *)0, (char *)0, (void *)(&capi_drivers_lock) };}-> N10358
+lines 3518-3520:	N10358 -{struct mutex capi_controller_lock = { { 1 }, { { { { { (__ticketpair_t )0 } }, 3735899821U, 4294967295U, (void *)-1L } } }, { &(capi_controller_lock.wait_list), &(capi_controller_lock.wait_list) }, (struct task_struct *)0, (char *)0, (void *)(&capi_controller_lock) };}-> N10359
+line 3521:	N10359 -{int ncontrollers = 0;}-> N10360
+	ncontrollers == 0;
+lines 3522-3524:	N10360 -{struct blocking_notifier_head ctr_notifier_list = { { 0L, { { { (__ticketpair_t )0 } }, 3735899821U, 4294967295U, (void *)-1L }, { &(ctr_notifier_list.rwsem.wait_list), &(ctr_notifier_list.rwsem.wait_list) } }, (struct notifier_block *)((void *)0) };}-> N10361
+line 3525:	N10361 -{struct capi_ctr * capi_ctr_get(struct capi_ctr *ctr);}-> N10362
+line 3547:	N10362 -{void capi_ctr_put(struct capi_ctr *ctr);}-> N10363
+line 3559:	N10363 -{struct capi_ctr * get_capi_ctr_by_nr(u16 contr);}-> N10364
+line 3591:	N10364 -{struct capi20_appl * __get_capi_appl_by_nr(u16 applid);}-> N10365
+line 3630:	N10365 -{struct capi20_appl * get_capi_appl_by_nr(u16 applid);}-> N10366
+line 3682:	N10366 -{int capi_cmd_valid(u8 cmd);}-> N10367
+line 3755:	N10367 -{int capi_subcmd_valid(u8 subcmd);}-> N10368
+lines 3784-3807:	N10368 -{void register_appl(struct capi_ctr *ctr, u16 applid, capi_register_params *rparam);}-> N10369
+lines 3808-3823:	N10369 -{void release_appl(struct capi_ctr *ctr, u16 applid);}-> N10370
+lines 3824-3931:	N10370 -{void notify_up(u32 contr);}-> N10371
+lines 3932-4061:	N10371 -{void ctr_down(struct capi_ctr *ctr, int new_state);}-> N10372
+lines 4062-4101:	N10372 -{void notify_down(u32 contr);}-> N10373
+lines 4102-4131:	N10373 -{int notify_handler(struct notifier_block *nb, unsigned long val, void *v);}-> N10374
+lines 4132-4175:	N10374 -{void do_notify_work(struct work_struct *work);}-> N10375
+lines 4176-4253:	N10375 -{int notify_push(unsigned int event_type, u32 controller);}-> N10376
+line 4264:	N10376 -{extern void *__crc_register_capictr_notifier;}-> N10377
+lines 4265-4266:	N10377 -{unsigned long __kcrctab_register_capictr_notifier = (unsigned long)((unsigned long)(&__crc_register_capictr_notifier));}-> N10378
+lines 4267-4275:	N10378 -{char __kstrtab_register_capictr_notifier[26] = { 114, 101, 103, 105, 115, 116, 101, 114, 95, 99, 97, 112, 105, 99, 116, 114, 95, 110, 111, 116, 105, 102, 105, 101, 114, 0 };}-> N10379
+lines 4276-4277:	N10379 -{struct kernel_symbol __ksymtab_register_capictr_notifier = { (unsigned long)(&register_capictr_notifier), __kstrtab_register_capictr_notifier };}-> N10380
+line 4288:	N10380 -{extern void *__crc_unregister_capictr_notifier;}-> N10381
+lines 4289-4290:	N10381 -{unsigned long __kcrctab_unregister_capictr_notifier = (unsigned long)((unsigned long)(&__crc_unregister_capictr_notifier));}-> N10382
+lines 4291-4299:	N10382 -{char __kstrtab_unregister_capictr_notifier[28] = { 117, 110, 114, 101, 103, 105, 115, 116, 101, 114, 95, 99, 97, 112, 105, 99, 116, 114, 95, 110, 111, 116, 105, 102, 105, 101, 114, 0 };}-> N10383
+lines 4300-4301:	N10383 -{struct kernel_symbol __ksymtab_unregister_capictr_notifier = { (unsigned long)(&unregister_capictr_notifier), __kstrtab_unregister_capictr_notifier };}-> N10384
+lines 4302-4447:	N10384 -{void recv_handler(struct work_struct *work);}-> N10385
+line 4907:	N10385 -{extern void *__crc_capi_ctr_handle_message;}-> N10386
+lines 4908-4909:	N10386 -{unsigned long __kcrctab_capi_ctr_handle_message = (unsigned long)((unsigned long)(&__crc_capi_ctr_handle_message));}-> N10387
+lines 4910-4917:	N10387 -{char __kstrtab_capi_ctr_handle_message[24] = { 99, 97, 112, 105, 95, 99, 116, 114, 95, 104, 97, 110, 100, 108, 101, 95, 109, 101, 115, 115, 97, 103, 101, 0 };}-> N10388
+lines 4918-4919:	N10388 -{struct kernel_symbol __ksymtab_capi_ctr_handle_message = { (unsigned long)(&capi_ctr_handle_message), __kstrtab_capi_ctr_handle_message };}-> N10389
+line 4954:	N10389 -{extern void *__crc_capi_ctr_ready;}-> N10390
+lines 4955-4956:	N10390 -{unsigned long __kcrctab_capi_ctr_ready = (unsigned long)((unsigned long)(&__crc_capi_ctr_ready));}-> N10391
+lines 4957-4962:	N10391 -{char __kstrtab_capi_ctr_ready[15] = { 99, 97, 112, 105, 95, 99, 116, 114, 95, 114, 101, 97, 100, 121, 0 };}-> N10392
+lines 4963-4964:	N10392 -{struct kernel_symbol __ksymtab_capi_ctr_ready = { (unsigned long)(&capi_ctr_ready), __kstrtab_capi_ctr_ready };}-> N10393
+line 4989:	N10393 -{extern void *__crc_capi_ctr_down;}-> N10394
+lines 4990-4991:	N10394 -{unsigned long __kcrctab_capi_ctr_down = (unsigned long)((unsigned long)(&__crc_capi_ctr_down));}-> N10395
+lines 4992-4997:	N10395 -{char __kstrtab_capi_ctr_down[14] = { 99, 97, 112, 105, 95, 99, 116, 114, 95, 100, 111, 119, 110, 0 };}-> N10396
+lines 4998-4999:	N10396 -{struct kernel_symbol __ksymtab_capi_ctr_down = { (unsigned long)(&capi_ctr_down), __kstrtab_capi_ctr_down };}-> N10397
+line 5032:	N10397 -{extern void *__crc_capi_ctr_suspend_output;}-> N10398
+lines 5033-5034:	N10398 -{unsigned long __kcrctab_capi_ctr_suspend_output = (unsigned long)((unsigned long)(&__crc_capi_ctr_suspend_output));}-> N10399
+lines 5035-5042:	N10399 -{char __kstrtab_capi_ctr_suspend_output[24] = { 99, 97, 112, 105, 95, 99, 116, 114, 95, 115, 117, 115, 112, 101, 110, 100, 95, 111, 117, 116, 112, 117, 116, 0 };}-> N10400
+lines 5043-5044:	N10400 -{struct kernel_symbol __ksymtab_capi_ctr_suspend_output = { (unsigned long)(&capi_ctr_suspend_output), __kstrtab_capi_ctr_suspend_output };}-> N10401
+line 5075:	N10401 -{extern void *__crc_capi_ctr_resume_output;}-> N10402
+lines 5076-5077:	N10402 -{unsigned long __kcrctab_capi_ctr_resume_output = (unsigned long)((unsigned long)(&__crc_capi_ctr_resume_output));}-> N10403
+lines 5078-5085:	N10403 -{char __kstrtab_capi_ctr_resume_output[23] = { 99, 97, 112, 105, 95, 99, 116, 114, 95, 114, 101, 115, 117, 109, 101, 95, 111, 117, 116, 112, 117, 116, 0 };}-> N10404
+lines 5086-5087:	N10404 -{struct kernel_symbol __ksymtab_capi_ctr_resume_output = { (unsigned long)(&capi_ctr_resume_output), __kstrtab_capi_ctr_resume_output };}-> N10405
+line 5088:	N10405 -{struct lock_class_key __key___5 = {  };}-> N10406
+line 5268:	N10406 -{extern void *__crc_attach_capi_ctr;}-> N10407
+lines 5269-5270:	N10407 -{unsigned long __kcrctab_attach_capi_ctr = (unsigned long)((unsigned long)(&__crc_attach_capi_ctr));}-> N10408
+lines 5271-5276:	N10408 -{char __kstrtab_attach_capi_ctr[16] = { 97, 116, 116, 97, 99, 104, 95, 99, 97, 112, 105, 95, 99, 116, 114, 0 };}-> N10409
+lines 5277-5278:	N10409 -{struct kernel_symbol __ksymtab_attach_capi_ctr = { (unsigned long)(&attach_capi_ctr), __kstrtab_attach_capi_ctr };}-> N10410
+line 5385:	N10410 -{extern void *__crc_detach_capi_ctr;}-> N10411
+lines 5386-5387:	N10411 -{unsigned long __kcrctab_detach_capi_ctr = (unsigned long)((unsigned long)(&__crc_detach_capi_ctr));}-> N10412
+lines 5388-5393:	N10412 -{char __kstrtab_detach_capi_ctr[16] = { 100, 101, 116, 97, 99, 104, 95, 99, 97, 112, 105, 95, 99, 116, 114, 0 };}-> N10413
+lines 5394-5395:	N10413 -{struct kernel_symbol __ksymtab_detach_capi_ctr = { (unsigned long)(&detach_capi_ctr), __kstrtab_detach_capi_ctr };}-> N10414
+line 5413:	N10414 -{extern void *__crc_register_capi_driver;}-> N10415
+lines 5414-5415:	N10415 -{unsigned long __kcrctab_register_capi_driver = (unsigned long)((unsigned long)(&__crc_register_capi_driver));}-> N10416
+lines 5416-5423:	N10416 -{char __kstrtab_register_capi_driver[21] = { 114, 101, 103, 105, 115, 116, 101, 114, 95, 99, 97, 112, 105, 95, 100, 114, 105, 118, 101, 114, 0 };}-> N10417
+lines 5424-5425:	N10417 -{struct kernel_symbol __ksymtab_register_capi_driver = { (unsigned long)(&register_capi_driver), __kstrtab_register_capi_driver };}-> N10418
+line 5443:	N10418 -{extern void *__crc_unregister_capi_driver;}-> N10419
+lines 5444-5445:	N10419 -{unsigned long __kcrctab_unregister_capi_driver = (unsigned long)((unsigned long)(&__crc_unregister_capi_driver));}-> N10420
+lines 5446-5453:	N10420 -{char __kstrtab_unregister_capi_driver[23] = { 117, 110, 114, 101, 103, 105, 115, 116, 101, 114, 95, 99, 97, 112, 105, 95, 100, 114, 105, 118, 101, 114, 0 };}-> N10421
+lines 5454-5455:	N10421 -{struct kernel_symbol __ksymtab_unregister_capi_driver = { (unsigned long)(&unregister_capi_driver), __kstrtab_unregister_capi_driver };}-> N10422
+line 5516:	N10422 -{extern void *__crc_capi20_isinstalled;}-> N10423
+lines 5517-5518:	N10423 -{unsigned long __kcrctab_capi20_isinstalled = (unsigned long)((unsigned long)(&__crc_capi20_isinstalled));}-> N10424
+lines 5519-5525:	N10424 -{char __kstrtab_capi20_isinstalled[19] = { 99, 97, 112, 105, 50, 48, 95, 105, 115, 105, 110, 115, 116, 97, 108, 108, 101, 100, 0 };}-> N10425
+lines 5526-5527:	N10425 -{struct kernel_symbol __ksymtab_capi20_isinstalled = { (unsigned long)(&capi20_isinstalled), __kstrtab_capi20_isinstalled };}-> N10426
+line 5528:	N10426 -{struct lock_class_key __key___6 = {  };}-> N10427
+line 5805:	N10427 -{extern void *__crc_capi20_register;}-> N10428
+lines 5806-5807:	N10428 -{unsigned long __kcrctab_capi20_register = (unsigned long)((unsigned long)(&__crc_capi20_register));}-> N10429
+lines 5808-5813:	N10429 -{char __kstrtab_capi20_register[16] = { 99, 97, 112, 105, 50, 48, 95, 114, 101, 103, 105, 115, 116, 101, 114, 0 };}-> N10430
+lines 5814-5815:	N10430 -{struct kernel_symbol __ksymtab_capi20_register = { (unsigned long)(&capi20_register), __kstrtab_capi20_register };}-> N10431
+line 5931:	N10431 -{extern void *__crc_capi20_release;}-> N10432
+lines 5932-5933:	N10432 -{unsigned long __kcrctab_capi20_release = (unsigned long)((unsigned long)(&__crc_capi20_release));}-> N10433
+lines 5934-5939:	N10433 -{char __kstrtab_capi20_release[15] = { 99, 97, 112, 105, 50, 48, 95, 114, 101, 108, 101, 97, 115, 101, 0 };}-> N10434
+lines 5940-5941:	N10434 -{struct kernel_symbol __ksymtab_capi20_release = { (unsigned long)(&capi20_release), __kstrtab_capi20_release };}-> N10435
+line 6392:	N10435 -{extern void *__crc_capi20_put_message;}-> N10436
+lines 6393-6394:	N10436 -{unsigned long __kcrctab_capi20_put_message = (unsigned long)((unsigned long)(&__crc_capi20_put_message));}-> N10437
+lines 6395-6401:	N10437 -{char __kstrtab_capi20_put_message[19] = { 99, 97, 112, 105, 50, 48, 95, 112, 117, 116, 95, 109, 101, 115, 115, 97, 103, 101, 0 };}-> N10438
+lines 6402-6403:	N10438 -{struct kernel_symbol __ksymtab_capi20_put_message = { (unsigned long)(&capi20_put_message), __kstrtab_capi20_put_message };}-> N10439
+line 6479:	N10439 -{extern void *__crc_capi20_get_manufacturer;}-> N10440
+lines 6480-6481:	N10440 -{unsigned long __kcrctab_capi20_get_manufacturer = (unsigned long)((unsigned long)(&__crc_capi20_get_manufacturer));}-> N10441
+lines 6482-6489:	N10441 -{char __kstrtab_capi20_get_manufacturer[24] = { 99, 97, 112, 105, 50, 48, 95, 103, 101, 116, 95, 109, 97, 110, 117, 102, 97, 99, 116, 117, 114, 101, 114, 0 };}-> N10442
+lines 6490-6491:	N10442 -{struct kernel_symbol __ksymtab_capi20_get_manufacturer = { (unsigned long)(&capi20_get_manufacturer), __kstrtab_capi20_get_manufacturer };}-> N10443
+line 6566:	N10443 -{extern void *__crc_capi20_get_version;}-> N10444
+lines 6567-6568:	N10444 -{unsigned long __kcrctab_capi20_get_version = (unsigned long)((unsigned long)(&__crc_capi20_get_version));}-> N10445
+lines 6569-6575:	N10445 -{char __kstrtab_capi20_get_version[19] = { 99, 97, 112, 105, 50, 48, 95, 103, 101, 116, 95, 118, 101, 114, 115, 105, 111, 110, 0 };}-> N10446
+lines 6576-6577:	N10446 -{struct kernel_symbol __ksymtab_capi20_get_version = { (unsigned long)(&capi20_get_version), __kstrtab_capi20_get_version };}-> N10447
+line 6653:	N10447 -{extern void *__crc_capi20_get_serial;}-> N10448
+lines 6654-6655:	N10448 -{unsigned long __kcrctab_capi20_get_serial = (unsigned long)((unsigned long)(&__crc_capi20_get_serial));}-> N10449
+lines 6656-6662:	N10449 -{char __kstrtab_capi20_get_serial[18] = { 99, 97, 112, 105, 50, 48, 95, 103, 101, 116, 95, 115, 101, 114, 105, 97, 108, 0 };}-> N10450
+lines 6663-6664:	N10450 -{struct kernel_symbol __ksymtab_capi20_get_serial = { (unsigned long)(&capi20_get_serial), __kstrtab_capi20_get_serial };}-> N10451
+line 6739:	N10451 -{extern void *__crc_capi20_get_profile;}-> N10452
+lines 6740-6741:	N10452 -{unsigned long __kcrctab_capi20_get_profile = (unsigned long)((unsigned long)(&__crc_capi20_get_profile));}-> N10453
+lines 6742-6748:	N10453 -{char __kstrtab_capi20_get_profile[19] = { 99, 97, 112, 105, 50, 48, 95, 103, 101, 116, 95, 112, 114, 111, 102, 105, 108, 101, 0 };}-> N10454
+lines 6749-6750:	N10454 -{struct kernel_symbol __ksymtab_capi20_get_profile = { (unsigned long)(&capi20_get_profile), __kstrtab_capi20_get_profile };}-> N10455
+lines 6751-6863:	N10455 -{int wait_on_ctr_state(struct capi_ctr *ctr, unsigned int state);}-> N10456
+lines 6864-7437:	N10456 -{int old_capi_manufacturer(unsigned int cmd, void *data);}-> N10457
+line 7731:	N10457 -{extern void *__crc_capi20_manufacturer;}-> N10458
+lines 7732-7733:	N10458 -{unsigned long __kcrctab_capi20_manufacturer = (unsigned long)((unsigned long)(&__crc_capi20_manufacturer));}-> N10459
+lines 7734-7740:	N10459 -{char __kstrtab_capi20_manufacturer[20] = { 99, 97, 112, 105, 50, 48, 95, 109, 97, 110, 117, 102, 97, 99, 116, 117, 114, 101, 114, 0 };}-> N10460
+lines 7741-7742:	N10460 -{struct kernel_symbol __ksymtab_capi20_manufacturer = { (unsigned long)(&capi20_manufacturer), __kstrtab_capi20_manufacturer };}-> N10461
+line 7743:	N10461 -{struct notifier_block capictr_nb = { &notify_handler, (struct notifier_block *)0, 2147483647 };}-> N10462
+line 7744:	N10462 -{int kcapi_init();}-> N10463
+line 7784:	N10463 -{void kcapi_exit();}-> N10464
+line 7818:	N10464 -{void ldv_check_final_state();}-> N10465
+line 7819:	N10465 -{void ldv_initialize();}-> N10466
+line 7820:	N10466 -{int __VERIFIER_nondet_int();}-> N10467
+line 7821:	N10467 -{int LDV_IN_INTERRUPT = 0;}-> N10468
+	LDV_IN_INTERRUPT == 0;
+lines 7822-7885:	N10468 -{void ldv_main0_sequence_infinite_withcheck_stateful();}-> N10469
+lines 7886-7892:	N10469 -{void ldv_blast_assert();}-> N10470
+line 7894:	N10470 -{int ldv_mutex = 1;}-> N10471
+	ldv_mutex == 1;
+line 8037:	N10471 -{int test_and_set_bit(int nr, volatile unsigned long *addr);}-> N10472
+line 8055:	N10472 -{int test_and_clear_bit(int nr, volatile unsigned long *addr);}-> N10473
+lines 8073-8074:	N10473 -{int vsnprintf(char *buf, size_t size, char *fmt, va_list args);}-> N10474
+line 8075:	N10474 -{void * memmove(void *dest, void *src, size_t count);}-> N10475
+line 8076:	N10475 -{extern unsigned char _ctype[];}-> N10476
+line 8077:	N10476 -{unsigned int capi_cmsg2message(_cmsg *cmsg, unsigned char *msg);}-> N10477
+line 8078:	N10477 -{unsigned int capi_message2cmsg(_cmsg *cmsg, unsigned char *msg);}-> N10478
+lines 8079-8081:	N10478 -{unsigned int capi_cmsg_header(_cmsg *cmsg, unsigned short _ApplId, unsigned char _Command, unsigned char _Subcommand, unsigned short _Messagenumber, unsigned int _Controller);}-> N10479
+line 8082:	N10479 -{char * capi_info2str(unsigned short reason);}-> N10480
+line 8083:	N10480 -{_cdebbuf * capi_cmsg2str(_cmsg *cmsg);}-> N10481
+lines 8650-8700:	N10481 -{_cdef cdef[48] = { { 6, 0UL }, { 6, 0UL }, { 6, 0UL }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->adr.adrController))) }, { 5, (size_t )((unsigned int)(&(((_cmsg *)0)->AdditionalInfo))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->B1configuration))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->B1protocol))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->B2configuration))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->B2protocol))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->B3configuration))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->B3protocol))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->BC))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->BChannelinformation))) }, { 5, (size_t )((unsigned int)(&(((_cmsg *)0)->BProtocol))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->CalledPartyNumber))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->CalledPartySubaddress))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->CallingPartyNumber))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->CallingPartySubaddress))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->CIPmask))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->CIPmask2))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->CIPValue))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->Class))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->ConnectedNumber))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->ConnectedSubaddress))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->Data))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->DataHandle))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->DataLength))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->FacilityConfirmationParameter))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->Facilitydataarray))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->FacilityIndicationParameter))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->FacilityRequestParameter))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->FacilitySelector))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->Flags))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->Function))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->HLC))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->Info))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->InfoElement))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->InfoMask))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->InfoNumber))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->Keypadfacility))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->LLC))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->ManuData))) }, { 3, (size_t )((unsigned int)(&(((_cmsg *)0)->ManuID))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->NCPI))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->Reason))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->Reason_B3))) }, { 2, (size_t )((unsigned int)(&(((_cmsg *)0)->Reject))) }, { 4, (size_t )((unsigned int)(&(((_cmsg *)0)->Useruserdata))) } };}-> N10482
+lines 8701-8721:	N10482 -{unsigned char *cpars[79] = { (unsigned char *)0, (unsigned char *)"\003\004\f\'/\034\001\001", (unsigned char *)"\003\024\016\020\017\021\r\006\b\n\005\a\t\001\v(\"\004\f\'/\034\001\001", (unsigned char *)0, (unsigned char *)"\003\004\f\'/\034\001\001", (unsigned char *)"\003%\022\023\020\021\001", (unsigned char *)0, (unsigned char *)0, (unsigned char *)"\003\016\004\f\'/\034\001\001", (unsigned char *)"\003\037\036\001", (unsigned char *)"\003\r\006\b\n\005\a\t\001\001", (unsigned char *)"\003+\001", (unsigned char *)0, (unsigned char *)"\003+\001", (unsigned char *)0, (unsigned char *)"\003\030\032\031 \001", (unsigned char *)"\003+\001", (unsigned char *)0, (unsigned char *)0, (unsigned char *)"\003#\001", (unsigned char *)"\003#\001", (unsigned char *)0, (unsigned char *)"\003#\001", (unsigned char *)"\003#\001", (unsigned char *)"\003*\025!)\001", (unsigned char *)0, (unsigned char *)"\003#\001", (unsigned char *)"\003#\037\033\001", (unsigned char *)"\003#\001", (unsigned char *)"\003#\001", (unsigned char *)0, (unsigned char *)"\003#\001", (unsigned char *)0, (unsigned char *)"\003\031#\001", (unsigned char *)"\003#\001", (unsigned char *)0, (unsigned char *)0, (unsigned char *)0, (unsigned char *)"\003\024\016\020\017\021\v(\"\004\f\'/\034\001\001", (unsigned char *)"\003\026\027(\001", (unsigned char *)"\003,\001", (unsigned char *)0, (unsigned char *)"\003*\025!)\001", (unsigned char *)0, (unsigned char *)"\003&$\001", (unsigned char *)"\003\037\035\001", (unsigned char *)0, (unsigned char *)"\003+\001", (unsigned char *)"\003+\001", (unsigned char *)"\003-+\001", (unsigned char *)0, (unsigned char *)"\003\030\032\031 \001", (unsigned char *)"\003+\001", (unsigned char *)"\003+\001", (unsigned char *)0, (unsigned char *)0, (unsigned char *)"\003.\r\006\b\n\005\a\t\001\026\027(\004\f\'/\034\001\001", (unsigned char *)"\003\001", (unsigned char *)"\003\001", (unsigned char *)0, (unsigned char *)"\003*\025!)\001", (unsigned char *)0, (unsigned char *)"\003\001", (unsigned char *)"\003\037\001", (unsigned char *)0, (unsigned char *)"\003.+\001", (unsigned char *)"\003\001", (unsigned char *)"\003\001", (unsigned char *)0, (unsigned char *)"\003\031\001", (unsigned char *)"\003\001", (unsigned char *)"\003\001", (unsigned char *)0, (unsigned char *)0, (unsigned char *)0, (unsigned char *)0, (unsigned char *)0, (unsigned char *)0, (unsigned char *)"\003*\025!)\001" };}-> N10483
+lines 8722-8749:	N10483 -{unsigned int command_2_index(unsigned int c, unsigned int sc);}-> N10484
+lines 8750-8828:	N10484 -{void jumpcstruct(_cmsg *cmsg);}-> N10485
+lines 8829-9696:	N10485 -{void pars_2_message(_cmsg *cmsg);}-> N10486
+lines 9813-10438:	N10486 -{void message_2_pars(_cmsg *cmsg);}-> N10487
+lines 10592-10612:	N10487 -{char *mnames[79] = { (char *)0, (char *)"ALERT_REQ", (char *)"CONNECT_REQ", (char *)0, (char *)"DISCONNECT_REQ", (char *)"LISTEN_REQ", (char *)0, (char *)0, (char *)"INFO_REQ", (char *)"FACILITY_REQ", (char *)"SELECT_B_PROTOCOL_REQ", (char *)"CONNECT_B3_REQ", (char *)0, (char *)"DISCONNECT_B3_REQ", (char *)0, (char *)"DATA_B3_REQ", (char *)"RESET_B3_REQ", (char *)0, (char *)0, (char *)"ALERT_CONF", (char *)"CONNECT_CONF", (char *)0, (char *)"DISCONNECT_CONF", (char *)"LISTEN_CONF", (char *)"MANUFACTURER_REQ", (char *)0, (char *)"INFO_CONF", (char *)"FACILITY_CONF", (char *)"SELECT_B_PROTOCOL_CONF", (char *)"CONNECT_B3_CONF", (char *)0, (char *)"DISCONNECT_B3_CONF", (char *)0, (char *)"DATA_B3_CONF", (char *)"RESET_B3_CONF", (char *)0, (char *)0, (char *)0, (char *)"CONNECT_IND", (char *)"CONNECT_ACTIVE_IND", (char *)"DISCONNECT_IND", (char *)0, (char *)"MANUFACTURER_CONF", (char *)0, (char *)"INFO_IND", (char *)"FACILITY_IND", (char *)0, (char *)"CONNECT_B3_IND", (char *)"CONNECT_B3_ACTIVE_IND", (char *)"DISCONNECT_B3_IND", (char *)0, (char *)"DATA_B3_IND", (char *)"RESET_B3_IND", (char *)"CONNECT_B3_T90_ACTIVE_IND", (char *)0, (char *)0, (char *)"CONNECT_RESP", (char *)"CONNECT_ACTIVE_RESP", (char *)"DISCONNECT_RESP", (char *)0, (char *)"MANUFACTURER_IND", (char *)0, (char *)"INFO_RESP", (char *)"FACILITY_RESP", (char *)0, (char *)"CONNECT_B3_RESP", (char *)"CONNECT_B3_ACTIVE_RESP", (char *)"DISCONNECT_B3_RESP", (char *)0, (char *)"DATA_B3_RESP", (char *)"RESET_B3_RESP", (char *)"CONNECT_B3_T90_ACTIVE_RESP", (char *)0, (char *)0, (char *)0, (char *)0, (char *)0, (char *)0, (char *)"MANUFACTURER_RESP" };}-> N10488
+lines 10633-10645:	N10488 -{char *pnames[48] = { (char *)((void *)0), (char *)((void *)0), (char *)((void *)0), (char *)"Controller/PLCI/NCCI", (char *)"AdditionalInfo", (char *)"B1configuration", (char *)"B1protocol", (char *)"B2configuration", (char *)"B2protocol", (char *)"B3configuration", (char *)"B3protocol", (char *)"BC", (char *)"BChannelinformation", (char *)"BProtocol", (char *)"CalledPartyNumber", (char *)"CalledPartySubaddress", (char *)"CallingPartyNumber", (char *)"CallingPartySubaddress", (char *)"CIPmask", (char *)"CIPmask2", (char *)"CIPValue", (char *)"Class", (char *)"ConnectedNumber", (char *)"ConnectedSubaddress", (char *)"Data32", (char *)"DataHandle", (char *)"DataLength", (char *)"FacilityConfirmationParameter", (char *)"Facilitydataarray", (char *)"FacilityIndicationParameter", (char *)"FacilityRequestParameter", (char *)"FacilitySelector", (char *)"Flags", (char *)"Function", (char *)"HLC", (char *)"Info", (char *)"InfoElement", (char *)"InfoMask", (char *)"InfoNumber", (char *)"Keypadfacility", (char *)"LLC", (char *)"ManuData", (char *)"ManuID", (char *)"NCPI", (char *)"Reason", (char *)"Reason_B3", (char *)"Reject", (char *)"Useruserdata" };}-> N10489
+lines 10646-10844:	N10489 -{_cdebbuf * bufprint(_cdebbuf *cdb, char *fmt, ...);}-> N10490
+lines 10845-10954:	N10490 -{_cdebbuf * printstructlen(_cdebbuf *cdb, u8 *m, unsigned int len);}-> N10491
+lines 10955-10991:	N10491 -{_cdebbuf * printstruct(_cdebbuf *cdb, u8 *m);}-> N10492
+lines 10992-11625:	N10492 -{_cdebbuf * protocol_message_2_pars(_cdebbuf *cdb, _cmsg *cmsg, int level);}-> N10493
+line 11626:	N10493 -{_cdebbuf *g_debbuf = 0;}-> N10494
+	g_debbuf == 0LL;
+	(g_debbuf->buf) == 0LL;
+	(*(g_debbuf->buf)) == 0U;
+line 11627:	N10494 -{unsigned long g_debbuf_lock = 0UL;}-> N10495
+	g_debbuf_lock == 0UL;
+line 11628:	N10495 -{_cmsg *g_cmsg = 0;}-> N10496
+	g_cmsg == 0LL;
+	(g_cmsg->ApplId) == 0U;
+	((signed long long int)(&(g_cmsg->adr))) == 6LL;
+	(g_cmsg->par) == 0LL;
+	(*(g_cmsg->par)) == 0U;
+	(&(g_cmsg->buf)) == 272LL;
+lines 11629-11718:	N10496 -{_cdebbuf * cdebbuf_alloc();}-> N10497
+line 12221:	N10497 -{extern void *__crc_cdebbuf_free;}-> N10498
+lines 12222-12223:	N10498 -{unsigned long __kcrctab_cdebbuf_free = (unsigned long)((unsigned long)(&__crc_cdebbuf_free));}-> N10499
+lines 12224-12229:	N10499 -{char __kstrtab_cdebbuf_free[13] = { 99, 100, 101, 98, 98, 117, 102, 95, 102, 114, 101, 101, 0 };}-> N10500
+lines 12230-12231:	N10500 -{struct kernel_symbol __ksymtab_cdebbuf_free = { (unsigned long)(&cdebbuf_free), __kstrtab_cdebbuf_free };}-> N10501
+line 12232:	N10501 -{extern void *__crc_capi_cmsg2message;}-> N10502
+lines 12233-12234:	N10502 -{unsigned long __kcrctab_capi_cmsg2message = (unsigned long)((unsigned long)(&__crc_capi_cmsg2message));}-> N10503
+lines 12235-12241:	N10503 -{char __kstrtab_capi_cmsg2message[18] = { 99, 97, 112, 105, 95, 99, 109, 115, 103, 50, 109, 101, 115, 115, 97, 103, 101, 0 };}-> N10504
+lines 12242-12243:	N10504 -{struct kernel_symbol __ksymtab_capi_cmsg2message = { (unsigned long)(&capi_cmsg2message), __kstrtab_capi_cmsg2message };}-> N10505
+line 12244:	N10505 -{extern void *__crc_capi_message2cmsg;}-> N10506
+lines 12245-12246:	N10506 -{unsigned long __kcrctab_capi_message2cmsg = (unsigned long)((unsigned long)(&__crc_capi_message2cmsg));}-> N10507
+lines 12247-12253:	N10507 -{char __kstrtab_capi_message2cmsg[18] = { 99, 97, 112, 105, 95, 109, 101, 115, 115, 97, 103, 101, 50, 99, 109, 115, 103, 0 };}-> N10508
+lines 12254-12255:	N10508 -{struct kernel_symbol __ksymtab_capi_message2cmsg = { (unsigned long)(&capi_message2cmsg), __kstrtab_capi_message2cmsg };}-> N10509
+line 12256:	N10509 -{extern void *__crc_capi_cmsg_header;}-> N10510
+lines 12257-12258:	N10510 -{unsigned long __kcrctab_capi_cmsg_header = (unsigned long)((unsigned long)(&__crc_capi_cmsg_header));}-> N10511
+lines 12259-12265:	N10511 -{char __kstrtab_capi_cmsg_header[17] = { 99, 97, 112, 105, 95, 99, 109, 115, 103, 95, 104, 101, 97, 100, 101, 114, 0 };}-> N10512
+lines 12266-12267:	N10512 -{struct kernel_symbol __ksymtab_capi_cmsg_header = { (unsigned long)(&capi_cmsg_header), __kstrtab_capi_cmsg_header };}-> N10513
+line 12268:	N10513 -{extern void *__crc_capi_cmd2str;}-> N10514
+lines 12269-12270:	N10514 -{unsigned long __kcrctab_capi_cmd2str = (unsigned long)((unsigned long)(&__crc_capi_cmd2str));}-> N10515
+lines 12271-12276:	N10515 -{char __kstrtab_capi_cmd2str[13] = { 99, 97, 112, 105, 95, 99, 109, 100, 50, 115, 116, 114, 0 };}-> N10516
+lines 12277-12278:	N10516 -{struct kernel_symbol __ksymtab_capi_cmd2str = { (unsigned long)(&capi_cmd2str), __kstrtab_capi_cmd2str };}-> N10517
+line 12279:	N10517 -{extern void *__crc_capi_cmsg2str;}-> N10518
+lines 12280-12281:	N10518 -{unsigned long __kcrctab_capi_cmsg2str = (unsigned long)((unsigned long)(&__crc_capi_cmsg2str));}-> N10519
+lines 12282-12287:	N10519 -{char __kstrtab_capi_cmsg2str[14] = { 99, 97, 112, 105, 95, 99, 109, 115, 103, 50, 115, 116, 114, 0 };}-> N10520
+lines 12288-12289:	N10520 -{struct kernel_symbol __ksymtab_capi_cmsg2str = { (unsigned long)(&capi_cmsg2str), __kstrtab_capi_cmsg2str };}-> N10521
+line 12290:	N10521 -{extern void *__crc_capi_message2str;}-> N10522
+lines 12291-12292:	N10522 -{unsigned long __kcrctab_capi_message2str = (unsigned long)((unsigned long)(&__crc_capi_message2str));}-> N10523
+lines 12293-12299:	N10523 -{char __kstrtab_capi_message2str[17] = { 99, 97, 112, 105, 95, 109, 101, 115, 115, 97, 103, 101, 50, 115, 116, 114, 0 };}-> N10524
+lines 12300-12301:	N10524 -{struct kernel_symbol __ksymtab_capi_message2str = { (unsigned long)(&capi_message2str), __kstrtab_capi_message2str };}-> N10525
+line 12302:	N10525 -{extern void *__crc_capi_info2str;}-> N10526
+lines 12303-12304:	N10526 -{unsigned long __kcrctab_capi_info2str = (unsigned long)((unsigned long)(&__crc_capi_info2str));}-> N10527
+lines 12305-12310:	N10527 -{char __kstrtab_capi_info2str[14] = { 99, 97, 112, 105, 95, 105, 110, 102, 111, 50, 115, 116, 114, 0 };}-> N10528
+lines 12311-12312:	N10528 -{struct kernel_symbol __ksymtab_capi_info2str = { (unsigned long)(&capi_info2str), __kstrtab_capi_info2str };}-> N10529
+line 12313:	N10529 -{void capilib_new_ncci(struct list_head *head, u16 applid, u32 ncci, u32 winsize);}-> N10530
+line 12314:	N10530 -{void capilib_free_ncci(struct list_head *head, u16 applid, u32 ncci);}-> N10531
+line 12315:	N10531 -{void capilib_release_appl(struct list_head *head, u16 applid);}-> N10532
+line 12316:	N10532 -{void capilib_release(struct list_head *head);}-> N10533
+line 12317:	N10533 -{void capilib_data_b3_conf(struct list_head *head, u16 applid, u32 ncci, u16 msgid);}-> N10534
+line 12318:	N10534 -{u16  capilib_data_b3_req(struct list_head *head, u16 applid, u32 ncci, u16 msgid);}-> N10535
+line 12319:	N10535 -{void mq_init(struct capilib_ncci *np);}-> N10536
+line 12421:	N10536 -{int mq_enqueue(struct capilib_ncci *np, u16 msgid);}-> N10537
+line 12510:	N10537 -{int mq_dequeue(struct capilib_ncci *np, u16 msgid);}-> N10538
+line 12665:	N10538 -{extern void *__crc_capilib_new_ncci;}-> N10539
+lines 12666-12667:	N10539 -{unsigned long __kcrctab_capilib_new_ncci = (unsigned long)((unsigned long)(&__crc_capilib_new_ncci));}-> N10540
+lines 12668-12674:	N10540 -{char __kstrtab_capilib_new_ncci[17] = { 99, 97, 112, 105, 108, 105, 98, 95, 110, 101, 119, 95, 110, 99, 99, 105, 0 };}-> N10541
+lines 12675-12676:	N10541 -{struct kernel_symbol __ksymtab_capilib_new_ncci = { (unsigned long)(&capilib_new_ncci), __kstrtab_capilib_new_ncci };}-> N10542
+line 12763:	N10542 -{extern void *__crc_capilib_free_ncci;}-> N10543
+lines 12764-12765:	N10543 -{unsigned long __kcrctab_capilib_free_ncci = (unsigned long)((unsigned long)(&__crc_capilib_free_ncci));}-> N10544
+lines 12766-12772:	N10544 -{char __kstrtab_capilib_free_ncci[18] = { 99, 97, 112, 105, 108, 105, 98, 95, 102, 114, 101, 101, 95, 110, 99, 99, 105, 0 };}-> N10545
+lines 12773-12774:	N10545 -{struct kernel_symbol __ksymtab_capilib_free_ncci = { (unsigned long)(&capilib_free_ncci), __kstrtab_capilib_free_ncci };}-> N10546
+line 12853:	N10546 -{extern void *__crc_capilib_release_appl;}-> N10547
+lines 12854-12855:	N10547 -{unsigned long __kcrctab_capilib_release_appl = (unsigned long)((unsigned long)(&__crc_capilib_release_appl));}-> N10548
+lines 12856-12863:	N10548 -{char __kstrtab_capilib_release_appl[21] = { 99, 97, 112, 105, 108, 105, 98, 95, 114, 101, 108, 101, 97, 115, 101, 95, 97, 112, 112, 108, 0 };}-> N10549
+lines 12864-12865:	N10549 -{struct kernel_symbol __ksymtab_capilib_release_appl = { (unsigned long)(&capilib_release_appl), __kstrtab_capilib_release_appl };}-> N10550
+line 12932:	N10550 -{extern void *__crc_capilib_release;}-> N10551
+lines 12933-12934:	N10551 -{unsigned long __kcrctab_capilib_release = (unsigned long)((unsigned long)(&__crc_capilib_release));}-> N10552
+lines 12935-12940:	N10552 -{char __kstrtab_capilib_release[16] = { 99, 97, 112, 105, 108, 105, 98, 95, 114, 101, 108, 101, 97, 115, 101, 0 };}-> N10553
+lines 12941-12942:	N10553 -{struct kernel_symbol __ksymtab_capilib_release = { (unsigned long)(&capilib_release), __kstrtab_capilib_release };}-> N10554
+line 13027:	N10554 -{extern void *__crc_capilib_data_b3_req;}-> N10555
+lines 13028-13029:	N10555 -{unsigned long __kcrctab_capilib_data_b3_req = (unsigned long)((unsigned long)(&__crc_capilib_data_b3_req));}-> N10556
+lines 13030-13036:	N10556 -{char __kstrtab_capilib_data_b3_req[20] = { 99, 97, 112, 105, 108, 105, 98, 95, 100, 97, 116, 97, 95, 98, 51, 95, 114, 101, 113, 0 };}-> N10557
+lines 13037-13038:	N10557 -{struct kernel_symbol __ksymtab_capilib_data_b3_req = { (unsigned long)(&capilib_data_b3_req), __kstrtab_capilib_data_b3_req };}-> N10558
+line 13127:	N10558 -{extern void *__crc_capilib_data_b3_conf;}-> N10559
+lines 13128-13129:	N10559 -{unsigned long __kcrctab_capilib_data_b3_conf = (unsigned long)((unsigned long)(&__crc_capilib_data_b3_conf));}-> N10560
+lines 13130-13137:	N10560 -{char __kstrtab_capilib_data_b3_conf[21] = { 99, 97, 112, 105, 108, 105, 98, 95, 100, 97, 116, 97, 95, 98, 51, 95, 99, 111, 110, 102, 0 };}-> N10561
+lines 13138-13139:	N10561 -{struct kernel_symbol __ksymtab_capilib_data_b3_conf = { (unsigned long)(&capilib_data_b3_conf), __kstrtab_capilib_data_b3_conf };}-> N10562
+line 13140:	N10562 -{struct proc_dir_entry * proc_mkdir(char *, struct proc_dir_entry *);}-> N10563
+lines 13141-13143:	N10563 -{struct proc_dir_entry * proc_create(char *name, umode_t mode, struct proc_dir_entry *parent, struct file_operations *proc_fops);}-> N10564
+line 13158:	N10564 -{int seq_open(struct file *, struct seq_operations *);}-> N10565
+line 13159:	N10565 -{ssize_t  seq_read(struct file *, char *, size_t , loff_t *);}-> N10566
+line 13160:	N10566 -{loff_t  seq_lseek(struct file *, loff_t , int);}-> N10567
+line 13161:	N10567 -{int seq_release(struct inode *, struct file *);}-> N10568
+lines 13162-13163:	N10568 -{int seq_printf(struct seq_file *, char *, ...);}-> N10569
+line 13164:	N10569 -{struct list_head * seq_list_start(struct list_head *head, loff_t pos);}-> N10570
+line 13165:	N10570 -{struct list_head * seq_list_next(void *v, struct list_head *head, loff_t *ppos);}-> N10571
+line 13166:	N10571 -{extern struct module __this_module;}-> N10572
+lines 13167-13197:	N10572 -{char * state2str(unsigned short state);}-> N10573
+lines 13198-13225:	N10573 -{void * controller_start(struct seq_file *seq, loff_t *pos);}-> N10574
+lines 13226-13253:	N10574 -{void * controller_next(struct seq_file *seq, void *v, loff_t *pos);}-> N10575
+lines 13254-13263:	N10575 -{void controller_stop(struct seq_file *seq, void *v);}-> N10576
+lines 13264-13334:	N10576 -{int controller_show(struct seq_file *seq, void *v);}-> N10577
+lines 13335-13383:	N10577 -{int contrstats_show(struct seq_file *seq, void *v);}-> N10578
+line 13384:	N10578 -{struct seq_operations seq_controller_ops = { &controller_start, &controller_stop, &controller_next, &controller_show };}-> N10579
+line 13385:	N10579 -{struct seq_operations seq_contrstats_ops = { &controller_start, &controller_stop, &controller_next, &contrstats_show };}-> N10580
+lines 13386-13395:	N10580 -{int seq_controller_open(struct inode *inode, struct file *file);}-> N10581
+lines 13396-13405:	N10581 -{int seq_contrstats_open(struct inode *inode, struct file *file);}-> N10582
+lines 13406-13434:	N10582 -{struct file_operations proc_controller_ops = { &__this_module, &seq_lseek, &seq_read, (ssize_t  (*)(struct file *, char *, size_t , loff_t *))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (int (*)(struct file *, void *, int (*)(void *, char *, int, loff_t , u64 , unsigned int)))0, (unsigned int (*)(struct file *, struct poll_table_struct *))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (int (*)(struct file *, struct vm_area_struct *))0, &seq_controller_open, (int (*)(struct file *, fl_owner_t id))0, &seq_release, (int (*)(struct file *, loff_t , loff_t , int datasync))0, (int (*)(struct kiocb *, int datasync))0, (int (*)(int, struct file *, int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct file *, struct page *, int, size_t , loff_t *, int))0, (unsigned long int (*)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long))0, (int (*)(int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct pipe_inode_info *, struct file *, loff_t *, size_t , unsigned int))0, (ssize_t  (*)(struct file *, loff_t *, struct pipe_inode_info *, size_t , unsigned int))0, (int (*)(struct file *, long, struct file_lock **))0, (long int (*)(struct file *file, int mode, loff_t offset, loff_t len))0 };}-> N10583
+lines 13435-13463:	N10583 -{struct file_operations proc_contrstats_ops = { &__this_module, &seq_lseek, &seq_read, (ssize_t  (*)(struct file *, char *, size_t , loff_t *))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (int (*)(struct file *, void *, int (*)(void *, char *, int, loff_t , u64 , unsigned int)))0, (unsigned int (*)(struct file *, struct poll_table_struct *))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (int (*)(struct file *, struct vm_area_struct *))0, &seq_contrstats_open, (int (*)(struct file *, fl_owner_t id))0, &seq_release, (int (*)(struct file *, loff_t , loff_t , int datasync))0, (int (*)(struct kiocb *, int datasync))0, (int (*)(int, struct file *, int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct file *, struct page *, int, size_t , loff_t *, int))0, (unsigned long int (*)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long))0, (int (*)(int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct pipe_inode_info *, struct file *, loff_t *, size_t , unsigned int))0, (ssize_t  (*)(struct file *, loff_t *, struct pipe_inode_info *, size_t , unsigned int))0, (int (*)(struct file *, long, struct file_lock **))0, (long int (*)(struct file *file, int mode, loff_t offset, loff_t len))0 };}-> N10584
+lines 13464-13491:	N10584 -{void * applications_start(struct seq_file *seq, loff_t *pos);}-> N10585
+lines 13492-13519:	N10585 -{void * applications_next(struct seq_file *seq, void *v, loff_t *pos);}-> N10586
+lines 13520-13529:	N10586 -{void applications_stop(struct seq_file *seq, void *v);}-> N10587
+lines 13530-13573:	N10587 -{int applications_show(struct seq_file *seq, void *v);}-> N10588
+lines 13574-13620:	N10588 -{int applstats_show(struct seq_file *seq, void *v);}-> N10589
+line 13621:	N10589 -{struct seq_operations seq_applications_ops = { &applications_start, &applications_stop, &applications_next, &applications_show };}-> N10590
+line 13622:	N10590 -{struct seq_operations seq_applstats_ops = { &applications_start, &applications_stop, &applications_next, &applstats_show };}-> N10591
+lines 13623-13632:	N10591 -{int seq_applications_open(struct inode *inode, struct file *file);}-> N10592
+lines 13633-13642:	N10592 -{int seq_applstats_open(struct inode *inode, struct file *file);}-> N10593
+lines 13643-13673:	N10593 -{struct file_operations proc_applications_ops = { &__this_module, &seq_lseek, &seq_read, (ssize_t  (*)(struct file *, char *, size_t , loff_t *))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (int (*)(struct file *, void *, int (*)(void *, char *, int, loff_t , u64 , unsigned int)))0, (unsigned int (*)(struct file *, struct poll_table_struct *))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (int (*)(struct file *, struct vm_area_struct *))0, &seq_applications_open, (int (*)(struct file *, fl_owner_t id))0, &seq_release, (int (*)(struct file *, loff_t , loff_t , int datasync))0, (int (*)(struct kiocb *, int datasync))0, (int (*)(int, struct file *, int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct file *, struct page *, int, size_t , loff_t *, int))0, (unsigned long int (*)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long))0, (int (*)(int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct pipe_inode_info *, struct file *, loff_t *, size_t , unsigned int))0, (ssize_t  (*)(struct file *, loff_t *, struct pipe_inode_info *, size_t , unsigned int))0, (int (*)(struct file *, long, struct file_lock **))0, (long int (*)(struct file *file, int mode, loff_t offset, loff_t len))0 };}-> N10594
+lines 13674-13702:	N10594 -{struct file_operations proc_applstats_ops = { &__this_module, &seq_lseek, &seq_read, (ssize_t  (*)(struct file *, char *, size_t , loff_t *))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (int (*)(struct file *, void *, int (*)(void *, char *, int, loff_t , u64 , unsigned int)))0, (unsigned int (*)(struct file *, struct poll_table_struct *))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (int (*)(struct file *, struct vm_area_struct *))0, &seq_applstats_open, (int (*)(struct file *, fl_owner_t id))0, &seq_release, (int (*)(struct file *, loff_t , loff_t , int datasync))0, (int (*)(struct kiocb *, int datasync))0, (int (*)(int, struct file *, int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct file *, struct page *, int, size_t , loff_t *, int))0, (unsigned long int (*)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long))0, (int (*)(int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct pipe_inode_info *, struct file *, loff_t *, size_t , unsigned int))0, (ssize_t  (*)(struct file *, loff_t *, struct pipe_inode_info *, size_t , unsigned int))0, (int (*)(struct file *, long, struct file_lock **))0, (long int (*)(struct file *file, int mode, loff_t offset, loff_t len))0 };}-> N10595
+lines 13703-13715:	N10595 -{void * capi_driver_start(struct seq_file *seq, loff_t *pos);}-> N10596
+lines 13716-13725:	N10596 -{void * capi_driver_next(struct seq_file *seq, void *v, loff_t *pos);}-> N10597
+lines 13726-13735:	N10597 -{void capi_driver_stop(struct seq_file *seq, void *v);}-> N10598
+lines 13736-13782:	N10598 -{int capi_driver_show(struct seq_file *seq, void *v);}-> N10599
+line 13783:	N10599 -{struct seq_operations seq_capi_driver_ops = { &capi_driver_start, &capi_driver_stop, &capi_driver_next, &capi_driver_show };}-> N10600
+lines 13784-13793:	N10600 -{int seq_capi_driver_open(struct inode *inode, struct file *file);}-> N10601
+lines 13794-13824:	N10601 -{struct file_operations proc_driver_ops = { &__this_module, &seq_lseek, &seq_read, (ssize_t  (*)(struct file *, char *, size_t , loff_t *))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (ssize_t  (*)(struct kiocb *, struct iovec *, unsigned long, loff_t ))0, (int (*)(struct file *, void *, int (*)(void *, char *, int, loff_t , u64 , unsigned int)))0, (unsigned int (*)(struct file *, struct poll_table_struct *))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (long int (*)(struct file *, unsigned int, unsigned long))0, (int (*)(struct file *, struct vm_area_struct *))0, &seq_capi_driver_open, (int (*)(struct file *, fl_owner_t id))0, &seq_release, (int (*)(struct file *, loff_t , loff_t , int datasync))0, (int (*)(struct kiocb *, int datasync))0, (int (*)(int, struct file *, int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct file *, struct page *, int, size_t , loff_t *, int))0, (unsigned long int (*)(struct file *, unsigned long, unsigned long, unsigned long, unsigned long))0, (int (*)(int))0, (int (*)(struct file *, int, struct file_lock *))0, (ssize_t  (*)(struct pipe_inode_info *, struct file *, loff_t *, size_t , unsigned int))0, (ssize_t  (*)(struct file *, loff_t *, struct pipe_inode_info *, size_t , unsigned int))0, (int (*)(struct file *, long, struct file_lock **))0, (long int (*)(struct file *file, int mode, loff_t offset, loff_t len))0 };}-> N10602
+line 13923:	N10602 -{void ldv_check_return_value(int res);}-> N10603
+line 13924:	N10603 -{int res_seq_controller_open_6 = 0;}-> N10604
+	res_seq_controller_open_6 == 0;
+line 13925:	N10604 -{int res_seq_contrstats_open_7 = 0;}-> N10605
+	res_seq_contrstats_open_7 == 0;
+line 13926:	N10605 -{int res_seq_applications_open_13 = 0;}-> N10606
+	res_seq_applications_open_13 == 0;
+line 13927:	N10606 -{int res_seq_applstats_open_14 = 0;}-> N10607
+	res_seq_applstats_open_14 == 0;
+line 13928:	N10607 -{int res_seq_capi_driver_open_19 = 0;}-> N10608
+	res_seq_capi_driver_open_19 == 0;
+lines 13929-14296:	N10608 -{void main();}-> N10609
+none:	N10609 -{Function start dummy edge}-> N9229
+line 13930:	N9229 -{struct seq_file *var_group1;}-> N9230
+line 13931:	N9230 -{loff_t *var_controller_start_1_p1;}-> N9231
+line 13932:	N9231 -{void *var_controller_next_2_p1;}-> N9232
+line 13933:	N9232 -{loff_t *var_controller_next_2_p2;}-> N9233
+line 13934:	N9233 -{void *var_controller_stop_3_p1;}-> N9234
+line 13935:	N9234 -{void *var_controller_show_4_p1;}-> N9235
+line 13936:	N9235 -{void *var_contrstats_show_5_p1;}-> N9236
+line 13937:	N9236 -{struct inode *var_group2;}-> N9237
+line 13938:	N9237 -{struct file *var_group3;}-> N9238
+line 13939:	N9238 -{loff_t *var_applications_start_8_p1;}-> N9239
+line 13940:	N9239 -{void *var_applications_next_9_p1;}-> N9240
+line 13941:	N9240 -{loff_t *var_applications_next_9_p2;}-> N9241
+line 13942:	N9241 -{void *var_applications_stop_10_p1;}-> N9242
+line 13943:	N9242 -{void *var_applications_show_11_p1;}-> N9243
+line 13944:	N9243 -{void *var_applstats_show_12_p1;}-> N9244
+line 13945:	N9244 -{loff_t *var_capi_driver_start_15_p1;}-> N9245
+line 13946:	N9245 -{void *var_capi_driver_next_16_p1;}-> N9246
+line 13947:	N9246 -{loff_t *var_capi_driver_next_16_p2;}-> N9247
+line 13948:	N9247 -{void *var_capi_driver_stop_17_p1;}-> N9248
+line 13949:	N9248 -{void *var_capi_driver_show_18_p1;}-> N9249
+line 13950:	N9249 -{int ldv_s_proc_controller_ops_file_operations;}-> N9250
+line 13951:	N9250 -{int ldv_s_proc_contrstats_ops_file_operations;}-> N9251
+line 13952:	N9251 -{int ldv_s_proc_applications_ops_file_operations;}-> N9252
+line 13953:	N9252 -{int ldv_s_proc_applstats_ops_file_operations;}-> N9253
+line 13954:	N9253 -{int ldv_s_proc_driver_ops_file_operations;}-> N9254
+line 13955:	N9254 -{int tmp;}-> N9255
+line 13956:	N9255 -{int tmp___0;}-> N9256
+line 13957:	N9256 -{int __cil_tmp28;}-> N9257
+line 13958:	N9257 -{int __cil_tmp29;}-> N9258
+line 13959:	N9258 -{int __cil_tmp30;}-> N9259
+line 13960:	N9259 -{int __cil_tmp31;}-> N9260
+line 13961:	N9260 -{int __cil_tmp32;}-> N9261
+line 13965:	N9261 -{LDV_IN_INTERRUPT = 1;}-> N9262
+	LDV_IN_INTERRUPT == 1;
+line 13966:	N9262 -{ldv_initialize();}-> N9263
+line 13967:	N9263 -{ldv_s_proc_controller_ops_file_operations = 0;}-> N9264
+	ldv_s_proc_controller_ops_file_operations == 0;
+line 13968:	N9264 -{ldv_s_proc_contrstats_ops_file_operations = 0;}-> N9265
+	ldv_s_proc_contrstats_ops_file_operations == 0;
+line 13969:	N9265 -{ldv_s_proc_applications_ops_file_operations = 0;}-> N9266
+	ldv_s_proc_applications_ops_file_operations == 0;
+line 13970:	N9266 -{ldv_s_proc_applstats_ops_file_operations = 0;}-> N9267
+	ldv_s_proc_applstats_ops_file_operations == 0;
+line 13971:	N9267 -{ldv_s_proc_driver_ops_file_operations = 0;}-> N9268
+	ldv_s_proc_driver_ops_file_operations == 0;
+lines 13974-14287:	N9268 -{while}-> N9269
+lines 13974-14287:	N9269 -{}-> N9270
+line 13975:	N9270 -{Label: while_continue}-> N9272
+line 13977:	N9272 -{tmp___0 = __VERIFIER_nondet_int();}-> N9273
+line 13979:	N9273 -{[!(tmp___0 == 0)]}-> N9275
+	tmp___0 == 1;
+none:	N9275 -{}-> N9274
+line 14020:	N9274 -{tmp = __VERIFIER_nondet_int();}-> N9298
+line 14022:	N9298 -{[!(tmp == 0)]}-> N9301
+line 14025:	N9301 -{[!(tmp == 1)]}-> N9305
+line 14028:	N9305 -{[!(tmp == 2)]}-> N9309
+line 14031:	N9309 -{[!(tmp == 3)]}-> N9313
+line 14034:	N9313 -{[!(tmp == 4)]}-> N9317
+line 14037:	N9317 -{[!(tmp == 5)]}-> N9321
+line 14040:	N9321 -{[!(tmp == 6)]}-> N9325
+line 14043:	N9325 -{[!(tmp == 7)]}-> N9329
+line 14046:	N9329 -{[!(tmp == 8)]}-> N9333
+line 14049:	N9333 -{[!(tmp == 9)]}-> N9337
+line 14052:	N9337 -{[!(tmp == 10)]}-> N9341
+line 14055:	N9341 -{[!(tmp == 11)]}-> N9345
+line 14058:	N9345 -{[!(tmp == 12)]}-> N9349
+line 14061:	N9349 -{[!(tmp == 13)]}-> N9353
+line 14064:	N9353 -{[!(tmp == 14)]}-> N9357
+line 14067:	N9357 -{[!(tmp == 15)]}-> N9361
+line 14070:	N9361 -{[tmp == 16]}-> N9364
+	tmp == 16;
+line 14071:	N9364 -{Goto: case_16}-> N9485
+lines 14202-14205:	N9485 -{Label: case_16}-> N9486
+line 14204:	N9486 -{applications_stop(var_group1, var_applications_stop_10_p1)}-> N8974
+none:	N8974 -{Function start dummy edge}-> N8975
+line 13525:	N8975 -{mutex_unlock(&capi_controller_lock)}-> N4045
+none:	N4045 -{Function start dummy edge}-> N4046
+line 8003:	N4046 -{[!(ldv_mutex == 2)]}-> N4049
+	ldv_mutex == 1;
+line 8007:	N4049 -{ldv_blast_assert()}-> N3971
+none:	N3971 -{Function start dummy edge}-> N3972
+line 7890:	N3972 -{Label: ERROR}-> N3973
+line 7890:	N3973 -{__VERIFIER_error();}-> N3974

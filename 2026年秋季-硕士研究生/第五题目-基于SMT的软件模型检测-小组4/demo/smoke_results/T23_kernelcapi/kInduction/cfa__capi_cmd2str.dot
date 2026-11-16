@@ -1,0 +1,17 @@
+digraph capi_cmd2str {
+6686 [shape="circle" label="N6686\n12"]
+6687 [shape="circle" label="N6687\n11"]
+6694 [shape="circle" label="N6694\n4"]
+6695 [shape="circle" label="N6695\n3"]
+6696 [shape="circle" label="N6696\n2"]
+6687 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">6687</td><td align="left">unsigned int tmp;</td></tr><tr><td align="right">6688</td><td align="left">unsigned int __cil_tmp4;</td></tr><tr><td align="right">6689</td><td align="left">unsigned int __cil_tmp5;</td></tr><tr><td align="right">6690</td><td align="left">unsigned long __cil_tmp6;</td></tr><tr><td align="right">6691</td><td align="left">unsigned long __cil_tmp7;</td></tr><tr><td align="right">6692</td><td align="left">__cil_tmp4 = (unsigned int)cmd;</td></tr><tr><td align="right">6693</td><td align="left">__cil_tmp5 = (unsigned int)subcmd;</td></tr></table>>]
+6687 -> 6694[label=""]
+6696 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">6696</td><td align="left">__cil_tmp7 = ((unsigned long)mnames) + __cil_tmp6;</td></tr><tr><td align="right">6697</td><td align="left">return *((char **)__cil_tmp7);</td></tr></table>>]
+6696 -> 6685[label=""]
+6686 -> 6687 [label="Function start dummy edge" fontname="Courier New"]
+100066 [shape="component" label="command_2_index"]
+6694 -> 100066 [label="tmp = command_2_index(__cil_tmp4, __cil_tmp5);" fontname="Courier New"]
+100066 -> 6695 [label="" fontname="Courier New"]
+6694 -> 6695 [label="tmp = command_2_index(__cil_tmp4, __cil_tmp5);" fontname="Courier New"]
+6695 -> 6696 [label="__cil_tmp6 = tmp * 8UL;" fontname="Courier New"]
+}

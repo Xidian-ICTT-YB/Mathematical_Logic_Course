@@ -1,0 +1,7 @@
+digraph current_thread_info {
+74 [shape="circle" label="N74\n25"]
+75 [shape="circle" label="N75\n24"]
+75 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 75 and 129"]
+75 -> 73[label=""]
+74 -> 75 [label="Function start dummy edge" fontname="Courier New"]
+}

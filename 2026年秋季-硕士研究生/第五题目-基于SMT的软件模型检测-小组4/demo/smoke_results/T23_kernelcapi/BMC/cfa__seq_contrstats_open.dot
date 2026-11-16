@@ -1,0 +1,7 @@
+digraph seq_contrstats_open {
+8928 [shape="circle" label="N8928\n4"]
+8929 [shape="circle" label="N8929\n3"]
+8929 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8929</td><td align="left">int tmp;</td></tr><tr><td align="right">8930</td><td align="left">tmp = seq_open(file, &amp;seq_contrstats_ops);</td></tr><tr><td align="right">8931</td><td align="left">return tmp;</td></tr></table>>]
+8929 -> 8927[label=""]
+8928 -> 8929 [label="Function start dummy edge" fontname="Courier New"]
+}
