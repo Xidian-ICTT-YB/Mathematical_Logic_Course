@@ -1,0 +1,11 @@
+digraph cleanup_module {
+310 [shape="circle" label="N310\n3"]
+311 [shape="circle" label="N311\n2"]
+312 [shape="circle" label="N312\n1"]
+309 [shape="circle" label="N309\n0"]
+310 -> 311 [label="Function start dummy edge" fontname="Courier New"]
+100016 [shape="component" label="bgrt_exit"]
+311 -> 100016 [label="bgrt_exit();" fontname="Courier New"]
+100016 -> 312 [label="" fontname="Courier New"]
+312 -> 309 [label="return;" fontname="Courier New"]
+}

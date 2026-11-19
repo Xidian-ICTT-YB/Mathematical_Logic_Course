@@ -1,0 +1,304 @@
+2026-11-15 13:46:43:217	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 60s
+
+2026-11-15 13:46:43:288	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-15 13:46:45:956	WARNING	PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:45:996	INFO	PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-15 13:46:46:057	WARNING	AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:108	WARNING	ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:181	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ counterexample.checker.config 
+
+
+2026-11-15 13:46:46:181	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-15 13:46:46:524	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:46:866	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-15 13:46:46:938	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function acpi_get_table to be a pure function.
+
+2026-11-15 13:46:46:992	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ioremap_nocache to be a pure function.
+
+2026-11-15 13:46:47:028	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function iounmap to be a pure function.
+
+2026-11-15 13:46:47:073	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function kobject_create_and_add to be a pure function.
+
+2026-11-15 13:46:47:082	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function sysfs_create_group to be a pure function.
+
+2026-11-15 13:46:47:085	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function sysfs_create_bin_file to be a pure function.
+
+2026-11-15 13:46:47:089	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function sysfs_remove_group to be a pure function.
+
+2026-11-15 13:46:47:095	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function kobject_put to be a pure function.
+
+2026-11-15 13:46:47:185	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function sysfs_remove_bin_file to be a pure function.
+
+2026-11-15 13:46:47:209	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:47:218	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:47:301	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 2
+
+2026-11-15 13:46:47:304	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:47:350	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:47:351	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:47:433	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 3
+
+2026-11-15 13:46:47:434	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:47:462	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:47:463	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:47:568	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 4
+
+2026-11-15 13:46:47:570	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:47:635	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:47:636	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:47:779	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 5
+
+2026-11-15 13:46:47:779	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:47:806	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:47:808	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:47:973	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 6
+
+2026-11-15 13:46:47:976	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:48:001	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:48:002	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:48:222	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 7
+
+2026-11-15 13:46:48:223	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:48:272	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:48:273	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:48:482	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 8
+
+2026-11-15 13:46:48:484	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:48:580	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:48:583	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:48:866	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 9
+
+2026-11-15 13:46:48:869	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:48:970	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:48:973	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:49:288	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 10
+
+2026-11-15 13:46:49:291	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:49:326	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:49:328	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:49:678	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 11
+
+2026-11-15 13:46:49:680	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:49:717	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:49:719	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:50:166	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 12
+
+2026-11-15 13:46:50:167	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:50:187	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:50:189	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:50:599	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 13
+
+2026-11-15 13:46:50:599	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:50:623	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:50:624	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:51:127	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 14
+
+2026-11-15 13:46:51:128	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:51:171	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:51:173	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:51:751	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 15
+
+2026-11-15 13:46:51:752	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:51:776	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:51:778	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:52:801	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 16
+
+2026-11-15 13:46:52:801	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:52:823	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:52:824	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:53:477	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 17
+
+2026-11-15 13:46:53:478	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:53:499	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:53:500	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:55:013	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 18
+
+2026-11-15 13:46:55:015	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:55:034	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:55:036	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:56:685	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 19
+
+2026-11-15 13:46:56:686	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:56:709	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:56:710	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:58:097	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 20
+
+2026-11-15 13:46:58:098	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:58:117	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:58:118	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:46:59:356	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 21
+
+2026-11-15 13:46:59:357	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:59:426	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:46:59:427	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:00:685	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 22
+
+2026-11-15 13:47:00:685	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:00:701	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:00:703	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:01:690	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 23
+
+2026-11-15 13:47:01:691	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:01:703	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:01:705	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:03:572	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 24
+
+2026-11-15 13:47:03:573	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:03:605	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:03:607	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:05:900	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 25
+
+2026-11-15 13:47:05:901	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:05:933	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:05:935	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:08:374	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 26
+
+2026-11-15 13:47:08:376	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:08:420	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:08:424	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:12:334	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 27
+
+2026-11-15 13:47:12:339	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:12:434	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:12:439	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:14:663	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 28
+
+2026-11-15 13:47:14:664	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:14:700	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:14:705	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:16:425	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 29
+
+2026-11-15 13:47:16:427	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:16:460	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:16:462	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:20:095	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 30
+
+2026-11-15 13:47:20:099	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:20:163	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:20:167	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:23:547	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 31
+
+2026-11-15 13:47:23:550	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:23:631	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:23:634	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:28:195	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 32
+
+2026-11-15 13:47:28:197	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:28:243	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:28:247	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:36:843	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 33
+
+2026-11-15 13:47:36:881	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:47:37:006	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-15 13:47:37:014	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-15 13:47:39:305	WARNING	ForceTerminationOnShutdown$1.shutdownRequested	Shutdown requested (The CPU-time limit of 60s has elapsed.), waiting for termination.
+
+2026-11-15 13:47:41:067	WARNING	ShutdownNotifier.shutdownIfNecessary	Warning: Analysis interrupted (The CPU-time limit of 60s has elapsed.)
+

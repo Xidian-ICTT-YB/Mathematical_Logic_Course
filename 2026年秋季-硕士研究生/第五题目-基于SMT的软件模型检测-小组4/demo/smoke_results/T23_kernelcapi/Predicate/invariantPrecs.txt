@@ -1,0 +1,86 @@
+(set-info :source |printed by MathSAT|)
+
+notify_up N744:
+(assert false)
+
+ctr_down N861:
+(assert false)
+
+recv_handler N1134:
+(assert false)
+
+attach_capi_ctr N1761:
+(assert false)
+
+capi20_isinstalled N1994:
+(assert false)
+
+capi20_register N2176:
+(assert false)
+
+capi20_register N2215:
+(assert false)
+
+capi20_release N2307:
+(assert false)
+
+wait_on_ctr_state N3057:
+(assert false)
+
+old_capi_manufacturer N3331:
+(assert false)
+
+old_capi_manufacturer N3369:
+(assert false)
+
+capi20_manufacturer N3800:
+(assert false)
+
+ldv_main0_sequence_infinite_withcheck_stateful N3937:
+(assert false)
+
+jumpcstruct N4919:
+(assert false)
+
+pars_2_message N5349:
+(assert false)
+
+message_2_pars N6196:
+(assert false)
+
+bufprint N6800:
+(assert false)
+
+printstructlen N6909:
+(assert false)
+
+protocol_message_2_pars N7248:
+(assert false)
+
+protocol_message_2_pars N7276:
+(assert false)
+
+mq_init N8156:
+(assert false)
+
+mq_dequeue N8296:
+(assert false)
+
+capilib_free_ncci N8417:
+(assert false)
+
+capilib_release_appl N8491:
+(assert false)
+
+capilib_release N8557:
+(assert false)
+
+capilib_data_b3_req N8614:
+(assert false)
+
+capilib_data_b3_conf N8684:
+(assert false)
+
+main N9269:
+(assert true)
+

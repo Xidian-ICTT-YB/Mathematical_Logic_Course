@@ -1,0 +1,7 @@
+digraph capi_ctr_put {
+451 [shape="circle" label="N451\n5"]
+452 [shape="circle" label="N452\n4"]
+452 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">452</td><td align="left">struct module *__cil_tmp2;</td></tr><tr><td align="right">453</td><td align="left">__cil_tmp2 = *((struct module **)ctr);</td></tr><tr><td align="right">454</td><td align="left">module_put(__cil_tmp2);</td></tr><tr><td align="right">455</td><td align="left">return;</td></tr></table>>]
+452 -> 450[label=""]
+451 -> 452 [label="Function start dummy edge" fontname="Courier New"]
+}

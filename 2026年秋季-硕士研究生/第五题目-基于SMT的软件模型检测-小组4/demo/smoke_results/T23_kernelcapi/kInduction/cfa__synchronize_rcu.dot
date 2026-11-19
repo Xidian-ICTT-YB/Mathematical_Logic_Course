@@ -1,0 +1,7 @@
+digraph synchronize_rcu {
+252 [shape="circle" label="N252\n3"]
+253 [shape="circle" label="N253\n2"]
+253 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">253</td><td align="left">synchronize_sched();</td></tr><tr><td align="right">254</td><td align="left">return;</td></tr></table>>]
+253 -> 251[label=""]
+252 -> 253 [label="Function start dummy edge" fontname="Courier New"]
+}

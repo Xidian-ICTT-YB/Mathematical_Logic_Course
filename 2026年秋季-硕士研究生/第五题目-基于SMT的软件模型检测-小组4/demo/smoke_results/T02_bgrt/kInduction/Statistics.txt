@@ -1,0 +1,194 @@
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+Successful analysis: config/invariantGeneration-no-out.properties
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.012s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.017s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          824 (count: 824, min: 1, max: 1, avg: 1.00) [1 x 824]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            141
+Max size of waitlist:            6
+Average size of waitlist:        3
+Number of computed successors:   150
+Max successors for one state:    2
+Number of times merged:          27
+Number of times stopped:         29
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.419s (Max:     1.419s)
+  Time for choose from waitlist:      0.003s
+  Time for precision adjustment:      0.026s
+  Time for transfer relation:         1.102s
+  Time for merge operator:            0.214s
+  Time for stop operator:             0.012s
+  Time for adding to reached set:     0.012s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:     1.707s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         0
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.632s
+  Time for path formula creation:        0.617s
+Time for strengthen operator:            0.094s
+Time for prec operator:                  0.011s
+Time for merge operator:                 0.000s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    0
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                    461 (count: 623, min: 0, max: 8, avg: 0.74)
+Number of global variables:                             362 (count: 623, min: 0, max: 4, avg: 0.58)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     622
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.084s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                10
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                    6
+Number of deterministic Assumptions:                      0
+Level of Determinism:                              0%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.058s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          623 (count: 623, min: 1, max: 1, avg: 1.00) [1 x 623]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            620
+Max size of waitlist:            4
+Average size of waitlist:        1
+Number of computed successors:   623
+Max successors for one state:    2
+Number of times merged:          0
+Number of times stopped:         0
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.225s (Max:     1.225s)
+  Time for choose from waitlist:      0.008s
+  Time for precision adjustment:      0.165s
+  Time for transfer relation:         1.002s
+  Time for stop operator:             0.004s
+  Time for adding to reached set:     0.015s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           1.363s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.318
+  Visited lines:          60
+  Total lines:            821
+  Line coverage:          0.073
+  Visited conditions:     25
+  Total conditions:       46
+  Condition coverage:     0.543
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     941
+Number of CFA edges:             976
+Number of relevant variables:    73
+Number of functions:             22
+Number of loops:                 1
+Size of reached set:             122
+  Number of reached locations:   100 (11%)
+    Avg states per location:     1
+    Max states per location:     4 (at node N449)
+  Number of reached functions:   7 (32%)
+  Number of partitions:          122
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+
+Time for analysis setup:          2.540s
+  Time for loading CPAs:          0.671s
+  Time for loading parser:        0.363s
+  Time for CFA construction:      1.468s
+    Time for parsing file(s):     0.536s
+    Time for AST to CFA:          0.545s
+    Time for CFA sanity check:    0.074s
+    Time for post-processing:     0.283s
+      Time for var class.:        0.166s
+    Time for CFA export:          0.630s
+Time for Analysis:                2.501s
+CPU time for analysis:            4.980s
+Time for analyzing result:        0.000s
+Total time for CPAchecker:        5.049s
+Total CPU time for CPAchecker:    9.400s
+Time for statistics:              1.048s
+
+Time for Garbage Collector:       0.155s (in 43 runs)
+Garbage Collector(s) used:    Copy, MarkSweepCompact
+Used heap memory:                 34MB (    33 MiB) max;     22MB (    21 MiB) avg;     37MB (    36 MiB) peak
+Used non-heap memory:             43MB (    41 MiB) max;     31MB (    30 MiB) avg;     46MB (    44 MiB) peak
+Allocated heap memory:            43MB (    41 MiB) max;     35MB (    33 MiB) avg
+Allocated non-heap memory:        44MB (    42 MiB) max;     32MB (    31 MiB) avg
+Total process virtual memory:   3885MB (  3705 MiB) max;   3721MB (  3549 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "/work/demo/smoke_results/T02_bgrt/kInduction".

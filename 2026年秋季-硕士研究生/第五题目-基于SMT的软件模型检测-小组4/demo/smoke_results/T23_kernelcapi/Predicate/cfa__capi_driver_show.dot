@@ -1,0 +1,7 @@
+digraph capi_driver_show {
+9091 [shape="circle" label="N9091\n41"]
+9092 [shape="circle" label="N9092\n40"]
+9092 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 9092 and 9131"]
+9092 -> 9090[label=""]
+9091 -> 9092 [label="Function start dummy edge" fontname="Courier New"]
+}

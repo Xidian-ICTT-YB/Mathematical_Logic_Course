@@ -1,0 +1,7 @@
+digraph kmalloc {
+295 [shape="circle" label="N295\n4"]
+296 [shape="circle" label="N296\n3"]
+296 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">296</td><td align="left">void *tmp___2;</td></tr><tr><td align="right">297</td><td align="left">tmp___2 = __kmalloc(size, flags);</td></tr><tr><td align="right">298</td><td align="left">return tmp___2;</td></tr></table>>]
+296 -> 294[label=""]
+295 -> 296 [label="Function start dummy edge" fontname="Courier New"]
+}

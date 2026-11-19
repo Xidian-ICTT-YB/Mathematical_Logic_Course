@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+benchmarks/supplements-vstte/
+benchmarks/sv-comp16/
+results/

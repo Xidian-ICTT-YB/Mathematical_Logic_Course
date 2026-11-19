@@ -1,0 +1,7 @@
+digraph do_notify_work {
+938 [shape="circle" label="N938\n38"]
+939 [shape="circle" label="N939\n37"]
+939 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 939 and 975"]
+939 -> 937[label=""]
+938 -> 939 [label="Function start dummy edge" fontname="Courier New"]
+}

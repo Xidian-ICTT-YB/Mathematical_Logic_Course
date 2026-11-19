@@ -1,0 +1,7 @@
+digraph proc_create {
+8732 [shape="circle" label="N8732\n6"]
+8733 [shape="circle" label="N8733\n5"]
+8733 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8733</td><td align="left">struct proc_dir_entry *tmp;</td></tr><tr><td align="right">8734</td><td align="left">void *__cil_tmp6;</td></tr><tr><td align="right">8735</td><td align="left">__cil_tmp6 = (void *)0;</td></tr><tr><td align="right">8736</td><td align="left">tmp = proc_create_data(name, mode, parent, proc_fops, __cil_tmp6);</td></tr><tr><td align="right">8737</td><td align="left">return tmp;</td></tr></table>>]
+8733 -> 8731[label=""]
+8732 -> 8733 [label="Function start dummy edge" fontname="Courier New"]
+}

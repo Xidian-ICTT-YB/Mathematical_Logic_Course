@@ -1,0 +1,7 @@
+digraph get_current {
+28 [shape="circle" label="N28\n13"]
+29 [shape="circle" label="N29\n12"]
+29 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">29</td><td align="left">struct task_struct *pfo_ret__;</td></tr><tr><td align="right">30</td><td align="left"></td></tr><tr><td align="right">33</td><td align="left"></td></tr><tr><td align="right">37</td><td align="left"></td></tr><tr><td align="right">41</td><td align="left"></td></tr><tr><td align="right">44</td><td align="left">Goto: case_8</td></tr><tr><td align="right">63</td><td align="left">Label: case_8</td></tr><tr><td align="right">64</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">65</td><td align="left">Goto: switch_break</td></tr><tr><td align="right">70</td><td align="left">Label: switch_break</td></tr><tr><td align="right">71</td><td align="left"></td></tr><tr><td align="right">31</td><td align="left">return pfo_ret__;</td></tr></table>>]
+29 -> 27[label=""]
+28 -> 29 [label="Function start dummy edge" fontname="Courier New"]
+}

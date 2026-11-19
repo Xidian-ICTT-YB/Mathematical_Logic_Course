@@ -1,0 +1,11 @@
+digraph controller_stop {
+8813 [shape="circle" label="N8813\n3"]
+8814 [shape="circle" label="N8814\n2"]
+8815 [shape="circle" label="N8815\n1"]
+8812 [shape="circle" label="N8812\n0"]
+8813 -> 8814 [label="Function start dummy edge" fontname="Courier New"]
+100273 [shape="component" label="mutex_unlock"]
+8814 -> 100273 [label="mutex_unlock(&capi_controller_lock);" fontname="Courier New"]
+100273 -> 8815 [label="" fontname="Courier New"]
+8815 -> 8812 [label="return;" fontname="Courier New"]
+}

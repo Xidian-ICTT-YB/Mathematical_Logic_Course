@@ -1,0 +1,4 @@
+digraph kcapi_proc_exit {
+9189 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 9189 and 9225"]
+9189 -> 9188[label=""]
+}

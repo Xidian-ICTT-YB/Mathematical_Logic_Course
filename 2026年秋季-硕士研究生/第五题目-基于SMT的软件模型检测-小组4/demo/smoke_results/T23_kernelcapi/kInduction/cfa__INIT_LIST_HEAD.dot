@@ -1,0 +1,7 @@
+digraph INIT_LIST_HEAD {
+148 [shape="circle" label="N148\n8"]
+149 [shape="circle" label="N149\n7"]
+149 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">149</td><td align="left">unsigned long __cil_tmp2;</td></tr><tr><td align="right">150</td><td align="left">unsigned long __cil_tmp3;</td></tr><tr><td align="right">151</td><td align="left">*((struct list_head **)list) = list;</td></tr><tr><td align="right">152</td><td align="left">__cil_tmp2 = (unsigned long)list;</td></tr><tr><td align="right">153</td><td align="left">__cil_tmp3 = __cil_tmp2 + 8;</td></tr><tr><td align="right">154</td><td align="left">*((struct list_head **)__cil_tmp3) = list;</td></tr><tr><td align="right">155</td><td align="left">return;</td></tr></table>>]
+149 -> 147[label=""]
+148 -> 149 [label="Function start dummy edge" fontname="Courier New"]
+}

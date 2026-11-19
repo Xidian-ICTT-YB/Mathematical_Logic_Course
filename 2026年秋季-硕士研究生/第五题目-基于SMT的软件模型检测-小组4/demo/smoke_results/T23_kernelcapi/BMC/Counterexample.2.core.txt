@@ -1,0 +1,12 @@
+line 7894:	N10470 -{int ldv_mutex = 1;}-> N10471
+line 13966:	N9262 -{ldv_initialize();}-> N9263
+lines 13974-14287:	N9268 -{while}-> N9269
+line 13977:	N9272 -{tmp___0 = __VERIFIER_nondet_int();}-> N9273
+line 13979:	N9273 -{[!(tmp___0 == 0)]}-> N9275
+line 14020:	N9274 -{tmp = __VERIFIER_nondet_int();}-> N9298
+line 14070:	N9361 -{[tmp == 16]}-> N9364
+line 14204:	N9486 -{applications_stop(var_group1, var_applications_stop_10_p1)}-> N8974
+line 13525:	N8975 -{mutex_unlock(&capi_controller_lock)}-> N4045
+line 8003:	N4046 -{[!(ldv_mutex == 2)]}-> N4049
+line 8007:	N4049 -{ldv_blast_assert()}-> N3971
+line 7890:	N3973 -{__VERIFIER_error();}-> N3974

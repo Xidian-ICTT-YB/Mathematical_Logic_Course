@@ -1,0 +1,11 @@
+digraph cleanup_module {
+3917 [shape="circle" label="N3917\n3"]
+3918 [shape="circle" label="N3918\n2"]
+3919 [shape="circle" label="N3919\n1"]
+3916 [shape="circle" label="N3916\n0"]
+3917 -> 3918 [label="Function start dummy edge" fontname="Courier New"]
+100249 [shape="component" label="kcapi_exit"]
+3918 -> 100249 [label="kcapi_exit();" fontname="Courier New"]
+100249 -> 3919 [label="" fontname="Courier New"]
+3919 -> 3916 [label="return;" fontname="Courier New"]
+}

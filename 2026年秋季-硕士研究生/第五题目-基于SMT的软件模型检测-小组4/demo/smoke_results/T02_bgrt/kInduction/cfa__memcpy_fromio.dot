@@ -1,0 +1,7 @@
+digraph memcpy_fromio {
+7 [shape="circle" label="N7\n8"]
+8 [shape="circle" label="N8\n7"]
+8 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">8</td><td align="left">unsigned long __len;</td></tr><tr><td align="right">9</td><td align="left">void *__ret;</td></tr><tr><td align="right">10</td><td align="left">const void *__cil_tmp6;</td></tr><tr><td align="right">11</td><td align="left">__len = count;</td></tr><tr><td align="right">12</td><td align="left">__cil_tmp6 = (const void *)src;</td></tr><tr><td align="right">13</td><td align="left">__ret = __builtin_memcpy(dst, __cil_tmp6, __len);</td></tr><tr><td align="right">14</td><td align="left">return;</td></tr></table>>]
+8 -> 6[label=""]
+7 -> 8 [label="Function start dummy edge" fontname="Courier New"]
+}

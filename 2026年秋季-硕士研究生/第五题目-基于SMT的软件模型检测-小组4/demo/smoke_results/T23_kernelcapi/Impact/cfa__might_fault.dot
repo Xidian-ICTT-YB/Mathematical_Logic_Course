@@ -1,0 +1,16 @@
+digraph might_fault {
+9 [shape="circle" label="N9\n13"]
+10 [shape="circle" label="N10\n12"]
+11 [shape="doubleoctagon" label="N11\n11"]
+12 [shape="circle" label="N12\n10"]
+16 [shape="doubleoctagon" label="N16\n7"]
+17 [shape="circle" label="N17\n6"]
+12 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">12</td><td align="left">Label: while_continue</td></tr><tr><td align="right">14</td><td align="left">__might_sleep(\"include/linux/kernel.h\", 196, 0);</td></tr><tr><td align="right">15</td><td align="left">while</td></tr></table>>]
+12 -> 16[label=""]
+17 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">17</td><td align="left">Label: while_continue___0</td></tr><tr><td align="right">19</td><td align="left">Goto: while_break___0</td></tr><tr><td align="right">21</td><td align="left">Label: while_break___0</td></tr><tr><td align="right">22</td><td align="left">Goto: while_break</td></tr><tr><td align="right">24</td><td align="left">Label: while_break</td></tr><tr><td align="right">25</td><td align="left">return;</td></tr></table>>]
+17 -> 8[label=""]
+9 -> 10 [label="Function start dummy edge" fontname="Courier New"]
+11 -> 12 [label="" fontname="Courier New"]
+16 -> 17 [label="" fontname="Courier New"]
+10 -> 11 [label="while" fontname="Courier New"]
+}

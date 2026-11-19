@@ -1,0 +1,7 @@
+digraph test_and_clear_bit {
+4074 [shape="circle" label="N4074\n6"]
+4075 [shape="circle" label="N4075\n5"]
+4075 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">4075</td><td align="left">int oldbit;</td></tr><tr><td align="right">4076</td><td align="left">volatile long *__cil_tmp4;</td></tr><tr><td align="right">4077</td><td align="left">__cil_tmp4 = (volatile long *)addr;</td></tr><tr><td align="right">4078</td><td align="left">Ignored inline assembler code</td></tr><tr><td align="right">4079</td><td align="left">return oldbit;</td></tr></table>>]
+4075 -> 4073[label=""]
+4074 -> 4075 [label="Function start dummy edge" fontname="Courier New"]
+}

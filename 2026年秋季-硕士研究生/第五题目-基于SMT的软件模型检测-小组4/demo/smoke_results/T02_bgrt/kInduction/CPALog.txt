@@ -1,0 +1,49 @@
+2026-11-15 13:46:43:216	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 60s, Thread CPU-time limit of 10000s
+
+2026-11-15 13:46:43:282	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-15 13:46:45:836	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ solver.solver
+ properties 
+
+
+2026-11-15 13:46:45:836	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-15 13:46:45:866	INFO	Parallel analysis 2:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 60s, Thread CPU-time limit of 10000s
+
+2026-11-15 13:46:45:866	INFO	Parallel analysis 1:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 60s, Thread CPU-time limit of 10000s
+
+2026-11-15 13:46:46:082	WARNING	Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:082	WARNING	Parallel analysis 2:InvariantsCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:124	INFO	Parallel analysis 1:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-15 13:46:46:271	WARNING	Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:316	WARNING	Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:740	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:766	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-15 13:46:46:777	WARNING	Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:46:790	WARNING	Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-15 13:46:47:107	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-15 13:46:48:005	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-15 13:46:48:216	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function acpi_get_table to be a pure function.
+
+2026-11-15 13:46:48:253	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ioremap_nocache to be a pure function.
+
+2026-11-15 13:46:48:325	INFO	ParallelAlgorithm.handleFutureResults	config/invariantGeneration-no-out.properties finished successfully.
+
+2026-11-15 13:46:48:326	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function iounmap to be a pure function.
+
+2026-11-15 13:46:48:340	INFO	Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis	Analysis was terminated
+
+2026-11-15 13:46:48:341	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

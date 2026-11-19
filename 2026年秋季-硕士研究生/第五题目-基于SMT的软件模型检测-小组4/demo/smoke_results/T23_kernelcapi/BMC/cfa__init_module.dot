@@ -1,0 +1,13 @@
+digraph init_module {
+3911 [shape="circle" label="N3911\n4"]
+3912 [shape="circle" label="N3912\n3"]
+3913 [shape="circle" label="N3913\n2"]
+3914 [shape="circle" label="N3914\n1"]
+3910 [shape="circle" label="N3910\n0"]
+3911 -> 3912 [label="Function start dummy edge" fontname="Courier New"]
+100056 [shape="component" label="kcapi_init"]
+3913 -> 100056 [label="tmp___7 = kcapi_init();" fontname="Courier New"]
+100056 -> 3914 [label="" fontname="Courier New"]
+3912 -> 3913 [label="int tmp___7;" fontname="Courier New"]
+3914 -> 3910 [label="return tmp___7;" fontname="Courier New"]
+}

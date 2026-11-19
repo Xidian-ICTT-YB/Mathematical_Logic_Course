@@ -1,0 +1,7 @@
+digraph unregister_capictr_notifier {
+1053 [shape="circle" label="N1053\n4"]
+1054 [shape="circle" label="N1054\n3"]
+1054 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1054</td><td align="left">int tmp___7;</td></tr><tr><td align="right">1055</td><td align="left">tmp___7 = blocking_notifier_chain_unregister(&amp;ctr_notifier_list, nb);</td></tr><tr><td align="right">1056</td><td align="left">return tmp___7;</td></tr></table>>]
+1054 -> 1052[label=""]
+1053 -> 1054 [label="Function start dummy edge" fontname="Courier New"]
+}

@@ -1,0 +1,7 @@
+digraph seq_applstats_open {
+9065 [shape="circle" label="N9065\n4"]
+9066 [shape="circle" label="N9066\n3"]
+9066 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">9066</td><td align="left">int tmp;</td></tr><tr><td align="right">9067</td><td align="left">tmp = seq_open(file, &amp;seq_applstats_ops);</td></tr><tr><td align="right">9068</td><td align="left">return tmp;</td></tr></table>>]
+9066 -> 9064[label=""]
+9065 -> 9066 [label="Function start dummy edge" fontname="Courier New"]
+}

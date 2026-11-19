@@ -1,0 +1,4 @@
+digraph register_capictr_notifier {
+1047 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label=<<table border="0" cellborder="0" cellpadding="3" bgcolor="white"><tr><td align="right">1047</td><td align="left">Function start dummy edge</td></tr><tr><td align="right">1048</td><td align="left">int tmp___7;</td></tr><tr><td align="right">1049</td><td align="left">tmp___7 = blocking_notifier_chain_register(&amp;ctr_notifier_list, nb);</td></tr><tr><td align="right">1050</td><td align="left">return tmp___7;</td></tr></table>>]
+1047 -> 1046[label=""]
+}

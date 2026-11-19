@@ -1,0 +1,7 @@
+digraph capi_cmsg_header {
+6658 [shape="circle" label="N6658\n26"]
+6659 [shape="circle" label="N6659\n25"]
+6659 [style="filled,bold" penwidth="1" fillcolor="white" fontname="Courier New" shape="Mrecord" label="Long linear chain of edges between nodes 6659 and 6683"]
+6659 -> 6657[label=""]
+6658 -> 6659 [label="Function start dummy edge" fontname="Courier New"]
+}
