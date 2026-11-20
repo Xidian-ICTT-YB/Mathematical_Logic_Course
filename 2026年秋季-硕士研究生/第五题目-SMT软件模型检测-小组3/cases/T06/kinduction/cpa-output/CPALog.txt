@@ -1,0 +1,280 @@
+2026-11-17 07:25:08:376	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 07:25:08:397	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-17 07:25:08:751	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_break is not reachable.
+
+2026-11-17 07:25:08:770	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_break is not reachable.
+
+2026-11-17 07:25:08:778	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-17 07:25:08:809	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 2133: Function pointer *__cil_tmp8 with type int (*)(struct hid_device *) is called, but no possible target functions were found.
+
+2026-11-17 07:25:08:814	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 2098: Function pointer *__cil_tmp12 with type int (*)(struct hid_device *) is called, but no possible target functions were found.
+
+2026-11-17 07:25:09:007	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ properties 
+
+
+2026-11-17 07:25:09:008	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-17 07:25:09:018	INFO	Parallel analysis 2:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 07:25:09:020	INFO	Parallel analysis 1:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 07:25:09:127	WARNING	Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 07:25:09:158	INFO	Parallel analysis 1:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 07:25:09:190	WARNING	Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 07:25:09:211	WARNING	Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 07:25:09:223	WARNING	Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:225	WARNING	Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:09:257	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:260	WARNING	Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:09:262	WARNING	Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:264	WARNING	Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:265	WARNING	Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:286	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:289	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:291	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:298	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 07:25:09:307	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 07:25:09:311	WARNING	Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 07:25:09:322	WARNING	Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 07:25:09:343	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:346	WARNING	Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:09:376	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:380	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:382	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:394	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:401	WARNING	Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:09:427	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:429	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:430	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:448	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:450	WARNING	Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:09:463	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:469	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:471	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:480	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:25:09:545	WARNING	Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:549	INFO	Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line.
+
+2026-11-17 07:25:09:556	WARNING	CallstackTransferRelation.getAbstractSuccessorsForEdge	Warning: Analysis not completed due to recursion (line 2180: Unsupported feature (recursion): zc_remove(hdev); (line was originally pointer call(zc_remove) (*__cil_tmp7)(hdev);))
+
+2026-11-17 07:25:09:566	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-17 07:25:09:568	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __hid_register_driver to be a pure function.
+
+2026-11-17 07:25:09:586	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_get_drvdata to be a pure function.
+
+2026-11-17 07:25:09:590	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function hid_disconnect to be a pure function.
+
+2026-11-17 07:25:09:594	WARNING	Parallel analysis 1:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:595	WARNING	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2180: Ignoring function call through function pointer *__cil_tmp7: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:09:601	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function zc_remove to be a pure function.
+
+2026-11-17 07:25:09:603	WARNING	Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:09:623	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function input_event to be a pure function.
+
+2026-11-17 07:25:09:769	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _dev_info to be a pure function.
+
+2026-11-17 07:25:09:782	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_set_drvdata to be a pure function.
+
+2026-11-17 07:25:09:789	WARNING	Parallel analysis 1:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:791	WARNING	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2098: Ignoring function call through function pointer *__cil_tmp12: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:09:796	WARNING	Parallel analysis 1:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:798	WARNING	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2133: Ignoring function call through function pointer *__cil_tmp8: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:09:801	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function hid_connect to be a pure function.
+
+2026-11-17 07:25:09:806	WARNING	Parallel analysis 1:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:808	WARNING	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2155: Ignoring function call through function pointer *__cil_tmp14: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:09:833	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_err to be a pure function.
+
+2026-11-17 07:25:09:838	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_return_value to be a pure function.
+
+2026-11-17 07:25:09:846	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function hid_unregister_driver to be a pure function.
+
+2026-11-17 07:25:09:848	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_final_state to be a constant function.
+
+2026-11-17 07:25:09:853	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:25:09:856	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:25:10:026	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:10:029	WARNING	Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:10:037	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:10:039	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:10:040	WARNING	Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:10:045	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:25:10:052	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function input_event to be a pure function.
+
+2026-11-17 07:25:10:055	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_get_drvdata to be a pure function.
+
+2026-11-17 07:25:10:057	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function hid_disconnect to be a pure function.
+
+2026-11-17 07:25:10:059	WARNING	Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2180: Ignoring call via function pointer hid_hw_stop::__cil_tmp7 for which no suitable target was found in line: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:10:060	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2180: Ignoring function call through function pointer *__cil_tmp7: (*__cil_tmp7)(hdev);
+
+2026-11-17 07:25:10:062	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function zc_remove to be a pure function.
+
+2026-11-17 07:25:10:064	WARNING	Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge	Skipping recursive function call from hid_hw_stop to zc_remove
+
+2026-11-17 07:25:10:113	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _dev_info to be a pure function.
+
+2026-11-17 07:25:10:121	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_set_drvdata to be a pure function.
+
+2026-11-17 07:25:10:125	WARNING	Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2098: Ignoring call via function pointer hid_parse::__cil_tmp12 for which no suitable target was found in line: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:10:126	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2098: Ignoring function call through function pointer *__cil_tmp12: ret = (*__cil_tmp12)(hdev);
+
+2026-11-17 07:25:10:130	WARNING	Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2133: Ignoring call via function pointer hid_hw_start::__cil_tmp8 for which no suitable target was found in line: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:10:132	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2133: Ignoring function call through function pointer *__cil_tmp8: tmp = (*__cil_tmp8)(hdev);
+
+2026-11-17 07:25:10:134	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function hid_connect to be a pure function.
+
+2026-11-17 07:25:10:138	WARNING	Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge	line 2155: Ignoring call via function pointer hid_hw_start::__cil_tmp14 for which no suitable target was found in line: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:10:140	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	line 2155: Ignoring function call through function pointer *__cil_tmp14: (*__cil_tmp14)(hdev);
+
+2026-11-17 07:25:10:148	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_err to be a pure function.
+
+2026-11-17 07:25:10:153	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_return_value to be a pure function.
+
+2026-11-17 07:25:10:238	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function hid_unregister_driver to be a pure function.
+
+2026-11-17 07:25:10:242	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_final_state to be a constant function.
+
+2026-11-17 07:25:11:853	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:25:12:043	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 2
+
+2026-11-17 07:25:12:045	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:25:12:161	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:25:12:168	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:25:12:533	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:25:14:992	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:25:15:496	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 3
+
+2026-11-17 07:25:15:498	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:25:15:612	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:25:15:620	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:25:16:376	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:25:20:417	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:25:21:370	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 4
+
+2026-11-17 07:25:21:372	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:25:21:498	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:25:21:508	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:25:22:887	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:25:37:295	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:25:43:467	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 5
+
+2026-11-17 07:25:43:471	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:25:45:125	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:25:45:183	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:25:49:274	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:26:04:915	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:26:10:179	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 6
+
+2026-11-17 07:26:10:183	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:26:10:690	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:26:10:746	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:26:18:972	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:26:40:036	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:27:07:157	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 7
+
+2026-11-17 07:27:07:160	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:27:07:746	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:27:07:809	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 07:27:11:440	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 07:27:35:199	INFO	Parallel analysis 1:KInductionProver.check	Starting induction check...
+
+2026-11-17 07:28:24:234	INFO	Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 8
+
+2026-11-17 07:28:24:237	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 07:28:24:813	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 07:28:24:888	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<benchmark tool="cpachecker" timelimit="90s" hardtimelimit="110s" memlimit="6000 MB" cpuCores="2" threads="1">
+  <resultfiles>/home/benchexec/cpa-output/**</resultfiles>
+  <propertyfile>../tasks/smoke/unreach-call.prp</propertyfile>
+  <tasks name="single-case">
+    <include>../tasks/smoke/smoke-smt.c</include>
+  </tasks>
+  <rundefinition name="impact">
+    <option name="-heap">4000M</option>
+    <option name="-predicateAnalysis-ImpactRefiner-ABEl-bitprecise"/>
+    <option name="-setprop">cpa.predicate.encodeFloatAs=FLOAT</option>
+    <option name="-setprop">analysis.checkCounterexamples=true</option>
+    <option name="-setprop">counterexample.checker=CBMC</option>
+    <option name="-setprop">cpa.forcedCovering=cpa.predicate.PredicateForcedCovering</option>
+    <option name="-setprop">output.disable=false</option>
+    <option name="-outputpath">/home/benchexec/cpa-output</option>
+  </rundefinition>
+</benchmark>

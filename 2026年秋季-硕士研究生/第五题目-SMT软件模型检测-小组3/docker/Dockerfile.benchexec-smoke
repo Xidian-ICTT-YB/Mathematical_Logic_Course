@@ -1,0 +1,14 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    python3 python3-pip python3-yaml python3-lxml ca-certificates \
+    && python3 -m pip install --no-cache-dir --no-deps benchexec==3.26 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN useradd --create-home --shell /bin/bash benchuser
+
+USER benchuser
+WORKDIR /home/benchuser

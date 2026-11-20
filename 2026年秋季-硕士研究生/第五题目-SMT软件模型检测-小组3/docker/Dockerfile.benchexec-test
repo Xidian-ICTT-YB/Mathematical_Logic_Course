@@ -1,0 +1,9 @@
+FROM m01-benchexec-smoke:3.26
+
+USER root
+
+COPY init.sh /usr/local/bin/init.sh
+
+RUN chmod 755 /usr/local/bin/init.sh
+
+ENTRYPOINT ["/usr/local/bin/init.sh"]

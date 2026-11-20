@@ -1,0 +1,255 @@
+2026-11-17 11:48:42:614	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 11:48:42:634	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-17 11:48:43:115	INFO	CFACreationUtils.addEdgeToCFA	line 6308: Dead code detected: __ms = 1UL;
+
+2026-11-17 11:48:43:117	INFO	CFACreationUtils.addEdgeToCFA	line 6326: Dead code detected: __ms___0 = 1UL;
+
+2026-11-17 11:48:43:199	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-17 11:48:43:551	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ properties 
+
+
+2026-11-17 11:48:43:574	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-17 11:48:43:590	INFO	Parallel analysis 1:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 11:48:43:591	INFO	Parallel analysis 2:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 11:48:43:728	WARNING	Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 11:48:43:762	INFO	Parallel analysis 1:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 11:48:43:814	WARNING	Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 11:48:43:837	WARNING	Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 11:48:44:188	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 11:48:44:192	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 11:48:44:197	WARNING	Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 11:48:44:200	WARNING	Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 11:48:44:736	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 11:48:44:944	WARNING	Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8288:	N2207 -{tmp___0 = ldv_zalloc(40UL);}-> N2208)
+
+2026-11-17 11:48:44:958	WARNING	Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8296:	N2215 -{tmp___4 = ldv_zalloc(196UL);}-> N2216)
+
+2026-11-17 11:48:44:968	WARNING	Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8300:	N2219 -{tmp___6 = ldv_zalloc(1UL);}-> N2220)
+
+2026-11-17 11:48:44:977	WARNING	Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8302:	N2221 -{tmp___7 = ldv_zalloc(1UL);}-> N2222)
+
+2026-11-17 11:48:45:014	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function spi_register_driver to be a pure function.
+
+2026-11-17 11:48:45:025	WARNING	Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8164:	N2092 -{tmp = ldv_zalloc(44UL);}-> N2093)
+
+2026-11-17 11:48:45:096	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 11:48:45:099	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 11:48:45:273	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 11:48:45:300	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_lock_nested to be a pure function.
+
+2026-11-17 11:48:45:307	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function spi_sync to be a pure function.
+
+2026-11-17 11:48:45:308	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netdev_err to be a pure function.
+
+2026-11-17 11:48:45:314	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_wren to be a pure function.
+
+2026-11-17 11:48:45:316	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_read to be a pure function.
+
+2026-11-17 11:48:45:318	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_write to be a pure function.
+
+2026-11-17 11:48:45:340	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_unlock to be a pure function.
+
+2026-11-17 11:48:45:354	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_multiread to be a pure function.
+
+2026-11-17 11:48:45:380	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function strlcpy to be a pure function.
+
+2026-11-17 11:48:45:429	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_handler1_2 to be a pure function.
+
+2026-11-17 11:48:45:518	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _dev_info to be a pure function.
+
+2026-11-17 11:48:45:535	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function unregister_netdev to be a pure function.
+
+2026-11-17 11:48:45:537	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_irq to be a pure function.
+
+2026-11-17 11:48:45:542	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function regulator_disable to be a pure function.
+
+2026-11-17 11:48:45:549	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_netdev to be a pure function.
+
+2026-11-17 11:48:45:553	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function alloc_etherdev_mqs to be a pure function.
+
+2026-11-17 11:48:45:559	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function devm_regulator_get to be a pure function.
+
+2026-11-17 11:48:45:566	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function regulator_enable to be a pure function.
+
+2026-11-17 11:48:45:569	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __mutex_init to be a pure function.
+
+2026-11-17 11:48:45:573	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __raw_spin_lock_init to be a pure function.
+
+2026-11-17 11:48:45:575	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __init_work to be a pure function.
+
+2026-11-17 11:48:45:576	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function lockdep_init_map to be a pure function.
+
+2026-11-17 11:48:45:578	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function memset to be a pure function.
+
+2026-11-17 11:48:45:586	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __list_add to be a pure function.
+
+2026-11-17 11:48:45:598	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __const_udelay to be a pure function.
+
+2026-11-17 11:48:45:610	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_err to be a pure function.
+
+2026-11-17 11:48:45:636	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function spi_register_driver to be a pure function.
+
+2026-11-17 11:48:45:639	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8164:	N2092 -{tmp = ldv_zalloc(44UL);}-> N2093)
+
+2026-11-17 11:48:45:655	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function driver_unregister to be a pure function.
+
+2026-11-17 11:48:45:688	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_handler1_1 to be a pure function.
+
+2026-11-17 11:48:45:750	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_complete_4 to be a constant function.
+
+2026-11-17 11:48:45:757	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_suspend_noirq_4 to be a constant function.
+
+2026-11-17 11:48:45:760	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_restore_noirq_4 to be a constant function.
+
+2026-11-17 11:48:45:761	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_poweroff_late_4 to be a constant function.
+
+2026-11-17 11:48:45:763	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_poweroff_noirq_4 to be a constant function.
+
+2026-11-17 11:48:45:769	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_thaw_noirq_4 to be a constant function.
+
+2026-11-17 11:48:45:771	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_freeze_late_4 to be a constant function.
+
+2026-11-17 11:48:45:773	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_prepare_4 to be a constant function.
+
+2026-11-17 11:48:45:775	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_freeze_noirq_4 to be a constant function.
+
+2026-11-17 11:48:45:777	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_resume_noirq_4 to be a constant function.
+
+2026-11-17 11:48:45:779	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_thaw_early_4 to be a constant function.
+
+2026-11-17 11:48:45:785	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_resume_early_4 to be a constant function.
+
+2026-11-17 11:48:45:787	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_restore_early_4 to be a constant function.
+
+2026-11-17 11:48:45:789	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_suspend_late_4 to be a constant function.
+
+2026-11-17 11:48:45:841	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netif_device_attach to be a pure function.
+
+2026-11-17 11:48:45:852	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netif_device_detach to be a pure function.
+
+2026-11-17 11:48:45:855	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netdev_info to be a pure function.
+
+2026-11-17 11:48:45:861	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function warn_slowpath_null to be a pure function.
+
+2026-11-17 11:48:45:866	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function flush_work to be a pure function.
+
+2026-11-17 11:48:46:047	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_ndo_init_6 to be a constant function.
+
+2026-11-17 11:48:46:053	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_ndo_uninit_6 to be a constant function.
+
+2026-11-17 11:48:46:119	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_lock to be a pure function.
+
+2026-11-17 11:48:46:216	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function skb_queue_tail to be a pure function.
+
+2026-11-17 11:48:46:223	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock to be a pure function.
+
+2026-11-17 11:48:46:282	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eth_change_mtu to be a pure function.
+
+2026-11-17 11:48:46:337	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function memcmp to be a pure function.
+
+2026-11-17 11:48:46:377	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eth_validate_addr to be a pure function.
+
+2026-11-17 11:48:46:394	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mii_check_link to be a pure function.
+
+2026-11-17 11:48:46:403	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function get_random_bytes to be a pure function.
+
+2026-11-17 11:48:46:408	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __netif_schedule to be a pure function.
+
+2026-11-17 11:48:46:457	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function request_threaded_irq to be a pure function.
+
+2026-11-17 11:48:46:462	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function register_netdev to be a pure function.
+
+2026-11-17 11:54:37:579	INFO	Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions	Adjusting interestingVariableLimit to 1
+
+2026-11-17 11:54:37:583	INFO	Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis	Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@3f456431
+
+2026-11-17 11:54:37:586	INFO	Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis	Updating reached set provided to other analyses
+
+2026-11-17 11:56:19:838	INFO	Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis	Analysis was terminated
+
+2026-11-17 11:56:19:841	WARNING	AbstractFuture.get	Warning: Analysis interrupted
+
+2026-11-17 11:56:19:841	INFO	Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis	Analysis was terminated
+
+2026-11-17 11:56:19:841	WARNING	ForceTerminationOnShutdown$1.shutdownRequested	Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination.
+
+2026-11-17 11:56:29:847	WARNING	ForceTerminationOnShutdown.run	Shutdown was requested but CPAchecker is still running after 10s, forcing immediate termination now.
+
+2026-11-17 11:56:29:851	INFO	ForceTerminationOnShutdown.run	For your information: CPAchecker is currently hanging at
+ org.sosy_lab.cpachecker.cpa.invariants.CompoundBitVectorInterval.contains(CompoundBitVectorInterval.java:407)
+org.sosy_lab.cpachecker.cpa.invariants.CompoundBitVectorInterval.unionWith(CompoundBitVectorInterval.java:200)
+org.sosy_lab.cpachecker.cpa.invariants.CompoundBitVectorInterval.unionWith(CompoundBitVectorInterval.java:187)
+org.sosy_lab.cpachecker.cpa.invariants.CompoundBitVectorIntervalManager.union(CompoundBitVectorIntervalManager.java:90)
+org.sosy_lab.cpachecker.cpa.invariants.formula.FormulaCompoundStateEvaluationVisitor.visit(FormulaCompoundStateEvaluationVisitor.java:257)
+org.sosy_lab.cpachecker.cpa.invariants.formula.FormulaCompoundStateEvaluationVisitor.visit(FormulaCompoundStateEvaluationVisitor.java:43)
+org.sosy_lab.cpachecker.cpa.invariants.formula.IfThenElse.accept(IfThenElse.java:95)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visitDefault(StateEqualsVisitor.java:75)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visit(StateEqualsVisitor.java:377)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visit(StateEqualsVisitor.java:39)
+org.sosy_lab.cpachecker.cpa.invariants.formula.IfThenElse.accept(IfThenElse.java:95)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visit(StateEqualsVisitor.java:352)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visit(StateEqualsVisitor.java:39)
+org.sosy_lab.cpachecker.cpa.invariants.formula.Cast.accept(Cast.java:73)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visit(StateEqualsVisitor.java:334)
+org.sosy_lab.cpachecker.cpa.invariants.formula.StateEqualsVisitor.visit(StateEqualsVisitor.java:39)
+org.sosy_lab.cpachecker.cpa.invariants.formula.Variable.accept(Variable.java:78)
+org.sosy_lab.cpachecker.cpa.invariants.formula.CompoundIntervalFormulaManager.definitelyImplies(CompoundIntervalFormulaManager.java:256)
+org.sosy_lab.cpachecker.cpa.invariants.formula.CompoundIntervalFormulaManager.definitelyImplies(CompoundIntervalFormulaManager.java:195)
+org.sosy_lab.cpachecker.cpa.invariants.InvariantsState.definitelyImplies(InvariantsState.java:1288)
+org.sosy_lab.cpachecker.cpa.invariants.InvariantsState.isLessOrEqual(InvariantsState.java:1280)
+org.sosy_lab.cpachecker.core.algorithm.invariants.ReachedSetBasedExpressionTreeSupplier.getInvariantFor(ReachedSetBasedExpressionTreeSupplier.java:76)
+org.sosy_lab.cpachecker.util.predicates.invariants.ExpressionTreeInvariantSupplier$AggregatedExpressionTreeSupplier.lambda$getInvariantFor$0(ExpressionTreeInvariantSupplier.java:104)
+org.sosy_lab.cpachecker.util.predicates.invariants.ExpressionTreeInvariantSupplier$AggregatedExpressionTreeSupplier$$Lambda$166/1564629011.apply(Unknown Source)
+java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+java.util.Iterator.forEachRemaining(Iterator.java:116)
+java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482)
+java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+java.util.stream.ReferencePipeline.reduce(ReferencePipeline.java:541)
+org.sosy_lab.cpachecker.util.predicates.invariants.ExpressionTreeInvariantSupplier$AggregatedExpressionTreeSupplier.getInvariantFor(ExpressionTreeInvariantSupplier.java:105)
+org.sosy_lab.cpachecker.util.predicates.invariants.ExpressionTreeInvariantSupplier.getInvariantFor(ExpressionTreeInvariantSupplier.java:68)
+org.sosy_lab.cpachecker.core.algorithm.bmc.BMCAlgorithm$1$1.provideInvariantFor(BMCAlgorithm.java:368)
+org.sosy_lab.cpachecker.cpa.arg.ARGPathExporter$WitnessWriter.constructTransitionCondition(ARGPathExporter.java:463)
+org.sosy_lab.cpachecker.cpa.arg.ARGPathExporter$WitnessWriter.appendNewEdge(ARGPathExporter.java:412)
+org.sosy_lab.cpachecker.cpa.arg.GraphBuilder.appendEdge(GraphBuilder.java:284)
+org.sosy_lab.cpachecker.cpa.arg.GraphBuilder.access$100(GraphBuilder.java:52)
+org.sosy_lab.cpachecker.cpa.arg.GraphBuilder$3.buildGraph(GraphBuilder.java:266)
+org.sosy_lab.cpachecker.cpa.arg.ARGPathExporter$WitnessWriter.writePath(ARGPathExporter.java:862)
+org.sosy_lab.cpachecker.cpa.arg.ARGPathExporter.writeProofWitness(ARGPathExporter.java:340)
+org.sosy_lab.cpachecker.core.algorithm.bmc.BMCAlgorithm$1.printStatistics(BMCAlgorithm.java:355)
+org.sosy_lab.cpachecker.core.algorithm.ParallelAlgorithm$ParallelAlgorithmStatistics.printSubStatistics(ParallelAlgorithm.java:569)
+org.sosy_lab.cpachecker.core.algorithm.ParallelAlgorithm$ParallelAlgorithmStatistics.printStatistics(ParallelAlgorithm.java:545)
+org.sosy_lab.cpachecker.core.MainCPAStatistics.printSubStatistics(MainCPAStatistics.java:391)
+org.sosy_lab.cpachecker.core.MainCPAStatistics.printStatistics(MainCPAStatistics.java:280)
+org.sosy_lab.cpachecker.core.CPAcheckerResult.printStatistics(CPAcheckerResult.java:106)
+org.sosy_lab.cpachecker.cmdline.CPAMain.printResultAndStatistics(CPAMain.java:407)
+org.sosy_lab.cpachecker.cmdline.CPAMain.main(CPAMain.java:169) 
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<benchmark tool="cpachecker" timelimit="900s" hardtimelimit="1200s" memlimit="6000 MB" cpuCores="2" threads="1">
+  <resultfiles>/home/benchexec/cpa-output/**</resultfiles>
+  <propertyfile>../../tasks/SVCOMP16_DeviceDrivers64_任务包/unreach-call.prp</propertyfile>
+  <tasks name="single-case">
+    <include>../../tasks/SVCOMP16_DeviceDrivers64_任务包/任务文件/m0_false-unreach-call_drivers-media-radio-si4713-i2c-ko--111_1a--064368f-1.c</include>
+  </tasks>
+  <rundefinition name="impact">
+    <option name="-heap">4000M</option>
+    <option name="-predicateAnalysis-ImpactRefiner-ABEl-bitprecise" />
+    <option name="-setprop">cpa.predicate.encodeFloatAs=FLOAT</option>
+    <option name="-setprop">analysis.checkCounterexamples=true</option>
+    <option name="-setprop">counterexample.checker=CBMC</option>
+    <option name="-setprop">cpa.forcedCovering=cpa.predicate.PredicateForcedCovering</option>
+    <option name="-setprop">output.disable=false</option>
+    <option name="-outputpath">/home/benchexec/cpa-output</option>
+    <option name="-64" />
+  </rundefinition>
+</benchmark>

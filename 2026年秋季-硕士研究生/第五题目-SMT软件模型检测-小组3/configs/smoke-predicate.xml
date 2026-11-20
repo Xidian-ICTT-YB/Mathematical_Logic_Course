@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<benchmark tool="cpachecker" timelimit="60s" memlimit="6000 MB" cpuCores="2" threads="1">
+
+  <resultfiles>/home/benchexec/cpa-output/**</resultfiles>
+
+  <rundefinition name="predicate-mathsat">
+    <option name="-heap">4000M</option>
+    <option name="-config">/opt/cpachecker/config/predicateAnalysis.properties</option>
+    <option name="-setprop">solver.solver=MATHSAT5</option>
+    <option name="-outputpath">/home/benchexec/cpa-output</option>
+  </rundefinition>
+
+  <tasks name="official-example">
+    <include>../local/tools/supplements-vstte/CPAchecker/doc/examples/example.c</include>
+  </tasks>
+
+</benchmark>
+

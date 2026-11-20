@@ -1,0 +1,11 @@
+*.sh text eol=lf
+*.py text eol=lf
+*.ps1 text eol=crlf
+*.mp4 binary
+*.pptx binary
+*.docx binary
+*.zip binary
+*.7z binary
+*.bz2 binary
+*.gz binary
+*.tar binary

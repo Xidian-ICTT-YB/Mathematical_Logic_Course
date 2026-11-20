@@ -1,0 +1,54 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20261116121922
+用户名: LEO\12392
+RunAs 用户: LEO\12392
+配置名称: 
+计算机: LEO (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 44700
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+已启动脚本，输出文件为 C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\cpachecker-mathsat5-correct-key-20261116-121922.log
+PS C:\Windows\system32> Write-Host "===== CPAchecker MathSAT5 正确参数测试 ====="
+===== CPAchecker MathSAT5 正确参数测试 =====
+PS C:\Windows\system32> $output = & docker @dockerArgs 2>&1
+PS C:\Windows\system32> $dockerExit = $LASTEXITCODE
+PS C:\Windows\system32> $output | ForEach-Object {
+    Write-Host "$_"
+}
+===== MATHSAT5 CORRECT PROPERTY TEST =====
+Requested solver: solver.solver=MATHSAT5
+Running CPAchecker with default heap size (1200M). Specify a larger value with -heap if you have more RAM.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+System.Management.Automation.RemoteException
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started (CPAchecker.run, INFO)
+System.Management.Automation.RemoteException
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+System.Management.Automation.RemoteException
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit) and JFactory 1.21. (PredicateCPA:PredicateCPA.<init>, INFO)
+System.Management.Automation.RemoteException
+Using refinement for predicate analysis with PredicateAbstractionRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+System.Management.Automation.RemoteException
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+System.Management.Automation.RemoteException
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+System.Management.Automation.RemoteException
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+Run scripts/report-generator.py to show graphical report.
+CPA_EXIT_CODE=0
+SCRIPT_END
+PS C:\Windows\system32> Stop-Transcript
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20261116121926
+**********************
