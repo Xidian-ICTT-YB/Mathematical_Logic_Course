@@ -1,0 +1,19 @@
+FROM m01-benchexec-smoke:3.26
+
+USER root
+
+# Java 8 for the historical CPAchecker release
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      openjdk-8-jre-headless && \
+    rm -rf /var/lib/apt/lists/*
+
+# The build context is the extracted CPAchecker directory
+COPY . /opt/cpachecker/
+
+RUN chown -R benchuser:benchuser /opt/cpachecker
+
+USER benchuser
+WORKDIR /opt/cpachecker
+
+ENTRYPOINT ["/bin/bash", "/opt/cpachecker/scripts/cpa.sh"]

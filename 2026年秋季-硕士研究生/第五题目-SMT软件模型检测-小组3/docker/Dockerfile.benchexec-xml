@@ -1,0 +1,11 @@
+FROM m01-bench-cpa:smoke01
+
+USER root
+
+COPY docker/patch-benchexec-cgroupsv2.py /tmp/patch-benchexec-cgroupsv2.py
+
+RUN python3 /tmp/patch-benchexec-cgroupsv2.py && rm /tmp/patch-benchexec-cgroupsv2.py
+
+RUN chmod 755 /opt/cpachecker/scripts/cpa.sh
+
+WORKDIR /opt/cpachecker

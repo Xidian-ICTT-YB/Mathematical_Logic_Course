@@ -1,0 +1,11 @@
+FROM m01-cpachecker-smoke:java8
+
+USER root
+
+COPY init.sh /usr/local/bin/init.sh
+
+RUN chmod 755 /usr/local/bin/init.sh
+
+WORKDIR /opt/cpachecker
+
+ENTRYPOINT ["/usr/local/bin/init.sh"]

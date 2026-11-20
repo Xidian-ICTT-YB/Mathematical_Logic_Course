@@ -1,0 +1,171 @@
+2026-11-17 12:11:29:637	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2026-11-17 12:11:29:665	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-17 12:11:30:124	INFO	CFACreationUtils.addEdgeToCFA	line 6308: Dead code detected: __ms = 1UL;
+
+2026-11-17 12:11:30:126	INFO	CFACreationUtils.addEdgeToCFA	line 6326: Dead code detected: __ms___0 = 1UL;
+
+2026-11-17 12:11:30:182	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-17 12:11:30:583	WARNING	PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 12:11:30:676	INFO	PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 12:11:30:744	INFO	PredicateCPA:PredicateCPARefiner.<init>	Using refinement for predicate analysis with ImpactRefinementStrategy strategy.
+
+2026-11-17 12:11:30:751	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ counterexample.checker.config 
+
+
+2026-11-17 12:11:30:753	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-17 12:11:30:858	WARNING	PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8288:	N2207 -{tmp___0 = ldv_zalloc(40UL);}-> N2208)
+
+2026-11-17 12:11:30:872	WARNING	PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8296:	N2215 -{tmp___4 = ldv_zalloc(196UL);}-> N2216)
+
+2026-11-17 12:11:30:880	WARNING	PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8300:	N2219 -{tmp___6 = ldv_zalloc(1UL);}-> N2220)
+
+2026-11-17 12:11:30:886	WARNING	PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8302:	N2221 -{tmp___7 = ldv_zalloc(1UL);}-> N2222)
+
+2026-11-17 12:11:30:913	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_lock_nested to be a pure function.
+
+2026-11-17 12:11:30:917	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function spi_sync to be a pure function.
+
+2026-11-17 12:11:30:919	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netdev_err to be a pure function.
+
+2026-11-17 12:11:30:922	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_wren to be a pure function.
+
+2026-11-17 12:11:30:924	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_read to be a pure function.
+
+2026-11-17 12:11:30:927	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_write to be a pure function.
+
+2026-11-17 12:11:30:942	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_unlock to be a pure function.
+
+2026-11-17 12:11:30:961	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eeprom_93cx6_multiread to be a pure function.
+
+2026-11-17 12:11:30:983	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function strlcpy to be a pure function.
+
+2026-11-17 12:11:31:006	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __dynamic_netdev_dbg to be a pure function.
+
+2026-11-17 12:11:31:023	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_err to be a pure function.
+
+2026-11-17 12:11:31:032	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function warn_slowpath_null to be a pure function.
+
+2026-11-17 12:11:31:044	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __netdev_alloc_skb to be a pure function.
+
+2026-11-17 12:11:31:074	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mii_check_link to be a pure function.
+
+2026-11-17 12:11:31:079	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __netif_schedule to be a pure function.
+
+2026-11-17 12:11:31:089	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_handler1_2 to be a pure function.
+
+2026-11-17 12:11:31:346	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _dev_info to be a pure function.
+
+2026-11-17 12:11:31:348	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function unregister_netdev to be a pure function.
+
+2026-11-17 12:11:31:350	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_irq to be a pure function.
+
+2026-11-17 12:11:31:355	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function regulator_disable to be a pure function.
+
+2026-11-17 12:11:31:357	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_netdev to be a pure function.
+
+2026-11-17 12:11:31:359	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function alloc_etherdev_mqs to be a pure function.
+
+2026-11-17 12:11:31:364	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function devm_gpio_request_one to be a pure function.
+
+2026-11-17 12:11:31:373	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function devm_regulator_get to be a pure function.
+
+2026-11-17 12:11:31:378	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function regulator_enable to be a pure function.
+
+2026-11-17 12:11:31:388	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function usleep_range to be a pure function.
+
+2026-11-17 12:11:31:390	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __mutex_init to be a pure function.
+
+2026-11-17 12:11:31:392	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __raw_spin_lock_init to be a pure function.
+
+2026-11-17 12:11:31:393	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __init_work to be a pure function.
+
+2026-11-17 12:11:31:394	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function lockdep_init_map to be a pure function.
+
+2026-11-17 12:11:31:397	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function memset to be a pure function.
+
+2026-11-17 12:11:31:405	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __list_add to be a pure function.
+
+2026-11-17 12:11:31:414	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __const_udelay to be a pure function.
+
+2026-11-17 12:11:31:429	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netdev_warn to be a pure function.
+
+2026-11-17 12:11:31:438	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function get_random_bytes to be a pure function.
+
+2026-11-17 12:11:31:474	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function request_threaded_irq to be a pure function.
+
+2026-11-17 12:11:31:490	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function register_netdev to be a pure function.
+
+2026-11-17 12:11:31:501	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netdev_info to be a pure function.
+
+2026-11-17 12:11:31:531	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function spi_register_driver to be a pure function.
+
+2026-11-17 12:11:31:534	WARNING	PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval	Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8164:	N2092 -{tmp = ldv_zalloc(44UL);}-> N2093)
+
+2026-11-17 12:11:31:546	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function driver_unregister to be a pure function.
+
+2026-11-17 12:11:32:029	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_handler1_1 to be a pure function.
+
+2026-11-17 12:11:32:130	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_complete_4 to be a constant function.
+
+2026-11-17 12:11:32:133	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_suspend_noirq_4 to be a constant function.
+
+2026-11-17 12:11:32:135	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_restore_noirq_4 to be a constant function.
+
+2026-11-17 12:11:32:137	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_poweroff_late_4 to be a constant function.
+
+2026-11-17 12:11:32:140	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_poweroff_noirq_4 to be a constant function.
+
+2026-11-17 12:11:32:142	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_thaw_noirq_4 to be a constant function.
+
+2026-11-17 12:11:32:144	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_freeze_late_4 to be a constant function.
+
+2026-11-17 12:11:32:146	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_prepare_4 to be a constant function.
+
+2026-11-17 12:11:32:148	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_freeze_noirq_4 to be a constant function.
+
+2026-11-17 12:11:32:149	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_resume_noirq_4 to be a constant function.
+
+2026-11-17 12:11:32:151	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_thaw_early_4 to be a constant function.
+
+2026-11-17 12:11:32:153	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_resume_early_4 to be a constant function.
+
+2026-11-17 12:11:32:155	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_restore_early_4 to be a constant function.
+
+2026-11-17 12:11:32:157	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_suspend_late_4 to be a constant function.
+
+2026-11-17 12:11:32:172	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netif_device_attach to be a pure function.
+
+2026-11-17 12:11:32:177	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function netif_device_detach to be a pure function.
+
+2026-11-17 12:11:32:182	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function flush_work to be a pure function.
+
+2026-11-17 12:11:32:275	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_ndo_init_6 to be a constant function.
+
+2026-11-17 12:11:32:278	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_ndo_uninit_6 to be a constant function.
+
+2026-11-17 12:11:32:359	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_lock to be a pure function.
+
+2026-11-17 12:11:32:361	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function skb_queue_tail to be a pure function.
+
+2026-11-17 12:11:32:364	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock to be a pure function.
+
+2026-11-17 12:11:32:380	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eth_change_mtu to be a pure function.
+
+2026-11-17 12:11:32:419	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function memcmp to be a pure function.
+
+2026-11-17 12:11:32:443	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function eth_validate_addr to be a pure function.
+
+2026-11-17 12:11:34:016	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

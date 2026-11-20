@@ -1,0 +1,24 @@
+﻿批次：formal-20261117-141308
+范围：T05
+本次计划检查：4条
+
+SKIP T05/bmc
+COMPLETE T05/kinduction
+RAW C:\Users\12392\Documents\math-logic-CPAchecker-M01\results\formal-20261117-141308\T05\kinduction\benchexec\T05-kinduction.2026-11-17_06-27-43.results.kinduction.single-case.xml.bz2
+STDOUT C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-run-T05-20261117-142743.T05.kinduction.stdout.txt
+STDERR C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-run-T05-20261117-142743.T05.kinduction.stderr.txt
+
+COMPLETE T05/predicate
+RAW C:\Users\12392\Documents\math-logic-CPAchecker-M01\results\formal-20261117-141308\T05\predicate\benchexec\T05-predicate.2026-11-17_06-27-48.results.predicate.single-case.xml.bz2
+STDOUT C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-run-T05-20261117-142743.T05.predicate.stdout.txt
+STDERR C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-run-T05-20261117-142743.T05.predicate.stderr.txt
+
+COMPLETE T05/impact
+RAW C:\Users\12392\Documents\math-logic-CPAchecker-M01\results\formal-20261117-141308\T05\impact\benchexec\T05-impact.2026-11-17_06-27-53.results.impact.single-case.xml.bz2
+STDOUT C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-run-T05-20261117-142743.T05.impact.stdout.txt
+STDERR C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-run-T05-20261117-142743.T05.impact.stderr.txt
+
+
+本次新增完成：3
+跳过已有完成：1
+汇总CSV：C:\Users\12392\Documents\math-logic-CPAchecker-M01\experiment\formal-20261117-141308\results.csv

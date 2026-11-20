@@ -1,0 +1,45 @@
+﻿===== 正式实验配置生成 =====
+时间：2026-11-17 14:13:09
+批次：formal-20261117-141308
+任务数量：22
+TRUE：15
+FALSE：7
+算法数量：4
+总运行记录：88
+软时间：900s
+硬时间：960s
+内存：6000 MB
+Java Heap：4000M
+CPU：2
+并发：1
+任务性质文件 SHA256：364CDFFF22DA4F90BF3D0CB84C26B8AAB807DB78140715833719CC129768D55E
+
+T01 FALSE 00F4DE1E8B2C7A2E9B49E8C3BF69D38B161ACF488E37B1F3F0275B2FFC393A33 module_get_put-drivers-block-drbd-drbd.ko_false-unreach-call.cil.out.i.pp.i
+T02 TRUE F891D160A7B04E861AEEF4D35712AA701D63889019D2E4E2E8BD9F7B1CDEC891 module_get_put-drivers-block-drbd-drbd.ko_true-unreach-call.cil.out.i.pp.i
+T03 FALSE 44DB70D11103D9FE0C5F52C32D7654E318E7FF3D7C1F22FB767F81CD76B8B658 module_get_put-drivers-isdn-mISDN-mISDN_core.ko_false-unreach-call.cil.out.i.pp.i
+T04 FALSE B4E3EECB9AC4A92891E53976980F7B3E16509D9B27D261AF87F52247A5616DD6 main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c
+T05 TRUE CDADA479C0B14017C004ECCD5A23D744AA078DCEAAE58D0C87688BCA5FE666C3 m0_true-unreach-call_drivers-staging-comedi-drivers-ni_670x-ko--107_1a--adbbc36.c
+T06 TRUE B2312482C44BFE19EF39392A97C5CEE6A6857AB80ACEC4577821B0C23C3EA9CE 43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--hid--hid-zydacron.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c
+T07 FALSE C898205C7C278AD40FE6BE73D4E93FBF3331B29208F25C4B791E845546A33106 m0_false-unreach-call_sound-oss-opl3-ko--111_1a--42f9f8d-1.c
+T08 FALSE CACC6223D6BA64B5B25B0C1DD019F274D276B04D65DBF2EC3971F8CCFC571515 m0_false-unreach-call_drivers-net-b44-ko--114_1a--073676f-1.c
+T09 FALSE E8AD1BED775878ED4EE85CAF27780FA387430A4274BCC76AB6417760A9CB8894 32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--vhost--vhost_net.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c
+T10 FALSE 33647010CE162FF44D3BF2847BAE100A644F3111707B3C1119EB48073EE2E745 m0_false-unreach-call_drivers-media-radio-si4713-i2c-ko--111_1a--064368f-1.c
+T11 TRUE 1E75F977E96C251F375CBD27DE1E3EFBEBC6346FBFD924E989D65F051511A988 43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--memstick--host--jmb38x_ms.ko-entry_point_true-unreach-call.cil.out.c
+T12 TRUE 2DC99AB88420B3BC88E8E2143B036E993D0C2FB4558F2BD5F88CA6CD537D293B 43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--scsi--dpt_i2o.ko-entry_point_true-unreach-call.cil.out.c
+T13 TRUE E167B4E0C959F98B85A5B641AD53A30ACCB0190D06975722DCED6DE3B1D82B27 m0_true-unreach-call_drivers-hwmon-s3c-hwmon-ko--130_7a--af3071a.c
+T14 TRUE 4576732ED3BE6E045D1B37B17B6413104FACE6C4EC0876DB9414690EBD15B31D linux-4.2-rc1.tar.xz-43_2a-drivers--isdn--hardware--avm--c4.ko-entry_point_true-unreach-call.cil.out.c
+T15 TRUE D5F6A5BB78D5FF7523509E047AB3E22D2DB3BA90B8AB59C034390B52981ED768 m0_true-unreach-call_drivers-media-video-cx88-cx8802-ko--32_7a--d47b389.c
+T16 TRUE CCDA17F1A5EBEC3F9B4CCE32CD43374F19FF65BBE2BCA6641153EAD5118F86DF linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c
+T17 TRUE B426D31357B917A2D7FCF358053007ECC2B8FD3604A58453ABF7D0616C8F314B linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c
+T18 TRUE A06865B8FC2EC6FBD5B666A1CBCEB07A69C40DF01E834204DD081D6B14486869 linux-4.2-rc1.tar.xz-08_1a-drivers--rapidio--rapidio.ko-entry_point_true-unreach-call.cil.out.c
+T19 TRUE 981539256C9C2D6EA51D9DFCDB6A60E095D2D64616041AA52E461FC74DEF6E1A 205_9a_array_safes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--ethernet--micrel--ks8851.ko-entry_point_true-unreach-call.cil.out.c
+T20 TRUE 90860312E8D80E895D61F24C3F6E8ADAD57935F56DFDB8C41FDC84A277AEF601 205_9a_array_safes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--ethernet--dec--tulip--xircom_cb.ko-entry_point_true-unreach-call.cil.out.c
+T21 TRUE 9FAF41DC519102DDDA4C5A025369F5C56B09BCF50E810BD7974BABB768C6BF31 linux-4.2-rc1.tar.xz-43_2a-drivers--usb--gadget--udc--bdc--bdc.ko-entry_point_true-unreach-call.cil.out.c
+T22 TRUE 8AEEEB2FCC8550E8AF7B1AAA067D5EE129362244404E485E262E929C3CFCB1F0 205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--ethernet--atheros--atlx--atl1.ko-entry_point_true-unreach-call.cil.out.c
+
+任务清单：C:\Users\12392\Documents\math-logic-CPAchecker-M01\experiment\formal-20261117-141308\tasks.csv
+运行清单：C:\Users\12392\Documents\math-logic-CPAchecker-M01\experiment\formal-20261117-141308\runs.csv
+配置目录：C:\Users\12392\Documents\math-logic-CPAchecker-M01\configs\formal-20261117-141308
+结果目录规划：results/formal-20261117-141308/
+本次没有执行CPAchecker实验
+状态：SUCCESS

@@ -1,0 +1,46 @@
+   BENCHMARK INFORMATION
+benchmark definition:    /workspace/configs/formal-20261117-141308/T19-kinduction.xml
+name:                    T19-kinduction
+run sets:                kinduction.single-case
+date:                    Tue, 2026-11-17 11:48:42 UTC
+tool:                    CPAchecker 1.6.1-svn 23022
+tool executable:         /opt/cpachecker/scripts/cpa.sh
+options:
+property file:           ../../tasks/SVCOMP16_DeviceDrivers64_任务包/unreach-call.prp
+resource limits:
+- memory:                6000.0 MB
+- time:                  900 s
+- cpu cores:             2
+hardware requirements:
+- cpu cores:             2
+- memory:                6000.0 MB
+------------------------------------------------------------
+
+   SYSTEM INFORMATION
+host:                    e536c423a0d7
+os:                      Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.29
+cpu:                     Intel Core Ultra X7 358H
+- cores:                 16
+- max frequency:         3686.4 MHz
+ram:                     16512.83968 MB
+------------------------------------------------------------
+
+
+
+kinduction.single-case
+Run set 1 of 1 with options '-heap 4000M -sv-comp16--k-induction -setprop limits.time.cpu.thread=10000s -setprop output.disable=false -outputpath /home/benchexec/cpa-output -64' and propertyfile '../../tasks/SVCOMP16_DeviceDrivers64_任务包/unreach-call.prp'
+
+inputfile                                                                                                                            status                       cpu time   wall time        host
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+205_9a_array_safes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--ethernet--micrel--ks8851.ko-entry_point_true-unreach-call.cil.out.c    TIMEOUT                        919.05      467.55        None
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Run set 1                                                                                                                            done                           919.05      467.72           -
+
+Statistics:              1 Files
+  correct:               0
+    correct true:        0
+    correct false:       0
+  incorrect:             0
+    incorrect true:      0
+    incorrect false:     0
+  unknown:               1

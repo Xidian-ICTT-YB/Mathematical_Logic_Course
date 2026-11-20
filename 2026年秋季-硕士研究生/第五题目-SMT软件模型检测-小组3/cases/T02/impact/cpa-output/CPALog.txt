@@ -1,0 +1,1488 @@
+2026-11-17 06:54:31:904	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2026-11-17 06:54:31:931	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-17 06:54:32:585	INFO	CFACreationUtils.addEdgeToCFA	line 6753: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+
+2026-11-17 06:54:32:587	INFO	CFACreationUtils.addEdgeToCFA	line 6755: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+
+2026-11-17 06:54:32:589	INFO	CFACreationUtils.addEdgeToCFA	line 6757: Dead code detected: __asm__ ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+
+2026-11-17 06:54:32:593	INFO	CFACreationUtils.addEdgeToCFA	line 6751: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:32:596	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:32:601	INFO	CFACreationUtils.addEdgeToCFA	line 6832: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack));
+
+2026-11-17 06:54:32:603	INFO	CFACreationUtils.addEdgeToCFA	line 6834: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+
+2026-11-17 06:54:32:606	INFO	CFACreationUtils.addEdgeToCFA	line 6836: Dead code detected: __asm__ ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+
+2026-11-17 06:54:32:608	INFO	CFACreationUtils.addEdgeToCFA	line 6830: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:32:609	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:32:706	INFO	CFACreationUtils.addEdgeToCFA	line 11195: Dead code detected: __ptr = (u8 volatile *)(& v->counter);
+
+2026-11-17 06:54:32:708	INFO	CFACreationUtils.addEdgeToCFA	line 11198: Dead code detected: __ptr___0 = (u16 volatile *)(& v->counter);
+
+2026-11-17 06:54:32:710	INFO	CFACreationUtils.addEdgeToCFA	line 11205: Dead code detected: __ptr___2 = (u64 volatile *)(& v->counter);
+
+2026-11-17 06:54:32:711	INFO	CFACreationUtils.addEdgeToCFA	line 11193: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:32:713	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:32:978	INFO	CFACreationUtils.addEdgeToCFA	line 26233: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "m" (cpu_number));
+
+2026-11-17 06:54:32:981	INFO	CFACreationUtils.addEdgeToCFA	line 26235: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "m" (cpu_number));
+
+2026-11-17 06:54:32:982	INFO	CFACreationUtils.addEdgeToCFA	line 26240: Dead code detected: __asm__ ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "m" (cpu_number));
+
+2026-11-17 06:54:32:984	INFO	CFACreationUtils.addEdgeToCFA	line 26231: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:32:986	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:32:988	INFO	CFACreationUtils.addEdgeToCFA	line 26307: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "m" (cpu_number));
+
+2026-11-17 06:54:32:991	INFO	CFACreationUtils.addEdgeToCFA	line 26309: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "m" (cpu_number));
+
+2026-11-17 06:54:32:992	INFO	CFACreationUtils.addEdgeToCFA	line 26314: Dead code detected: __asm__ ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "m" (cpu_number));
+
+2026-11-17 06:54:32:994	INFO	CFACreationUtils.addEdgeToCFA	line 26305: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:32:995	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:074	INFO	CFACreationUtils.addEdgeToCFA	line 41629: Dead code detected: *((u8 *)__gu_p) = (u8 )2U;
+
+2026-11-17 06:54:33:077	INFO	CFACreationUtils.addEdgeToCFA	line 41637: Dead code detected: put_unaligned_le32(16386U, __gu_p);
+
+2026-11-17 06:54:33:079	INFO	CFACreationUtils.addEdgeToCFA	line 41641: Dead code detected: put_unaligned_le64(16386ULL, __gu_p);
+
+2026-11-17 06:54:33:080	INFO	CFACreationUtils.addEdgeToCFA	line 41627: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:082	INFO	CFACreationUtils.addEdgeToCFA	line 41662: Dead code detected: *((u8 *)__gu_p___0) = (u8 )8U;
+
+2026-11-17 06:54:33:083	INFO	CFACreationUtils.addEdgeToCFA	line 41670: Dead code detected: put_unaligned_le32(8U, __gu_p___0);
+
+2026-11-17 06:54:33:084	INFO	CFACreationUtils.addEdgeToCFA	line 41674: Dead code detected: put_unaligned_le64(8ULL, __gu_p___0);
+
+2026-11-17 06:54:33:085	INFO	CFACreationUtils.addEdgeToCFA	line 41660: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:086	INFO	CFACreationUtils.addEdgeToCFA	line 41693: Dead code detected: *((u8 *)__gu_p___1) = (unsigned char )arg->disk_size;
+
+2026-11-17 06:54:33:087	INFO	CFACreationUtils.addEdgeToCFA	line 41696: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->disk_size)), __gu_p___1);
+
+2026-11-17 06:54:33:089	INFO	CFACreationUtils.addEdgeToCFA	line 41700: Dead code detected: put_unaligned_le32((unsigned int )arg->disk_size, __gu_p___1);
+
+2026-11-17 06:54:33:090	INFO	CFACreationUtils.addEdgeToCFA	line 41691: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:33:092	INFO	CFACreationUtils.addEdgeToCFA	line 41727: Dead code detected: *((u8 *)__gu_p___2) = (u8 )3U;
+
+2026-11-17 06:54:33:093	INFO	CFACreationUtils.addEdgeToCFA	line 41735: Dead code detected: put_unaligned_le32(57347U, __gu_p___2);
+
+2026-11-17 06:54:33:094	INFO	CFACreationUtils.addEdgeToCFA	line 41739: Dead code detected: put_unaligned_le64(57347ULL, __gu_p___2);
+
+2026-11-17 06:54:33:095	INFO	CFACreationUtils.addEdgeToCFA	line 41725: Dead code detected: Goto: switch_default___2
+
+2026-11-17 06:54:33:097	INFO	CFACreationUtils.addEdgeToCFA	line 41760: Dead code detected: *((u8 *)__gu_p___3) = (unsigned char )arg->backing_dev_len;
+
+2026-11-17 06:54:33:099	INFO	CFACreationUtils.addEdgeToCFA	line 41768: Dead code detected: put_unaligned_le32((unsigned int )arg->backing_dev_len, __gu_p___3);
+
+2026-11-17 06:54:33:100	INFO	CFACreationUtils.addEdgeToCFA	line 41772: Dead code detected: put_unaligned_le64((unsigned long long )arg->backing_dev_len, __gu_p___3);
+
+2026-11-17 06:54:33:101	INFO	CFACreationUtils.addEdgeToCFA	line 41758: Dead code detected: Goto: switch_default___3
+
+2026-11-17 06:54:33:103	INFO	CFACreationUtils.addEdgeToCFA	line 41798: Dead code detected: *((u8 *)__gu_p___4) = (u8 )4U;
+
+2026-11-17 06:54:33:105	INFO	CFACreationUtils.addEdgeToCFA	line 41806: Dead code detected: put_unaligned_le32(57348U, __gu_p___4);
+
+2026-11-17 06:54:33:107	INFO	CFACreationUtils.addEdgeToCFA	line 41810: Dead code detected: put_unaligned_le64(57348ULL, __gu_p___4);
+
+2026-11-17 06:54:33:108	INFO	CFACreationUtils.addEdgeToCFA	line 41796: Dead code detected: Goto: switch_default___4
+
+2026-11-17 06:54:33:109	INFO	CFACreationUtils.addEdgeToCFA	line 41831: Dead code detected: *((u8 *)__gu_p___5) = (unsigned char )arg->meta_dev_len;
+
+2026-11-17 06:54:33:111	INFO	CFACreationUtils.addEdgeToCFA	line 41839: Dead code detected: put_unaligned_le32((unsigned int )arg->meta_dev_len, __gu_p___5);
+
+2026-11-17 06:54:33:113	INFO	CFACreationUtils.addEdgeToCFA	line 41843: Dead code detected: put_unaligned_le64((unsigned long long )arg->meta_dev_len, __gu_p___5);
+
+2026-11-17 06:54:33:115	INFO	CFACreationUtils.addEdgeToCFA	line 41829: Dead code detected: Goto: switch_default___5
+
+2026-11-17 06:54:33:116	INFO	CFACreationUtils.addEdgeToCFA	line 41869: Dead code detected: *((u8 *)__gu_p___6) = (u8 )5U;
+
+2026-11-17 06:54:33:118	INFO	CFACreationUtils.addEdgeToCFA	line 41877: Dead code detected: put_unaligned_le32(8197U, __gu_p___6);
+
+2026-11-17 06:54:33:119	INFO	CFACreationUtils.addEdgeToCFA	line 41881: Dead code detected: put_unaligned_le64(8197ULL, __gu_p___6);
+
+2026-11-17 06:54:33:121	INFO	CFACreationUtils.addEdgeToCFA	line 41867: Dead code detected: Goto: switch_default___6
+
+2026-11-17 06:54:33:123	INFO	CFACreationUtils.addEdgeToCFA	line 41902: Dead code detected: *((u8 *)__gu_p___7) = (u8 )4U;
+
+2026-11-17 06:54:33:124	INFO	CFACreationUtils.addEdgeToCFA	line 41910: Dead code detected: put_unaligned_le32(4U, __gu_p___7);
+
+2026-11-17 06:54:33:126	INFO	CFACreationUtils.addEdgeToCFA	line 41914: Dead code detected: put_unaligned_le64(4ULL, __gu_p___7);
+
+2026-11-17 06:54:33:128	INFO	CFACreationUtils.addEdgeToCFA	line 41900: Dead code detected: Goto: switch_default___7
+
+2026-11-17 06:54:33:129	INFO	CFACreationUtils.addEdgeToCFA	line 41933: Dead code detected: *((u8 *)__gu_p___8) = (unsigned char )arg->meta_dev_idx;
+
+2026-11-17 06:54:33:131	INFO	CFACreationUtils.addEdgeToCFA	line 41936: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->meta_dev_idx)), __gu_p___8);
+
+2026-11-17 06:54:33:132	INFO	CFACreationUtils.addEdgeToCFA	line 41945: Dead code detected: put_unaligned_le64((unsigned long long )arg->meta_dev_idx, __gu_p___8);
+
+2026-11-17 06:54:33:134	INFO	CFACreationUtils.addEdgeToCFA	line 41931: Dead code detected: Goto: switch_default___8
+
+2026-11-17 06:54:33:136	INFO	CFACreationUtils.addEdgeToCFA	line 41967: Dead code detected: *((u8 *)__gu_p___9) = (u8 )6U;
+
+2026-11-17 06:54:33:138	INFO	CFACreationUtils.addEdgeToCFA	line 41975: Dead code detected: put_unaligned_le32(6U, __gu_p___9);
+
+2026-11-17 06:54:33:139	INFO	CFACreationUtils.addEdgeToCFA	line 41979: Dead code detected: put_unaligned_le64(6ULL, __gu_p___9);
+
+2026-11-17 06:54:33:141	INFO	CFACreationUtils.addEdgeToCFA	line 41965: Dead code detected: Goto: switch_default___9
+
+2026-11-17 06:54:33:142	INFO	CFACreationUtils.addEdgeToCFA	line 42000: Dead code detected: *((u8 *)__gu_p___10) = (u8 )4U;
+
+2026-11-17 06:54:33:143	INFO	CFACreationUtils.addEdgeToCFA	line 42008: Dead code detected: put_unaligned_le32(4U, __gu_p___10);
+
+2026-11-17 06:54:33:144	INFO	CFACreationUtils.addEdgeToCFA	line 42012: Dead code detected: put_unaligned_le64(4ULL, __gu_p___10);
+
+2026-11-17 06:54:33:145	INFO	CFACreationUtils.addEdgeToCFA	line 41998: Dead code detected: Goto: switch_default___10
+
+2026-11-17 06:54:33:147	INFO	CFACreationUtils.addEdgeToCFA	line 42031: Dead code detected: *((u8 *)__gu_p___11) = (unsigned char )arg->on_io_error;
+
+2026-11-17 06:54:33:148	INFO	CFACreationUtils.addEdgeToCFA	line 42034: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->on_io_error)), __gu_p___11);
+
+2026-11-17 06:54:33:149	INFO	CFACreationUtils.addEdgeToCFA	line 42043: Dead code detected: put_unaligned_le64((unsigned long long )arg->on_io_error, __gu_p___11);
+
+2026-11-17 06:54:33:150	INFO	CFACreationUtils.addEdgeToCFA	line 42029: Dead code detected: Goto: switch_default___11
+
+2026-11-17 06:54:33:152	INFO	CFACreationUtils.addEdgeToCFA	line 42065: Dead code detected: *((u8 *)__gu_p___12) = (u8 )7U;
+
+2026-11-17 06:54:33:153	INFO	CFACreationUtils.addEdgeToCFA	line 42073: Dead code detected: put_unaligned_le32(7U, __gu_p___12);
+
+2026-11-17 06:54:33:154	INFO	CFACreationUtils.addEdgeToCFA	line 42077: Dead code detected: put_unaligned_le64(7ULL, __gu_p___12);
+
+2026-11-17 06:54:33:155	INFO	CFACreationUtils.addEdgeToCFA	line 42063: Dead code detected: Goto: switch_default___12
+
+2026-11-17 06:54:33:155	INFO	CFACreationUtils.addEdgeToCFA	line 42098: Dead code detected: *((u8 *)__gu_p___13) = (u8 )4U;
+
+2026-11-17 06:54:33:156	INFO	CFACreationUtils.addEdgeToCFA	line 42106: Dead code detected: put_unaligned_le32(4U, __gu_p___13);
+
+2026-11-17 06:54:33:157	INFO	CFACreationUtils.addEdgeToCFA	line 42110: Dead code detected: put_unaligned_le64(4ULL, __gu_p___13);
+
+2026-11-17 06:54:33:158	INFO	CFACreationUtils.addEdgeToCFA	line 42096: Dead code detected: Goto: switch_default___13
+
+2026-11-17 06:54:33:159	INFO	CFACreationUtils.addEdgeToCFA	line 42129: Dead code detected: *((u8 *)__gu_p___14) = (unsigned char )arg->fencing;
+
+2026-11-17 06:54:33:160	INFO	CFACreationUtils.addEdgeToCFA	line 42132: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->fencing)), __gu_p___14);
+
+2026-11-17 06:54:33:161	INFO	CFACreationUtils.addEdgeToCFA	line 42141: Dead code detected: put_unaligned_le64((unsigned long long )arg->fencing, __gu_p___14);
+
+2026-11-17 06:54:33:162	INFO	CFACreationUtils.addEdgeToCFA	line 42127: Dead code detected: Goto: switch_default___14
+
+2026-11-17 06:54:33:163	INFO	CFACreationUtils.addEdgeToCFA	line 42163: Dead code detected: *((u8 *)__gu_p___15) = (u8 )37U;
+
+2026-11-17 06:54:33:164	INFO	CFACreationUtils.addEdgeToCFA	line 42171: Dead code detected: put_unaligned_le32(32805U, __gu_p___15);
+
+2026-11-17 06:54:33:165	INFO	CFACreationUtils.addEdgeToCFA	line 42175: Dead code detected: put_unaligned_le64(32805ULL, __gu_p___15);
+
+2026-11-17 06:54:33:166	INFO	CFACreationUtils.addEdgeToCFA	line 42161: Dead code detected: Goto: switch_default___15
+
+2026-11-17 06:54:33:167	INFO	CFACreationUtils.addEdgeToCFA	line 42196: Dead code detected: *((u8 *)__gu_p___16) = (u8 )1U;
+
+2026-11-17 06:54:33:168	INFO	CFACreationUtils.addEdgeToCFA	line 42204: Dead code detected: put_unaligned_le32(1U, __gu_p___16);
+
+2026-11-17 06:54:33:169	INFO	CFACreationUtils.addEdgeToCFA	line 42208: Dead code detected: put_unaligned_le64(1ULL, __gu_p___16);
+
+2026-11-17 06:54:33:170	INFO	CFACreationUtils.addEdgeToCFA	line 42194: Dead code detected: Goto: switch_default___16
+
+2026-11-17 06:54:33:172	INFO	CFACreationUtils.addEdgeToCFA	line 42231: Dead code detected: *((u8 *)__gu_p___17) = (u8 )53U;
+
+2026-11-17 06:54:33:173	INFO	CFACreationUtils.addEdgeToCFA	line 42239: Dead code detected: put_unaligned_le32(32821U, __gu_p___17);
+
+2026-11-17 06:54:33:174	INFO	CFACreationUtils.addEdgeToCFA	line 42243: Dead code detected: put_unaligned_le64(32821ULL, __gu_p___17);
+
+2026-11-17 06:54:33:175	INFO	CFACreationUtils.addEdgeToCFA	line 42229: Dead code detected: Goto: switch_default___17
+
+2026-11-17 06:54:33:176	INFO	CFACreationUtils.addEdgeToCFA	line 42264: Dead code detected: *((u8 *)__gu_p___18) = (u8 )1U;
+
+2026-11-17 06:54:33:177	INFO	CFACreationUtils.addEdgeToCFA	line 42272: Dead code detected: put_unaligned_le32(1U, __gu_p___18);
+
+2026-11-17 06:54:33:178	INFO	CFACreationUtils.addEdgeToCFA	line 42276: Dead code detected: put_unaligned_le64(1ULL, __gu_p___18);
+
+2026-11-17 06:54:33:179	INFO	CFACreationUtils.addEdgeToCFA	line 42262: Dead code detected: Goto: switch_default___18
+
+2026-11-17 06:54:33:180	INFO	CFACreationUtils.addEdgeToCFA	line 42299: Dead code detected: *((u8 *)__gu_p___19) = (u8 )54U;
+
+2026-11-17 06:54:33:181	INFO	CFACreationUtils.addEdgeToCFA	line 42307: Dead code detected: put_unaligned_le32(32822U, __gu_p___19);
+
+2026-11-17 06:54:33:182	INFO	CFACreationUtils.addEdgeToCFA	line 42311: Dead code detected: put_unaligned_le64(32822ULL, __gu_p___19);
+
+2026-11-17 06:54:33:183	INFO	CFACreationUtils.addEdgeToCFA	line 42297: Dead code detected: Goto: switch_default___19
+
+2026-11-17 06:54:33:185	INFO	CFACreationUtils.addEdgeToCFA	line 42332: Dead code detected: *((u8 *)__gu_p___20) = (u8 )1U;
+
+2026-11-17 06:54:33:186	INFO	CFACreationUtils.addEdgeToCFA	line 42340: Dead code detected: put_unaligned_le32(1U, __gu_p___20);
+
+2026-11-17 06:54:33:187	INFO	CFACreationUtils.addEdgeToCFA	line 42344: Dead code detected: put_unaligned_le64(1ULL, __gu_p___20);
+
+2026-11-17 06:54:33:188	INFO	CFACreationUtils.addEdgeToCFA	line 42330: Dead code detected: Goto: switch_default___20
+
+2026-11-17 06:54:33:189	INFO	CFACreationUtils.addEdgeToCFA	line 42367: Dead code detected: *((u8 *)__gu_p___21) = (u8 )56U;
+
+2026-11-17 06:54:33:190	INFO	CFACreationUtils.addEdgeToCFA	line 42375: Dead code detected: put_unaligned_le32(56U, __gu_p___21);
+
+2026-11-17 06:54:33:191	INFO	CFACreationUtils.addEdgeToCFA	line 42379: Dead code detected: put_unaligned_le64(56ULL, __gu_p___21);
+
+2026-11-17 06:54:33:192	INFO	CFACreationUtils.addEdgeToCFA	line 42365: Dead code detected: Goto: switch_default___21
+
+2026-11-17 06:54:33:193	INFO	CFACreationUtils.addEdgeToCFA	line 42400: Dead code detected: *((u8 *)__gu_p___22) = (u8 )4U;
+
+2026-11-17 06:54:33:194	INFO	CFACreationUtils.addEdgeToCFA	line 42408: Dead code detected: put_unaligned_le32(4U, __gu_p___22);
+
+2026-11-17 06:54:33:195	INFO	CFACreationUtils.addEdgeToCFA	line 42412: Dead code detected: put_unaligned_le64(4ULL, __gu_p___22);
+
+2026-11-17 06:54:33:197	INFO	CFACreationUtils.addEdgeToCFA	line 42398: Dead code detected: Goto: switch_default___22
+
+2026-11-17 06:54:33:198	INFO	CFACreationUtils.addEdgeToCFA	line 42431: Dead code detected: *((u8 *)__gu_p___23) = (unsigned char )arg->max_bio_bvecs;
+
+2026-11-17 06:54:33:199	INFO	CFACreationUtils.addEdgeToCFA	line 42434: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->max_bio_bvecs)), __gu_p___23);
+
+2026-11-17 06:54:33:200	INFO	CFACreationUtils.addEdgeToCFA	line 42443: Dead code detected: put_unaligned_le64((unsigned long long )arg->max_bio_bvecs, __gu_p___23);
+
+2026-11-17 06:54:33:201	INFO	CFACreationUtils.addEdgeToCFA	line 42429: Dead code detected: Goto: switch_default___23
+
+2026-11-17 06:54:33:202	INFO	CFACreationUtils.addEdgeToCFA	line 42465: Dead code detected: *((u8 *)__gu_p___24) = (u8 )57U;
+
+2026-11-17 06:54:33:203	INFO	CFACreationUtils.addEdgeToCFA	line 42473: Dead code detected: put_unaligned_le32(32825U, __gu_p___24);
+
+2026-11-17 06:54:33:204	INFO	CFACreationUtils.addEdgeToCFA	line 42477: Dead code detected: put_unaligned_le64(32825ULL, __gu_p___24);
+
+2026-11-17 06:54:33:205	INFO	CFACreationUtils.addEdgeToCFA	line 42463: Dead code detected: Goto: switch_default___24
+
+2026-11-17 06:54:33:206	INFO	CFACreationUtils.addEdgeToCFA	line 42498: Dead code detected: *((u8 *)__gu_p___25) = (u8 )1U;
+
+2026-11-17 06:54:33:208	INFO	CFACreationUtils.addEdgeToCFA	line 42506: Dead code detected: put_unaligned_le32(1U, __gu_p___25);
+
+2026-11-17 06:54:33:209	INFO	CFACreationUtils.addEdgeToCFA	line 42510: Dead code detected: put_unaligned_le64(1ULL, __gu_p___25);
+
+2026-11-17 06:54:33:210	INFO	CFACreationUtils.addEdgeToCFA	line 42496: Dead code detected: Goto: switch_default___25
+
+2026-11-17 06:54:33:211	INFO	CFACreationUtils.addEdgeToCFA	line 42533: Dead code detected: *((u8 *)__gu_p___26) = (u8 )58U;
+
+2026-11-17 06:54:33:212	INFO	CFACreationUtils.addEdgeToCFA	line 42541: Dead code detected: put_unaligned_le32(32826U, __gu_p___26);
+
+2026-11-17 06:54:33:214	INFO	CFACreationUtils.addEdgeToCFA	line 42545: Dead code detected: put_unaligned_le64(32826ULL, __gu_p___26);
+
+2026-11-17 06:54:33:215	INFO	CFACreationUtils.addEdgeToCFA	line 42531: Dead code detected: Goto: switch_default___26
+
+2026-11-17 06:54:33:216	INFO	CFACreationUtils.addEdgeToCFA	line 42566: Dead code detected: *((u8 *)__gu_p___27) = (u8 )1U;
+
+2026-11-17 06:54:33:217	INFO	CFACreationUtils.addEdgeToCFA	line 42574: Dead code detected: put_unaligned_le32(1U, __gu_p___27);
+
+2026-11-17 06:54:33:218	INFO	CFACreationUtils.addEdgeToCFA	line 42578: Dead code detected: put_unaligned_le64(1ULL, __gu_p___27);
+
+2026-11-17 06:54:33:219	INFO	CFACreationUtils.addEdgeToCFA	line 42564: Dead code detected: Goto: switch_default___27
+
+2026-11-17 06:54:33:221	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:222	INFO	CFACreationUtils.addEdgeToCFA	line 42758: Dead code detected: *((u8 *)__gu_p) = (u8 )8U;
+
+2026-11-17 06:54:33:224	INFO	CFACreationUtils.addEdgeToCFA	line 42766: Dead code detected: put_unaligned_le32(57352U, __gu_p);
+
+2026-11-17 06:54:33:225	INFO	CFACreationUtils.addEdgeToCFA	line 42770: Dead code detected: put_unaligned_le64(57352ULL, __gu_p);
+
+2026-11-17 06:54:33:226	INFO	CFACreationUtils.addEdgeToCFA	line 42756: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:227	INFO	CFACreationUtils.addEdgeToCFA	line 42791: Dead code detected: *((u8 *)__gu_p___0) = (unsigned char )arg->my_addr_len;
+
+2026-11-17 06:54:33:228	INFO	CFACreationUtils.addEdgeToCFA	line 42799: Dead code detected: put_unaligned_le32((unsigned int )arg->my_addr_len, __gu_p___0);
+
+2026-11-17 06:54:33:229	INFO	CFACreationUtils.addEdgeToCFA	line 42803: Dead code detected: put_unaligned_le64((unsigned long long )arg->my_addr_len, __gu_p___0);
+
+2026-11-17 06:54:33:230	INFO	CFACreationUtils.addEdgeToCFA	line 42789: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:232	INFO	CFACreationUtils.addEdgeToCFA	line 42829: Dead code detected: *((u8 *)__gu_p___1) = (u8 )9U;
+
+2026-11-17 06:54:33:233	INFO	CFACreationUtils.addEdgeToCFA	line 42837: Dead code detected: put_unaligned_le32(57353U, __gu_p___1);
+
+2026-11-17 06:54:33:234	INFO	CFACreationUtils.addEdgeToCFA	line 42841: Dead code detected: put_unaligned_le64(57353ULL, __gu_p___1);
+
+2026-11-17 06:54:33:235	INFO	CFACreationUtils.addEdgeToCFA	line 42827: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:33:236	INFO	CFACreationUtils.addEdgeToCFA	line 42862: Dead code detected: *((u8 *)__gu_p___2) = (unsigned char )arg->peer_addr_len;
+
+2026-11-17 06:54:33:238	INFO	CFACreationUtils.addEdgeToCFA	line 42870: Dead code detected: put_unaligned_le32((unsigned int )arg->peer_addr_len, __gu_p___2);
+
+2026-11-17 06:54:33:239	INFO	CFACreationUtils.addEdgeToCFA	line 42874: Dead code detected: put_unaligned_le64((unsigned long long )arg->peer_addr_len, __gu_p___2);
+
+2026-11-17 06:54:33:240	INFO	CFACreationUtils.addEdgeToCFA	line 42860: Dead code detected: Goto: switch_default___2
+
+2026-11-17 06:54:33:241	INFO	CFACreationUtils.addEdgeToCFA	line 42900: Dead code detected: *((u8 *)__gu_p___3) = (u8 )10U;
+
+2026-11-17 06:54:33:242	INFO	CFACreationUtils.addEdgeToCFA	line 42908: Dead code detected: put_unaligned_le32(49162U, __gu_p___3);
+
+2026-11-17 06:54:33:243	INFO	CFACreationUtils.addEdgeToCFA	line 42912: Dead code detected: put_unaligned_le64(49162ULL, __gu_p___3);
+
+2026-11-17 06:54:33:244	INFO	CFACreationUtils.addEdgeToCFA	line 42898: Dead code detected: Goto: switch_default___3
+
+2026-11-17 06:54:33:245	INFO	CFACreationUtils.addEdgeToCFA	line 42933: Dead code detected: *((u8 *)__gu_p___4) = (unsigned char )arg->shared_secret_len;
+
+2026-11-17 06:54:33:246	INFO	CFACreationUtils.addEdgeToCFA	line 42942: Dead code detected: put_unaligned_le32((unsigned int )arg->shared_secret_len, __gu_p___4);
+
+2026-11-17 06:54:33:247	INFO	CFACreationUtils.addEdgeToCFA	line 42946: Dead code detected: put_unaligned_le64((unsigned long long )arg->shared_secret_len, __gu_p___4);
+
+2026-11-17 06:54:33:248	INFO	CFACreationUtils.addEdgeToCFA	line 42931: Dead code detected: Goto: switch_default___4
+
+2026-11-17 06:54:33:249	INFO	CFACreationUtils.addEdgeToCFA	line 42973: Dead code detected: *((u8 *)__gu_p___5) = (u8 )11U;
+
+2026-11-17 06:54:33:250	INFO	CFACreationUtils.addEdgeToCFA	line 42981: Dead code detected: put_unaligned_le32(49163U, __gu_p___5);
+
+2026-11-17 06:54:33:252	INFO	CFACreationUtils.addEdgeToCFA	line 42985: Dead code detected: put_unaligned_le64(49163ULL, __gu_p___5);
+
+2026-11-17 06:54:33:253	INFO	CFACreationUtils.addEdgeToCFA	line 42971: Dead code detected: Goto: switch_default___5
+
+2026-11-17 06:54:33:254	INFO	CFACreationUtils.addEdgeToCFA	line 43006: Dead code detected: *((u8 *)__gu_p___6) = (unsigned char )arg->cram_hmac_alg_len;
+
+2026-11-17 06:54:33:255	INFO	CFACreationUtils.addEdgeToCFA	line 43015: Dead code detected: put_unaligned_le32((unsigned int )arg->cram_hmac_alg_len, __gu_p___6);
+
+2026-11-17 06:54:33:269	INFO	CFACreationUtils.addEdgeToCFA	line 43019: Dead code detected: put_unaligned_le64((unsigned long long )arg->cram_hmac_alg_len, __gu_p___6);
+
+2026-11-17 06:54:33:271	INFO	CFACreationUtils.addEdgeToCFA	line 43004: Dead code detected: Goto: switch_default___6
+
+2026-11-17 06:54:33:272	INFO	CFACreationUtils.addEdgeToCFA	line 43046: Dead code detected: *((u8 *)__gu_p___7) = (u8 )44U;
+
+2026-11-17 06:54:33:273	INFO	CFACreationUtils.addEdgeToCFA	line 43054: Dead code detected: put_unaligned_le32(49196U, __gu_p___7);
+
+2026-11-17 06:54:33:274	INFO	CFACreationUtils.addEdgeToCFA	line 43058: Dead code detected: put_unaligned_le64(49196ULL, __gu_p___7);
+
+2026-11-17 06:54:33:275	INFO	CFACreationUtils.addEdgeToCFA	line 43044: Dead code detected: Goto: switch_default___7
+
+2026-11-17 06:54:33:276	INFO	CFACreationUtils.addEdgeToCFA	line 43079: Dead code detected: *((u8 *)__gu_p___8) = (unsigned char )arg->integrity_alg_len;
+
+2026-11-17 06:54:33:277	INFO	CFACreationUtils.addEdgeToCFA	line 43088: Dead code detected: put_unaligned_le32((unsigned int )arg->integrity_alg_len, __gu_p___8);
+
+2026-11-17 06:54:33:279	INFO	CFACreationUtils.addEdgeToCFA	line 43092: Dead code detected: put_unaligned_le64((unsigned long long )arg->integrity_alg_len, __gu_p___8);
+
+2026-11-17 06:54:33:280	INFO	CFACreationUtils.addEdgeToCFA	line 43077: Dead code detected: Goto: switch_default___8
+
+2026-11-17 06:54:33:281	INFO	CFACreationUtils.addEdgeToCFA	line 43119: Dead code detected: *((u8 *)__gu_p___9) = (u8 )14U;
+
+2026-11-17 06:54:33:282	INFO	CFACreationUtils.addEdgeToCFA	line 43127: Dead code detected: put_unaligned_le32(14U, __gu_p___9);
+
+2026-11-17 06:54:33:284	INFO	CFACreationUtils.addEdgeToCFA	line 43131: Dead code detected: put_unaligned_le64(14ULL, __gu_p___9);
+
+2026-11-17 06:54:33:285	INFO	CFACreationUtils.addEdgeToCFA	line 43117: Dead code detected: Goto: switch_default___9
+
+2026-11-17 06:54:33:286	INFO	CFACreationUtils.addEdgeToCFA	line 43152: Dead code detected: *((u8 *)__gu_p___10) = (u8 )4U;
+
+2026-11-17 06:54:33:287	INFO	CFACreationUtils.addEdgeToCFA	line 43160: Dead code detected: put_unaligned_le32(4U, __gu_p___10);
+
+2026-11-17 06:54:33:288	INFO	CFACreationUtils.addEdgeToCFA	line 43164: Dead code detected: put_unaligned_le64(4ULL, __gu_p___10);
+
+2026-11-17 06:54:33:289	INFO	CFACreationUtils.addEdgeToCFA	line 43150: Dead code detected: Goto: switch_default___10
+
+2026-11-17 06:54:33:290	INFO	CFACreationUtils.addEdgeToCFA	line 43183: Dead code detected: *((u8 *)__gu_p___11) = (unsigned char )arg->timeout;
+
+2026-11-17 06:54:33:292	INFO	CFACreationUtils.addEdgeToCFA	line 43186: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->timeout)), __gu_p___11);
+
+2026-11-17 06:54:33:293	INFO	CFACreationUtils.addEdgeToCFA	line 43195: Dead code detected: put_unaligned_le64((unsigned long long )arg->timeout, __gu_p___11);
+
+2026-11-17 06:54:33:294	INFO	CFACreationUtils.addEdgeToCFA	line 43181: Dead code detected: Goto: switch_default___11
+
+2026-11-17 06:54:33:296	INFO	CFACreationUtils.addEdgeToCFA	line 43217: Dead code detected: *((u8 *)__gu_p___12) = (u8 )15U;
+
+2026-11-17 06:54:33:297	INFO	CFACreationUtils.addEdgeToCFA	line 43225: Dead code detected: put_unaligned_le32(8207U, __gu_p___12);
+
+2026-11-17 06:54:33:298	INFO	CFACreationUtils.addEdgeToCFA	line 43229: Dead code detected: put_unaligned_le64(8207ULL, __gu_p___12);
+
+2026-11-17 06:54:33:299	INFO	CFACreationUtils.addEdgeToCFA	line 43215: Dead code detected: Goto: switch_default___12
+
+2026-11-17 06:54:33:300	INFO	CFACreationUtils.addEdgeToCFA	line 43250: Dead code detected: *((u8 *)__gu_p___13) = (u8 )4U;
+
+2026-11-17 06:54:33:301	INFO	CFACreationUtils.addEdgeToCFA	line 43258: Dead code detected: put_unaligned_le32(4U, __gu_p___13);
+
+2026-11-17 06:54:33:303	INFO	CFACreationUtils.addEdgeToCFA	line 43262: Dead code detected: put_unaligned_le64(4ULL, __gu_p___13);
+
+2026-11-17 06:54:33:304	INFO	CFACreationUtils.addEdgeToCFA	line 43248: Dead code detected: Goto: switch_default___13
+
+2026-11-17 06:54:33:305	INFO	CFACreationUtils.addEdgeToCFA	line 43281: Dead code detected: *((u8 *)__gu_p___14) = (unsigned char )arg->wire_protocol;
+
+2026-11-17 06:54:33:306	INFO	CFACreationUtils.addEdgeToCFA	line 43284: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->wire_protocol)), __gu_p___14);
+
+2026-11-17 06:54:33:307	INFO	CFACreationUtils.addEdgeToCFA	line 43293: Dead code detected: put_unaligned_le64((unsigned long long )arg->wire_protocol, __gu_p___14);
+
+2026-11-17 06:54:33:309	INFO	CFACreationUtils.addEdgeToCFA	line 43279: Dead code detected: Goto: switch_default___14
+
+2026-11-17 06:54:33:310	INFO	CFACreationUtils.addEdgeToCFA	line 43315: Dead code detected: *((u8 *)__gu_p___15) = (u8 )16U;
+
+2026-11-17 06:54:33:311	INFO	CFACreationUtils.addEdgeToCFA	line 43323: Dead code detected: put_unaligned_le32(16U, __gu_p___15);
+
+2026-11-17 06:54:33:313	INFO	CFACreationUtils.addEdgeToCFA	line 43327: Dead code detected: put_unaligned_le64(16ULL, __gu_p___15);
+
+2026-11-17 06:54:33:314	INFO	CFACreationUtils.addEdgeToCFA	line 43313: Dead code detected: Goto: switch_default___15
+
+2026-11-17 06:54:33:316	INFO	CFACreationUtils.addEdgeToCFA	line 43348: Dead code detected: *((u8 *)__gu_p___16) = (u8 )4U;
+
+2026-11-17 06:54:33:317	INFO	CFACreationUtils.addEdgeToCFA	line 43356: Dead code detected: put_unaligned_le32(4U, __gu_p___16);
+
+2026-11-17 06:54:33:318	INFO	CFACreationUtils.addEdgeToCFA	line 43360: Dead code detected: put_unaligned_le64(4ULL, __gu_p___16);
+
+2026-11-17 06:54:33:319	INFO	CFACreationUtils.addEdgeToCFA	line 43346: Dead code detected: Goto: switch_default___16
+
+2026-11-17 06:54:33:320	INFO	CFACreationUtils.addEdgeToCFA	line 43379: Dead code detected: *((u8 *)__gu_p___17) = (unsigned char )arg->try_connect_int;
+
+2026-11-17 06:54:33:321	INFO	CFACreationUtils.addEdgeToCFA	line 43382: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->try_connect_int)), __gu_p___17);
+
+2026-11-17 06:54:33:322	INFO	CFACreationUtils.addEdgeToCFA	line 43391: Dead code detected: put_unaligned_le64((unsigned long long )arg->try_connect_int, __gu_p___17);
+
+2026-11-17 06:54:33:324	INFO	CFACreationUtils.addEdgeToCFA	line 43377: Dead code detected: Goto: switch_default___17
+
+2026-11-17 06:54:33:325	INFO	CFACreationUtils.addEdgeToCFA	line 43413: Dead code detected: *((u8 *)__gu_p___18) = (u8 )17U;
+
+2026-11-17 06:54:33:325	INFO	CFACreationUtils.addEdgeToCFA	line 43421: Dead code detected: put_unaligned_le32(17U, __gu_p___18);
+
+2026-11-17 06:54:33:326	INFO	CFACreationUtils.addEdgeToCFA	line 43425: Dead code detected: put_unaligned_le64(17ULL, __gu_p___18);
+
+2026-11-17 06:54:33:327	INFO	CFACreationUtils.addEdgeToCFA	line 43411: Dead code detected: Goto: switch_default___18
+
+2026-11-17 06:54:33:328	INFO	CFACreationUtils.addEdgeToCFA	line 43446: Dead code detected: *((u8 *)__gu_p___19) = (u8 )4U;
+
+2026-11-17 06:54:33:329	INFO	CFACreationUtils.addEdgeToCFA	line 43454: Dead code detected: put_unaligned_le32(4U, __gu_p___19);
+
+2026-11-17 06:54:33:330	INFO	CFACreationUtils.addEdgeToCFA	line 43458: Dead code detected: put_unaligned_le64(4ULL, __gu_p___19);
+
+2026-11-17 06:54:33:331	INFO	CFACreationUtils.addEdgeToCFA	line 43444: Dead code detected: Goto: switch_default___19
+
+2026-11-17 06:54:33:332	INFO	CFACreationUtils.addEdgeToCFA	line 43477: Dead code detected: *((u8 *)__gu_p___20) = (unsigned char )arg->ping_int;
+
+2026-11-17 06:54:33:333	INFO	CFACreationUtils.addEdgeToCFA	line 43480: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->ping_int)), __gu_p___20);
+
+2026-11-17 06:54:33:334	INFO	CFACreationUtils.addEdgeToCFA	line 43489: Dead code detected: put_unaligned_le64((unsigned long long )arg->ping_int, __gu_p___20);
+
+2026-11-17 06:54:33:335	INFO	CFACreationUtils.addEdgeToCFA	line 43475: Dead code detected: Goto: switch_default___20
+
+2026-11-17 06:54:33:336	INFO	CFACreationUtils.addEdgeToCFA	line 43511: Dead code detected: *((u8 *)__gu_p___21) = (u8 )18U;
+
+2026-11-17 06:54:33:337	INFO	CFACreationUtils.addEdgeToCFA	line 43519: Dead code detected: put_unaligned_le32(18U, __gu_p___21);
+
+2026-11-17 06:54:33:338	INFO	CFACreationUtils.addEdgeToCFA	line 43523: Dead code detected: put_unaligned_le64(18ULL, __gu_p___21);
+
+2026-11-17 06:54:33:341	INFO	CFACreationUtils.addEdgeToCFA	line 43509: Dead code detected: Goto: switch_default___21
+
+2026-11-17 06:54:33:342	INFO	CFACreationUtils.addEdgeToCFA	line 43544: Dead code detected: *((u8 *)__gu_p___22) = (u8 )4U;
+
+2026-11-17 06:54:33:343	INFO	CFACreationUtils.addEdgeToCFA	line 43552: Dead code detected: put_unaligned_le32(4U, __gu_p___22);
+
+2026-11-17 06:54:33:344	INFO	CFACreationUtils.addEdgeToCFA	line 43556: Dead code detected: put_unaligned_le64(4ULL, __gu_p___22);
+
+2026-11-17 06:54:33:346	INFO	CFACreationUtils.addEdgeToCFA	line 43542: Dead code detected: Goto: switch_default___22
+
+2026-11-17 06:54:33:347	INFO	CFACreationUtils.addEdgeToCFA	line 43575: Dead code detected: *((u8 *)__gu_p___23) = (unsigned char )arg->max_epoch_size;
+
+2026-11-17 06:54:33:348	INFO	CFACreationUtils.addEdgeToCFA	line 43578: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->max_epoch_size)), __gu_p___23);
+
+2026-11-17 06:54:33:349	INFO	CFACreationUtils.addEdgeToCFA	line 43587: Dead code detected: put_unaligned_le64((unsigned long long )arg->max_epoch_size, __gu_p___23);
+
+2026-11-17 06:54:33:350	INFO	CFACreationUtils.addEdgeToCFA	line 43573: Dead code detected: Goto: switch_default___23
+
+2026-11-17 06:54:33:351	INFO	CFACreationUtils.addEdgeToCFA	line 43609: Dead code detected: *((u8 *)__gu_p___24) = (u8 )19U;
+
+2026-11-17 06:54:33:352	INFO	CFACreationUtils.addEdgeToCFA	line 43617: Dead code detected: put_unaligned_le32(19U, __gu_p___24);
+
+2026-11-17 06:54:33:353	INFO	CFACreationUtils.addEdgeToCFA	line 43621: Dead code detected: put_unaligned_le64(19ULL, __gu_p___24);
+
+2026-11-17 06:54:33:355	INFO	CFACreationUtils.addEdgeToCFA	line 43607: Dead code detected: Goto: switch_default___24
+
+2026-11-17 06:54:33:356	INFO	CFACreationUtils.addEdgeToCFA	line 43642: Dead code detected: *((u8 *)__gu_p___25) = (u8 )4U;
+
+2026-11-17 06:54:33:357	INFO	CFACreationUtils.addEdgeToCFA	line 43650: Dead code detected: put_unaligned_le32(4U, __gu_p___25);
+
+2026-11-17 06:54:33:358	INFO	CFACreationUtils.addEdgeToCFA	line 43654: Dead code detected: put_unaligned_le64(4ULL, __gu_p___25);
+
+2026-11-17 06:54:33:359	INFO	CFACreationUtils.addEdgeToCFA	line 43640: Dead code detected: Goto: switch_default___25
+
+2026-11-17 06:54:33:360	INFO	CFACreationUtils.addEdgeToCFA	line 43673: Dead code detected: *((u8 *)__gu_p___26) = (unsigned char )arg->max_buffers;
+
+2026-11-17 06:54:33:361	INFO	CFACreationUtils.addEdgeToCFA	line 43676: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->max_buffers)), __gu_p___26);
+
+2026-11-17 06:54:33:362	INFO	CFACreationUtils.addEdgeToCFA	line 43685: Dead code detected: put_unaligned_le64((unsigned long long )arg->max_buffers, __gu_p___26);
+
+2026-11-17 06:54:33:363	INFO	CFACreationUtils.addEdgeToCFA	line 43671: Dead code detected: Goto: switch_default___26
+
+2026-11-17 06:54:33:364	INFO	CFACreationUtils.addEdgeToCFA	line 43707: Dead code detected: *((u8 *)__gu_p___27) = (u8 )20U;
+
+2026-11-17 06:54:33:366	INFO	CFACreationUtils.addEdgeToCFA	line 43715: Dead code detected: put_unaligned_le32(20U, __gu_p___27);
+
+2026-11-17 06:54:33:367	INFO	CFACreationUtils.addEdgeToCFA	line 43719: Dead code detected: put_unaligned_le64(20ULL, __gu_p___27);
+
+2026-11-17 06:54:33:368	INFO	CFACreationUtils.addEdgeToCFA	line 43705: Dead code detected: Goto: switch_default___27
+
+2026-11-17 06:54:33:369	INFO	CFACreationUtils.addEdgeToCFA	line 43740: Dead code detected: *((u8 *)__gu_p___28) = (u8 )4U;
+
+2026-11-17 06:54:33:370	INFO	CFACreationUtils.addEdgeToCFA	line 43748: Dead code detected: put_unaligned_le32(4U, __gu_p___28);
+
+2026-11-17 06:54:33:371	INFO	CFACreationUtils.addEdgeToCFA	line 43752: Dead code detected: put_unaligned_le64(4ULL, __gu_p___28);
+
+2026-11-17 06:54:33:373	INFO	CFACreationUtils.addEdgeToCFA	line 43738: Dead code detected: Goto: switch_default___28
+
+2026-11-17 06:54:33:374	INFO	CFACreationUtils.addEdgeToCFA	line 43771: Dead code detected: *((u8 *)__gu_p___29) = (unsigned char )arg->unplug_watermark;
+
+2026-11-17 06:54:33:375	INFO	CFACreationUtils.addEdgeToCFA	line 43774: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->unplug_watermark)), __gu_p___29);
+
+2026-11-17 06:54:33:376	INFO	CFACreationUtils.addEdgeToCFA	line 43783: Dead code detected: put_unaligned_le64((unsigned long long )arg->unplug_watermark, __gu_p___29);
+
+2026-11-17 06:54:33:377	INFO	CFACreationUtils.addEdgeToCFA	line 43769: Dead code detected: Goto: switch_default___29
+
+2026-11-17 06:54:33:378	INFO	CFACreationUtils.addEdgeToCFA	line 43805: Dead code detected: *((u8 *)__gu_p___30) = (u8 )21U;
+
+2026-11-17 06:54:33:380	INFO	CFACreationUtils.addEdgeToCFA	line 43813: Dead code detected: put_unaligned_le32(21U, __gu_p___30);
+
+2026-11-17 06:54:33:381	INFO	CFACreationUtils.addEdgeToCFA	line 43817: Dead code detected: put_unaligned_le64(21ULL, __gu_p___30);
+
+2026-11-17 06:54:33:382	INFO	CFACreationUtils.addEdgeToCFA	line 43803: Dead code detected: Goto: switch_default___30
+
+2026-11-17 06:54:33:383	INFO	CFACreationUtils.addEdgeToCFA	line 43838: Dead code detected: *((u8 *)__gu_p___31) = (u8 )4U;
+
+2026-11-17 06:54:33:384	INFO	CFACreationUtils.addEdgeToCFA	line 43846: Dead code detected: put_unaligned_le32(4U, __gu_p___31);
+
+2026-11-17 06:54:33:385	INFO	CFACreationUtils.addEdgeToCFA	line 43850: Dead code detected: put_unaligned_le64(4ULL, __gu_p___31);
+
+2026-11-17 06:54:33:386	INFO	CFACreationUtils.addEdgeToCFA	line 43836: Dead code detected: Goto: switch_default___31
+
+2026-11-17 06:54:33:387	INFO	CFACreationUtils.addEdgeToCFA	line 43869: Dead code detected: *((u8 *)__gu_p___32) = (unsigned char )arg->sndbuf_size;
+
+2026-11-17 06:54:33:388	INFO	CFACreationUtils.addEdgeToCFA	line 43872: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->sndbuf_size)), __gu_p___32);
+
+2026-11-17 06:54:33:390	INFO	CFACreationUtils.addEdgeToCFA	line 43881: Dead code detected: put_unaligned_le64((unsigned long long )arg->sndbuf_size, __gu_p___32);
+
+2026-11-17 06:54:33:391	INFO	CFACreationUtils.addEdgeToCFA	line 43867: Dead code detected: Goto: switch_default___32
+
+2026-11-17 06:54:33:392	INFO	CFACreationUtils.addEdgeToCFA	line 43903: Dead code detected: *((u8 *)__gu_p___33) = (u8 )22U;
+
+2026-11-17 06:54:33:393	INFO	CFACreationUtils.addEdgeToCFA	line 43911: Dead code detected: put_unaligned_le32(22U, __gu_p___33);
+
+2026-11-17 06:54:33:394	INFO	CFACreationUtils.addEdgeToCFA	line 43915: Dead code detected: put_unaligned_le64(22ULL, __gu_p___33);
+
+2026-11-17 06:54:33:395	INFO	CFACreationUtils.addEdgeToCFA	line 43901: Dead code detected: Goto: switch_default___33
+
+2026-11-17 06:54:33:396	INFO	CFACreationUtils.addEdgeToCFA	line 43936: Dead code detected: *((u8 *)__gu_p___34) = (u8 )4U;
+
+2026-11-17 06:54:33:397	INFO	CFACreationUtils.addEdgeToCFA	line 43944: Dead code detected: put_unaligned_le32(4U, __gu_p___34);
+
+2026-11-17 06:54:33:398	INFO	CFACreationUtils.addEdgeToCFA	line 43948: Dead code detected: put_unaligned_le64(4ULL, __gu_p___34);
+
+2026-11-17 06:54:33:399	INFO	CFACreationUtils.addEdgeToCFA	line 43934: Dead code detected: Goto: switch_default___34
+
+2026-11-17 06:54:33:400	INFO	CFACreationUtils.addEdgeToCFA	line 43967: Dead code detected: *((u8 *)__gu_p___35) = (unsigned char )arg->ko_count;
+
+2026-11-17 06:54:33:401	INFO	CFACreationUtils.addEdgeToCFA	line 43970: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->ko_count)), __gu_p___35);
+
+2026-11-17 06:54:33:402	INFO	CFACreationUtils.addEdgeToCFA	line 43979: Dead code detected: put_unaligned_le64((unsigned long long )arg->ko_count, __gu_p___35);
+
+2026-11-17 06:54:33:403	INFO	CFACreationUtils.addEdgeToCFA	line 43965: Dead code detected: Goto: switch_default___35
+
+2026-11-17 06:54:33:404	INFO	CFACreationUtils.addEdgeToCFA	line 44001: Dead code detected: *((u8 *)__gu_p___36) = (u8 )24U;
+
+2026-11-17 06:54:33:405	INFO	CFACreationUtils.addEdgeToCFA	line 44009: Dead code detected: put_unaligned_le32(24U, __gu_p___36);
+
+2026-11-17 06:54:33:406	INFO	CFACreationUtils.addEdgeToCFA	line 44013: Dead code detected: put_unaligned_le64(24ULL, __gu_p___36);
+
+2026-11-17 06:54:33:407	INFO	CFACreationUtils.addEdgeToCFA	line 43999: Dead code detected: Goto: switch_default___36
+
+2026-11-17 06:54:33:408	INFO	CFACreationUtils.addEdgeToCFA	line 44034: Dead code detected: *((u8 *)__gu_p___37) = (u8 )4U;
+
+2026-11-17 06:54:33:409	INFO	CFACreationUtils.addEdgeToCFA	line 44042: Dead code detected: put_unaligned_le32(4U, __gu_p___37);
+
+2026-11-17 06:54:33:410	INFO	CFACreationUtils.addEdgeToCFA	line 44046: Dead code detected: put_unaligned_le64(4ULL, __gu_p___37);
+
+2026-11-17 06:54:33:411	INFO	CFACreationUtils.addEdgeToCFA	line 44032: Dead code detected: Goto: switch_default___37
+
+2026-11-17 06:54:33:413	INFO	CFACreationUtils.addEdgeToCFA	line 44065: Dead code detected: *((u8 *)__gu_p___38) = (unsigned char )arg->after_sb_0p;
+
+2026-11-17 06:54:33:414	INFO	CFACreationUtils.addEdgeToCFA	line 44068: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->after_sb_0p)), __gu_p___38);
+
+2026-11-17 06:54:33:415	INFO	CFACreationUtils.addEdgeToCFA	line 44077: Dead code detected: put_unaligned_le64((unsigned long long )arg->after_sb_0p, __gu_p___38);
+
+2026-11-17 06:54:33:416	INFO	CFACreationUtils.addEdgeToCFA	line 44063: Dead code detected: Goto: switch_default___38
+
+2026-11-17 06:54:33:417	INFO	CFACreationUtils.addEdgeToCFA	line 44099: Dead code detected: *((u8 *)__gu_p___39) = (u8 )25U;
+
+2026-11-17 06:54:33:418	INFO	CFACreationUtils.addEdgeToCFA	line 44107: Dead code detected: put_unaligned_le32(25U, __gu_p___39);
+
+2026-11-17 06:54:33:419	INFO	CFACreationUtils.addEdgeToCFA	line 44111: Dead code detected: put_unaligned_le64(25ULL, __gu_p___39);
+
+2026-11-17 06:54:33:420	INFO	CFACreationUtils.addEdgeToCFA	line 44097: Dead code detected: Goto: switch_default___39
+
+2026-11-17 06:54:33:421	INFO	CFACreationUtils.addEdgeToCFA	line 44132: Dead code detected: *((u8 *)__gu_p___40) = (u8 )4U;
+
+2026-11-17 06:54:33:422	INFO	CFACreationUtils.addEdgeToCFA	line 44140: Dead code detected: put_unaligned_le32(4U, __gu_p___40);
+
+2026-11-17 06:54:33:423	INFO	CFACreationUtils.addEdgeToCFA	line 44144: Dead code detected: put_unaligned_le64(4ULL, __gu_p___40);
+
+2026-11-17 06:54:33:425	INFO	CFACreationUtils.addEdgeToCFA	line 44130: Dead code detected: Goto: switch_default___40
+
+2026-11-17 06:54:33:426	INFO	CFACreationUtils.addEdgeToCFA	line 44163: Dead code detected: *((u8 *)__gu_p___41) = (unsigned char )arg->after_sb_1p;
+
+2026-11-17 06:54:33:427	INFO	CFACreationUtils.addEdgeToCFA	line 44166: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->after_sb_1p)), __gu_p___41);
+
+2026-11-17 06:54:33:429	INFO	CFACreationUtils.addEdgeToCFA	line 44175: Dead code detected: put_unaligned_le64((unsigned long long )arg->after_sb_1p, __gu_p___41);
+
+2026-11-17 06:54:33:430	INFO	CFACreationUtils.addEdgeToCFA	line 44161: Dead code detected: Goto: switch_default___41
+
+2026-11-17 06:54:33:431	INFO	CFACreationUtils.addEdgeToCFA	line 44197: Dead code detected: *((u8 *)__gu_p___42) = (u8 )26U;
+
+2026-11-17 06:54:33:432	INFO	CFACreationUtils.addEdgeToCFA	line 44205: Dead code detected: put_unaligned_le32(26U, __gu_p___42);
+
+2026-11-17 06:54:33:433	INFO	CFACreationUtils.addEdgeToCFA	line 44209: Dead code detected: put_unaligned_le64(26ULL, __gu_p___42);
+
+2026-11-17 06:54:33:434	INFO	CFACreationUtils.addEdgeToCFA	line 44195: Dead code detected: Goto: switch_default___42
+
+2026-11-17 06:54:33:435	INFO	CFACreationUtils.addEdgeToCFA	line 44230: Dead code detected: *((u8 *)__gu_p___43) = (u8 )4U;
+
+2026-11-17 06:54:33:436	INFO	CFACreationUtils.addEdgeToCFA	line 44238: Dead code detected: put_unaligned_le32(4U, __gu_p___43);
+
+2026-11-17 06:54:33:437	INFO	CFACreationUtils.addEdgeToCFA	line 44242: Dead code detected: put_unaligned_le64(4ULL, __gu_p___43);
+
+2026-11-17 06:54:33:438	INFO	CFACreationUtils.addEdgeToCFA	line 44228: Dead code detected: Goto: switch_default___43
+
+2026-11-17 06:54:33:439	INFO	CFACreationUtils.addEdgeToCFA	line 44261: Dead code detected: *((u8 *)__gu_p___44) = (unsigned char )arg->after_sb_2p;
+
+2026-11-17 06:54:33:440	INFO	CFACreationUtils.addEdgeToCFA	line 44264: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->after_sb_2p)), __gu_p___44);
+
+2026-11-17 06:54:33:441	INFO	CFACreationUtils.addEdgeToCFA	line 44273: Dead code detected: put_unaligned_le64((unsigned long long )arg->after_sb_2p, __gu_p___44);
+
+2026-11-17 06:54:33:443	INFO	CFACreationUtils.addEdgeToCFA	line 44259: Dead code detected: Goto: switch_default___44
+
+2026-11-17 06:54:33:444	INFO	CFACreationUtils.addEdgeToCFA	line 44295: Dead code detected: *((u8 *)__gu_p___45) = (u8 )39U;
+
+2026-11-17 06:54:33:445	INFO	CFACreationUtils.addEdgeToCFA	line 44303: Dead code detected: put_unaligned_le32(39U, __gu_p___45);
+
+2026-11-17 06:54:33:446	INFO	CFACreationUtils.addEdgeToCFA	line 44307: Dead code detected: put_unaligned_le64(39ULL, __gu_p___45);
+
+2026-11-17 06:54:33:447	INFO	CFACreationUtils.addEdgeToCFA	line 44293: Dead code detected: Goto: switch_default___45
+
+2026-11-17 06:54:33:448	INFO	CFACreationUtils.addEdgeToCFA	line 44328: Dead code detected: *((u8 *)__gu_p___46) = (u8 )4U;
+
+2026-11-17 06:54:33:449	INFO	CFACreationUtils.addEdgeToCFA	line 44336: Dead code detected: put_unaligned_le32(4U, __gu_p___46);
+
+2026-11-17 06:54:33:451	INFO	CFACreationUtils.addEdgeToCFA	line 44340: Dead code detected: put_unaligned_le64(4ULL, __gu_p___46);
+
+2026-11-17 06:54:33:452	INFO	CFACreationUtils.addEdgeToCFA	line 44326: Dead code detected: Goto: switch_default___46
+
+2026-11-17 06:54:33:453	INFO	CFACreationUtils.addEdgeToCFA	line 44359: Dead code detected: *((u8 *)__gu_p___47) = (unsigned char )arg->rr_conflict;
+
+2026-11-17 06:54:33:454	INFO	CFACreationUtils.addEdgeToCFA	line 44362: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->rr_conflict)), __gu_p___47);
+
+2026-11-17 06:54:33:455	INFO	CFACreationUtils.addEdgeToCFA	line 44371: Dead code detected: put_unaligned_le64((unsigned long long )arg->rr_conflict, __gu_p___47);
+
+2026-11-17 06:54:33:456	INFO	CFACreationUtils.addEdgeToCFA	line 44357: Dead code detected: Goto: switch_default___47
+
+2026-11-17 06:54:33:458	INFO	CFACreationUtils.addEdgeToCFA	line 44393: Dead code detected: *((u8 *)__gu_p___48) = (u8 )40U;
+
+2026-11-17 06:54:33:459	INFO	CFACreationUtils.addEdgeToCFA	line 44401: Dead code detected: put_unaligned_le32(40U, __gu_p___48);
+
+2026-11-17 06:54:33:463	INFO	CFACreationUtils.addEdgeToCFA	line 44405: Dead code detected: put_unaligned_le64(40ULL, __gu_p___48);
+
+2026-11-17 06:54:33:464	INFO	CFACreationUtils.addEdgeToCFA	line 44391: Dead code detected: Goto: switch_default___48
+
+2026-11-17 06:54:33:465	INFO	CFACreationUtils.addEdgeToCFA	line 44426: Dead code detected: *((u8 *)__gu_p___49) = (u8 )4U;
+
+2026-11-17 06:54:33:466	INFO	CFACreationUtils.addEdgeToCFA	line 44434: Dead code detected: put_unaligned_le32(4U, __gu_p___49);
+
+2026-11-17 06:54:33:468	INFO	CFACreationUtils.addEdgeToCFA	line 44438: Dead code detected: put_unaligned_le64(4ULL, __gu_p___49);
+
+2026-11-17 06:54:33:469	INFO	CFACreationUtils.addEdgeToCFA	line 44424: Dead code detected: Goto: switch_default___49
+
+2026-11-17 06:54:33:470	INFO	CFACreationUtils.addEdgeToCFA	line 44457: Dead code detected: *((u8 *)__gu_p___50) = (unsigned char )arg->ping_timeo;
+
+2026-11-17 06:54:33:472	INFO	CFACreationUtils.addEdgeToCFA	line 44460: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->ping_timeo)), __gu_p___50);
+
+2026-11-17 06:54:33:474	INFO	CFACreationUtils.addEdgeToCFA	line 44469: Dead code detected: put_unaligned_le64((unsigned long long )arg->ping_timeo, __gu_p___50);
+
+2026-11-17 06:54:33:475	INFO	CFACreationUtils.addEdgeToCFA	line 44455: Dead code detected: Goto: switch_default___50
+
+2026-11-17 06:54:33:476	INFO	CFACreationUtils.addEdgeToCFA	line 44491: Dead code detected: *((u8 *)__gu_p___51) = (u8 )67U;
+
+2026-11-17 06:54:33:478	INFO	CFACreationUtils.addEdgeToCFA	line 44499: Dead code detected: put_unaligned_le32(67U, __gu_p___51);
+
+2026-11-17 06:54:33:479	INFO	CFACreationUtils.addEdgeToCFA	line 44503: Dead code detected: put_unaligned_le64(67ULL, __gu_p___51);
+
+2026-11-17 06:54:33:480	INFO	CFACreationUtils.addEdgeToCFA	line 44489: Dead code detected: Goto: switch_default___51
+
+2026-11-17 06:54:33:481	INFO	CFACreationUtils.addEdgeToCFA	line 44524: Dead code detected: *((u8 *)__gu_p___52) = (u8 )4U;
+
+2026-11-17 06:54:33:485	INFO	CFACreationUtils.addEdgeToCFA	line 44532: Dead code detected: put_unaligned_le32(4U, __gu_p___52);
+
+2026-11-17 06:54:33:486	INFO	CFACreationUtils.addEdgeToCFA	line 44536: Dead code detected: put_unaligned_le64(4ULL, __gu_p___52);
+
+2026-11-17 06:54:33:487	INFO	CFACreationUtils.addEdgeToCFA	line 44522: Dead code detected: Goto: switch_default___52
+
+2026-11-17 06:54:33:488	INFO	CFACreationUtils.addEdgeToCFA	line 44555: Dead code detected: *((u8 *)__gu_p___53) = (unsigned char )arg->rcvbuf_size;
+
+2026-11-17 06:54:33:489	INFO	CFACreationUtils.addEdgeToCFA	line 44558: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->rcvbuf_size)), __gu_p___53);
+
+2026-11-17 06:54:33:490	INFO	CFACreationUtils.addEdgeToCFA	line 44567: Dead code detected: put_unaligned_le64((unsigned long long )arg->rcvbuf_size, __gu_p___53);
+
+2026-11-17 06:54:33:491	INFO	CFACreationUtils.addEdgeToCFA	line 44553: Dead code detected: Goto: switch_default___53
+
+2026-11-17 06:54:33:493	INFO	CFACreationUtils.addEdgeToCFA	line 44589: Dead code detected: *((u8 *)__gu_p___54) = (u8 )81U;
+
+2026-11-17 06:54:33:494	INFO	CFACreationUtils.addEdgeToCFA	line 44597: Dead code detected: put_unaligned_le32(81U, __gu_p___54);
+
+2026-11-17 06:54:33:495	INFO	CFACreationUtils.addEdgeToCFA	line 44601: Dead code detected: put_unaligned_le64(81ULL, __gu_p___54);
+
+2026-11-17 06:54:33:496	INFO	CFACreationUtils.addEdgeToCFA	line 44587: Dead code detected: Goto: switch_default___54
+
+2026-11-17 06:54:33:497	INFO	CFACreationUtils.addEdgeToCFA	line 44622: Dead code detected: *((u8 *)__gu_p___55) = (u8 )4U;
+
+2026-11-17 06:54:33:498	INFO	CFACreationUtils.addEdgeToCFA	line 44630: Dead code detected: put_unaligned_le32(4U, __gu_p___55);
+
+2026-11-17 06:54:33:500	INFO	CFACreationUtils.addEdgeToCFA	line 44634: Dead code detected: put_unaligned_le64(4ULL, __gu_p___55);
+
+2026-11-17 06:54:33:501	INFO	CFACreationUtils.addEdgeToCFA	line 44620: Dead code detected: Goto: switch_default___55
+
+2026-11-17 06:54:33:502	INFO	CFACreationUtils.addEdgeToCFA	line 44653: Dead code detected: *((u8 *)__gu_p___56) = (unsigned char )arg->on_congestion;
+
+2026-11-17 06:54:33:502	INFO	CFACreationUtils.addEdgeToCFA	line 44656: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->on_congestion)), __gu_p___56);
+
+2026-11-17 06:54:33:503	INFO	CFACreationUtils.addEdgeToCFA	line 44665: Dead code detected: put_unaligned_le64((unsigned long long )arg->on_congestion, __gu_p___56);
+
+2026-11-17 06:54:33:505	INFO	CFACreationUtils.addEdgeToCFA	line 44651: Dead code detected: Goto: switch_default___56
+
+2026-11-17 06:54:33:506	INFO	CFACreationUtils.addEdgeToCFA	line 44687: Dead code detected: *((u8 *)__gu_p___57) = (u8 )82U;
+
+2026-11-17 06:54:33:507	INFO	CFACreationUtils.addEdgeToCFA	line 44695: Dead code detected: put_unaligned_le32(82U, __gu_p___57);
+
+2026-11-17 06:54:33:508	INFO	CFACreationUtils.addEdgeToCFA	line 44699: Dead code detected: put_unaligned_le64(82ULL, __gu_p___57);
+
+2026-11-17 06:54:33:509	INFO	CFACreationUtils.addEdgeToCFA	line 44685: Dead code detected: Goto: switch_default___57
+
+2026-11-17 06:54:33:510	INFO	CFACreationUtils.addEdgeToCFA	line 44720: Dead code detected: *((u8 *)__gu_p___58) = (u8 )4U;
+
+2026-11-17 06:54:33:511	INFO	CFACreationUtils.addEdgeToCFA	line 44728: Dead code detected: put_unaligned_le32(4U, __gu_p___58);
+
+2026-11-17 06:54:33:512	INFO	CFACreationUtils.addEdgeToCFA	line 44732: Dead code detected: put_unaligned_le64(4ULL, __gu_p___58);
+
+2026-11-17 06:54:33:513	INFO	CFACreationUtils.addEdgeToCFA	line 44718: Dead code detected: Goto: switch_default___58
+
+2026-11-17 06:54:33:515	INFO	CFACreationUtils.addEdgeToCFA	line 44751: Dead code detected: *((u8 *)__gu_p___59) = (unsigned char )arg->cong_fill;
+
+2026-11-17 06:54:33:516	INFO	CFACreationUtils.addEdgeToCFA	line 44754: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->cong_fill)), __gu_p___59);
+
+2026-11-17 06:54:33:517	INFO	CFACreationUtils.addEdgeToCFA	line 44763: Dead code detected: put_unaligned_le64((unsigned long long )arg->cong_fill, __gu_p___59);
+
+2026-11-17 06:54:33:518	INFO	CFACreationUtils.addEdgeToCFA	line 44749: Dead code detected: Goto: switch_default___59
+
+2026-11-17 06:54:33:519	INFO	CFACreationUtils.addEdgeToCFA	line 44785: Dead code detected: *((u8 *)__gu_p___60) = (u8 )83U;
+
+2026-11-17 06:54:33:520	INFO	CFACreationUtils.addEdgeToCFA	line 44793: Dead code detected: put_unaligned_le32(83U, __gu_p___60);
+
+2026-11-17 06:54:33:521	INFO	CFACreationUtils.addEdgeToCFA	line 44797: Dead code detected: put_unaligned_le64(83ULL, __gu_p___60);
+
+2026-11-17 06:54:33:522	INFO	CFACreationUtils.addEdgeToCFA	line 44783: Dead code detected: Goto: switch_default___60
+
+2026-11-17 06:54:33:524	INFO	CFACreationUtils.addEdgeToCFA	line 44818: Dead code detected: *((u8 *)__gu_p___61) = (u8 )4U;
+
+2026-11-17 06:54:33:525	INFO	CFACreationUtils.addEdgeToCFA	line 44826: Dead code detected: put_unaligned_le32(4U, __gu_p___61);
+
+2026-11-17 06:54:33:526	INFO	CFACreationUtils.addEdgeToCFA	line 44830: Dead code detected: put_unaligned_le64(4ULL, __gu_p___61);
+
+2026-11-17 06:54:33:527	INFO	CFACreationUtils.addEdgeToCFA	line 44816: Dead code detected: Goto: switch_default___61
+
+2026-11-17 06:54:33:529	INFO	CFACreationUtils.addEdgeToCFA	line 44849: Dead code detected: *((u8 *)__gu_p___62) = (unsigned char )arg->cong_extents;
+
+2026-11-17 06:54:33:530	INFO	CFACreationUtils.addEdgeToCFA	line 44852: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->cong_extents)), __gu_p___62);
+
+2026-11-17 06:54:33:531	INFO	CFACreationUtils.addEdgeToCFA	line 44861: Dead code detected: put_unaligned_le64((unsigned long long )arg->cong_extents, __gu_p___62);
+
+2026-11-17 06:54:33:532	INFO	CFACreationUtils.addEdgeToCFA	line 44847: Dead code detected: Goto: switch_default___62
+
+2026-11-17 06:54:33:534	INFO	CFACreationUtils.addEdgeToCFA	line 44883: Dead code detected: *((u8 *)__gu_p___63) = (u8 )60U;
+
+2026-11-17 06:54:33:535	INFO	CFACreationUtils.addEdgeToCFA	line 44891: Dead code detected: put_unaligned_le32(41020U, __gu_p___63);
+
+2026-11-17 06:54:33:536	INFO	CFACreationUtils.addEdgeToCFA	line 44895: Dead code detected: put_unaligned_le64(41020ULL, __gu_p___63);
+
+2026-11-17 06:54:33:537	INFO	CFACreationUtils.addEdgeToCFA	line 44881: Dead code detected: Goto: switch_default___63
+
+2026-11-17 06:54:33:538	INFO	CFACreationUtils.addEdgeToCFA	line 44916: Dead code detected: *((u8 *)__gu_p___64) = (u8 )1U;
+
+2026-11-17 06:54:33:539	INFO	CFACreationUtils.addEdgeToCFA	line 44924: Dead code detected: put_unaligned_le32(1U, __gu_p___64);
+
+2026-11-17 06:54:33:540	INFO	CFACreationUtils.addEdgeToCFA	line 44928: Dead code detected: put_unaligned_le64(1ULL, __gu_p___64);
+
+2026-11-17 06:54:33:541	INFO	CFACreationUtils.addEdgeToCFA	line 44914: Dead code detected: Goto: switch_default___64
+
+2026-11-17 06:54:33:542	INFO	CFACreationUtils.addEdgeToCFA	line 44951: Dead code detected: *((u8 *)__gu_p___65) = (u8 )27U;
+
+2026-11-17 06:54:33:543	INFO	CFACreationUtils.addEdgeToCFA	line 44959: Dead code detected: put_unaligned_le32(32795U, __gu_p___65);
+
+2026-11-17 06:54:33:544	INFO	CFACreationUtils.addEdgeToCFA	line 44963: Dead code detected: put_unaligned_le64(32795ULL, __gu_p___65);
+
+2026-11-17 06:54:33:545	INFO	CFACreationUtils.addEdgeToCFA	line 44949: Dead code detected: Goto: switch_default___65
+
+2026-11-17 06:54:33:546	INFO	CFACreationUtils.addEdgeToCFA	line 44984: Dead code detected: *((u8 *)__gu_p___66) = (u8 )1U;
+
+2026-11-17 06:54:33:547	INFO	CFACreationUtils.addEdgeToCFA	line 44992: Dead code detected: put_unaligned_le32(1U, __gu_p___66);
+
+2026-11-17 06:54:33:551	INFO	CFACreationUtils.addEdgeToCFA	line 44996: Dead code detected: put_unaligned_le64(1ULL, __gu_p___66);
+
+2026-11-17 06:54:33:552	INFO	CFACreationUtils.addEdgeToCFA	line 44982: Dead code detected: Goto: switch_default___66
+
+2026-11-17 06:54:33:553	INFO	CFACreationUtils.addEdgeToCFA	line 45019: Dead code detected: *((u8 *)__gu_p___67) = (u8 )28U;
+
+2026-11-17 06:54:33:554	INFO	CFACreationUtils.addEdgeToCFA	line 45027: Dead code detected: put_unaligned_le32(32796U, __gu_p___67);
+
+2026-11-17 06:54:33:555	INFO	CFACreationUtils.addEdgeToCFA	line 45031: Dead code detected: put_unaligned_le64(32796ULL, __gu_p___67);
+
+2026-11-17 06:54:33:556	INFO	CFACreationUtils.addEdgeToCFA	line 45017: Dead code detected: Goto: switch_default___67
+
+2026-11-17 06:54:33:557	INFO	CFACreationUtils.addEdgeToCFA	line 45052: Dead code detected: *((u8 *)__gu_p___68) = (u8 )1U;
+
+2026-11-17 06:54:33:559	INFO	CFACreationUtils.addEdgeToCFA	line 45060: Dead code detected: put_unaligned_le32(1U, __gu_p___68);
+
+2026-11-17 06:54:33:560	INFO	CFACreationUtils.addEdgeToCFA	line 45064: Dead code detected: put_unaligned_le64(1ULL, __gu_p___68);
+
+2026-11-17 06:54:33:561	INFO	CFACreationUtils.addEdgeToCFA	line 45050: Dead code detected: Goto: switch_default___68
+
+2026-11-17 06:54:33:562	INFO	CFACreationUtils.addEdgeToCFA	line 45087: Dead code detected: *((u8 *)__gu_p___69) = (u8 )41U;
+
+2026-11-17 06:54:33:564	INFO	CFACreationUtils.addEdgeToCFA	line 45095: Dead code detected: put_unaligned_le32(32809U, __gu_p___69);
+
+2026-11-17 06:54:33:564	INFO	CFACreationUtils.addEdgeToCFA	line 45099: Dead code detected: put_unaligned_le64(32809ULL, __gu_p___69);
+
+2026-11-17 06:54:33:565	INFO	CFACreationUtils.addEdgeToCFA	line 45085: Dead code detected: Goto: switch_default___69
+
+2026-11-17 06:54:33:567	INFO	CFACreationUtils.addEdgeToCFA	line 45120: Dead code detected: *((u8 *)__gu_p___70) = (u8 )1U;
+
+2026-11-17 06:54:33:568	INFO	CFACreationUtils.addEdgeToCFA	line 45128: Dead code detected: put_unaligned_le32(1U, __gu_p___70);
+
+2026-11-17 06:54:33:569	INFO	CFACreationUtils.addEdgeToCFA	line 45132: Dead code detected: put_unaligned_le64(1ULL, __gu_p___70);
+
+2026-11-17 06:54:33:570	INFO	CFACreationUtils.addEdgeToCFA	line 45118: Dead code detected: Goto: switch_default___70
+
+2026-11-17 06:54:33:571	INFO	CFACreationUtils.addEdgeToCFA	line 45155: Dead code detected: *((u8 *)__gu_p___71) = (u8 )61U;
+
+2026-11-17 06:54:33:572	INFO	CFACreationUtils.addEdgeToCFA	line 45163: Dead code detected: put_unaligned_le32(32829U, __gu_p___71);
+
+2026-11-17 06:54:33:575	INFO	CFACreationUtils.addEdgeToCFA	line 45167: Dead code detected: put_unaligned_le64(32829ULL, __gu_p___71);
+
+2026-11-17 06:54:33:576	INFO	CFACreationUtils.addEdgeToCFA	line 45153: Dead code detected: Goto: switch_default___71
+
+2026-11-17 06:54:33:580	INFO	CFACreationUtils.addEdgeToCFA	line 45188: Dead code detected: *((u8 *)__gu_p___72) = (u8 )1U;
+
+2026-11-17 06:54:33:581	INFO	CFACreationUtils.addEdgeToCFA	line 45196: Dead code detected: put_unaligned_le32(1U, __gu_p___72);
+
+2026-11-17 06:54:33:582	INFO	CFACreationUtils.addEdgeToCFA	line 45200: Dead code detected: put_unaligned_le64(1ULL, __gu_p___72);
+
+2026-11-17 06:54:33:583	INFO	CFACreationUtils.addEdgeToCFA	line 45186: Dead code detected: Goto: switch_default___72
+
+2026-11-17 06:54:33:584	INFO	CFACreationUtils.addEdgeToCFA	line 45223: Dead code detected: *((u8 *)__gu_p___73) = (u8 )62U;
+
+2026-11-17 06:54:33:585	INFO	CFACreationUtils.addEdgeToCFA	line 45231: Dead code detected: put_unaligned_le32(41022U, __gu_p___73);
+
+2026-11-17 06:54:33:586	INFO	CFACreationUtils.addEdgeToCFA	line 45235: Dead code detected: put_unaligned_le64(41022ULL, __gu_p___73);
+
+2026-11-17 06:54:33:587	INFO	CFACreationUtils.addEdgeToCFA	line 45221: Dead code detected: Goto: switch_default___73
+
+2026-11-17 06:54:33:588	INFO	CFACreationUtils.addEdgeToCFA	line 45256: Dead code detected: *((u8 *)__gu_p___74) = (u8 )1U;
+
+2026-11-17 06:54:33:589	INFO	CFACreationUtils.addEdgeToCFA	line 45264: Dead code detected: put_unaligned_le32(1U, __gu_p___74);
+
+2026-11-17 06:54:33:590	INFO	CFACreationUtils.addEdgeToCFA	line 45268: Dead code detected: put_unaligned_le64(1ULL, __gu_p___74);
+
+2026-11-17 06:54:33:592	INFO	CFACreationUtils.addEdgeToCFA	line 45254: Dead code detected: Goto: switch_default___74
+
+2026-11-17 06:54:33:593	INFO	CFACreationUtils.addEdgeToCFA	line 45291: Dead code detected: *((u8 *)__gu_p___75) = (u8 )70U;
+
+2026-11-17 06:54:33:594	INFO	CFACreationUtils.addEdgeToCFA	line 45299: Dead code detected: put_unaligned_le32(41030U, __gu_p___75);
+
+2026-11-17 06:54:33:595	INFO	CFACreationUtils.addEdgeToCFA	line 45303: Dead code detected: put_unaligned_le64(41030ULL, __gu_p___75);
+
+2026-11-17 06:54:33:596	INFO	CFACreationUtils.addEdgeToCFA	line 45289: Dead code detected: Goto: switch_default___75
+
+2026-11-17 06:54:33:597	INFO	CFACreationUtils.addEdgeToCFA	line 45324: Dead code detected: *((u8 *)__gu_p___76) = (u8 )1U;
+
+2026-11-17 06:54:33:598	INFO	CFACreationUtils.addEdgeToCFA	line 45332: Dead code detected: put_unaligned_le32(1U, __gu_p___76);
+
+2026-11-17 06:54:33:599	INFO	CFACreationUtils.addEdgeToCFA	line 45336: Dead code detected: put_unaligned_le64(1ULL, __gu_p___76);
+
+2026-11-17 06:54:33:600	INFO	CFACreationUtils.addEdgeToCFA	line 45322: Dead code detected: Goto: switch_default___76
+
+2026-11-17 06:54:33:602	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:607	INFO	CFACreationUtils.addEdgeToCFA	line 45435: Dead code detected: *((u8 *)__gu_p) = (u8 )30U;
+
+2026-11-17 06:54:33:613	INFO	CFACreationUtils.addEdgeToCFA	line 45443: Dead code detected: put_unaligned_le32(30U, __gu_p);
+
+2026-11-17 06:54:33:614	INFO	CFACreationUtils.addEdgeToCFA	line 45447: Dead code detected: put_unaligned_le64(30ULL, __gu_p);
+
+2026-11-17 06:54:33:615	INFO	CFACreationUtils.addEdgeToCFA	line 45433: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:616	INFO	CFACreationUtils.addEdgeToCFA	line 45468: Dead code detected: *((u8 *)__gu_p___0) = (u8 )4U;
+
+2026-11-17 06:54:33:617	INFO	CFACreationUtils.addEdgeToCFA	line 45476: Dead code detected: put_unaligned_le32(4U, __gu_p___0);
+
+2026-11-17 06:54:33:618	INFO	CFACreationUtils.addEdgeToCFA	line 45480: Dead code detected: put_unaligned_le64(4ULL, __gu_p___0);
+
+2026-11-17 06:54:33:619	INFO	CFACreationUtils.addEdgeToCFA	line 45466: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:621	INFO	CFACreationUtils.addEdgeToCFA	line 45499: Dead code detected: *((u8 *)__gu_p___1) = (unsigned char )arg->rate;
+
+2026-11-17 06:54:33:622	INFO	CFACreationUtils.addEdgeToCFA	line 45502: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->rate)), __gu_p___1);
+
+2026-11-17 06:54:33:623	INFO	CFACreationUtils.addEdgeToCFA	line 45511: Dead code detected: put_unaligned_le64((unsigned long long )arg->rate, __gu_p___1);
+
+2026-11-17 06:54:33:624	INFO	CFACreationUtils.addEdgeToCFA	line 45497: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:33:625	INFO	CFACreationUtils.addEdgeToCFA	line 45533: Dead code detected: *((u8 *)__gu_p___2) = (u8 )31U;
+
+2026-11-17 06:54:33:626	INFO	CFACreationUtils.addEdgeToCFA	line 45541: Dead code detected: put_unaligned_le32(31U, __gu_p___2);
+
+2026-11-17 06:54:33:627	INFO	CFACreationUtils.addEdgeToCFA	line 45545: Dead code detected: put_unaligned_le64(31ULL, __gu_p___2);
+
+2026-11-17 06:54:33:629	INFO	CFACreationUtils.addEdgeToCFA	line 45531: Dead code detected: Goto: switch_default___2
+
+2026-11-17 06:54:33:630	INFO	CFACreationUtils.addEdgeToCFA	line 45566: Dead code detected: *((u8 *)__gu_p___3) = (u8 )4U;
+
+2026-11-17 06:54:33:631	INFO	CFACreationUtils.addEdgeToCFA	line 45574: Dead code detected: put_unaligned_le32(4U, __gu_p___3);
+
+2026-11-17 06:54:33:633	INFO	CFACreationUtils.addEdgeToCFA	line 45578: Dead code detected: put_unaligned_le64(4ULL, __gu_p___3);
+
+2026-11-17 06:54:33:634	INFO	CFACreationUtils.addEdgeToCFA	line 45564: Dead code detected: Goto: switch_default___3
+
+2026-11-17 06:54:33:635	INFO	CFACreationUtils.addEdgeToCFA	line 45597: Dead code detected: *((u8 *)__gu_p___4) = (unsigned char )arg->after;
+
+2026-11-17 06:54:33:636	INFO	CFACreationUtils.addEdgeToCFA	line 45600: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->after)), __gu_p___4);
+
+2026-11-17 06:54:33:637	INFO	CFACreationUtils.addEdgeToCFA	line 45609: Dead code detected: put_unaligned_le64((unsigned long long )arg->after, __gu_p___4);
+
+2026-11-17 06:54:33:638	INFO	CFACreationUtils.addEdgeToCFA	line 45595: Dead code detected: Goto: switch_default___4
+
+2026-11-17 06:54:33:639	INFO	CFACreationUtils.addEdgeToCFA	line 45631: Dead code detected: *((u8 *)__gu_p___5) = (u8 )32U;
+
+2026-11-17 06:54:33:641	INFO	CFACreationUtils.addEdgeToCFA	line 45639: Dead code detected: put_unaligned_le32(32U, __gu_p___5);
+
+2026-11-17 06:54:33:642	INFO	CFACreationUtils.addEdgeToCFA	line 45643: Dead code detected: put_unaligned_le64(32ULL, __gu_p___5);
+
+2026-11-17 06:54:33:643	INFO	CFACreationUtils.addEdgeToCFA	line 45629: Dead code detected: Goto: switch_default___5
+
+2026-11-17 06:54:33:644	INFO	CFACreationUtils.addEdgeToCFA	line 45664: Dead code detected: *((u8 *)__gu_p___6) = (u8 )4U;
+
+2026-11-17 06:54:33:645	INFO	CFACreationUtils.addEdgeToCFA	line 45672: Dead code detected: put_unaligned_le32(4U, __gu_p___6);
+
+2026-11-17 06:54:33:646	INFO	CFACreationUtils.addEdgeToCFA	line 45676: Dead code detected: put_unaligned_le64(4ULL, __gu_p___6);
+
+2026-11-17 06:54:33:647	INFO	CFACreationUtils.addEdgeToCFA	line 45662: Dead code detected: Goto: switch_default___6
+
+2026-11-17 06:54:33:648	INFO	CFACreationUtils.addEdgeToCFA	line 45695: Dead code detected: *((u8 *)__gu_p___7) = (unsigned char )arg->al_extents;
+
+2026-11-17 06:54:33:649	INFO	CFACreationUtils.addEdgeToCFA	line 45698: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->al_extents)), __gu_p___7);
+
+2026-11-17 06:54:33:650	INFO	CFACreationUtils.addEdgeToCFA	line 45707: Dead code detected: put_unaligned_le64((unsigned long long )arg->al_extents, __gu_p___7);
+
+2026-11-17 06:54:33:650	INFO	CFACreationUtils.addEdgeToCFA	line 45693: Dead code detected: Goto: switch_default___7
+
+2026-11-17 06:54:33:651	INFO	CFACreationUtils.addEdgeToCFA	line 45729: Dead code detected: *((u8 *)__gu_p___8) = (u8 )52U;
+
+2026-11-17 06:54:33:652	INFO	CFACreationUtils.addEdgeToCFA	line 45737: Dead code detected: put_unaligned_le32(49204U, __gu_p___8);
+
+2026-11-17 06:54:33:654	INFO	CFACreationUtils.addEdgeToCFA	line 45741: Dead code detected: put_unaligned_le64(49204ULL, __gu_p___8);
+
+2026-11-17 06:54:33:655	INFO	CFACreationUtils.addEdgeToCFA	line 45727: Dead code detected: Goto: switch_default___8
+
+2026-11-17 06:54:33:656	INFO	CFACreationUtils.addEdgeToCFA	line 45762: Dead code detected: *((u8 *)__gu_p___9) = (unsigned char )arg->verify_alg_len;
+
+2026-11-17 06:54:33:657	INFO	CFACreationUtils.addEdgeToCFA	line 45770: Dead code detected: put_unaligned_le32((unsigned int )arg->verify_alg_len, __gu_p___9);
+
+2026-11-17 06:54:33:658	INFO	CFACreationUtils.addEdgeToCFA	line 45774: Dead code detected: put_unaligned_le64((unsigned long long )arg->verify_alg_len, __gu_p___9);
+
+2026-11-17 06:54:33:659	INFO	CFACreationUtils.addEdgeToCFA	line 45760: Dead code detected: Goto: switch_default___9
+
+2026-11-17 06:54:33:662	INFO	CFACreationUtils.addEdgeToCFA	line 45800: Dead code detected: *((u8 *)__gu_p___10) = (u8 )51U;
+
+2026-11-17 06:54:33:663	INFO	CFACreationUtils.addEdgeToCFA	line 45808: Dead code detected: put_unaligned_le32(49203U, __gu_p___10);
+
+2026-11-17 06:54:33:664	INFO	CFACreationUtils.addEdgeToCFA	line 45812: Dead code detected: put_unaligned_le64(49203ULL, __gu_p___10);
+
+2026-11-17 06:54:33:665	INFO	CFACreationUtils.addEdgeToCFA	line 45798: Dead code detected: Goto: switch_default___10
+
+2026-11-17 06:54:33:666	INFO	CFACreationUtils.addEdgeToCFA	line 45833: Dead code detected: *((u8 *)__gu_p___11) = (unsigned char )arg->cpu_mask_len;
+
+2026-11-17 06:54:33:667	INFO	CFACreationUtils.addEdgeToCFA	line 45841: Dead code detected: put_unaligned_le32((unsigned int )arg->cpu_mask_len, __gu_p___11);
+
+2026-11-17 06:54:33:668	INFO	CFACreationUtils.addEdgeToCFA	line 45845: Dead code detected: put_unaligned_le64((unsigned long long )arg->cpu_mask_len, __gu_p___11);
+
+2026-11-17 06:54:33:669	INFO	CFACreationUtils.addEdgeToCFA	line 45831: Dead code detected: Goto: switch_default___11
+
+2026-11-17 06:54:33:670	INFO	CFACreationUtils.addEdgeToCFA	line 45871: Dead code detected: *((u8 *)__gu_p___12) = (u8 )64U;
+
+2026-11-17 06:54:33:672	INFO	CFACreationUtils.addEdgeToCFA	line 45879: Dead code detected: put_unaligned_le32(49216U, __gu_p___12);
+
+2026-11-17 06:54:33:673	INFO	CFACreationUtils.addEdgeToCFA	line 45883: Dead code detected: put_unaligned_le64(49216ULL, __gu_p___12);
+
+2026-11-17 06:54:33:677	INFO	CFACreationUtils.addEdgeToCFA	line 45869: Dead code detected: Goto: switch_default___12
+
+2026-11-17 06:54:33:678	INFO	CFACreationUtils.addEdgeToCFA	line 45904: Dead code detected: *((u8 *)__gu_p___13) = (unsigned char )arg->csums_alg_len;
+
+2026-11-17 06:54:33:679	INFO	CFACreationUtils.addEdgeToCFA	line 45912: Dead code detected: put_unaligned_le32((unsigned int )arg->csums_alg_len, __gu_p___13);
+
+2026-11-17 06:54:33:680	INFO	CFACreationUtils.addEdgeToCFA	line 45916: Dead code detected: put_unaligned_le64((unsigned long long )arg->csums_alg_len, __gu_p___13);
+
+2026-11-17 06:54:33:681	INFO	CFACreationUtils.addEdgeToCFA	line 45902: Dead code detected: Goto: switch_default___13
+
+2026-11-17 06:54:33:682	INFO	CFACreationUtils.addEdgeToCFA	line 45942: Dead code detected: *((u8 *)__gu_p___14) = (u8 )65U;
+
+2026-11-17 06:54:33:683	INFO	CFACreationUtils.addEdgeToCFA	line 45950: Dead code detected: put_unaligned_le32(32833U, __gu_p___14);
+
+2026-11-17 06:54:33:685	INFO	CFACreationUtils.addEdgeToCFA	line 45954: Dead code detected: put_unaligned_le64(32833ULL, __gu_p___14);
+
+2026-11-17 06:54:33:686	INFO	CFACreationUtils.addEdgeToCFA	line 45940: Dead code detected: Goto: switch_default___14
+
+2026-11-17 06:54:33:687	INFO	CFACreationUtils.addEdgeToCFA	line 45975: Dead code detected: *((u8 *)__gu_p___15) = (u8 )1U;
+
+2026-11-17 06:54:33:688	INFO	CFACreationUtils.addEdgeToCFA	line 45983: Dead code detected: put_unaligned_le32(1U, __gu_p___15);
+
+2026-11-17 06:54:33:689	INFO	CFACreationUtils.addEdgeToCFA	line 45987: Dead code detected: put_unaligned_le64(1ULL, __gu_p___15);
+
+2026-11-17 06:54:33:690	INFO	CFACreationUtils.addEdgeToCFA	line 45973: Dead code detected: Goto: switch_default___15
+
+2026-11-17 06:54:33:691	INFO	CFACreationUtils.addEdgeToCFA	line 46010: Dead code detected: *((u8 *)__gu_p___16) = (u8 )75U;
+
+2026-11-17 06:54:33:692	INFO	CFACreationUtils.addEdgeToCFA	line 46018: Dead code detected: put_unaligned_le32(75U, __gu_p___16);
+
+2026-11-17 06:54:33:693	INFO	CFACreationUtils.addEdgeToCFA	line 46022: Dead code detected: put_unaligned_le64(75ULL, __gu_p___16);
+
+2026-11-17 06:54:33:694	INFO	CFACreationUtils.addEdgeToCFA	line 46008: Dead code detected: Goto: switch_default___16
+
+2026-11-17 06:54:33:695	INFO	CFACreationUtils.addEdgeToCFA	line 46043: Dead code detected: *((u8 *)__gu_p___17) = (u8 )4U;
+
+2026-11-17 06:54:33:696	INFO	CFACreationUtils.addEdgeToCFA	line 46051: Dead code detected: put_unaligned_le32(4U, __gu_p___17);
+
+2026-11-17 06:54:33:697	INFO	CFACreationUtils.addEdgeToCFA	line 46055: Dead code detected: put_unaligned_le64(4ULL, __gu_p___17);
+
+2026-11-17 06:54:33:698	INFO	CFACreationUtils.addEdgeToCFA	line 46041: Dead code detected: Goto: switch_default___17
+
+2026-11-17 06:54:33:698	INFO	CFACreationUtils.addEdgeToCFA	line 46074: Dead code detected: *((u8 *)__gu_p___18) = (unsigned char )arg->on_no_data;
+
+2026-11-17 06:54:33:700	INFO	CFACreationUtils.addEdgeToCFA	line 46077: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->on_no_data)), __gu_p___18);
+
+2026-11-17 06:54:33:701	INFO	CFACreationUtils.addEdgeToCFA	line 46086: Dead code detected: put_unaligned_le64((unsigned long long )arg->on_no_data, __gu_p___18);
+
+2026-11-17 06:54:33:703	INFO	CFACreationUtils.addEdgeToCFA	line 46072: Dead code detected: Goto: switch_default___18
+
+2026-11-17 06:54:33:704	INFO	CFACreationUtils.addEdgeToCFA	line 46108: Dead code detected: *((u8 *)__gu_p___19) = (u8 )76U;
+
+2026-11-17 06:54:33:709	INFO	CFACreationUtils.addEdgeToCFA	line 46116: Dead code detected: put_unaligned_le32(76U, __gu_p___19);
+
+2026-11-17 06:54:33:710	INFO	CFACreationUtils.addEdgeToCFA	line 46120: Dead code detected: put_unaligned_le64(76ULL, __gu_p___19);
+
+2026-11-17 06:54:33:711	INFO	CFACreationUtils.addEdgeToCFA	line 46106: Dead code detected: Goto: switch_default___19
+
+2026-11-17 06:54:33:712	INFO	CFACreationUtils.addEdgeToCFA	line 46141: Dead code detected: *((u8 *)__gu_p___20) = (u8 )4U;
+
+2026-11-17 06:54:33:713	INFO	CFACreationUtils.addEdgeToCFA	line 46149: Dead code detected: put_unaligned_le32(4U, __gu_p___20);
+
+2026-11-17 06:54:33:714	INFO	CFACreationUtils.addEdgeToCFA	line 46153: Dead code detected: put_unaligned_le64(4ULL, __gu_p___20);
+
+2026-11-17 06:54:33:714	INFO	CFACreationUtils.addEdgeToCFA	line 46139: Dead code detected: Goto: switch_default___20
+
+2026-11-17 06:54:33:715	INFO	CFACreationUtils.addEdgeToCFA	line 46172: Dead code detected: *((u8 *)__gu_p___21) = (unsigned char )arg->c_plan_ahead;
+
+2026-11-17 06:54:33:716	INFO	CFACreationUtils.addEdgeToCFA	line 46175: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->c_plan_ahead)), __gu_p___21);
+
+2026-11-17 06:54:33:717	INFO	CFACreationUtils.addEdgeToCFA	line 46184: Dead code detected: put_unaligned_le64((unsigned long long )arg->c_plan_ahead, __gu_p___21);
+
+2026-11-17 06:54:33:717	INFO	CFACreationUtils.addEdgeToCFA	line 46170: Dead code detected: Goto: switch_default___21
+
+2026-11-17 06:54:33:718	INFO	CFACreationUtils.addEdgeToCFA	line 46206: Dead code detected: *((u8 *)__gu_p___22) = (u8 )77U;
+
+2026-11-17 06:54:33:719	INFO	CFACreationUtils.addEdgeToCFA	line 46214: Dead code detected: put_unaligned_le32(77U, __gu_p___22);
+
+2026-11-17 06:54:33:719	INFO	CFACreationUtils.addEdgeToCFA	line 46218: Dead code detected: put_unaligned_le64(77ULL, __gu_p___22);
+
+2026-11-17 06:54:33:721	INFO	CFACreationUtils.addEdgeToCFA	line 46204: Dead code detected: Goto: switch_default___22
+
+2026-11-17 06:54:33:722	INFO	CFACreationUtils.addEdgeToCFA	line 46239: Dead code detected: *((u8 *)__gu_p___23) = (u8 )4U;
+
+2026-11-17 06:54:33:723	INFO	CFACreationUtils.addEdgeToCFA	line 46247: Dead code detected: put_unaligned_le32(4U, __gu_p___23);
+
+2026-11-17 06:54:33:724	INFO	CFACreationUtils.addEdgeToCFA	line 46251: Dead code detected: put_unaligned_le64(4ULL, __gu_p___23);
+
+2026-11-17 06:54:33:725	INFO	CFACreationUtils.addEdgeToCFA	line 46237: Dead code detected: Goto: switch_default___23
+
+2026-11-17 06:54:33:726	INFO	CFACreationUtils.addEdgeToCFA	line 46270: Dead code detected: *((u8 *)__gu_p___24) = (unsigned char )arg->c_delay_target;
+
+2026-11-17 06:54:33:731	INFO	CFACreationUtils.addEdgeToCFA	line 46273: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->c_delay_target)), __gu_p___24);
+
+2026-11-17 06:54:33:733	INFO	CFACreationUtils.addEdgeToCFA	line 46282: Dead code detected: put_unaligned_le64((unsigned long long )arg->c_delay_target, __gu_p___24);
+
+2026-11-17 06:54:33:734	INFO	CFACreationUtils.addEdgeToCFA	line 46268: Dead code detected: Goto: switch_default___24
+
+2026-11-17 06:54:33:736	INFO	CFACreationUtils.addEdgeToCFA	line 46304: Dead code detected: *((u8 *)__gu_p___25) = (u8 )78U;
+
+2026-11-17 06:54:33:737	INFO	CFACreationUtils.addEdgeToCFA	line 46312: Dead code detected: put_unaligned_le32(78U, __gu_p___25);
+
+2026-11-17 06:54:33:738	INFO	CFACreationUtils.addEdgeToCFA	line 46316: Dead code detected: put_unaligned_le64(78ULL, __gu_p___25);
+
+2026-11-17 06:54:33:739	INFO	CFACreationUtils.addEdgeToCFA	line 46302: Dead code detected: Goto: switch_default___25
+
+2026-11-17 06:54:33:739	INFO	CFACreationUtils.addEdgeToCFA	line 46337: Dead code detected: *((u8 *)__gu_p___26) = (u8 )4U;
+
+2026-11-17 06:54:33:740	INFO	CFACreationUtils.addEdgeToCFA	line 46345: Dead code detected: put_unaligned_le32(4U, __gu_p___26);
+
+2026-11-17 06:54:33:742	INFO	CFACreationUtils.addEdgeToCFA	line 46349: Dead code detected: put_unaligned_le64(4ULL, __gu_p___26);
+
+2026-11-17 06:54:33:743	INFO	CFACreationUtils.addEdgeToCFA	line 46335: Dead code detected: Goto: switch_default___26
+
+2026-11-17 06:54:33:744	INFO	CFACreationUtils.addEdgeToCFA	line 46368: Dead code detected: *((u8 *)__gu_p___27) = (unsigned char )arg->c_fill_target;
+
+2026-11-17 06:54:33:746	INFO	CFACreationUtils.addEdgeToCFA	line 46371: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->c_fill_target)), __gu_p___27);
+
+2026-11-17 06:54:33:748	INFO	CFACreationUtils.addEdgeToCFA	line 46380: Dead code detected: put_unaligned_le64((unsigned long long )arg->c_fill_target, __gu_p___27);
+
+2026-11-17 06:54:33:749	INFO	CFACreationUtils.addEdgeToCFA	line 46366: Dead code detected: Goto: switch_default___27
+
+2026-11-17 06:54:33:750	INFO	CFACreationUtils.addEdgeToCFA	line 46402: Dead code detected: *((u8 *)__gu_p___28) = (u8 )79U;
+
+2026-11-17 06:54:33:751	INFO	CFACreationUtils.addEdgeToCFA	line 46410: Dead code detected: put_unaligned_le32(79U, __gu_p___28);
+
+2026-11-17 06:54:33:752	INFO	CFACreationUtils.addEdgeToCFA	line 46414: Dead code detected: put_unaligned_le64(79ULL, __gu_p___28);
+
+2026-11-17 06:54:33:753	INFO	CFACreationUtils.addEdgeToCFA	line 46400: Dead code detected: Goto: switch_default___28
+
+2026-11-17 06:54:33:754	INFO	CFACreationUtils.addEdgeToCFA	line 46435: Dead code detected: *((u8 *)__gu_p___29) = (u8 )4U;
+
+2026-11-17 06:54:33:755	INFO	CFACreationUtils.addEdgeToCFA	line 46443: Dead code detected: put_unaligned_le32(4U, __gu_p___29);
+
+2026-11-17 06:54:33:756	INFO	CFACreationUtils.addEdgeToCFA	line 46447: Dead code detected: put_unaligned_le64(4ULL, __gu_p___29);
+
+2026-11-17 06:54:33:757	INFO	CFACreationUtils.addEdgeToCFA	line 46433: Dead code detected: Goto: switch_default___29
+
+2026-11-17 06:54:33:758	INFO	CFACreationUtils.addEdgeToCFA	line 46466: Dead code detected: *((u8 *)__gu_p___30) = (unsigned char )arg->c_max_rate;
+
+2026-11-17 06:54:33:759	INFO	CFACreationUtils.addEdgeToCFA	line 46469: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->c_max_rate)), __gu_p___30);
+
+2026-11-17 06:54:33:760	INFO	CFACreationUtils.addEdgeToCFA	line 46478: Dead code detected: put_unaligned_le64((unsigned long long )arg->c_max_rate, __gu_p___30);
+
+2026-11-17 06:54:33:761	INFO	CFACreationUtils.addEdgeToCFA	line 46464: Dead code detected: Goto: switch_default___30
+
+2026-11-17 06:54:33:764	INFO	CFACreationUtils.addEdgeToCFA	line 46500: Dead code detected: *((u8 *)__gu_p___31) = (u8 )80U;
+
+2026-11-17 06:54:33:765	INFO	CFACreationUtils.addEdgeToCFA	line 46508: Dead code detected: put_unaligned_le32(80U, __gu_p___31);
+
+2026-11-17 06:54:33:766	INFO	CFACreationUtils.addEdgeToCFA	line 46512: Dead code detected: put_unaligned_le64(80ULL, __gu_p___31);
+
+2026-11-17 06:54:33:770	INFO	CFACreationUtils.addEdgeToCFA	line 46498: Dead code detected: Goto: switch_default___31
+
+2026-11-17 06:54:33:775	INFO	CFACreationUtils.addEdgeToCFA	line 46533: Dead code detected: *((u8 *)__gu_p___32) = (u8 )4U;
+
+2026-11-17 06:54:33:776	INFO	CFACreationUtils.addEdgeToCFA	line 46541: Dead code detected: put_unaligned_le32(4U, __gu_p___32);
+
+2026-11-17 06:54:33:777	INFO	CFACreationUtils.addEdgeToCFA	line 46545: Dead code detected: put_unaligned_le64(4ULL, __gu_p___32);
+
+2026-11-17 06:54:33:778	INFO	CFACreationUtils.addEdgeToCFA	line 46531: Dead code detected: Goto: switch_default___32
+
+2026-11-17 06:54:33:779	INFO	CFACreationUtils.addEdgeToCFA	line 46564: Dead code detected: *((u8 *)__gu_p___33) = (unsigned char )arg->c_min_rate;
+
+2026-11-17 06:54:33:781	INFO	CFACreationUtils.addEdgeToCFA	line 46567: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->c_min_rate)), __gu_p___33);
+
+2026-11-17 06:54:33:782	INFO	CFACreationUtils.addEdgeToCFA	line 46576: Dead code detected: put_unaligned_le64((unsigned long long )arg->c_min_rate, __gu_p___33);
+
+2026-11-17 06:54:33:783	INFO	CFACreationUtils.addEdgeToCFA	line 46562: Dead code detected: Goto: switch_default___33
+
+2026-11-17 06:54:33:784	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:785	INFO	CFACreationUtils.addEdgeToCFA	line 46612: Dead code detected: *((u8 *)__gu_p) = (u8 )33U;
+
+2026-11-17 06:54:33:787	INFO	CFACreationUtils.addEdgeToCFA	line 46620: Dead code detected: put_unaligned_le32(33U, __gu_p);
+
+2026-11-17 06:54:33:788	INFO	CFACreationUtils.addEdgeToCFA	line 46624: Dead code detected: put_unaligned_le64(33ULL, __gu_p);
+
+2026-11-17 06:54:33:788	INFO	CFACreationUtils.addEdgeToCFA	line 46610: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:789	INFO	CFACreationUtils.addEdgeToCFA	line 46645: Dead code detected: *((u8 *)__gu_p___0) = (u8 )4U;
+
+2026-11-17 06:54:33:790	INFO	CFACreationUtils.addEdgeToCFA	line 46653: Dead code detected: put_unaligned_le32(4U, __gu_p___0);
+
+2026-11-17 06:54:33:792	INFO	CFACreationUtils.addEdgeToCFA	line 46657: Dead code detected: put_unaligned_le64(4ULL, __gu_p___0);
+
+2026-11-17 06:54:33:793	INFO	CFACreationUtils.addEdgeToCFA	line 46643: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:795	INFO	CFACreationUtils.addEdgeToCFA	line 46676: Dead code detected: *((u8 *)__gu_p___1) = (unsigned char )arg->state_i;
+
+2026-11-17 06:54:33:797	INFO	CFACreationUtils.addEdgeToCFA	line 46679: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )arg->state_i)), __gu_p___1);
+
+2026-11-17 06:54:33:798	INFO	CFACreationUtils.addEdgeToCFA	line 46688: Dead code detected: put_unaligned_le64((unsigned long long )arg->state_i, __gu_p___1);
+
+2026-11-17 06:54:33:800	INFO	CFACreationUtils.addEdgeToCFA	line 46674: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:33:801	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:854	INFO	CFACreationUtils.addEdgeToCFA	line 50693: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:857	INFO	CFACreationUtils.addEdgeToCFA	line 50701: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:859	INFO	CFACreationUtils.addEdgeToCFA	line 50705: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:861	INFO	CFACreationUtils.addEdgeToCFA	line 50691: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:862	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:864	INFO	CFACreationUtils.addEdgeToCFA	line 50765: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:866	INFO	CFACreationUtils.addEdgeToCFA	line 50773: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:867	INFO	CFACreationUtils.addEdgeToCFA	line 50777: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:869	INFO	CFACreationUtils.addEdgeToCFA	line 50763: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:870	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:872	INFO	CFACreationUtils.addEdgeToCFA	line 50823: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:873	INFO	CFACreationUtils.addEdgeToCFA	line 50831: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:874	INFO	CFACreationUtils.addEdgeToCFA	line 50835: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:875	INFO	CFACreationUtils.addEdgeToCFA	line 50821: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:876	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:878	INFO	CFACreationUtils.addEdgeToCFA	line 50880: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:879	INFO	CFACreationUtils.addEdgeToCFA	line 50888: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:880	INFO	CFACreationUtils.addEdgeToCFA	line 50892: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:882	INFO	CFACreationUtils.addEdgeToCFA	line 50878: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:883	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:887	INFO	CFACreationUtils.addEdgeToCFA	line 51261: Dead code detected: *((u8 *)__gu_p) = (unsigned char )tag;
+
+2026-11-17 06:54:33:889	INFO	CFACreationUtils.addEdgeToCFA	line 51269: Dead code detected: put_unaligned_le32((unsigned int )tag, __gu_p);
+
+2026-11-17 06:54:33:890	INFO	CFACreationUtils.addEdgeToCFA	line 51273: Dead code detected: put_unaligned_le64((unsigned long long )tag, __gu_p);
+
+2026-11-17 06:54:33:891	INFO	CFACreationUtils.addEdgeToCFA	line 51259: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:892	INFO	CFACreationUtils.addEdgeToCFA	line 51294: Dead code detected: *((u8 *)__gu_p___0) = (unsigned char )len;
+
+2026-11-17 06:54:33:893	INFO	CFACreationUtils.addEdgeToCFA	line 51302: Dead code detected: put_unaligned_le32((unsigned int )len, __gu_p___0);
+
+2026-11-17 06:54:33:894	INFO	CFACreationUtils.addEdgeToCFA	line 51306: Dead code detected: put_unaligned_le64((unsigned long long )len, __gu_p___0);
+
+2026-11-17 06:54:33:895	INFO	CFACreationUtils.addEdgeToCFA	line 51292: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:896	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:898	INFO	CFACreationUtils.addEdgeToCFA	line 51376: Dead code detected: *((u8 *)__gu_p) = (unsigned char )tag;
+
+2026-11-17 06:54:33:900	INFO	CFACreationUtils.addEdgeToCFA	line 51384: Dead code detected: put_unaligned_le32((unsigned int )tag, __gu_p);
+
+2026-11-17 06:54:33:900	INFO	CFACreationUtils.addEdgeToCFA	line 51388: Dead code detected: put_unaligned_le64((unsigned long long )tag, __gu_p);
+
+2026-11-17 06:54:33:901	INFO	CFACreationUtils.addEdgeToCFA	line 51374: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:903	INFO	CFACreationUtils.addEdgeToCFA	line 51418: Dead code detected: *((u8 *)__gu_p___0) = (u8 )4U;
+
+2026-11-17 06:54:33:904	INFO	CFACreationUtils.addEdgeToCFA	line 51426: Dead code detected: put_unaligned_le32(4U, __gu_p___0);
+
+2026-11-17 06:54:33:905	INFO	CFACreationUtils.addEdgeToCFA	line 51430: Dead code detected: put_unaligned_le64(4ULL, __gu_p___0);
+
+2026-11-17 06:54:33:906	INFO	CFACreationUtils.addEdgeToCFA	line 51416: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:908	INFO	CFACreationUtils.addEdgeToCFA	line 51449: Dead code detected: *((u8 *)__gu_p___1) = (unsigned char )*((int *)val);
+
+2026-11-17 06:54:33:909	INFO	CFACreationUtils.addEdgeToCFA	line 51452: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )*((int *)val))), __gu_p___1);
+
+2026-11-17 06:54:33:910	INFO	CFACreationUtils.addEdgeToCFA	line 51461: Dead code detected: put_unaligned_le64((unsigned long long )*((int *)val), __gu_p___1);
+
+2026-11-17 06:54:33:912	INFO	CFACreationUtils.addEdgeToCFA	line 51447: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:33:913	INFO	CFACreationUtils.addEdgeToCFA	line 51485: Dead code detected: *((u8 *)__gu_p___2) = (u8 )8U;
+
+2026-11-17 06:54:33:915	INFO	CFACreationUtils.addEdgeToCFA	line 51493: Dead code detected: put_unaligned_le32(8U, __gu_p___2);
+
+2026-11-17 06:54:33:916	INFO	CFACreationUtils.addEdgeToCFA	line 51497: Dead code detected: put_unaligned_le64(8ULL, __gu_p___2);
+
+2026-11-17 06:54:33:917	INFO	CFACreationUtils.addEdgeToCFA	line 51483: Dead code detected: Goto: switch_default___2
+
+2026-11-17 06:54:33:919	INFO	CFACreationUtils.addEdgeToCFA	line 51516: Dead code detected: *((u8 *)__gu_p___3) = (unsigned char )*((u64 *)val);
+
+2026-11-17 06:54:33:920	INFO	CFACreationUtils.addEdgeToCFA	line 51519: Dead code detected: put_unaligned_le16((u16 )((int )((unsigned short )*((u64 *)val))), __gu_p___3);
+
+2026-11-17 06:54:33:922	INFO	CFACreationUtils.addEdgeToCFA	line 51523: Dead code detected: put_unaligned_le32((unsigned int )*((u64 *)val), __gu_p___3);
+
+2026-11-17 06:54:33:923	INFO	CFACreationUtils.addEdgeToCFA	line 51514: Dead code detected: Goto: switch_default___3
+
+2026-11-17 06:54:33:925	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:926	INFO	CFACreationUtils.addEdgeToCFA	line 51576: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:928	INFO	CFACreationUtils.addEdgeToCFA	line 51584: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:929	INFO	CFACreationUtils.addEdgeToCFA	line 51588: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:930	INFO	CFACreationUtils.addEdgeToCFA	line 51574: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:931	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:933	INFO	CFACreationUtils.addEdgeToCFA	line 51641: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:934	INFO	CFACreationUtils.addEdgeToCFA	line 51649: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:935	INFO	CFACreationUtils.addEdgeToCFA	line 51653: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:936	INFO	CFACreationUtils.addEdgeToCFA	line 51639: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:937	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:939	INFO	CFACreationUtils.addEdgeToCFA	line 51762: Dead code detected: *((u8 *)__gu_p) = (u8 )50U;
+
+2026-11-17 06:54:33:940	INFO	CFACreationUtils.addEdgeToCFA	line 51770: Dead code detected: put_unaligned_le32(49202U, __gu_p);
+
+2026-11-17 06:54:33:941	INFO	CFACreationUtils.addEdgeToCFA	line 51774: Dead code detected: put_unaligned_le64(49202ULL, __gu_p);
+
+2026-11-17 06:54:33:942	INFO	CFACreationUtils.addEdgeToCFA	line 51760: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:943	INFO	CFACreationUtils.addEdgeToCFA	line 51795: Dead code detected: *((u8 *)__gu_p___0) = (unsigned char )len;
+
+2026-11-17 06:54:33:944	INFO	CFACreationUtils.addEdgeToCFA	line 51803: Dead code detected: put_unaligned_le32(len, __gu_p___0);
+
+2026-11-17 06:54:33:945	INFO	CFACreationUtils.addEdgeToCFA	line 51807: Dead code detected: put_unaligned_le64((unsigned long long )len, __gu_p___0);
+
+2026-11-17 06:54:33:946	INFO	CFACreationUtils.addEdgeToCFA	line 51793: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:33:948	INFO	CFACreationUtils.addEdgeToCFA	line 51869: Dead code detected: *((u8 *)__gu_p___1) = (u8 )0U;
+
+2026-11-17 06:54:33:949	INFO	CFACreationUtils.addEdgeToCFA	line 51877: Dead code detected: put_unaligned_le32(0U, __gu_p___1);
+
+2026-11-17 06:54:33:950	INFO	CFACreationUtils.addEdgeToCFA	line 51881: Dead code detected: put_unaligned_le64(0ULL, __gu_p___1);
+
+2026-11-17 06:54:33:951	INFO	CFACreationUtils.addEdgeToCFA	line 51867: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:33:952	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:954	INFO	CFACreationUtils.addEdgeToCFA	line 51948: Dead code detected: *((u8 *)__gu_p) = (u8 )0U;
+
+2026-11-17 06:54:33:955	INFO	CFACreationUtils.addEdgeToCFA	line 51956: Dead code detected: put_unaligned_le32(0U, __gu_p);
+
+2026-11-17 06:54:33:956	INFO	CFACreationUtils.addEdgeToCFA	line 51960: Dead code detected: put_unaligned_le64(0ULL, __gu_p);
+
+2026-11-17 06:54:33:957	INFO	CFACreationUtils.addEdgeToCFA	line 51946: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:33:958	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:33:960	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-17 06:54:34:078	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	lines 36886-36887: Function pointer *(mdev->data.socket->ops->sendpage) with type ssize_t  (*)(struct socket *, struct page *, int, size_t , int) is called, but no possible target functions were found.
+
+2026-11-17 06:54:34:081	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 15494: Function pointer *(tmp->digest) with type int (*)(struct hash_desc *, struct scatterlist *, unsigned int, u8 *) is called, but no possible target functions were found.
+
+2026-11-17 06:54:34:085	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 11595: Function pointer *(sock->ops->setsockopt) with type int (*)(struct socket *, int, int, char *, unsigned int) is called, but no possible target functions were found.
+
+2026-11-17 06:54:34:088	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	lines 17277-17278: Function pointer *(sock->ops->connect) with type int (*)(struct socket *, struct sockaddr *, int, int) is called, but no possible target functions were found.
+
+2026-11-17 06:54:34:902	WARNING	PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:54:34:928	INFO	PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 06:54:35:035	INFO	PredicateCPA:PredicateCPARefiner.<init>	Using refinement for predicate analysis with ImpactRefinementStrategy strategy.
+
+2026-11-17 06:54:35:043	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ counterexample.checker.config 
+
+
+2026-11-17 06:54:35:045	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-17 06:54:35:175	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-17 06:54:35:182	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function cn_add_callback to be a pure function.
+
+2026-11-17 06:54:35:198	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function register_blkdev to be a pure function.
+
+2026-11-17 06:54:35:202	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function register_reboot_notifier to be a pure function.
+
+2026-11-17 06:54:35:204	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __init_waitqueue_head to be a pure function.
+
+2026-11-17 06:54:35:212	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function kmem_cache_create to be a pure function.
+
+2026-11-17 06:54:35:215	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mempool_create to be a pure function.
+
+2026-11-17 06:54:35:219	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __raw_spin_lock_init to be a pure function.
+
+2026-11-17 06:54:35:223	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function alloc_pages_current to be a pure function.
+
+2026-11-17 06:54:35:233	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mempool_destroy to be a pure function.
+
+2026-11-17 06:54:35:236	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function kmem_cache_destroy to be a pure function.
+
+2026-11-17 06:54:35:241	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __free_pages to be a pure function.
+
+2026-11-17 06:54:35:253	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function proc_create_data to be a pure function.
+
+2026-11-17 06:54:35:256	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __rwlock_init to be a pure function.
+
+2026-11-17 06:54:35:289	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function unregister_reboot_notifier to be a pure function.
+
+2026-11-17 06:54:35:291	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function remove_proc_entry to be a pure function.
+
+2026-11-17 06:54:35:294	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function cn_del_callback to be a pure function.
+
+2026-11-17 06:54:35:303	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function unregister_blkdev to be a pure function.
+
+2026-11-17 06:54:35:309	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_err to be a pure function.
+
+2026-11-17 06:54:35:313	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function del_gendisk to be a pure function.
+
+2026-11-17 06:54:35:318	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function bdput to be a pure function.
+
+2026-11-17 06:54:35:333	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_lock_nested to be a pure function.
+
+2026-11-17 06:54:35:334	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function kernel_sock_shutdown to be a pure function.
+
+2026-11-17 06:54:35:335	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function sock_release to be a pure function.
+
+2026-11-17 06:54:35:340	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_unlock to be a pure function.
+
+2026-11-17 06:54:35:343	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function blkdev_put to be a pure function.
+
+2026-11-17 06:54:35:367	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_lock_irq to be a pure function.
+
+2026-11-17 06:54:35:384	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock_irq to be a pure function.
+
+2026-11-17 06:54:35:398	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_lock to be a pure function.
+
+2026-11-17 06:54:35:418	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock to be a pure function.
+
+2026-11-17 06:54:35:424	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function put_page to be a pure function.
+
+2026-11-17 06:54:35:432	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function dev_warn to be a pure function.
+
+2026-11-17 06:54:35:438	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __wake_up to be a pure function.
+
+2026-11-17 06:54:35:451	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mempool_free to be a pure function.
+
+2026-11-17 06:54:35:775	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function lc_destroy to be a pure function.
+
+2026-11-17 06:54:35:782	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function vfree to be a pure function.
+
+2026-11-17 06:54:35:785	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function put_disk to be a pure function.
+
+2026-11-17 06:54:35:786	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function blk_cleanup_queue to be a pure function.
+
+2026-11-17 06:54:35:788	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_cpumask_var to be a pure function.
+
+2026-11-17 06:54:37:098	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __list_add to be a pure function.
+
+2026-11-17 06:54:37:100	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function up to be a pure function.
+
+2026-11-17 06:54:37:101	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock_irqrestore to be a pure function.
+
+2026-11-17 06:54:37:110	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_return_value to be a pure function.
+
+2026-11-17 06:54:47:904	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+
