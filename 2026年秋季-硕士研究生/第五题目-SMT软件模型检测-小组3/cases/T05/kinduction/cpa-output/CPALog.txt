@@ -1,0 +1,100 @@
+2026-11-17 06:27:44:516	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 06:27:44:541	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-17 06:27:44:920	INFO	CFACreationUtils.addEdgeToCFA	line 1687: Dead code detected: [size > 8192UL]
+
+2026-11-17 06:27:44:922	INFO	CFACreationUtils.addEdgeToCFA	line 1687: Dead code detected: [!(size > 8192UL)]
+
+2026-11-17 06:27:44:924	INFO	CFACreationUtils.addEdgeToCFA	line 1688: Dead code detected: tmp = kmalloc_large(size, flags);
+
+2026-11-17 06:27:44:930	INFO	CFACreationUtils.addEdgeToCFA	line 1693: Dead code detected: [(flags & 1U) == 0U]
+
+2026-11-17 06:27:44:931	INFO	CFACreationUtils.addEdgeToCFA	line 1693: Dead code detected: [!((flags & 1U) == 0U)]
+
+2026-11-17 06:27:44:932	INFO	CFACreationUtils.addEdgeToCFA	line 1694: Dead code detected: tmp___0 = kmalloc_slab(size);
+
+2026-11-17 06:27:44:933	INFO	CFACreationUtils.addEdgeToCFA	line 1696: Dead code detected: [!(((unsigned long)s) == ((unsigned long)((struct kmem_cache *)0)))]
+
+2026-11-17 06:27:44:935	INFO	CFACreationUtils.addEdgeToCFA	line 1697: Dead code detected: return (16);
+
+2026-11-17 06:27:44:937	INFO	CFACreationUtils.addEdgeToCFA	line 1701: Dead code detected: ret = kmem_cache_alloc_notrace(s, flags);
+
+2026-11-17 06:27:44:959	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-17 06:27:44:982	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	lines 1497-1502: Function pointer *((void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ))it_func) with type void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ) is called, but no possible target functions were found.
+
+2026-11-17 06:27:45:195	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ properties 
+
+
+2026-11-17 06:27:45:197	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-17 06:27:45:209	INFO	Parallel analysis 2:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 06:27:45:211	INFO	Parallel analysis 1:ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s
+
+2026-11-17 06:27:45:318	WARNING	Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:27:45:367	INFO	Parallel analysis 1:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 06:27:45:393	WARNING	Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:27:45:414	WARNING	Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:27:45:463	WARNING	Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:27:45:469	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 06:27:45:473	WARNING	Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:27:45:478	WARNING	Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:27:45:564	INFO	Parallel analysis 1:AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 06:27:45:659	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-17 06:27:45:662	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_handler_precall to be a constant function.
+
+2026-11-17 06:27:45:664	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function comedi_driver_register to be a pure function.
+
+2026-11-17 06:27:45:676	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __pci_register_driver to be a pure function.
+
+2026-11-17 06:27:45:688	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function pci_unregister_driver to be a pure function.
+
+2026-11-17 06:27:45:697	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function comedi_driver_unregister to be a pure function.
+
+2026-11-17 06:27:45:710	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mite_unsetup to be a pure function.
+
+2026-11-17 06:27:45:718	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_irq to be a pure function.
+
+2026-11-17 06:27:45:738	INFO	Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mite_list_devices to be a constant function.
+
+2026-11-17 06:27:45:774	INFO	Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 06:27:45:778	INFO	Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 06:27:45:863	INFO	Parallel analysis 1:KInductionProver.check	Running algorithm to create induction hypothesis
+
+2026-11-17 06:27:45:867	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mite_list_devices to be a constant function.
+
+2026-11-17 06:27:45:882	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_handler_precall to be a constant function.
+
+2026-11-17 06:27:45:884	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function pci_unregister_driver to be a pure function.
+
+2026-11-17 06:27:45:886	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function comedi_driver_unregister to be a pure function.
+
+2026-11-17 06:27:45:901	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mite_unsetup to be a pure function.
+
+2026-11-17 06:27:45:906	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function free_irq to be a pure function.
+
+2026-11-17 06:27:45:935	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __raw_spin_lock_init to be a pure function.
+
+2026-11-17 06:27:45:938	INFO	Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mite_setup to be a pure function.
+
+2026-11-17 06:27:46:312	INFO	ParallelAlgorithm.handleFutureResults	config/invariantGeneration-no-out.properties finished successfully.
+
+2026-11-17 06:27:46:315	INFO	Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis	Analysis was terminated
+
+2026-11-17 06:27:46:317	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+

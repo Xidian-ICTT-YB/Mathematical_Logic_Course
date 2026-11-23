@@ -1,0 +1,5 @@
+FROM m01-bench-cpa:xml-smoke-cgroupfix
+
+USER root
+
+RUN apt-get update && apt-get install -y --no-install-recommends graphviz && rm -rf /var/lib/apt/lists/*

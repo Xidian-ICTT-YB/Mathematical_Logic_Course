@@ -1,0 +1,28 @@
+line 10349:	N36714 -{int ldv_module_refcounter = 1;}-> N36715
+line 10440:	N36716 -{extern struct module __this_module;}-> N36717
+line 11046:	N3150 -{int res_drbd_proc_open_4;}-> N3151
+line 11053:	N3154 -{ldv_s_drbd_proc_fops_file_operations = 0;}-> N3155
+line 11055:	N3156 -{ldv_initialize();}-> N3157
+line 11105:	N3200 -{tmp___0 = __VERIFIER_nondet_int();}-> N3201
+line 11107:	N3201 -{[tmp___0 != 0]}-> N3203
+line 11108:	N3203 -{Goto: ldv_47980}-> N3159
+line 11060:	N3160 -{tmp = __VERIFIER_nondet_int();}-> N3161
+line 11062:	N3161 -{[tmp == 0]}-> N3163
+line 11071:	N3175 -{[ldv_s_drbd_proc_fops_file_operations == 0]}-> N3177
+line 11073:	N3177 -{drbd_proc_open(var_group1, var_group2)}-> N3126
+line 11013:	N3129 -{int tmp___1;}-> N3130
+line 11017:	N3130 -{ldv_try_module_get_1(&__this_module)}-> N3217
+line 11128:	N3219 -{ldv_try_module_get(module)}-> N2661
+line 10366:	N2663 -{[((unsigned long)module) != ((unsigned long)((struct module *)0))]}-> N2665
+line 10368:	N2665 -{module_get_succeeded = ldv_undefined_int();}-> N2667
+line 10370:	N2667 -{[module_get_succeeded == 1]}-> N2669
+line 10371:	N2669 -{ldv_module_refcounter = ldv_module_refcounter + 1;}-> N2671
+line 11019:	N3131 -{[tmp___1 != 0]}-> N3133
+line 11021:	N3133 -{PDE((const struct inode *)inode)}-> N2716
+line 10456:	N2718 -{PROC_I(inode)}-> N2710
+line 11074:	N3179 -{ldv_check_return_value(res_drbd_proc_open_4);}-> N3180
+line 11076:	N3180 -{[res_drbd_proc_open_4 != 0]}-> N3182
+line 11118:	N3213 -{ldv_check_final_state()}-> N2698
+line 10423:	N2699 -{[ldv_module_refcounter != 1]}-> N2701
+line 10425:	N2701 -{ldv_blast_assert()}-> N2648
+line 10345:	N2650 -{__VERIFIER_error();}-> N2651

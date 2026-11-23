@@ -1,0 +1,42 @@
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:   320.897s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.600s
+  Time for transition matches:                         0.341s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                       699429 (count: 699429, min: 1, max: 1, avg: 1.00) [1 x 699429]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            517056
+Max size of waitlist:            14217
+Average size of waitlist:        7493
+Number of computed successors:   553763
+Max successors for one state:    2
+Number of times merged:          31952
+Number of times stopped:         50654
+Number of times breaked:         0
+
+Total time for CPA algorithm:       448.416s (Max:   448.416s)
+  Time for choose from waitlist:      0.140s
+  Time for precision adjustment:      1.173s
+  Time for transfer relation:        90.812s
+  Time for merge operator:          342.681s
+  Time for stop operator:             6.958s
+  Time for adding to reached set:     3.194s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   320.449s

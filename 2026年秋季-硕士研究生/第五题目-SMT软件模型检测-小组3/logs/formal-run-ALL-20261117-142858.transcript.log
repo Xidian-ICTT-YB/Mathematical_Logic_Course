@@ -1,0 +1,446 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20261117142858
+用户名: LEO\12392
+RunAs 用户: LEO\12392
+配置名称: 
+计算机: LEO (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -NoProfile -ExecutionPolicy Bypass -File C:\Users\12392\Documents\math-logic-CPAchecker-M01\scripts\run-formal.ps1 -Scope ALL
+进程 ID: 51496
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+
+[RUN] T01 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T01 / bmc
+
+[RUN] T01 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T01 / kinduction
+
+[RUN] T01 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T01 / predicate
+
+[RUN] T01 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T01 / impact
+
+[RUN] T02 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T02 / bmc
+
+[RUN] T02 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T02 / kinduction
+
+[RUN] T02 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T02 / predicate
+
+[RUN] T02 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T02 / impact
+
+[RUN] T03 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T03 / bmc
+
+[RUN] T03 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T03 / kinduction
+
+[RUN] T03 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T03 / predicate
+
+[RUN] T03 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T03 / impact
+
+[RUN] T04 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T04 / bmc
+
+[RUN] T04 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T04 / kinduction
+
+[RUN] T04 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T04 / predicate
+
+[RUN] T04 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T04 / impact
+[SKIP] T05 / bmc 已完成
+[SKIP] T05 / kinduction 已完成
+[SKIP] T05 / predicate 已完成
+[SKIP] T05 / impact 已完成
+
+[RUN] T06 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T06 / bmc
+
+[RUN] T06 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T06 / kinduction
+
+[RUN] T06 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T06 / predicate
+
+[RUN] T06 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T06 / impact
+
+[RUN] T07 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T07 / bmc
+
+[RUN] T07 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T07 / kinduction
+
+[RUN] T07 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T07 / predicate
+
+[RUN] T07 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T07 / impact
+
+[RUN] T08 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T08 / bmc
+
+[RUN] T08 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T08 / kinduction
+
+[RUN] T08 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T08 / predicate
+
+[RUN] T08 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T08 / impact
+
+[RUN] T09 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T09 / bmc
+
+[RUN] T09 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T09 / kinduction
+
+[RUN] T09 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T09 / predicate
+
+[RUN] T09 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T09 / impact
+
+[RUN] T10 / bmc
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T10 / bmc
+
+[RUN] T10 / kinduction
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T10 / kinduction
+
+[RUN] T10 / predicate
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T10 / predicate
+
+[RUN] T10 / impact
+Expected: FALSE
+CPU: 900s soft / 1200s hard
+[SAVED] T10 / impact
+
+[RUN] T11 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T11 / bmc
+
+[RUN] T11 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T11 / kinduction
+
+[RUN] T11 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T11 / predicate
+
+[RUN] T11 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T11 / impact
+
+[RUN] T12 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T12 / bmc
+
+[RUN] T12 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T12 / kinduction
+
+[RUN] T12 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T12 / predicate
+
+[RUN] T12 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T12 / impact
+
+[RUN] T13 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T13 / bmc
+
+[RUN] T13 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T13 / kinduction
+
+[RUN] T13 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T13 / predicate
+
+[RUN] T13 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T13 / impact
+
+[RUN] T14 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T14 / bmc
+
+[RUN] T14 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T14 / kinduction
+
+[RUN] T14 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T14 / predicate
+
+[RUN] T14 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T14 / impact
+
+[RUN] T15 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T15 / bmc
+
+[RUN] T15 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T15 / kinduction
+
+[RUN] T15 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T15 / predicate
+
+[RUN] T15 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T15 / impact
+
+[RUN] T16 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T16 / bmc
+
+[RUN] T16 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T16 / kinduction
+
+[RUN] T16 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T16 / predicate
+
+[RUN] T16 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T16 / impact
+
+[RUN] T17 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T17 / bmc
+
+[RUN] T17 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T17 / kinduction
+
+[RUN] T17 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T17 / predicate
+
+[RUN] T17 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T17 / impact
+
+[RUN] T18 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T18 / bmc
+
+[RUN] T18 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T18 / kinduction
+
+[RUN] T18 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T18 / predicate
+
+[RUN] T18 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T18 / impact
+
+[RUN] T19 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T19 / bmc
+
+[RUN] T19 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T19 / kinduction
+
+[RUN] T19 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T19 / predicate
+
+[RUN] T19 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T19 / impact
+
+[RUN] T20 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T20 / bmc
+
+[RUN] T20 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T20 / kinduction
+
+[RUN] T20 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T20 / predicate
+
+[RUN] T20 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T20 / impact
+
+[RUN] T21 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T21 / bmc
+
+[RUN] T21 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T21 / kinduction
+
+[RUN] T21 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T21 / predicate
+
+[RUN] T21 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T21 / impact
+
+[RUN] T22 / bmc
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T22 / bmc
+
+[RUN] T22 / kinduction
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T22 / kinduction
+
+[RUN] T22 / predicate
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T22 / predicate
+
+[RUN] T22 / impact
+Expected: TRUE
+CPU: 900s soft / 1200s hard
+[SAVED] T22 / impact
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20261117215859
+**********************

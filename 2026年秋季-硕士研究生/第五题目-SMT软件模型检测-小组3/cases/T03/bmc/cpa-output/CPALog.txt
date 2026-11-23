@@ -1,0 +1,476 @@
+2026-11-17 06:54:52:122	INFO	ResourceLimitChecker.fromConfiguration	Using the following resource limits: CPU-time limit of 900s
+
+2026-11-17 06:54:52:138	INFO	CPAchecker.run	CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_452) started
+
+2026-11-17 06:54:52:723	INFO	CFACreationUtils.addEdgeToCFA	line 6940: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)p));
+
+2026-11-17 06:54:52:728	INFO	CFACreationUtils.addEdgeToCFA	line 6942: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)p));
+
+2026-11-17 06:54:52:729	INFO	CFACreationUtils.addEdgeToCFA	line 6947: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)p));
+
+2026-11-17 06:54:52:732	INFO	CFACreationUtils.addEdgeToCFA	line 6938: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:734	INFO	CFACreationUtils.addEdgeToCFA	line 6989: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu___0), "=d" (__val_gu___0): "0" ((int *)p));
+
+2026-11-17 06:54:52:735	INFO	CFACreationUtils.addEdgeToCFA	line 6991: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu___0), "=d" (__val_gu___0): "0" ((int *)p));
+
+2026-11-17 06:54:52:737	INFO	CFACreationUtils.addEdgeToCFA	line 6996: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu___0), "=d" (__val_gu___0): "0" ((int *)p));
+
+2026-11-17 06:54:52:739	INFO	CFACreationUtils.addEdgeToCFA	line 6987: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:52:741	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:744	INFO	CFACreationUtils.addEdgeToCFA	lines 7089-7090: Dead code detected: __asm__ volatile ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:746	INFO	CFACreationUtils.addEdgeToCFA	lines 7092-7093: Dead code detected: __asm__ volatile ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:747	INFO	CFACreationUtils.addEdgeToCFA	lines 7099-7100: Dead code detected: __asm__ volatile ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:748	INFO	CFACreationUtils.addEdgeToCFA	line 7087: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:750	INFO	CFACreationUtils.addEdgeToCFA	line 7126: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:751	INFO	CFACreationUtils.addEdgeToCFA	line 7128: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:753	INFO	CFACreationUtils.addEdgeToCFA	line 7133: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:755	INFO	CFACreationUtils.addEdgeToCFA	line 7124: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:52:757	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:761	INFO	CFACreationUtils.addEdgeToCFA	line 7242: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)optval));
+
+2026-11-17 06:54:52:763	INFO	CFACreationUtils.addEdgeToCFA	line 7244: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)optval));
+
+2026-11-17 06:54:52:765	INFO	CFACreationUtils.addEdgeToCFA	line 7249: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)optval));
+
+2026-11-17 06:54:52:767	INFO	CFACreationUtils.addEdgeToCFA	line 7240: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:769	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:771	INFO	CFACreationUtils.addEdgeToCFA	line 7306: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" (optlen));
+
+2026-11-17 06:54:52:773	INFO	CFACreationUtils.addEdgeToCFA	line 7308: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" (optlen));
+
+2026-11-17 06:54:52:775	INFO	CFACreationUtils.addEdgeToCFA	line 7313: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" (optlen));
+
+2026-11-17 06:54:52:776	INFO	CFACreationUtils.addEdgeToCFA	line 7304: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:778	INFO	CFACreationUtils.addEdgeToCFA	lines 7358-7359: Dead code detected: __asm__ volatile ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" (optval): "ebx");
+
+2026-11-17 06:54:52:785	INFO	CFACreationUtils.addEdgeToCFA	lines 7361-7362: Dead code detected: __asm__ volatile ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" (optval): "ebx");
+
+2026-11-17 06:54:52:787	INFO	CFACreationUtils.addEdgeToCFA	lines 7364-7365: Dead code detected: __asm__ volatile ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" (optval): "ebx");
+
+2026-11-17 06:54:52:789	INFO	CFACreationUtils.addEdgeToCFA	line 7352: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:52:791	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:797	INFO	CFACreationUtils.addEdgeToCFA	lines 7774-7775: Dead code detected: __asm__ volatile ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:800	INFO	CFACreationUtils.addEdgeToCFA	lines 7777-7778: Dead code detected: __asm__ volatile ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:802	INFO	CFACreationUtils.addEdgeToCFA	lines 7784-7785: Dead code detected: __asm__ volatile ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:804	INFO	CFACreationUtils.addEdgeToCFA	line 7772: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:805	INFO	CFACreationUtils.addEdgeToCFA	line 7811: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:808	INFO	CFACreationUtils.addEdgeToCFA	line 7813: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:809	INFO	CFACreationUtils.addEdgeToCFA	line 7818: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:810	INFO	CFACreationUtils.addEdgeToCFA	line 7809: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:52:812	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:833	INFO	CFACreationUtils.addEdgeToCFA	line 9195: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+
+2026-11-17 06:54:52:835	INFO	CFACreationUtils.addEdgeToCFA	line 9197: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+
+2026-11-17 06:54:52:837	INFO	CFACreationUtils.addEdgeToCFA	line 9199: Dead code detected: __asm__ ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+
+2026-11-17 06:54:52:839	INFO	CFACreationUtils.addEdgeToCFA	line 9193: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:841	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:845	INFO	CFACreationUtils.addEdgeToCFA	line 9280: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:847	INFO	CFACreationUtils.addEdgeToCFA	line 9287: Dead code detected: set->sig[1] = 0x0fffffffffffffffUL;
+
+2026-11-17 06:54:52:849	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:934	INFO	CFACreationUtils.addEdgeToCFA	lines 18156-18157: Dead code detected: __asm__ volatile ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val),
+                             "c" ((int *)buf): "ebx");
+
+2026-11-17 06:54:52:937	INFO	CFACreationUtils.addEdgeToCFA	lines 18159-18160: Dead code detected: __asm__ volatile ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val),
+                             "c" ((int *)buf): "ebx");
+
+2026-11-17 06:54:52:938	INFO	CFACreationUtils.addEdgeToCFA	lines 18166-18167: Dead code detected: __asm__ volatile ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val),
+                             "c" ((int *)buf): "ebx");
+
+2026-11-17 06:54:52:940	INFO	CFACreationUtils.addEdgeToCFA	line 18154: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:943	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:948	INFO	CFACreationUtils.addEdgeToCFA	line 18398: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:950	INFO	CFACreationUtils.addEdgeToCFA	line 18400: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:952	INFO	CFACreationUtils.addEdgeToCFA	line 18405: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" ((int *)arg));
+
+2026-11-17 06:54:52:953	INFO	CFACreationUtils.addEdgeToCFA	line 18396: Dead code detected: Goto: switch_default
+
+2026-11-17 06:54:52:956	INFO	CFACreationUtils.addEdgeToCFA	lines 18447-18448: Dead code detected: __asm__ volatile ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:958	INFO	CFACreationUtils.addEdgeToCFA	lines 18450-18451: Dead code detected: __asm__ volatile ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:960	INFO	CFACreationUtils.addEdgeToCFA	lines 18457-18458: Dead code detected: __asm__ volatile ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:962	INFO	CFACreationUtils.addEdgeToCFA	line 18445: Dead code detected: Goto: switch_default___0
+
+2026-11-17 06:54:52:963	INFO	CFACreationUtils.addEdgeToCFA	line 18484: Dead code detected: __asm__ volatile ("call __get_user_1": "=a" (__ret_gu___0), "=d" (__val_gu___0): "0" ((int *)arg));
+
+2026-11-17 06:54:52:965	INFO	CFACreationUtils.addEdgeToCFA	line 18486: Dead code detected: __asm__ volatile ("call __get_user_2": "=a" (__ret_gu___0), "=d" (__val_gu___0): "0" ((int *)arg));
+
+2026-11-17 06:54:52:966	INFO	CFACreationUtils.addEdgeToCFA	line 18491: Dead code detected: __asm__ volatile ("call __get_user_8": "=a" (__ret_gu___0), "=d" (__val_gu___0): "0" ((int *)arg));
+
+2026-11-17 06:54:52:968	INFO	CFACreationUtils.addEdgeToCFA	line 18482: Dead code detected: Goto: switch_default___1
+
+2026-11-17 06:54:52:970	INFO	CFACreationUtils.addEdgeToCFA	lines 18525-18526: Dead code detected: __asm__ volatile ("call __put_user_1": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:972	INFO	CFACreationUtils.addEdgeToCFA	lines 18528-18529: Dead code detected: __asm__ volatile ("call __put_user_2": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:974	INFO	CFACreationUtils.addEdgeToCFA	lines 18535-18536: Dead code detected: __asm__ volatile ("call __put_user_8": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                               "c" ((int *)arg): "ebx");
+
+2026-11-17 06:54:52:975	INFO	CFACreationUtils.addEdgeToCFA	line 18523: Dead code detected: Goto: switch_default___2
+
+2026-11-17 06:54:52:977	INFO	CFAFunctionBuilder.leave	Dead code detected: Label switch_default is not reachable.
+
+2026-11-17 06:54:52:980	WARNING	CFABuilder.createCFA	Inline assembler ignored, analysis is probably unsound!
+
+2026-11-17 06:54:53:065	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10877: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:068	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10871: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:069	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10844: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:070	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10640: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:072	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 11049: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:073	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10710: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:074	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10725: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:075	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10673: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:076	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10790: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:078	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10782: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:080	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10776: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:082	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10806: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:083	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10830: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:084	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10831: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:085	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 10824: Function pointer *(l1->dcb) with type dchannel_l1callback * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:087	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 8307: Function pointer *(iclock->ctl) with type clockctl_func_t * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:089	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 8273: Function pointer *(iclock->ctl) with type clockctl_func_t * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:090	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 8194: Function pointer *(bestclock->ctl) with type clockctl_func_t * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:091	WARNING	CFunctionPointerResolver.replaceFunctionPointerCall	line 8176: Function pointer *(lastclock->ctl) with type clockctl_func_t * is called, but no possible target functions were found.
+
+2026-11-17 06:54:53:677	WARNING	PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:54:53:692	INFO	PredicateCPA:PredicateCPA.<init>	Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit).
+
+2026-11-17 06:54:53:711	WARNING	AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:54:53:725	WARNING	ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>	MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions.
+
+2026-11-17 06:54:53:760	WARNING	CPAchecker.printConfigurationWarnings	The following configuration options were specified but are not used:
+ counterexample.checker.config 
+
+
+2026-11-17 06:54:53:762	INFO	CPAchecker.runAlgorithm	Starting analysis ...
+
+2026-11-17 06:54:53:880	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 06:54:54:099	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_initialize to be a constant function.
+
+2026-11-17 06:54:54:115	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __list_del_entry to be a pure function.
+
+2026-11-17 06:54:54:117	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __list_add to be a pure function.
+
+2026-11-17 06:54:54:120	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function _raw_spin_unlock_irqrestore to be a pure function.
+
+2026-11-17 06:54:54:122	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __wake_up to be a pure function.
+
+2026-11-17 06:54:54:131	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_lock_nested to be a pure function.
+
+2026-11-17 06:54:54:135	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function might_fault to be a constant function.
+
+2026-11-17 06:54:54:160	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function del_timer to be a pure function.
+
+2026-11-17 06:54:54:199	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function init_timer_key to be a pure function.
+
+2026-11-17 06:54:54:201	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function add_timer to be a pure function.
+
+2026-11-17 06:54:54:227	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function mutex_unlock to be a pure function.
+
+2026-11-17 06:54:54:251	WARNING	PredicateCPA:ExpressionToFormulaVisitor.visit	line 17889: Ignoring function call through function pointer *(p->qproc): (*(p->qproc))(filp, wait_address, p);
+
+2026-11-17 06:54:54:252	WARNING	PredicateCPA:CtoFormulaConverter.makeFunctionCall	line 17889: Ignoring parameters passed as varargs to function da_debug: da_debug(filp, wait_address, p)
+
+2026-11-17 06:54:54:255	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __builtin_va_start to be a pure function.
+
+2026-11-17 06:54:54:257	WARNING	PredicateCPA:ExpressionToFormulaVisitor.visit	Cannot get declaration of function __builtin_va_start, ignoring calls to it.
+
+2026-11-17 06:54:54:259	WARNING	PredicateCPA:CtoFormulaConverter.getReturnType	line 15436: Return type of function __builtin_va_end is void, but result is used as type int: __builtin_va_end(&va);
+
+2026-11-17 06:54:54:261	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __builtin_va_end to be a pure function.
+
+2026-11-17 06:54:54:264	WARNING	PredicateCPA:CtoFormulaConverter.makeFunctionCall	line 17889: Ignoring parameters passed as varargs to function l1m_debug: l1m_debug(filp, wait_address, p)
+
+2026-11-17 06:54:54:274	WARNING	PredicateCPA:CtoFormulaConverter.getReturnType	line 10613: Return type of function __builtin_va_end is void, but result is used as type int: __builtin_va_end(&va);
+
+2026-11-17 06:54:54:277	WARNING	PredicateCPA:CtoFormulaConverter.makeFunctionCall	line 17889: Ignoring parameters passed as varargs to function tei_debug: tei_debug(filp, wait_address, p)
+
+2026-11-17 06:54:54:282	WARNING	PredicateCPA:CtoFormulaConverter.getReturnType	line 15609: Return type of function __builtin_va_end is void, but result is used as type int: __builtin_va_end(&va);
+
+2026-11-17 06:54:54:286	WARNING	PredicateCPA:CtoFormulaConverter.makeFunctionCall	line 17889: Ignoring parameters passed as varargs to function l2m_debug: l2m_debug(filp, wait_address, p)
+
+2026-11-17 06:54:54:290	WARNING	PredicateCPA:CtoFormulaConverter.getReturnType	line 11211: Return type of function __builtin_va_end is void, but result is used as type int: __builtin_va_end(&va);
+
+2026-11-17 06:54:54:343	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __raw_spin_lock_init to be a pure function.
+
+2026-11-17 06:54:54:347	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function __init_waitqueue_head to be a pure function.
+
+2026-11-17 06:54:54:358	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function ldv_check_return_value to be a pure function.
+
+2026-11-17 06:54:54:381	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 06:54:54:630	INFO	AbstractBMCAlgorithm.checkBoundingAssertions	Starting assertions check...
+
+2026-11-17 06:55:01:193	INFO	BoundsCPA:BoundsCPA.adjustPrecision	Adjusting maxLoopIterations to 2
+
+2026-11-17 06:55:01:195	INFO	AbstractBMCAlgorithm.run	Creating formula for program
+
+2026-11-17 06:55:01:394	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function prepare_to_wait to be a pure function.
+
+2026-11-17 06:55:01:399	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function schedule to be a constant function.
+
+2026-11-17 06:55:01:405	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function finish_wait to be a pure function.
+
+2026-11-17 06:55:01:415	INFO	PredicateCPA:ExpressionToFormulaVisitor.visit	Assuming external function list_del to be a pure function.
+
+2026-11-17 06:55:01:535	INFO	AbstractBMCAlgorithm.boundedModelCheck	Starting satisfiability check...
+
+2026-11-17 06:55:15:335	INFO	BMCAlgorithm.analyzeCounterexample	Error found, creating error path
+
+2026-11-17 06:55:19:413	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:19:521	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5702 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:525	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5702 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:527	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5710 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:530	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5710 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:532	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5718 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:535	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5718 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:537	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5726 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:539	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4701787043381796673.i line 5726 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:760	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:19:762	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!)
+
+2026-11-17 06:55:19:765	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:19:868	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5702 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:870	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5702 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:873	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5710 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:874	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5710 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:876	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5718 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:878	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5718 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:19:880	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5726 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:19:883	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path7128603320773723108.i line 5726 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:121	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:20:124	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!)
+
+2026-11-17 06:55:20:126	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:20:215	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5702 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:216	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5702 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:217	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5710 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:219	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5710 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:220	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5718 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:221	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5718 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:223	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5726 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:224	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path2774607261594780686.i line 5726 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:463	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:20:465	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!)
+
+2026-11-17 06:55:20:466	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:20:552	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5702 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:553	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5702 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:554	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5710 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:555	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5710 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:555	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5718 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:556	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5718 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:557	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5726 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:558	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path4462830964200997516.i line 5726 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:790	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:20:792	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!)
+
+2026-11-17 06:55:20:793	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:20:895	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5720 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:897	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5720 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:898	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5728 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:899	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5728 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:900	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5736 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:901	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5736 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:20:902	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5744 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:20:904	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path311141972145501092.i line 5744 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:21:562	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:21:563	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!)
+
+2026-11-17 06:55:21:565	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:21:663	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5726 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:21:665	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5726 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:21:666	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5734 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:21:667	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5734 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:21:668	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5742 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:21:669	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5742 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:21:670	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5750 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:21:671	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path1549512076301364196.i line 5750 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:22:348	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:22:350	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!)
+
+2026-11-17 06:55:22:352	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:22:508	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found but identified as infeasible.
+
+2026-11-17 06:55:22:510	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:22:599	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5743 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:22:601	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5743 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:22:602	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5751 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:22:603	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5751 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:22:604	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5759 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:22:605	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5759 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:22:606	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5767 function poll_wait_14: warning: conversion from `struct file *' to `struct FsmInst *': incompatible pointer types
+
+2026-11-17 06:55:22:607	WARNING	ProcessExecutor.handleErrorOutput	/opt/cpachecker/lib/native/x86_64-linux/cbmc error output: file /tmp/path3384042764650359960.i line 5767 function poll_wait_14: warning: conversion from `struct __wait_queue_head *' to `char *': incompatible pointer types
+
+2026-11-17 06:55:23:242	WARNING	CBMCChecker.checkCounterexample	CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above!
+
+2026-11-17 06:55:23:245	WARNING	CBMCChecker.checkCounterexample	Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!)
+
+2026-11-17 06:55:23:247	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found, starting counterexample check with CBMC.
+
+2026-11-17 06:55:23:409	INFO	CounterexampleCheckAlgorithm.checkCounterexample	Error path found but identified as infeasible.
+
+2026-11-17 06:55:23:423	WARNING	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Infeasible counterexample found, but could not remove it from the ARG. Therefore, we cannot prove safety.
+
+2026-11-17 06:55:23:427	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:431	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:434	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:438	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:442	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:446	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:449	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:453	INFO	ExceptionHandlingAlgorithm.handleExceptionWithErrorPath	Another infeasible counterexample found which could not be removed from the ARG.
+
+2026-11-17 06:55:23:457	INFO	CPAchecker.runAlgorithm	Stopping analysis ...
+
+2026-11-17 06:55:23:461	WARNING	CPAchecker.analyzeResult	Analysis incomplete: no errors found, but not everything could be checked.
+

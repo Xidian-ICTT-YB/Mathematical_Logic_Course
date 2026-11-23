@@ -1,0 +1,198 @@
+﻿**********************
+Windows PowerShell 脚本开始
+开始时间: 20261116202016
+用户名: LEO\12392
+RunAs 用户: LEO\12392
+配置名称: 
+计算机: LEO (Microsoft Windows NT 10.0.26200.0)
+主机应用程序: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+进程 ID: 44700
+PSVersion: 5.1.26100.9818
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9818
+BuildVersion: 10.0.26100.9818
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+PS C:\Windows\system32> try {
+    # 1. 最后确认构建文件
+    $dockerfile = Join-Path $project "docker\Dockerfile.benchexec-xml"
+    $patch = Join-Path $project "docker\patch-benchexec-cgroupsv2.py"
+
+    if (-not (Test-Path $dockerfile) -or
+        -not (Test-Path $patch)) {
+        throw "Dockerfile 或补丁文件不存在"
+    }
+
+    # 2. 防止覆盖已有镜像标签
+    $existing = @(
+        docker image ls --format '{{.Repository}}:{{.Tag}}'
+    )
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "无法检查现有镜像"
+    }
+
+    if ($existing -contains $tag) {
+        throw "目标镜像标签已经存在，停止覆盖"
+    }
+
+    # 3. 构建新镜像
+    Write-Host "`n========== 开始构建修复版镜像 ==========" -ForegroundColor Cyan
+
+    $dockerExe = (Get-Command docker.exe).Source
+
+    $arguments = 'build --progress=plain -f "docker\Dockerfile.benchexec-xml" -t "' +
+        $tag + '" .'
+
+    $process = Start-Process `
+        -FilePath $dockerExe `
+        -ArgumentList $arguments `
+        -WorkingDirectory $project `
+        -NoNewWindow `
+        -Wait `
+        -PassThru `
+        -RedirectStandardOutput $stdout `
+        -RedirectStandardError $stderr
+
+    $buildExit = $process.ExitCode
+
+    $outText = [System.IO.File]::ReadAllText($stdout)
+    $errText = [System.IO.File]::ReadAllText($stderr)
+
+    Write-Host "`n========== 构建输出 ==========" -ForegroundColor Cyan
+    Write-Host $outText
+    Write-Host $errText
+
+    if ($buildExit -ne 0) {
+        throw "Docker 构建失败，退出码：$buildExit"
+    }
+
+    $allText = $outText + "`n" + $errText
+
+    if (-not $allText.Contains("PATCH_APPLIED") -or
+        -not $allText.Contains("NONE_HANDLING: VERIFIED")) {
+        throw "未找到补丁成功执行标记，不能认定构建成功"
+    }
+
+    # 4. 检查最终镜像
+    Write-Host "`n========== 检查新镜像 ==========" -ForegroundColor Cyan
+
+    $inspect = & $dockerExe image inspect $tag `
+        --format '{{.Id}}|{{.Created}}|{{.Size}}'
+
+    if ($LASTEXITCODE -ne 0) {
+        throw "新镜像检查失败"
+    }
+
+    $imageInfo = $inspect -join "`n"
+    Write-Host $imageInfo
+
+    # 5. 更新中文开发日志
+    $backup = "$journal.bak-build-$stamp"
+    Copy-Item $journal $backup
+
+    $now = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+
+    $entry = @"
+
+## $now - BenchExec cgroups v2 修复版镜像构建成功
+
+- 使用原基础镜像 m01-bench-cpa:smoke01。
+- 使用 BenchExec 3.26 专用兼容补丁。
+- Docker 构建退出码：$buildExit
+- 补丁执行标记：PATCH_APPLIED。
+- None 内存限制处理验证标记：NONE_HANDLING: VERIFIED。
+- 新镜像标签：$tag
+- 镜像信息：$imageInfo
+- Dockerfile：docker/Dockerfile.benchexec-xml
+- Python 补丁：docker/patch-benchexec-cgroupsv2.py
+- 构建标准输出：logs/$(Split-Path $stdout -Leaf)
+- 构建标准错误：logs/$(Split-Path $stderr -Leaf)
+- 完整操作记录：logs/$(Split-Path $transcript -Leaf)
+- 开发日志修改前备份：docs/$(Split-Path $backup -Leaf)
+- 本次没有运行 CPAchecker 或 BenchExec 实验。
+"@
+
+    $oldText = [System.IO.File]::ReadAllText($journal)
+    $newText = $oldText.TrimEnd() + "`r`n`r`n" + $entry.Trim() + "`r`n"
+
+    $utf8Bom = [System.Text.UTF8Encoding]::new($true)
+
+    [System.IO.File]::WriteAllText(
+        $journal, $newText, $utf8Bom
+    )
+
+    Write-Host "`n========== 构建成功 ==========" -ForegroundColor Green
+    Write-Host "镜像：$tag"
+    Write-Host "开发日志已更新。"
+    Write-Host "备份：$backup"
+}
+finally {
+    Stop-Transcript | Out-Null
+}
+
+========== 开始构建修复版镜像 ==========
+
+========== 构建输出 ==========
+
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.benchexec-xml
+#1 transferring dockerfile: 324B 0.0s done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/m01-bench-cpa:smoke01
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 118B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/m01-bench-cpa:smoke01@sha256:0b0d30f25b379bf93c1f7d703b2d01e186c10695a9f7c616233eeb24b6cfca0e
+#4 resolve docker.io/library/m01-bench-cpa:smoke01@sha256:0b0d30f25b379bf93c1f7d703b2d01e186c10695a9f7c616233eeb24b6cfca0e 0.0s done
+#4 CACHED
+
+#5 [internal] load build context
+#5 transferring context: 1.24kB done
+#5 DONE 0.0s
+
+#6 [2/5] COPY docker/patch-benchexec-cgroupsv2.py /tmp/patch-benchexec-cgroupsv2.py
+#6 DONE 0.0s
+
+#7 [3/5] RUN python3 /tmp/patch-benchexec-cgroupsv2.py && rm /tmp/patch-benchexec-cgroupsv2.py
+#7 0.243 PATCH_APPLIED
+#7 0.243 BENCH_EXEC_VERSION: 3.26
+#7 0.243 PATCHED_SOURCE: /usr/local/lib/python3.8/dist-packages/benchexec/cgroupsv2.py
+#7 0.243 NONE_HANDLING: VERIFIED
+#7 DONE 0.3s
+
+#8 [4/5] RUN chmod 755 /opt/cpachecker/scripts/cpa.sh
+#8 DONE 0.1s
+
+#9 [5/5] WORKDIR /opt/cpachecker
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.1s done
+#10 exporting manifest sha256:3a11842e237142064f9b34bede60748da25234467aa48a37979e5aa1599e8a3a done
+#10 exporting config sha256:fc0a9ffcf20203edc293a25bff236e1b2502780e3ced2c16f2743e4e46d22ded done
+#10 exporting attestation manifest sha256:b0144e662731813d2cdcabcff775c786eb7c58be6a78b05e4d748709284f61c9 done
+#10 exporting manifest list sha256:88e2fae14ebf3d04612d2bd2e6fc9106931029ec6f038e4b1db9abf9e46ecf47 done
+#10 naming to docker.io/library/m01-bench-cpa:xml-smoke-cgroupfix done
+#10 unpacking to docker.io/library/m01-bench-cpa:xml-smoke-cgroupfix 0.0s done
+#10 DONE 0.2s
+
+========== 检查新镜像 ==========
+sha256:88e2fae14ebf3d04612d2bd2e6fc9106931029ec6f038e4b1db9abf9e46ecf47|2026-11-16T12:20:18.120939403Z|828064384
+
+========== 构建成功 ==========
+镜像：m01-bench-cpa:xml-smoke-cgroupfix
+开发日志已更新。
+备份：C:\Users\12392\Documents\math-logic-CPAchecker-M01\docs\development-journal.md.bak-build-20261116-202016
+**********************
+Windows PowerShell 脚本结束
+结束时间: 20261116202019
+**********************

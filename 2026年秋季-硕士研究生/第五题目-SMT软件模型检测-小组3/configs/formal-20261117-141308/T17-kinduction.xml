@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<benchmark tool="cpachecker" timelimit="900s" hardtimelimit="1200s" memlimit="6000 MB" cpuCores="2" threads="1">
+  <resultfiles>/home/benchexec/cpa-output/**</resultfiles>
+  <propertyfile>../../tasks/SVCOMP16_DeviceDrivers64_任务包/unreach-call.prp</propertyfile>
+  <tasks name="single-case">
+    <include>../../tasks/SVCOMP16_DeviceDrivers64_任务包/任务文件/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c</include>
+  </tasks>
+  <rundefinition name="kinduction">
+    <option name="-heap">4000M</option>
+    <option name="-sv-comp16--k-induction" />
+    <option name="-setprop">limits.time.cpu.thread=10000s</option>
+    <option name="-setprop">output.disable=false</option>
+    <option name="-outputpath">/home/benchexec/cpa-output</option>
+    <option name="-64" />
+  </rundefinition>
+</benchmark>

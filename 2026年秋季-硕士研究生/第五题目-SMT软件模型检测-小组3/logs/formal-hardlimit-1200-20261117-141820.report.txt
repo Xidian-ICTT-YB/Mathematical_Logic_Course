@@ -1,0 +1,11 @@
+﻿批次：formal-20261117-141308
+修改：CPU hardtimelimit 960s -> 1200s
+CPU timelimit：900s（不变）
+内存：6000 MB（不变）
+Heap：4000M（不变）
+CPU：2（不变）
+Threads：1（不变）
+XML更新数量：92
+runs.csv SHA256更新：88
+备份：C:\Users\12392\Documents\math-logic-CPAchecker-M01\logs\formal-hardlimit-backup-20261117-141820
+结果：SUCCESS
