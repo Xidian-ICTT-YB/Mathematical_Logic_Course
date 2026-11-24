@@ -1,4 +1,0 @@
-# 保留证据文件的原始字节，确保 Git 检出后仍能按清单校验。
-evidence/** -text -filter
-*.pptx binary -filter
-*.mp4 binary -filter
