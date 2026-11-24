@@ -1,0 +1,107 @@
+[
+  {
+    "case": "tpm_bios_measurements_ops",
+    "exitCode": 0,
+    "result": [
+      "sat"
+    ],
+    "command": [
+      "wsl.exe",
+      "-d",
+      "DrvHorn-Ubuntu22.04",
+      "-u",
+      "drvhorn",
+      "--exec",
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--mount",
+      "type=bind,source=<实验项目目录>/实验分析/ir/tpm_bios_measurements_ops,target=/analysis",
+      "joehattori/drvhorn@sha256:536168e391d7c08c8247276dafc4a518ac68a1a5fcea44068f5c03b5b345f80c",
+      "/drvhorn/build/run/bin/seahorn",
+      "--keep-shadows=true",
+      "--sea-dsa=ci",
+      "--horn-solve",
+      "-oll",
+      "/analysis/solver.final.ll",
+      "-horn-inter-proc",
+      "-horn-sem-lvl=mem",
+      "--horn-step=large",
+      "-o",
+      "/analysis/solver.smt2",
+      "/analysis/tmp/simple_kernel.pp.ms.ul.o.bc"
+    ]
+  },
+  {
+    "case": "ged_driver",
+    "exitCode": 0,
+    "result": [
+      "unsat"
+    ],
+    "command": [
+      "wsl.exe",
+      "-d",
+      "DrvHorn-Ubuntu22.04",
+      "-u",
+      "drvhorn",
+      "--exec",
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--mount",
+      "type=bind,source=<实验项目目录>/实验分析/ir/ged_driver,target=/analysis",
+      "joehattori/drvhorn@sha256:536168e391d7c08c8247276dafc4a518ac68a1a5fcea44068f5c03b5b345f80c",
+      "/drvhorn/build/run/bin/seahorn",
+      "--keep-shadows=true",
+      "--sea-dsa=ci",
+      "--horn-solve",
+      "-oll",
+      "/analysis/solver.final.ll",
+      "-horn-inter-proc",
+      "-horn-sem-lvl=mem",
+      "--horn-step=large",
+      "-o",
+      "/analysis/solver.smt2",
+      "/analysis/tmp/simple_kernel.pp.ms.ul.o.bc"
+    ]
+  },
+  {
+    "case": "acpi_wmi_driver",
+    "exitCode": 0,
+    "result": [
+      "sat"
+    ],
+    "command": [
+      "wsl.exe",
+      "-d",
+      "DrvHorn-Ubuntu22.04",
+      "-u",
+      "drvhorn",
+      "--exec",
+      "docker",
+      "run",
+      "--rm",
+      "--network",
+      "none",
+      "--mount",
+      "type=bind,source=<实验项目目录>/实验分析/ir/acpi_wmi_driver,target=/analysis",
+      "joehattori/drvhorn@sha256:536168e391d7c08c8247276dafc4a518ac68a1a5fcea44068f5c03b5b345f80c",
+      "/drvhorn/build/run/bin/seahorn",
+      "--keep-shadows=true",
+      "--sea-dsa=ci",
+      "--horn-solve",
+      "-oll",
+      "/analysis/solver.final.ll",
+      "-horn-inter-proc",
+      "-horn-sem-lvl=mem",
+      "--horn-step=large",
+      "-o",
+      "/analysis/solver.smt2",
+      "/analysis/tmp/simple_kernel.pp.ms.ul.o.bc"
+    ]
+  }
+]

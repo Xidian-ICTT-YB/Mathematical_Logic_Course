@@ -1,0 +1,7 @@
+/drvhorn/build/run/bin/seapp -o /analysis/tmp/simple_kernel.pp.bc --simplifycfg-sink-common=false --kernel --kernel-out-dir=/analysis/outpp --kernel-out-ll=/analysis/instrumented.ll --platform-driver=ged_driver --strip-extern=false --promote-assumptions=false --kill-vaarg=true --ignore-def-verifier-fn=false --horn-keep-arith-overflow=false --promote-nondet-undef=true --horn-replace-loops-with-nd-funcs=false /drvhorn/simple_kernel.bc
+/drvhorn/build/run/bin/seapp --simplifycfg-sink-common=false -o /analysis/tmp/simple_kernel.pp.ms.bc --horn-mixed-sem --ms-reduce-main /analysis/tmp/simple_kernel.pp.bc
+/drvhorn/build/run/bin/seaopt -f -o /analysis/tmp/simple_kernel.pp.ms.ul.bc -loop-simplify -fake-latch-exit -sea-loop-unroll /analysis/tmp/simple_kernel.pp.ms.bc
+/drvhorn/build/run/bin/seaopt -f --simplifycfg-sink-common=false -o /analysis/tmp/simple_kernel.pp.ms.ul.o.bc -O3 --seaopt-enable-indvar=false --seaopt-enable-loop-idiom=false --unroll-threshold=150 --unroll-allow-partial=false --unroll-partial-threshold=0 --vectorize-slp=false /analysis/tmp/simple_kernel.pp.ms.ul.bc
+/drvhorn/build/run/bin/seahorn --keep-shadows=true --sea-dsa=ci --horn-solve --horn-answer -horn-inter-proc -horn-sem-lvl=mem --horn-step=large /analysis/tmp/simple_kernel.pp.ms.ul.o.bc
+unsat
+Function: main

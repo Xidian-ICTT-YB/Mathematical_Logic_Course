@@ -1,0 +1,4 @@
+﻿案例,分析对象,作者标签,本机首次输出,案例判断,首次运行退出码,首次整次运行耗时（秒）,本机重求解输出,首次标准输出文件,首次错误日志,源码文件,实际查询文件,重求解输出文件
+TPM,tpm_bios_measurements_ops,sat,sat,真实缺陷,0,12.321,sat,experiment-results/20261019-152023/tpm_bios_measurements_ops.stdout.txt,experiment-results/20261019-152023/tpm_bios_measurements_ops.stderr.txt,实验分析/源码/tpm-common.c,实验分析/ir/tpm_bios_measurements_ops/solver.smt2,实验分析/ir/tpm_bios_measurements_ops/solver.stdout.txt
+GED,ged_driver,unsat,unsat,未报告缺陷,0,11.923,unsat,experiment-results/20261019-152023/ged_driver.stdout.txt,experiment-results/20261019-152023/ged_driver.stderr.txt,实验分析/源码/evged.c,实验分析/ir/ged_driver/solver.smt2,实验分析/ir/ged_driver/solver.stdout.txt
+WMI,acpi_wmi_driver,unsat,sat,已知误报,0,12.123,sat,experiment-results/20261019-152023/acpi_wmi_driver.stdout.txt,experiment-results/20261019-152023/acpi_wmi_driver.stderr.txt,实验分析/源码/wmi.c,实验分析/ir/acpi_wmi_driver/solver.smt2,实验分析/ir/acpi_wmi_driver/solver.stdout.txt

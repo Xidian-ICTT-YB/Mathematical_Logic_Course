@@ -1,0 +1,25 @@
+wsl: 检测到 localhost 代理配置，但未镜像到 WSL。NAT 模式下的 WSL 不支持 localhost 代理。
+parsed the module
+TODO: kmem_cache_alloc: global variable not found
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: kmem_cache_alloc: global variable not found
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+TODO: getKmemCacheSize: unhandled function
+else @kmem_cache_init.boot_kmem_cache_node = internal global %struct.kmem_cache.2042 zeroinitializer, section ".init.data", align 8
+Total number of inline asm instructions: 0
+Module verification Ok
+parsed the module
+WARNING: no assertion was found so either program does not have assertions or frontend discharged them.

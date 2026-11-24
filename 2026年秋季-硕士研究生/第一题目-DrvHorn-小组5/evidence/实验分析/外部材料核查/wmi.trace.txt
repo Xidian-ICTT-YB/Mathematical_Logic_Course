@@ -1,0 +1,1800 @@
+WARNING: initializing DSA node due to memset()
+WARNING: initializing DSA node due to memset()
+WARNING: initializing DSA node due to memset()
+WARNING: initializing DSA node due to memset()
+TRACE BEGIN
+_54 C
+.preheader C
+acpi_wmi_probe.exit.i.split.split C
+TRACE END
+WARNING: initializing DSA node due to memset()
+BMC: sat
+Validated CEX by BMC engine.
+Begin trace 
+entry: 
+  %sm296 = call i32 @shadow.mem.arg.init(i32 2, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm296 const-array(INT, 0)
+  %sm297 const-array(INT, 0)
+  %sm298 main@%sm298_0
+  %sm299 main@%sm299_0
+  %sm300 const-array(INT, 20)
+  %sm301 const-array(INT, 3)
+  %sm302 const-array(INT, 0)
+  %sm303 = call i32 @shadow.mem.arg.init(i32 0, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm303 const-array(INT, 0)
+  %sm304 = call i32 @shadow.mem.arg.init(i32 1, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm304 const-array(INT, 0)
+  %sm305 = call i32 @shadow.mem.arg.init(i32 954, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm305 const-array(INT, 0)
+  %sm156 = call i32 @shadow.mem.global.init(i32 0, i32 %sm303, i8* getelementptr inbounds ([11 x i8], [11 x i8]* @.str.32.11154, i32 0, i32 0)), !shadow.mem !12, !shadow.mem.def !2
+  %sm156 const-array(INT, 0)
+  %sm157 = call i32 @shadow.mem.global.init(i32 1, i32 %sm304, i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.63.11146, i32 0, i32 0)), !shadow.mem !12, !shadow.mem.def !3
+  %sm157 const-array(INT, 0)
+  %sm158 = call i32 @shadow.mem.global.init(i32 2, i32 %sm296, i8* bitcast ([256 x %custom.7]* @drvhorn.storage.custom.7 to i8*)), !shadow.mem !12, !shadow.mem.def !4
+  %sm158 const-array(INT, 0)
+  %sm159 = call i32 @shadow.mem.global.init(i32 2, i32 %sm158, i8* bitcast (%struct.list_head* @wmi_block_list to i8*)), !shadow.mem !12, !shadow.mem.def !0
+  %sm159 const-array(INT, 0)
+  %sm160 = call i32 @shadow.mem.global.init(i32 954, i32 %sm305, i8* bitcast (%struct.class.22961* @wmi_bus_class to i8*)), !shadow.mem !12, !shadow.mem.def !1
+  %sm160 const-array(INT, 0)
+  %sm161 = call i32 @shadow.mem.store(i32 2, i32 %sm159, i8* null), !shadow.mem !12, !shadow.mem.def !0
+  %sm161 main@%sm161_0
+  store %struct.list_head { %struct.list_head* @wmi_block_list, %struct.list_head* @wmi_block_list }, %struct.list_head* @wmi_block_list, align 8
+  % main@  store %struct.list_head { %struct.list_head* @wmi_block_list, %struct.list_head* @wmi_block_list }, %struct.list_head* @wmi_block_list, align 8
+  %sm162 = call i32 @shadow.mem.store(i32 954, i32 %sm160, i8* null), !shadow.mem !12, !shadow.mem.def !1
+  %sm162 main@%sm162_0
+  store %struct.class.22961 { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.63.11146, i32 0, i32 0), %struct.attribute_group.22941** null, %struct.attribute_group.22941** null, i32 (%struct.device.22962*, %struct.kobj_uevent_env*)* null, i8* (%struct.device.22962*, i16*)* null, void (%struct.class.22961*)* null, void (%struct.device.22962*)* null, i32 (%struct.device.22962*)* null, %struct.kobj_ns_type_operations.8256* null, i8* (%struct.device.22962*)* null, void (%struct.device.22962*, %struct.atomic_t*, %struct.atomic_t*)* null, %struct.dev_pm_ops.22951* null }, %struct.class.22961* @wmi_bus_class, align 8
+  % main@  store %struct.class.22961 { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.63.11146, i32 0, i32 0), %struct.attribute_group.22941** null, %struct.attribute_group.22941** null, i32 (%struct.device.22962*, %struct.kobj_uevent_env*)* null, i8* (%struct.device.22962*, i16*)* null, void (%struct.class.22961*)* null, void (%struct.device.22962*)* null, i32 (%struct.device.22962*)* null, %struct.kobj_ns_type_operations.8256* null, i8* (%struct.device.22962*)* null, void (%struct.device.22962*, %struct.atomic_t*, %struct.atomic_t*)* null, %struct.dev_pm_ops.22951* null }, %struct.class.22961* @wmi_bus_class, align 8
+  %sm144 main@%sm144_0
+  %sm145 main@%sm145_0
+  %sm146 main@%sm146_0
+  %sm147 = call i32 @shadow.mem.arg.init(i32 2, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm147 const-array(INT, 0)
+  %sm148 main@%sm148_0
+  %sm149 = call i32 @shadow.mem.arg.init(i32 954, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm149 const-array(INT, 0)
+  %sm150 main@%sm150_0
+  %sm151 = call i32 @shadow.mem.arg.init(i32 0, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm151 const-array(INT, 0)
+  %sm152 = call i32 @shadow.mem.arg.init(i32 1, i8* null), !shadow.mem !12, !shadow.mem.def !12
+  %sm152 const-array(INT, 0)
+  %sm153 main@%sm153_0
+  %sm154 main@%sm154_0
+  %sm155 main@%sm155_0
+  %_0314 = getelementptr inbounds [11 x i8], [11 x i8]* @.str.32.11154, i32 0, i32 0
+  %sm = call i32 @shadow.mem.global.init(i32 0, i32 %sm151, i8* %_0314), !shadow.mem !12, !shadow.mem.def !2
+  %sm const-array(INT, 0)
+  %_1315 = getelementptr inbounds [8 x i8], [8 x i8]* @.str.63.11146, i32 0, i32 0
+  %sm1 = call i32 @shadow.mem.global.init(i32 1, i32 %sm152, i8* %_1315), !shadow.mem !12, !shadow.mem.def !3
+  %sm1 const-array(INT, 0)
+  %_2316 = bitcast [256 x %custom.7]* @drvhorn.storage.custom.7 to i8*
+  %sm2 = call i32 @shadow.mem.global.init(i32 2, i32 %sm147, i8* %_2316), !shadow.mem !12, !shadow.mem.def !4
+  %sm2 const-array(INT, 0)
+  %_3317 = bitcast %struct.list_head* @wmi_block_list to i8*
+  %sm3 = call i32 @shadow.mem.global.init(i32 2, i32 %sm2, i8* %_3317), !shadow.mem !12, !shadow.mem.def !0
+  %sm3 const-array(INT, 0)
+  %_4318 = bitcast %struct.class.22961* @wmi_bus_class to i8*
+  %sm4 = call i32 @shadow.mem.global.init(i32 954, i32 %sm149, i8* %_4318), !shadow.mem !12, !shadow.mem.def !1
+  %sm4 const-array(INT, 0)
+  %loop.bound = call i64 @verifier.nondet.sym.bound()
+  %loop.bound 256
+  %_0 = icmp eq i64 %loop.bound, 256
+  %_0 true
+  call void @verifier.assume(i1 %_0)
+  %sm5 = call i32 @shadow.mem.store(i32 2, i32 %sm3, i8* null), !shadow.mem !12, !shadow.mem.def !0
+  %sm5 main@%sm5_0
+  %sm163 = call i32 @shadow.mem.store(i32 2, i32 %sm161, i8* null), !shadow.mem !12, !shadow.mem.def !0
+  %sm163 store(const-array(INT, 51), 913, -1)
+  store %struct.list_head { %struct.list_head* @wmi_block_list, %struct.list_head* @wmi_block_list }, %struct.list_head* @wmi_block_list, align 8
+  % main@  store %struct.list_head { %struct.list_head* @wmi_block_list, %struct.list_head* @wmi_block_list }, %struct.list_head* @wmi_block_list, align 8
+  %sm6 = call i32 @shadow.mem.store(i32 954, i32 %sm4, i8* null), !shadow.mem !12, !shadow.mem.def !1
+  %sm6 main@%sm6_0
+  %sm164 = call i32 @shadow.mem.store(i32 954, i32 %sm162, i8* null), !shadow.mem !12, !shadow.mem.def !1
+  %sm164 const-array(INT, 0)
+  store %struct.class.22961 { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.63.11146, i32 0, i32 0), %struct.attribute_group.22941** null, %struct.attribute_group.22941** null, i32 (%struct.device.22962*, %struct.kobj_uevent_env*)* null, i8* (%struct.device.22962*, i16*)* null, void (%struct.class.22961*)* null, void (%struct.device.22962*)* null, i32 (%struct.device.22962*)* null, %struct.kobj_ns_type_operations.8256* null, i8* (%struct.device.22962*)* null, void (%struct.device.22962*, %struct.atomic_t*, %struct.atomic_t*)* null, %struct.dev_pm_ops.22951* null }, %struct.class.22961* @wmi_bus_class, align 8
+  % main@  store %struct.class.22961 { i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.63.11146, i32 0, i32 0), %struct.attribute_group.22941** null, %struct.attribute_group.22941** null, i32 (%struct.device.22962*, %struct.kobj_uevent_env*)* null, i8* (%struct.device.22962*, i16*)* null, void (%struct.class.22961*)* null, void (%struct.device.22962*)* null, i32 (%struct.device.22962*)* null, %struct.kobj_ns_type_operations.8256* null, i8* (%struct.device.22962*)* null, void (%struct.device.22962*, %struct.atomic_t*, %struct.atomic_t*)* null, %struct.dev_pm_ops.22951* null }, %struct.class.22961* @wmi_bus_class, align 8
+  call void @shadow.mem.load(i32 1050, i32 %sm155, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %sm7 = call i32 @shadow.mem.store(i32 1050, i32 %sm155, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm7 main@%sm7_0
+  call void @shadow.mem.load(i32 1058, i32 %sm150, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %sm8 = call i32 @shadow.mem.store(i32 1058, i32 %sm150, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm8 main@%sm8_0
+  call void @shadow.mem.load(i32 1066, i32 %sm144, i8* null), !shadow.mem !12, !shadow.mem.use !13
+  call void @shadow.mem.load(i32 1050, i32 %sm297, i8* null), !shadow.mem !12, !shadow.mem.use !13
+  %_1 = alloca %struct.platform_device.22967, align 8, !sea.dsa.allocsite !13
+  %_1 1
+  call void @shadow.mem.load(i32 1898, i32 %sm145, i8* null), !shadow.mem !12, !shadow.mem.use !14
+  call void @shadow.mem.load(i32 1882, i32 %sm298, i8* null), !shadow.mem !12, !shadow.mem.use !14
+  %_2 = alloca [4096 x i8], align 1, !sea.dsa.allocsite !14
+  %_2 1
+  call void @shadow.mem.load(i32 1899, i32 %sm146, i8* null), !shadow.mem !12, !shadow.mem.use !15
+  call void @shadow.mem.load(i32 1883, i32 %sm299, i8* null), !shadow.mem !12, !shadow.mem.use !15
+  %_3 = alloca %struct.device_node.493, align 8, !sea.dsa.allocsite !15
+  %_3 1
+  %_4 = bitcast %struct.platform_device.22967* %_1 to i8*
+  %_4 1
+  call void @llvm.lifetime.start.p0i8(i64 832, i8* nonnull %_4)
+  %_5 = getelementptr inbounds [4096 x i8], [4096 x i8]* %_2, i64 0, i64 0
+  %_5 1
+  call void @llvm.lifetime.start.p0i8(i64 4096, i8* nonnull %_5)
+  %_6 = bitcast %struct.device_node.493* %_3 to i8*
+  %_6 1
+  call void @llvm.lifetime.start.p0i8(i64 216, i8* nonnull %_6)
+  %_7 = getelementptr inbounds %struct.list_head, %struct.list_head* @wmi_block_list, i64 0, i32 0
+  %_7 761
+  %sm9 = call i32 @shadow.mem.store(i32 2, i32 %sm5, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm9 main@%sm9_0
+  %sm165 = call i32 @shadow.mem.store(i32 2, i32 %sm163, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm165 store(store(const-array(INT, 51), 913, -1), 761, 761)
+  store %struct.list_head* @wmi_block_list, %struct.list_head** %_7, align 8
+  % main@  store %struct.list_head* @wmi_block_list, %struct.list_head** %_7, align 8
+  %_8 = getelementptr inbounds %struct.list_head, %struct.list_head* @wmi_block_list, i64 0, i32 1
+  %_8 769
+  %sm10 = call i32 @shadow.mem.store(i32 2, i32 %sm9, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm10 store(const-array(INT, 21), 0, 23)
+  %sm166 = call i32 @shadow.mem.store(i32 2, i32 %sm165, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm166 store(store(store(const-array(INT, 51), 913, -1), 761, 761), 769, 761)
+  store %struct.list_head* @wmi_block_list, %struct.list_head** %_8, align 8
+  % main@  store %struct.list_head* @wmi_block_list, %struct.list_head** %_8, align 8
+  %_9 = getelementptr inbounds [8 x i8], [8 x i8]* @.str.63.11146, i64 0, i64 0
+  %_9 0
+  %_10 = getelementptr inbounds %struct.class.22961, %struct.class.22961* @wmi_bus_class, i64 0, i32 0
+  %_10 0
+  %sm11 = call i32 @shadow.mem.store(i32 954, i32 %sm6, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm11 main@%sm11_0
+  %sm167 = call i32 @shadow.mem.store(i32 954, i32 %sm164, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm167 const-array(INT, 0)
+  store i8* %_9, i8** %_10, align 8
+  % main@  store i8* %_9, i8** %_10, align 8
+  %_11 = getelementptr inbounds %struct.class.22961, %struct.class.22961* @wmi_bus_class, i64 0, i32 1
+  %_11 8
+  %_12 = bitcast %struct.attribute_group.22941*** %_11 to i8*
+  %_12 8
+  %sm12 = call i32 @shadow.mem.store(i32 954, i32 %sm11, i8* null), !shadow.mem !12, !shadow.mem.def !16
+  %sm12 main@%sm12_0
+  %sm168 = call i32 @shadow.mem.store(i32 954, i32 %sm167, i8* null), !shadow.mem !12, !shadow.mem.def !16
+  %sm168 const-array(INT, 0)
+  call void @llvm.memset.p0i8.i64(i8* noundef align 8 dereferenceable(88) %_12, i8 0, i64 88, i1 false)
+  %sm13 = call i32 @shadow.mem.store(i32 1050, i32 %sm7, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm13 const-array(INT, 0)
+  %sm14 = call i32 @shadow.mem.store(i32 1058, i32 %sm8, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm14 const-array(INT, 0)
+  %_13 = tail call %struct.platform_device.22967 @verifier.nondet.2()
+  %.fca.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 0
+  %.fca.0.extract.i 0
+  %.fca.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 0
+  %.fca.0.gep.i 1
+  %sm15 = call i32 @shadow.mem.store(i32 1066, i32 %sm144, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm15 main@%sm15_0
+  %sm169 = call i32 @shadow.mem.store(i32 1050, i32 %sm297, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm169 const-array(INT, 0)
+  store i8* %.fca.0.extract.i, i8** %.fca.0.gep.i, align 8
+  % main@  store i8* %.fca.0.extract.i, i8** %.fca.0.gep.i, align 8
+  %.fca.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 1
+  %.fca.1.extract.i 0
+  %.fca.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 1
+  %.fca.1.gep.i 9
+  %sm16 = call i32 @shadow.mem.store(i32 1066, i32 %sm15, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm16 main@%sm16_0
+  %sm170 = call i32 @shadow.mem.store(i32 1050, i32 %sm169, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm170 const-array(INT, 0)
+  store i32 %.fca.1.extract.i, i32* %.fca.1.gep.i, align 8
+  % main@  store i32 %.fca.1.extract.i, i32* %.fca.1.gep.i, align 8
+  %.fca.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 2
+  %.fca.2.extract.i 0
+  %.fca.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 2
+  %.fca.2.gep.i 13
+  %sm17 = call i32 @shadow.mem.store(i32 1066, i32 %sm16, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm17 main@%sm17_0
+  %sm171 = call i32 @shadow.mem.store(i32 1050, i32 %sm170, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm171 const-array(INT, 0)
+  store i8 %.fca.2.extract.i, i8* %.fca.2.gep.i, align 4
+  % main@  store i8 %.fca.2.extract.i, i8* %.fca.2.gep.i, align 4
+  %.fca.3.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 0
+  %.fca.3.0.0.extract.i 0
+  %.fca.3.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 0
+  %.fca.3.0.0.gep.i 17
+  %sm18 = call i32 @shadow.mem.store(i32 1066, i32 %sm17, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm18 main@%sm18_0
+  %sm172 = call i32 @shadow.mem.store(i32 1050, i32 %sm171, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm172 const-array(INT, 0)
+  store i8* %.fca.3.0.0.extract.i, i8** %.fca.3.0.0.gep.i, align 8
+  % main@  store i8* %.fca.3.0.0.extract.i, i8** %.fca.3.0.0.gep.i, align 8
+  %.fca.3.0.1.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 1, 0
+  %.fca.3.0.1.0.extract.i 0
+  %.fca.3.0.1.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 1, i32 0
+  %.fca.3.0.1.0.gep.i 25
+  %sm19 = call i32 @shadow.mem.store(i32 1066, i32 %sm18, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm19 main@%sm19_0
+  %sm173 = call i32 @shadow.mem.store(i32 1050, i32 %sm172, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm173 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.0.1.0.extract.i, %struct.list_head** %.fca.3.0.1.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.0.1.0.extract.i, %struct.list_head** %.fca.3.0.1.0.gep.i, align 8
+  %.fca.3.0.1.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 1, 1
+  %.fca.3.0.1.1.extract.i 0
+  %.fca.3.0.1.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 1, i32 1
+  %.fca.3.0.1.1.gep.i 33
+  %sm20 = call i32 @shadow.mem.store(i32 1066, i32 %sm19, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm20 main@%sm20_0
+  %sm174 = call i32 @shadow.mem.store(i32 1050, i32 %sm173, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm174 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.0.1.1.extract.i, %struct.list_head** %.fca.3.0.1.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.0.1.1.extract.i, %struct.list_head** %.fca.3.0.1.1.gep.i, align 8
+  %.fca.3.0.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 2
+  %.fca.3.0.2.extract.i 0
+  %.fca.3.0.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 2
+  %.fca.3.0.2.gep.i 41
+  %sm21 = call i32 @shadow.mem.store(i32 1066, i32 %sm20, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm21 main@%sm21_0
+  %sm175 = call i32 @shadow.mem.store(i32 1050, i32 %sm174, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm175 const-array(INT, 0)
+  store %struct.kobject.22943* %.fca.3.0.2.extract.i, %struct.kobject.22943** %.fca.3.0.2.gep.i, align 8
+  % main@  store %struct.kobject.22943* %.fca.3.0.2.extract.i, %struct.kobject.22943** %.fca.3.0.2.gep.i, align 8
+  %.fca.3.0.3.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 3
+  %.fca.3.0.3.extract.i 0
+  %.fca.3.0.3.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 3
+  %.fca.3.0.3.gep.i 49
+  %sm22 = call i32 @shadow.mem.store(i32 1066, i32 %sm21, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm22 main@%sm22_0
+  %sm176 = call i32 @shadow.mem.store(i32 1050, i32 %sm175, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm176 const-array(INT, 0)
+  store %struct.kset.22594* %.fca.3.0.3.extract.i, %struct.kset.22594** %.fca.3.0.3.gep.i, align 8
+  % main@  store %struct.kset.22594* %.fca.3.0.3.extract.i, %struct.kset.22594** %.fca.3.0.3.gep.i, align 8
+  %.fca.3.0.4.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 4
+  %.fca.3.0.4.extract.i 0
+  %.fca.3.0.4.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 4
+  %.fca.3.0.4.gep.i 57
+  %sm23 = call i32 @shadow.mem.store(i32 1066, i32 %sm22, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm23 main@%sm23_0
+  %sm177 = call i32 @shadow.mem.store(i32 1050, i32 %sm176, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm177 const-array(INT, 0)
+  store %struct.kobj_type.22942* %.fca.3.0.4.extract.i, %struct.kobj_type.22942** %.fca.3.0.4.gep.i, align 8
+  % main@  store %struct.kobj_type.22942* %.fca.3.0.4.extract.i, %struct.kobj_type.22942** %.fca.3.0.4.gep.i, align 8
+  %.fca.3.0.5.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 5
+  %.fca.3.0.5.extract.i 0
+  %.fca.3.0.5.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 5
+  %.fca.3.0.5.gep.i 65
+  %sm24 = call i32 @shadow.mem.store(i32 1066, i32 %sm23, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm24 main@%sm24_0
+  %sm178 = call i32 @shadow.mem.store(i32 1050, i32 %sm177, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm178 const-array(INT, 0)
+  store %struct.kernfs_node.2983* %.fca.3.0.5.extract.i, %struct.kernfs_node.2983** %.fca.3.0.5.gep.i, align 8
+  % main@  store %struct.kernfs_node.2983* %.fca.3.0.5.extract.i, %struct.kernfs_node.2983** %.fca.3.0.5.gep.i, align 8
+  %.fca.3.0.6.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 6, 0, 0, 0
+  %.fca.3.0.6.0.0.0.extract.i 0
+  %.fca.3.0.6.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 6, i32 0, i32 0, i32 0
+  %.fca.3.0.6.0.0.0.gep.i 73
+  %sm25 = call i32 @shadow.mem.store(i32 1066, i32 %sm24, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm25 main@%sm25_0
+  %sm179 = call i32 @shadow.mem.store(i32 1050, i32 %sm178, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm179 const-array(INT, 0)
+  store i32 %.fca.3.0.6.0.0.0.extract.i, i32* %.fca.3.0.6.0.0.0.gep.i, align 8
+  % main@  store i32 %.fca.3.0.6.0.0.0.extract.i, i32* %.fca.3.0.6.0.0.0.gep.i, align 8
+  %.fca.3.0.6.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 6, 1
+  %.fca.3.0.6.1.extract.i 0
+  %.fca.3.0.6.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 6, i32 1
+  %.fca.3.0.6.1.gep.i 77
+  %sm26 = call i32 @shadow.mem.store(i32 1066, i32 %sm25, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm26 main@%sm26_0
+  %sm180 = call i32 @shadow.mem.store(i32 1050, i32 %sm179, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm180 const-array(INT, 0)
+  store i32 %.fca.3.0.6.1.extract.i, i32* %.fca.3.0.6.1.gep.i, align 4
+  % main@  store i32 %.fca.3.0.6.1.extract.i, i32* %.fca.3.0.6.1.gep.i, align 4
+  %.fca.3.0.7.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 0, 7
+  %.fca.3.0.7.extract.i 0
+  %.fca.3.0.7.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 0, i32 7
+  %.fca.3.0.7.gep.i 81
+  %sm27 = call i32 @shadow.mem.store(i32 1066, i32 %sm26, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm27 main@%sm27_0
+  %sm181 = call i32 @shadow.mem.store(i32 1050, i32 %sm180, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm181 const-array(INT, 0)
+  store i8 %.fca.3.0.7.extract.i, i8* %.fca.3.0.7.gep.i, align 8
+  % main@  store i8 %.fca.3.0.7.extract.i, i8* %.fca.3.0.7.gep.i, align 8
+  %.fca.3.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 1
+  %.fca.3.1.extract.i 0
+  %.fca.3.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 1
+  %.fca.3.1.gep.i 89
+  %sm28 = call i32 @shadow.mem.store(i32 1066, i32 %sm27, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm28 main@%sm28_0
+  %sm182 = call i32 @shadow.mem.store(i32 1050, i32 %sm181, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm182 const-array(INT, 0)
+  store %struct.device.22962* %.fca.3.1.extract.i, %struct.device.22962** %.fca.3.1.gep.i, align 8
+  % main@  store %struct.device.22962* %.fca.3.1.extract.i, %struct.device.22962** %.fca.3.1.gep.i, align 8
+  %.fca.3.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 2
+  %.fca.3.2.extract.i 0
+  %.fca.3.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 2
+  %.fca.3.2.gep.i 97
+  %sm29 = call i32 @shadow.mem.store(i32 1066, i32 %sm28, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm29 main@%sm29_0
+  %sm183 = call i32 @shadow.mem.store(i32 1050, i32 %sm182, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm183 const-array(INT, 0)
+  store %struct.device_private* %.fca.3.2.extract.i, %struct.device_private** %.fca.3.2.gep.i, align 8
+  % main@  store %struct.device_private* %.fca.3.2.extract.i, %struct.device_private** %.fca.3.2.gep.i, align 8
+  %.fca.3.3.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 3
+  %.fca.3.3.extract.i 0
+  %.fca.3.3.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 3
+  %.fca.3.3.gep.i 105
+  %sm30 = call i32 @shadow.mem.store(i32 1066, i32 %sm29, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm30 main@%sm30_0
+  %sm184 = call i32 @shadow.mem.store(i32 1050, i32 %sm183, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm184 const-array(INT, 0)
+  store i8* %.fca.3.3.extract.i, i8** %.fca.3.3.gep.i, align 8
+  % main@  store i8* %.fca.3.3.extract.i, i8** %.fca.3.3.gep.i, align 8
+  %.fca.3.4.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 4
+  %.fca.3.4.extract.i 0
+  %.fca.3.4.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 4
+  %.fca.3.4.gep.i 113
+  %sm31 = call i32 @shadow.mem.store(i32 1066, i32 %sm30, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm31 main@%sm31_0
+  %sm185 = call i32 @shadow.mem.store(i32 1050, i32 %sm184, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm185 const-array(INT, 0)
+  store %struct.device_type.22952* %.fca.3.4.extract.i, %struct.device_type.22952** %.fca.3.4.gep.i, align 8
+  % main@  store %struct.device_type.22952* %.fca.3.4.extract.i, %struct.device_type.22952** %.fca.3.4.gep.i, align 8
+  %.fca.3.5.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 5
+  %.fca.3.5.extract.i 0
+  %.fca.3.5.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 5
+  %.fca.3.5.gep.i 121
+  %sm32 = call i32 @shadow.mem.store(i32 1066, i32 %sm31, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm32 main@%sm32_0
+  %sm186 = call i32 @shadow.mem.store(i32 1050, i32 %sm185, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm186 const-array(INT, 0)
+  store %struct.bus_type.22963* %.fca.3.5.extract.i, %struct.bus_type.22963** %.fca.3.5.gep.i, align 8
+  % main@  store %struct.bus_type.22963* %.fca.3.5.extract.i, %struct.bus_type.22963** %.fca.3.5.gep.i, align 8
+  %.fca.3.6.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 6
+  %.fca.3.6.extract.i 0
+  %.fca.3.6.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 6
+  %.fca.3.6.gep.i 129
+  %sm33 = call i32 @shadow.mem.store(i32 1066, i32 %sm32, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm33 main@%sm33_0
+  %sm187 = call i32 @shadow.mem.store(i32 1050, i32 %sm186, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm187 const-array(INT, 0)
+  store %struct.device_driver.22953* %.fca.3.6.extract.i, %struct.device_driver.22953** %.fca.3.6.gep.i, align 8
+  % main@  store %struct.device_driver.22953* %.fca.3.6.extract.i, %struct.device_driver.22953** %.fca.3.6.gep.i, align 8
+  %.fca.3.7.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 7
+  %.fca.3.7.extract.i 0
+  %.fca.3.7.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 7
+  %.fca.3.7.gep.i 137
+  %sm34 = call i32 @shadow.mem.store(i32 1066, i32 %sm33, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm34 main@%sm34_0
+  %sm188 = call i32 @shadow.mem.store(i32 1050, i32 %sm187, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm188 const-array(INT, 0)
+  store i8* %.fca.3.7.extract.i, i8** %.fca.3.7.gep.i, align 8
+  % main@  store i8* %.fca.3.7.extract.i, i8** %.fca.3.7.gep.i, align 8
+  %.fca.3.8.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 8
+  %.fca.3.8.extract.i 0
+  %.fca.3.8.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 8
+  %.fca.3.8.gep.i 145
+  %sm35 = call i32 @shadow.mem.store(i32 1066, i32 %sm34, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm35 main@%sm35_0
+  %sm189 = call i32 @shadow.mem.store(i32 1050, i32 %sm188, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm189 const-array(INT, 0)
+  store i8* %.fca.3.8.extract.i, i8** %.fca.3.8.gep.i, align 8
+  % main@  store i8* %.fca.3.8.extract.i, i8** %.fca.3.8.gep.i, align 8
+  %.fca.3.9.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 9, 0, 0
+  %.fca.3.9.0.0.extract.i 0
+  %.fca.3.9.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 9, i32 0, i32 0
+  %.fca.3.9.0.0.gep.i 153
+  %sm36 = call i32 @shadow.mem.store(i32 1066, i32 %sm35, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm36 main@%sm36_0
+  %sm190 = call i32 @shadow.mem.store(i32 1050, i32 %sm189, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm190 const-array(INT, 0)
+  store i64 %.fca.3.9.0.0.extract.i, i64* %.fca.3.9.0.0.gep.i, align 8
+  % main@  store i64 %.fca.3.9.0.0.extract.i, i64* %.fca.3.9.0.0.gep.i, align 8
+  %.fca.3.9.1.0.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 9, 1, 0, 0, 0, 0
+  %.fca.3.9.1.0.0.0.0.extract.i 0
+  %.fca.3.9.1.0.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 9, i32 1, i32 0, i32 0, i32 0, i32 0
+  %.fca.3.9.1.0.0.0.0.gep.i 161
+  %sm37 = call i32 @shadow.mem.store(i32 1066, i32 %sm36, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm37 main@%sm37_0
+  %sm191 = call i32 @shadow.mem.store(i32 1050, i32 %sm190, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm191 const-array(INT, 0)
+  store i32 %.fca.3.9.1.0.0.0.0.extract.i, i32* %.fca.3.9.1.0.0.0.0.gep.i, align 8
+  % main@  store i32 %.fca.3.9.1.0.0.0.0.extract.i, i32* %.fca.3.9.1.0.0.0.0.gep.i, align 8
+  %.fca.3.9.2.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 9, 2, 0, 0
+  %.fca.3.9.2.0.0.extract.i 0
+  %.fca.3.9.2.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 9, i32 2, i32 0, i32 0
+  %.fca.3.9.2.0.0.gep.i 165
+  %sm38 = call i32 @shadow.mem.store(i32 1066, i32 %sm37, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm38 main@%sm38_0
+  %sm192 = call i32 @shadow.mem.store(i32 1050, i32 %sm191, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm192 const-array(INT, 0)
+  store i32 %.fca.3.9.2.0.0.extract.i, i32* %.fca.3.9.2.0.0.gep.i, align 4
+  % main@  store i32 %.fca.3.9.2.0.0.extract.i, i32* %.fca.3.9.2.0.0.gep.i, align 4
+  %.fca.3.9.3.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 9, 3, 0
+  %.fca.3.9.3.0.extract.i 0
+  %.fca.3.9.3.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 9, i32 3, i32 0
+  %.fca.3.9.3.0.gep.i 169
+  %sm39 = call i32 @shadow.mem.store(i32 1066, i32 %sm38, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm39 main@%sm39_0
+  %sm193 = call i32 @shadow.mem.store(i32 1050, i32 %sm192, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm193 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.9.3.0.extract.i, %struct.list_head** %.fca.3.9.3.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.9.3.0.extract.i, %struct.list_head** %.fca.3.9.3.0.gep.i, align 8
+  %.fca.3.9.3.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 9, 3, 1
+  %.fca.3.9.3.1.extract.i 0
+  %.fca.3.9.3.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 9, i32 3, i32 1
+  %.fca.3.9.3.1.gep.i 177
+  %sm40 = call i32 @shadow.mem.store(i32 1066, i32 %sm39, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm40 main@%sm40_0
+  %sm194 = call i32 @shadow.mem.store(i32 1050, i32 %sm193, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm194 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.9.3.1.extract.i, %struct.list_head** %.fca.3.9.3.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.9.3.1.extract.i, %struct.list_head** %.fca.3.9.3.1.gep.i, align 8
+  %.fca.3.10.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 0, 0
+  %.fca.3.10.0.0.extract.i 0
+  %.fca.3.10.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 0, i32 0
+  %.fca.3.10.0.0.gep.i 185
+  %sm41 = call i32 @shadow.mem.store(i32 1066, i32 %sm40, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm41 main@%sm41_0
+  %sm195 = call i32 @shadow.mem.store(i32 1050, i32 %sm194, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm195 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.10.0.0.extract.i, %struct.list_head** %.fca.3.10.0.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.10.0.0.extract.i, %struct.list_head** %.fca.3.10.0.0.gep.i, align 8
+  %.fca.3.10.0.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 0, 1
+  %.fca.3.10.0.1.extract.i 0
+  %.fca.3.10.0.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 0, i32 1
+  %.fca.3.10.0.1.gep.i 193
+  %sm42 = call i32 @shadow.mem.store(i32 1066, i32 %sm41, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm42 main@%sm42_0
+  %sm196 = call i32 @shadow.mem.store(i32 1050, i32 %sm195, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm196 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.10.0.1.extract.i, %struct.list_head** %.fca.3.10.0.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.10.0.1.extract.i, %struct.list_head** %.fca.3.10.0.1.gep.i, align 8
+  %.fca.3.10.1.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 1, 0
+  %.fca.3.10.1.0.extract.i 0
+  %.fca.3.10.1.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 1, i32 0
+  %.fca.3.10.1.0.gep.i 201
+  %sm43 = call i32 @shadow.mem.store(i32 1066, i32 %sm42, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm43 main@%sm43_0
+  %sm197 = call i32 @shadow.mem.store(i32 1050, i32 %sm196, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm197 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.10.1.0.extract.i, %struct.list_head** %.fca.3.10.1.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.10.1.0.extract.i, %struct.list_head** %.fca.3.10.1.0.gep.i, align 8
+  %.fca.3.10.1.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 1, 1
+  %.fca.3.10.1.1.extract.i 0
+  %.fca.3.10.1.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 1, i32 1
+  %.fca.3.10.1.1.gep.i 209
+  %sm44 = call i32 @shadow.mem.store(i32 1066, i32 %sm43, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm44 main@%sm44_0
+  %sm198 = call i32 @shadow.mem.store(i32 1050, i32 %sm197, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm198 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.10.1.1.extract.i, %struct.list_head** %.fca.3.10.1.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.10.1.1.extract.i, %struct.list_head** %.fca.3.10.1.1.gep.i, align 8
+  %.fca.3.10.2.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 2, 0
+  %.fca.3.10.2.0.extract.i 0
+  %.fca.3.10.2.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 2, i32 0
+  %.fca.3.10.2.0.gep.i 217
+  %sm45 = call i32 @shadow.mem.store(i32 1066, i32 %sm44, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm45 main@%sm45_0
+  %sm199 = call i32 @shadow.mem.store(i32 1050, i32 %sm198, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm199 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.10.2.0.extract.i, %struct.list_head** %.fca.3.10.2.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.10.2.0.extract.i, %struct.list_head** %.fca.3.10.2.0.gep.i, align 8
+  %.fca.3.10.2.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 2, 1
+  %.fca.3.10.2.1.extract.i 0
+  %.fca.3.10.2.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 2, i32 1
+  %.fca.3.10.2.1.gep.i 225
+  %sm46 = call i32 @shadow.mem.store(i32 1066, i32 %sm45, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm46 main@%sm46_0
+  %sm200 = call i32 @shadow.mem.store(i32 1050, i32 %sm199, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm200 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.10.2.1.extract.i, %struct.list_head** %.fca.3.10.2.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.10.2.1.extract.i, %struct.list_head** %.fca.3.10.2.1.gep.i, align 8
+  %.fca.3.10.3.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 10, 3
+  %.fca.3.10.3.extract.i 0
+  %.fca.3.10.3.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 10, i32 3
+  %.fca.3.10.3.gep.i 233
+  %sm47 = call i32 @shadow.mem.store(i32 1066, i32 %sm46, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm47 main@%sm47_0
+  %sm201 = call i32 @shadow.mem.store(i32 1050, i32 %sm200, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm201 const-array(INT, 0)
+  store i32 %.fca.3.10.3.extract.i, i32* %.fca.3.10.3.gep.i, align 8
+  % main@  store i32 %.fca.3.10.3.extract.i, i32* %.fca.3.10.3.gep.i, align 8
+  %.fca.3.11.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 0, 0
+  %.fca.3.11.0.0.extract.i 0
+  %.fca.3.11.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 0, i32 0
+  %.fca.3.11.0.0.gep.i 241
+  %sm48 = call i32 @shadow.mem.store(i32 1066, i32 %sm47, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm48 main@%sm48_0
+  %sm202 = call i32 @shadow.mem.store(i32 1050, i32 %sm201, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm202 const-array(INT, 0)
+  store i32 %.fca.3.11.0.0.extract.i, i32* %.fca.3.11.0.0.gep.i, align 8
+  % main@  store i32 %.fca.3.11.0.0.extract.i, i32* %.fca.3.11.0.0.gep.i, align 8
+  %.fca.3.11.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 1
+  %.fca.3.11.1.gep.i 245
+  %.fca.3.11.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 2
+  %.fca.3.11.2.extract.i 0
+  %.fca.3.11.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 2
+  %.fca.3.11.2.gep.i 249
+  %sm49 = call i32 @shadow.mem.store(i32 1066, i32 %sm48, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm49 main@%sm49_0
+  %sm203 = call i32 @shadow.mem.store(i32 1050, i32 %sm202, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm203 const-array(INT, 0)
+  store i32 %.fca.3.11.2.extract.i, i32* %.fca.3.11.2.gep.i, align 8
+  % main@  store i32 %.fca.3.11.2.extract.i, i32* %.fca.3.11.2.gep.i, align 8
+  %.fca.3.11.3.0.0.0.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 3, 0, 0, 0, 0, 0, 0
+  %.fca.3.11.3.0.0.0.0.0.0.extract.i 0
+  %.fca.3.11.3.0.0.0.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 3, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0
+  %.fca.3.11.3.0.0.0.0.0.0.gep.i 253
+  %sm50 = call i32 @shadow.mem.store(i32 1066, i32 %sm49, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm50 main@%sm50_0
+  %sm204 = call i32 @shadow.mem.store(i32 1050, i32 %sm203, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm204 const-array(INT, 0)
+  store i32 %.fca.3.11.3.0.0.0.0.0.0.extract.i, i32* %.fca.3.11.3.0.0.0.0.0.0.gep.i, align 4
+  % main@  store i32 %.fca.3.11.3.0.0.0.0.0.0.extract.i, i32* %.fca.3.11.3.0.0.0.0.0.0.gep.i, align 4
+  %.fca.3.11.4.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 4, 0
+  %.fca.3.11.4.0.extract.i 0
+  %.fca.3.11.4.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 4, i32 0
+  %.fca.3.11.4.0.gep.i 257
+  %sm51 = call i32 @shadow.mem.store(i32 1066, i32 %sm50, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm51 main@%sm51_0
+  %sm205 = call i32 @shadow.mem.store(i32 1050, i32 %sm204, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm205 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.4.0.extract.i, %struct.list_head** %.fca.3.11.4.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.4.0.extract.i, %struct.list_head** %.fca.3.11.4.0.gep.i, align 8
+  %.fca.3.11.4.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 4, 1
+  %.fca.3.11.4.1.extract.i 0
+  %.fca.3.11.4.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 4, i32 1
+  %.fca.3.11.4.1.gep.i 265
+  %sm52 = call i32 @shadow.mem.store(i32 1066, i32 %sm51, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm52 main@%sm52_0
+  %sm206 = call i32 @shadow.mem.store(i32 1050, i32 %sm205, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm206 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.4.1.extract.i, %struct.list_head** %.fca.3.11.4.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.4.1.extract.i, %struct.list_head** %.fca.3.11.4.1.gep.i, align 8
+  %.fca.3.11.5.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 5, 0
+  %.fca.3.11.5.0.extract.i 0
+  %.fca.3.11.5.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 5, i32 0
+  %.fca.3.11.5.0.gep.i 273
+  %sm53 = call i32 @shadow.mem.store(i32 1066, i32 %sm52, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm53 main@%sm53_0
+  %sm207 = call i32 @shadow.mem.store(i32 1050, i32 %sm206, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm207 const-array(INT, 0)
+  store i32 %.fca.3.11.5.0.extract.i, i32* %.fca.3.11.5.0.gep.i, align 8
+  % main@  store i32 %.fca.3.11.5.0.extract.i, i32* %.fca.3.11.5.0.gep.i, align 8
+  %.fca.3.11.5.1.0.0.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 5, 1, 0, 0, 0, 0, 0
+  %.fca.3.11.5.1.0.0.0.0.0.extract.i 0
+  %.fca.3.11.5.1.0.0.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 5, i32 1, i32 0, i32 0, i32 0, i32 0, i32 0
+  %.fca.3.11.5.1.0.0.0.0.0.gep.i 281
+  %sm54 = call i32 @shadow.mem.store(i32 1066, i32 %sm53, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm54 main@%sm54_0
+  %sm208 = call i32 @shadow.mem.store(i32 1050, i32 %sm207, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm208 const-array(INT, 0)
+  store i32 %.fca.3.11.5.1.0.0.0.0.0.extract.i, i32* %.fca.3.11.5.1.0.0.0.0.0.gep.i, align 8
+  % main@  store i32 %.fca.3.11.5.1.0.0.0.0.0.extract.i, i32* %.fca.3.11.5.1.0.0.0.0.0.gep.i, align 8
+  %.fca.3.11.5.1.1.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 5, 1, 1, 0
+  %.fca.3.11.5.1.1.0.extract.i 0
+  %.fca.3.11.5.1.1.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 5, i32 1, i32 1, i32 0
+  %.fca.3.11.5.1.1.0.gep.i 289
+  %sm55 = call i32 @shadow.mem.store(i32 1066, i32 %sm54, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm55 main@%sm55_0
+  %sm209 = call i32 @shadow.mem.store(i32 1050, i32 %sm208, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm209 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.5.1.1.0.extract.i, %struct.list_head** %.fca.3.11.5.1.1.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.5.1.1.0.extract.i, %struct.list_head** %.fca.3.11.5.1.1.0.gep.i, align 8
+  %.fca.3.11.5.1.1.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 5, 1, 1, 1
+  %.fca.3.11.5.1.1.1.extract.i 0
+  %.fca.3.11.5.1.1.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 5, i32 1, i32 1, i32 1
+  %.fca.3.11.5.1.1.1.gep.i 297
+  %sm56 = call i32 @shadow.mem.store(i32 1066, i32 %sm55, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm56 main@%sm56_0
+  %sm210 = call i32 @shadow.mem.store(i32 1050, i32 %sm209, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm210 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.5.1.1.1.extract.i, %struct.list_head** %.fca.3.11.5.1.1.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.5.1.1.1.extract.i, %struct.list_head** %.fca.3.11.5.1.1.1.gep.i, align 8
+  %.fca.3.11.6.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 6
+  %.fca.3.11.6.extract.i 0
+  %.fca.3.11.6.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 6
+  %.fca.3.11.6.gep.i 305
+  %sm57 = call i32 @shadow.mem.store(i32 1066, i32 %sm56, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm57 main@%sm57_0
+  %sm211 = call i32 @shadow.mem.store(i32 1050, i32 %sm210, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm211 const-array(INT, 0)
+  store %struct.wakeup_source.22954* %.fca.3.11.6.extract.i, %struct.wakeup_source.22954** %.fca.3.11.6.gep.i, align 8
+  % main@  store %struct.wakeup_source.22954* %.fca.3.11.6.extract.i, %struct.wakeup_source.22954** %.fca.3.11.6.gep.i, align 8
+  %.fca.3.11.7.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 7
+  %.fca.3.11.7.extract.i 0
+  %.fca.3.11.7.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 7
+  %.fca.3.11.7.gep.i 313
+  %sm58 = call i32 @shadow.mem.store(i32 1066, i32 %sm57, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm58 main@%sm58_0
+  %sm212 = call i32 @shadow.mem.store(i32 1050, i32 %sm211, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm212 const-array(INT, 0)
+  store i8 %.fca.3.11.7.extract.i, i8* %.fca.3.11.7.gep.i, align 8
+  % main@  store i8 %.fca.3.11.7.extract.i, i8* %.fca.3.11.7.gep.i, align 8
+  %.fca.3.11.8.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 0, 0, 0
+  %.fca.3.11.8.0.0.0.extract.i 0
+  %.fca.3.11.8.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 0, i32 0, i32 0
+  %.fca.3.11.8.0.0.0.gep.i 321
+  %sm59 = call i32 @shadow.mem.store(i32 1066, i32 %sm58, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm59 main@%sm59_0
+  %sm213 = call i32 @shadow.mem.store(i32 1050, i32 %sm212, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm213 const-array(INT, 0)
+  store i64 %.fca.3.11.8.0.0.0.extract.i, i64* %.fca.3.11.8.0.0.0.gep.i, align 8
+  % main@  store i64 %.fca.3.11.8.0.0.0.extract.i, i64* %.fca.3.11.8.0.0.0.gep.i, align 8
+  %.fca.3.11.8.0.0.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 0, 0, 1
+  %.fca.3.11.8.0.0.1.extract.i 0
+  %.fca.3.11.8.0.0.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 0, i32 0, i32 1
+  %.fca.3.11.8.0.0.1.gep.i 329
+  %sm60 = call i32 @shadow.mem.store(i32 1066, i32 %sm59, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm60 main@%sm60_0
+  %sm214 = call i32 @shadow.mem.store(i32 1050, i32 %sm213, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm214 const-array(INT, 0)
+  store %struct.rb_node* %.fca.3.11.8.0.0.1.extract.i, %struct.rb_node** %.fca.3.11.8.0.0.1.gep.i, align 8
+  % main@  store %struct.rb_node* %.fca.3.11.8.0.0.1.extract.i, %struct.rb_node** %.fca.3.11.8.0.0.1.gep.i, align 8
+  %.fca.3.11.8.0.0.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 0, 0, 2
+  %.fca.3.11.8.0.0.2.extract.i 0
+  %.fca.3.11.8.0.0.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 0, i32 0, i32 2
+  %.fca.3.11.8.0.0.2.gep.i 337
+  %sm61 = call i32 @shadow.mem.store(i32 1066, i32 %sm60, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm61 main@%sm61_0
+  %sm215 = call i32 @shadow.mem.store(i32 1050, i32 %sm214, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm215 const-array(INT, 0)
+  store %struct.rb_node* %.fca.3.11.8.0.0.2.extract.i, %struct.rb_node** %.fca.3.11.8.0.0.2.gep.i, align 8
+  % main@  store %struct.rb_node* %.fca.3.11.8.0.0.2.extract.i, %struct.rb_node** %.fca.3.11.8.0.0.2.gep.i, align 8
+  %.fca.3.11.8.0.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 0, 1
+  %.fca.3.11.8.0.1.extract.i 0
+  %.fca.3.11.8.0.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 0, i32 1
+  %.fca.3.11.8.0.1.gep.i 345
+  %sm62 = call i32 @shadow.mem.store(i32 1066, i32 %sm61, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm62 main@%sm62_0
+  %sm216 = call i32 @shadow.mem.store(i32 1050, i32 %sm215, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm216 const-array(INT, 0)
+  store i64 %.fca.3.11.8.0.1.extract.i, i64* %.fca.3.11.8.0.1.gep.i, align 8
+  % main@  store i64 %.fca.3.11.8.0.1.extract.i, i64* %.fca.3.11.8.0.1.gep.i, align 8
+  %.fca.3.11.8.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 1
+  %.fca.3.11.8.1.extract.i 0
+  %.fca.3.11.8.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 1
+  %.fca.3.11.8.1.gep.i 353
+  %sm63 = call i32 @shadow.mem.store(i32 1066, i32 %sm62, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm63 main@%sm63_0
+  %sm217 = call i32 @shadow.mem.store(i32 1050, i32 %sm216, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm217 const-array(INT, 0)
+  store i64 %.fca.3.11.8.1.extract.i, i64* %.fca.3.11.8.1.gep.i, align 8
+  % main@  store i64 %.fca.3.11.8.1.extract.i, i64* %.fca.3.11.8.1.gep.i, align 8
+  %.fca.3.11.8.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 2
+  %.fca.3.11.8.2.extract.i 0
+  %.fca.3.11.8.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 2
+  %.fca.3.11.8.2.gep.i 361
+  %sm64 = call i32 @shadow.mem.store(i32 1066, i32 %sm63, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm64 main@%sm64_0
+  %sm218 = call i32 @shadow.mem.store(i32 1050, i32 %sm217, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm218 const-array(INT, 0)
+  store i32 (%struct.hrtimer*)* %.fca.3.11.8.2.extract.i, i32 (%struct.hrtimer*)** %.fca.3.11.8.2.gep.i, align 8
+  % main@  store i32 (%struct.hrtimer*)* %.fca.3.11.8.2.extract.i, i32 (%struct.hrtimer*)** %.fca.3.11.8.2.gep.i, align 8
+  %.fca.3.11.8.3.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 3
+  %.fca.3.11.8.3.extract.i 0
+  %.fca.3.11.8.3.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 3
+  %.fca.3.11.8.3.gep.i 369
+  %sm65 = call i32 @shadow.mem.store(i32 1066, i32 %sm64, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm65 main@%sm65_0
+  %sm219 = call i32 @shadow.mem.store(i32 1050, i32 %sm218, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm219 const-array(INT, 0)
+  store %struct.hrtimer_clock_base* %.fca.3.11.8.3.extract.i, %struct.hrtimer_clock_base** %.fca.3.11.8.3.gep.i, align 8
+  % main@  store %struct.hrtimer_clock_base* %.fca.3.11.8.3.extract.i, %struct.hrtimer_clock_base** %.fca.3.11.8.3.gep.i, align 8
+  %.fca.3.11.8.4.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 4
+  %.fca.3.11.8.4.extract.i 0
+  %.fca.3.11.8.4.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 4
+  %.fca.3.11.8.4.gep.i 377
+  %sm66 = call i32 @shadow.mem.store(i32 1066, i32 %sm65, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm66 main@%sm66_0
+  %sm220 = call i32 @shadow.mem.store(i32 1050, i32 %sm219, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm220 const-array(INT, 0)
+  store i8 %.fca.3.11.8.4.extract.i, i8* %.fca.3.11.8.4.gep.i, align 8
+  % main@  store i8 %.fca.3.11.8.4.extract.i, i8* %.fca.3.11.8.4.gep.i, align 8
+  %.fca.3.11.8.5.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 5
+  %.fca.3.11.8.5.extract.i 0
+  %.fca.3.11.8.5.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 5
+  %.fca.3.11.8.5.gep.i 378
+  %sm67 = call i32 @shadow.mem.store(i32 1066, i32 %sm66, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm67 main@%sm67_0
+  %sm221 = call i32 @shadow.mem.store(i32 1050, i32 %sm220, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm221 const-array(INT, 0)
+  store i8 %.fca.3.11.8.5.extract.i, i8* %.fca.3.11.8.5.gep.i, align 1
+  % main@  store i8 %.fca.3.11.8.5.extract.i, i8* %.fca.3.11.8.5.gep.i, align 1
+  %.fca.3.11.8.6.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 6
+  %.fca.3.11.8.6.extract.i 0
+  %.fca.3.11.8.6.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 6
+  %.fca.3.11.8.6.gep.i 379
+  %sm68 = call i32 @shadow.mem.store(i32 1066, i32 %sm67, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm68 main@%sm68_0
+  %sm222 = call i32 @shadow.mem.store(i32 1050, i32 %sm221, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm222 const-array(INT, 0)
+  store i8 %.fca.3.11.8.6.extract.i, i8* %.fca.3.11.8.6.gep.i, align 2
+  % main@  store i8 %.fca.3.11.8.6.extract.i, i8* %.fca.3.11.8.6.gep.i, align 2
+  %.fca.3.11.8.7.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 8, 7
+  %.fca.3.11.8.7.extract.i 0
+  %.fca.3.11.8.7.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 8, i32 7
+  %.fca.3.11.8.7.gep.i 380
+  %sm69 = call i32 @shadow.mem.store(i32 1066, i32 %sm68, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm69 main@%sm69_0
+  %sm223 = call i32 @shadow.mem.store(i32 1050, i32 %sm222, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm223 const-array(INT, 0)
+  store i8 %.fca.3.11.8.7.extract.i, i8* %.fca.3.11.8.7.gep.i, align 1
+  % main@  store i8 %.fca.3.11.8.7.extract.i, i8* %.fca.3.11.8.7.gep.i, align 1
+  %.fca.3.11.9.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 9
+  %.fca.3.11.9.extract.i 0
+  %.fca.3.11.9.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 9
+  %.fca.3.11.9.gep.i 385
+  %sm70 = call i32 @shadow.mem.store(i32 1066, i32 %sm69, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm70 main@%sm70_0
+  %sm224 = call i32 @shadow.mem.store(i32 1050, i32 %sm223, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm224 const-array(INT, 0)
+  store i64 %.fca.3.11.9.extract.i, i64* %.fca.3.11.9.gep.i, align 8
+  % main@  store i64 %.fca.3.11.9.extract.i, i64* %.fca.3.11.9.gep.i, align 8
+  %.fca.3.11.10.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 10, 0, 0
+  %.fca.3.11.10.0.0.extract.i 0
+  %.fca.3.11.10.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 10, i32 0, i32 0
+  %.fca.3.11.10.0.0.gep.i 393
+  %sm71 = call i32 @shadow.mem.store(i32 1066, i32 %sm70, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm71 main@%sm71_0
+  %sm225 = call i32 @shadow.mem.store(i32 1050, i32 %sm224, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm225 const-array(INT, 0)
+  store i64 %.fca.3.11.10.0.0.extract.i, i64* %.fca.3.11.10.0.0.gep.i, align 8
+  % main@  store i64 %.fca.3.11.10.0.0.extract.i, i64* %.fca.3.11.10.0.0.gep.i, align 8
+  %.fca.3.11.10.1.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 10, 1, 0
+  %.fca.3.11.10.1.0.extract.i 0
+  %.fca.3.11.10.1.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 10, i32 1, i32 0
+  %.fca.3.11.10.1.0.gep.i 401
+  %sm72 = call i32 @shadow.mem.store(i32 1066, i32 %sm71, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm72 main@%sm72_0
+  %sm226 = call i32 @shadow.mem.store(i32 1050, i32 %sm225, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm226 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.10.1.0.extract.i, %struct.list_head** %.fca.3.11.10.1.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.10.1.0.extract.i, %struct.list_head** %.fca.3.11.10.1.0.gep.i, align 8
+  %.fca.3.11.10.1.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 10, 1, 1
+  %.fca.3.11.10.1.1.extract.i 0
+  %.fca.3.11.10.1.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 10, i32 1, i32 1
+  %.fca.3.11.10.1.1.gep.i 409
+  %sm73 = call i32 @shadow.mem.store(i32 1066, i32 %sm72, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm73 main@%sm73_0
+  %sm227 = call i32 @shadow.mem.store(i32 1050, i32 %sm226, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm227 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.10.1.1.extract.i, %struct.list_head** %.fca.3.11.10.1.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.10.1.1.extract.i, %struct.list_head** %.fca.3.11.10.1.1.gep.i, align 8
+  %.fca.3.11.10.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 10, 2
+  %.fca.3.11.10.2.extract.i 0
+  %.fca.3.11.10.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 10, i32 2
+  %.fca.3.11.10.2.gep.i 417
+  %sm74 = call i32 @shadow.mem.store(i32 1066, i32 %sm73, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm74 main@%sm74_0
+  %sm228 = call i32 @shadow.mem.store(i32 1050, i32 %sm227, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm228 const-array(INT, 0)
+  store void (%struct.work_struct*)* %.fca.3.11.10.2.extract.i, void (%struct.work_struct*)** %.fca.3.11.10.2.gep.i, align 8
+  % main@  store void (%struct.work_struct*)* %.fca.3.11.10.2.extract.i, void (%struct.work_struct*)** %.fca.3.11.10.2.gep.i, align 8
+  %.fca.3.11.11.0.0.0.0.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 11, 0, 0, 0, 0, 0, 0, 0
+  %.fca.3.11.11.0.0.0.0.0.0.0.extract.i 0
+  %.fca.3.11.11.0.0.0.0.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 11, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0
+  %.fca.3.11.11.0.0.0.0.0.0.0.gep.i 425
+  %sm75 = call i32 @shadow.mem.store(i32 1066, i32 %sm74, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm75 main@%sm75_0
+  %sm229 = call i32 @shadow.mem.store(i32 1050, i32 %sm228, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm229 const-array(INT, 0)
+  store i32 %.fca.3.11.11.0.0.0.0.0.0.0.extract.i, i32* %.fca.3.11.11.0.0.0.0.0.0.0.gep.i, align 8
+  % main@  store i32 %.fca.3.11.11.0.0.0.0.0.0.0.extract.i, i32* %.fca.3.11.11.0.0.0.0.0.0.0.gep.i, align 8
+  %.fca.3.11.11.1.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 11, 1, 0
+  %.fca.3.11.11.1.0.extract.i 0
+  %.fca.3.11.11.1.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 11, i32 1, i32 0
+  %.fca.3.11.11.1.0.gep.i 433
+  %sm76 = call i32 @shadow.mem.store(i32 1066, i32 %sm75, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm76 main@%sm76_0
+  %sm230 = call i32 @shadow.mem.store(i32 1050, i32 %sm229, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm230 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.11.1.0.extract.i, %struct.list_head** %.fca.3.11.11.1.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.11.1.0.extract.i, %struct.list_head** %.fca.3.11.11.1.0.gep.i, align 8
+  %.fca.3.11.11.1.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 11, 1, 1
+  %.fca.3.11.11.1.1.extract.i 0
+  %.fca.3.11.11.1.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 11, i32 1, i32 1
+  %.fca.3.11.11.1.1.gep.i 441
+  %sm77 = call i32 @shadow.mem.store(i32 1066, i32 %sm76, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm77 main@%sm77_0
+  %sm231 = call i32 @shadow.mem.store(i32 1050, i32 %sm230, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm231 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.11.11.1.1.extract.i, %struct.list_head** %.fca.3.11.11.1.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.11.11.1.1.extract.i, %struct.list_head** %.fca.3.11.11.1.1.gep.i, align 8
+  %.fca.3.11.12.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 12
+  %.fca.3.11.12.extract.i 0
+  %.fca.3.11.12.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 12
+  %.fca.3.11.12.gep.i 449
+  %sm78 = call i32 @shadow.mem.store(i32 1066, i32 %sm77, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm78 main@%sm78_0
+  %sm232 = call i32 @shadow.mem.store(i32 1050, i32 %sm231, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm232 const-array(INT, 0)
+  store %struct.wake_irq* %.fca.3.11.12.extract.i, %struct.wake_irq** %.fca.3.11.12.gep.i, align 8
+  % main@  store %struct.wake_irq* %.fca.3.11.12.extract.i, %struct.wake_irq** %.fca.3.11.12.gep.i, align 8
+  %.fca.3.11.13.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 13, 0
+  %.fca.3.11.13.0.extract.i 0
+  %.fca.3.11.13.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 13, i32 0
+  %.fca.3.11.13.0.gep.i 457
+  %sm79 = call i32 @shadow.mem.store(i32 1066, i32 %sm78, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm79 main@%sm79_0
+  %sm233 = call i32 @shadow.mem.store(i32 1050, i32 %sm232, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm233 const-array(INT, 0)
+  store i32 %.fca.3.11.13.0.extract.i, i32* %.fca.3.11.13.0.gep.i, align 8
+  % main@  store i32 %.fca.3.11.13.0.extract.i, i32* %.fca.3.11.13.0.gep.i, align 8
+  %.fca.3.11.14.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 14, 0
+  %.fca.3.11.14.0.extract.i 0
+  %.fca.3.11.14.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 14, i32 0
+  %.fca.3.11.14.0.gep.i 461
+  %sm80 = call i32 @shadow.mem.store(i32 1066, i32 %sm79, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm80 main@%sm80_0
+  %sm234 = call i32 @shadow.mem.store(i32 1050, i32 %sm233, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm234 const-array(INT, 0)
+  store i32 %.fca.3.11.14.0.extract.i, i32* %.fca.3.11.14.0.gep.i, align 4
+  % main@  store i32 %.fca.3.11.14.0.extract.i, i32* %.fca.3.11.14.0.gep.i, align 4
+  %.fca.3.11.15.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 15
+  %.fca.3.11.15.extract.i 0
+  %.fca.3.11.15.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 15
+  %.fca.3.11.15.gep.i 465
+  %sm81 = call i32 @shadow.mem.store(i32 1066, i32 %sm80, i8* null), !shadow.mem !12, !shadow.mem.def !19
+  %sm81 main@%sm81_0
+  %sm235 = call i32 @shadow.mem.store(i32 1050, i32 %sm234, i8* null), !shadow.mem !12, !shadow.mem.def !19
+  %sm235 const-array(INT, 0)
+  store i16 %.fca.3.11.15.extract.i, i16* %.fca.3.11.15.gep.i, align 8
+  % main@  store i16 %.fca.3.11.15.extract.i, i16* %.fca.3.11.15.gep.i, align 8
+  %.fca.3.11.16.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 16
+  %.fca.3.11.16.extract.i 0
+  %.fca.3.11.16.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 16
+  %.fca.3.11.16.gep.i 469
+  %sm82 = call i32 @shadow.mem.store(i32 1066, i32 %sm81, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm82 main@%sm82_0
+  %sm236 = call i32 @shadow.mem.store(i32 1050, i32 %sm235, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm236 const-array(INT, 0)
+  store i32 %.fca.3.11.16.extract.i, i32* %.fca.3.11.16.gep.i, align 4
+  % main@  store i32 %.fca.3.11.16.extract.i, i32* %.fca.3.11.16.gep.i, align 4
+  %.fca.3.11.17.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 17
+  %.fca.3.11.17.extract.i 0
+  %.fca.3.11.17.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 17
+  %.fca.3.11.17.gep.i 473
+  %sm83 = call i32 @shadow.mem.store(i32 1066, i32 %sm82, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm83 main@%sm83_0
+  %sm237 = call i32 @shadow.mem.store(i32 1050, i32 %sm236, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm237 const-array(INT, 0)
+  store i32 %.fca.3.11.17.extract.i, i32* %.fca.3.11.17.gep.i, align 8
+  % main@  store i32 %.fca.3.11.17.extract.i, i32* %.fca.3.11.17.gep.i, align 8
+  %.fca.3.11.18.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 18
+  %.fca.3.11.18.extract.i 0
+  %.fca.3.11.18.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 18
+  %.fca.3.11.18.gep.i 477
+  %sm84 = call i32 @shadow.mem.store(i32 1066, i32 %sm83, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm84 main@%sm84_0
+  %sm238 = call i32 @shadow.mem.store(i32 1050, i32 %sm237, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm238 const-array(INT, 0)
+  store i32 %.fca.3.11.18.extract.i, i32* %.fca.3.11.18.gep.i, align 4
+  % main@  store i32 %.fca.3.11.18.extract.i, i32* %.fca.3.11.18.gep.i, align 4
+  %.fca.3.11.19.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 19
+  %.fca.3.11.19.extract.i 0
+  %.fca.3.11.19.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 19
+  %.fca.3.11.19.gep.i 481
+  %sm85 = call i32 @shadow.mem.store(i32 1066, i32 %sm84, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm85 main@%sm85_0
+  %sm239 = call i32 @shadow.mem.store(i32 1050, i32 %sm238, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm239 const-array(INT, 0)
+  store i32 %.fca.3.11.19.extract.i, i32* %.fca.3.11.19.gep.i, align 8
+  % main@  store i32 %.fca.3.11.19.extract.i, i32* %.fca.3.11.19.gep.i, align 8
+  %.fca.3.11.20.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 20
+  %.fca.3.11.20.extract.i 0
+  %.fca.3.11.20.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 20
+  %.fca.3.11.20.gep.i 485
+  %sm86 = call i32 @shadow.mem.store(i32 1066, i32 %sm85, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm86 main@%sm86_0
+  %sm240 = call i32 @shadow.mem.store(i32 1050, i32 %sm239, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm240 const-array(INT, 0)
+  store i32 %.fca.3.11.20.extract.i, i32* %.fca.3.11.20.gep.i, align 4
+  % main@  store i32 %.fca.3.11.20.extract.i, i32* %.fca.3.11.20.gep.i, align 4
+  %.fca.3.11.21.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 21
+  %.fca.3.11.21.extract.i 0
+  %.fca.3.11.21.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 21
+  %.fca.3.11.21.gep.i 489
+  %sm87 = call i32 @shadow.mem.store(i32 1066, i32 %sm86, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm87 main@%sm87_0
+  %sm241 = call i32 @shadow.mem.store(i32 1050, i32 %sm240, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm241 const-array(INT, 0)
+  store i32 %.fca.3.11.21.extract.i, i32* %.fca.3.11.21.gep.i, align 8
+  % main@  store i32 %.fca.3.11.21.extract.i, i32* %.fca.3.11.21.gep.i, align 8
+  %.fca.3.11.22.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 22
+  %.fca.3.11.22.extract.i 0
+  %.fca.3.11.22.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 22
+  %.fca.3.11.22.gep.i 497
+  %sm88 = call i32 @shadow.mem.store(i32 1066, i32 %sm87, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm88 main@%sm88_0
+  %sm242 = call i32 @shadow.mem.store(i32 1050, i32 %sm241, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm242 const-array(INT, 0)
+  store i64 %.fca.3.11.22.extract.i, i64* %.fca.3.11.22.gep.i, align 8
+  % main@  store i64 %.fca.3.11.22.extract.i, i64* %.fca.3.11.22.gep.i, align 8
+  %.fca.3.11.23.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 23
+  %.fca.3.11.23.extract.i 0
+  %.fca.3.11.23.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 23
+  %.fca.3.11.23.gep.i 505
+  %sm89 = call i32 @shadow.mem.store(i32 1066, i32 %sm88, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm89 main@%sm89_0
+  %sm243 = call i32 @shadow.mem.store(i32 1050, i32 %sm242, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm243 const-array(INT, 0)
+  store i64 %.fca.3.11.23.extract.i, i64* %.fca.3.11.23.gep.i, align 8
+  % main@  store i64 %.fca.3.11.23.extract.i, i64* %.fca.3.11.23.gep.i, align 8
+  %.fca.3.11.24.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 24
+  %.fca.3.11.24.extract.i 0
+  %.fca.3.11.24.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 24
+  %.fca.3.11.24.gep.i 513
+  %sm90 = call i32 @shadow.mem.store(i32 1066, i32 %sm89, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm90 main@%sm90_0
+  %sm244 = call i32 @shadow.mem.store(i32 1050, i32 %sm243, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm244 const-array(INT, 0)
+  store i64 %.fca.3.11.24.extract.i, i64* %.fca.3.11.24.gep.i, align 8
+  % main@  store i64 %.fca.3.11.24.extract.i, i64* %.fca.3.11.24.gep.i, align 8
+  %.fca.3.11.25.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 25
+  %.fca.3.11.25.extract.i 0
+  %.fca.3.11.25.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 25
+  %.fca.3.11.25.gep.i 521
+  %sm91 = call i32 @shadow.mem.store(i32 1066, i32 %sm90, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm91 main@%sm91_0
+  %sm245 = call i32 @shadow.mem.store(i32 1050, i32 %sm244, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm245 const-array(INT, 0)
+  store i64 %.fca.3.11.25.extract.i, i64* %.fca.3.11.25.gep.i, align 8
+  % main@  store i64 %.fca.3.11.25.extract.i, i64* %.fca.3.11.25.gep.i, align 8
+  %.fca.3.11.26.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 26
+  %.fca.3.11.26.extract.i 0
+  %.fca.3.11.26.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 26
+  %.fca.3.11.26.gep.i 529
+  %sm92 = call i32 @shadow.mem.store(i32 1066, i32 %sm91, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm92 main@%sm92_0
+  %sm246 = call i32 @shadow.mem.store(i32 1050, i32 %sm245, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm246 const-array(INT, 0)
+  store %struct.pm_subsys_data.8695* %.fca.3.11.26.extract.i, %struct.pm_subsys_data.8695** %.fca.3.11.26.gep.i, align 8
+  % main@  store %struct.pm_subsys_data.8695* %.fca.3.11.26.extract.i, %struct.pm_subsys_data.8695** %.fca.3.11.26.gep.i, align 8
+  %.fca.3.11.27.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 27
+  %.fca.3.11.27.extract.i 0
+  %.fca.3.11.27.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 27
+  %.fca.3.11.27.gep.i 537
+  %sm93 = call i32 @shadow.mem.store(i32 1066, i32 %sm92, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm93 main@%sm93_0
+  %sm247 = call i32 @shadow.mem.store(i32 1050, i32 %sm246, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm247 const-array(INT, 0)
+  store void (%struct.device.22962*, i32)* %.fca.3.11.27.extract.i, void (%struct.device.22962*, i32)** %.fca.3.11.27.gep.i, align 8
+  % main@  store void (%struct.device.22962*, i32)* %.fca.3.11.27.extract.i, void (%struct.device.22962*, i32)** %.fca.3.11.27.gep.i, align 8
+  %.fca.3.11.28.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 11, 28
+  %.fca.3.11.28.extract.i 0
+  %.fca.3.11.28.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 11, i32 28
+  %.fca.3.11.28.gep.i 545
+  %sm94 = call i32 @shadow.mem.store(i32 1066, i32 %sm93, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm94 main@%sm94_0
+  %sm248 = call i32 @shadow.mem.store(i32 1050, i32 %sm247, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm248 const-array(INT, 0)
+  store %struct.dev_pm_qos.8499* %.fca.3.11.28.extract.i, %struct.dev_pm_qos.8499** %.fca.3.11.28.gep.i, align 8
+  % main@  store %struct.dev_pm_qos.8499* %.fca.3.11.28.extract.i, %struct.dev_pm_qos.8499** %.fca.3.11.28.gep.i, align 8
+  %.fca.3.12.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 12
+  %.fca.3.12.extract.i 0
+  %.fca.3.12.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 12
+  %.fca.3.12.gep.i 553
+  %sm95 = call i32 @shadow.mem.store(i32 1066, i32 %sm94, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm95 main@%sm95_0
+  %sm249 = call i32 @shadow.mem.store(i32 1050, i32 %sm248, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm249 const-array(INT, 0)
+  store %struct.dev_pm_domain.22956* %.fca.3.12.extract.i, %struct.dev_pm_domain.22956** %.fca.3.12.gep.i, align 8
+  % main@  store %struct.dev_pm_domain.22956* %.fca.3.12.extract.i, %struct.dev_pm_domain.22956** %.fca.3.12.gep.i, align 8
+  %.fca.3.13.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 13
+  %.fca.3.13.extract.i 0
+  %.fca.3.13.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 13
+  %.fca.3.13.gep.i 561
+  %sm96 = call i32 @shadow.mem.store(i32 1066, i32 %sm95, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm96 main@%sm96_0
+  %sm250 = call i32 @shadow.mem.store(i32 1050, i32 %sm249, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm250 const-array(INT, 0)
+  store %struct.em_perf_domain* %.fca.3.13.extract.i, %struct.em_perf_domain** %.fca.3.13.gep.i, align 8
+  % main@  store %struct.em_perf_domain* %.fca.3.13.extract.i, %struct.em_perf_domain** %.fca.3.13.gep.i, align 8
+  %.fca.3.14.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 14, 0
+  %.fca.3.14.0.extract.i 0
+  %.fca.3.14.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 14, i32 0
+  %.fca.3.14.0.gep.i 569
+  %sm97 = call i32 @shadow.mem.store(i32 1066, i32 %sm96, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm97 main@%sm97_0
+  %sm251 = call i32 @shadow.mem.store(i32 1050, i32 %sm250, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm251 const-array(INT, 0)
+  store %struct.irq_domain.509* %.fca.3.14.0.extract.i, %struct.irq_domain.509** %.fca.3.14.0.gep.i, align 8
+  % main@  store %struct.irq_domain.509* %.fca.3.14.0.extract.i, %struct.irq_domain.509** %.fca.3.14.0.gep.i, align 8
+  %.fca.3.14.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 14, 1
+  %.fca.3.14.1.extract.i 0
+  %.fca.3.14.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 14, i32 1
+  %.fca.3.14.1.gep.i 577
+  %sm98 = call i32 @shadow.mem.store(i32 1066, i32 %sm97, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm98 main@%sm98_0
+  %sm252 = call i32 @shadow.mem.store(i32 1050, i32 %sm251, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm252 const-array(INT, 0)
+  store %struct.msi_device_data.8635* %.fca.3.14.1.extract.i, %struct.msi_device_data.8635** %.fca.3.14.1.gep.i, align 8
+  % main@  store %struct.msi_device_data.8635* %.fca.3.14.1.extract.i, %struct.msi_device_data.8635** %.fca.3.14.1.gep.i, align 8
+  %.fca.3.15.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 15
+  %.fca.3.15.extract.i 0
+  %.fca.3.15.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 15
+  %.fca.3.15.gep.i 585
+  %sm99 = call i32 @shadow.mem.store(i32 1066, i32 %sm98, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm99 main@%sm99_0
+  %sm253 = call i32 @shadow.mem.store(i32 1050, i32 %sm252, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm253 const-array(INT, 0)
+  store %struct.dma_map_ops.8529* %.fca.3.15.extract.i, %struct.dma_map_ops.8529** %.fca.3.15.gep.i, align 8
+  % main@  store %struct.dma_map_ops.8529* %.fca.3.15.extract.i, %struct.dma_map_ops.8529** %.fca.3.15.gep.i, align 8
+  %.fca.3.16.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 16
+  %.fca.3.16.extract.i 0
+  %.fca.3.16.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 16
+  %.fca.3.16.gep.i 593
+  %sm100 = call i32 @shadow.mem.store(i32 1066, i32 %sm99, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm100 main@%sm100_0
+  %sm254 = call i32 @shadow.mem.store(i32 1050, i32 %sm253, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm254 const-array(INT, 0)
+  store i64* %.fca.3.16.extract.i, i64** %.fca.3.16.gep.i, align 8
+  % main@  store i64* %.fca.3.16.extract.i, i64** %.fca.3.16.gep.i, align 8
+  %.fca.3.17.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 17
+  %.fca.3.17.extract.i 0
+  %.fca.3.17.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 17
+  %.fca.3.17.gep.i 601
+  %sm101 = call i32 @shadow.mem.store(i32 1066, i32 %sm100, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm101 main@%sm101_0
+  %sm255 = call i32 @shadow.mem.store(i32 1050, i32 %sm254, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm255 const-array(INT, 0)
+  store i64 %.fca.3.17.extract.i, i64* %.fca.3.17.gep.i, align 8
+  % main@  store i64 %.fca.3.17.extract.i, i64* %.fca.3.17.gep.i, align 8
+  %.fca.3.18.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 18
+  %.fca.3.18.extract.i 0
+  %.fca.3.18.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 18
+  %.fca.3.18.gep.i 609
+  %sm102 = call i32 @shadow.mem.store(i32 1066, i32 %sm101, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm102 main@%sm102_0
+  %sm256 = call i32 @shadow.mem.store(i32 1050, i32 %sm255, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm256 const-array(INT, 0)
+  store i64 %.fca.3.18.extract.i, i64* %.fca.3.18.gep.i, align 8
+  % main@  store i64 %.fca.3.18.extract.i, i64* %.fca.3.18.gep.i, align 8
+  %.fca.3.19.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 19
+  %.fca.3.19.extract.i 0
+  %.fca.3.19.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 19
+  %.fca.3.19.gep.i 617
+  %sm103 = call i32 @shadow.mem.store(i32 1066, i32 %sm102, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm103 main@%sm103_0
+  %sm257 = call i32 @shadow.mem.store(i32 1050, i32 %sm256, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm257 const-array(INT, 0)
+  store %struct.sched_info* %.fca.3.19.extract.i, %struct.sched_info** %.fca.3.19.gep.i, align 8
+  % main@  store %struct.sched_info* %.fca.3.19.extract.i, %struct.sched_info** %.fca.3.19.gep.i, align 8
+  %.fca.3.20.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 20
+  %.fca.3.20.extract.i 0
+  %.fca.3.20.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 20
+  %.fca.3.20.gep.i 625
+  %sm104 = call i32 @shadow.mem.store(i32 1066, i32 %sm103, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm104 main@%sm104_0
+  %sm258 = call i32 @shadow.mem.store(i32 1050, i32 %sm257, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm258 const-array(INT, 0)
+  store %struct.device_dma_parameters* %.fca.3.20.extract.i, %struct.device_dma_parameters** %.fca.3.20.gep.i, align 8
+  % main@  store %struct.device_dma_parameters* %.fca.3.20.extract.i, %struct.device_dma_parameters** %.fca.3.20.gep.i, align 8
+  %.fca.3.21.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 21, 0
+  %.fca.3.21.0.extract.i 0
+  %.fca.3.21.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 21, i32 0
+  %.fca.3.21.0.gep.i 633
+  %sm105 = call i32 @shadow.mem.store(i32 1066, i32 %sm104, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm105 main@%sm105_0
+  %sm259 = call i32 @shadow.mem.store(i32 1050, i32 %sm258, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm259 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.21.0.extract.i, %struct.list_head** %.fca.3.21.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.21.0.extract.i, %struct.list_head** %.fca.3.21.0.gep.i, align 8
+  %.fca.3.21.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 21, 1
+  %.fca.3.21.1.extract.i 0
+  %.fca.3.21.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 21, i32 1
+  %.fca.3.21.1.gep.i 641
+  %sm106 = call i32 @shadow.mem.store(i32 1066, i32 %sm105, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm106 main@%sm106_0
+  %sm260 = call i32 @shadow.mem.store(i32 1050, i32 %sm259, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm260 const-array(INT, 0)
+  store %struct.list_head* %.fca.3.21.1.extract.i, %struct.list_head** %.fca.3.21.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.21.1.extract.i, %struct.list_head** %.fca.3.21.1.gep.i, align 8
+  %.fca.3.22.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 22
+  %.fca.3.22.extract.i 0
+  %.fca.3.22.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 22
+  %.fca.3.22.gep.i 649
+  %sm107 = call i32 @shadow.mem.store(i32 1066, i32 %sm106, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm107 main@%sm107_0
+  %sm261 = call i32 @shadow.mem.store(i32 1050, i32 %sm260, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm261 const-array(INT, 0)
+  store %struct.dma_coherent_mem* %.fca.3.22.extract.i, %struct.dma_coherent_mem** %.fca.3.22.gep.i, align 8
+  % main@  store %struct.dma_coherent_mem* %.fca.3.22.extract.i, %struct.dma_coherent_mem** %.fca.3.22.gep.i, align 8
+  %.fca.3.23.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 23
+  %.fca.3.23.extract.i 0
+  %.fca.3.23.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 23
+  %.fca.3.23.gep.i 657
+  %sm108 = call i32 @shadow.mem.store(i32 1066, i32 %sm107, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm108 main@%sm108_0
+  %sm262 = call i32 @shadow.mem.store(i32 1050, i32 %sm261, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm262 const-array(INT, 0)
+  store %struct.io_tlb_mem.8575* %.fca.3.23.extract.i, %struct.io_tlb_mem.8575** %.fca.3.23.gep.i, align 8
+  % main@  store %struct.io_tlb_mem.8575* %.fca.3.23.extract.i, %struct.io_tlb_mem.8575** %.fca.3.23.gep.i, align 8
+  %.fca.3.25.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 25
+  %.fca.3.25.gep.i 665
+  %.fca.3.26.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 26
+  %.fca.3.26.extract.i 15
+  %.fca.3.26.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 26
+  %.fca.3.26.gep.i 673
+  %sm109 = call i32 @shadow.mem.store(i32 1066, i32 %sm108, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm109 main@%sm109_0
+  %sm263 = call i32 @shadow.mem.store(i32 1050, i32 %sm262, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm263 store(const-array(INT, 0), 673, 15)
+  store %struct.fwnode_handle.22960* %.fca.3.26.extract.i, %struct.fwnode_handle.22960** %.fca.3.26.gep.i, align 8
+  % main@  store %struct.fwnode_handle.22960* %.fca.3.26.extract.i, %struct.fwnode_handle.22960** %.fca.3.26.gep.i, align 8
+  %.fca.3.27.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 27
+  %.fca.3.27.extract.i 0
+  %.fca.3.27.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 27
+  %.fca.3.27.gep.i 681
+  %sm110 = call i32 @shadow.mem.store(i32 1066, i32 %sm109, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm110 main@%sm110_0
+  %sm264 = call i32 @shadow.mem.store(i32 1050, i32 %sm263, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm264 store(store(const-array(INT, 0), 673, 15), 681, 0)
+  store i32 %.fca.3.27.extract.i, i32* %.fca.3.27.gep.i, align 8
+  % main@  store i32 %.fca.3.27.extract.i, i32* %.fca.3.27.gep.i, align 8
+  %.fca.3.28.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 28
+  %.fca.3.28.extract.i 0
+  %.fca.3.28.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 28
+  %.fca.3.28.gep.i 685
+  %sm111 = call i32 @shadow.mem.store(i32 1066, i32 %sm110, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm111 main@%sm111_0
+  %sm265 = call i32 @shadow.mem.store(i32 1050, i32 %sm264, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm265 store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0)
+  store i32 %.fca.3.28.extract.i, i32* %.fca.3.28.gep.i, align 4
+  % main@  store i32 %.fca.3.28.extract.i, i32* %.fca.3.28.gep.i, align 4
+  %.fca.3.29.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 29
+  %.fca.3.29.extract.i 0
+  %.fca.3.29.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 29
+  %.fca.3.29.gep.i 689
+  %sm112 = call i32 @shadow.mem.store(i32 1066, i32 %sm111, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm112 main@%sm112_0
+  %sm266 = call i32 @shadow.mem.store(i32 1050, i32 %sm265, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm266 store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0)
+  store i32 %.fca.3.29.extract.i, i32* %.fca.3.29.gep.i, align 8
+  % main@  store i32 %.fca.3.29.extract.i, i32* %.fca.3.29.gep.i, align 8
+  %.fca.3.30.0.0.0.0.0.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 30, 0, 0, 0, 0, 0, 0
+  %.fca.3.30.0.0.0.0.0.0.extract.i 0
+  %.fca.3.30.0.0.0.0.0.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 30, i32 0, i32 0, i32 0, i32 0, i32 0, i32 0
+  %.fca.3.30.0.0.0.0.0.0.gep.i 693
+  %sm113 = call i32 @shadow.mem.store(i32 1066, i32 %sm112, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm113 main@%sm113_0
+  %sm267 = call i32 @shadow.mem.store(i32 1050, i32 %sm266, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm267 store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0)
+  store i32 %.fca.3.30.0.0.0.0.0.0.extract.i, i32* %.fca.3.30.0.0.0.0.0.0.gep.i, align 4
+  % main@  store i32 %.fca.3.30.0.0.0.0.0.0.extract.i, i32* %.fca.3.30.0.0.0.0.0.0.gep.i, align 4
+  %.fca.3.31.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 31, 0
+  %.fca.3.31.0.extract.i 0
+  %.fca.3.31.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 31, i32 0
+  %.fca.3.31.0.gep.i 697
+  %sm114 = call i32 @shadow.mem.store(i32 1066, i32 %sm113, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm114 main@%sm114_0
+  %sm268 = call i32 @shadow.mem.store(i32 1050, i32 %sm267, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm268 store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0)
+  store %struct.list_head* %.fca.3.31.0.extract.i, %struct.list_head** %.fca.3.31.0.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.31.0.extract.i, %struct.list_head** %.fca.3.31.0.gep.i, align 8
+  %.fca.3.31.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 31, 1
+  %.fca.3.31.1.extract.i 0
+  %.fca.3.31.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 31, i32 1
+  %.fca.3.31.1.gep.i 705
+  %sm115 = call i32 @shadow.mem.store(i32 1066, i32 %sm114, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm115 main@%sm115_0
+  %sm269 = call i32 @shadow.mem.store(i32 1050, i32 %sm268, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm269 store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0)
+  store %struct.list_head* %.fca.3.31.1.extract.i, %struct.list_head** %.fca.3.31.1.gep.i, align 8
+  % main@  store %struct.list_head* %.fca.3.31.1.extract.i, %struct.list_head** %.fca.3.31.1.gep.i, align 8
+  %.fca.3.32.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 32
+  %.fca.3.32.extract.i 0
+  %.fca.3.32.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 32
+  %.fca.3.32.gep.i 713
+  %sm116 = call i32 @shadow.mem.store(i32 1066, i32 %sm115, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm116 main@%sm116_0
+  %sm270 = call i32 @shadow.mem.store(i32 1050, i32 %sm269, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm270 store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0)
+  store %struct.class.22961* %.fca.3.32.extract.i, %struct.class.22961** %.fca.3.32.gep.i, align 8
+  % main@  store %struct.class.22961* %.fca.3.32.extract.i, %struct.class.22961** %.fca.3.32.gep.i, align 8
+  %.fca.3.33.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 33
+  %.fca.3.33.extract.i 0
+  %.fca.3.33.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 33
+  %.fca.3.33.gep.i 721
+  %sm117 = call i32 @shadow.mem.store(i32 1066, i32 %sm116, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm117 main@%sm117_0
+  %sm271 = call i32 @shadow.mem.store(i32 1050, i32 %sm270, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm271 store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0)
+  store %struct.attribute_group.22941** %.fca.3.33.extract.i, %struct.attribute_group.22941*** %.fca.3.33.gep.i, align 8
+  % main@  store %struct.attribute_group.22941** %.fca.3.33.extract.i, %struct.attribute_group.22941*** %.fca.3.33.gep.i, align 8
+  %.fca.3.34.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 34
+  %.fca.3.34.extract.i 0
+  %.fca.3.34.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 34
+  %.fca.3.34.gep.i 729
+  %sm118 = call i32 @shadow.mem.store(i32 1066, i32 %sm117, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm118 main@%sm118_0
+  %sm272 = call i32 @shadow.mem.store(i32 1050, i32 %sm271, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm272 store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0)
+  store void (%struct.device.22962*)* %.fca.3.34.extract.i, void (%struct.device.22962*)** %.fca.3.34.gep.i, align 8
+  % main@  store void (%struct.device.22962*)* %.fca.3.34.extract.i, void (%struct.device.22962*)** %.fca.3.34.gep.i, align 8
+  %.fca.3.35.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 35
+  %.fca.3.35.extract.i 0
+  %.fca.3.35.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 35
+  %.fca.3.35.gep.i 737
+  %sm119 = call i32 @shadow.mem.store(i32 1066, i32 %sm118, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm119 main@%sm119_0
+  %sm273 = call i32 @shadow.mem.store(i32 1050, i32 %sm272, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm273 store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0)
+  store %struct.iommu_group* %.fca.3.35.extract.i, %struct.iommu_group** %.fca.3.35.gep.i, align 8
+  % main@  store %struct.iommu_group* %.fca.3.35.extract.i, %struct.iommu_group** %.fca.3.35.gep.i, align 8
+  %.fca.3.36.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 36
+  %.fca.3.36.extract.i 0
+  %.fca.3.36.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 36
+  %.fca.3.36.gep.i 745
+  %sm120 = call i32 @shadow.mem.store(i32 1066, i32 %sm119, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm120 main@%sm120_0
+  %sm274 = call i32 @shadow.mem.store(i32 1050, i32 %sm273, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm274 store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0)
+  store %struct.dev_iommu.8607* %.fca.3.36.extract.i, %struct.dev_iommu.8607** %.fca.3.36.gep.i, align 8
+  % main@  store %struct.dev_iommu.8607* %.fca.3.36.extract.i, %struct.dev_iommu.8607** %.fca.3.36.gep.i, align 8
+  %.fca.3.37.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 37
+  %.fca.3.37.extract.i 0
+  %.fca.3.37.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 37
+  %.fca.3.37.gep.i 753
+  %sm121 = call i32 @shadow.mem.store(i32 1066, i32 %sm120, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm121 main@%sm121_0
+  %sm275 = call i32 @shadow.mem.store(i32 1050, i32 %sm274, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm275 store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0)
+  store %struct.device_physical_location* %.fca.3.37.extract.i, %struct.device_physical_location** %.fca.3.37.gep.i, align 8
+  % main@  store %struct.device_physical_location* %.fca.3.37.extract.i, %struct.device_physical_location** %.fca.3.37.gep.i, align 8
+  %.fca.3.38.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 38
+  %.fca.3.38.extract.i 0
+  %.fca.3.38.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 38
+  %.fca.3.38.gep.i 761
+  %sm122 = call i32 @shadow.mem.store(i32 1066, i32 %sm121, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm122 main@%sm122_0
+  %sm276 = call i32 @shadow.mem.store(i32 1050, i32 %sm275, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm276 store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0)
+  store i32 %.fca.3.38.extract.i, i32* %.fca.3.38.gep.i, align 8
+  % main@  store i32 %.fca.3.38.extract.i, i32* %.fca.3.38.gep.i, align 8
+  %.fca.3.39.extract.i = extractvalue %struct.platform_device.22967 %_13, 3, 39
+  %.fca.3.39.extract.i 0
+  %.fca.3.39.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3, i32 39
+  %.fca.3.39.gep.i 765
+  %sm123 = call i32 @shadow.mem.store(i32 1066, i32 %sm122, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm123 main@%sm123_0
+  %sm277 = call i32 @shadow.mem.store(i32 1050, i32 %sm276, i8* null), !shadow.mem !12, !shadow.mem.def !18
+  %sm277 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0)
+  store i8 %.fca.3.39.extract.i, i8* %.fca.3.39.gep.i, align 4
+  % main@  store i8 %.fca.3.39.extract.i, i8* %.fca.3.39.gep.i, align 4
+  %.fca.4.extract.i = extractvalue %struct.platform_device.22967 %_13, 4
+  %.fca.4.extract.i 0
+  %.fca.4.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 4
+  %.fca.4.gep.i 769
+  %sm124 = call i32 @shadow.mem.store(i32 1066, i32 %sm123, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm124 main@%sm124_0
+  %sm278 = call i32 @shadow.mem.store(i32 1050, i32 %sm277, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm278 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0)
+  store i64 %.fca.4.extract.i, i64* %.fca.4.gep.i, align 8
+  % main@  store i64 %.fca.4.extract.i, i64* %.fca.4.gep.i, align 8
+  %.fca.5.0.extract.i = extractvalue %struct.platform_device.22967 %_13, 5, 0
+  %.fca.5.0.extract.i 0
+  %.fca.5.0.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 5, i32 0
+  %.fca.5.0.gep.i 777
+  %sm125 = call i32 @shadow.mem.store(i32 1066, i32 %sm124, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm125 main@%sm125_0
+  %sm279 = call i32 @shadow.mem.store(i32 1050, i32 %sm278, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm279 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0)
+  store i32 %.fca.5.0.extract.i, i32* %.fca.5.0.gep.i, align 8
+  % main@  store i32 %.fca.5.0.extract.i, i32* %.fca.5.0.gep.i, align 8
+  %.fca.5.1.extract.i = extractvalue %struct.platform_device.22967 %_13, 5, 1
+  %.fca.5.1.extract.i 0
+  %.fca.5.1.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 5, i32 1
+  %.fca.5.1.gep.i 781
+  %sm126 = call i32 @shadow.mem.store(i32 1066, i32 %sm125, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm126 main@%sm126_0
+  %sm280 = call i32 @shadow.mem.store(i32 1050, i32 %sm279, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm280 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0)
+  store i32 %.fca.5.1.extract.i, i32* %.fca.5.1.gep.i, align 4
+  % main@  store i32 %.fca.5.1.extract.i, i32* %.fca.5.1.gep.i, align 4
+  %.fca.5.2.extract.i = extractvalue %struct.platform_device.22967 %_13, 5, 2
+  %.fca.5.2.extract.i 0
+  %.fca.5.2.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 5, i32 2
+  %.fca.5.2.gep.i 785
+  %sm127 = call i32 @shadow.mem.store(i32 1066, i32 %sm126, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm127 main@%sm127_0
+  %sm281 = call i32 @shadow.mem.store(i32 1050, i32 %sm280, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm281 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0)
+  store i64 %.fca.5.2.extract.i, i64* %.fca.5.2.gep.i, align 8
+  % main@  store i64 %.fca.5.2.extract.i, i64* %.fca.5.2.gep.i, align 8
+  %.fca.6.extract.i = extractvalue %struct.platform_device.22967 %_13, 6
+  %.fca.6.extract.i 0
+  %.fca.6.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 6
+  %.fca.6.gep.i 793
+  %sm128 = call i32 @shadow.mem.store(i32 1066, i32 %sm127, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm128 main@%sm128_0
+  %sm282 = call i32 @shadow.mem.store(i32 1050, i32 %sm281, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm282 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0)
+  store i32 %.fca.6.extract.i, i32* %.fca.6.gep.i, align 8
+  % main@  store i32 %.fca.6.extract.i, i32* %.fca.6.gep.i, align 8
+  %.fca.7.extract.i = extractvalue %struct.platform_device.22967 %_13, 7
+  %.fca.7.extract.i 0
+  %.fca.7.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 7
+  %.fca.7.gep.i 801
+  %sm129 = call i32 @shadow.mem.store(i32 1066, i32 %sm128, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm129 main@%sm129_0
+  %sm283 = call i32 @shadow.mem.store(i32 1050, i32 %sm282, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm283 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0)
+  store %struct.resource* %.fca.7.extract.i, %struct.resource** %.fca.7.gep.i, align 8
+  % main@  store %struct.resource* %.fca.7.extract.i, %struct.resource** %.fca.7.gep.i, align 8
+  %.fca.8.extract.i = extractvalue %struct.platform_device.22967 %_13, 8
+  %.fca.8.extract.i 0
+  %.fca.8.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 8
+  %.fca.8.gep.i 809
+  %sm130 = call i32 @shadow.mem.store(i32 1066, i32 %sm129, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm130 main@%sm130_0
+  %sm284 = call i32 @shadow.mem.store(i32 1050, i32 %sm283, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm284 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0)
+  store %struct.platform_device_id* %.fca.8.extract.i, %struct.platform_device_id** %.fca.8.gep.i, align 8
+  % main@  store %struct.platform_device_id* %.fca.8.extract.i, %struct.platform_device_id** %.fca.8.gep.i, align 8
+  %.fca.9.extract.i = extractvalue %struct.platform_device.22967 %_13, 9
+  %.fca.9.extract.i 0
+  %.fca.9.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 9
+  %.fca.9.gep.i 817
+  %sm131 = call i32 @shadow.mem.store(i32 1066, i32 %sm130, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm131 main@%sm131_0
+  %sm285 = call i32 @shadow.mem.store(i32 1050, i32 %sm284, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm285 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0), 817, 0)
+  store i8* %.fca.9.extract.i, i8** %.fca.9.gep.i, align 8
+  % main@  store i8* %.fca.9.extract.i, i8** %.fca.9.gep.i, align 8
+  %.fca.10.extract.i = extractvalue %struct.platform_device.22967 %_13, 10
+  %.fca.10.extract.i 0
+  %.fca.10.gep.i = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 10
+  %.fca.10.gep.i 825
+  %sm132 = call i32 @shadow.mem.store(i32 1066, i32 %sm131, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm132 main@%sm132_0
+  %sm286 = call i32 @shadow.mem.store(i32 1050, i32 %sm285, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm286 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0), 817, 0), 825, 0)
+  store %struct.mfd_cell* %.fca.10.extract.i, %struct.mfd_cell** %.fca.10.gep.i, align 8
+  % main@  store %struct.mfd_cell* %.fca.10.extract.i, %struct.mfd_cell** %.fca.10.gep.i, align 8
+  %sm133 = call i32 @shadow.mem.store(i32 1066, i32 %sm132, i8* null), !shadow.mem !12, !shadow.mem.def !19
+  %sm133 main@%sm133_0
+  %sm287 = call i32 @shadow.mem.store(i32 1050, i32 %sm286, i8* null), !shadow.mem !12, !shadow.mem.def !19
+  %sm287 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0), 817, 0), 825, 0), 245, 0)
+  store i16 0, i16* %.fca.3.11.1.gep.i, align 4
+  % main@  store i16 0, i16* %.fca.3.11.1.gep.i, align 4
+  %sm134 = call i32 @shadow.mem.store(i32 1066, i32 %sm133, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm134 main@%sm134_0
+  %sm288 = call i32 @shadow.mem.store(i32 1050, i32 %sm287, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm288 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0), 817, 0), 825, 0), 245, 0), 73, 1)
+  store i32 1, i32* %.fca.3.0.6.0.0.0.gep.i, align 8
+  % main@  store i32 1, i32* %.fca.3.0.6.0.0.0.gep.i, align 8
+  %sm135 = call i32 @shadow.mem.store(i32 1066, i32 %sm134, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm135 main@%sm135_0
+  %sm289 = call i32 @shadow.mem.store(i32 1050, i32 %sm288, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm289 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0), 817, 0), 825, 0), 245, 0), 73, 1), 145, 1)
+  store i8* %_5, i8** %.fca.3.8.gep.i, align 8
+  % main@  store i8* %_5, i8** %.fca.3.8.gep.i, align 8
+  %sm136 = call i32 @shadow.mem.store(i32 1066, i32 %sm135, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm136 main@%sm136_0
+  %sm290 = call i32 @shadow.mem.store(i32 1050, i32 %sm289, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm290 store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(store(const-array(INT, 0), 673, 15), 681, 0), 685, 0), 689, 0), 693, 0), 697, 0), 705, 0), 713, 0), 721, 0), 729, 0), 737, 0), 745, 0), 753, 0), 761, 0), 765, 0), 769, 0), 777, 0), 781, 0), 785, 0), 793, 0), 801, 0), 809, 0), 817, 0), 825, 0), 245, 0), 73, 1), 145, 1), 665, 1)
+  store %struct.device_node.493* %_3, %struct.device_node.493** %.fca.3.25.gep.i, align 8
+  % main@  store %struct.device_node.493* %_3, %struct.device_node.493** %.fca.3.25.gep.i, align 8
+  %_14 = call %union.acpi_object* @verifier.nondet.0() #10
+  %_14 1
+  %_15 = call %union.acpi_object* @verifier.nondet.0() #10
+  %_15 0
+  %_16 = call %union.acpi_object* @verifier.nondet.0() #10
+  %_16 1
+  %_17 = getelementptr inbounds %struct.platform_device.22967, %struct.platform_device.22967* %_1, i64 0, i32 3
+  %_17 17
+  call void @shadow.mem.load(i32 1066, i32 %sm109, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  call void @shadow.mem.load(i32 1050, i32 %sm263, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_18 = load %struct.fwnode_handle.22960*, %struct.fwnode_handle.22960** %.fca.3.26.gep.i, align 8
+  %_18 15
+  %_19 = call i1 @verifier.nondetvalue.1() #10
+  %_19 true
+  %_20 = getelementptr %struct.fwnode_handle.22960, %struct.fwnode_handle.22960* %_18, i64 -1, i32 4, i32 1
+  %_20 -1
+  %_21 = bitcast %struct.list_head** %_20 to %struct.acpi_device.23039*
+  %_21 -1
+  %_22 = call i1 @verifier.nondetvalue.1() #10
+  %_22 true
+  %_23 = and i1 %_19, %_22
+  %_23 true
+  %_24 = icmp eq %struct.list_head** %_20, null
+  %_24 false
+  call void @verifier.assume.not(i1 %_24) #10
+  br i1 %_23, label %_25, label %acpi_wmi_probe.exit.i
+  % main@  br i1 %_23, label %_25, label %acpi_wmi_probe.exit.i
+_25: 
+  %_26 = call i1 @verifier.nondetvalue.1() #10
+  %_26 true
+  br i1 %_26, label %_27, label %acpi_wmi_probe.exit.i
+  % main@  br i1 %_26, label %_27, label %acpi_wmi_probe.exit.i
+_27: 
+  %_28 = call i1 @verifier.nondetvalue.1() #10
+  %_28 true
+  br i1 %_28, label %_29, label %acpi_wmi_probe.exit.i
+  % main@  br i1 %_28, label %_29, label %acpi_wmi_probe.exit.i
+_29: 
+  call void @shadow.mem.load(i32 1066, i32 %sm30, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  call void @shadow.mem.load(i32 1050, i32 %sm184, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_30 = load i8*, i8** %.fca.3.3.gep.i, align 8
+  %_30 0
+  %_31 = icmp eq i8* %_30, null
+  %_31 true
+  %_32 = getelementptr inbounds %struct.device.22962, %struct.device.22962* %_17, i64 0, i32 0, i32 0
+  %_32 17
+  call void @shadow.mem.load(i32 1066, i32 %sm18, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  call void @shadow.mem.load(i32 1050, i32 %sm172, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_33 = load i8*, i8** %_32, align 8
+  %_33 0
+  %_34 = select i1 %_31, i8* %_33, i8* %_30
+  %_34 0
+  %_35 = bitcast %struct.device.22962* %_17 to %struct.device.189*
+  %_35 17
+  %_36 = bitcast %struct.class.22961* @wmi_bus_class to %struct.class.312*
+  %_36 0
+  %_37 = getelementptr inbounds [11 x i8], [11 x i8]* @.str.32.11154, i64 0, i64 0
+  %_37 0
+  %_38 = call %struct.device.189* (%struct.class.312*, %struct.device.189*, i32, i8*, i8*, ...) @device_create(%struct.class.312* noundef nonnull %_36, %struct.device.189* noundef %_35, i32 noundef 0, i8* noundef null, i8* noundef %_37, i8* noundef %_34) #11
+  %_38 1
+  %_39 = icmp eq %struct.device.189* %_38, null
+  %_39 false
+  br i1 %_39, label %acpi_wmi_probe.exit.i, label %_40
+  % main@  br i1 %_39, label %acpi_wmi_probe.exit.i, label %_40
+_40: 
+  %_41 = call i1 @verifier.nondetvalue.1() #10
+  %_41 true
+  %.not.i.i = xor i1 %_41, true
+  %.not.i.i false
+  %_42 = icmp eq %union.acpi_object* %_16, null
+  %_42 false
+  %or.cond7.i.i = select i1 %.not.i.i, i1 true, i1 %_42
+  %or.cond7.i.i false
+  br i1 %or.cond7.i.i, label %_144, label %_43
+  % main@  br i1 %or.cond7.i.i, label %_144, label %_43
+_43: 
+  %_44 = getelementptr %union.acpi_object, %union.acpi_object* %_15, i64 0, i32 0, i32 0
+  %_44 0
+  call void @shadow.mem.load(i32 1900, i32 %sm153, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  call void @shadow.mem.load(i32 1884, i32 %sm301, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  %_45 = load i32, i32* %_44, align 8
+  %_45 3
+  %_46 = icmp eq i32 %_45, 3
+  %_46 true
+  br i1 %_46, label %_47, label %_144
+  % main@  br i1 %_46, label %_47, label %_144
+_47: 
+  %_48 = getelementptr inbounds %union.acpi_object, %union.acpi_object* %_14, i64 0, i32 0, i32 1
+  %_48 5
+  call void @shadow.mem.load(i32 1904, i32 %sm154, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  call void @shadow.mem.load(i32 1888, i32 %sm300, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  %_49 = load i32, i32* %_48, align 4
+  %_49 20
+  %_50 = icmp ult i32 %_49, 20
+  %_50 false
+  br i1 %_50, label %.loopexit6, label %_51
+  % main@  br i1 %_50, label %.loopexit6, label %_51
+_51: 
+  %_52 = udiv i32 %_49, 20
+  %_52 1
+  %_53 = zext i32 %_52 to i64
+  %_53 1
+  br label %_54
+  % main@  br label %_54
+_54: 
+  %shadow.mem.2.0306 = phi i32 [ %sm166, %_51 ], [ %shadow.mem.2.1307, %.loopexit5 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.0306 store(store(store(const-array(INT, 51), 913, -1), 761, 761), 769, 761)
+  %drvhorn.target_index.custom.7.0 = phi i64 [ -1, %_51 ], [ %drvhorn.target_index.custom.7.2, %.loopexit5 ]
+  %drvhorn.target_index.custom.7.0 -1
+  %drvhorn.index.custom.7.0 = phi i64 [ 0, %_51 ], [ %drvhorn.index.custom.7.1, %.loopexit5 ]
+  %drvhorn.index.custom.7.0 0
+  %shadow.mem.2.0 = phi i32 [ %sm10, %_51 ], [ %shadow.mem.2.1, %.loopexit5 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.0 store(const-array(INT, 21), 0, 23)
+  %shadow.mem.1058.0 = phi i32 [ %sm14, %_51 ], [ %shadow.mem.1058.2, %.loopexit5 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1058.0 const-array(INT, 0)
+  %shadow.mem.1050.0 = phi i32 [ %sm13, %_51 ], [ %shadow.mem.1050.1, %.loopexit5 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1050.0 const-array(INT, 0)
+  %_55 = phi i64 [ 0, %_51 ], [ %_115, %.loopexit5 ]
+  %_55 0
+  %_56 = phi i32 [ 0, %_51 ], [ %_114, %.loopexit5 ]
+  %_56 0
+  %_57 = call i1 @verifier.nondetvalue.1() #10
+  %_57 true
+  br i1 %_57, label %.loopexit4, label %.preheader3
+  % main@  br i1 %_57, label %.loopexit4, label %.preheader3
+.loopexit4: 
+  %_69 = call i1 @nd.int1() #10
+  %_69 true
+  call void @shadow.mem.load(i32 1050, i32 %shadow.mem.1050.0, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_71 = icmp ult i64 %drvhorn.index.custom.7.0, %loop.bound
+  %_71 true
+  %_72 = and i1 %_69, %_71
+  %_72 true
+  br i1 %_72, label %body.i.i.i, label %.loopexit6
+  % main@  br i1 %_72, label %body.i.i.i, label %.loopexit6
+body.i.i.i: 
+  %_73 = getelementptr inbounds [256 x %custom.7], [256 x %custom.7]* @drvhorn.storage.custom.7, i64 0, i64 %drvhorn.index.custom.7.0
+  %_73 1
+  %_74 = getelementptr inbounds [256 x %custom.7], [256 x %custom.7]* @drvhorn.storage.custom.7, i64 0, i64 %drvhorn.index.custom.7.0, i32 0, i32 0, i32 6, i32 0, i32 0, i32 0
+  %_74 57
+  %sm137 = call i32 @shadow.mem.store(i32 2, i32 %shadow.mem.2.0, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm137 const-array(INT, 21)
+  %sm291 = call i32 @shadow.mem.store(i32 2, i32 %shadow.mem.2.0306, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm291 store(store(store(store(const-array(INT, 51), 761, 761), 57, 1), 769, 761), 913, -1)
+  store i32 1, i32* %_74, align 8
+  % main@  store i32 1, i32* %_74, align 8
+  %_75 = add nuw nsw i64 %drvhorn.index.custom.7.0, 1
+  %_75 1
+  %sm138 = call i32 @shadow.mem.store(i32 1050, i32 %shadow.mem.1050.0, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm138 const-array(INT, 11)
+  %_76 = call i1 @nd.int1() #10
+  %_76 true
+  br i1 %_76, label %body.i.i.i.i, label %drvhorn.gen.custom.7.exit.i.i
+  % main@  br i1 %_76, label %body.i.i.i.i, label %drvhorn.gen.custom.7.exit.i.i
+body.i.i.i.i: 
+  %sm139 = call i32 @shadow.mem.store(i32 1058, i32 %shadow.mem.1058.0, i8* null), !shadow.mem !12, !shadow.mem.def !3
+  %sm139 const-array(INT, 39)
+  br label %drvhorn.gen.custom.7.exit.i.i
+  % main@  br label %drvhorn.gen.custom.7.exit.i.i
+drvhorn.gen.custom.7.exit.i.i: 
+  %drvhorn.target_index.custom.7.1 = phi i64 [ %drvhorn.index.custom.7.0, %body.i.i.i.i ], [ %drvhorn.target_index.custom.7.0, %body.i.i.i ]
+  %drvhorn.target_index.custom.7.1 0
+  %shadow.mem.1058.1 = phi i32 [ %sm139, %body.i.i.i.i ], [ %shadow.mem.1058.0, %body.i.i.i ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1058.1 const-array(INT, 39)
+  %_77 = icmp eq %custom.7* %_73, null
+  %_77 false
+  br i1 %_77, label %.loopexit6, label %_78
+  % main@  br i1 %_77, label %.loopexit6, label %_78
+_78: 
+  %_79 = getelementptr inbounds [256 x %custom.7], [256 x %custom.7]* @drvhorn.storage.custom.7, i64 0, i64 %drvhorn.index.custom.7.0, i32 1, i64 43
+  %_79 796
+  call void @shadow.mem.load(i32 2, i32 %sm137, i8* null), !shadow.mem !12, !shadow.mem.use !18
+  call void @shadow.mem.load(i32 2, i32 %sm291, i8* null), !shadow.mem !12, !shadow.mem.use !18
+  %_80 = load i8, i8* %_79, align 1
+  %_80 51
+  %_81 = zext i8 %_80 to i64
+  %_81 51
+  %_82 = and i64 %_81, 8
+  %_82 0
+  %_83 = icmp eq i64 %_82, 0
+  %_83 true
+  %_84 = and i64 %_81, 2
+  %_84 0
+  %_85 = icmp eq i64 %_84, 0
+  %_85 true
+  %or.cond.i.i = and i1 %_83, %_85
+  %or.cond.i.i true
+  br i1 %or.cond.i.i, label %NodeBlock.i.i, label %_92
+  % main@  br i1 %or.cond.i.i, label %NodeBlock.i.i, label %_92
+NodeBlock.i.i: 
+  %_86 = call i32 @verifier.nondetvalue.2() #10
+  %_86 6
+  %Pivot.i.i = icmp slt i32 %_86, 5
+  %Pivot.i.i false
+  br i1 %Pivot.i.i, label %LeafBlock.i.i, label %LeafBlock8.i.i
+  % main@  br i1 %Pivot.i.i, label %LeafBlock.i.i, label %LeafBlock8.i.i
+LeafBlock8.i.i: 
+  %SwitchLeaf9.i.i = icmp eq i32 %_86, 5
+  %SwitchLeaf9.i.i false
+  br i1 %SwitchLeaf9.i.i, label %.loopexit5, label %NewDefault.i.i
+  % main@  br i1 %SwitchLeaf9.i.i, label %.loopexit5, label %NewDefault.i.i
+NewDefault.i.i: 
+  br label %.loopexit5
+  % main@  br label %.loopexit5
+.loopexit5: 
+  %shadow.mem.2.1307 = phi i32 [ %sm293, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %sm291, %_87 ], [ %sm291, %NewDefault.i.i ], [ %sm291, %LeafBlock8.i.i ], [ %shadow.mem.2.0306, %_65 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.1307 store(store(store(store(const-array(INT, 51), 761, 761), 57, 1), 769, 761), 913, -1)
+  %drvhorn.target_index.custom.7.2 = phi i64 [ %drvhorn.target_index.custom.7.1, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %drvhorn.target_index.custom.7.1, %_87 ], [ %drvhorn.target_index.custom.7.1, %NewDefault.i.i ], [ %drvhorn.target_index.custom.7.1, %LeafBlock8.i.i ], [ %drvhorn.target_index.custom.7.0, %_65 ]
+  %drvhorn.target_index.custom.7.2 0
+  %drvhorn.index.custom.7.1 = phi i64 [ %_75, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %_75, %_87 ], [ %_75, %NewDefault.i.i ], [ %_75, %LeafBlock8.i.i ], [ %drvhorn.index.custom.7.0, %_65 ]
+  %drvhorn.index.custom.7.1 1
+  %shadow.mem.2.1 = phi i32 [ %sm141, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %sm137, %_87 ], [ %sm137, %NewDefault.i.i ], [ %sm137, %LeafBlock8.i.i ], [ %shadow.mem.2.0, %_65 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.1 const-array(INT, 21)
+  %shadow.mem.1058.2 = phi i32 [ %shadow.mem.1058.1, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %shadow.mem.1058.1, %_87 ], [ %shadow.mem.1058.1, %NewDefault.i.i ], [ %shadow.mem.1058.1, %LeafBlock8.i.i ], [ %shadow.mem.1058.0, %_65 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1058.2 const-array(INT, 39)
+  %shadow.mem.1050.1 = phi i32 [ %sm138, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %sm138, %_87 ], [ %sm138, %NewDefault.i.i ], [ %sm138, %LeafBlock8.i.i ], [ %shadow.mem.1050.0, %_65 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1050.1 const-array(INT, 11)
+  %_114 = phi i32 [ -2, %LeafBlock8.i.i ], [ -5, %NewDefault.i.i ], [ -5, %_87 ], [ 0, %drvhorn.drvhorn.drvhorn.wmi_dev_release.exit15.i.i ], [ %_56, %_65 ]
+  %_114 -5
+  %_115 = add nuw nsw i64 %_55, 1
+  %_115 1
+  %_116 = icmp eq i64 %_115, %_53
+  %_116 true
+  br i1 %_116, label %.loopexit6, label %_54, !llvm.loop !24
+  % main@  br i1 %_116, label %.loopexit6, label %_54, !llvm.loop !24
+.loopexit6: 
+  %shadow.mem.2.2308 = phi i32 [ %sm166, %_47 ], [ %sm291, %drvhorn.gen.custom.7.exit.i.i ], [ %shadow.mem.2.1307, %.loopexit5 ], [ %shadow.mem.2.0306, %.loopexit4 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.2308 store(store(store(store(const-array(INT, 51), 761, 761), 57, 1), 769, 761), 913, -1)
+  %drvhorn.target_index.custom.7.3 = phi i64 [ -1, %_47 ], [ %drvhorn.target_index.custom.7.1, %drvhorn.gen.custom.7.exit.i.i ], [ %drvhorn.target_index.custom.7.2, %.loopexit5 ], [ %drvhorn.target_index.custom.7.0, %.loopexit4 ]
+  %drvhorn.target_index.custom.7.3 0
+  %shadow.mem.2.2 = phi i32 [ %sm10, %_47 ], [ %sm137, %drvhorn.gen.custom.7.exit.i.i ], [ %shadow.mem.2.1, %.loopexit5 ], [ %shadow.mem.2.0, %.loopexit4 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.2 const-array(INT, 21)
+  %shadow.mem.1058.3 = phi i32 [ %sm14, %_47 ], [ %shadow.mem.1058.1, %drvhorn.gen.custom.7.exit.i.i ], [ %shadow.mem.1058.2, %.loopexit5 ], [ %shadow.mem.1058.0, %.loopexit4 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1058.3 const-array(INT, 39)
+  %_117 = phi i32 [ 0, %_47 ], [ -12, %drvhorn.gen.custom.7.exit.i.i ], [ %_114, %.loopexit5 ], [ -12, %.loopexit4 ]
+  %_117 -5
+  %_118 = bitcast %struct.list_head* @wmi_block_list to i8**
+  %_118 761
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.2, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.2308, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_119 = load i8*, i8** %_118, align 8
+  %_119 761
+  %_120 = call i1 @verifier.nondetvalue.1() #10
+  %_120 false
+  br i1 %_120, label %.loopexit, label %.preheader
+  % main@  br i1 %_120, label %.loopexit, label %.preheader
+.preheader: 
+  %shadow.mem.2.3309 = phi i32 [ %shadow.mem.2.2308, %.loopexit6 ], [ %shadow.mem.2.4310, %put_device.exit.i.i ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.3309 store(store(store(store(const-array(INT, 51), 913, -1), 769, 761), 57, 1), 761, 761)
+  %shadow.mem.2.3 = phi i32 [ %shadow.mem.2.2, %.loopexit6 ], [ %shadow.mem.2.4, %put_device.exit.i.i ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.3 const-array(INT, 21)
+  %_121 = phi i8* [ %_124, %put_device.exit.i.i ], [ %_119, %.loopexit6 ]
+  %_121 761
+  %_122 = phi i32 [ %_140, %put_device.exit.i.i ], [ %_117, %.loopexit6 ]
+  %_122 -5
+  %_123 = bitcast i8* %_121 to i8**
+  %_123 761
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.3, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.3309, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_124 = load i8*, i8** %_123, align 8
+  %_124 761
+  %_125 = getelementptr i8, i8* %_121, i64 152
+  %_125 913
+  %_126 = bitcast i8* %_125 to %struct.acpi_device.23039**
+  %_126 913
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.3, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.3309, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %_127 = load %struct.acpi_device.23039*, %struct.acpi_device.23039** %_126, align 8
+  %_127 -1
+  %_128 = icmp eq %struct.acpi_device.23039* %_127, %_21
+  %_128 true
+  br i1 %_128, label %_129, label %put_device.exit.i.i
+  % main@  br i1 %_128, label %_129, label %put_device.exit.i.i
+_129: 
+  %_130 = getelementptr i8, i8* %_121, i64 -760
+  %_130 1
+  %_131 = call i32 @verifier.nondetvalue.2() #10
+  %_131 1
+  %_132 = call i1 @verifier.nondetvalue.1() #10
+  %_132 false
+  %_133 = icmp eq i8* %_130, null
+  %_133 false
+  call void @verifier.assume.not(i1 %_133) #10
+  br i1 %_132, label %put_device.exit.i.i, label %_134
+  % main@  br i1 %_132, label %put_device.exit.i.i, label %_134
+_134: 
+  br i1 %_133, label %put_device.exit.i.i, label %_135
+  % main@  br i1 %_133, label %put_device.exit.i.i, label %_135
+_135: 
+  %_136 = getelementptr i8, i8* %_121, i64 -704
+  %_136 57
+  %_137 = bitcast i8* %_136 to i32*
+  %_137 57
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.3, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.3309, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  %_138 = load i32, i32* %_137, align 4
+  %_138 1
+  %_139 = add i32 %_138, -1
+  %_139 0
+  %sm142 = call i32 @shadow.mem.store(i32 2, i32 %shadow.mem.2.3, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm142 const-array(INT, 38)
+  %sm294 = call i32 @shadow.mem.store(i32 2, i32 %shadow.mem.2.3309, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm294 store(store(store(store(const-array(INT, 51), 761, 761), 57, 0), 769, 761), 913, -1)
+  store i32 %_139, i32* %_137, align 4
+  % main@  store i32 %_139, i32* %_137, align 4
+  br label %put_device.exit.i.i
+  % main@  br label %put_device.exit.i.i
+put_device.exit.i.i: 
+  %shadow.mem.2.4310 = phi i32 [ %shadow.mem.2.3309, %_129 ], [ %shadow.mem.2.3309, %_134 ], [ %sm294, %_135 ], [ %shadow.mem.2.3309, %.preheader ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.4310 store(store(store(store(const-array(INT, 51), 761, 761), 57, 0), 769, 761), 913, -1)
+  %shadow.mem.2.4 = phi i32 [ %shadow.mem.2.3, %_129 ], [ %shadow.mem.2.3, %_134 ], [ %sm142, %_135 ], [ %shadow.mem.2.3, %.preheader ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.4 const-array(INT, 38)
+  %_140 = phi i32 [ %_122, %.preheader ], [ 0, %_129 ], [ %_131, %_135 ], [ %_131, %_134 ]
+  %_140 1
+  %_141 = call i1 @verifier.nondetvalue.1() #10
+  %_141 true
+  br i1 %_141, label %.loopexit, label %.preheader, !llvm.loop !25
+  % main@  br i1 %_141, label %.loopexit, label %.preheader, !llvm.loop !25
+.loopexit: 
+  %shadow.mem.2.5311 = phi i32 [ %shadow.mem.2.2308, %.loopexit6 ], [ %shadow.mem.2.4310, %put_device.exit.i.i ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.5311 store(store(store(store(const-array(INT, 51), 761, 761), 57, 0), 769, 761), 913, -1)
+  %shadow.mem.2.5 = phi i32 [ %shadow.mem.2.2, %.loopexit6 ], [ %shadow.mem.2.4, %put_device.exit.i.i ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.5 const-array(INT, 38)
+  %_142 = phi i32 [ %_117, %.loopexit6 ], [ %_140, %put_device.exit.i.i ]
+  %_142 1
+  %_143 = icmp eq i32 %_142, 0
+  %_143 false
+  br i1 %_143, label %acpi_wmi_probe.exit.i, label %_144
+  % main@  br i1 %_143, label %acpi_wmi_probe.exit.i, label %_144
+_144: 
+  %shadow.mem.2.6312 = phi i32 [ %sm166, %_40 ], [ %shadow.mem.2.5311, %.loopexit ], [ %sm166, %_43 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.6312 store(store(store(store(const-array(INT, 51), 761, 761), 57, 0), 769, 761), 913, -1)
+  %drvhorn.target_index.custom.7.4 = phi i64 [ -1, %_40 ], [ %drvhorn.target_index.custom.7.3, %.loopexit ], [ -1, %_43 ]
+  %drvhorn.target_index.custom.7.4 0
+  %shadow.mem.2.6 = phi i32 [ %sm10, %_40 ], [ %shadow.mem.2.5, %.loopexit ], [ %sm10, %_43 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.6 const-array(INT, 38)
+  %shadow.mem.1058.4 = phi i32 [ %sm14, %_40 ], [ %shadow.mem.1058.3, %.loopexit ], [ %sm14, %_43 ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1058.4 const-array(INT, 39)
+  %_145 = phi i32 [ %_142, %.loopexit ], [ -6, %_40 ], [ -6, %_43 ]
+  %_145 1
+  %_146 = getelementptr inbounds %struct.device.189, %struct.device.189* %_38, i64 0, i32 0, i32 6, i32 0, i32 0, i32 0
+  %_146 57
+  call void @shadow.mem.load(i32 1912, i32 %sm148, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  call void @shadow.mem.load(i32 1896, i32 %sm302, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  %_147 = load i32, i32* %_146, align 4
+  %_147 0
+  %_148 = add i32 %_147, -1
+  %_148 -1
+  %sm143 = call i32 @shadow.mem.store(i32 1912, i32 %sm148, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm143 main@%sm143_0
+  %sm295 = call i32 @shadow.mem.store(i32 1896, i32 %sm302, i8* null), !shadow.mem !12, !shadow.mem.def !17
+  %sm295 store(const-array(INT, 0), 57, -1)
+  store i32 %_148, i32* %_146, align 4
+  % main@  store i32 %_148, i32* %_146, align 4
+  br label %acpi_wmi_probe.exit.i
+  % main@  br label %acpi_wmi_probe.exit.i
+acpi_wmi_probe.exit.i: 
+  %shadow.mem.2.7313 = phi i32 [ %sm166, %_29 ], [ %shadow.mem.2.6312, %_144 ], [ %shadow.mem.2.5311, %.loopexit ], [ %sm166, %_27 ], [ %sm166, %_25 ], [ %sm166, %entry ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.7313 store(store(store(store(const-array(INT, 51), 761, 761), 57, 0), 769, 761), 913, -1)
+  %drvhorn.target_index.custom.7.5 = phi i64 [ -1, %_29 ], [ %drvhorn.target_index.custom.7.4, %_144 ], [ %drvhorn.target_index.custom.7.3, %.loopexit ], [ -1, %_27 ], [ -1, %_25 ], [ -1, %entry ]
+  %drvhorn.target_index.custom.7.5 0
+  %shadow.mem.2.7 = phi i32 [ %sm10, %_29 ], [ %shadow.mem.2.6, %_144 ], [ %shadow.mem.2.5, %.loopexit ], [ %sm10, %_27 ], [ %sm10, %_25 ], [ %sm10, %entry ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.2.7 const-array(INT, 38)
+  %shadow.mem.1058.5 = phi i32 [ %sm14, %_29 ], [ %shadow.mem.1058.4, %_144 ], [ %shadow.mem.1058.3, %.loopexit ], [ %sm14, %_27 ], [ %sm14, %_25 ], [ %sm14, %entry ], !shadow.mem !12, !shadow.mem.phi !12
+  %shadow.mem.1058.5 const-array(INT, 39)
+  %_149 = phi i32 [ 0, %.loopexit ], [ -19, %entry ], [ -19, %_25 ], [ -19, %_27 ], [ -19, %_29 ], [ %_145, %_144 ]
+  %_149 1
+  %_150 = icmp eq i32 %_149, 0
+  %_150 false
+  call void @verifier.assume.not(i1 %_150)
+  call void @shadow.mem.load(i32 1058, i32 %shadow.mem.1058.5, i8* null), !shadow.mem !12, !shadow.mem.use !3
+  %.not.i.i.i = icmp eq i64 %drvhorn.target_index.custom.7.5, -1
+  %.not.i.i.i false
+  call void @verifier.assume.not(i1 %.not.i.i.i)
+  %_152 = getelementptr inbounds [256 x %custom.7], [256 x %custom.7]* @drvhorn.storage.custom.7, i64 0, i64 %drvhorn.target_index.custom.7.5, i32 0, i32 0, i32 6, i32 0, i32 0, i32 0
+  %_152 57
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.7, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  call void @shadow.mem.load(i32 2, i32 %shadow.mem.2.7313, i8* null), !shadow.mem !12, !shadow.mem.use !17
+  %_153 = load i32, i32* %_152, align 8
+  %_153 0
+  %_154 = icmp eq i32 %_153, 1
+  %_154 false
+  call void @verifier.assume.not(i1 %_154)
+  call void @seahorn.fail()
+  br label %acpi_wmi_probe.exit.i.split
+  % main@  br label %acpi_wmi_probe.exit.i.split
+acpi_wmi_probe.exit.i.split: 
+  call void @shadow.mem.in(i32 2, i32 %sm147, i32 0, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  call void @shadow.mem.out(i32 2, i32 %shadow.mem.2.7, i32 0, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  call void @shadow.mem.in(i32 954, i32 %sm149, i32 1, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  call void @shadow.mem.out(i32 954, i32 %sm12, i32 1, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  br label %acpi_wmi_probe.exit.i.split.split
+  % main@  br label %acpi_wmi_probe.exit.i.split.split
+acpi_wmi_probe.exit.i.split.split: 
+  call void @shadow.mem.in(i32 2, i32 %sm296, i32 0, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  call void @shadow.mem.out(i32 2, i32 %shadow.mem.2.7313, i32 0, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  call void @shadow.mem.in(i32 954, i32 %sm305, i32 1, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  call void @shadow.mem.out(i32 954, i32 %sm168, i32 1, i8* null), !shadow.mem !12, !shadow.mem.use !12
+  ret i32 42
+End trace
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for shadow.mem.init
+Producing harness for verifier.nondet.sym.bound
+Producing harness for verifier.nondet.0
+Producing harness for verifier.nondet.0
+Producing harness for verifier.nondet.0
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.1
+Producing harness for device_create
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.2
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.2
+Producing harness for verifier.nondetvalue.1
+Producing harness for verifier.nondetvalue.1
+sat
