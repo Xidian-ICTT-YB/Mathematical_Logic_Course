@@ -40,7 +40,7 @@ evidence/
 └── tools/                证据文件校验脚本
 ```
 
-提交包根目录的 [MANIFEST.sha256](./MANIFEST.sha256) 记录了随附证据文件的校验值。解压后，可在提交包根目录用 Python 3.8 或更高版本运行 `python ./evidence/tools/verify_evidence.py`。
+解压后，可在提交包根目录用 Python 3.8 或更高版本运行 `python ./evidence/tools/verify_evidence.py`。
 
 ## 复现方式
 
