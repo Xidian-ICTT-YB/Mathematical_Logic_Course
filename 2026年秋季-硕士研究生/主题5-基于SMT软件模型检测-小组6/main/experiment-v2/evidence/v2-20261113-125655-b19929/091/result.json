@@ -1,0 +1,37 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 169,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 178,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 304,
+      "text": "Total CPU time for CPAchecker:  902.270s"
+    }
+  ],
+  "wall_seconds": 892.1146167439874,
+  "peak_group_rss": 6485553152,
+  "sampled_group_cpu_peak_seconds": 905.28,
+  "cpa_cpu_seconds": 902.27,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/091/attempt-beb9ba36d2b54e5ca3ac9508b9cd177b/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--media--usb--b2c2--b2c2-flexcop-usb.ko-main.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

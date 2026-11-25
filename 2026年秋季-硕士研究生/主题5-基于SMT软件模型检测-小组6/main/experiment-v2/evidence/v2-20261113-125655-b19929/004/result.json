@@ -1,0 +1,58 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 394,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 396,
+      "text": "Error: line 5390: Unsupported feature (recursion): md_make_request(mddev, bio); (line was originally pointer call(md_make_request) (*((mddev->pers)->make_request))(mddev, bio);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 400,
+      "text": "Number of abstractions:            19 (0% of all post computations)"
+    },
+    {
+      "line": 421,
+      "text": "Number of predicates discovered:          12"
+    },
+    {
+      "line": 439,
+      "text": "  Time for abstraction:                 66.986s (Max:    66.416s, Count: 19)"
+    },
+    {
+      "line": 468,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 507,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 563,
+      "text": "Total CPU time for CPAchecker:   72.790s"
+    }
+  ],
+  "wall_seconds": 73.34034312400036,
+  "peak_group_rss": 887828480,
+  "sampled_group_cpu_peak_seconds": 73.41,
+  "cpa_cpu_seconds": 72.79,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/004/attempt-e7ebd69523014a26b47acb24853ae0c7/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--md--md-mod.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

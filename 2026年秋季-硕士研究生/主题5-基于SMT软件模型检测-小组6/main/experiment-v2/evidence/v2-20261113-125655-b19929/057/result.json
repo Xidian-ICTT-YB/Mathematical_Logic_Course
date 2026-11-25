@@ -1,0 +1,45 @@
+{
+  "status": "MEMORY_LIMIT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 143,
+  "runner_stop_reason": "MEMORY_LIMIT",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 93,
+      "text": "Number of abstractions:            56899 (7% of all post computations)"
+    },
+    {
+      "line": 114,
+      "text": "Number of predicates discovered:          116"
+    },
+    {
+      "line": 134,
+      "text": "  Time for abstraction:                363.089s (Max:     0.354s, Count: 56899)"
+    },
+    {
+      "line": 226,
+      "text": "Number of successful refinements:     107"
+    },
+    {
+      "line": 282,
+      "text": "Total CPU time for CPAchecker:  826.640s"
+    }
+  ],
+  "wall_seconds": 827.3697150140069,
+  "peak_group_rss": 15014580224,
+  "sampled_group_cpu_peak_seconds": 827.06,
+  "cpa_cpu_seconds": 826.64,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/057/attempt-4873151cbdb94fb0afcb7e970d2e0229/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--usb--misc--idmouse.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

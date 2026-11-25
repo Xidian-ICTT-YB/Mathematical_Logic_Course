@@ -1,0 +1,35 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": 1,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 389,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 391,
+      "text": "Warning: Analysis not completed due to recursion (line 4641: Unsupported feature (recursion): tmp___0 = ecryptfs_flush(lower_file, td); (line was originally pointer call(ecryptfs_flush) tmp___0 = (*((lower_file->f_op)->flush))(lower_file, td);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    },
+    {
+      "line": 964,
+      "text": "Exception in thread \"main\" java.util.ConcurrentModificationException"
+    }
+  ],
+  "metric_evidence": [],
+  "wall_seconds": 893.2000526981428,
+  "peak_group_rss": 9457491968,
+  "sampled_group_cpu_peak_seconds": 901.31,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/050/attempt-5a48e2cb1d6c461ea0bdfde75f44c153/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-fs--ecryptfs--ecryptfs.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

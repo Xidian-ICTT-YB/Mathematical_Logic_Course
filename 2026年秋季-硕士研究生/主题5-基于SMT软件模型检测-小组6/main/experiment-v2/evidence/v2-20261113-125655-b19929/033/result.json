@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 66,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 68,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 70,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 72,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 174,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 176,
+      "text": "Error: line 7398: Unsupported feature (recursion): tm6000_usb_probe(__sd___1, (const struct v4l2_priv_tun_config *)(&xc5000_cfg)); (line was originally pointer call(tm6000_usb_probe) (*(((__sd___1->ops)->tuner)->s_config))(__sd___1, (struct v4l2_priv_tun_config  const  *)(& xc5000_cfg));) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 180,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 189,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 316,
+      "text": "Total CPU time for CPAchecker:  168.840s"
+    }
+  ],
+  "wall_seconds": 169.65858458797447,
+  "peak_group_rss": 2068111360,
+  "sampled_group_cpu_peak_seconds": 170.31,
+  "cpa_cpu_seconds": 168.84,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/033/attempt-5bf210bf15b647399941d289ccdab68a/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

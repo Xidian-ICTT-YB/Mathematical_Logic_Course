@@ -1,0 +1,49 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 101,
+      "text": "Number of abstractions:            457 (4% of all post computations)"
+    },
+    {
+      "line": 122,
+      "text": "Number of predicates discovered:          3"
+    },
+    {
+      "line": 132,
+      "text": "  Time for abstraction:                  0.009s (Max:     0.001s, Count: 457)"
+    },
+    {
+      "line": 160,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 221,
+      "text": "Number of successful refinements:     7"
+    },
+    {
+      "line": 277,
+      "text": "Total CPU time for CPAchecker:    4.990s"
+    }
+  ],
+  "wall_seconds": 3.3092033199500293,
+  "peak_group_rss": 392675328,
+  "sampled_group_cpu_peak_seconds": 5.61,
+  "cpa_cpu_seconds": 4.99,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/087/attempt-ddf07ba7bd1b425ca4346ff3abf706f3/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_true-unreach-call_drivers-staging-comedi-drivers-ni_660x-ko--107_1a--adbbc36.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

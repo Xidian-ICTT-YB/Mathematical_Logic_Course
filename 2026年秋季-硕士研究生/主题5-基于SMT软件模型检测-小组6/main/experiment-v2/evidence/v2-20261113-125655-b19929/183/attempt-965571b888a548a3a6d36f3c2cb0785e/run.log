@@ -1,0 +1,565 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with ImpactRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Assuming external function platform_driver_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_driver_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_final_state to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hwmon_device_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function s3c_adc_release to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_remove_file to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function s3c_adc_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hwmon_device_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_warn to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path5489954614307051246' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path5489954614307051246.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Infeasible counterexample found, but could not remove it from the ARG. Therefore, we cannot prove safety. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path6407586661416019518' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path6407586661416019518.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path7617396605706201044' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path7617396605706201044.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path8226152692235846182' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path8226152692235846182.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path7574307641858969765' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path7574307641858969765.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path4321750832175821518' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path4321750832175821518.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path1303095800543526061' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path1303095800543526061.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path3091532344232437790' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path3091532344232437790.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path6461890496441221507' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path6461890496441221507.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path3701006041640133259' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path3701006041640133259.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path6299784189936554339' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path6299784189936554339.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path5794806016868569600' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path5794806016868569600.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path7316723022843344944' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path7316723022843344944.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file <builtin-library-malloc> line 4: error: conflicting function declarations `malloc' (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: old definition in module `path7519222275810813007' file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/tmp/path7519222275810813007.i line 780 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned int) (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: new definition in module `<built-in-library>' file <builtin-library-malloc> line 4 (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: void * (unsigned long int malloc_size) (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (The CPU-time limit of 900s has elapsed.) (ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            231 (4% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            201 (87%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         30 (13%)
+  Times precision was empty:       17 (7%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      214 (93%)
+  Times result was 'false':        40 (17%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         1107
+  BDD entailment checks:           623
+Number of SMT sat checks:          873
+  trivial:                         112
+  cached:                          641
+
+Max ABE block size:                       77
+Number of predicates discovered:          1
+Number of abstraction locations:          0
+Max number of predicates per location:    0
+Avg number of predicates per location:    0
+Total predicates per abstraction:         214
+Max number of predicates per abstraction: 1
+Avg number of predicates per abstraction: 1.00
+Number of irrelevant predicates:          0 (0%)
+Number of preds handled by boolean abs:   214 (100%)
+  Total number of models for allsat:      174
+  Max number of models for allsat:        1
+  Avg number of models for allsat:        0.81
+
+
+Time for post operator:                  0.398s
+  Time for path formula creation:        0.391s
+Time for strengthen operator:            0.010s
+Time for prec operator:                  7.357s
+  Time for abstraction:                  7.341s (Max:     0.233s, Count: 231)
+    Boolean abstraction:                 6.272s
+    Solving time:                        5.700s (Max:     0.160s)
+    Model enumeration time:              0.547s
+    Time for BDD construction:           0.007s (Max:     0.001s)
+Time for merge operator:                 0.141s
+Time for coverage check:                 0.074s
+  Time for BDD entailment checks:        0.071s
+Total time for SMT solver (w/o itp):     6.408s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.029s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         5461 (count: 5461, min: 1, max: 1, avg: 1.00) [1 x 5461]
+
+Predicate Forced Covering statistics
+------------------------------------
+Attempted forced coverings:             237
+Successful forced coverings:            71 (30%)
+No of times elment was already covered: 2
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            3625
+Max size of waitlist:            21
+Average size of waitlist:        8
+Number of computed successors:   3906
+Max successors for one state:    2
+Number of times merged:          242
+Number of times stopped:         242
+Number of times breaked:         18
+
+Total time for CPA algorithm:       529.137s (Max:   124.125s)
+  Time for choose from waitlist:      0.002s
+  Time for forced covering:         520.978s
+  Time for precision adjustment:      7.404s
+  Time for transfer relation:         0.520s
+  Time for merge operator:            0.155s
+  Time for stop operator:             0.029s
+  Time for adding to reached set:     0.021s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                    1 (count: 1, min: 1, max: 1, avg: 1.00)
+
+Total time for static refinement:                      0.036s
+  Time for path feasibility check:                     0.027s
+  Time for predicate extraction from CFA:              0.005s
+  Time for ARG update:                                 0.003s
+
+Impact Refiner statistics
+-------------------------
+Number of predicate refinements:                   17
+Avg. length of target path (in blocks):                 117 (count: 17, min: 3, max: 11, avg: 6.88)
+Number of infeasible sliced prefixes:                     0 (count: 0, min: 0, max: 0, avg: 0.00)
+
+Time for refinement:                                 363.904s
+  Counterexample analysis:                           362.883s (Max:   119.436s, Calls: 18)
+    Refinement sat check:                            333.085s
+    Interpolant computation:                           0.000s
+  Path-formulas extraction:                            0.000s
+  Error path post-processing:                          1.034s
+  Computing abstraction of itp:           0.000s
+  Checking whether itp is new:            0.005s
+  Coverage checks:                        0.004s
+  ARG update:                             0.001s
+
+Number of abstractions during refinements:  8
+Length of refined path (in blocks):                      11 (count: 3, min: 2, max: 5, avg: 3.67)
+Number of affected states:                                6 (count: 3, min: 1, max: 3, avg: 2.00)
+Length (states) of path with itp 'true':                  0 (count: 3, min: 0, max: 0, avg: 0.00)
+Length (states) of path with itp non-trivial itp:         8 (count: 3, min: 1, max: 4, avg: 2.67)
+Length (states) of path with itp 'false':                 1 (count: 3, min: 0, max: 1, avg: 0.33)
+Different non-trivial interpolants along paths:           0 (count: 3, min: 0, max: 0, avg: 0.00)
+Equal non-trivial interpolants along paths:               5 (count: 3, min: 0, max: 3, avg: 1.67)
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                18
+Number of successful refinements:     4
+Number of failed refinements:         0
+Max. size of reached set before ref.: 3101
+Max. size of reached set after ref.:  1196
+Avg. size of reached set before ref.: 1649.22
+Avg. size of reached set after ref.:  510.50
+
+Total time for CEGAR algorithm:     893.118s
+Time for refinements:               363.980s
+Average time for refinement:         20.221s
+Max time for refinement:            119.501s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    14
+Number of infeasible paths:         0 (0%)
+Time for counterexample checks:         4.654s
+Time for running CBMC:                  4.546s
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.711
+  Visited lines:          452
+  Total lines:            532
+  Line coverage:          0.850
+  Visited conditions:     88
+  Total conditions:       104
+  Condition coverage:     0.846
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     754
+Number of CFA edges:             795
+Number of relevant variables:    116
+Number of functions:             38
+Number of loops:                 5
+Size of reached set:             3230
+  Number of reached locations:   287 (38%)
+    Avg states per location:     11
+    Max states per location:     56 (at node N45)
+  Number of reached functions:   27 (71%)
+  Number of partitions:          3112
+    Avg size of partitions:      1
+    Max size of partitions:      41 (with key [N359 (before line 1277), Function main called from node N350, stack depth 1 [30f5a68a], stack [main]])
+  Number of target states:       0
+  Size of final wait list        5
+
+Time for analysis setup:          1.017s
+  Time for loading CPAs:          0.196s
+  Time for loading parser:        0.226s
+  Time for CFA construction:      0.453s
+    Time for parsing file(s):     0.170s
+    Time for AST to CFA:          0.119s
+    Time for CFA sanity check:    0.024s
+    Time for post-processing:     0.109s
+      Time for var class.:        0.052s
+Time for Analysis:              897.789s
+CPU time for analysis:          899.170s
+Total time for CPAchecker:      898.809s
+Total CPU time for CPAchecker:  901.020s
+Time for statistics:              0.028s
+
+Time for Garbage Collector:       0.075s (in 3 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                552MB (   527 MiB) max;    253MB (   241 MiB) avg;    584MB (   557 MiB) peak
+Used non-heap memory:             39MB (    37 MiB) max;     38MB (    36 MiB) avg;     39MB (    37 MiB) peak
+Used in PS Old Gen pool:          22MB (    21 MiB) max;     22MB (    21 MiB) avg;     22MB (    21 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1569MB (  1496 MiB) avg
+Allocated non-heap memory:        40MB (    38 MiB) max;     40MB (    38 MiB) avg
+Total process virtual memory:  13922MB ( 13277 MiB) max;  13788MB ( 13149 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/output".

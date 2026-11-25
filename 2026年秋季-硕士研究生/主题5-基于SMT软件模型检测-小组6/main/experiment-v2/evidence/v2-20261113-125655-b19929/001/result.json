@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 314,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 316,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 318,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 320,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 396,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 398,
+      "text": "Error: line 5390: Unsupported feature (recursion): md_make_request(mddev, bio); (line was originally pointer call(md_make_request) (*((mddev->pers)->make_request))(mddev, bio);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 402,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 411,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 536,
+      "text": "Total CPU time for CPAchecker:    7.280s"
+    }
+  ],
+  "wall_seconds": 9.154771537985653,
+  "peak_group_rss": 777289728,
+  "sampled_group_cpu_peak_seconds": 8.21,
+  "cpa_cpu_seconds": 7.28,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/001/attempt-df2c79c44a7149478a684cc84a116a4f/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--md--md-mod.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

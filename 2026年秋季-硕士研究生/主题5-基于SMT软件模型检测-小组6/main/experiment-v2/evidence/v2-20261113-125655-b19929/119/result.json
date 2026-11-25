@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 2106,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 2108,
+      "text": "Error: line 14296: Unsupported feature (recursion): reprogram_timer(); (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 2112,
+      "text": "Number of abstractions:            1 (0% of all post computations)"
+    },
+    {
+      "line": 2133,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 2140,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 1)"
+    },
+    {
+      "line": 2167,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 2245,
+      "text": "Total CPU time for CPAchecker:    4.090s"
+    }
+  ],
+  "wall_seconds": 2.6684979759156704,
+  "peak_group_rss": 656699392,
+  "sampled_group_cpu_peak_seconds": 4.51,
+  "cpa_cpu_seconds": 4.09,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/119/attempt-e34786407b474efa8c2fd1cae3ccc762/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd-1.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

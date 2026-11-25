@@ -1,0 +1,45 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 182,
+      "text": "Successful analysis: config/induction-noAI/sv-comp16--k-induction-noAI.properties"
+    },
+    {
+      "line": 222,
+      "text": "Number of abstractions:            2 (0% of all post computations)"
+    },
+    {
+      "line": 243,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 250,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 2)"
+    },
+    {
+      "line": 384,
+      "text": "Total CPU time for CPAchecker:    6.750s"
+    }
+  ],
+  "wall_seconds": 4.582594094099477,
+  "peak_group_rss": 826433536,
+  "sampled_group_cpu_peak_seconds": 8.28,
+  "cpa_cpu_seconds": 6.75,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/188/attempt-9ea75808411140ec97258331c13ff477/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-block-virtio_blk-ko--101_1a--39a1d13.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

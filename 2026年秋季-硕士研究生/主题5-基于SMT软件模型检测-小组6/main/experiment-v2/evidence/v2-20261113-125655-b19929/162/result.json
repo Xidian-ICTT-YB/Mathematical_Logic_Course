@@ -1,0 +1,46 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 127,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 129,
+      "text": "Warning: Analysis not completed due to recursion (line 3366: Unsupported feature (recursion): pch_vbus_gpio_work_fall(&(dev->gadget)); (line was originally pointer call(pch_vbus_gpio_work_fall) (*((dev->driver)->disconnect))(& dev->gadget);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 239,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 248,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 379,
+      "text": "Total CPU time for CPAchecker:  904.320s"
+    }
+  ],
+  "wall_seconds": 664.214304890018,
+  "peak_group_rss": 11390169088,
+  "sampled_group_cpu_peak_seconds": 905.22,
+  "cpa_cpu_seconds": 904.32,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/162/attempt-0ca90dacfd6641c88c4a51082b935197/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/43_2a_bitvector_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--gadget--pch_udc.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

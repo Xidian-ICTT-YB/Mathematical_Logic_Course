@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 31,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 33,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 35,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 37,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 47,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 49,
+      "text": "Error: line 3701: Unsupported feature (recursion): magicmouse_raw_event(hdev, report, data + 2UL, (int)(*(data + 1UL))); (line was originally magicmouse_raw_event(hdev, report, data + 2UL, (int )*(data + 1UL));) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 53,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 62,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 187,
+      "text": "Total CPU time for CPAchecker:    2.700s"
+    }
+  ],
+  "wall_seconds": 3.502376116812229,
+  "peak_group_rss": 339431424,
+  "sampled_group_cpu_peak_seconds": 3.3,
+  "cpa_cpu_seconds": 2.7,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/014/attempt-c9a8d1a4272b4577b6498063cad164f5/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/module_get_put-drivers-hid-hid-magicmouse.ko_true-unreach-call.cil.out.i.pp.i",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,41 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 84,
+      "text": "Successful analysis: config/invariantGeneration-no-out.properties"
+    },
+    {
+      "line": 124,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 133,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 264,
+      "text": "Total CPU time for CPAchecker:    4.950s"
+    }
+  ],
+  "wall_seconds": 3.0743309219833463,
+  "peak_group_rss": 625954816,
+  "sampled_group_cpu_peak_seconds": 5.39,
+  "cpa_cpu_seconds": 4.95,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/006/attempt-08a8c381595a421cad5febe8b8fd6914/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--ata--pata_marvell.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,53 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 3630,
+      "text": "Number of abstractions:            137 (2% of all post computations)"
+    },
+    {
+      "line": 3651,
+      "text": "Number of predicates discovered:          2"
+    },
+    {
+      "line": 3669,
+      "text": "  Time for abstraction:                  1.732s (Max:     0.157s, Count: 137)"
+    },
+    {
+      "line": 3698,
+      "text": "Attempted forced coverings:             1"
+    },
+    {
+      "line": 3699,
+      "text": "Successful forced coverings:            0 (0%)"
+    },
+    {
+      "line": 3760,
+      "text": "Number of successful refinements:     5"
+    },
+    {
+      "line": 3816,
+      "text": "Total CPU time for CPAchecker:    7.740s"
+    }
+  ],
+  "wall_seconds": 5.36103308503516,
+  "peak_group_rss": 675680256,
+  "sampled_group_cpu_peak_seconds": 8.27,
+  "cpa_cpu_seconds": 7.74,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/100/attempt-a724f2897ab949b2a762bfa6510d48c9/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

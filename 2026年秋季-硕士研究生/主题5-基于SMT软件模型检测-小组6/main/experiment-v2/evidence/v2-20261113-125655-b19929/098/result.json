@@ -1,0 +1,41 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 3607,
+      "text": "Successful analysis: config/invariantGeneration-no-out.properties"
+    },
+    {
+      "line": 3647,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 3656,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 3787,
+      "text": "Total CPU time for CPAchecker:    5.510s"
+    }
+  ],
+  "wall_seconds": 3.3726048469543457,
+  "peak_group_rss": 673906688,
+  "sampled_group_cpu_peak_seconds": 5.91,
+  "cpa_cpu_seconds": 5.51,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/098/attempt-5373b172ece347eda2977142ad197fe4/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

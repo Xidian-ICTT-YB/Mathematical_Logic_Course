@@ -1,0 +1,53 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 128,
+      "text": "Number of abstractions:            7488 (0% of all post computations)"
+    },
+    {
+      "line": 149,
+      "text": "Number of predicates discovered:          1"
+    },
+    {
+      "line": 159,
+      "text": "  Time for abstraction:                  0.050s (Max:     0.012s, Count: 7488)"
+    },
+    {
+      "line": 190,
+      "text": "Attempted forced coverings:             1835"
+    },
+    {
+      "line": 191,
+      "text": "Successful forced coverings:            1772 (97%)"
+    },
+    {
+      "line": 252,
+      "text": "Number of successful refinements:     9"
+    },
+    {
+      "line": 308,
+      "text": "Total CPU time for CPAchecker:  900.590s"
+    }
+  ],
+  "wall_seconds": 901.5287548049819,
+  "peak_group_rss": 5062955008,
+  "sampled_group_cpu_peak_seconds": 903.43,
+  "cpa_cpu_seconds": 900.59,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/061/attempt-32f99463503445a3bcac50d6340ef6bd/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--wireless--at76c50x-usb.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

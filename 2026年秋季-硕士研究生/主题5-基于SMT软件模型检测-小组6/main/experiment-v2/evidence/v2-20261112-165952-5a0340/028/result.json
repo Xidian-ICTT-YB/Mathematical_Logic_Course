@@ -1,0 +1,35 @@
+{
+  "status": "MEMORY_LIMIT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": -9,
+  "runner_stop_reason": "MEMORY_LIMIT",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 929,
+      "text": "Number of abstractions:            18 (0% of all post computations)"
+    },
+    {
+      "line": 950,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 957,
+      "text": "  Time for abstraction:                  0.002s (Max:     0.001s, Count: 18)"
+    }
+  ],
+  "wall_seconds": 40.30751235294156,
+  "peak_group_rss": 15454892032,
+  "sampled_group_cpu_peak_seconds": 74.76,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/028/attempt-39094c8b16954660814f941a206d6ae9/run.log",
+  "entry": {
+    "repeat": 3,
+    "task": "ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

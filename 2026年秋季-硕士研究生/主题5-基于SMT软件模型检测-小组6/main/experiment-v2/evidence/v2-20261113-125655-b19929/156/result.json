@@ -1,0 +1,41 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 143,
+  "runner_stop_reason": "CPU_HARD_LIMIT",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 426,
+      "text": "Number of abstractions:            12 (1% of all post computations)"
+    },
+    {
+      "line": 447,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 454,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 12)"
+    },
+    {
+      "line": 585,
+      "text": "Total CPU time for CPAchecker:  633.270s"
+    }
+  ],
+  "wall_seconds": 615.363352969056,
+  "peak_group_rss": 5849759744,
+  "sampled_group_cpu_peak_seconds": 1000.13,
+  "cpa_cpu_seconds": 633.27,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/156/attempt-1705f1d970024ce3b19fa48de57956c8/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-net-can-usb-ems_usb.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

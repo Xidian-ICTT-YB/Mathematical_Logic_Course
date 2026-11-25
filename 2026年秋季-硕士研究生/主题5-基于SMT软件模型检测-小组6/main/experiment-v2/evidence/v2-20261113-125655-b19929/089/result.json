@@ -1,0 +1,45 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 77,
+      "text": "Number of abstractions:            29 (1% of all post computations)"
+    },
+    {
+      "line": 98,
+      "text": "Number of predicates discovered:          6"
+    },
+    {
+      "line": 118,
+      "text": "  Time for abstraction:                  0.252s (Max:     0.060s, Count: 29)"
+    },
+    {
+      "line": 186,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 242,
+      "text": "Total CPU time for CPAchecker:    3.890s"
+    }
+  ],
+  "wall_seconds": 2.8514889189973474,
+  "peak_group_rss": 478085120,
+  "sampled_group_cpu_peak_seconds": 4.56,
+  "cpa_cpu_seconds": 3.89,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/089/attempt-f6aadb93677445ccb37efe4d992b340f/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--media--usb--b2c2--b2c2-flexcop-usb.ko-main.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

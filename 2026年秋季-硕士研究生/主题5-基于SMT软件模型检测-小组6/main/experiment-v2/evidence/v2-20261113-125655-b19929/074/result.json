@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 3523,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 3525,
+      "text": "Error: line 10127: Unsupported feature (recursion): comedi_handle_events(dev, s); (line was originally pointer call(comedi_handle_events) (*(s->cancel))(dev, s);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 3529,
+      "text": "Number of abstractions:            31 (1% of all post computations)"
+    },
+    {
+      "line": 3550,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 3557,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 31)"
+    },
+    {
+      "line": 3585,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 3663,
+      "text": "Total CPU time for CPAchecker:    4.530s"
+    }
+  ],
+  "wall_seconds": 2.941477174172178,
+  "peak_group_rss": 701784064,
+  "sampled_group_cpu_peak_seconds": 4.94,
+  "cpa_cpu_seconds": 4.53,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/074/attempt-054db07b03c443a1a07407b9bab95d6e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

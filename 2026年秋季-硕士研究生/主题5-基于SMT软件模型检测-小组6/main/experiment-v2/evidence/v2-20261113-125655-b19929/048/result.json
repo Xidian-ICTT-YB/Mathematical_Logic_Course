@@ -1,0 +1,50 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 172,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 174,
+      "text": "Error: line 7370: Unsupported feature (recursion): gdth_remove_one(ha); (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 178,
+      "text": "Number of abstractions:            11 (1% of all post computations)"
+    },
+    {
+      "line": 199,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 208,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 11)"
+    },
+    {
+      "line": 314,
+      "text": "Total CPU time for CPAchecker:    4.420s"
+    }
+  ],
+  "wall_seconds": 4.818659971002489,
+  "peak_group_rss": 642019328,
+  "sampled_group_cpu_peak_seconds": 4.8,
+  "cpa_cpu_seconds": 4.42,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/048/attempt-dc3dd197b2e1452e85275a0550b71dd6/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-scsi-gdth-ko--111_1a--5934df9-1.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

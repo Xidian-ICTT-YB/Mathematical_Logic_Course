@@ -1,0 +1,53 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 186,
+      "text": "Number of abstractions:            61 (1% of all post computations)"
+    },
+    {
+      "line": 207,
+      "text": "Number of predicates discovered:          10"
+    },
+    {
+      "line": 225,
+      "text": "  Time for abstraction:                  0.710s (Max:     0.129s, Count: 61)"
+    },
+    {
+      "line": 254,
+      "text": "Attempted forced coverings:             16"
+    },
+    {
+      "line": 255,
+      "text": "Successful forced coverings:            11 (69%)"
+    },
+    {
+      "line": 316,
+      "text": "Number of successful refinements:     4"
+    },
+    {
+      "line": 376,
+      "text": "Total CPU time for CPAchecker:    6.190s"
+    }
+  ],
+  "wall_seconds": 8.933373342035338,
+  "peak_group_rss": 501309440,
+  "sampled_group_cpu_peak_seconds": 6.66,
+  "cpa_cpu_seconds": 6.19,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/189/attempt-ce58b10b33be438a99f135953c23bd15/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--rc--rc-core.ko-main.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

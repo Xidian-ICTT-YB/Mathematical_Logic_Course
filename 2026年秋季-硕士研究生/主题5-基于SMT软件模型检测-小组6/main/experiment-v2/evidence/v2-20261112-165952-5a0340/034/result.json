@@ -1,0 +1,49 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 47,
+      "text": "Number of abstractions:            17 (1% of all post computations)"
+    },
+    {
+      "line": 68,
+      "text": "Number of predicates discovered:          2"
+    },
+    {
+      "line": 86,
+      "text": "  Time for abstraction:                  0.118s (Max:     0.071s, Count: 17)"
+    },
+    {
+      "line": 115,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 154,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 210,
+      "text": "Total CPU time for CPAchecker:    2.540s"
+    }
+  ],
+  "wall_seconds": 1.7588610670063645,
+  "peak_group_rss": 342007808,
+  "sampled_group_cpu_peak_seconds": 2.72,
+  "cpa_cpu_seconds": 2.54,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/034/attempt-13ca64d567a04f08b0e437bb37e4e324/run.log",
+  "entry": {
+    "repeat": 3,
+    "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--ata--pata_marvell.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

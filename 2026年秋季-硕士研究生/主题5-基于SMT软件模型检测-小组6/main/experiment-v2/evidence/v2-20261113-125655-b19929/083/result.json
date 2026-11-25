@@ -1,0 +1,45 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 361,
+      "text": "Number of abstractions:            40249 (2% of all post computations)"
+    },
+    {
+      "line": 382,
+      "text": "Number of predicates discovered:          8"
+    },
+    {
+      "line": 402,
+      "text": "  Time for abstraction:                773.513s (Max:     4.973s, Count: 40249)"
+    },
+    {
+      "line": 473,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 521,
+      "text": "Total CPU time for CPAchecker:  900.430s"
+    }
+  ],
+  "wall_seconds": 887.0855923879426,
+  "peak_group_rss": 6207004672,
+  "sampled_group_cpu_peak_seconds": 923.04,
+  "cpa_cpu_seconds": 900.43,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/083/attempt-780df06580bd4be39f6a52a9302f9cc2/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--emulex--benet--be2net.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

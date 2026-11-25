@@ -1,0 +1,380 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/015/attempt-53b8022e6d5745978831075d4a1484e2/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/015/attempt-53b8022e6d5745978831075d4a1484e2/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 3312: Function pointer *(hdev->ll_driver->start) with type int (*)(struct hid_device *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3296: Function pointer *(hdev->ll_driver->parse) with type int (*)(struct hid_device *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3927: Function pointer *(hdev->hid_output_raw_report) with type int (*)(struct hid_device *, __u8 *, size_t , unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Warning: Analysis not completed due to recursion (line 3701: Unsupported feature (recursion): magicmouse_raw_event(hdev, report, data + 2UL, (int)(*(data + 1UL))); (line was originally magicmouse_raw_event(hdev, report, data + 2UL, (int )*(data + 1UL));)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function ldv_initialize to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __hid_register_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function magicmouse_raw_event to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function input_event to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_disconnect to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3342: Ignoring function call through function pointer *(hdev->ll_driver->stop): (*(hdev->ll_driver->stop))(hdev); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function magicmouse_remove to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function dev_set_drvdata to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3296: Ignoring function call through function pointer *(hdev->ll_driver->parse): ret = (*(hdev->ll_driver->parse))(hdev); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3312: Ignoring function call through function pointer *(hdev->ll_driver->start): tmp = (*(hdev->ll_driver->start))(hdev); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function hid_connect to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3328: Ignoring function call through function pointer *(hdev->ll_driver->stop): (*(hdev->ll_driver->stop))(hdev); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function input_set_abs_params to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_register_report to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3927: Ignoring function call through function pointer *(hdev->hid_output_raw_report): ret = (*(hdev->hid_output_raw_report))(hdev, (__u8 *)(&feature), 2UL, 2U); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function dev_err to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_hw_stop to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_unregister_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function input_event to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function magicmouse_raw_event to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from magicmouse_raw_event to magicmouse_raw_event (Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function hid_disconnect to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3342: Ignoring function call through function pointer *(hdev->ll_driver->stop): (*(hdev->ll_driver->stop))(hdev); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function magicmouse_remove to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from hid_hw_stop to magicmouse_remove (Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function dev_set_drvdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3296: Ignoring function call through function pointer *(hdev->ll_driver->parse): ret = (*(hdev->ll_driver->parse))(hdev); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3312: Ignoring function call through function pointer *(hdev->ll_driver->start): tmp = (*(hdev->ll_driver->start))(hdev); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function hid_connect to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3328: Ignoring function call through function pointer *(hdev->ll_driver->stop): (*(hdev->ll_driver->stop))(hdev); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function input_set_abs_params to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_register_report to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3927: Ignoring function call through function pointer *(hdev->hid_output_raw_report): ret = (*(hdev->hid_output_raw_report))(hdev, (__u8 *)(&feature), 2UL, 2U); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function dev_err to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_hw_stop to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from magicmouse_remove to hid_hw_stop (Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hid_unregister_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.004s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.003s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          724 (count: 724, min: 1, max: 1, avg: 1.00) [1 x 724]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            86
+Max size of waitlist:            9
+Average size of waitlist:        5
+Number of computed successors:   95
+Max successors for one state:    2
+Number of times merged:          2
+Number of times stopped:         3
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.314s (Max:     0.314s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.001s
+  Time for transfer relation:         0.305s
+  Time for merge operator:            0.004s
+  Time for stop operator:             0.000s
+  Time for adding to reached set:     0.003s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   486.830s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Number of strengthen sat checks:   0
+Number of coverage checks:         586
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.726s
+  Time for path formula creation:        0.719s
+Time for strengthen operator:            0.027s
+Time for prec operator:                  0.016s
+Time for merge operator:                 0.053s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                 104202 (count: 6661, min: 0, max: 21, avg: 15.64)
+Number of global variables:                           61068 (count: 6661, min: 0, max: 10, avg: 9.17)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    6953
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.117s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                59
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                  902
+Number of deterministic Assumptions:                    224
+Level of Determinism:                              25%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.008s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         6953 (count: 6953, min: 1, max: 1, avg: 1.00) [1 x 6953]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            6661
+Max size of waitlist:            36
+Average size of waitlist:        20
+Number of computed successors:   6953
+Max successors for one state:    2
+Number of times merged:          293
+Number of times stopped:         293
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.623s (Max:     1.623s)
+  Time for choose from waitlist:      0.012s
+  Time for precision adjustment:      0.269s
+  Time for transfer relation:         1.162s
+  Time for merge operator:            0.115s
+  Time for stop operator:             0.020s
+  Time for adding to reached set:     0.020s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           1.624s
+Time for final sat check:                0.001s
+Time for bounding assertions check:      3.314s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.029
+  Visited lines:          0
+  Total lines:            1000
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       158
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1232
+Number of CFA edges:             1430
+Number of relevant variables:    132
+Number of functions:             34
+Number of loops:                 5
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N616)
+  Number of reached functions:   1 (3%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.351s
+  Time for loading CPAs:          0.135s
+  Time for loading parser:        0.233s
+  Time for CFA construction:      0.952s
+    Time for parsing file(s):     0.349s
+    Time for AST to CFA:          0.252s
+    Time for CFA sanity check:    0.066s
+    Time for post-processing:     0.230s
+      Time for var class.:        0.079s
+Time for Analysis:              893.038s
+CPU time for analysis:          904.590s
+Total time for CPAchecker:      894.392s
+Total CPU time for CPAchecker:  906.030s
+Time for statistics:              0.072s
+
+Time for Garbage Collector:     394.159s (in 107 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:              10183MB (  9711 MiB) max;   5517MB (  5261 MiB) avg;  10451MB (  9967 MiB) peak
+Used non-heap memory:             45MB (    43 MiB) max;     43MB (    41 MiB) avg;     46MB (    44 MiB) peak
+Used in PS Old Gen pool:        6990MB (  6666 MiB) max;   3838MB (  3660 MiB) avg;   6990MB (  6666 MiB) peak
+Allocated heap memory:         10387MB (  9906 MiB) max;   7822MB (  7459 MiB) avg
+Allocated non-heap memory:        47MB (    45 MiB) max;     47MB (    44 MiB) avg
+Total process virtual memory:  13932MB ( 13287 MiB) max;  13753MB ( 13116 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/015/attempt-53b8022e6d5745978831075d4a1484e2/output".

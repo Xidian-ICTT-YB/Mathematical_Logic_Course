@@ -1,0 +1,544 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/079/attempt-d43f8e8fdf9345c6b4c4a665970a4a14/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/079/attempt-d43f8e8fdf9345c6b4c4a665970a4a14/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 7869: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 6543: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6517: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6423: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6398: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_open (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_open (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Warning: Analysis not completed due to recursion (line 6670: Unsupported feature (recursion): err = mpeg_open(drv); (line was originally pointer call(mpeg_open) err = (*(drv->request_acquire))(drv);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7261:	N1710 -{tmp___3 = ldv_zalloc(8UL);}-> N1711) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7263:	N1712 -{tmp___4 = ldv_zalloc(16UL);}-> N1713) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7265:	N1714 -{tmp___5 = ldv_zalloc(184UL);}-> N1715) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7269:	N1718 -{tmp___7 = ldv_zalloc(1UL);}-> N1719) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7271:	N1720 -{tmp___8 = ldv_zalloc(104UL);}-> N1721) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7273:	N1722 -{tmp___9 = ldv_zalloc(1UL);}-> N1723) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7275:	N1724 -{tmp___10 = ldv_zalloc(1UL);}-> N1725) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7279:	N1728 -{tmp___12 = ldv_zalloc(1UL);}-> N1729) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7285:	N1734 -{tmp___15 = ldv_zalloc(20UL);}-> N1735) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7287:	N1736 -{tmp___16 = ldv_zalloc(8UL);}-> N1737) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7293:	N1742 -{tmp___19 = ldv_zalloc(1UL);}-> N1743) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7297:	N1746 -{tmp___21 = ldv_zalloc(1UL);}-> N1747) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7299:	N1748 -{tmp___22 = ldv_zalloc(1UL);}-> N1749) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7303:	N1752 -{tmp___24 = ldv_zalloc(1UL);}-> N1753) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7305:	N1754 -{tmp___25 = ldv_zalloc(1UL);}-> N1755) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7307:	N1756 -{tmp___26 = ldv_zalloc(1UL);}-> N1757) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7309:	N1758 -{tmp___27 = ldv_zalloc(1UL);}-> N1759) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7311:	N1760 -{tmp___28 = ldv_zalloc(1UL);}-> N1761) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7313:	N1762 -{tmp___29 = ldv_zalloc(1UL);}-> N1763) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7317:	N1766 -{tmp___31 = ldv_zalloc(1UL);}-> N1767) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7321:	N1770 -{tmp___33 = ldv_zalloc(1UL);}-> N1771) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7323:	N1772 -{tmp___34 = ldv_zalloc(1UL);}-> N1773) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7329:	N1778 -{tmp___37 = ldv_zalloc(80UL);}-> N1779) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7335:	N1784 -{tmp___40 = ldv_zalloc(1UL);}-> N1785) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function memset to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_register_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7133:	N1585 -{tmp = ldv_zalloc(336UL);}-> N1586) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7137:	N1589 -{tmp___1 = ldv_zalloc(208UL);}-> N1590) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7143:	N1595 -{tmp___4 = ldv_zalloc(88UL);}-> N1596) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7145:	N1597 -{tmp___5 = ldv_zalloc(8UL);}-> N1598) (Parallel analysis 1:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Skipping recursive function call from mpeg_open to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function mutex_lock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_newstation to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_video_mux to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6034: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 130U, 3U, 0U, 1, 0, 0) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function ldv__builtin_va_start to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv__builtin_va_arg to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx2341x_ext_ctrls to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx2341x_update to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_freq to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 5932: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 128U, 0U, 0U) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function msecs_to_jiffies to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __const_udelay to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv__builtin_va_end to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strlcpy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6517: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 1); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __builtin_prefetch to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6543: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 0); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6527: Ignoring function call through function pointer *(__sd->ops->tuner->g_frequency): (*(__sd->ops->tuner->g_frequency))(__sd, f); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function msleep to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6398: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 1); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6423: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 0); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function cx2341x_log_status to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6407: Ignoring function call through function pointer *(__sd->ops->core->log_status): (*(__sd->ops->core->log_status))(__sd); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function cx2341x_fill_defaults to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_devdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_get_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6670: Ignoring function call through function pointer *(drv->request_acquire): err = (*(drv->request_acquire))(drv); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function video_device_release to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_unregister_device to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_cancel_buffers to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function videobuf_stop to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function videobuf_queue_sg_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_scale to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6765: Ignoring function call through function pointer *(drv->request_release): (*(drv->request_release))(drv); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function mpeg_release to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from mpeg_open to mpeg_release (Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mpeg_release to mpeg_release (Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 6223: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 145U, 2U, 0U, f->fmt.pix.height, f->fmt.pix.width) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function v4l2_ctrl_next to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8800_ctrl_query to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx2341x_ctrl_query to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_stereo to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_tvnorm to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_get_stereo to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_ioctl2 to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_register_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7133:	N1585 -{tmp = ldv_zalloc(336UL);}-> N1586) (Parallel analysis 1:InductionStepCase:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7137:	N1589 -{tmp___1 = ldv_zalloc(208UL);}-> N1590) (Parallel analysis 1:InductionStepCase:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7143:	N1595 -{tmp___4 = ldv_zalloc(88UL);}-> N1596) (Parallel analysis 1:InductionStepCase:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7145:	N1597 -{tmp___5 = ldv_zalloc(8UL);}-> N1598) (Parallel analysis 1:InductionStepCase:PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function cx8802_unregister_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function release_firmware to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_buf_prepare to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_buf_queue to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6022: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 211U, 0U, 0U) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 6023: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 205U, 0U, 0U) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function cx88_free_buffer to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 5957: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 196U, 0U, 1U, &version) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 6024: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 129U, 2U, 0U, 0, 0) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5908: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 145U, 2U, 0U, dev->height, dev->width) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5977: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 215U, 12U, 0U, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 6714: Ignoring function call through function pointer *(drv->request_release): (*(drv->request_release))(drv); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6692: Ignoring function call through function pointer *(drv->request_release): (*(drv->request_release))(drv); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function cx88_vdev_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_register_device to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 5950: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 128U, 0U, 0U) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5976: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 214U, 2U, 0U, 240, 240) (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function request_firmware to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memcmp to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Error: An unexpected exception occured (ParallelAlgorithm.handleFutureResults, SEVERE)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.008s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.026s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        17317 (count: 17317, min: 1, max: 1, avg: 1.00) [1 x 17317]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            9559
+Max size of waitlist:            418
+Average size of waitlist:        219
+Number of computed successors:   10660
+Max successors for one state:    2
+Number of times merged:          2279
+Number of times stopped:         2602
+Number of times breaked:         0
+
+Total time for CPA algorithm:         6.955s (Max:     6.955s)
+  Time for choose from waitlist:      0.008s
+  Time for precision adjustment:      0.035s
+  Time for transfer relation:         3.654s
+  Time for merge operator:            2.788s
+  Time for stop operator:             0.413s
+  Time for adding to reached set:     0.014s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:     0.003s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         110
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.169s
+  Time for path formula creation:        0.166s
+Time for strengthen operator:            0.001s
+Time for prec operator:                  0.003s
+Time for merge operator:                 0.014s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                  31385 (count: 2042, min: 0, max: 33, avg: 15.37)
+Number of global variables:                           30023 (count: 2042, min: 0, max: 28, avg: 14.70)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    2096
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.033s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                35
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                  240
+Number of deterministic Assumptions:                     24
+Level of Determinism:                              10%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.001s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         2096 (count: 2096, min: 1, max: 1, avg: 1.00) [1 x 2096]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            2042
+Max size of waitlist:            8
+Average size of waitlist:        1
+Number of computed successors:   2096
+Max successors for one state:    2
+Number of times merged:          55
+Number of times stopped:         55
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.352s (Max:     0.352s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.065s
+  Time for transfer relation:         0.237s
+  Time for merge operator:            0.020s
+  Time for stop operator:             0.002s
+  Time for adding to reached set:     0.014s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.353s
+Time for final sat check:                0.000s
+Time for bounding assertions check:      0.368s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.007
+  Visited lines:          0
+  Total lines:            2638
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       588
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     3685
+Number of CFA edges:             4578
+Number of relevant variables:    428
+Number of functions:             142
+Number of loops:                 15
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N1602)
+  Number of reached functions:   1 (1%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.224s
+  Time for loading CPAs:          0.107s
+  Time for loading parser:        0.184s
+  Time for CFA construction:      0.915s
+    Time for parsing file(s):     0.266s
+    Time for AST to CFA:          0.320s
+    Time for CFA sanity check:    0.070s
+    Time for post-processing:     0.221s
+      Time for var class.:        0.094s
+Time for Analysis:              351.472s
+CPU time for analysis:          522.470s
+Total time for CPAchecker:      352.699s
+Total CPU time for CPAchecker:  524.830s
+Time for statistics:              0.021s
+
+Time for Garbage Collector:     155.475s (in 114 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               8592MB (  8194 MiB) max;   3992MB (  3807 MiB) avg;  11026MB ( 10515 MiB) peak
+Used non-heap memory:             52MB (    49 MiB) max;     47MB (    45 MiB) avg;     52MB (    49 MiB) peak
+Used in PS Old Gen pool:        6990MB (  6666 MiB) max;   2546MB (  2428 MiB) avg;   6990MB (  6666 MiB) peak
+Allocated heap memory:          9816MB (  9362 MiB) max;   6482MB (  6182 MiB) avg
+Allocated non-heap memory:        53MB (    51 MiB) max;     52MB (    49 MiB) avg
+Total process virtual memory:  13887MB ( 13244 MiB) max;  13566MB ( 12938 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/079/attempt-d43f8e8fdf9345c6b4c4a665970a4a14/output".

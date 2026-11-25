@@ -1,0 +1,50 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 123,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 125,
+      "text": "Warning: Analysis not completed due to recursion (line 9329: Unsupported feature (recursion): tmp = pkt_check_events(attached_disk, clearing); (line was originally pointer call(pkt_check_events) tmp = (*((attached_disk->fops)->check_events))(attached_disk, clearing);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 391,
+      "text": "Number of abstractions:            2 (0% of all post computations)"
+    },
+    {
+      "line": 412,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 419,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 2)"
+    },
+    {
+      "line": 549,
+      "text": "Total CPU time for CPAchecker:  900.340s"
+    }
+  ],
+  "wall_seconds": 898.6233264440671,
+  "peak_group_rss": 6885343232,
+  "sampled_group_cpu_peak_seconds": 901.18,
+  "cpa_cpu_seconds": 900.34,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/053/attempt-4093126cb2cf4b82bc208ebb769ba183/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/module_get_put-drivers-block-pktcdvd.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,37 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 329,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 338,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 467,
+      "text": "Total CPU time for CPAchecker:  902.800s"
+    }
+  ],
+  "wall_seconds": 906.0120021339972,
+  "peak_group_rss": 6030921728,
+  "sampled_group_cpu_peak_seconds": 904.96,
+  "cpa_cpu_seconds": 902.8,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/027/attempt-f216abbdcd904ef8996f0292388e8207/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--ata--pata_marvell.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

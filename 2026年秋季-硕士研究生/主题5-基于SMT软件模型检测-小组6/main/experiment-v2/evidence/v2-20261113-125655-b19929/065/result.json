@@ -1,0 +1,66 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 75,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 77,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 79,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 81,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 129,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 131,
+      "text": "Error: line 6157: Unsupported feature (recursion): tmp___8 = mousedev_open_device(mousedev); (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 135,
+      "text": "Number of abstractions:            1 (0% of all post computations)"
+    },
+    {
+      "line": 156,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 163,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 1)"
+    },
+    {
+      "line": 285,
+      "text": "Total CPU time for CPAchecker:    5.440s"
+    }
+  ],
+  "wall_seconds": 3.5369105038698763,
+  "peak_group_rss": 537440256,
+  "sampled_group_cpu_peak_seconds": 6.17,
+  "cpa_cpu_seconds": 5.44,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/065/attempt-3046a4b492d747778ad2663f8397b48b/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--input--mousedev.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

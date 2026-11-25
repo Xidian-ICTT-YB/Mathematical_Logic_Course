@@ -1,0 +1,45 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 81,
+      "text": "Number of abstractions:            16 (1% of all post computations)"
+    },
+    {
+      "line": 102,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 111,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 16)"
+    },
+    {
+      "line": 176,
+      "text": "Number of successful refinements:     0"
+    },
+    {
+      "line": 236,
+      "text": "Total CPU time for CPAchecker:    2.460s"
+    }
+  ],
+  "wall_seconds": 1.991601720219478,
+  "peak_group_rss": 331411456,
+  "sampled_group_cpu_peak_seconds": 3.07,
+  "cpa_cpu_seconds": 2.46,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/147/attempt-4968b8e6a3dc4e63a1d556b5357c4495/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_6527-ko--107_1a--adbbc36-1.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

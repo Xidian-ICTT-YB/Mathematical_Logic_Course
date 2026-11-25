@@ -1,0 +1,66 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 61,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 63,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 65,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 67,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 125,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 127,
+      "text": "Error: line 6474: Unsupported feature (recursion): ret = cdc_mbim_resume(intf); (line was originally pointer call(cdc_mbim_resume) ret = (*((info->subdriver)->resume))(intf);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 131,
+      "text": "Number of abstractions:            4 (0% of all post computations)"
+    },
+    {
+      "line": 152,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 159,
+      "text": "  Time for abstraction:                  0.005s (Max:     0.005s, Count: 4)"
+    },
+    {
+      "line": 283,
+      "text": "Total CPU time for CPAchecker:    4.530s"
+    }
+  ],
+  "wall_seconds": 5.643172884127125,
+  "peak_group_rss": 467472384,
+  "sampled_group_cpu_peak_seconds": 5.49,
+  "cpa_cpu_seconds": 4.53,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/017/attempt-39332dc1747a49199037f89054f66035/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 151,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 153,
+      "text": "Warning: Analysis not completed due to recursion (line 5371: Unsupported feature (recursion): err = usbtouch_reset_resume(usbtouch); (line was originally pointer call(usbtouch_reset_resume) err = (*((usbtouch->type)->init))(usbtouch);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 449,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 458,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 589,
+      "text": "Total CPU time for CPAchecker:  908.640s"
+    }
+  ],
+  "wall_seconds": 737.250178034883,
+  "peak_group_rss": 11558424576,
+  "sampled_group_cpu_peak_seconds": 909.57,
+  "cpa_cpu_seconds": 908.64,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/197/attempt-1909a94cc9c94014ae02c0984960d3da/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--input--touchscreen--usbtouchscreen.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

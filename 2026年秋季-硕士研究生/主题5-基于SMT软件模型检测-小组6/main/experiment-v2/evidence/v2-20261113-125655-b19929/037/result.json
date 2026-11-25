@@ -1,0 +1,29 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 170,
+      "text": "Total CPU time for CPAchecker:  918.350s"
+    }
+  ],
+  "wall_seconds": 885.982139875181,
+  "peak_group_rss": 10969178112,
+  "sampled_group_cpu_peak_seconds": 919.28,
+  "cpa_cpu_seconds": 918.35,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/037/attempt-cb667007282a49a195650b72887aa9d3/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

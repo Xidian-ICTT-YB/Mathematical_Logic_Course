@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 100,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 102,
+      "text": "Error: line 5331: Unsupported feature (recursion): tmp___0 = osst_write_error_recovery(STp, aSRpnt, 0); (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 106,
+      "text": "Number of abstractions:            34 (1% of all post computations)"
+    },
+    {
+      "line": 127,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 134,
+      "text": "  Time for abstraction:                  0.002s (Max:     0.001s, Count: 34)"
+    },
+    {
+      "line": 162,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 240,
+      "text": "Total CPU time for CPAchecker:    4.790s"
+    }
+  ],
+  "wall_seconds": 5.46184754697606,
+  "peak_group_rss": 637030400,
+  "sampled_group_cpu_peak_seconds": 5.48,
+  "cpa_cpu_seconds": 4.79,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/039/attempt-c57b13a9f5044bbfb79867c42bd6232e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

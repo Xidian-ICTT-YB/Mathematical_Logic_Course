@@ -1,0 +1,332 @@
+[
+  {
+    "path": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--md--md-mod.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "c2c29a690455df3390d8a10d9812ef6c6143828ebada197c415266ca6f34c9be",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd.c",
+    "expected": "SAFE",
+    "sha256": "af960e36da617cbecfd5f889090f6037a9802ffe4db24d5136f3c0e50f9b0406",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--block--paride--pcd.ko-main.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "39ec26f06f0cb02e2c27a01b019713e679f4dd6c5ad396d38619667f5ede66be",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.0/module_get_put-drivers-hid-hid-magicmouse.ko_true-unreach-call.cil.out.i.pp.i",
+    "expected": "SAFE",
+    "sha256": "573729a2986dc47b40846f118e18b518c7414f31416943d5f9bf9ab16122235c",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "ccda17f1a5ebec3f9b4cce32cd43374f19ff65bbe2bca6641153ead5118f86df",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--cisco--enic--enic.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "5faee35c171ae8a1730bd9beae76d32a940a596b8cbe03ea7b0d825d7a5ffb77",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--ata--pata_marvell.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "ff55f9adf7612eb7761a222adf76d027352321d4db65b966bdb67ac5d5c497bd",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "b426d31357b917a2d7fcf358053007ecc2b8fd3604a58453abf7d0616c8f314b",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "39803413519879046e6696d050606020f7a710e9e256639fb04e4c1454b18b51",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": "f2270f469b34fdde321afcafc8ade79bf0a64768a62d3cf09b390ab671de9ea5",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--broadcom--bnx2x--bnx2x.ko-ldv_main3_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "27614344ad519114d225edd8174d24b71f1e5eedf87ef5142b64d9d2b9744dbb",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-commit-tester/m0_false-unreach-call_drivers-scsi-gdth-ko--111_1a--5934df9-1.c",
+    "expected": "UNSAFE",
+    "sha256": "af5344402b984d2c920384cd61458def7b8a84b82f6e94de10f352125914b419",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-fs--ecryptfs--ecryptfs.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "ce0ae37225fed77d33032076118c2264a8e099dc5cef257f013e926fb8cc0713",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.0/module_get_put-drivers-block-pktcdvd.ko_false-unreach-call.cil.out.i.pp.i",
+    "expected": "UNSAFE",
+    "sha256": "6e71b0cc52d48f21dd94cf691648bf50e3ff842479a8016f0a85aa82b8a7a90c",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--usb--misc--idmouse.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "89a00ccc9e0ec8631bbea70a2d9a232f2d1bda76e84724918cb5b41267f9c4d1",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.16-rc1/205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--wireless--at76c50x-usb.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "2aaeffa8dad6a087f1b3088725337c43fef23e3f3837a48dfa128dec02d1a01f",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--input--mousedev.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "80798fb2c12827a576721fc26abdbb1fe29723f3195411789b53bfaeeb538a86",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+    "expected": "UNSAFE",
+    "sha256": "b4e3eecb9ac4a92891e53976980f7b3e16509d9b27d261af87f52247a5616dd6",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "e00f7970885b2f435417080d06eb443acbe5e9382a19f6ad3be964b72c777f05",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-validator-v0.6/linux-stable-d47b389-1-32_7a-drivers--media--video--cx88--cx88-blackbird.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": "2e2ac1049400c1c7500cdb7abb07eaa9e5124a9dc5f04f90891c57497462bb77",
+    "property_sha256": "364cdfff22da4f90bf3d0cb84c26b8aab807db78140715833719cc129768d55e"
+  },
+  {
+    "path": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--emulex--benet--be2net.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-commit-tester/m0_true-unreach-call_drivers-staging-comedi-drivers-ni_660x-ko--107_1a--adbbc36.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--media--usb--b2c2--b2c2-flexcop-usb.ko-main.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.0/module_get_put-drivers-block-drbd-drbd.ko_true-unreach-call.cil.out.i.pp.i",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--misc--usbtest.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--mtd--devices--block2mtd.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--usb--misc--ftdi-elan.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main1_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd-1.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--staging--panel--panel.ko-main.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.0/usb_urb-drivers-scsi-dc395x.ko_true-unreach-call.cil.out.i.pp.i",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--wireless--ti--wlcore--wlcore_spi.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--qlogic--qlcnic--qlcnic.ko-entry_point_true-unreach-call.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--input--touchscreen--mtouch.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "expected": "SAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main11_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_6527-ko--107_1a--adbbc36-1.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--usb--cpia2--cpia2.ko-main.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.0/usb_urb-drivers-net-can-usb-ems_usb.ko_false-unreach-call.cil.out.i.pp.i",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--cx231xx--cx231xx.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.16-rc1/43_2a_bitvector_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--gadget--pch_udc.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--usb--image--microtek.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.7.3/main17_false-unreach-call_drivers-gpu-drm-vmwgfx-vmwgfx-ko--32_7a--linux-3.5.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--cpia2--cpia2.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-validator-v0.6/linux-stable-90a4845-1-110_1a-drivers--char--ipmi--ipmi_si.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-validator-v0.8/linux-stable-af3071a-1-130_7a-drivers--hwmon--s3c-hwmon.ko-entry_point_ldv-val-v0.8_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-commit-tester/m0_false-unreach-call_drivers-block-virtio_blk-ko--101_1a--39a1d13.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--rc--rc-core.ko-main.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.0/usb_urb-drivers-input-misc-keyspan_remote.ko_false-unreach-call.cil.out.i.pp.i",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  },
+  {
+    "path": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--input--touchscreen--usbtouchscreen.ko-entry_point_false-unreach-call.cil.out.c",
+    "expected": "UNSAFE",
+    "sha256": null,
+    "property_sha256": null,
+    "readiness": "NEEDS_SOURCE_DOWNLOAD"
+  }
+]

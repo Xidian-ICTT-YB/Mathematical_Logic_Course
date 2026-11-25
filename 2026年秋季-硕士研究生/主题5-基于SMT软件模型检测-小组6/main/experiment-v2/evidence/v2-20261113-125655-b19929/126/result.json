@@ -1,0 +1,31 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": -9,
+  "runner_stop_reason": "CPU_HARD_LIMIT",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 203,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 212,
+      "text": "Number of predicates discovered:          0"
+    }
+  ],
+  "wall_seconds": 831.1208472370636,
+  "peak_group_rss": 12107153408,
+  "sampled_group_cpu_peak_seconds": 1000.06,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/126/attempt-886a848582d5497fbefc31b6b1f70de5/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-scsi-dc395x.ko_true-unreach-call.cil.out.i.pp.i",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

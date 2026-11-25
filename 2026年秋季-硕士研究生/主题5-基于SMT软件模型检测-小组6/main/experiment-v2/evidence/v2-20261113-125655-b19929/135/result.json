@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 693,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 695,
+      "text": "Error: line 8610: Unsupported feature (recursion): tmp = qlcnic_read_rom(adapter, (ulong )addr, &err); (line was originally pointer call(qlcnic_read_rom) tmp = (*(((adapter->ahw)->hw_ops)->read_reg))(adapter, (ulong )addr, & err);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 699,
+      "text": "Number of abstractions:            8 (0% of all post computations)"
+    },
+    {
+      "line": 720,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 727,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 8)"
+    },
+    {
+      "line": 755,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 833,
+      "text": "Total CPU time for CPAchecker:   11.570s"
+    }
+  ],
+  "wall_seconds": 6.637682064902037,
+  "peak_group_rss": 1547964416,
+  "sampled_group_cpu_peak_seconds": 11.94,
+  "cpa_cpu_seconds": 11.57,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/135/attempt-7712128c78c446d1bf40256ba31a38ff/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--qlogic--qlcnic--qlcnic.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

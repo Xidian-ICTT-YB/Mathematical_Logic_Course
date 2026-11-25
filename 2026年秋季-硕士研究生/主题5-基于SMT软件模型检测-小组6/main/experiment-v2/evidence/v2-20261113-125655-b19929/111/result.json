@@ -1,0 +1,29 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 151,
+      "text": "Total CPU time for CPAchecker:  907.820s"
+    }
+  ],
+  "wall_seconds": 458.2541714271065,
+  "peak_group_rss": 10923933696,
+  "sampled_group_cpu_peak_seconds": 908.58,
+  "cpa_cpu_seconds": 907.82,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/111/attempt-cee7ca044b4b43c3b76f5008985aec8c/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--usb--misc--ftdi-elan.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

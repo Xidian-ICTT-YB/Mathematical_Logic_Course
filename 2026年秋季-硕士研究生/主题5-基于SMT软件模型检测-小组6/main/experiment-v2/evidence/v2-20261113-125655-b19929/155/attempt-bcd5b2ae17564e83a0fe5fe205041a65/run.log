@@ -1,0 +1,361 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/155/attempt-bcd5b2ae17564e83a0fe5fe205041a65/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/155/attempt-bcd5b2ae17564e83a0fe5fe205041a65/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 6916: Dead code detected: Goto: while_break (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label while_break is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+line 6979: Dead code detected: Goto: while_break (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label while_break is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function alloc_candev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __raw_spin_lock_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_return_value to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kfree_skb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_undefined_pointer to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_anchor_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function can_put_echo_skb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_submit_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function can_free_echo_skb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_unanchor_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function consume_skb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_warn to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function netif_device_detach to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function warn_slowpath_null to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_bulk_msg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function open_candev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function close_candev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_deregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Error found, creating error path (BMCAlgorithm.analyzeCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found but identified as infeasible. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 10)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Infeasible counterexample found, but could not remove it from the ARG. Therefore, we cannot prove safety. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, WARNING)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Another infeasible counterexample found which could not be removed from the ARG. (ExceptionHandlingAlgorithm.handleExceptionWithErrorPath, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Analysis incomplete: no errors found, but not everything could be checked. (CPAchecker.analyzeResult, WARNING)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            12 (1% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         12 (100%)
+  Times precision was empty:       12 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         104
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       148
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.170s
+  Time for path formula creation:        0.165s
+Time for strengthen operator:            0.010s
+Time for prec operator:                  0.006s
+  Time for abstraction:                  0.002s (Max:     0.001s, Count: 12)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.019s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                  12943 (count: 1916, min: 0, max: 17, avg: 6.76)
+Number of global variables:                            5022 (count: 1916, min: 0, max: 6, avg: 2.62)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    1991
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.027s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                56
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                  202
+Number of deterministic Assumptions:                     32
+Level of Determinism:                              16%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.006s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         1991 (count: 2003, min: 0, max: 1, avg: 0.99) [0 x 12, 1 x 1991]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1940
+Max size of waitlist:            20
+Average size of waitlist:        6
+Number of computed successors:   1991
+Max successors for one state:    2
+Number of times merged:          52
+Number of times stopped:         52
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.366s (Max:     0.366s)
+  Time for choose from waitlist:      0.009s
+  Time for precision adjustment:      0.060s
+  Time for transfer relation:         0.250s
+  Time for merge operator:            0.028s
+  Time for stop operator:             0.002s
+  Time for adding to reached set:     0.006s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.366s
+Time for final sat check:                0.110s
+Time for error path creation:            0.159s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    1
+Number of infeasible paths:         7 (700%)
+Time for counterexample checks:       369.920s
+Time for running CBMC:                369.738s
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.581
+  Visited lines:          1155
+  Total lines:            1649
+  Line coverage:          0.700
+  Visited conditions:     103
+  Total conditions:       258
+  Condition coverage:     0.399
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     2101
+Number of CFA edges:             2274
+Number of relevant variables:    244
+Number of functions:             62
+Number of loops:                 10
+Size of reached set:             1916
+  Number of reached locations:   1416 (67%)
+    Avg states per location:     1
+    Max states per location:     20 (at node N1430)
+  Number of reached functions:   36 (58%)
+  Number of partitions:          1916
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+
+Time for analysis setup:          1.480s
+  Time for loading CPAs:          0.375s
+  Time for loading parser:        0.229s
+  Time for CFA construction:      0.835s
+    Time for parsing file(s):     0.253s
+    Time for AST to CFA:          0.292s
+    Time for CFA sanity check:    0.062s
+    Time for post-processing:     0.186s
+      Time for var class.:        0.090s
+Time for Analysis:              370.779s
+CPU time for analysis:            3.070s
+Time for analyzing result:        0.002s
+Total time for CPAchecker:      372.261s
+Total CPU time for CPAchecker:    5.830s
+Time for statistics:              0.038s
+
+Time for Garbage Collector:       0.087s (in 2 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                396MB (   378 MiB) max;    335MB (   320 MiB) avg;    440MB (   420 MiB) peak
+Used non-heap memory:             36MB (    34 MiB) max;     35MB (    34 MiB) avg;     36MB (    34 MiB) peak
+Used in PS Old Gen pool:          24MB (    22 MiB) max;     23MB (    22 MiB) avg;     24MB (    22 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1558MB (  1486 MiB) avg
+Allocated non-heap memory:        37MB (    36 MiB) max;     37MB (    36 MiB) avg
+Total process virtual memory:  13524MB ( 12897 MiB) max;  13515MB ( 12889 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/155/attempt-bcd5b2ae17564e83a0fe5fe205041a65/output".

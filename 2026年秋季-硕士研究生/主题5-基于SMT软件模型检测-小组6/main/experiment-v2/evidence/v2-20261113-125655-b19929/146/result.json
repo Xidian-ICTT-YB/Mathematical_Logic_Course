@@ -1,0 +1,45 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 124,
+      "text": "Successful analysis: config/induction-noAI/sv-comp16--k-induction-noAI.properties"
+    },
+    {
+      "line": 164,
+      "text": "Number of abstractions:            6 (1% of all post computations)"
+    },
+    {
+      "line": 185,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 192,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 6)"
+    },
+    {
+      "line": 323,
+      "text": "Total CPU time for CPAchecker:    4.650s"
+    }
+  ],
+  "wall_seconds": 3.5374113351572305,
+  "peak_group_rss": 681910272,
+  "sampled_group_cpu_peak_seconds": 6.24,
+  "cpa_cpu_seconds": 4.65,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/146/attempt-783c70250ca347ecbe351fc93dae3396/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_6527-ko--107_1a--adbbc36-1.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

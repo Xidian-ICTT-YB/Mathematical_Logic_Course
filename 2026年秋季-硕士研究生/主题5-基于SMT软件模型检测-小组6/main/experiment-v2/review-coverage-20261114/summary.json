@@ -1,0 +1,21 @@
+{
+  "count": 200,
+  "tasks": 50,
+  "counts": {
+    "ERROR": 70,
+    "TIMEOUT": 74,
+    "SAFE": 31,
+    "MEMORY_LIMIT": 4,
+    "UNSAFE": 17,
+    "JAVA_MEMORY_ERROR": 1,
+    "UNKNOWN": 3
+  },
+  "coarse_matches": 189,
+  "paper_solved": 46,
+  "retained_paper_solved": 46,
+  "new_solved": 2,
+  "contradict_expected": 0,
+  "contradict_paper": 0,
+  "wall_hours": 17.958688210956623,
+  "parser_disagreements": 0
+}

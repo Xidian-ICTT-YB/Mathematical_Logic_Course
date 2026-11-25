@@ -1,0 +1,271 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/011/attempt-c75625add13f4ec3a0207d06dc04a469/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/011/attempt-c75625add13f4ec3a0207d06dc04a469/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 4028: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4098: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4149: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4889: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4938: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5594: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function alloc_disk to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 2 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 3 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 4 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 5 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function pi_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_connect to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_write_regr to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule_timeout_interruptible to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_read_regr to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_release to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function put_disk to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 6 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function pi_disconnect to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __const_udelay to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_write_block to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_read_block to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (The CPU-time limit of 900s has elapsed.) (ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         678040
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                592.015s
+  Time for path formula creation:      591.243s
+Time for strengthen operator:            5.128s
+Time for prec operator:                  3.382s
+Time for merge operator:                66.203s
+Time for coverage check:                 0.033s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           6
+Maximum loop iteration reached:                    7
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                               470286855 (count: 5821182, min: 0, max: 95, avg: 80.79)
+Number of global variables:                        297004160 (count: 5821182, min: 0, max: 52, avg: 51.02)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                 6160846
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:               67.109s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                139
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                              1623320
+Number of deterministic Assumptions:                 752002
+Level of Determinism:                              46%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  3.137s
+  Time for transition matches:                         1.893s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                      6160846 (count: 6160846, min: 1, max: 1, avg: 1.00) [1 x 6160846]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            5774110
+Max size of waitlist:            49360
+Average size of waitlist:        24894
+Number of computed successors:   6160846
+Max successors for one state:    2
+Number of times merged:          339020
+Number of times stopped:         339020
+Number of times breaked:         0
+
+Total time for CPA algorithm:       876.225s (Max:   867.465s)
+  Time for choose from waitlist:      1.016s
+  Time for precision adjustment:    112.097s
+  Time for transfer relation:       650.392s
+  Time for merge operator:           87.039s
+  Time for stop operator:             6.137s
+  Time for adding to reached set:     8.050s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:         893.642s
+Time for final sat check:                0.000s
+Time for bounding assertions check:     18.002s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.191
+  Visited lines:          1123
+  Total lines:            2092
+  Line coverage:          0.537
+  Visited conditions:     125
+  Total conditions:       494
+  Condition coverage:     0.253
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     2771
+Number of CFA edges:             3090
+Number of relevant variables:    271
+Number of functions:             94
+Number of loops:                 20
+Size of reached set:             5821182
+  Size of final wait list        49349
+
+Time for analysis setup:          2.521s
+  Time for loading CPAs:          0.545s
+  Time for loading parser:        0.396s
+  Time for CFA construction:      1.508s
+    Time for parsing file(s):     0.417s
+    Time for AST to CFA:          0.485s
+    Time for CFA sanity check:    0.114s
+    Time for post-processing:     0.402s
+      Time for var class.:        0.195s
+Time for Analysis:              895.454s
+CPU time for analysis:          897.770s
+Total time for CPAchecker:      897.981s
+Total CPU time for CPAchecker:  900.300s
+Time for statistics:             24.540s
+
+Time for Garbage Collector:     122.110s (in 141 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               9982MB (  9519 MiB) max;   4848MB (  4624 MiB) avg;  10207MB (  9734 MiB) peak
+Used non-heap memory:             42MB (    40 MiB) max;     38MB (    37 MiB) avg;     42MB (    40 MiB) peak
+Used in PS Old Gen pool:        6707MB (  6396 MiB) max;   3210MB (  3062 MiB) avg;   6707MB (  6396 MiB) peak
+Allocated heap memory:         10396MB (  9914 MiB) max;   7419MB (  7076 MiB) avg
+Allocated non-heap memory:        44MB (    41 MiB) max;     43MB (    41 MiB) avg
+Total process virtual memory:  13732MB ( 13096 MiB) max;  13536MB ( 12909 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/011/attempt-c75625add13f4ec3a0207d06dc04a469/output".

@@ -1,0 +1,45 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 431,
+      "text": "Successful analysis: config/induction-noAI/sv-comp16--k-induction-noAI.properties"
+    },
+    {
+      "line": 471,
+      "text": "Number of abstractions:            6 (0% of all post computations)"
+    },
+    {
+      "line": 492,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 499,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 6)"
+    },
+    {
+      "line": 633,
+      "text": "Total CPU time for CPAchecker:  281.440s"
+    }
+  ],
+  "wall_seconds": 162.18994021811523,
+  "peak_group_rss": 5465591808,
+  "sampled_group_cpu_peak_seconds": 322.38,
+  "cpa_cpu_seconds": 281.44,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/191/attempt-efa8e1aff23c4383a3b03c8fec2b2c23/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--rc--rc-core.ko-main.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

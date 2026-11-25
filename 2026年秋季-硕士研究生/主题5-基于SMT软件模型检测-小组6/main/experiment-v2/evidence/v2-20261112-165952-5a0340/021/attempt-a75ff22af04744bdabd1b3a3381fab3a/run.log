@@ -1,0 +1,397 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/021/attempt-a75ff22af04744bdabd1b3a3381fab3a/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/021/attempt-a75ff22af04744bdabd1b3a3381fab3a/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 4028: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4098: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4149: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4889: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4938: Dead code detected: __ms = 1UL; (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5594: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function alloc_disk to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function mutex_lock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cdrom_open to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cdrom_release to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function delayed_work_timer_fn to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3676: Ignoring call via function pointer ps_ready for which no suitable target was found in line: tmp___0 = (*ps_ready)(); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3676: Ignoring function call through function pointer *ps_ready: tmp___0 = (*ps_ready)(); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function pi_read_regr to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule_delayed_work to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock_irqrestore to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3686: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3686: Ignoring function call through function pointer *con: (*con)(); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __const_udelay to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_read_block to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_disconnect to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_do_claimed to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __blk_end_request_cur to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_fetch_request to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __blk_end_request_all to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3680: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3680: Ignoring function call through function pointer *con: (*con)(); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3673: Ignoring call via function pointer ps_tq_int::con for which no suitable target was found in line: (*con)(); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3673: Ignoring function call through function pointer *con: (*con)(); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function alloc_disk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function del_gendisk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_release to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function unregister_cdrom to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function put_disk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_connect to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_write_regr to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule_timeout_interruptible to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function register_cdrom to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function register_blkdev to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_init_queue to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function add_disk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function unregister_blkdev to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_cleanup_queue to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pi_write_block to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Analysis was terminated (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.001s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Number of states:                                  1
+Total time for successor computation:                  1.646s
+  Time for transition matches:                         0.968s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                      1772479 (count: 1772479, min: 1, max: 1, avg: 1.00) [1 x 1772479]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1189966
+Max size of waitlist:            6000
+Average size of waitlist:        4094
+Number of computed successors:   1323751
+Max successors for one state:    2
+Number of times merged:          459370
+Number of times stopped:         535421
+Number of times breaked:         0
+
+Total time for CPA algorithm:       449.858s (Max:   449.858s)
+  Time for choose from waitlist:      0.331s
+  Time for precision adjustment:      2.988s
+  Time for transfer relation:       159.297s
+  Time for merge operator:          273.189s
+  Time for stop operator:            10.730s
+  Time for adding to reached set:     1.307s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   385.406s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         14
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.270s
+  Time for path formula creation:        0.266s
+Time for strengthen operator:            0.005s
+Time for prec operator:                  0.001s
+Time for merge operator:                 0.008s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                   9746 (count: 932, min: 0, max: 56, avg: 10.46)
+Number of global variables:                            9572 (count: 932, min: 0, max: 52, avg: 10.27)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     938
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.018s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                56
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   32
+Number of deterministic Assumptions:                     16
+Level of Determinism:                              50%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.003s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          938 (count: 938, min: 1, max: 1, avg: 1.00) [1 x 938]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            932
+Max size of waitlist:            7
+Average size of waitlist:        1
+Number of computed successors:   938
+Max successors for one state:    2
+Number of times merged:          7
+Number of times stopped:         7
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.426s (Max:     0.426s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.046s
+  Time for transfer relation:         0.325s
+  Time for merge operator:            0.019s
+  Time for stop operator:             0.005s
+  Time for adding to reached set:     0.009s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.426s
+Time for final sat check:                0.000s
+Time for bounding assertions check:      0.934s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.011
+  Visited lines:          0
+  Total lines:            2092
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       494
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     2771
+Number of CFA edges:             3256
+Number of relevant variables:    314
+Number of functions:             94
+Number of loops:                 20
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N1505)
+  Number of reached functions:   1 (1%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.012s
+  Time for loading CPAs:          0.108s
+  Time for loading parser:        0.165s
+  Time for CFA construction:      0.723s
+    Time for parsing file(s):     0.176s
+    Time for AST to CFA:          0.252s
+    Time for CFA sanity check:    0.064s
+    Time for post-processing:     0.211s
+      Time for var class.:        0.093s
+Time for Analysis:              450.788s
+CPU time for analysis:          898.070s
+Total time for CPAchecker:      451.803s
+Total CPU time for CPAchecker:  899.940s
+Time for statistics:              0.020s
+
+Time for Garbage Collector:      53.178s (in 211 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               9181MB (  8756 MiB) max;   4792MB (  4570 MiB) avg;   9675MB (  9227 MiB) peak
+Used non-heap memory:             52MB (    50 MiB) max;     50MB (    47 MiB) avg;     52MB (    50 MiB) peak
+Used in PS Old Gen pool:        6087MB (  5805 MiB) max;   3181MB (  3033 MiB) avg;   6087MB (  5805 MiB) peak
+Allocated heap memory:         10226MB (  9752 MiB) max;   7600MB (  7248 MiB) avg
+Allocated non-heap memory:        54MB (    52 MiB) max;     54MB (    51 MiB) avg
+Total process virtual memory:  13646MB ( 13014 MiB) max;  13544MB ( 12916 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/021/attempt-a75ff22af04744bdabd1b3a3381fab3a/output".

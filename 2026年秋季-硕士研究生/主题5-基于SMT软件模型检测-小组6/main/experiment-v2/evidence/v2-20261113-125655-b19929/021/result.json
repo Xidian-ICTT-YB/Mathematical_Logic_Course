@@ -1,0 +1,37 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 503,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 512,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 643,
+      "text": "Total CPU time for CPAchecker:  899.900s"
+    }
+  ],
+  "wall_seconds": 852.5426997758914,
+  "peak_group_rss": 9575514112,
+  "sampled_group_cpu_peak_seconds": 902.6,
+  "cpa_cpu_seconds": 899.9,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/021/attempt-9642174273694efa8045e8e75ed5809e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--cisco--enic--enic.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,45 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 57,
+      "text": "Number of abstractions:            6 (0% of all post computations)"
+    },
+    {
+      "line": 78,
+      "text": "Number of predicates discovered:          2"
+    },
+    {
+      "line": 98,
+      "text": "  Time for abstraction:                  0.192s (Max:     0.174s, Count: 6)"
+    },
+    {
+      "line": 166,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 222,
+      "text": "Total CPU time for CPAchecker:    2.740s"
+    }
+  ],
+  "wall_seconds": 1.9907228639349341,
+  "peak_group_rss": 366915584,
+  "sampled_group_cpu_peak_seconds": 3.15,
+  "cpa_cpu_seconds": 2.74,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/137/attempt-bd16dae5dcae44a6b87c5d1ab11154b7/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--input--touchscreen--mtouch.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

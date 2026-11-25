@@ -1,0 +1,49 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 115,
+      "text": "Number of abstractions:            26456 (3% of all post computations)"
+    },
+    {
+      "line": 136,
+      "text": "Number of predicates discovered:          18"
+    },
+    {
+      "line": 154,
+      "text": "  Time for abstraction:                843.505s (Max:   131.711s, Count: 26456)"
+    },
+    {
+      "line": 186,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 225,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 281,
+      "text": "Total CPU time for CPAchecker:  900.030s"
+    }
+  ],
+  "wall_seconds": 903.6084283620585,
+  "peak_group_rss": 5099909120,
+  "sampled_group_cpu_peak_seconds": 903.99,
+  "cpa_cpu_seconds": 900.03,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/036/attempt-2d5ef2c098604d79a06114058043a545/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

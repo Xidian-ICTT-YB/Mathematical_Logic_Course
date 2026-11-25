@@ -1,0 +1,421 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/080/attempt-67c13655342742b6a4f784dcf079277c/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/080/attempt-67c13655342742b6a4f784dcf079277c/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 7869: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 6543: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6517: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6423: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6398: Function pointer *(core->gate_ctrl) with type void (*)(struct cx88_core *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit) and JFactory 1.21. (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with PredicateAbstractionRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7261:	N1710 -{tmp___3 = ldv_zalloc(8UL);}-> N1711) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7263:	N1712 -{tmp___4 = ldv_zalloc(16UL);}-> N1713) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7265:	N1714 -{tmp___5 = ldv_zalloc(184UL);}-> N1715) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7269:	N1718 -{tmp___7 = ldv_zalloc(1UL);}-> N1719) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7271:	N1720 -{tmp___8 = ldv_zalloc(104UL);}-> N1721) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7273:	N1722 -{tmp___9 = ldv_zalloc(1UL);}-> N1723) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7275:	N1724 -{tmp___10 = ldv_zalloc(1UL);}-> N1725) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7279:	N1728 -{tmp___12 = ldv_zalloc(1UL);}-> N1729) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7285:	N1734 -{tmp___15 = ldv_zalloc(20UL);}-> N1735) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7287:	N1736 -{tmp___16 = ldv_zalloc(8UL);}-> N1737) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7293:	N1742 -{tmp___19 = ldv_zalloc(1UL);}-> N1743) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7297:	N1746 -{tmp___21 = ldv_zalloc(1UL);}-> N1747) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7299:	N1748 -{tmp___22 = ldv_zalloc(1UL);}-> N1749) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7303:	N1752 -{tmp___24 = ldv_zalloc(1UL);}-> N1753) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7305:	N1754 -{tmp___25 = ldv_zalloc(1UL);}-> N1755) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7307:	N1756 -{tmp___26 = ldv_zalloc(1UL);}-> N1757) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7309:	N1758 -{tmp___27 = ldv_zalloc(1UL);}-> N1759) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7311:	N1760 -{tmp___28 = ldv_zalloc(1UL);}-> N1761) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7313:	N1762 -{tmp___29 = ldv_zalloc(1UL);}-> N1763) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7317:	N1766 -{tmp___31 = ldv_zalloc(1UL);}-> N1767) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7321:	N1770 -{tmp___33 = ldv_zalloc(1UL);}-> N1771) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7323:	N1772 -{tmp___34 = ldv_zalloc(1UL);}-> N1773) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7325:	N1774 -{tmp___35 = ldv_zalloc(1UL);}-> N1775) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7329:	N1778 -{tmp___37 = ldv_zalloc(80UL);}-> N1779) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7335:	N1784 -{tmp___40 = ldv_zalloc(1UL);}-> N1785) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function memset to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_newstation to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_video_mux to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6034: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 130U, 3U, 0U, 1, 0, 0) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function ldv__builtin_va_start to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function msecs_to_jiffies to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __const_udelay to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv__builtin_va_end to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv__builtin_va_arg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx2341x_ext_ctrls to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx2341x_update to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_freq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 5932: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 128U, 0U, 0U) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function msleep to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function request_firmware to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memcmp to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function release_firmware to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 5950: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 128U, 0U, 0U) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5957: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 196U, 0U, 1U, &version) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5908: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 145U, 2U, 0U, dev->height, dev->width) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5976: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 214U, 2U, 0U, 240, 240) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5977: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 215U, 12U, 0U, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function cx88_set_scale to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strlcpy to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6517: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 1); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __builtin_prefetch to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6543: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 0); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6527: Ignoring function call through function pointer *(__sd->ops->tuner->g_frequency): (*(__sd->ops->tuner->g_frequency))(__sd, f); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6022: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 211U, 0U, 0U) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 6023: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 205U, 0U, 0U) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 6024: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 129U, 2U, 0U, 0, 0) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function snprintf to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6398: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 1); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6423: Ignoring function call through function pointer *(core->gate_ctrl): (*(core->gate_ctrl))(core, 0); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function cx2341x_log_status to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6407: Ignoring function call through function pointer *(__sd->ops->core->log_status): (*(__sd->ops->core->log_status))(__sd); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function cx2341x_fill_defaults to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_vdev_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_register_device to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_tvnorm to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_devdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8802_get_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6670: Ignoring function call through function pointer *(drv->request_acquire): err = (*(drv->request_acquire))(drv); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6223: Ignoring parameters passed as varargs to function blackbird_api_cmd: blackbird_api_cmd(dev, 145U, 2U, 0U, f->fmt.pix.height, f->fmt.pix.width) (PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function v4l2_ctrl_next to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx8800_ctrl_query to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx2341x_ctrl_query to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_set_stereo to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cx88_get_stereo to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Error: line 6670: Unsupported feature (recursion): err = mpeg_open(drv); (line was originally pointer call(mpeg_open) err = (*(drv->request_acquire))(drv);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            4424 (3% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            4380 (99%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         44 (1%)
+  Times precision was empty:       6 (0%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         2345 (53%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      2073 (47%)
+  Times result was 'false':        153 (3%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         10196
+  BDD entailment checks:           2750
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       556
+Number of predicates discovered:          39
+Number of abstraction locations:          3
+Max number of predicates per location:    11
+Avg number of predicates per location:    10
+Total predicates per abstraction:         25277
+Max number of predicates per abstraction: 15
+Avg number of predicates per abstraction: 12.19
+Number of irrelevant predicates:          1308 (5%)
+Number of preds handled by boolean abs:   23969 (95%)
+  Total number of models for allsat:      9985
+  Max number of models for allsat:        17
+  Avg number of models for allsat:        4.82
+
+Number of path formula cache hits:   24346 (14%)
+
+Time for post operator:                  7.018s
+  Time for path formula creation:        7.002s
+    Actual computation:                  6.606s
+Time for strengthen operator:            0.086s
+Time for prec operator:                192.587s
+  Time for abstraction:                192.433s (Max:     1.001s, Count: 4424)
+    Boolean abstraction:               179.793s
+    Solving time:                      100.432s (Max:     0.960s)
+    Model enumeration time:             78.944s
+    Time for BDD construction:           0.183s (Max:     0.004s)
+Time for merge operator:                 0.201s
+Time for coverage check:                 0.012s
+  Time for BDD entailment checks:        0.010s
+Total time for SMT solver (w/o itp):   179.376s
+
+Number of BDD nodes:                               3017
+Size of BDD node table:                            466043
+Size of BDD cache:                                 46619
+Size of BDD node cleanup queue:                        2670 (count: 11413, min: 0, max: 715, avg: 0.23)
+Time for BDD node cleanup:                             0.002s
+Time for BDD garbage collection:                       0.000s (in 0 runs)
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.124s
+Automaton transfers with branching:                0
+Automaton transfer successors:                       176677 (count: 176677, min: 1, max: 1, avg: 1.00) [1 x 176677]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            121184
+Max size of waitlist:            114
+Average size of waitlist:        66
+Number of computed successors:   127450
+Max successors for one state:    2
+Number of times merged:          3723
+Number of times stopped:         5926
+Number of times breaked:         3
+
+Total time for CPA algorithm:       201.594s (Max:   176.344s)
+  Time for choose from waitlist:      0.033s
+  Time for precision adjustment:    192.957s
+  Time for transfer relation:         7.899s
+  Time for merge operator:            0.272s
+  Time for stop operator:             0.104s
+  Time for adding to reached set:     0.126s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                   36 (count: 1, min: 36, max: 36, avg: 36.00)
+
+Total time for static refinement:                      0.157s
+  Time for path feasibility check:                     0.123s
+  Time for predicate extraction from CFA:              0.027s
+  Time for ARG update:                                 0.004s
+
+Predicate-Abstraction Refiner statistics
+----------------------------------------
+Number of predicate refinements:                   2
+Avg. length of target path (in blocks):                 118 (count: 2, min: 58, max: 60, avg: 59.00)
+Number of infeasible sliced prefixes:                     0 (count: 0, min: 0, max: 0, avg: 0.00)
+
+Time for refinement:                                   2.021s
+  Counterexample analysis:                             1.822s (Max:     0.896s, Calls: 3)
+    Refinement sat check:                              1.361s
+    Interpolant computation:                           0.000s
+  Path-formulas extraction:                            0.000s
+  Error path post-processing:                          0.000s
+  Predicate creation:                                  0.008s
+  Precision update:                                    0.001s
+  ARG update:                                          0.306s
+
+Length of refined path (in blocks):                       4 (count: 2, min: 2, max: 2, avg: 2.00)
+Number of affected states:                                2 (count: 2, min: 1, max: 1, avg: 1.00)
+Length (states) of path with itp 'true':                  0 (count: 2, min: 0, max: 0, avg: 0.00)
+Length (states) of path with itp non-trivial itp:         2 (count: 2, min: 1, max: 1, avg: 1.00)
+Length (states) of path with itp 'false':                 2 (count: 2, min: 1, max: 1, avg: 1.00)
+Different non-trivial interpolants along paths:           0 (count: 2, min: 0, max: 0, avg: 0.00)
+Equal non-trivial interpolants along paths:               0 (count: 2, min: 0, max: 0, avg: 0.00)
+Number of refs with location-based cutoff:                0
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                3
+Number of successful refinements:     3
+Number of failed refinements:         0
+Max. size of reached set before ref.: 97263
+Max. size of reached set after ref.:  418
+Avg. size of reached set before ref.: 40378.33
+Avg. size of reached set after ref.:  279.00
+
+Total time for CEGAR algorithm:     203.847s
+Time for refinements:                 2.252s
+Average time for refinement:          0.750s
+Max time for refinement:              1.217s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.380
+  Visited lines:          1605
+  Total lines:            2632
+  Line coverage:          0.610
+  Visited conditions:     220
+  Total conditions:       588
+  Condition coverage:     0.374
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     3685
+Number of CFA edges:             4192
+Number of relevant variables:    378
+Number of functions:             142
+Number of loops:                 15
+Size of reached set:             1074
+  Number of reached locations:   661 (18%)
+    Avg states per location:     1
+    Max states per location:     41 (at node N50)
+  Number of reached functions:   54 (38%)
+  Number of partitions:          1074
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        18
+
+Time for analysis setup:          1.512s
+  Time for loading CPAs:          0.318s
+  Time for loading parser:        0.172s
+  Time for CFA construction:      0.975s
+    Time for parsing file(s):     0.265s
+    Time for AST to CFA:          0.303s
+    Time for CFA sanity check:    0.074s
+    Time for post-processing:     0.279s
+      Time for var class.:        0.139s
+Time for Analysis:              203.847s
+CPU time for analysis:          214.450s
+Total time for CPAchecker:      205.360s
+Total CPU time for CPAchecker:  217.250s
+Time for statistics:              0.030s
+
+Time for Garbage Collector:       0.471s (in 8 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               1035MB (   987 MiB) max;    479MB (   457 MiB) avg;   1062MB (  1013 MiB) peak
+Used non-heap memory:             40MB (    38 MiB) max;     39MB (    37 MiB) avg;     41MB (    39 MiB) peak
+Used in PS Old Gen pool:          49MB (    47 MiB) max;     38MB (    36 MiB) avg;     49MB (    47 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1790MB (  1707 MiB) avg
+Allocated non-heap memory:        43MB (    41 MiB) max;     41MB (    39 MiB) avg
+Total process virtual memory:  13625MB ( 12994 MiB) max;  13287MB ( 12671 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/080/attempt-67c13655342742b6a4f784dcf079277c/output".

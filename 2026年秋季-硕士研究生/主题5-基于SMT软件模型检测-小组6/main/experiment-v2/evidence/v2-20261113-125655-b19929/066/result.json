@@ -1,0 +1,41 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 143,
+  "runner_stop_reason": "CPU_HARD_LIMIT",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 243,
+      "text": "Number of abstractions:            38 (0% of all post computations)"
+    },
+    {
+      "line": 264,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 271,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 38)"
+    },
+    {
+      "line": 402,
+      "text": "Total CPU time for CPAchecker:  900.080s"
+    }
+  ],
+  "wall_seconds": 1313.168392742984,
+  "peak_group_rss": 3902414848,
+  "sampled_group_cpu_peak_seconds": 1412.53,
+  "cpa_cpu_seconds": 900.08,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/066/attempt-218559e3e8944bcbb7157fd211f19e89/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--input--mousedev.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

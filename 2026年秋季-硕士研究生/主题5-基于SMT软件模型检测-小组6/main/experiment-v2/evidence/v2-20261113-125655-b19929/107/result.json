@@ -1,0 +1,37 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 29,
+      "text": "Number of abstractions:            0 (NaN% of all post computations)"
+    },
+    {
+      "line": 38,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 147,
+      "text": "Total CPU time for CPAchecker:    1.850s"
+    }
+  ],
+  "wall_seconds": 1.549623595084995,
+  "peak_group_rss": 313110528,
+  "sampled_group_cpu_peak_seconds": 2.31,
+  "cpa_cpu_seconds": 1.85,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/107/attempt-32d893623d2c4cf1ae2f2f8473756ad9/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--mtd--devices--block2mtd.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

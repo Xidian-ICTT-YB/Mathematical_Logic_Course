@@ -1,0 +1,22 @@
+{
+  "status": "MEMORY_LIMIT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": -9,
+  "runner_stop_reason": "MEMORY_LIMIT",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [],
+  "wall_seconds": 32.261598837096244,
+  "peak_group_rss": 15107047424,
+  "sampled_group_cpu_peak_seconds": 31.91,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/070/attempt-b582800195524512bf002fdc7816700c/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

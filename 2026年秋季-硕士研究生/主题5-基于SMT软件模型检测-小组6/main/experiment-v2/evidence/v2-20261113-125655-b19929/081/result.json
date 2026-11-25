@@ -1,0 +1,66 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 275,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 277,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 279,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 281,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 465,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 467,
+      "text": "Error: line 7708: Unsupported feature (recursion): tmp___0 = be_xmit(dev, dma_addr); (line was originally pointer call(be_xmit) tmp___0 = (*(ops->mapping_error))(dev, dma_addr);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 471,
+      "text": "Number of abstractions:            3776 (0% of all post computations)"
+    },
+    {
+      "line": 492,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 499,
+      "text": "  Time for abstraction:                  0.014s (Max:     0.001s, Count: 3776)"
+    },
+    {
+      "line": 616,
+      "text": "Total CPU time for CPAchecker:  526.170s"
+    }
+  ],
+  "wall_seconds": 689.5160274249502,
+  "peak_group_rss": 11152953344,
+  "sampled_group_cpu_peak_seconds": 921.16,
+  "cpa_cpu_seconds": 526.17,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/081/attempt-a33555b81aec49fcb5ceb6b3d050bc00/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--emulex--benet--be2net.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

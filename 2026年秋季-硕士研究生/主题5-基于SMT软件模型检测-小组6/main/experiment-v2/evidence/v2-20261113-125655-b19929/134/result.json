@@ -1,0 +1,50 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 693,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 695,
+      "text": "Error: line 8610: Unsupported feature (recursion): tmp = qlcnic_read_rom(adapter, (ulong )addr, &err); (line was originally pointer call(qlcnic_read_rom) tmp = (*(((adapter->ahw)->hw_ops)->read_reg))(adapter, (ulong )addr, & err);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 699,
+      "text": "Number of abstractions:            8 (0% of all post computations)"
+    },
+    {
+      "line": 720,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 729,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 8)"
+    },
+    {
+      "line": 835,
+      "text": "Total CPU time for CPAchecker:   12.130s"
+    }
+  ],
+  "wall_seconds": 7.050993478856981,
+  "peak_group_rss": 1588322304,
+  "sampled_group_cpu_peak_seconds": 12.79,
+  "cpa_cpu_seconds": 12.13,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/134/attempt-de1e511570e843229b7a47c1e5b66867/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--qlogic--qlcnic--qlcnic.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

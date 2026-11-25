@@ -1,0 +1,50 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 217,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 219,
+      "text": "Error: line 4683: Unsupported feature (recursion): rc = ecryptfs_fasync(fd, lower_file, flag); (line was originally pointer call(ecryptfs_fasync) rc = (*((lower_file->f_op)->fasync))(fd, lower_file, flag);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 223,
+      "text": "Number of abstractions:            1 (0% of all post computations)"
+    },
+    {
+      "line": 244,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 253,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 1)"
+    },
+    {
+      "line": 357,
+      "text": "Total CPU time for CPAchecker:    3.990s"
+    }
+  ],
+  "wall_seconds": 4.418074536835775,
+  "peak_group_rss": 759820288,
+  "sampled_group_cpu_peak_seconds": 4.4,
+  "cpa_cpu_seconds": 3.99,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/051/attempt-8ceee4b3975b453cb64616ad6432fbc6/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-fs--ecryptfs--ecryptfs.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

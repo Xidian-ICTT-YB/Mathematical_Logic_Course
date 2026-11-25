@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 2100,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 2102,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 2104,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 2106,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 2136,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 2138,
+      "text": "Error: line 13441: Unsupported feature (recursion): timer_close(tmr___0->dev); (line was originally pointer call(timer_close) (*(tmr___0->tmr_disable))(tmr___0->dev);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 2142,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 2151,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 2278,
+      "text": "Total CPU time for CPAchecker:   13.930s"
+    }
+  ],
+  "wall_seconds": 14.662414246005937,
+  "peak_group_rss": 799338496,
+  "sampled_group_cpu_peak_seconds": 14.58,
+  "cpa_cpu_seconds": 13.93,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/008/attempt-409de9242e644ab7ae15fb42a3c2c754/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

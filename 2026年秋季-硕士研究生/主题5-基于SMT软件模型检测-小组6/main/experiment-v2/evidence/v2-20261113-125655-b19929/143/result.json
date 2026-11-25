@@ -1,0 +1,37 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 1829,
+      "text": "Number of abstractions:            0 (NaN% of all post computations)"
+    },
+    {
+      "line": 1838,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 1951,
+      "text": "Total CPU time for CPAchecker:  909.240s"
+    }
+  ],
+  "wall_seconds": 458.8690553191118,
+  "peak_group_rss": 10919092224,
+  "sampled_group_cpu_peak_seconds": 910.14,
+  "cpa_cpu_seconds": 909.24,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/143/attempt-dae174bf6662444cb4eeeb3d2d682130/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main11_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

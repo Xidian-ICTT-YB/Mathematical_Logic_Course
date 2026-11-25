@@ -1,0 +1,41 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": -9,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 417,
+      "text": "Number of abstractions:            15 (0% of all post computations)"
+    },
+    {
+      "line": 438,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 445,
+      "text": "  Time for abstraction:                  0.009s (Max:     0.008s, Count: 15)"
+    },
+    {
+      "line": 575,
+      "text": "Total CPU time for CPAchecker:  899.970s"
+    }
+  ],
+  "wall_seconds": 957.8790609641001,
+  "peak_group_rss": 9712889856,
+  "sampled_group_cpu_peak_seconds": 995.87,
+  "cpa_cpu_seconds": 899.97,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/047/attempt-d551293f59e34e83b142369eeec14e1b/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-scsi-gdth-ko--111_1a--5934df9-1.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}
