@@ -1,0 +1,295 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/178/attempt-1c4b4de0f9d0433c84c3d0571f7db7ea/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/178/attempt-1c4b4de0f9d0433c84c3d0571f7db7ea/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 3488: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3491: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3494: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 10403: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10404: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10405: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10406: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10407: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10408: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10378: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10380: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10374: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10364: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10358: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10359: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10337: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10339: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10333: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10325: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10303: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10297: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10052: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10053: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10055: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10056: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10077: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10030: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10031: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10032: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10026: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4974: Function pointer *(smi_info->io.outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 5075: Function pointer *(info->io.outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 5097: Function pointer *(info->io.outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10111: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 8635: Function pointer *(kcs->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 8644: Function pointer *(kcs->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 9352: Function pointer *(smic->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 9343: Function pointer *(smic->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 9334: Function pointer *(smic->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from ipmi_pci_remove to cleanup_one_si (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_pnp_remove to cleanup_one_si (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_pci_remove to cleanup_one_si (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_pnp_remove to cleanup_one_si (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_acpi_gpe to smi_event_handler (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_thread to smi_event_handler (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_acpi_gpe to smi_event_handler (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ipmi_thread to smi_event_handler (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from set_run_to_completion to smi_event_handler (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from set_run_to_completion to smi_event_handler (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to smi_timeout (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from poll to smi_event_handler (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to smi_timeout (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from poll to smi_event_handler (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from smi_timeout to smi_event_handler (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to poll (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from smi_timeout to smi_event_handler (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to poll (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to ipmi_pci_remove (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to ipmi_pci_remove (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to ipmi_pci_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to ipmi_pci_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to ipmi_pnp_remove (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to ipmi_pnp_remove (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to ipmi_pnp_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_transaction_done to ipmi_pnp_remove (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to smi_timeout (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to poll (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to smi_timeout (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cleanup_one_si to poll (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from smi_event_handler to smi_start_processing (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_flags to ipmi_acpi_gpe (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_flags to ipmi_thread (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from smi_event_handler to bt_event (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from smi_event_handler to smi_start_processing (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_flags to ipmi_acpi_gpe (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from handle_flags to ipmi_thread (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from smi_event_handler to bt_event (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Finding target locations was interrupted. Defaulting to select all locations as potential target locations. (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, WARNING)
+
+Finding target locations was interrupted. Defaulting to select all locations as potential target locations. (Parallel analysis 1:TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Initializing reached set took too long, analysis cannot be started (The CPU-time limit of 900s has elapsed.) (Parallel analysis 2:ShutdownNotifier.shutdownIfNecessary, INFO)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:    51.642s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                            0 (count: 0, min: 0, max: 0, avg: 0.00) []
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            0
+
+
+Other statistics
+================
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.004
+  Visited lines:          0
+  Total lines:            4518
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       2566
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     7993
+Number of CFA edges:             11025
+Number of relevant variables:    1084
+Number of functions:             235
+Number of loops:                 40
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N3743)
+  Number of reached functions:   1 (0%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.564s
+  Time for loading CPAs:          0.126s
+  Time for loading parser:        0.165s
+  Time for CFA construction:      1.256s
+    Time for parsing file(s):     0.292s
+    Time for AST to CFA:          0.376s
+    Time for CFA sanity check:    0.142s
+    Time for post-processing:     0.433s
+      Time for var class.:        0.230s
+Time for Analysis:              453.538s
+CPU time for analysis:          899.750s
+Total time for CPAchecker:      455.105s
+Total CPU time for CPAchecker:  902.730s
+Time for statistics:              0.027s
+
+Time for Garbage Collector:     400.829s (in 78 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               9900MB (  9441 MiB) max;   5733MB (  5468 MiB) avg;  10371MB (  9890 MiB) peak
+Used non-heap memory:             35MB (    34 MiB) max;     34MB (    33 MiB) avg;     36MB (    34 MiB) peak
+Used in PS Old Gen pool:        6990MB (  6666 MiB) max;   4159MB (  3966 MiB) avg;   6990MB (  6666 MiB) peak
+Allocated heap memory:         10175MB (  9704 MiB) max;   7831MB (  7468 MiB) avg
+Allocated non-heap memory:        37MB (    35 MiB) max;     36MB (    35 MiB) avg
+Total process virtual memory:  13457MB ( 12834 MiB) max;  13449MB ( 12826 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/178/attempt-1c4b4de0f9d0433c84c3d0571f7db7ea/output".

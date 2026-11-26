@@ -1,0 +1,270 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/058/attempt-20544a53b44f44228143bef8a965bb39/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/058/attempt-20544a53b44f44228143bef8a965bb39/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 3446: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3449: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3452: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_3554;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_3554;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_3554;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_3554;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with ImpactRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 4179:	N559 -{tmp = ldv_zalloc(32UL);}-> N560) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 4181:	N561 -{tmp___0 = ldv_zalloc(8UL);}-> N562) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 4189:	N569 -{tmp___4 = ldv_zalloc(1UL);}-> N570) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_find_interface to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock_nested to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_control_msg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_bulk_msg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __dynamic_dev_dbg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function default_llseek to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_deregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_deregister_dev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _dev_info to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_register_dev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (The CPU-time limit of 900s has elapsed.) (ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            344 (7% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            336 (98%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         8 (2%)
+  Times precision was empty:       15 (4%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      329 (96%)
+  Times result was 'false':        7 (2%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         23606
+  BDD entailment checks:           23428
+Number of SMT sat checks:          34908
+  trivial:                         170
+  cached:                          34282
+
+Max ABE block size:                       99
+Number of predicates discovered:          7
+Number of abstraction locations:          0
+Max number of predicates per location:    0
+Avg number of predicates per location:    0
+Total predicates per abstraction:         2303
+Max number of predicates per abstraction: 7
+Avg number of predicates per abstraction: 7.00
+Number of irrelevant predicates:          0 (0%)
+Number of preds handled by boolean abs:   2303 (100%)
+  Total number of models for allsat:      323
+  Max number of models for allsat:        2
+  Avg number of models for allsat:        0.98
+
+
+Time for post operator:                  0.564s
+  Time for path formula creation:        0.560s
+Time for strengthen operator:            0.028s
+Time for prec operator:                  0.728s
+  Time for abstraction:                  0.675s (Max:     0.034s, Count: 344)
+    Boolean abstraction:                 0.319s
+    Solving time:                        0.244s (Max:     0.019s)
+    Model enumeration time:              0.012s
+    Time for BDD construction:           0.013s (Max:     0.001s)
+Time for merge operator:                 0.062s
+Time for coverage check:                 0.307s
+  Time for BDD entailment checks:        0.302s
+Total time for SMT solver (w/o itp):     0.965s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.041s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         4708 (count: 4708, min: 1, max: 1, avg: 1.00) [1 x 4708]
+
+Predicate Forced Covering statistics
+------------------------------------
+Attempted forced coverings:             11630
+Successful forced coverings:            153 (1%)
+No of times elment was already covered: 0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            2382
+Max size of waitlist:            154
+Average size of waitlist:        49
+Number of computed successors:   2642
+Max successors for one state:    2
+Number of times merged:          89
+Number of times stopped:         89
+Number of times breaked:         1
+
+Total time for CPA algorithm:       897.612s (Max:   897.214s)
+  Time for choose from waitlist:      0.010s
+  Time for forced covering:         895.697s
+  Time for precision adjustment:      0.794s
+  Time for transfer relation:         0.720s
+  Time for merge operator:            0.091s
+  Time for stop operator:             0.238s
+  Time for adding to reached set:     0.015s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                    7 (count: 1, min: 7, max: 7, avg: 7.00)
+
+Total time for static refinement:                      0.065s
+  Time for path feasibility check:                     0.045s
+  Time for predicate extraction from CFA:              0.015s
+  Time for ARG update:                                 0.003s
+
+Impact Refiner statistics
+-------------------------
+Number of predicate refinements:                   0
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                1
+Number of successful refinements:     1
+Number of failed refinements:         0
+Max. size of reached set before ref.: 284
+Max. size of reached set after ref.:  1
+Avg. size of reached set before ref.: 284.00
+Avg. size of reached set after ref.:  1.00
+
+Total time for CEGAR algorithm:     897.678s
+Time for refinements:                 0.066s
+Average time for refinement:          0.066s
+Max time for refinement:              0.066s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.783
+  Visited lines:          1117
+  Total lines:            1203
+  Line coverage:          0.929
+  Visited conditions:     170
+  Total conditions:       218
+  Condition coverage:     0.780
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1595
+Number of CFA edges:             1713
+Number of relevant variables:    188
+Number of functions:             60
+Number of loops:                 6
+Size of reached set:             2264
+  Number of reached locations:   535 (34%)
+    Avg states per location:     4
+    Max states per location:     153 (at node N283)
+  Number of reached functions:   47 (78%)
+  Number of partitions:          1952
+    Avg size of partitions:      1
+    Max size of partitions:      153 (with key [N283 (before line 3840), Function idmouse_create_image called from node N358, stack depth 3 [4fcc0416], stack [main, idmouse_open, idmouse_create_image]])
+  Number of target states:       0
+  Size of final wait list        154
+
+Time for analysis setup:          1.958s
+  Time for loading CPAs:          0.318s
+  Time for loading parser:        0.315s
+  Time for CFA construction:      1.071s
+    Time for parsing file(s):     0.300s
+    Time for AST to CFA:          0.381s
+    Time for CFA sanity check:    0.070s
+    Time for post-processing:     0.283s
+      Time for var class.:        0.119s
+Time for Analysis:              897.678s
+CPU time for analysis:          898.080s
+Total time for CPAchecker:      899.638s
+Total CPU time for CPAchecker:  900.120s
+Time for statistics:              0.044s
+
+Time for Garbage Collector:       0.194s (in 9 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                721MB (   687 MiB) max;    369MB (   352 MiB) avg;    745MB (   710 MiB) peak
+Used non-heap memory:             41MB (    39 MiB) max;     40MB (    38 MiB) avg;     42MB (    40 MiB) peak
+Used in PS Old Gen pool:          26MB (    24 MiB) max;     25MB (    24 MiB) avg;     26MB (    24 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1640MB (  1564 MiB) avg
+Allocated non-heap memory:        43MB (    41 MiB) max;     43MB (    41 MiB) avg
+Total process virtual memory:  13254MB ( 12640 MiB) max;  13233MB ( 12620 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/058/attempt-20544a53b44f44228143bef8a965bb39/output".

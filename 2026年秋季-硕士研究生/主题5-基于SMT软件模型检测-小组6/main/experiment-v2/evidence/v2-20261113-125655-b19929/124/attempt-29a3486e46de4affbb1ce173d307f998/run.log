@@ -1,0 +1,955 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/124/attempt-29a3486e46de4affbb1ce173d307f998/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/124/attempt-29a3486e46de4affbb1ce173d307f998/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 2812: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2815: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2818: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 2: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 4: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 8: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2921: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2924: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2927: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  case 2: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  case 4: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  case 8: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3515: Dead code detected: d_bit = 1 << (pin + -2); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4231: Dead code detected: __asm__  volatile   ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4234: Dead code detected: __asm__  volatile   ("call __get_user_4": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4237: Dead code detected: __asm__  volatile   ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (1UL) {
+    case 1: 
+    __asm__  volatile   ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    case 2: 
+    __asm__  volatile   ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    case 4: 
+    __asm__  volatile   ("call __get_user_4": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    case 8: 
+    __asm__  volatile   ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    default: 
+    __asm__  volatile   ("call __get_user_X": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4767: Dead code detected: __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4770: Dead code detected: __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4773: Dead code detected: __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (1UL) {
+  case 1: 
+  __asm__  volatile   ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  case 2: 
+  __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  case 4: 
+  __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  case 8: 
+  __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  default: 
+  __asm__  volatile   ("call __put_user_X": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 3787: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3823: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3649: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3687: Function pointer *(pprt->port->ops->write_control) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3668: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3698: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4879: Function pointer *(pprt->port->ops->read_data) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4881: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4882: Function pointer *(pprt->port->ops->read_status) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4884: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4885: Function pointer *(pprt->port->ops->read_status) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4911: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4898: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4899: Function pointer *(pprt->port->ops->read_status) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3449: Function pointer *(pprt->port->ops->read_control) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3464: Function pointer *(pprt->port->ops->write_control) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3424: Function pointer *(pprt->port->ops->read_data) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3439: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function parport_register_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function register_reboot_notifier to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function kstrtoull to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)((int)(tmp | tmp___0)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function _raw_spin_lock_irq to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3687: Ignoring function call through function pointer *(pprt->port->ops->write_control): (*(pprt->port->ops->write_control))(pprt->port, (int)((unsigned char)cmd)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __const_udelay to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock_irq to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3668: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)data)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3698: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)data)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3649: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)cmd)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)((int)(cgbytes[addr])); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4029: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4029: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)(32); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function schedule to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function might_fault to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)((int)c); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)(32); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring function call through function pointer *lcd_clear_fast: (*lcd_clear_fast)(); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3823: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, 32); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function trace_hardirqs_off to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_trylock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function trace_hardirqs_on to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4881: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)((~((int)((signed char)scan_mask_o))) & ((int)((signed char)oldval))))); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4882: Ignoring function call through function pointer *(pprt->port->ops->read_status): tmp___0 = (*(pprt->port->ops->read_status))(pprt->port); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4884: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)oldval)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4885: Ignoring function call through function pointer *(pprt->port->ops->read_status): tmp___1 = (*(pprt->port->ops->read_status))(pprt->port); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4898: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)((~((int)((signed char)bitval))) & ((int)((signed char)oldval))))); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4899: Ignoring function call through function pointer *(pprt->port->ops->read_status): tmp___2 = (*(pprt->port->ops->read_status))(pprt->port); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __wake_up to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4928: Ignoring function call through function pointer *(input->u.std.press_fct): (*(input->u.std.press_fct))(input->u.std.press_data); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring function call through function pointer *release_fct: (*release_fct)(input->u.std.release_data); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function mod_timer to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3787: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, 32); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(16); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)(32); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(16); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function schedule_timeout to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(48); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(48); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(48); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(tmp | tmp___0); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(8); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3894: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3894: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)((tmp___1 | tmp___2) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3897: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(6); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3844: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(1); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3844: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(1); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4022: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(28); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4022: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(28); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4017: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(24); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4017: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(24); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4005: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(20); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4005: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(20); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3992: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3992: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(16); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4180: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4180: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(tmp___7 | tmp___8); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4167: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4167: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)((tmp___5 | tmp___6) | ((lcd_flags & 4UL) != 0UL)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4313: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (Parallel analysis 1:InductionStepCase:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4313: Ignoring function call through function pointer *lcd_clear_fast: (*lcd_clear_fast)(); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function default_llseek to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function interruptible_sleep_on to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function parport_register_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function register_reboot_notifier to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function parport_release to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function parport_unregister_device to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function parport_unregister_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function unregister_reboot_notifier to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function del_timer to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_panel_driver_probe_1 to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_panel_driver_close_1 to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_panel_driver_open_1 to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_panel_driver_release_1 to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function parport_register_device to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function parport_claim to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function init_timer_key to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function add_timer to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function misc_register to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strncpy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function nonseekable_open to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function no_llseek to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4911: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)oldval)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3464: Ignoring function call through function pointer *(pprt->port->ops->write_control): (*(pprt->port->ops->write_control))(pprt->port, (int)((unsigned char)val)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3439: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)val)); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3897: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(6); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2Analysis was terminated (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:   391.582s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  1.238s
+  Time for transition matches:                         0.776s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                      1752435 (count: 1752435, min: 1, max: 1, avg: 1.00) [1 x 1752435]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1207944
+Max size of waitlist:            18345
+Average size of waitlist:        10095
+Number of computed successors:   1287826
+Max successors for one state:    2
+Number of times merged:          265660
+Number of times stopped:         314658
+Number of times breaked:         0
+
+Total time for CPA algorithm:       445.216s (Max:   445.216s)
+  Time for choose from waitlist:      0.312s
+  Time for precision adjustment:      2.937s
+  Time for transfer relation:       121.074s
+  Time for merge operator:          304.076s
+  Time for stop operator:            13.726s
+  Time for adding to reached set:     1.310s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   423.208s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         20
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.269s
+  Time for path formula creation:        0.265s
+Time for strengthen operator:            0.000s
+Time for prec operator:                  0.001s
+Time for merge operator:                 0.008s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Number of variables:                                  17452 (count: 883, min: 0, max: 77, avg: 19.76)
+Number of global variables:                           17254 (count: 883, min: 0, max: 74, avg: 19.54)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     892
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.004s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                79
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   66
+Number of deterministic Assumptions:                     44
+Level of Determinism:                              67%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          892 (count: 892, min: 1, max: 1, avg: 1.00) [1 x 892]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            883
+Max size of waitlist:            8
+Average size of waitlist:        1
+Number of computed successors:   892
+Max successors for one state:    2
+Number of times merged:          10
+Number of times stopped:         10
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.397s (Max:     0.397s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.056s
+  Time for transfer relation:         0.316s
+  Time for merge operator:            0.011s
+  Time for stop operator:             0.004s
+  Time for adding to reached set:     0.003s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.397s
+Time for final sat check:                0.000s
+Time for bounding assertions check:    399.487s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.011
+  Visited lines:          0
+  Total lines:            2328
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       1084
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     3641
+Number of CFA edges:             4736
+Number of relevant variables:    330
+Number of functions:             91
+Number of loops:                 23
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N2282)
+  Number of reached functions:   1 (1%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.263s
+  Time for loading CPAs:          0.101s
+  Time for loading parser:        0.186s
+  Time for CFA construction:      0.961s
+    Time for parsing file(s):     0.255s
+    Time for AST to CFA:          0.346s
+    Time for CFA sanity check:    0.083s
+    Time for post-processing:     0.249s
+      Time for var class.:        0.116s
+Time for Analysis:              449.843s
+CPU time for analysis:          898.590s
+Total time for CPAchecker:      451.109s
+Total CPU time for CPAchecker:  900.950s
+Time for statistics:              0.017s
+
+Time for Garbage Collector:      44.466s (in 162 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               6346MB (  6052 MiB) max;   3099MB (  2956 MiB) avg;   6922MB (  6601 MiB) peak
+Used non-heap memory:             54MB (    51 MiB) max;     44MB (    42 MiB) avg;     54MB (    51 MiB) peak
+Used in PS Old Gen pool:        3299MB (  3146 MiB) max;   1508MB (  1438 MiB) avg;   3346MB (  3191 MiB) peak
+Allocated heap memory:          7929MB (  7562 MiB) max;   5460MB (  5207 MiB) avg
+Allocated non-heap memory:        55MB (    52 MiB) max;     48MB (    46 MiB) avg
+Total process virtual memory:  13465MB ( 12841 MiB) max;  13461MB ( 12837 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/124/attempt-29a3486e46de4affbb1ce173d307f998/output".

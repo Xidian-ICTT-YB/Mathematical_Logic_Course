@@ -1,0 +1,53 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 87,
+      "text": "Number of abstractions:            7 (0% of all post computations)"
+    },
+    {
+      "line": 108,
+      "text": "Number of predicates discovered:          2"
+    },
+    {
+      "line": 126,
+      "text": "  Time for abstraction:                  0.129s (Max:     0.092s, Count: 7)"
+    },
+    {
+      "line": 155,
+      "text": "Attempted forced coverings:             1"
+    },
+    {
+      "line": 156,
+      "text": "Successful forced coverings:            0 (0%)"
+    },
+    {
+      "line": 217,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 277,
+      "text": "Total CPU time for CPAchecker:    3.480s"
+    }
+  ],
+  "wall_seconds": 2.622986080823466,
+  "peak_group_rss": 387796992,
+  "sampled_group_cpu_peak_seconds": 4.0,
+  "cpa_cpu_seconds": 3.48,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/186/attempt-fcebe64ba3b643978a2601d98834cd10/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-block-virtio_blk-ko--101_1a--39a1d13.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

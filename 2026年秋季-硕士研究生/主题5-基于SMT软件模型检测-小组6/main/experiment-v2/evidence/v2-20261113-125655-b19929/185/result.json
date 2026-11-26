@@ -1,0 +1,45 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 87,
+      "text": "Number of abstractions:            7 (0% of all post computations)"
+    },
+    {
+      "line": 108,
+      "text": "Number of predicates discovered:          2"
+    },
+    {
+      "line": 128,
+      "text": "  Time for abstraction:                  0.161s (Max:     0.120s, Count: 7)"
+    },
+    {
+      "line": 217,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 277,
+      "text": "Total CPU time for CPAchecker:    3.870s"
+    }
+  ],
+  "wall_seconds": 2.8394484049640596,
+  "peak_group_rss": 422957056,
+  "sampled_group_cpu_peak_seconds": 4.38,
+  "cpa_cpu_seconds": 3.87,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/185/attempt-4f26d011f4f64ce98757bf1eb048a8b3/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-commit-tester/m0_false-unreach-call_drivers-block-virtio_blk-ko--101_1a--39a1d13.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,53 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 95,
+      "text": "Number of abstractions:            7052 (3% of all post computations)"
+    },
+    {
+      "line": 116,
+      "text": "Number of predicates discovered:          4"
+    },
+    {
+      "line": 134,
+      "text": "  Time for abstraction:                 95.267s (Max:     0.371s, Count: 7052)"
+    },
+    {
+      "line": 163,
+      "text": "Attempted forced coverings:             6575"
+    },
+    {
+      "line": 164,
+      "text": "Successful forced coverings:            256 (4%)"
+    },
+    {
+      "line": 225,
+      "text": "Number of successful refinements:     1814"
+    },
+    {
+      "line": 281,
+      "text": "Total CPU time for CPAchecker:  900.090s"
+    }
+  ],
+  "wall_seconds": 885.5451847400982,
+  "peak_group_rss": 1357643776,
+  "sampled_group_cpu_peak_seconds": 901.3,
+  "cpa_cpu_seconds": 900.09,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/154/attempt-14948408511a4a06af0689eb852750ea/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-net-can-usb-ems_usb.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

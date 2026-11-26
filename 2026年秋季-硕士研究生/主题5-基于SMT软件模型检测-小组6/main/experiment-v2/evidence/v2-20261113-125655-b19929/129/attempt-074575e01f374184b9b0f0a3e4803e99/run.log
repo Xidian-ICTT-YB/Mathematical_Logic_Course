@@ -1,0 +1,128 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/129/attempt-074575e01f374184b9b0f0a3e4803e99/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/129/attempt-074575e01f374184b9b0f0a3e4803e99/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7013:	N560 -{tmp___0 = ldv_zalloc(1UL);}-> N561) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 7017:	N564 -{tmp___2 = ldv_zalloc(1UL);}-> N565) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function spi_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 2 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_release_2 to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_setup_2 to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function spi_sync to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function warn_slowpath_null to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function crc7 to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function driver_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_device_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function spi_setup to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_device_alloc to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_device_add_resources to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_device_add_data to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_device_add to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function platform_device_put to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 3 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 4 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 5 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOfRange(Arrays.java:3664)
+	at java.lang.String.<init>(String.java:207)
+	at java.lang.StringBuilder.toString(StringBuilder.java:412)
+	at org.sosy_lab.cpachecker.cfa.types.c.CCompositeType.toString(CCompositeType.java:128)
+	at org.sosy_lab.cpachecker.util.predicates.pathformula.pointeraliasing.PointerTargetSetManager$BaseUnitingConflictHandler.resolveConflict(PointerTargetSetManager.java:466)
+	at org.sosy_lab.cpachecker.util.predicates.pathformula.pointeraliasing.PointerTargetSetManager$BaseUnitingConflictHandler.resolveConflict(PointerTargetSetManager.java:405)
+	at org.sosy_lab.common.collect.PersistentSortedMaps.merge(PersistentSortedMaps.java:243)
+	at org.sosy_lab.cpachecker.util.predicates.pathformula.pointeraliasing.PointerTargetSetManager.mergePointerTargetSets(PointerTargetSetManager.java:273)
+	at org.sosy_lab.cpachecker.util.predicates.pathformula.pointeraliasing.CToFormulaConverterWithPointerAliasing.mergePointerTargetSets(CToFormulaConverterWithPointerAliasing.java:705)
+	at org.sosy_lab.cpachecker.util.predicates.pathformula.PathFormulaManagerImpl.makeOr(PathFormulaManagerImpl.java:305)
+	at org.sosy_lab.cpachecker.cpa.predicate.PredicateMergeOperator.merge(PredicateMergeOperator.java:83)
+	at org.sosy_lab.cpachecker.cpa.composite.CompositeMergeAgreeOperator.merge(CompositeMergeAgreeOperator.java:100)
+	at org.sosy_lab.cpachecker.cpa.arg.ARGMergeJoin.merge(ARGMergeJoin.java:62)
+	at org.sosy_lab.cpachecker.core.algorithm.CPAAlgorithm.handleState(CPAAlgorithm.java:373)
+	at org.sosy_lab.cpachecker.core.algorithm.CPAAlgorithm.run0(CPAAlgorithm.java:244)
+	at org.sosy_lab.cpachecker.core.algorithm.CPAAlgorithm.run(CPAAlgorithm.java:210)
+	at org.sosy_lab.cpachecker.core.algorithm.bmc.BMCHelper.unroll(BMCHelper.java:171)
+	at org.sosy_lab.cpachecker.core.algorithm.bmc.BMCHelper.unroll(BMCHelper.java:159)
+	at org.sosy_lab.cpachecker.core.algorithm.bmc.AbstractBMCAlgorithm.run(AbstractBMCAlgorithm.java:309)
+	at org.sosy_lab.cpachecker.core.algorithm.bmc.BMCAlgorithm.run(BMCAlgorithm.java:171)
+	at org.sosy_lab.cpachecker.core.algorithm.counterexamplecheck.CounterexampleCheckAlgorithm.run(CounterexampleCheckAlgorithm.java:115)
+	at org.sosy_lab.cpachecker.core.algorithm.ExceptionHandlingAlgorithm.run(ExceptionHandlingAlgorithm.java:145)
+	at org.sosy_lab.cpachecker.core.CPAchecker.runAlgorithm(CPAchecker.java:455)
+	at org.sosy_lab.cpachecker.core.CPAchecker.run(CPAchecker.java:345)
+	at org.sosy_lab.cpachecker.cmdline.CPAMain.main(CPAMain.java:153)

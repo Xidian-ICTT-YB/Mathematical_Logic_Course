@@ -1,0 +1,22 @@
+[
+  "scripts/cpa.sh",
+  "-heap",
+  "10000M",
+  "-noout",
+  "-64",
+  "-predicateAnalysis-PredAbsRefiner-ABEl-bitprecise",
+  "-setprop",
+  "cpa.predicate.encodeFloatAs=FLOAT",
+  "-setprop",
+  "analysis.checkCounterexamples=true",
+  "-setprop",
+  "counterexample.checker=CBMC",
+  "-timelimit",
+  "900s",
+  "-stats",
+  "-outputpath",
+  "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/032/attempt-8a84382debbd40fe970dae339b69eedf/output",
+  "-spec",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-linux-3.7.3/ALL.prp",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c"
+]

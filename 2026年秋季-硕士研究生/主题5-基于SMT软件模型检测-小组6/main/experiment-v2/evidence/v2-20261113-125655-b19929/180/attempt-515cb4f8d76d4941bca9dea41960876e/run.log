@@ -1,0 +1,524 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/180/attempt-515cb4f8d76d4941bca9dea41960876e/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/180/attempt-515cb4f8d76d4941bca9dea41960876e/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 3488: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3491: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3494: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2014;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 10403: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10404: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10405: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10406: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10407: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10408: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10378: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10380: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10374: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10364: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10358: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10359: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10337: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10339: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10333: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10325: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10303: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10297: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10052: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10053: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10055: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10056: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10077: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10030: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10031: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10032: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10026: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4974: Function pointer *(smi_info->io.outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 5075: Function pointer *(info->io.outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 5097: Function pointer *(info->io.outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10111: Function pointer *(bt->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 8635: Function pointer *(kcs->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 8644: Function pointer *(kcs->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 9352: Function pointer *(smic->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 9343: Function pointer *(smic->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 9334: Function pointer *(smic->io->outputb) with type void (*)(struct si_sm_io *, unsigned int, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with ImpactRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8054:	N3812 -{tmp___11 = ldv_zalloc(24UL);}-> N3813) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8058:	N3816 -{tmp___13 = ldv_zalloc(16UL);}-> N3817) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8060:	N3818 -{tmp___14 = ldv_zalloc(32UL);}-> N3819) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 8064:	N3822 -{tmp___16 = ldv_zalloc(32UL);}-> N3823) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 9690:	N5227 -{tmp___2 = ldv_zalloc(1UL);}-> N5228) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+line 9307: Ignoring function call through function pointer *(smic->io->inputb): tmp = (*(smic->io->inputb))(smic->io, 2U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 9316: Ignoring function call through function pointer *(smic->io->inputb): tmp = (*(smic->io->inputb))(smic->io, 1U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 9325: Ignoring function call through function pointer *(smic->io->inputb): tmp = (*(smic->io->inputb))(smic->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 9343: Ignoring function call through function pointer *(smic->io->outputb): (*(smic->io->outputb))(smic->io, 1U, (int)control); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 9334: Ignoring function call through function pointer *(smic->io->outputb): (*(smic->io->outputb))(smic->io, 2U, (int)flags); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 9352: Ignoring function call through function pointer *(smic->io->outputb): (*(smic->io->outputb))(smic->io, 0U, (int)data); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function kstrdup to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function simple_strtoul to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock_nested to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function list_del to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kthread_stop to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function driver_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __pci_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pnp_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dmi_find_device to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function acpi_get_table to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __builtin_prefetch to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_unregister_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function driver_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6964: Ignoring function call through function pointer *(new_smi->handlers->size): tmp = (*(new_smi->handlers->size))(); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6974: Ignoring function call through function pointer *(new_smi->handlers->init_data): new_smi->io_size = (*(new_smi->handlers->init_data))(new_smi->si_sm, &(new_smi->io)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4994: Ignoring function call through function pointer *(new_smi->irq_setup): (*(new_smi->irq_setup))(new_smi); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function set_user_nice to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kthread_should_stop to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 8617: Ignoring function call through function pointer *(kcs->io->inputb): tmp = (*(kcs->io->inputb))(kcs->io, 1U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function acpi_install_gpe_handler to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _dev_info to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_warn to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function request_threaded_irq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 5097: Ignoring function call through function pointer *(info->io.outputb): (*(info->io.outputb))(&(info->io), 2U, 1); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __request_region to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __release_region to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ioremap_nocache to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 10468: Ignoring function call through function pointer *(bt->io->inputb): tmp = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10470: Ignoring function call through function pointer *(bt->io->inputb): tmp___0 = (*(bt->io->inputb))(bt->io, 2U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10018: Ignoring function call through function pointer *(bt->io->inputb): tmp = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function strcpy to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcat to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 10024: Ignoring function call through function pointer *(bt->io->inputb): tmp___1 = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10026: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10030: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 1); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10031: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 16); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10032: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 2U, 128); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function kthread_create to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function wake_up_process to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_notice to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function acpi_evaluate_integer to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pnp_get_resource to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_enable_device to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 8635: Ignoring function call through function pointer *(kcs->io->outputb): (*(kcs->io->outputb))(kcs->io, 1U, (int)data); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 8644: Ignoring function call through function pointer *(kcs->io->outputb): (*(kcs->io->outputb))(kcs->io, 0U, (int)data); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10266: Ignoring function call through function pointer *(bt->io->inputb): status = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10046: Ignoring function call through function pointer *(bt->io->inputb): tmp = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10052: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10053: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 8); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10054: Ignoring function call through function pointer *(bt->io->inputb): (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10055: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 8); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10056: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 2); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10058: Ignoring function call through function pointer *(bt->io->inputb): tmp___0 = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10064: Ignoring function call through function pointer *(bt->io->inputb): tmp___2 = (*(bt->io->inputb))(bt->io, 1U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10077: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10069: Ignoring function call through function pointer *(bt->io->inputb): (*(bt->io->inputb))(bt->io, 1U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4614: Ignoring function call through function pointer *(smi_info->handlers->event): si_sm_result = (*(smi_info->handlers->event))(smi_info->si_sm, (long)time); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10403: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 1); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10404: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 1U, 3); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10405: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 1U, 24); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10406: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 1U, 42); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10407: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 1U, 3); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10408: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 4); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10374: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10378: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 2); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10129: Ignoring function call through function pointer *(bt->io->inputb): (bt->read_data)[0] = (*(bt->io->inputb))(bt->io, 1U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10145: Ignoring function call through function pointer *(bt->io->inputb): (bt->read_data)[(int)i] = (*(bt->io->inputb))(bt->io, 1U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10380: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10364: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 8); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10358: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10359: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 8); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10333: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10337: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 1); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10111: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 1U, (int)((bt->write_data)[i])); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10339: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 4); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10323: Ignoring function call through function pointer *(bt->io->inputb): tmp___2 = (*(bt->io->inputb))(bt->io, 0U); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10325: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10303: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10297: Ignoring function call through function pointer *(bt->io->outputb): (*(bt->io->outputb))(bt->io, 0U, 16); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6975: Ignoring function call through function pointer *(new_smi->io_setup): rv = (*(new_smi->io_setup))(new_smi); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 6984: Ignoring function call through function pointer *(new_smi->handlers->detect): tmp___1 = (*(new_smi->handlers->detect))(new_smi->si_sm); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Error: line 4994: Unsupported feature (recursion): ipmi_acpi_gpe(new_smi); (line was originally pointer call(ipmi_acpi_gpe) (*(new_smi->irq_setup))(new_smi);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            149 (1% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            133 (89%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         16 (11%)
+  Times precision was empty:       37 (25%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      112 (75%)
+  Times result was 'false':        18 (12%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         3103
+  BDD entailment checks:           55
+Number of SMT sat checks:          131
+  trivial:                         53
+  cached:                          53
+
+Max ABE block size:                       315
+Number of predicates discovered:          1
+Number of abstraction locations:          0
+Max number of predicates per location:    0
+Avg number of predicates per location:    0
+Total predicates per abstraction:         112
+Max number of predicates per abstraction: 1
+Avg number of predicates per abstraction: 1.00
+Number of irrelevant predicates:          0 (0%)
+Number of preds handled by boolean abs:   112 (100%)
+  Total number of models for allsat:      94
+  Max number of models for allsat:        1
+  Avg number of models for allsat:        0.84
+
+
+Time for post operator:                  1.902s
+  Time for path formula creation:        1.895s
+Time for strengthen operator:            0.014s
+Time for prec operator:                130.777s
+  Time for abstraction:                130.761s (Max:    41.933s, Count: 149)
+    Boolean abstraction:               128.943s
+    Solving time:                      128.072s (Max:    41.522s)
+    Model enumeration time:              0.860s
+    Time for BDD construction:           0.007s (Max:     0.001s)
+Time for merge operator:                 1.037s
+Time for coverage check:                 0.001s
+  Time for BDD entailment checks:        0.001s
+Total time for SMT solver (w/o itp):   128.970s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.034s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        22171 (count: 22171, min: 1, max: 1, avg: 1.00) [1 x 22171]
+
+Predicate Forced Covering statistics
+------------------------------------
+Attempted forced coverings:             1
+Successful forced coverings:            1 (100%)
+No of times elment was already covered: 0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            12583
+Max size of waitlist:            131
+Average size of waitlist:        43
+Number of computed successors:   14469
+Max successors for one state:    2
+Number of times merged:          1524
+Number of times stopped:         1524
+Number of times breaked:         16
+
+Total time for CPA algorithm:       134.135s (Max:    42.069s)
+  Time for choose from waitlist:      0.009s
+  Time for forced covering:           0.018s
+  Time for precision adjustment:    130.840s
+  Time for transfer relation:         2.108s
+  Time for merge operator:            1.060s
+  Time for stop operator:             0.014s
+  Time for adding to reached set:     0.028s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                    1 (count: 1, min: 1, max: 1, avg: 1.00)
+
+Total time for static refinement:                      0.280s
+  Time for path feasibility check:                     0.256s
+  Time for predicate extraction from CFA:              0.008s
+  Time for ARG update:                                 0.009s
+
+Impact Refiner statistics
+-------------------------
+Number of predicate refinements:                   15
+Avg. length of target path (in blocks):                 123 (count: 15, min: 7, max: 9, avg: 8.20)
+Number of infeasible sliced prefixes:                     0 (count: 0, min: 0, max: 0, avg: 0.00)
+
+Time for refinement:                                   6.088s
+  Counterexample analysis:                             6.283s (Max:     1.089s, Calls: 16)
+    Refinement sat check:                              4.652s
+    Interpolant computation:                           0.000s
+  Path-formulas extraction:                            0.000s
+  Error path post-processing:                          0.000s
+  Computing abstraction of itp:           0.006s
+  Checking whether itp is new:            0.037s
+  Coverage checks:                        0.000s
+  ARG update:                             0.003s
+
+Number of abstractions during refinements:  75
+Length of refined path (in blocks):                     101 (count: 15, min: 2, max: 8, avg: 6.73)
+Number of affected states:                               19 (count: 15, min: 0, max: 7, avg: 1.27)
+Length (states) of path with itp 'true':                 11 (count: 15, min: 0, max: 1, avg: 0.73)
+Length (states) of path with itp non-trivial itp:        75 (count: 15, min: 1, max: 7, avg: 5.00)
+Length (states) of path with itp 'false':                12 (count: 15, min: 0, max: 1, avg: 0.80)
+Different non-trivial interpolants along paths:          28 (count: 15, min: 0, max: 3, avg: 1.87)
+Equal non-trivial interpolants along paths:              32 (count: 15, min: 0, max: 6, avg: 2.13)
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                16
+Number of successful refinements:     16
+Number of failed refinements:         0
+Max. size of reached set before ref.: 9292
+Max. size of reached set after ref.:  9291
+Avg. size of reached set before ref.: 7019.81
+Avg. size of reached set after ref.:  6796.06
+
+Total time for CEGAR algorithm:     140.640s
+Time for refinements:                 6.452s
+Average time for refinement:          0.403s
+Max time for refinement:              1.105s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.519
+  Visited lines:          2677
+  Total lines:            4501
+  Line coverage:          0.595
+  Visited conditions:     1097
+  Total conditions:       2564
+  Condition coverage:     0.428
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     7990
+Number of CFA edges:             9991
+Number of relevant variables:    998
+Number of functions:             235
+Number of loops:                 40
+Size of reached set:             9348
+  Number of reached locations:   2470 (31%)
+    Avg states per location:     3
+    Max states per location:     66 (at node N184)
+  Number of reached functions:   122 (52%)
+  Number of partitions:          9327
+    Avg size of partitions:      1
+    Max size of partitions:      4 (with key [N3099 (before line 7246), Function init_ipmi_si called from node N4081, stack depth 2 [614cbec4], stack [main, init_ipmi_si]])
+  Number of target states:       0
+  Size of final wait list        94
+
+Time for analysis setup:          1.934s
+  Time for loading CPAs:          0.336s
+  Time for loading parser:        0.204s
+  Time for CFA construction:      1.343s
+    Time for parsing file(s):     0.274s
+    Time for AST to CFA:          0.422s
+    Time for CFA sanity check:    0.206s
+    Time for post-processing:     0.465s
+      Time for var class.:        0.178s
+Time for Analysis:              140.640s
+CPU time for analysis:          145.330s
+Total time for CPAchecker:      142.577s
+Total CPU time for CPAchecker:  148.930s
+Time for statistics:              0.061s
+
+Time for Garbage Collector:       0.134s (in 4 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                672MB (   641 MiB) max;    273MB (   261 MiB) avg;    710MB (   677 MiB) peak
+Used non-heap memory:             40MB (    38 MiB) max;     40MB (    38 MiB) avg;     41MB (    39 MiB) peak
+Used in PS Old Gen pool:          29MB (    28 MiB) max;     29MB (    27 MiB) avg;     29MB (    28 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1678MB (  1600 MiB) avg
+Allocated non-heap memory:        42MB (    40 MiB) max;     41MB (    39 MiB) avg
+Total process virtual memory:  13860MB ( 13218 MiB) max;  13693MB ( 13059 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/180/attempt-515cb4f8d76d4941bca9dea41960876e/output".

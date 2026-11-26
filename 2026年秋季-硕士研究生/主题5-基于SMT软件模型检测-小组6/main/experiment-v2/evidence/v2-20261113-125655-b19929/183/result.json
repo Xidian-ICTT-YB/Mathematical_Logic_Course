@@ -1,0 +1,53 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 363,
+      "text": "Number of abstractions:            231 (4% of all post computations)"
+    },
+    {
+      "line": 384,
+      "text": "Number of predicates discovered:          1"
+    },
+    {
+      "line": 402,
+      "text": "  Time for abstraction:                  7.341s (Max:     0.233s, Count: 231)"
+    },
+    {
+      "line": 431,
+      "text": "Attempted forced coverings:             237"
+    },
+    {
+      "line": 432,
+      "text": "Successful forced coverings:            71 (30%)"
+    },
+    {
+      "line": 493,
+      "text": "Number of successful refinements:     4"
+    },
+    {
+      "line": 552,
+      "text": "Total CPU time for CPAchecker:  901.020s"
+    }
+  ],
+  "wall_seconds": 899.3968561359216,
+  "peak_group_rss": 1125392384,
+  "sampled_group_cpu_peak_seconds": 906.1,
+  "cpa_cpu_seconds": 901.02,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-validator-v0.8/linux-stable-af3071a-1-130_7a-drivers--hwmon--s3c-hwmon.ko-entry_point_ldv-val-v0.8_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

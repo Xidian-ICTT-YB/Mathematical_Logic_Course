@@ -1,0 +1,46 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 198,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 200,
+      "text": "Warning: Analysis not completed due to recursion (line 9217: Unsupported feature (recursion): err = he_ioctl(atm_dev, cmd, arg); (line was originally pointer call(he_ioctl) err = (*((atm_dev->phy)->ioctl))(atm_dev, cmd, arg);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 522,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 531,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 664,
+      "text": "Total CPU time for CPAchecker:  903.930s"
+    }
+  ],
+  "wall_seconds": 890.760927682044,
+  "peak_group_rss": 11491287040,
+  "sampled_group_cpu_peak_seconds": 904.9,
+  "cpa_cpu_seconds": 903.93,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/031/attempt-13c4bad0f5c64aa1a0cad5c858609bbe/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

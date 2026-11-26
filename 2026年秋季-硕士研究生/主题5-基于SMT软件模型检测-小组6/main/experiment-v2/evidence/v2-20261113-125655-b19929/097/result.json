@@ -1,0 +1,37 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 3592,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 3601,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 3728,
+      "text": "Total CPU time for CPAchecker:    4.330s"
+    }
+  ],
+  "wall_seconds": 2.932785354088992,
+  "peak_group_rss": 668700672,
+  "sampled_group_cpu_peak_seconds": 4.93,
+  "cpa_cpu_seconds": 4.33,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/097/attempt-f6ea2ab791ec4bc38b56f00ac28f7943/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,18 @@
+[
+  "scripts/cpa.sh",
+  "-heap",
+  "10000M",
+  "-noout",
+  "-64",
+  "-sv-comp16--k-induction",
+  "-setprop",
+  "limits.time.cpu.thread=10000s",
+  "-timelimit",
+  "900s",
+  "-stats",
+  "-outputpath",
+  "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/156/attempt-1705f1d970024ce3b19fa48de57956c8/output",
+  "-spec",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-linux-3.0/ALL.prp",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-linux-3.0/usb_urb-drivers-net-can-usb-ems_usb.ko_false-unreach-call.cil.out.i.pp.i"
+]

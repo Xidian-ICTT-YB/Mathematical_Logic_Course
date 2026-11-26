@@ -1,0 +1,277 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/036/attempt-3a8f04f1c12c4ff29c0a45578b585d6c/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/036/attempt-3a8f04f1c12c4ff29c0a45578b585d6c/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+Dead code detected: Label while_break is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __pci_register_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_iomap to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ata_pci_bmdma_init_one to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_unregister_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ioread8 to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function pci_iomap to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ata_pci_bmdma_init_one to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_unregister_driver to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ioread32 to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_iounmap to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ioread8 to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+config/invariantGeneration-no-out.properties finished successfully. (ParallelAlgorithm.handleFutureResults, INFO)
+
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+Successful analysis: config/invariantGeneration-no-out.properties
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.002s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.002s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         1268 (count: 1268, min: 1, max: 1, avg: 1.00) [1 x 1268]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            286
+Max size of waitlist:            14
+Average size of waitlist:        9
+Number of computed successors:   305
+Max successors for one state:    2
+Number of times merged:          27
+Number of times stopped:         40
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.043s (Max:     1.043s)
+  Time for choose from waitlist:      0.002s
+  Time for precision adjustment:      0.023s
+  Time for transfer relation:         0.258s
+  Time for merge operator:            0.678s
+  Time for stop operator:             0.078s
+  Time for adding to reached set:     0.001s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:     0.787s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         26
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.175s
+  Time for path formula creation:        0.168s
+Time for strengthen operator:            0.008s
+Time for prec operator:                  0.005s
+Time for merge operator:                 0.019s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                   2829 (count: 1036, min: 0, max: 18, avg: 2.73)
+Number of global variables:                             961 (count: 1036, min: 0, max: 3, avg: 0.93)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    1048
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.013s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                34
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   48
+Number of deterministic Assumptions:                     12
+Level of Determinism:                              25%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.002s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         1048 (count: 1048, min: 1, max: 1, avg: 1.00) [1 x 1048]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1036
+Max size of waitlist:            9
+Average size of waitlist:        2
+Number of computed successors:   1048
+Max successors for one state:    2
+Number of times merged:          13
+Number of times stopped:         13
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.381s (Max:     0.381s)
+  Time for choose from waitlist:      0.009s
+  Time for precision adjustment:      0.034s
+  Time for transfer relation:         0.265s
+  Time for merge operator:            0.021s
+  Time for stop operator:             0.010s
+  Time for adding to reached set:     0.013s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.382s
+Time for final sat check:                0.000s
+Time for bounding assertions check:      0.204s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.444
+  Visited lines:          82
+  Total lines:            955
+  Line coverage:          0.086
+  Visited conditions:     39
+  Total conditions:       62
+  Condition coverage:     0.629
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1079
+Number of CFA edges:             1126
+Number of relevant variables:    101
+Number of functions:             18
+Number of loops:                 3
+Size of reached set:             266
+  Number of reached locations:   129 (12%)
+    Avg states per location:     2
+    Max states per location:     18 (at node N34)
+  Number of reached functions:   8 (44%)
+  Number of partitions:          162
+    Avg size of partitions:      1
+    Max size of partitions:      17 (with key [N34 (before lines 4186-4199), Function marvell_pata_active called from node N112, stack depth 3 [1150bf39], stack [main, marvell_pre_reset, marvell_pata_active]])
+  Number of target states:       0
+
+Time for analysis setup:          0.972s
+  Time for loading CPAs:          0.131s
+  Time for loading parser:        0.165s
+  Time for CFA construction:      0.659s
+    Time for parsing file(s):     0.237s
+    Time for AST to CFA:          0.220s
+    Time for CFA sanity check:    0.027s
+    Time for post-processing:     0.126s
+      Time for var class.:        0.054s
+Time for Analysis:                1.509s
+CPU time for analysis:            2.910s
+Time for analyzing result:        0.000s
+Total time for CPAchecker:        2.482s
+Total CPU time for CPAchecker:    4.750s
+Time for statistics:              0.021s
+
+Time for Garbage Collector:       0.072s (in 2 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                452MB (   431 MiB) max;    186MB (   177 MiB) avg;    522MB (   497 MiB) peak
+Used non-heap memory:             38MB (    36 MiB) max;     29MB (    28 MiB) avg;     38MB (    36 MiB) peak
+Used in PS Old Gen pool:          22MB (    21 MiB) max;     12MB (    12 MiB) avg;     22MB (    21 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1770MB (  1688 MiB) avg
+Allocated non-heap memory:        39MB (    37 MiB) max;     30MB (    29 MiB) avg
+Total process virtual memory:  13470MB ( 12846 MiB) max;  13340MB ( 12722 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/036/attempt-3a8f04f1c12c4ff29c0a45578b585d6c/output".

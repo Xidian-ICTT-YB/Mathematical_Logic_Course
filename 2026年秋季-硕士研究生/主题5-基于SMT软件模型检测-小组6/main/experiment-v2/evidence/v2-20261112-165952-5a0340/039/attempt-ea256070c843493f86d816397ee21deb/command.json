@@ -1,0 +1,18 @@
+[
+  "scripts/cpa.sh",
+  "-heap",
+  "10000M",
+  "-noout",
+  "-64",
+  "-sv-comp16--k-induction",
+  "-setprop",
+  "limits.time.cpu.thread=10000s",
+  "-timelimit",
+  "900s",
+  "-stats",
+  "-outputpath",
+  "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/039/attempt-ea256070c843493f86d816397ee21deb/output",
+  "-spec",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-consumption/ALL.prp",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--block--paride--pcd.ko-main.cil.out.c"
+]

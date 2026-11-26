@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 435,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 437,
+      "text": "Error: line 5898: Unsupported feature (recursion): smi_event_handler(smi_info, 0); (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 441,
+      "text": "Number of abstractions:            1052 (1% of all post computations)"
+    },
+    {
+      "line": 462,
+      "text": "Number of predicates discovered:          39"
+    },
+    {
+      "line": 482,
+      "text": "  Time for abstraction:                116.309s (Max:     5.222s, Count: 1052)"
+    },
+    {
+      "line": 571,
+      "text": "Number of successful refinements:     8"
+    },
+    {
+      "line": 630,
+      "text": "Total CPU time for CPAchecker:  259.520s"
+    }
+  ],
+  "wall_seconds": 248.38011870905757,
+  "peak_group_rss": 3700424704,
+  "sampled_group_cpu_peak_seconds": 261.65,
+  "cpa_cpu_seconds": 259.52,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/179/attempt-30ed68876f254d4087f217c54586896c/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-validator-v0.6/linux-stable-90a4845-1-110_1a-drivers--char--ipmi--ipmi_si.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

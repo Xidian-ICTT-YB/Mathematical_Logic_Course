@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 25,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 27,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 31,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 33,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 69,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 71,
+      "text": "Error: line 5371: Unsupported feature (recursion): err = usbtouch_reset_resume(usbtouch); (line was originally pointer call(usbtouch_reset_resume) err = (*((usbtouch->type)->init))(usbtouch);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 75,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 84,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 211,
+      "text": "Total CPU time for CPAchecker:    3.790s"
+    }
+  ],
+  "wall_seconds": 2.651986734010279,
+  "peak_group_rss": 452689920,
+  "sampled_group_cpu_peak_seconds": 4.3,
+  "cpa_cpu_seconds": 3.79,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/200/attempt-853648f0bb8343819f1b57018cf3f223/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--input--touchscreen--usbtouchscreen.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

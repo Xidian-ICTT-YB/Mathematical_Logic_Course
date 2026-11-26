@@ -1,0 +1,49 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 203,
+      "text": "Number of abstractions:            8612 (2% of all post computations)"
+    },
+    {
+      "line": 224,
+      "text": "Number of predicates discovered:          4"
+    },
+    {
+      "line": 242,
+      "text": "  Time for abstraction:                 87.455s (Max:     8.135s, Count: 8612)"
+    },
+    {
+      "line": 271,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 310,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 366,
+      "text": "Total CPU time for CPAchecker:  124.060s"
+    }
+  ],
+  "wall_seconds": 111.51667986507528,
+  "peak_group_rss": 3128025088,
+  "sampled_group_cpu_peak_seconds": 125.52,
+  "cpa_cpu_seconds": 124.06,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/125/attempt-03b9a1024eaf4d53bffe7571cdb1b689/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-scsi-dc395x.ko_true-unreach-call.cil.out.i.pp.i",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

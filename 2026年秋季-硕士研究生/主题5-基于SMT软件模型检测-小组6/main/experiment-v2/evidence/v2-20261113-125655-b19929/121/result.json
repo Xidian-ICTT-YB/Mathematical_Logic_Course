@@ -1,0 +1,35 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": -9,
+  "runner_stop_reason": "CPU_HARD_LIMIT",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 277,
+      "text": "Number of abstractions:            1683412 (8% of all post computations)"
+    },
+    {
+      "line": 298,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 307,
+      "text": "  Time for abstraction:                  0.558s (Max:     0.002s, Count: 1683412)"
+    }
+  ],
+  "wall_seconds": 577.5194528100546,
+  "peak_group_rss": 10936053760,
+  "sampled_group_cpu_peak_seconds": 1000.05,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/121/attempt-38399a48af7e480a9441a553d7149285/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--staging--panel--panel.ko-main.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

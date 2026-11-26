@@ -1,0 +1,50 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 1496,
+      "text": "Error: line 16601: Unrecognized C code (Impossible structure assignment due to incompatible types: assignment of UnaliasedLocation{variable=usb_hcd_find_raw_port_number::port1} with type signed int to UnaliasedLocation{variable=generic_resume::msg} with type struct pm_message): tmp = generic_resume(hcd, port1); (line was originally pointer call(generic_resume) tmp = (*((hcd->driver)->find_raw_port_number))(hcd, port1);) (AssignmentHandler.makeDestructiveAssignment, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 1500,
+      "text": "Number of abstractions:            40 (1% of all post computations)"
+    },
+    {
+      "line": 1521,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 1528,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 40)"
+    },
+    {
+      "line": 1556,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 1634,
+      "text": "Total CPU time for CPAchecker:    7.970s"
+    }
+  ],
+  "wall_seconds": 4.686358659993857,
+  "peak_group_rss": 897814528,
+  "sampled_group_cpu_peak_seconds": 8.56,
+  "cpa_cpu_seconds": 7.97,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/116/attempt-9b4248d5447944988143dc60f9dcb2c7/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main1_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

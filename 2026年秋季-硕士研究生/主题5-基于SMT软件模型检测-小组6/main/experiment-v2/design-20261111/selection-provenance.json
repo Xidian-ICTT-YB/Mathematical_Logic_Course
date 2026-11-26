@@ -1,0 +1,12 @@
+{
+  "seed": "20261111-expansion-v2",
+  "old_manifest_sha256": "8c19067946717fcb65b43fe3b69c3e04b55a4a9f6b4db33fbd1b61ddbe1f9f4c",
+  "original_xml_sha256": {
+    "bmc": "dd0e055a0b29c82bc26d9ce83d88b90dd27a6871f7200b21b8ea1888e5b6a603",
+    "k-induction": "b6d72d80a627d433e4535e625d1c5210edc7d548427566f93fc513c8a6c11325",
+    "predicateAnalysis": "2ac990867d10518fa21257d8fac08ae40ff1774aee2febc3481a58559df628f7",
+    "impact": "4bbc313da86bea491f60ed6e1873d8899d5ba66f2b965438e2647a3522be5e8b"
+  },
+  "selection_uses_results": false,
+  "note": "Candidate list only. Missing inputs must be downloaded and hashes frozen before execution."
+}

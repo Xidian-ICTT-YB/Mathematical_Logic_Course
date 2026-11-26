@@ -1,0 +1,58 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 41,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 43,
+      "text": "Error: line 5726: Unsupported feature (recursion): usbtouch_disconnect(usbtouch); (line was originally pointer call(usbtouch_disconnect) (*((usbtouch->type)->exit))(usbtouch);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 47,
+      "text": "Number of abstractions:            20 (1% of all post computations)"
+    },
+    {
+      "line": 68,
+      "text": "Number of predicates discovered:          7"
+    },
+    {
+      "line": 86,
+      "text": "  Time for abstraction:                  0.502s (Max:     0.481s, Count: 20)"
+    },
+    {
+      "line": 115,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 154,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 210,
+      "text": "Total CPU time for CPAchecker:    3.620s"
+    }
+  ],
+  "wall_seconds": 2.652433074079454,
+  "peak_group_rss": 450240512,
+  "sampled_group_cpu_peak_seconds": 4.05,
+  "cpa_cpu_seconds": 3.62,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/199/attempt-e0138faa561640828d58cd57dc8f1f73/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--input--touchscreen--usbtouchscreen.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

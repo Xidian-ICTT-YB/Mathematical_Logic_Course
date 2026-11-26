@@ -1,0 +1,18 @@
+[
+  "scripts/cpa.sh",
+  "-heap",
+  "10000M",
+  "-noout",
+  "-64",
+  "-sv-comp16--k-induction",
+  "-setprop",
+  "limits.time.cpu.thread=10000s",
+  "-timelimit",
+  "900s",
+  "-stats",
+  "-outputpath",
+  "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/034/attempt-c9575e15c8044b1990e43ec173d2c0e0/output",
+  "-spec",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-linux-4.2-rc1/ALL.prp",
+  "/data/shizn/cpachecker-reproduction/experiment-v2/inputs/c/ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c"
+]

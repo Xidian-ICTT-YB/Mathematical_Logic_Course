@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!DOCTYPE benchmark PUBLIC "+//IDN sosy-lab.org//DTD BenchExec benchmark 1.0//EN" "http://www.sosy-lab.org/benchexec/benchmark-1.0.dtd">
+<benchmark tool="cpachecker" timelimit="900 s" hardtimelimit="1000 s" memlimit="15000 MB" cpuCores="2">
+  <option name="-heap">10000M</option>
+  <option name="-noout"/>
+
+  <propertyfile>${sourcefile_path}/ALL.prp</propertyfile>
+
+  <tasks name="ArraysReach">
+    <includesfile>../programs/benchmarks/ArraysReach.set</includesfile>
+  </tasks>
+  <tasks name="BitVectorsReach">
+    <includesfile>../programs/benchmarks/BitVectorsReach.set</includesfile>
+  </tasks>
+  <tasks name="HeapReach">
+    <includesfile>../programs/benchmarks/HeapReach.set</includesfile>
+  </tasks>
+  <tasks name="Floats">
+    <includesfile>../programs/benchmarks/Floats.set</includesfile>
+  </tasks>
+  <tasks name="ControlFlow">
+    <includesfile>../programs/benchmarks/ControlFlow.set</includesfile>
+  </tasks>
+  <tasks name="Simple">
+    <includesfile>../programs/benchmarks/Simple.set</includesfile>
+  </tasks>
+  <tasks name="ECA">
+    <includesfile>../programs/benchmarks/ECA.set</includesfile>
+  </tasks>
+  <tasks name="Loops">
+    <includesfile>../programs/benchmarks/Loops.set</includesfile>
+  </tasks>
+  <tasks name="Recursive">
+    <includesfile>../programs/benchmarks/Recursive.set</includesfile>
+  </tasks>
+  <tasks name="ProductLines">
+    <includesfile>../programs/benchmarks/ProductLines.set</includesfile>
+  </tasks>
+  <tasks name="Sequentialized">
+    <includesfile>../programs/benchmarks/Sequentialized.set</includesfile>
+  </tasks>
+  <tasks name="DeviceDriversLinux64">
+    <includesfile>../programs/benchmarks/DeviceDriversLinux64.set</includesfile>
+    <option name="-64"/>
+  </tasks>
+
+  <rundefinition name="PredicateAbstraction">
+    <option name="-predicateAnalysis-PredAbsRefiner-ABEl-bitprecise"/>
+    <option name="-setprop">cpa.predicate.encodeFloatAs=FLOAT</option>
+    <option name="-setprop">analysis.checkCounterexamples=true</option>
+    <option name="-setprop">counterexample.checker=CBMC</option>
+  </rundefinition>
+
+  <columns>
+   <column title="Refinement">Time for refinements</column>
+   <column title="Precision adjustment">Time for precision adjustment</column>
+   <column title="CPA algorithm">Total time for CPA algorithm</column>
+   <column title="Post operator">Time for post operator</column>
+   <column title="Prec operator">Time for prec operator</column>
+   <column title="Boolean abstraction">Boolean abstraction</column>
+   <column title="Abstraction">Time for abstraction</column>
+   <column title="Solving">Solving time</column>
+   <column title="Model enumeration">Model enumeration time</column>
+   <column title="SMT without itp">Total time for SMT solver (w/o itp)</column>
+  </columns>
+
+</benchmark>

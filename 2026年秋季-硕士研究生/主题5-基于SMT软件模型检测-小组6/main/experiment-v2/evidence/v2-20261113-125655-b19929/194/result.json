@@ -1,0 +1,41 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 480,
+      "text": "Number of abstractions:            796 (1% of all post computations)"
+    },
+    {
+      "line": 501,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 508,
+      "text": "  Time for abstraction:                  0.004s (Max:     0.001s, Count: 796)"
+    },
+    {
+      "line": 638,
+      "text": "Total CPU time for CPAchecker:  899.970s"
+    }
+  ],
+  "wall_seconds": 454.3808960400056,
+  "peak_group_rss": 10495361024,
+  "sampled_group_cpu_peak_seconds": 902.64,
+  "cpa_cpu_seconds": 899.97,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/194/attempt-8e3589179c5d48358fc219451f8987b9/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-input-misc-keyspan_remote.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,35 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": -9,
+  "runner_stop_reason": "CPU_HARD_LIMIT",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 147,
+      "text": "Number of abstractions:            613972 (3% of all post computations)"
+    },
+    {
+      "line": 168,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 177,
+      "text": "  Time for abstraction:                  0.278s (Max:     0.001s, Count: 613972)"
+    }
+  ],
+  "wall_seconds": 599.7018672230188,
+  "peak_group_rss": 11026542592,
+  "sampled_group_cpu_peak_seconds": 1000.04,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/160/attempt-564514e952c14c00b50b354b071df1a6/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--cx231xx--cx231xx.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

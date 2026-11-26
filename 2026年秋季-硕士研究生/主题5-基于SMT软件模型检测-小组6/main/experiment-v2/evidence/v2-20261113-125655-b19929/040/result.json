@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 58,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 60,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 62,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 64,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 112,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 114,
+      "text": "Error: line 5331: Unsupported feature (recursion): tmp___0 = osst_write_error_recovery(STp, aSRpnt, 0); (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 118,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 127,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 252,
+      "text": "Total CPU time for CPAchecker:    5.220s"
+    }
+  ],
+  "wall_seconds": 5.711945502087474,
+  "peak_group_rss": 655138816,
+  "sampled_group_cpu_peak_seconds": 5.77,
+  "cpa_cpu_seconds": 5.22,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/040/attempt-d78a5d6dd2754d53b8169b0be9d8832e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

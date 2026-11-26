@@ -1,0 +1,373 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/122/attempt-abf491d459774950b5b5cc64919a50d2/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/122/attempt-abf491d459774950b5b5cc64919a50d2/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 2812: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2815: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2818: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 2: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 4: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 8: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2921: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2924: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 2927: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  case 2: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  case 4: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  case 8: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6158;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3515: Dead code detected: d_bit = 1 << (pin + -2); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4231: Dead code detected: __asm__  volatile   ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4234: Dead code detected: __asm__  volatile   ("call __get_user_4": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4237: Dead code detected: __asm__  volatile   ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (1UL) {
+    case 1: 
+    __asm__  volatile   ("call __get_user_1": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    case 2: 
+    __asm__  volatile   ("call __get_user_2": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    case 4: 
+    __asm__  volatile   ("call __get_user_4": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    case 8: 
+    __asm__  volatile   ("call __get_user_8": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    default: 
+    __asm__  volatile   ("call __get_user_X": "=a" (__ret_gu), "=d" (__val_gu): "0" (tmp));
+    goto ldv_24020;
+    } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4767: Dead code detected: __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4770: Dead code detected: __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4773: Dead code detected: __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (1UL) {
+  case 1: 
+  __asm__  volatile   ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  case 2: 
+  __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  case 4: 
+  __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  case 8: 
+  __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  default: 
+  __asm__  volatile   ("call __put_user_X": "=a" (__ret_pu): "0" (__pu_val), "c" (tmp): "ebx");
+  goto ldv_24075;
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 3787: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3823: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3649: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3687: Function pointer *(pprt->port->ops->write_control) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3668: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3698: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4879: Function pointer *(pprt->port->ops->read_data) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4881: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4882: Function pointer *(pprt->port->ops->read_status) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4884: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4885: Function pointer *(pprt->port->ops->read_status) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4911: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4898: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 4899: Function pointer *(pprt->port->ops->read_status) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3449: Function pointer *(pprt->port->ops->read_control) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3464: Function pointer *(pprt->port->ops->write_control) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3424: Function pointer *(pprt->port->ops->read_data) with type unsigned char (*)(struct parport *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3439: Function pointer *(pprt->port->ops->write_data) with type void (*)(struct parport *, unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with ImpactRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Assuming external function schedule to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function might_fault to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3733: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)c); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3733: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)((int)c); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function _raw_spin_lock_irq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3439: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)val)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3464: Ignoring function call through function pointer *(pprt->port->ops->write_control): (*(pprt->port->ops->write_control))(pprt->port, (int)((unsigned char)val)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __const_udelay to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock_irq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3687: Ignoring function call through function pointer *(pprt->port->ops->write_control): (*(pprt->port->ops->write_control))(pprt->port, (int)((unsigned char)cmd)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3668: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)data)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3698: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)data)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3649: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)cmd)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3719: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((int)(tmp | tmp___0)); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3719: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)((int)(tmp | tmp___0)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4283: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4283: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)(32); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4278: Ignoring call via function pointer lcd_clear_fast for which no suitable target was found in line: (*lcd_clear_fast)(); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4278: Ignoring function call through function pointer *lcd_clear_fast: (*lcd_clear_fast)(); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3823: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, 32); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function trace_hardirqs_off to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_trylock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function trace_hardirqs_on to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4881: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)((~((int)((signed char)scan_mask_o))) & ((int)((signed char)oldval))))); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4882: Ignoring function call through function pointer *(pprt->port->ops->read_status): tmp___0 = (*(pprt->port->ops->read_status))(pprt->port); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4884: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)oldval)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4885: Ignoring function call through function pointer *(pprt->port->ops->read_status): tmp___1 = (*(pprt->port->ops->read_status))(pprt->port); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4911: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)oldval)); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4898: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, (int)((unsigned char)((~((int)((signed char)bitval))) & ((int)((signed char)oldval))))); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4899: Ignoring function call through function pointer *(pprt->port->ops->read_status): tmp___2 = (*(pprt->port->ops->read_status))(pprt->port); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function __wake_up to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4928: Ignoring function call through function pointer *(input->u.std.press_fct): (*(input->u.std.press_fct))(input->u.std.press_data); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 5008: Ignoring call via function pointer input_state_falling::release_fct for which no suitable target was found in line: (*release_fct)(input->u.std.release_data); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 5008: Ignoring function call through function pointer *release_fct: (*release_fct)(input->u.std.release_data); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function mod_timer to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3787: Ignoring function call through function pointer *(pprt->port->ops->write_data): (*(pprt->port->ops->write_data))(pprt->port, 32); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4266: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4266: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(16); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4274: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)(32); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4274: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)(32); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4275: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(16); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4275: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(16); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function kstrtoull to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4097: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4097: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)((((int)cgaddr) * 8) | 64); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 4101: Ignoring call via function pointer lcd_write_data for which no suitable target was found in line: (*lcd_write_data)((int)(cgbytes[addr])); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 4101: Ignoring function call through function pointer *lcd_write_data: (*lcd_write_data)((int)(cgbytes[addr])); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function schedule_timeout to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3864: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3864: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(48); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3866: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3866: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(48); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3868: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(48); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3868: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(48); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3880: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(tmp | tmp___0); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3880: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(tmp | tmp___0); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 3882: Ignoring call via function pointer lcd_write_cmd for which no suitable target was found in line: (*lcd_write_cmd)(8); (FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3882: Ignoring function call through function pointer *lcd_write_cmd: (*lcd_write_cmd)(8); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (The CPU-time limit of 900s has elapsed.) (ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            1374848 (8% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            1374848 (100%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         0 (0%)
+  Times precision was empty:       1374848 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         746462
+  BDD entailment checks:           687490
+Number of SMT sat checks:          687490
+  trivial:                         687490
+  cached:                          0
+
+Max ABE block size:                       145
+Number of predicates discovered:          0
+
+
+Time for post operator:                238.811s
+  Time for path formula creation:      237.095s
+Time for strengthen operator:           26.853s
+Time for prec operator:                 28.469s
+  Time for abstraction:                  0.342s (Max:     0.002s, Count: 1374848)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 1.555s
+Time for coverage check:                 0.107s
+  Time for BDD entailment checks:        0.062s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  7.694s
+  Time for transition matches:                         4.595s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                     17818295 (count: 17818295, min: 1, max: 1, avg: 1.00) [1 x 17818295]
+
+Predicate Forced Covering statistics
+------------------------------------
+Attempted forced coverings:             0
+No of times elment was already covered: 0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            12709832
+Max size of waitlist:            141084
+Average size of waitlist:        112520
+Number of computed successors:   12860400
+Max successors for one state:    2
+Number of times merged:          29486
+Number of times stopped:         29486
+Number of times breaked:         0
+
+Total time for CPA algorithm:       546.902s (Max:   546.902s)
+  Time for choose from waitlist:      1.447s
+  Time for forced covering:           2.331s
+  Time for precision adjustment:    125.580s
+  Time for transfer relation:       345.473s
+  Time for merge operator:            1.929s
+  Time for stop operator:             4.589s
+  Time for adding to reached set:    51.599s
+
+Static Predicate Refiner statistics
+-----------------------------------
+
+Impact Refiner statistics
+-------------------------
+Number of predicate refinements:                   0
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                0
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+

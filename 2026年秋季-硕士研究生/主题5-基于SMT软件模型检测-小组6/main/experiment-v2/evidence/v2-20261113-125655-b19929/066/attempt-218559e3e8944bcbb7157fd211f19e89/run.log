@@ -1,0 +1,425 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/066/attempt-218559e3e8944bcbb7157fd211f19e89/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/066/attempt-218559e3e8944bcbb7157fd211f19e89/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 3160: Dead code detected: Goto: case_1 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3163: Dead code detected: Goto: case_2 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3166: Dead code detected: Goto: case_4 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3172: Dead code detected: Goto: switch_default (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label switch_default is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_4 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_1 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_2 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+line 3277: Dead code detected: Goto: case_1 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3280: Dead code detected: Goto: case_2 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3283: Dead code detected: Goto: case_4 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3289: Dead code detected: Goto: switch_default (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label switch_default is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_4 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_1 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_2 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+line 7277: Dead code detected: Goto: case_2 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7280: Dead code detected: Goto: case_4 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7283: Dead code detected: Goto: case_8 (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7286: Dead code detected: Goto: switch_default (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label case_8 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label switch_default is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_4 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label case_2 is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 3874: Function pointer *__cil_tmp4 with type void (*)(struct file *, wait_queue_head_t *, struct poll_table_struct *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from mixdev_close_devices to mousedev_close_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_open_devices to mousedev_open_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_close_devices to mousedev_close_device (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from mixdev_open_devices to mousedev_open_device (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_close_devices to mousedev_close_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_open_devices to mousedev_open_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_close_devices to mousedev_close_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_open_devices to mousedev_open_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_close_devices to mousedev_close_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_open_devices to mousedev_open_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __raw_spin_lock_init to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_name to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_initialize to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_add to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_lock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __wake_up to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kill_fasync to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_close_device to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function put_device to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_register_handler to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function misc_register to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_del to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_unregister_handle to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 2:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function msecs_to_jiffies to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function get_device to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_register_handle to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_open_device to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring function call through function pointer *__cil_tmp4: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function synchronize_sched to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function misc_deregister to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_unregister_handler to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Error found, creating error path (Parallel analysis 1:BMCAlgorithm.analyzeCounterexample, INFO)
+
+Skipping recursive function call from mixdev_close_devices to mousedev_close_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from mixdev_open_devices to mousedev_open_device (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 3874: Ignoring call via function pointer poll_wait::__cil_tmp4 for which no suitable target was found in line: (*__cil_tmp4)(filp, wait_address, p); (Parallel analysis 1:TargetLocationProvider:FunctionPointerCPA:FunctionPointerTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC run out of memory.) (Parallel analysis 1:CBMCExecutor.handleErrorOutput, WARNING)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Analysis was terminated (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.004s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.088s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        28661 (count: 28666, min: 0, max: 1, avg: 1.00) [0 x 5, 1 x 28661]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            9027
+Max size of waitlist:            592
+Average size of waitlist:        341
+Number of computed successors:   9806
+Max successors for one state:    2
+Number of times merged:          405
+Number of times stopped:         445
+Number of times breaked:         0
+
+Total time for CPA algorithm:       886.516s (Max:   886.516s)
+  Time for choose from waitlist:      0.030s
+  Time for precision adjustment:      0.060s
+  Time for transfer relation:         4.459s
+  Time for merge operator:          837.122s
+  Time for stop operator:            44.692s
+  Time for adding to reached set:     0.075s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:     5.112s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            38 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         38 (100%)
+  Times precision was empty:       38 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         658
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       838
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.782s
+  Time for path formula creation:        0.769s
+Time for strengthen operator:            0.032s
+Time for prec operator:                  0.022s
+  Time for abstraction:                  0.001s (Max:     0.001s, Count: 38)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.347s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                 257431 (count: 13886, min: 0, max: 39, avg: 18.54)
+Number of global variables:                          117421 (count: 13886, min: 0, max: 11, avg: 8.46)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                   14214
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.174s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                185
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                 1004
+Number of deterministic Assumptions:                    178
+Level of Determinism:                              18%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.022s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        14214 (count: 14252, min: 0, max: 1, avg: 1.00) [0 x 38, 1 x 14214]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            13886
+Max size of waitlist:            44
+Average size of waitlist:        22
+Number of computed successors:   14214
+Max successors for one state:    2
+Number of times merged:          329
+Number of times stopped:         329
+Number of times breaked:         0
+
+Total time for CPA algorithm:         2.228s (Max:     2.228s)
+  Time for choose from waitlist:      0.013s
+  Time for precision adjustment:      0.365s
+  Time for transfer relation:         1.351s
+  Time for merge operator:            0.394s
+  Time for stop operator:             0.031s
+  Time for adding to reached set:     0.036s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           2.228s
+Time for final sat check:                3.070s
+Time for error path creation:            0.954s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    2
+Number of infeasible paths:         0 (0%)
+Time for counterexample checks:       888.319s
+Time for running CBMC:                888.228s
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.011
+  Visited lines:          0
+  Total lines:            4655
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       394
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     5286
+Number of CFA edges:             5697
+Number of relevant variables:    1508
+Number of functions:             90
+Number of loops:                 8
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N4758)
+  Number of reached functions:   1 (1%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.195s
+  Time for loading CPAs:          0.123s
+  Time for loading parser:        0.175s
+  Time for CFA construction:      0.877s
+    Time for parsing file(s):     0.249s
+    Time for AST to CFA:          0.287s
+    Time for CFA sanity check:    0.084s
+    Time for post-processing:     0.211s
+      Time for var class.:        0.109s
+Time for Analysis:              887.550s
+CPU time for analysis:          897.800s
+Total time for CPAchecker:      888.747s
+Total CPU time for CPAchecker:  900.080s
+Time for statistics:              8.213s
+
+Time for Garbage Collector:       7.696s (in 2758 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               3493MB (  3331 MiB) max;    534MB (   509 MiB) avg;   3657MB (  3487 MiB) peak
+Used non-heap memory:             48MB (    46 MiB) max;     45MB (    42 MiB) avg;     52MB (    49 MiB) peak
+Used in PS Old Gen pool:         181MB (   173 MiB) max;    134MB (   128 MiB) avg;    206MB (   196 MiB) peak
+Allocated heap memory:          4361MB (  4159 MiB) max;   1692MB (  1613 MiB) avg
+Allocated non-heap memory:        50MB (    48 MiB) max;     50MB (    47 MiB) avg
+Total process virtual memory:  13934MB ( 13289 MiB) max;  13930MB ( 13285 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/066/attempt-218559e3e8944bcbb7157fd211f19e89/output".
+Error path found but identified as infeasible. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Exit code from /data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc was 15 (Parallel analysis 1:ProcessExecutor.handleExitCode, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 15)!) (Parallel analysis 1:CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+

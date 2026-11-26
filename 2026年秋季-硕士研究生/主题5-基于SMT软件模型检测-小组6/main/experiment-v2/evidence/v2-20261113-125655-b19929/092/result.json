@@ -1,0 +1,41 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 146,
+      "text": "Successful analysis: config/invariantGeneration-no-out.properties"
+    },
+    {
+      "line": 186,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 195,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 328,
+      "text": "Total CPU time for CPAchecker:    9.970s"
+    }
+  ],
+  "wall_seconds": 5.681865245103836,
+  "peak_group_rss": 938037248,
+  "sampled_group_cpu_peak_seconds": 10.51,
+  "cpa_cpu_seconds": 9.97,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/092/attempt-bf84884f3cb74fae91e55b6bb5f107fd/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--media--usb--b2c2--b2c2-flexcop-usb.ko-main.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,45 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 73,
+      "text": "Number of abstractions:            98623 (4% of all post computations)"
+    },
+    {
+      "line": 94,
+      "text": "Number of predicates discovered:          90"
+    },
+    {
+      "line": 114,
+      "text": "  Time for abstraction:                551.667s (Max:     1.040s, Count: 98623)"
+    },
+    {
+      "line": 206,
+      "text": "Number of successful refinements:     77"
+    },
+    {
+      "line": 262,
+      "text": "Total CPU time for CPAchecker:  900.150s"
+    }
+  ],
+  "wall_seconds": 884.0719090639614,
+  "peak_group_rss": 10553561088,
+  "sampled_group_cpu_peak_seconds": 901.13,
+  "cpa_cpu_seconds": 900.15,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/195/attempt-bd71e63bf2254626bf3bb4e9dd1cb140/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-input-misc-keyspan_remote.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

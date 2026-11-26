@@ -1,0 +1,46 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 1490,
+      "text": "Error: line 16601: Unrecognized C code (Impossible structure assignment due to incompatible types: assignment of UnaliasedLocation{variable=usb_hcd_find_raw_port_number::port1} with type signed int to UnaliasedLocation{variable=generic_resume::msg} with type struct pm_message): tmp = generic_resume(hcd, port1); (line was originally pointer call(generic_resume) tmp = (*((hcd->driver)->find_raw_port_number))(hcd, port1);) (AssignmentHandler.makeDestructiveAssignment, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 1494,
+      "text": "Number of abstractions:            37 (1% of all post computations)"
+    },
+    {
+      "line": 1515,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 1524,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 37)"
+    },
+    {
+      "line": 1630,
+      "text": "Total CPU time for CPAchecker:    8.620s"
+    }
+  ],
+  "wall_seconds": 5.0968145010992885,
+  "peak_group_rss": 934301696,
+  "sampled_group_cpu_peak_seconds": 9.25,
+  "cpa_cpu_seconds": 8.62,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/144/attempt-d3b17f3f6ab4453ea5fdfc26835f1e66/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main11_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

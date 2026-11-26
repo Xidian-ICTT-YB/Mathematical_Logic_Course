@@ -1,0 +1,45 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 145,
+      "text": "Number of abstractions:            321079 (3% of all post computations)"
+    },
+    {
+      "line": 166,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 173,
+      "text": "  Time for abstraction:                  0.156s (Max:     0.001s, Count: 321079)"
+    },
+    {
+      "line": 204,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 274,
+      "text": "Total CPU time for CPAchecker:  900.300s"
+    }
+  ],
+  "wall_seconds": 838.4515033590142,
+  "peak_group_rss": 10598035456,
+  "sampled_group_cpu_peak_seconds": 918.67,
+  "cpa_cpu_seconds": 900.3,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/157/attempt-7e718f59890049829a3f99f28d21dcb0/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--cx231xx--cx231xx.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

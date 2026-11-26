@@ -1,0 +1,92 @@
+{
+  "batch": "v2-20261113-125655-b19929",
+  "count": 200,
+  "task_count": 50,
+  "definition": {
+    "success": "status in SAFE/UNSAFE; every definite verdict agrees with expected label",
+    "cpu_seconds": "Total CPU time for CPAchecker from run.log, measured at termination",
+    "wall_seconds": "wall_seconds from the per-run result.json",
+    "missing_cpu": "null in JSON; em dash in the readable appendix",
+    "aggregation": "successful CPU summaries use each algorithm's own solved subset; wall sums use all 50 runs"
+  },
+  "algorithms": [
+    {
+      "algorithm": "bmc",
+      "total_runs": 50,
+      "success_count": 7,
+      "successful_cpu_observed_count": 7,
+      "successful_cpu_sum_seconds": 35.96,
+      "successful_cpu_median_seconds": 3.58,
+      "all_wall_sum_seconds": 15830.313713,
+      "missing_wall_count": 0,
+      "missing_cpu_count": 6,
+      "timeout_count": 16,
+      "status_counts": {
+        "ERROR": 24,
+        "JAVA_MEMORY_ERROR": 1,
+        "SAFE": 2,
+        "TIMEOUT": 16,
+        "UNKNOWN": 2,
+        "UNSAFE": 5
+      }
+    },
+    {
+      "algorithm": "k-induction",
+      "total_runs": 50,
+      "success_count": 11,
+      "successful_cpu_observed_count": 11,
+      "successful_cpu_sum_seconds": 445.94,
+      "successful_cpu_median_seconds": 5.51,
+      "all_wall_sum_seconds": 25011.991075,
+      "missing_wall_count": 0,
+      "missing_cpu_count": 3,
+      "timeout_count": 35,
+      "status_counts": {
+        "ERROR": 2,
+        "MEMORY_LIMIT": 1,
+        "SAFE": 7,
+        "TIMEOUT": 35,
+        "UNKNOWN": 1,
+        "UNSAFE": 4
+      }
+    },
+    {
+      "algorithm": "predicateAnalysis",
+      "total_runs": 50,
+      "success_count": 15,
+      "successful_cpu_observed_count": 15,
+      "successful_cpu_sum_seconds": 613.96,
+      "successful_cpu_median_seconds": 3.89,
+      "all_wall_sum_seconds": 11338.885207,
+      "missing_wall_count": 0,
+      "missing_cpu_count": 4,
+      "timeout_count": 11,
+      "status_counts": {
+        "ERROR": 22,
+        "MEMORY_LIMIT": 2,
+        "SAFE": 11,
+        "TIMEOUT": 11,
+        "UNSAFE": 4
+      }
+    },
+    {
+      "algorithm": "impact",
+      "total_runs": 50,
+      "success_count": 15,
+      "successful_cpu_observed_count": 15,
+      "successful_cpu_sum_seconds": 1044.06,
+      "successful_cpu_median_seconds": 3.94,
+      "all_wall_sum_seconds": 12470.087564,
+      "missing_wall_count": 0,
+      "missing_cpu_count": 3,
+      "timeout_count": 12,
+      "status_counts": {
+        "ERROR": 22,
+        "MEMORY_LIMIT": 1,
+        "SAFE": 11,
+        "TIMEOUT": 12,
+        "UNSAFE": 4
+      }
+    }
+  ]
+}

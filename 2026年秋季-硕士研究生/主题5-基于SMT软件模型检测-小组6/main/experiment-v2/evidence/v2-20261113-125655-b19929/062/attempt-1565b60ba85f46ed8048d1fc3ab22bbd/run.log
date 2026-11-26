@@ -1,0 +1,307 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/062/attempt-1565b60ba85f46ed8048d1fc3ab22bbd/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/062/attempt-1565b60ba85f46ed8048d1fc3ab22bbd/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 11033:	N3224 -{tmp___2 = ldv_zalloc(88UL);}-> N3225) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 11035:	N3226 -{tmp___3 = ldv_zalloc(8UL);}-> N3227) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Destroying the void * pointer  ldv_zalloc::tmp produces garbage or the memory pointed by it is unused! (in the following line(s):
+ line 11041:	N3232 -{tmp___6 = ldv_zalloc(232UL);}-> N3233) (PredicateCPA:DynamicMemoryHandler.handleDeferredAllocationPointerRemoval, WARNING)
+
+Assuming external function memset to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function led_trigger_register_simple to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 2 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ieee80211_queue_work to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __dev_kfree_skb_any to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ieee80211_stop_queues to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mod_timer to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function warn_slowpath_null to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_submit_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cancel_delayed_work to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cancel_work_sync to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock_nested to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_control_msg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_kill_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ieee80211_queue_delayed_work to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule_timeout_interruptible to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _dev_info to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function skb_push to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function skb_trim to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function led_trigger_event to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_deregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function release_firmware to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function tasklet_kill to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ieee80211_unregister_hw to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_free_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function del_timer_sync to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_put_dev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ieee80211_free_hw to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_get_dev to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function request_firmware to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_printk to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ieee80211_alloc_hw to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_work to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function lockdep_init_map to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function init_timer_key to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function tasklet_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_alloc_urb to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ieee80211_register_hw to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_reset_device to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 3 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (The CPU-time limit of 900s has elapsed.) (ShutdownNotifier.shutdownIfNecessary, WARNING)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            4 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         4 (100%)
+  Times precision was empty:       4 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         186944
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       781
+Number of predicates discovered:          0
+
+
+Time for post operator:                 59.791s
+  Time for path formula creation:       59.647s
+Time for strengthen operator:            0.932s
+Time for prec operator:                  0.636s
+  Time for abstraction:                  0.001s (Max:     0.001s, Count: 4)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:               166.952s
+Time for coverage check:                 0.013s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           3
+Maximum loop iteration reached:                    4
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                               17661321 (count: 1103313, min: 0, max: 35, avg: 16.01)
+Number of global variables:                        10318097 (count: 1103313, min: 0, max: 18, avg: 9.35)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                 1196879
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                3.068s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                229
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                               252924
+Number of deterministic Assumptions:                  65526
+Level of Determinism:                              26%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.705s
+  Time for transition matches:                         0.395s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                      1196879 (count: 1196883, min: 0, max: 1, avg: 1.00) [0 x 4, 1 x 1196879]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1110299
+Max size of waitlist:            1307
+Average size of waitlist:        919
+Number of computed successors:   1196879
+Max successors for one state:    2
+Number of times merged:          93472
+Number of times stopped:         93472
+Number of times breaked:         0
+
+Total time for CPA algorithm:       263.077s (Max:   260.448s)
+  Time for choose from waitlist:      0.194s
+  Time for precision adjustment:     16.738s
+  Time for transfer relation:        72.408s
+  Time for merge operator:          168.574s
+  Time for stop operator:             0.945s
+  Time for adding to reached set:     1.727s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:         263.091s
+Time for final sat check:                0.382s
+Time for bounding assertions check:    630.804s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.705
+  Visited lines:          2718
+  Total lines:            3363
+  Line coverage:          0.808
+  Visited conditions:     546
+  Total conditions:       830
+  Condition coverage:     0.658
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     4704
+Number of CFA edges:             5215
+Number of relevant variables:    606
+Number of functions:             146
+Number of loops:                 15
+Size of reached set:             1103313
+
+Time for analysis setup:          2.528s
+  Time for loading CPAs:          0.495s
+  Time for loading parser:        0.254s
+  Time for CFA construction:      1.713s
+    Time for parsing file(s):     0.511s
+    Time for AST to CFA:          0.590s
+    Time for CFA sanity check:    0.135s
+    Time for post-processing:     0.423s
+      Time for var class.:        0.173s
+Time for Analysis:              895.124s
+CPU time for analysis:          898.780s
+Total time for CPAchecker:      897.658s
+Total CPU time for CPAchecker:  901.430s
+Time for statistics:              3.253s
+
+Time for Garbage Collector:     116.905s (in 75 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               8338MB (  7951 MiB) max;   4981MB (  4750 MiB) avg;  10602MB ( 10111 MiB) peak
+Used non-heap memory:             43MB (    41 MiB) max;     39MB (    37 MiB) avg;     43MB (    41 MiB) peak
+Used in PS Old Gen pool:        6834MB (  6518 MiB) max;   4482MB (  4274 MiB) avg;   6834MB (  6518 MiB) peak
+Allocated heap memory:          9698MB (  9249 MiB) max;   7470MB (  7124 MiB) avg
+Allocated non-heap memory:        44MB (    42 MiB) max;     43MB (    41 MiB) avg
+Total process virtual memory:  15522MB ( 14803 MiB) max;  14891MB ( 14201 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/062/attempt-1565b60ba85f46ed8048d1fc3ab22bbd/output".

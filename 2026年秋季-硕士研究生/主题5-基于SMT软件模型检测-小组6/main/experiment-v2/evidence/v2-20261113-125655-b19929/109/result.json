@@ -1,0 +1,39 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": 1,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 166,
+      "text": "Number of abstractions:            209017 (2% of all post computations)"
+    },
+    {
+      "line": 187,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 194,
+      "text": "  Time for abstraction:                  0.108s (Max:     0.001s, Count: 209017)"
+    },
+    {
+      "line": 225,
+      "text": "Attempted forced coverings:             0"
+    }
+  ],
+  "wall_seconds": 756.535871891072,
+  "peak_group_rss": 10999058432,
+  "sampled_group_cpu_peak_seconds": 943.25,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/109/attempt-a18ea3a0316a43059e51c5598ac58a6c/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--usb--misc--ftdi-elan.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

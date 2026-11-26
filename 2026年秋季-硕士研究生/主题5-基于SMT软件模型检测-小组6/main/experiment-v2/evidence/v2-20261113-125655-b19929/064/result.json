@@ -1,0 +1,45 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 128,
+      "text": "Number of abstractions:            25472 (0% of all post computations)"
+    },
+    {
+      "line": 149,
+      "text": "Number of predicates discovered:          18"
+    },
+    {
+      "line": 169,
+      "text": "  Time for abstraction:                700.992s (Max:     8.047s, Count: 25472)"
+    },
+    {
+      "line": 261,
+      "text": "Number of successful refinements:     41"
+    },
+    {
+      "line": 317,
+      "text": "Total CPU time for CPAchecker:  900.170s"
+    }
+  ],
+  "wall_seconds": 869.1542971050367,
+  "peak_group_rss": 5620776960,
+  "sampled_group_cpu_peak_seconds": 901.8,
+  "cpa_cpu_seconds": 900.17,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/064/attempt-1c690438e12f49b8ab467365fdcd9a88/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--wireless--at76c50x-usb.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

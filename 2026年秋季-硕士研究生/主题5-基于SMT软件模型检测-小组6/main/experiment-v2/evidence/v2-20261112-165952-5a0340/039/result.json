@@ -1,0 +1,37 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 244,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 253,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 384,
+      "text": "Total CPU time for CPAchecker:  899.950s"
+    }
+  ],
+  "wall_seconds": 452.84739399910904,
+  "peak_group_rss": 10111209472,
+  "sampled_group_cpu_peak_seconds": 900.85,
+  "cpa_cpu_seconds": 899.95,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/039/attempt-ea256070c843493f86d816397ee21deb/run.log",
+  "entry": {
+    "repeat": 4,
+    "task": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--block--paride--pcd.ko-main.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

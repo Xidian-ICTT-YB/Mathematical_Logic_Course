@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 179,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 181,
+      "text": "Error: line 9329: Unsupported feature (recursion): tmp = pkt_check_events(attached_disk, clearing); (line was originally pointer call(pkt_check_events) tmp = (*((attached_disk->fops)->check_events))(attached_disk, clearing);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 185,
+      "text": "Number of abstractions:            72 (1% of all post computations)"
+    },
+    {
+      "line": 206,
+      "text": "Number of predicates discovered:          2"
+    },
+    {
+      "line": 224,
+      "text": "  Time for abstraction:                 32.805s (Max:     5.835s, Count: 72)"
+    },
+    {
+      "line": 253,
+      "text": "Attempted forced coverings:             74"
+    },
+    {
+      "line": 254,
+      "text": "Successful forced coverings:            2 (3%)"
+    },
+    {
+      "line": 315,
+      "text": "Number of successful refinements:     19"
+    },
+    {
+      "line": 371,
+      "text": "Total CPU time for CPAchecker:   48.630s"
+    }
+  ],
+  "wall_seconds": 49.052961907116696,
+  "peak_group_rss": 1646030848,
+  "sampled_group_cpu_peak_seconds": 49.25,
+  "cpa_cpu_seconds": 48.63,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/055/attempt-c333b830991841be8c6ed2dd836ff954/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/module_get_put-drivers-block-pktcdvd.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

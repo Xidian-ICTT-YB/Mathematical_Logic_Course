@@ -1,0 +1,562 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/053/attempt-4093126cb2cf4b82bc208ebb769ba183/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/053/attempt-4093126cb2cf4b82bc208ebb769ba183/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 3925: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3927: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3929: Dead code detected: __asm__ ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 3923: Dead code detected: Goto: switch_default (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label switch_default is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+line 4012: Dead code detected: __asm__ ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4014: Dead code detected: __asm__ ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4016: Dead code detected: __asm__ ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4010: Dead code detected: Goto: switch_default (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label switch_default is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+line 6538: Dead code detected: return ((struct packet_data *)0); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7283: Dead code detected: tmp___1 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7289: Dead code detected: tmp___2 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7295: Dead code detected: tmp___3 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7280: Dead code detected: Goto: switch_default (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7426: Dead code detected: tmp___9 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7432: Dead code detected: tmp___10 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7438: Dead code detected: tmp___11 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7423: Dead code detected: Goto: switch_default___0 (CFACreationUtils.addEdgeToCFA, INFO)
+
+Dead code detected: Label switch_default is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mempool_create to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function register_blkdev to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __class_register to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function debugfs_create_dir to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function misc_register to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function debugfs_remove to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function class_destroy to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function unregister_blkdev to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mempool_destroy to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4269: Return type of function __builtin_object_size is void, but result is used as type int: tmp = __builtin_object_size((void *)((const void *)to), 0); (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.getReturnType, WARNING)
+
+Assuming external function __builtin_object_size to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Cannot get declaration of function __builtin_object_size, ignoring calls to it. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function might_fault to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _copy_from_user to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock_nested to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Warning: Analysis not completed due to recursion (line 9329: Unsupported feature (recursion): tmp = pkt_check_events(attached_disk, clearing); (line was originally pointer call(pkt_check_events) tmp = (*((attached_disk->fops)->check_events))(attached_disk, clearing);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function mutex_unlock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function capable to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kthread_stop to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kobject_put to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_unregister to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blkdev_put to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function remove_proc_entry to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function del_gendisk to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_cleanup_queue to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function put_disk to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __raw_spin_lock_init to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function alloc_disk to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_alloc_queue to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _copy_to_user to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function init_cdrom_command to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_get_request to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_rq_map_kern to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_execute_rq to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_put_request to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bio_put to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __free_pages to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bdget to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blkdev_get to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bd_set_size to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_lock_irq to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_queue_max_hw_sectors to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock_irq to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bio_init to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function alloc_pages_current to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function set_blocksize to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function single_open to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function misc_deregister to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_lock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+line 4269: Return type of function __builtin_object_size is void, but result is used as type int: tmp = __builtin_object_size((void *)((const void *)to), 0); (Parallel analysis 1:InductionStepCase:PredicateCPA:CtoFormulaConverter.getReturnType, WARNING)
+
+Assuming external function __builtin_object_size to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Cannot get declaration of function __builtin_object_size, ignoring calls to it. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function might_fault to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _copy_from_user to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock_nested to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function capable to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kthread_stop to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function debugfs_remove to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kobject_put to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_unregister to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blkdev_put to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function remove_proc_entry to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function del_gendisk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_cleanup_queue to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function put_disk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mempool_destroy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mempool_create to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __raw_spin_lock_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function alloc_disk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_alloc_queue to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _copy_to_user to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function init_cdrom_command to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_get_request to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_rq_map_kern to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_execute_rq to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_put_request to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bio_put to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __free_pages to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bdget to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blkdev_get to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bd_set_size to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_lock_irq to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_queue_max_hw_sectors to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock_irq to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function bio_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function alloc_pages_current to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function set_blocksize to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from pkt_check_events to pkt_check_events (Parallel analysis 1:InductionStepCase:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function single_open to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_queue_make_request to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_queue_logical_block_size to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function blk_queue_merge_bvec to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kthread_create_on_node to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function wake_up_process to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function proc_create_data to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function misc_deregister to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function class_destroy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function unregister_blkdev to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_lock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function add_disk to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_create to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kobject_init_and_add to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kobject_uevent to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function debugfs_create_dir to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function debugfs_create_file to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function generic_make_request to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function add_wait_queue to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.008s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         1391 (count: 1391, min: 1, max: 1, avg: 1.00) [1 x 1391]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            252
+Max size of waitlist:            38
+Average size of waitlist:        14
+Number of computed successors:   296
+Max successors for one state:    2
+Number of times merged:          22
+Number of times stopped:         22
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.411s (Max:     0.411s)
+  Time for choose from waitlist:      0.000s
+  Time for precision adjustment:      0.004s
+  Time for transfer relation:         0.337s
+  Time for merge operator:            0.068s
+  Time for stop operator:             0.001s
+  Time for adding to reached set:     0.000s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   837.210s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            2 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         2 (100%)
+  Times precision was empty:       2 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         1496
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       227
+Number of predicates discovered:          0
+
+
+Time for post operator:                  3.482s
+  Time for path formula creation:        3.462s
+Time for strengthen operator:            0.036s
+Time for prec operator:                  0.028s
+  Time for abstraction:                  0.000s (Max:     0.000s, Count: 2)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.847s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                 205447 (count: 12556, min: 0, max: 28, avg: 16.36)
+Number of global variables:                           48366 (count: 12556, min: 0, max: 9, avg: 3.85)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                   13305
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.170s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                235
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                 2200
+Number of deterministic Assumptions:                    404
+Level of Determinism:                              18%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.039s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        13305 (count: 13307, min: 0, max: 1, avg: 1.00) [0 x 2, 1 x 13305]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            12558
+Max size of waitlist:            51
+Average size of waitlist:        31
+Number of computed successors:   13305
+Max successors for one state:    2
+Number of times merged:          748
+Number of times stopped:         748
+Number of times breaked:         0
+
+Total time for CPA algorithm:         7.578s (Max:     7.578s)
+  Time for choose from waitlist:      0.008s
+  Time for precision adjustment:      0.393s
+  Time for transfer relation:         6.039s
+  Time for merge operator:            0.995s
+  Time for stop operator:             0.032s
+  Time for adding to reached set:     0.028s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           7.579s
+Time for final sat check:                0.571s
+Time for bounding assertions check:    199.106s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.006
+  Visited lines:          0
+  Total lines:            3748
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       842
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     4916
+Number of CFA edges:             5885
+Number of relevant variables:    894
+Number of functions:             161
+Number of loops:                 69
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N4437)
+  Number of reached functions:   1 (1%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          2.135s
+  Time for loading CPAs:          0.144s
+  Time for loading parser:        0.278s
+  Time for CFA construction:      1.685s
+    Time for parsing file(s):     0.450s
+    Time for AST to CFA:          0.609s
+    Time for CFA sanity check:    0.123s
+    Time for post-processing:     0.460s
+      Time for var class.:        0.230s
+Time for Analysis:              895.355s
+CPU time for analysis:          898.080s
+Total time for CPAchecker:      897.492s
+Total CPU time for CPAchecker:  900.340s
+Time for statistics:              0.123s
+
+Time for Garbage Collector:      43.530s (in 122 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               5184MB (  4944 MiB) max;   2255MB (  2151 MiB) avg;   5664MB (  5401 MiB) peak
+Used non-heap memory:             47MB (    45 MiB) max;     44MB (    42 MiB) avg;     47MB (    45 MiB) peak
+Used in PS Old Gen pool:        2162MB (  2062 MiB) max;    901MB (   860 MiB) avg;   2164MB (  2064 MiB) peak
+Allocated heap memory:          7111MB (  6782 MiB) max;   4322MB (  4122 MiB) avg
+Allocated non-heap memory:        49MB (    46 MiB) max;     47MB (    45 MiB) avg
+Total process virtual memory:  14524MB ( 13851 MiB) max;  14492MB ( 13821 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/053/attempt-4093126cb2cf4b82bc208ebb769ba183/output".

@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 123,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 125,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 129,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 131,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 203,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 205,
+      "text": "Error: line 24218: Unsupported feature (recursion): tmp = cx231xx_s_audio_sampling_freq(__sd, freqs[idx]); (line was originally pointer call(cx231xx_s_audio_sampling_freq) tmp = (*(((__sd->ops)->audio)->s_clock_freq))(__sd, freqs[idx]);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 209,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 218,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 345,
+      "text": "Total CPU time for CPAchecker:   70.650s"
+    }
+  ],
+  "wall_seconds": 64.86843078490347,
+  "peak_group_rss": 1617031168,
+  "sampled_group_cpu_peak_seconds": 71.25,
+  "cpa_cpu_seconds": 70.65,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/158/attempt-1ceaf93b6786494c850826f04248c7ce/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--cx231xx--cx231xx.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

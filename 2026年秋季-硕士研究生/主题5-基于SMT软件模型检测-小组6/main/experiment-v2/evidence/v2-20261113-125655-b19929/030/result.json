@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 180,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 182,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 184,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 186,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 270,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 272,
+      "text": "Error: line 9217: Unsupported feature (recursion): err = he_ioctl(atm_dev, cmd, arg); (line was originally pointer call(he_ioctl) err = (*((atm_dev->phy)->ioctl))(atm_dev, cmd, arg);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 276,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 285,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 410,
+      "text": "Total CPU time for CPAchecker:    5.040s"
+    }
+  ],
+  "wall_seconds": 5.5434700809419155,
+  "peak_group_rss": 551493632,
+  "sampled_group_cpu_peak_seconds": 5.51,
+  "cpa_cpu_seconds": 5.04,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/030/attempt-e517ea6538364ecd9facd225a65d219c/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

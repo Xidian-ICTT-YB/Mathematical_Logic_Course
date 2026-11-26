@@ -1,0 +1,45 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 71,
+      "text": "Number of abstractions:            40 (1% of all post computations)"
+    },
+    {
+      "line": 92,
+      "text": "Number of predicates discovered:          7"
+    },
+    {
+      "line": 112,
+      "text": "  Time for abstraction:                  0.433s (Max:     0.320s, Count: 40)"
+    },
+    {
+      "line": 180,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 236,
+      "text": "Total CPU time for CPAchecker:    3.510s"
+    }
+  ],
+  "wall_seconds": 2.423550958978012,
+  "peak_group_rss": 483373056,
+  "sampled_group_cpu_peak_seconds": 3.86,
+  "cpa_cpu_seconds": 3.51,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/131/attempt-62f35e6d75db452a8b5ef933cf166f53/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--wireless--ti--wlcore--wlcore_spi.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,53 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 73,
+      "text": "Number of abstractions:            4114 (5% of all post computations)"
+    },
+    {
+      "line": 94,
+      "text": "Number of predicates discovered:          4"
+    },
+    {
+      "line": 112,
+      "text": "  Time for abstraction:                 43.735s (Max:     0.253s, Count: 4114)"
+    },
+    {
+      "line": 141,
+      "text": "Attempted forced coverings:             15340"
+    },
+    {
+      "line": 142,
+      "text": "Successful forced coverings:            777 (5%)"
+    },
+    {
+      "line": 203,
+      "text": "Number of successful refinements:     484"
+    },
+    {
+      "line": 259,
+      "text": "Total CPU time for CPAchecker:  900.130s"
+    }
+  ],
+  "wall_seconds": 887.5553367610555,
+  "peak_group_rss": 1571938304,
+  "sampled_group_cpu_peak_seconds": 900.99,
+  "cpa_cpu_seconds": 900.13,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/196/attempt-d540f4d268d34b3e90fbbef125f7cd26/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-input-misc-keyspan_remote.ko_false-unreach-call.cil.out.i.pp.i",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

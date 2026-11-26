@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 216,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 218,
+      "text": "Error: line 6670: Unsupported feature (recursion): err = mpeg_open(drv); (line was originally pointer call(mpeg_open) err = (*(drv->request_acquire))(drv);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 222,
+      "text": "Number of abstractions:            6107 (3% of all post computations)"
+    },
+    {
+      "line": 243,
+      "text": "Number of predicates discovered:          36"
+    },
+    {
+      "line": 261,
+      "text": "  Time for abstraction:                444.922s (Max:     0.979s, Count: 6107)"
+    },
+    {
+      "line": 290,
+      "text": "Attempted forced coverings:             327"
+    },
+    {
+      "line": 291,
+      "text": "Successful forced coverings:            0 (0%)"
+    },
+    {
+      "line": 352,
+      "text": "Number of successful refinements:     4"
+    },
+    {
+      "line": 408,
+      "text": "Total CPU time for CPAchecker:  498.170s"
+    }
+  ],
+  "wall_seconds": 485.3151834560558,
+  "peak_group_rss": 1699700736,
+  "sampled_group_cpu_peak_seconds": 498.84,
+  "cpa_cpu_seconds": 498.17,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/077/attempt-627f67e6df0b42f2a0993c80d0e8db6f/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-validator-v0.6/linux-stable-d47b389-1-32_7a-drivers--media--video--cx88--cx88-blackbird.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

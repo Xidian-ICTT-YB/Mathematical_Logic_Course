@@ -1,0 +1,49 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 39,
+      "text": "Number of abstractions:            2 (0% of all post computations)"
+    },
+    {
+      "line": 60,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 67,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 2)"
+    },
+    {
+      "line": 94,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 131,
+      "text": "Number of successful refinements:     0"
+    },
+    {
+      "line": 191,
+      "text": "Total CPU time for CPAchecker:    2.970s"
+    }
+  ],
+  "wall_seconds": 2.405826188158244,
+  "peak_group_rss": 415059968,
+  "sampled_group_cpu_peak_seconds": 3.41,
+  "cpa_cpu_seconds": 2.97,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/167/attempt-10ae79a3d9954e7994cf63063d81de42/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--usb--image--microtek.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

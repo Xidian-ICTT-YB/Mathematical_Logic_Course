@@ -1,0 +1,42 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 147,
+      "text": "Error: An unexpected exception occured (ParallelAlgorithm.handleFutureResults, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 193,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 202,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 333,
+      "text": "Total CPU time for CPAchecker:    6.070s"
+    }
+  ],
+  "wall_seconds": 6.684194162022322,
+  "peak_group_rss": 752361472,
+  "sampled_group_cpu_peak_seconds": 6.7,
+  "cpa_cpu_seconds": 6.07,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/018/attempt-41c3eee869b445f59f3554ee3928546e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

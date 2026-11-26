@@ -1,0 +1,27 @@
+{
+  "status": "JAVA_MEMORY_ERROR",
+  "raw_verdict": null,
+  "all_verdicts": [],
+  "exit_code": 1,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 103,
+      "text": "Exception in thread \"main\" java.lang.OutOfMemoryError: Java heap space"
+    }
+  ],
+  "metric_evidence": [],
+  "wall_seconds": 269.717144388007,
+  "peak_group_rss": 11675123712,
+  "sampled_group_cpu_peak_seconds": 431.45,
+  "cpa_cpu_seconds": null,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/129/attempt-074575e01f374184b9b0f0a3e4803e99/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--wireless--ti--wlcore--wlcore_spi.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

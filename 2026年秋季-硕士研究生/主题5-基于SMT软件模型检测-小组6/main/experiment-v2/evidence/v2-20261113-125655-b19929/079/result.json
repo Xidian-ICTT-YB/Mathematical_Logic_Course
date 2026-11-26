@@ -1,0 +1,50 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 79,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 81,
+      "text": "Warning: Analysis not completed due to recursion (line 6670: Unsupported feature (recursion): err = mpeg_open(drv); (line was originally pointer call(mpeg_open) err = (*(drv->request_acquire))(drv);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    },
+    {
+      "line": 347,
+      "text": "Error: An unexpected exception occured (ParallelAlgorithm.handleFutureResults, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 391,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 400,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 531,
+      "text": "Total CPU time for CPAchecker:  524.830s"
+    }
+  ],
+  "wall_seconds": 353.6447393230628,
+  "peak_group_rss": 11370381312,
+  "sampled_group_cpu_peak_seconds": 525.76,
+  "cpa_cpu_seconds": 524.83,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/079/attempt-d43f8e8fdf9345c6b4c4a665970a4a14/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-validator-v0.6/linux-stable-d47b389-1-32_7a-drivers--media--video--cx88--cx88-blackbird.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,295 @@
+{
+  "case": "pcd",
+  "batch": "v2-20261112-165952-5a0340",
+  "comparison": "official predicateAnalysis vs impact, four repetitions",
+  "config_evidence": [
+    {
+      "path": "experiment-v2/config-evidence/includes/predicateAnalysis-ImpactRefiner.properties",
+      "original_path": "config/includes/predicateAnalysis-ImpactRefiner.properties",
+      "sha256": "38f241880ea29b4e1d58deebe455e78ecc735e9e46a1ec89a5218c59e5b3ec7c",
+      "matches_run_metadata": true
+    },
+    {
+      "path": "experiment-v2/config-evidence/includes/predicateAnalysis-PredAbsRefiner.properties",
+      "original_path": "config/includes/predicateAnalysis-PredAbsRefiner.properties",
+      "sha256": "df3485235b4006e38425ba56625b4c9d05d87585e22be3781b99fb4ca38bedec",
+      "matches_run_metadata": true
+    },
+    {
+      "path": "experiment-v2/config-evidence/includes/predicateAnalysis-ABEl.properties",
+      "original_path": "config/includes/predicateAnalysis-ABEl.properties",
+      "sha256": "dd9188cbf6924948cd8ba862a2ec741857b5eb9b9c737479bd79e22f81945c6c",
+      "matches_run_metadata": true
+    },
+    {
+      "path": "experiment-v2/config-evidence/predicateAnalysis-ImpactRefiner-ABEl-bitprecise.properties",
+      "original_path": "config/predicateAnalysis-ImpactRefiner-ABEl-bitprecise.properties",
+      "sha256": "1e9b413a7bf63609a8a553a236c61714abee75e8523ac989893c563d16a84c50",
+      "matches_run_metadata": true
+    },
+    {
+      "path": "experiment-v2/config-evidence/predicateAnalysis-PredAbsRefiner-ABEl-bitprecise.properties",
+      "original_path": "config/predicateAnalysis-PredAbsRefiner-ABEl-bitprecise.properties",
+      "sha256": "6837f9d766b32eb4d9acf96bb78a5b813398d9f6b5fa937bc1e132664f68f778",
+      "matches_run_metadata": true
+    }
+  ],
+  "repeat_metrics": [
+    {
+      "index": 3,
+      "algorithm": "predicateAnalysis",
+      "repeat": 1,
+      "cpu_seconds": 274.57,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 5873,
+        "boolean_abstractions": 3825,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": null,
+        "abstraction_seconds": 246.015,
+        "solving_seconds": 201.049,
+        "path_formula_seconds": 9.833
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/003/attempt-b47660d1a82c47eb9b467477d417a9d5/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 214,
+        "predicate_refinements": 223,
+        "successful_refinements": 228,
+        "abstraction_seconds": 160,
+        "solving_seconds": 162,
+        "path_formula_seconds": 156
+      },
+      "log_sha256": "c7bf05def27dcc7ff463f3b81be8972491979c98bd7a8e0b749d526e61a6cfde"
+    },
+    {
+      "index": 4,
+      "algorithm": "impact",
+      "repeat": 1,
+      "cpu_seconds": 535.85,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 0,
+        "boolean_abstractions": 9698,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": 0,
+        "abstraction_seconds": 494.805,
+        "solving_seconds": 407.255,
+        "path_formula_seconds": 17.032
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/004/attempt-1359a3d8185042cfadcbf818a35b26d9/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 212,
+        "predicate_refinements": 221,
+        "successful_refinements": 226,
+        "forced_cover_attempts": 187,
+        "abstraction_seconds": 158,
+        "solving_seconds": 160,
+        "path_formula_seconds": 155
+      },
+      "log_sha256": "bb7f935fc88be8a5a226ea3ad7b77694b58c3346ec34f1251a45433370ff859f"
+    },
+    {
+      "index": 22,
+      "algorithm": "predicateAnalysis",
+      "repeat": 2,
+      "cpu_seconds": 277.58,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 5873,
+        "boolean_abstractions": 3825,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": null,
+        "abstraction_seconds": 248.481,
+        "solving_seconds": 202.411,
+        "path_formula_seconds": 10.286
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/022/attempt-d456dcb2798d40f6834afdac0e989b5c/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 214,
+        "predicate_refinements": 223,
+        "successful_refinements": 228,
+        "abstraction_seconds": 160,
+        "solving_seconds": 162,
+        "path_formula_seconds": 156
+      },
+      "log_sha256": "f27e6b93417729e666b899aee94fda27a321ad3c1953c04fe8b8aab758e6271e"
+    },
+    {
+      "index": 23,
+      "algorithm": "impact",
+      "repeat": 2,
+      "cpu_seconds": 535.79,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 0,
+        "boolean_abstractions": 9698,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": 0,
+        "abstraction_seconds": 494.733,
+        "solving_seconds": 407.362,
+        "path_formula_seconds": 17.16
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/023/attempt-227a5cf02dd548048e51b3acfa06ab69/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 212,
+        "predicate_refinements": 221,
+        "successful_refinements": 226,
+        "forced_cover_attempts": 187,
+        "abstraction_seconds": 158,
+        "solving_seconds": 160,
+        "path_formula_seconds": 155
+      },
+      "log_sha256": "37381808bd6b25b2adf7d9b17654f46c31d742b712bac74ffb9956b3079b8e0e"
+    },
+    {
+      "index": 29,
+      "algorithm": "predicateAnalysis",
+      "repeat": 3,
+      "cpu_seconds": 274.0,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 5873,
+        "boolean_abstractions": 3825,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": null,
+        "abstraction_seconds": 246.182,
+        "solving_seconds": 200.822,
+        "path_formula_seconds": 9.881
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/029/attempt-eeb03773c0384625affe3b98b78136ce/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 214,
+        "predicate_refinements": 223,
+        "successful_refinements": 228,
+        "abstraction_seconds": 160,
+        "solving_seconds": 162,
+        "path_formula_seconds": 156
+      },
+      "log_sha256": "436e78bbc73fe287a222dd05341ce7c0abc0ce3a86050ff361f2d3088e8bbb90"
+    },
+    {
+      "index": 30,
+      "algorithm": "impact",
+      "repeat": 3,
+      "cpu_seconds": 536.13,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 0,
+        "boolean_abstractions": 9698,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": 0,
+        "abstraction_seconds": 496.972,
+        "solving_seconds": 408.767,
+        "path_formula_seconds": 16.725
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/030/attempt-521c3ce836f946819fe2b47a636a6f62/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 212,
+        "predicate_refinements": 221,
+        "successful_refinements": 226,
+        "forced_cover_attempts": 187,
+        "abstraction_seconds": 158,
+        "solving_seconds": 160,
+        "path_formula_seconds": 155
+      },
+      "log_sha256": "e6ba1444b1f84ab8bba6052132f1c6abc35a3056a7be26e7ad272fe158b90ef2"
+    },
+    {
+      "index": 37,
+      "algorithm": "impact",
+      "repeat": 4,
+      "cpu_seconds": 532.82,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 0,
+        "boolean_abstractions": 9698,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": 0,
+        "abstraction_seconds": 493.425,
+        "solving_seconds": 406.158,
+        "path_formula_seconds": 17.037
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/037/attempt-a6b07edaa39f40ffa8d94eec579cf015/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 212,
+        "predicate_refinements": 221,
+        "successful_refinements": 226,
+        "forced_cover_attempts": 187,
+        "abstraction_seconds": 158,
+        "solving_seconds": 160,
+        "path_formula_seconds": 155
+      },
+      "log_sha256": "a15c8c473a58e3bf6a113fc9b601e706926284367f8076c71ee08ea458a04852"
+    },
+    {
+      "index": 40,
+      "algorithm": "predicateAnalysis",
+      "repeat": 4,
+      "cpu_seconds": 284.92,
+      "metrics": {
+        "abstractions": 9700,
+        "cache_hits": 5873,
+        "boolean_abstractions": 3825,
+        "static_predicates": 8,
+        "predicate_refinements": 0,
+        "successful_refinements": 1,
+        "forced_cover_attempts": null,
+        "abstraction_seconds": 253.473,
+        "solving_seconds": 205.622,
+        "path_formula_seconds": 10.028
+      },
+      "log": "experiment-v2/evidence/v2-20261112-165952-5a0340/040/attempt-3e17373e93cb4099b7a9920203ddd6f7/run.log",
+      "metric_lines": {
+        "abstractions": 119,
+        "cache_hits": 128,
+        "boolean_abstractions": 130,
+        "static_predicates": 214,
+        "predicate_refinements": 223,
+        "successful_refinements": 228,
+        "abstraction_seconds": 160,
+        "solving_seconds": 162,
+        "path_formula_seconds": 156
+      },
+      "log_sha256": "0a27226b26d983b764f2c2dc6a9f43102e469f66a13caccf34cd864e2f13c881"
+    }
+  ],
+  "interpretation": {
+    "observed": "Both configurations have 9700 abstraction requests and 8 statically extracted predicates. Predicate analysis reuses 5873 cached results, invoking Boolean abstraction 3825 times. IMPACT disables caches in the supplied configuration and invokes Boolean abstraction 9698 times. The same counts occur in all four repetitions.",
+    "limits": "No cache-toggle ablation was run. Abstraction representation and other configuration details also differ. Timing subcounters are tool module timers, not independent process CPU totals."
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 145,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 147,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 149,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 151,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 169,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 171,
+      "text": "Error: line 23816: Unsupported feature (recursion): kref_put(&(fence->kref), &vmw_fence_obj_destroy_locked); (line was originally kref_put(& fence->kref, & vmw_fence_obj_destroy_locked);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 175,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 184,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 309,
+      "text": "Total CPU time for CPAchecker:    5.920s"
+    }
+  ],
+  "wall_seconds": 3.7146442881785333,
+  "peak_group_rss": 782786560,
+  "sampled_group_cpu_peak_seconds": 6.51,
+  "cpa_cpu_seconds": 5.92,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/171/attempt-902e124b0875477aa95facac6189a869/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.7.3/main17_false-unreach-call_drivers-gpu-drm-vmwgfx-vmwgfx-ko--32_7a--linux-3.5.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,39 @@
+line 9766:	N6882 -{int experimental_zcopytx = 0;}-> N6883
+line 11181:	N5032 -{unsigned int var_vhost_net_compat_ioctl_28_p1;}-> N5033
+line 11185:	N5036 -{int tmp;}-> N5037
+line 11192:	N5041 -{ldv_initialize()}-> N5705
+line 12138:	N5709 -{ldv_mutex_mutex = 1;}-> N5710
+line 11193:	N5042 -{ldv_handler_precall();}-> N5043
+line 11194:	N5043 -{vhost_net_init()}-> N5012
+line 11151:	N5014 -{[!(experimental_zcopytx != 0)]}-> N5017
+line 11195:	N5044 -{[!(tmp != 0)]}-> N5047
+line 11241:	N5093 -{tmp___1 = __VERIFIER_nondet_int();}-> N5094
+line 11242:	N5094 -{[tmp___1 != 0]}-> N5096
+line 11243:	N5096 -{Goto: ldv_42025}-> N5050
+line 11202:	N5051 -{tmp___0 = __VERIFIER_nondet_int();}-> N5052
+line 11232:	N5080 -{[tmp___0 == 3]}-> N5084
+line 11233:	N5084 -{ldv_handler_precall();}-> N5086
+line 11234:	N5086 -{vhost_net_compat_ioctl(var_group2, var_vhost_net_compat_ioctl_28_p1, var_vhost_net_compat_ioctl_28_p2)}-> N5004
+line 11135:	N5007 -{compat_ptr((compat_uptr_t )arg)}-> N3745
+line 11136:	N5008 -{vhost_net_ioctl(f, ioctl, (unsigned long)tmp)}-> N4939
+line 11116:	N4980 -{[ioctl == 44802U]}-> N4992
+line 11117:	N4992 -{vhost_net_reset_owner(n)}-> N4862
+line 10983:	N4865 -{long err;}-> N4866
+line 10988:	N4868 -{ldv_mutex_lock_66(&(n->dev.mutex))}-> N5274
+line 11535:	N5275 -{ldv_mutex_lock_mutex(ldv_func_arg1)}-> N5643
+line 12051:	N5644 -{[ldv_mutex_mutex == 1]}-> N5646
+line 12056:	N5645 -{ldv_mutex_mutex = 2;}-> N5649
+line 11536:	N5276 -{mutex_lock(ldv_func_arg1);}-> N5277
+line 10989:	N4869 -{vhost_dev_check_owner(&(n->dev))}-> N905
+line 6509:	N907 -{get_current()}-> N34
+line 6510:	N909 -{unsigned long __CPAchecker_TMP_3 = (unsigned long)(dev->mm);}-> N912
+line 6510:	N912 -{unsigned long __CPAchecker_TMP_4 = (unsigned long)(tmp->mm);}-> N913
+line 6510:	N913 -{[__CPAchecker_TMP_3 == __CPAchecker_TMP_4]}-> N910
+line 10990:	N4870 -{[!(err != 0L)]}-> N4873
+line 10995:	N4871 -{vhost_net_stop(n, &tx_sock, &rx_sock)}-> N4611
+line 10687:	N4612 -{vhost_net_stop_vq(n, ((struct vhost_virtqueue *)(&(n->vqs))) + 1UL)}-> N4585
+line 10660:	N4590 -{ldv_mutex_lock_56(&(vq->mutex))}-> N5214
+line 11435:	N5215 -{ldv_mutex_lock_mutex(ldv_func_arg1)}-> N5643
+line 12051:	N5644 -{[!(ldv_mutex_mutex == 1)]}-> N5647
+line 12054:	N5647 -{ldv_error()}-> N5328
+line 11626:	N5330 -{__VERIFIER_error();}-> N5331

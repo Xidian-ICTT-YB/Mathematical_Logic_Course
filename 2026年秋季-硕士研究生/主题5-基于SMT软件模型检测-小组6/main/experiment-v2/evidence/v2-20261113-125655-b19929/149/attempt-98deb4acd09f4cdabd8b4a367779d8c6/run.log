@@ -1,0 +1,423 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/149/attempt-98deb4acd09f4cdabd8b4a367779d8c6/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/149/attempt-98deb4acd09f4cdabd8b4a367779d8c6/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 4702: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4705: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 4708: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 2: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 4: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 8: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 6928: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 6968: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7008: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7084: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 8313: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 10675: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 8482: Function pointer *(p->_qproc) with type void (*)(struct file *, wait_queue_head_t *, struct poll_table_struct *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from set_all_properties to cpia2_usb_change_streaming_alternate (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from set_all_properties to cpia2_usb_change_streaming_alternate (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cpia2_usb_change_streaming_alternate to cpia2_reset_camera (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cpia2_usb_change_streaming_alternate to cpia2_reset_camera (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from set_all_properties to cpia2_usb_change_streaming_alternate (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cpia2_usb_change_streaming_alternate to cpia2_reset_camera (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from set_all_properties to cpia2_usb_change_streaming_alternate (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cpia2_usb_change_streaming_alternate to cpia2_reset_camera (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from set_all_properties to cpia2_usb_change_streaming_alternate (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cpia2_usb_change_streaming_alternate to cpia2_reset_camera (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Skipping recursive function call from set_all_properties to cpia2_usb_change_streaming_alternate (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from cpia2_usb_change_streaming_alternate to cpia2_reset_camera (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function video_devdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_kill_urb to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_free_urb to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_control_msg to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule_timeout_interruptible to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function request_firmware to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function release_firmware to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_set_interface to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_handler_setup to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_grab to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_subscribe_event to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strcat to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function prepare_to_wait to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function finish_wait to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_lock to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_event_unsubscribe to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_cpia2_template_probe_3 to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_device_release_empty to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule_timeout to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_deregister to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_unregister_device to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_device_disconnect to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_device_put to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __wake_up to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_driver_release_interface to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Warning: Analysis not completed due to recursion (line 9996: Unsupported feature (recursion): cpia2_usb_change_streaming_alternate(cam, (unsigned int)(cam->params.camera_state.stream_mode)); (line was originally cpia2_usb_change_streaming_alternate(cam, (unsigned int )cam->params.camera_state.stream_mode);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function _dev_info to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_device_register to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_handler_init to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_new_std to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_new_std_menu to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_cluster to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __video_register_device to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_ctrl_handler_free to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_submit_urb to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function usb_alloc_urb to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function video_ioctl2 to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 8482: Ignoring function call through function pointer *(p->_qproc): (*(p->_qproc))(filp, wait_address, p); (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function might_fault to be a constant function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _copy_to_user to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_fh_is_singular to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function vfree to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function vmalloc_to_page to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __phys_addr to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function remap_pfn_range to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_fh_open to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function vmalloc_32 to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function v4l2_fh_release to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.001s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.277s
+Automaton transfers with branching:                0
+Automaton transfer successors:                       272883 (count: 272971, min: 0, max: 1, avg: 1.00) [0 x 88, 1 x 272883]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            178789
+Max size of waitlist:            2374
+Average size of waitlist:        1210
+Number of computed successors:   202558
+Max successors for one state:    2
+Number of times merged:          49491
+Number of times stopped:         54704
+Number of times breaked:         0
+
+Total time for CPA algorithm:        80.120s (Max:    80.120s)
+  Time for choose from waitlist:      0.064s
+  Time for precision adjustment:      0.653s
+  Time for transfer relation:        32.144s
+  Time for merge operator:           43.530s
+  Time for stop operator:             3.169s
+  Time for adding to reached set:     0.207s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   737.962s
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         16
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.191s
+  Time for path formula creation:        0.181s
+Time for strengthen operator:            0.018s
+Time for prec operator:                  0.010s
+Time for merge operator:                 0.015s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                  22635 (count: 1248, min: 0, max: 79, avg: 18.14)
+Number of global variables:                           22505 (count: 1248, min: 0, max: 76, avg: 18.03)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                    1255
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.025s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                79
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   50
+Number of deterministic Assumptions:                     34
+Level of Determinism:                              68%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         1255 (count: 1255, min: 1, max: 1, avg: 1.00) [1 x 1255]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1248
+Max size of waitlist:            7
+Average size of waitlist:        1
+Number of computed successors:   1255
+Max successors for one state:    2
+Number of times merged:          8
+Number of times stopped:         8
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.411s (Max:     0.411s)
+  Time for choose from waitlist:      0.004s
+  Time for precision adjustment:      0.095s
+  Time for transfer relation:         0.274s
+  Time for merge operator:            0.018s
+  Time for stop operator:             0.009s
+  Time for adding to reached set:     0.004s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.411s
+Time for final sat check:                0.000s
+Time for bounding assertions check:      0.066s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.005
+  Visited lines:          0
+  Total lines:            4583
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       1404
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     6206
+Number of CFA edges:             7477
+Number of relevant variables:    778
+Number of functions:             219
+Number of loops:                 28
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N1351)
+  Number of reached functions:   1 (0%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          1.359s
+  Time for loading CPAs:          0.136s
+  Time for loading parser:        0.169s
+  Time for CFA construction:      1.034s
+    Time for parsing file(s):     0.217s
+    Time for AST to CFA:          0.350s
+    Time for CFA sanity check:    0.120s
+    Time for post-processing:     0.323s
+      Time for var class.:        0.156s
+Time for Analysis:              784.727s
+CPU time for analysis:          897.560s
+Total time for CPAchecker:      786.088s
+Total CPU time for CPAchecker:  900.180s
+Time for statistics:              0.029s
+
+Time for Garbage Collector:      35.400s (in 158 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               5398MB (  5148 MiB) max;   3110MB (  2966 MiB) avg;   5507MB (  5252 MiB) peak
+Used non-heap memory:             52MB (    49 MiB) max;     49MB (    47 MiB) avg;     52MB (    50 MiB) peak
+Used in PS Old Gen pool:        2188MB (  2087 MiB) max;   1439MB (  1372 MiB) avg;   2188MB (  2087 MiB) peak
+Allocated heap memory:          6987MB (  6664 MiB) max;   5474MB (  5220 MiB) avg
+Allocated non-heap memory:        54MB (    51 MiB) max;     53MB (    51 MiB) avg
+Total process virtual memory:  13814MB ( 13174 MiB) max;  13709MB ( 13074 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/149/attempt-98deb4acd09f4cdabd8b4a367779d8c6/output".

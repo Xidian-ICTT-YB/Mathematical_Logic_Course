@@ -1,0 +1,582 @@
+{
+  "1": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "2": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "3": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "246.015"
+    ]
+  },
+  "4": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "494.805"
+    ]
+  },
+  "5": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "6": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "7": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.123"
+    ]
+  },
+  "8": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "0.140"
+    ]
+  },
+  "9": {
+    "abstractions": [
+      "18"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.000"
+    ]
+  },
+  "10": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "11": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "12": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "13": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "14": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.122"
+    ]
+  },
+  "15": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "0.123"
+    ]
+  },
+  "16": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "17": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "18": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "19": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "20": {
+    "abstractions": [
+      "18"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.000"
+    ]
+  },
+  "21": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "22": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "248.481"
+    ]
+  },
+  "23": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "494.733"
+    ]
+  },
+  "24": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "25": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "26": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "27": {
+    "abstractions": [
+      "18"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.001"
+    ]
+  },
+  "28": {
+    "abstractions": [
+      "18"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.002"
+    ]
+  },
+  "29": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "246.182"
+    ]
+  },
+  "30": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "496.972"
+    ]
+  },
+  "31": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "32": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "33": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.116"
+    ]
+  },
+  "34": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "0.118"
+    ]
+  },
+  "35": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "36": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "37": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "493.425"
+    ]
+  },
+  "38": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "39": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "40": {
+    "abstractions": [
+      "9700"
+    ],
+    "predicates": [
+      "8"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "253.473"
+    ]
+  },
+  "41": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [
+      "0"
+    ],
+    "abstraction_seconds": [
+      "0.127"
+    ]
+  },
+  "42": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "43": {
+    "abstractions": [
+      "0"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "44": {
+    "abstractions": [
+      "17"
+    ],
+    "predicates": [
+      "2"
+    ],
+    "refinements": [
+      "1"
+    ],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.124"
+    ]
+  },
+  "45": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  },
+  "46": {
+    "abstractions": [
+      "18"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.001"
+    ]
+  },
+  "47": {
+    "abstractions": [
+      "18"
+    ],
+    "predicates": [
+      "0"
+    ],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": [
+      "0.000"
+    ]
+  },
+  "48": {
+    "abstractions": [],
+    "predicates": [],
+    "refinements": [],
+    "forced_cover_attempts": [],
+    "abstraction_seconds": []
+  }
+}

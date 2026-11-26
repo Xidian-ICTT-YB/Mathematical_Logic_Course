@@ -1,0 +1,58 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 395,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 397,
+      "text": "Error: line 10490: Unsupported feature (recursion): pci_unmap_single(enic->pdev, buf->dma_addr, __CPAchecker_TMP_2, 2); (line was originally pci_unmap_single(enic->pdev, buf->dma_addr, (size_t )buf->len, 2);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 401,
+      "text": "Number of abstractions:            4496 (2% of all post computations)"
+    },
+    {
+      "line": 422,
+      "text": "Number of predicates discovered:          3"
+    },
+    {
+      "line": 440,
+      "text": "  Time for abstraction:                183.954s (Max:     4.791s, Count: 4496)"
+    },
+    {
+      "line": 469,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 508,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 564,
+      "text": "Total CPU time for CPAchecker:  206.790s"
+    }
+  ],
+  "wall_seconds": 207.74773777788505,
+  "peak_group_rss": 2797854720,
+  "sampled_group_cpu_peak_seconds": 208.56,
+  "cpa_cpu_seconds": 206.79,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/023/attempt-c12a1c33cc1a46438c767b3bf98fc57e/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--cisco--enic--enic.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

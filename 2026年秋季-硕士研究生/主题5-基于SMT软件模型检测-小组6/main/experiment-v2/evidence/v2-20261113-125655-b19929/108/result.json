@@ -1,0 +1,41 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 46,
+      "text": "Successful analysis: config/induction-noAI/sv-comp16--k-induction-noAI.properties"
+    },
+    {
+      "line": 85,
+      "text": "Number of abstractions:            0 (NaN% of all post computations)"
+    },
+    {
+      "line": 94,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 207,
+      "text": "Total CPU time for CPAchecker:    2.100s"
+    }
+  ],
+  "wall_seconds": 1.5512331060599536,
+  "peak_group_rss": 328777728,
+  "sampled_group_cpu_peak_seconds": 2.41,
+  "cpa_cpu_seconds": 2.1,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/108/attempt-83e7af5e348440efb7c6a6e24e33f1b2/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--mtd--devices--block2mtd.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,45 @@
+{
+  "status": "SAFE",
+  "raw_verdict": "TRUE",
+  "all_verdicts": [
+    "TRUE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 119,
+      "text": "Number of abstractions:            9700 (2% of all post computations)"
+    },
+    {
+      "line": 140,
+      "text": "Number of predicates discovered:          8"
+    },
+    {
+      "line": 160,
+      "text": "  Time for abstraction:                246.015s (Max:     1.044s, Count: 9700)"
+    },
+    {
+      "line": 228,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 284,
+      "text": "Total CPU time for CPAchecker:  274.570s"
+    }
+  ],
+  "wall_seconds": 265.0522721989546,
+  "peak_group_rss": 1967345664,
+  "sampled_group_cpu_peak_seconds": 276.49,
+  "cpa_cpu_seconds": 274.57,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/003/attempt-b47660d1a82c47eb9b467477d417a9d5/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--block--paride--pcd.ko-main.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

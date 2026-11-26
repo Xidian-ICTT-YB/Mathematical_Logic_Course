@@ -1,0 +1,50 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 78,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 80,
+      "text": "Error: line 9996: Unsupported feature (recursion): cpia2_usb_change_streaming_alternate(cam, (unsigned int)(cam->params.camera_state.stream_mode)); (line was originally cpia2_usb_change_streaming_alternate(cam, (unsigned int )cam->params.camera_state.stream_mode);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 84,
+      "text": "Number of abstractions:            8 (0% of all post computations)"
+    },
+    {
+      "line": 105,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 114,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 8)"
+    },
+    {
+      "line": 220,
+      "text": "Total CPU time for CPAchecker:   16.720s"
+    }
+  ],
+  "wall_seconds": 12.857291326858103,
+  "peak_group_rss": 1270382592,
+  "sampled_group_cpu_peak_seconds": 17.38,
+  "cpa_cpu_seconds": 16.72,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/150/attempt-c4581b808b3d4d58a9c2b731a453fc6c/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--usb--cpia2--cpia2.ko-main.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

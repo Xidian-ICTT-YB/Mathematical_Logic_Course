@@ -1,0 +1,439 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+lines 3255-3256: Dead code detected: __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddb %b0, %1\n": "+q" (__ret),
+                       "+m" (v->counter): : "memory", "cc"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 3259-3260: Dead code detected: __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddw %w0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 3267-3268: Dead code detected: __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddq %q0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (4UL) {
+  case 1: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddb %b0, %1\n": "+q" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  case 2: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddw %w0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  case 4: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddl %0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  case 8: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddq %q0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  default: 
+  __xadd_wrong_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5240: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5332: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5335: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5338: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 2: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 4: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 8: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5520: Dead code detected: tmp = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5525: Dead code detected: tmp___0 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5530: Dead code detected: tmp___1 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+    case 1: 
+    tmp = get_current();
+    __asm__  volatile   ("xchgb %b0, %1\n": "+q" (__ret), "+m" (tmp->state): : "memory",
+                         "cc");
+    goto ldv_25322;
+    case 2: 
+    tmp___0 = get_current();
+    __asm__  volatile   ("xchgw %w0, %1\n": "+r" (__ret), "+m" (tmp___0->state): : "memory",
+                         "cc");
+    goto ldv_25322;
+    case 4: 
+    tmp___1 = get_current();
+    __asm__  volatile   ("xchgl %0, %1\n": "+r" (__ret), "+m" (tmp___1->state): : "memory",
+                         "cc");
+    goto ldv_25322;
+    case 8: 
+    tmp___2 = get_current();
+    __asm__  volatile   ("xchgq %q0, %1\n": "+r" (__ret), "+m" (tmp___2->state): : "memory",
+                         "cc");
+    goto ldv_25322;
+    default: 
+    __xchg_wrong_size();
+    } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5548: Dead code detected: tmp___3 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5553: Dead code detected: tmp___4 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5558: Dead code detected: tmp___5 = get_current(); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+      case 1: 
+      tmp___3 = get_current();
+      __asm__  volatile   ("xchgb %b0, %1\n": "+q" (__ret___0), "+m" (tmp___3->state): : "memory",
+                           "cc");
+      goto ldv_25330;
+      case 2: 
+      tmp___4 = get_current();
+      __asm__  volatile   ("xchgw %w0, %1\n": "+r" (__ret___0), "+m" (tmp___4->state): : "memory",
+                           "cc");
+      goto ldv_25330;
+      case 4: 
+      tmp___5 = get_current();
+      __asm__  volatile   ("xchgl %0, %1\n": "+r" (__ret___0), "+m" (tmp___5->state): : "memory",
+                           "cc");
+      goto ldv_25330;
+      case 8: 
+      tmp___6 = get_current();
+      __asm__  volatile   ("xchgq %q0, %1\n": "+r" (__ret___0), "+m" (tmp___6->state): : "memory",
+                           "cc");
+      goto ldv_25330;
+      default: 
+      __xchg_wrong_size();
+      } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 6130: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 5816: Function pointer *(dev->s_idle) with type void (*)(struct rc_dev *, bool ) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 5600: Function pointer *(handler->decode) with type int (*)(struct rc_dev *, struct ir_raw_event ) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function __class_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_lock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 2 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function mutex_lock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function strsep to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4569: Ignoring function call through function pointer *(dev->change_protocol): rc = (*(dev->change_protocol))(dev, &type); (PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function add_uevent_var to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function input_scancode_to_scalar to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock_irqrestore to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function class_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function list_del to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_rc_dev_type_probe_1 to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 3 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Error found, creating error path (BMCAlgorithm.analyzeCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path1373693474034786337.i line 3926 function store_protocols_7: warning: conversion from `struct rc_dev *' to `struct input_dev *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path1373693474034786337.i line 3926 function store_protocols_7: warning: conversion from `unsigned long long int *' to `struct input_keymap_entry *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path1373693474034786337.i line 3934 function store_protocols_7: warning: conversion from `struct rc_dev *' to `struct device *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path1373693474034786337.i line 3934 function store_protocols_7: warning: conversion from `unsigned long long int *' to `struct kobj_uevent_env *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3643313556390790074.i line 3925 function store_protocols_7: warning: conversion from `struct rc_dev *' to `struct input_dev *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3643313556390790074.i line 3925 function store_protocols_7: warning: conversion from `unsigned long long int *' to `struct input_keymap_entry *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3643313556390790074.i line 3933 function store_protocols_7: warning: conversion from `struct rc_dev *' to `struct device *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3643313556390790074.i line 3933 function store_protocols_7: warning: conversion from `unsigned long long int *' to `struct kobj_uevent_env *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3291600792143357267.i line 3963 function store_protocols_7: warning: conversion from `struct rc_dev *' to `struct input_dev *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3291600792143357267.i line 3963 function store_protocols_7: warning: conversion from `unsigned long long int *' to `struct input_keymap_entry *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3291600792143357267.i line 3971 function store_protocols_7: warning: conversion from `struct rc_dev *' to `struct device *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: file /data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/tmp/path3291600792143357267.i line 3971 function store_protocols_7: warning: conversion from `unsigned long long int *' to `struct kobj_uevent_env *': incompatible pointer types (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <command-line>: warning: "__STDC_VERSION__" redefined (ProcessExecutor.handleErrorOutput, WARNING)
+
+/data/shizn/cpachecker-reproduction/tools/supplements-vstte/CPAchecker/lib/native/x86_64-linux/cbmc error output: <built-in>: note: this is the location of the previous definition (ProcessExecutor.handleErrorOutput, WARNING)
+
+CBMC returned successfully, but printed warnings, ignoring the result. Please check the log above! (CBMCChecker.checkCounterexample, WARNING)
+
+Warning: Counterexample found, but feasibility could not be verified (Counterexample could not be analyzed: CBMC could not verify the program (CBMC exit code was 0)!) (CBMCChecker.checkCounterexample, WARNING)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            6 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         6 (100%)
+  Times precision was empty:       6 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         4248
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       254
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.849s
+  Time for path formula creation:        0.845s
+Time for strengthen operator:            0.023s
+Time for prec operator:                  0.022s
+  Time for abstraction:                  0.001s (Max:     0.001s, Count: 6)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.533s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           3
+Maximum loop iteration reached:                    4
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                 234230 (count: 19188, min: 0, max: 22, avg: 12.21)
+Number of global variables:                          168442 (count: 19188, min: 0, max: 22, avg: 8.78)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                   21326
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.070s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                61
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                 5364
+Number of deterministic Assumptions:                   1522
+Level of Determinism:                              28%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.027s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        21326 (count: 21332, min: 0, max: 1, avg: 1.00) [0 x 6, 1 x 21326]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            19565
+Max size of waitlist:            105
+Average size of waitlist:        40
+Number of computed successors:   21326
+Max successors for one state:    2
+Number of times merged:          2124
+Number of times stopped:         2124
+Number of times breaked:         0
+
+Total time for CPA algorithm:         2.183s (Max:     1.687s)
+  Time for choose from waitlist:      0.020s
+  Time for precision adjustment:      0.206s
+  Time for transfer relation:         1.253s
+  Time for merge operator:            0.580s
+  Time for stop operator:             0.021s
+  Time for adding to reached set:     0.044s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           2.187s
+Time for final sat check:                0.761s
+Time for error path creation:            0.424s
+Time for bounding assertions check:      0.569s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    1
+Number of infeasible paths:         0 (0%)
+Time for counterexample checks:        38.414s
+Time for running CBMC:                 38.349s
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.221
+  Visited lines:          1021
+  Total lines:            2447
+  Line coverage:          0.417
+  Visited conditions:     153
+  Total conditions:       632
+  Condition coverage:     0.242
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     3518
+Number of CFA edges:             3936
+Number of relevant variables:    464
+Number of functions:             149
+Number of loops:                 15
+Size of reached set:             19188
+  Number of reached locations:   1442 (41%)
+    Avg states per location:     13
+    Max states per location:     104 (at node N81)
+  Number of reached functions:   33 (22%)
+  Number of partitions:          19188
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       6
+
+Time for analysis setup:          1.385s
+  Time for loading CPAs:          0.314s
+  Time for loading parser:        0.198s
+  Time for CFA construction:      0.841s
+    Time for parsing file(s):     0.245s
+    Time for AST to CFA:          0.279s
+    Time for CFA sanity check:    0.069s
+    Time for post-processing:     0.210s
+      Time for var class.:        0.105s
+Time for Analysis:               42.626s
+CPU time for analysis:            8.610s
+Time for analyzing result:        0.015s
+Total time for CPAchecker:       44.014s
+Total CPU time for CPAchecker:   11.140s
+Time for statistics:              0.195s
+
+Time for Garbage Collector:       0.109s (in 3 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                577MB (   550 MiB) max;    504MB (   481 MiB) avg;    649MB (   619 MiB) peak
+Used non-heap memory:             40MB (    38 MiB) max;     39MB (    37 MiB) avg;     40MB (    38 MiB) peak
+Used in PS Old Gen pool:          25MB (    23 MiB) max;     24MB (    23 MiB) avg;     25MB (    23 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1630MB (  1554 MiB) avg
+Allocated non-heap memory:        41MB (    39 MiB) max;     40MB (    38 MiB) avg
+Total process virtual memory:  13591MB ( 12961 MiB) max;  13514MB ( 12888 MiB) avg
+
+Verification result: FALSE. Property violation (__VERIFIER_error(); called in line 6255) found by chosen configuration.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/output".

@@ -1,0 +1,37 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 359,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 368,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 499,
+      "text": "Total CPU time for CPAchecker:  900.890s"
+    }
+  ],
+  "wall_seconds": 453.78249246883206,
+  "peak_group_rss": 6282788864,
+  "sampled_group_cpu_peak_seconds": 901.94,
+  "cpa_cpu_seconds": 900.89,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/127/attempt-7b8492a4b77d4735ab4a4146d51de105/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/usb_urb-drivers-scsi-dc395x.ko_true-unreach-call.cil.out.i.pp.i",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

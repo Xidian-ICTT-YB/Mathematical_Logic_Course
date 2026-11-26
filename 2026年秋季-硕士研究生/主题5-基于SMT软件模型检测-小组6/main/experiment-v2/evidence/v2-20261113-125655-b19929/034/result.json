@@ -1,0 +1,46 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 350,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 352,
+      "text": "Warning: Analysis not completed due to recursion (line 12915: Unsupported feature (recursion): tm6000_open(__sd); (line was originally pointer call(tm6000_open) (*(((__sd->ops)->tuner)->s_radio))(__sd);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 419,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 428,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 559,
+      "text": "Total CPU time for CPAchecker:  917.060s"
+    }
+  ],
+  "wall_seconds": 885.0623048001435,
+  "peak_group_rss": 10231570432,
+  "sampled_group_cpu_peak_seconds": 918.0,
+  "cpa_cpu_seconds": 917.06,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/034/attempt-c9575e15c8044b1990e43ec173d2c0e0/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

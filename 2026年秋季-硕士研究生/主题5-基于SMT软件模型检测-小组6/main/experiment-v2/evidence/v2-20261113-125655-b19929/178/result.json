@@ -1,0 +1,29 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 282,
+      "text": "Total CPU time for CPAchecker:  902.730s"
+    }
+  ],
+  "wall_seconds": 455.9288907358423,
+  "peak_group_rss": 10929733632,
+  "sampled_group_cpu_peak_seconds": 903.51,
+  "cpa_cpu_seconds": 902.73,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/178/attempt-1c4b4de0f9d0433c84c3d0571f7db7ea/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-validator-v0.6/linux-stable-90a4845-1-110_1a-drivers--char--ipmi--ipmi_si.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "k-induction"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

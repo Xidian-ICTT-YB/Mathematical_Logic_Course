@@ -1,0 +1,53 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 93,
+      "text": "Number of abstractions:            344 (7% of all post computations)"
+    },
+    {
+      "line": 114,
+      "text": "Number of predicates discovered:          7"
+    },
+    {
+      "line": 132,
+      "text": "  Time for abstraction:                  0.675s (Max:     0.034s, Count: 344)"
+    },
+    {
+      "line": 161,
+      "text": "Attempted forced coverings:             11630"
+    },
+    {
+      "line": 162,
+      "text": "Successful forced coverings:            153 (1%)"
+    },
+    {
+      "line": 201,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 257,
+      "text": "Total CPU time for CPAchecker:  900.120s"
+    }
+  ],
+  "wall_seconds": 900.2932413639501,
+  "peak_group_rss": 950288384,
+  "sampled_group_cpu_peak_seconds": 900.53,
+  "cpa_cpu_seconds": 900.12,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/058/attempt-20544a53b44f44228143bef8a965bb39/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--usb--misc--idmouse.ko-entry_point_false-unreach-call.cil.out.c",
+    "algorithm": "impact"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 157,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 159,
+      "text": "Error: line 23816: Unsupported feature (recursion): kref_put(&(fence->kref), &vmw_fence_obj_destroy_locked); (line was originally kref_put(& fence->kref, & vmw_fence_obj_destroy_locked);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 163,
+      "text": "Number of abstractions:            15 (0% of all post computations)"
+    },
+    {
+      "line": 184,
+      "text": "Number of predicates discovered:          24"
+    },
+    {
+      "line": 204,
+      "text": "  Time for abstraction:                  0.215s (Max:     0.191s, Count: 15)"
+    },
+    {
+      "line": 271,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 327,
+      "text": "Total CPU time for CPAchecker:    6.080s"
+    }
+  ],
+  "wall_seconds": 3.717086240882054,
+  "peak_group_rss": 850141184,
+  "sampled_group_cpu_peak_seconds": 6.43,
+  "cpa_cpu_seconds": 6.08,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/169/attempt-063031db565f4d4ea6c4ad6d875dba4f/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.7.3/main17_false-unreach-call_drivers-gpu-drm-vmwgfx-vmwgfx-ko--32_7a--linux-3.5.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

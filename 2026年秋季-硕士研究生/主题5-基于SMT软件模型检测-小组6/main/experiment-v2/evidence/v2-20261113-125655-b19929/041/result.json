@@ -1,0 +1,45 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 731,
+      "text": "Number of abstractions:            19 (0% of all post computations)"
+    },
+    {
+      "line": 752,
+      "text": "Number of predicates discovered:          16"
+    },
+    {
+      "line": 772,
+      "text": "  Time for abstraction:                879.897s (Max:   662.613s, Count: 19)"
+    },
+    {
+      "line": 840,
+      "text": "Number of successful refinements:     1"
+    },
+    {
+      "line": 896,
+      "text": "Total CPU time for CPAchecker:  901.730s"
+    }
+  ],
+  "wall_seconds": 902.3147160010412,
+  "peak_group_rss": 5618536448,
+  "sampled_group_cpu_peak_seconds": 902.65,
+  "cpa_cpu_seconds": 901.73,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/041/attempt-e7f164967af94e49a1c9f9121574e342/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--broadcom--bnx2x--bnx2x.ko-ldv_main3_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+    "algorithm": "predicateAnalysis"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

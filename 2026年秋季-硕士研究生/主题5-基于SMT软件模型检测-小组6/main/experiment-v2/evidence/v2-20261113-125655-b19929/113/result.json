@@ -1,0 +1,58 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 1416,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 1418,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 1420,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 1422,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 1478,
+      "text": "Error: line 16601: Unrecognized C code (Impossible structure assignment due to incompatible types: assignment of UnaliasedLocation{variable=usb_hcd_find_raw_port_number::port1} with type signed int to UnaliasedLocation{variable=generic_resume::msg} with type struct pm_message): tmp = generic_resume(hcd, port1); (line was originally pointer call(generic_resume) tmp = (*((hcd->driver)->find_raw_port_number))(hcd, port1);) (AssignmentHandler.makeDestructiveAssignment, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 1482,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 1491,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 1616,
+      "text": "Total CPU time for CPAchecker:    8.560s"
+    }
+  ],
+  "wall_seconds": 4.875612632138655,
+  "peak_group_rss": 894304256,
+  "sampled_group_cpu_peak_seconds": 8.92,
+  "cpa_cpu_seconds": 8.56,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/113/attempt-9458132034954f6a9d213b25ab557d54/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main1_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

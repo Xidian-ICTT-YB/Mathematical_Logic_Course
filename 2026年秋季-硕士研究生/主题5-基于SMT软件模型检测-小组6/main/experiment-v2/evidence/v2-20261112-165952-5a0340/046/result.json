@@ -1,0 +1,41 @@
+{
+  "status": "UNSAFE",
+  "raw_verdict": "FALSE",
+  "all_verdicts": [
+    "FALSE"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [],
+  "metric_evidence": [
+    {
+      "line": 945,
+      "text": "Number of abstractions:            18 (0% of all post computations)"
+    },
+    {
+      "line": 966,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 973,
+      "text": "  Time for abstraction:                  0.001s (Max:     0.001s, Count: 18)"
+    },
+    {
+      "line": 1100,
+      "text": "Total CPU time for CPAchecker:    9.270s"
+    }
+  ],
+  "wall_seconds": 9.42339205997996,
+  "peak_group_rss": 841543680,
+  "sampled_group_cpu_peak_seconds": 14.0,
+  "cpa_cpu_seconds": 9.27,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261112-165952-5a0340/046/attempt-6f7fcf1fa89d46dbbb17d97f982f6cd4/run.log",
+  "entry": {
+    "repeat": 4,
+    "task": "ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

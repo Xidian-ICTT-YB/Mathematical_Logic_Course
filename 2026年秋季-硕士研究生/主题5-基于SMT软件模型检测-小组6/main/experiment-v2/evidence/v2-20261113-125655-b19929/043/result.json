@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 707,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 709,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 711,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 713,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 739,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 741,
+      "text": "Error: line 74310: Unsupported feature (recursion): tmp = bnx2x_mcast_check_pending(&(o->raw)); (line was originally pointer call(bnx2x_mcast_check_pending) tmp = (*(o->raw.check_pending))(& o->raw);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 745,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 754,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 879,
+      "text": "Total CPU time for CPAchecker:   33.100s"
+    }
+  ],
+  "wall_seconds": 32.934006206924096,
+  "peak_group_rss": 3529445376,
+  "sampled_group_cpu_peak_seconds": 33.95,
+  "cpa_cpu_seconds": 33.1,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/043/attempt-330f8e71c1304c4298eadd5e6dc8d8be/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--broadcom--bnx2x--bnx2x.ko-ldv_main3_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}

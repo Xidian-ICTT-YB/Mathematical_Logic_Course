@@ -1,0 +1,54 @@
+{
+  "status": "TIMEOUT",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": true,
+  "diagnostics": [
+    {
+      "line": 248,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 250,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 252,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 254,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 385,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 394,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 520,
+      "text": "Total CPU time for CPAchecker:  902.420s"
+    }
+  ],
+  "wall_seconds": 904.3212238680571,
+  "peak_group_rss": 3956072448,
+  "sampled_group_cpu_peak_seconds": 903.98,
+  "cpa_cpu_seconds": 902.42,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/024/attempt-9f6953d883ac4174adc6bb3bf5660cba/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--cisco--enic--enic.ko-entry_point_true-unreach-call.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

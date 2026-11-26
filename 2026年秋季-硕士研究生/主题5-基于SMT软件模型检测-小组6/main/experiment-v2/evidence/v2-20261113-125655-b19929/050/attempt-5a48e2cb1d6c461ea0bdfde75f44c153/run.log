@@ -1,0 +1,979 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/050/attempt-5a48e2cb1d6c461ea0bdfde75f44c153/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/050/attempt-5a48e2cb1d6c461ea0bdfde75f44c153/tmp
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 5078: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5081: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 5084: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6520;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6520;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6520;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6520;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7126: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7129: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 7132: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& current_task));
+  goto ldv_2861;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 7166-7167: Dead code detected: __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddb %b0, %1\n": "+q" (__ret),
+                       "+m" (v->counter): : "memory", "cc"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 7170-7171: Dead code detected: __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddw %w0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 7178-7179: Dead code detected: __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddq %q0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (4UL) {
+  case 1UL: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddb %b0, %1\n": "+q" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  case 2UL: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddw %w0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  case 4UL: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddl %0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  case 8UL: 
+  __asm__  volatile   (".pushsection .smp_locks,\"a\"\n.balign 4\n.long 671f - .\n.popsection\n671:\n\tlock; xaddq %q0, %1\n": "+r" (__ret),
+                       "+m" (v->counter): : "memory", "cc");
+  goto ldv_5474;
+  default: 
+  __xadd_wrong_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 8280: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 8344: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 8778: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 8781: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 8784: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6379;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6379;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6379;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6379;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 9696: Dead code detected: __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 9699: Dead code detected: __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 9702: Dead code detected: __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack)); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (8UL) {
+  case 1UL: 
+  __asm__  ("movb %%gs:%P1,%0": "=q" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6363;
+  case 2UL: 
+  __asm__  ("movw %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6363;
+  case 4UL: 
+  __asm__  ("movl %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6363;
+  case 8UL: 
+  __asm__  ("movq %%gs:%P1,%0": "=r" (pfo_ret__): "p" (& kernel_stack));
+  goto ldv_6363;
+  default: 
+  __bad_percpu_size();
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 16309: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 17190: Dead code detected: return (ldv_func_res); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 17930: Dead code detected: __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 17933: Dead code detected: __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 17936: Dead code detected: __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (1UL) {
+  case 1UL: 
+  __asm__  volatile   ("call __put_user_1": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx");
+  goto ldv_25943;
+  case 2UL: 
+  __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx");
+  goto ldv_25943;
+  case 4UL: 
+  __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx");
+  goto ldv_25943;
+  case 8UL: 
+  __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx");
+  goto ldv_25943;
+  default: 
+  __asm__  volatile   ("call __put_user_X": "=a" (__ret_pu): "0" (__pu_val), "c" (buf): "ebx");
+  goto ldv_25943;
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 17953-17954: Dead code detected: __asm__  volatile   ("call __put_user_1": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 17957-17958: Dead code detected: __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+lines 17965-17966: Dead code detected: __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx"); (CFACreationUtils.addEdgeToCFA, INFO)
+
+none: Dead code detected: switch (4UL) {
+  case 1UL: 
+  __asm__  volatile   ("call __put_user_1": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx");
+  goto ldv_25952;
+  case 2UL: 
+  __asm__  volatile   ("call __put_user_2": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx");
+  goto ldv_25952;
+  case 4UL: 
+  __asm__  volatile   ("call __put_user_4": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx");
+  goto ldv_25952;
+  case 8UL: 
+  __asm__  volatile   ("call __put_user_8": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx");
+  goto ldv_25952;
+  default: 
+  __asm__  volatile   ("call __put_user_X": "=a" (__ret_pu___0): "0" (__pu_val___0),
+                       "c" ((__be32 *)buf + 1U): "ebx");
+  goto ldv_25952;
+  } (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 10423: Function pointer *(tmp->setkey) with type int (*)(struct crypto_tfm *, u8 *, unsigned int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 10521: Function pointer *(tmp->update) with type int (*)(struct hash_desc *, struct scatterlist *, unsigned int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 6130: Function pointer *(lower_dentry->d_inode->i_op->readlink) with type int (*)(struct dentry *, char *, int) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 900s, Thread CPU-time limit of 10000s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from ecryptfs_fasync to ecryptfs_fasync (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_fasync to ecryptfs_fasync (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_statfs (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_statfs (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_writepage (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_statfs (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_writepage (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_removexattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compute_root_iv to ecryptfs_calculate_md5 (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compute_root_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr to ecryptfs_getxattr_lower (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr to ecryptfs_getxattr_lower (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_decrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr_lower to ecryptfs_getxattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_write to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_flush (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_decrypt_extent to ecryptfs_derive_iv (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr_lower to ecryptfs_getxattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_write to ecryptfs_encrypt_page (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_flush (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_removexattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_derive_iv to ecryptfs_calculate_md5 (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_open (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_parse_packet_set to ecryptfs_compute_root_iv (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_setattr to ecryptfs_read_metadata (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_derive_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_encrypt_extent to ecryptfs_derive_iv (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_readpage (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_parse_packet_set to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_writepage to ecryptfs_encrypt_page (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_setattr to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_setattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_encrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from read_or_initialize_metadata to ecryptfs_read_metadata (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_writepage to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_generate_new_key to ecryptfs_compute_root_iv (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from read_or_initialize_metadata to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_generate_new_key to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_open (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_flush (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_readpage (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_setattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_writepage (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_removexattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_open (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_readpage (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_setattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_flush (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_compat_ioctl (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_compat_ioctl (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_statfs (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_removexattr (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_open (Parallel analysis 2:InvariantsCPA:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (Parallel analysis 2:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Warning: Analysis not completed due to recursion (line 4641: Unsupported feature (recursion): tmp___0 = ecryptfs_flush(lower_file, td); (line was originally pointer call(ecryptfs_flush) tmp___0 = (*((lower_file->f_op)->flush))(lower_file, td);)) (CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Skipping recursive function call from ecryptfs_fasync to ecryptfs_fasync (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compute_root_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr to ecryptfs_getxattr_lower (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_decrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr_lower to ecryptfs_getxattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_write to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_derive_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_parse_packet_set to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_setattr to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_encrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_writepage to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from read_or_initialize_metadata to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_generate_new_key to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_fasync to ecryptfs_fasync (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compute_root_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr to ecryptfs_getxattr_lower (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_decrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr_lower to ecryptfs_getxattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_write to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_derive_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_parse_packet_set to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_setattr to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_encrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_writepage to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from read_or_initialize_metadata to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_generate_new_key to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_fasync to ecryptfs_fasync (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compute_root_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr to ecryptfs_getxattr_lower (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_decrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_getxattr_lower to ecryptfs_getxattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_write to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_derive_iv to ecryptfs_calculate_md5 (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_parse_packet_set to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_setattr to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_encrypt_extent to ecryptfs_derive_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_writepage to ecryptfs_encrypt_page (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from read_or_initialize_metadata to ecryptfs_read_metadata (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_generate_new_key to ecryptfs_compute_root_iv (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_writepage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_readpage (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_setattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_flush (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_unlocked_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_compat_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_compat_ioctl to ecryptfs_unlocked_ioctl (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_statfs (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_removexattr (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_open (Parallel analysis 1:TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_handler_precall to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from ecryptfs_fasync to ecryptfs_fasync (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function vfs_fsync to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function filemap_write_and_wait to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4641: Ignoring function call through function pointer *(lower_file->f_op->flush): tmp___0 = (*(lower_file->f_op->flush))(lower_file, td); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function mutex_lock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mutex_unlock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kzfree to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function list_del to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_del_entry to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function module_put to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function fput to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kmem_cache_free to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 8492: Ignoring function call through function pointer *(lower_dentry->d_sb->s_op->statfs): rc = (*(lower_dentry->d_sb->s_op->statfs))(lower_dentry, buf); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function ecryptfs_statfs to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from ecryptfs_statfs to ecryptfs_statfs (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function alloc_pages_current to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __might_sleep to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memset to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function snprintf to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function sg_init_one to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function crypto_alloc_base to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 10509: Ignoring function call through function pointer *(tmp->init): tmp___0 = (*(tmp->init))(desc); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function set_freezable to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function kthread_should_stop to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function freezing_slow_path to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function prepare_to_wait to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function schedule to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function finish_wait to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dentry_open to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function complete to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 10521: Ignoring function call through function pointer *(tmp->update): tmp___0 = (*(tmp->update))(desc, sg, nbytes); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 10532: Ignoring function call through function pointer *(tmp->final): tmp___0 = (*(tmp->final))(desc, out); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_statfs (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 11179: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error allocating memory for encrypted extent\n", "ecryptfs_encrypt_page") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function __builtin_va_start to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Cannot get declaration of function __builtin_va_start, ignoring calls to it. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function vprintk to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 7350: Return type of function __builtin_va_end is void, but result is used as type int: __builtin_va_end((__va_list_tag *)(&args)); (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.getReturnType, WARNING)
+
+Assuming external function __builtin_va_end to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 9036-9037: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\f%s: Error encrypting page (upper index [0x%.16lx])\n", "ecryptfs_writepage", page->ldv_18093.ldv_18077.index) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function unlock_page to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 6658: Ignoring function call through function pointer *(lower_dentry->d_inode->i_op->removexattr): rc = (*(lower_dentry->d_inode->i_op->removexattr))(lower_dentry, name); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_statfs (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function kmem_cache_alloc to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 4576: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: Setting flags for stat...\n", "ecryptfs_open") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function vfs_read to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 11737-11738: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: m_1 = [0x%.8x]; m_2 = [0x%.8x]; MAGIC_ECRYPTFS_MARKER = [0x%.8x]\n", "ecryptfs_validate_marker", m_1, m_2, 1015134197) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11739-11740: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: (m_1 ^ MAGIC_ECRYPTFS_MARKER) = [0x%.8x]\n", "ecryptfs_validate_marker", m_1 ^ 1015134197U) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5577: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: Initializing crypto context\n", "ecryptfs_initialize_file") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function strcpy to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function get_random_bytes to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 11538: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\f%s: Session key not valid; cannot generate root IV\n", "ecryptfs_compute_root_iv") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11425-11427: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: Initializing cipher [%s]; strlen = [%d]; key_size_bits = [%zd]\n", "ecryptfs_init_crypt_ctx", (unsigned char *)(&(crypt_stat->cipher)), (int)tmp, (crypt_stat->key_size) << 3) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11449-11450: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: cryptfs: init_crypt_ctx(): Error initializing cipher [%s]\n", "ecryptfs_init_crypt_ctx", (unsigned char *)(&(crypt_stat->cipher))) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 11419: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: No cipher specified\n", "ecryptfs_init_crypt_ctx") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11714-11716: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error initializing cryptographic context for cipher [%s]: rc = [%d]\n", "ecryptfs_new_file_context", (unsigned char *)(&(crypt_stat->cipher)), rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 5580-5581: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error creating new file context; rc = [%d]\n", "ecryptfs_initialize_file", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 5571: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: This is a directory\n", "ecryptfs_initialize_file") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 4617-4618: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: inode w/ addr = [0x%p], i_ino = [0x%.16lx] size: [0x%.16llx]\n", "ecryptfs_open", inode, inode->i_ino, (unsigned long long)tmp___4) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 4601: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: This is a directory\n", "ecryptfs_open") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 4565: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error attempting to allocate memory\n", "ecryptfs_open") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function try_module_get to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function fsstack_copy_attr_all to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function fsstack_copy_inode_size to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function init_special_inode to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_statfs (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function ecryptfs_flush to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from ecryptfs_flush to ecryptfs_flush (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+lines 11304-11305: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error attempting to read lower page; rc = [%d]\n", "ecryptfs_decrypt_page", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 11290: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error allocating memory for encrypted extent\n", "ecryptfs_decrypt_page") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function __free_pages to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 9165-9166: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error decrypting page; rc = [%d]\n", "ecryptfs_readpage", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 9178-9179: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: Unlocking page with index = [0x%.16lx]\n", "ecryptfs_readpage", page->ldv_18093.ldv_18077.index) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 17594: Ignoring function call through function pointer *(p->_qproc): (*(p->_qproc))(filp, wait_address, p); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function _raw_spin_lock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _raw_spin_unlock to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dget_parent to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function inode_change_ok to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function inode_newsize_ok to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function read_cache_page to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __lock_page to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function vfs_write to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mark_inode_dirty to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function put_page to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function truncate_setsize to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function seq_printf to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 6597-6598: Ignoring function call through function pointer *(lower_dentry->d_inode->i_op->getxattr): tmp = (*(lower_dentry->d_inode->i_op->getxattr))(lower_dentry, name, value, size); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function generic_file_aio_read to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function wait_on_sync_kiocb to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function touch_atime to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 17550: Return type of function __builtin_object_size is void, but result is used as type int: tmp = __builtin_object_size((const void *)to, 0); (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.getReturnType, WARNING)
+
+Assuming external function __builtin_object_size to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function might_fault to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function warn_slowpath_fmt to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _copy_from_user to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 13585: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error parsing packet length\n", "ecryptfs_parse_packet_length") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 13581: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Five-byte packet length not supported\n", "ecryptfs_parse_packet_length") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function memdup_user to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 18145-18146: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\f%s: Dropping miscdev message of unrecognized type [%d]\n", "ecryptfs_miscdev_write", (int)(*data)) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function wake_up_process to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Skipping recursive function call from ecryptfs_removexattr to ecryptfs_flush (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+Assuming external function mutex_lock_nested to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function vfs_rmdir to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dput to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function clear_nlink to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function set_nlink to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function d_drop to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 9399-9400: Ignoring function call through function pointer *(lower_inode->i_op->getxattr): size = (*(lower_inode->i_op->getxattr))(lower_dentry, "user.ecryptfs", xattr_virt, 4096UL); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+lines 9408-9409: Ignoring function call through function pointer *(lower_inode->i_op->setxattr): rc = (*(lower_inode->i_op->setxattr))(lower_dentry, "user.ecryptfs", (const void *)xattr_virt, (size_t )size, 0); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+Assuming external function vfs_setxattr to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function notify_change to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function vfs_unlink to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+lines 10747-10748: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error attempting to allocate crypto context; rc = [%d]\n", "ecryptfs_calculate_md5", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 10854-10855: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\f%s: Error attempting to compute MD5 while generating IV for a page\n", "ecryptfs_derive_iv") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Assuming external function sg_init_table to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+line 10423: Ignoring function call through function pointer *(tmp->setkey): tmp___1 = (*(tmp->setkey))(tmp___0, key, keylen); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+line 11097: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: Encrypting [%d] bytes.\n", "encrypt_scatterlist", size) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 10435: Ignoring function call through function pointer *(tmp->encrypt): tmp___0 = (*(tmp->encrypt))(desc, dst, src, nbytes); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+lines 11089-11090: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error setting key; rc = [%d]\n", "encrypt_scatterlist", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11126-11128: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error attempting to derive IV for extent [0x%.16llx]; rc = [%d]\n", "ecryptfs_encrypt_extent", ((unsigned long long)extent_base) + ((unsigned long long)extent_offset), rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11201-11202: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error attempting to write lower page; rc = [%d]\n", "ecryptfs_encrypt_page", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11546-11547: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\f%s: Error attempting to compute MD5 while generating root IV\n", "ecryptfs_compute_root_iv") (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Skipping recursive function call from crypto_hash_final to ecryptfs_flush (Parallel analysis 1:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, WARNING)
+
+line 11359: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\017%s: Decrypting [%d] bytes.\n", "decrypt_scatterlist", size) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+line 10447: Ignoring function call through function pointer *(tmp->decrypt): tmp___0 = (*(tmp->decrypt))(desc, dst, src, nbytes); (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, WARNING)
+
+lines 11363-11364: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error decrypting; rc = [%d]\n", "decrypt_scatterlist", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11351-11352: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error setting key; rc = [%d]\n", "decrypt_scatterlist", rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+lines 11236-11238: Ignoring parameters passed as varargs to function __ecryptfs_printk: __ecryptfs_printk("\v%s: Error attempting to derive IV for extent [0x%.16llx]; rc = [%d]\n", "ecryptfs_decrypt_extent", ((unsigned long long)extent_base) + ((unsigned long long)extent_offset), rc) (Parallel analysis 1:PredicateCPA:CtoFormulaConverter.makeFunctionCall, WARNING)
+
+Shutdown requested (The CPU-time limit of 900s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+Time spent in analysis thread:     0.005s
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.014s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         2361 (count: 2361, min: 1, max: 1, avg: 1.00) [1 x 2361]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            395
+Max size of waitlist:            50
+Average size of waitlist:        25
+Number of computed successors:   452
+Max successors for one state:    2
+Number of times merged:          74
+Number of times stopped:         78
+Number of times breaked:         0
+
+Total time for CPA algorithm:         1.081s (Max:     1.081s)
+  Time for choose from waitlist:      0.008s
+  Time for precision adjustment:      0.102s
+  Time for transfer relation:         0.659s
+  Time for merge operator:            0.307s
+  Time for stop operator:             0.002s
+  Time for adding to reached set:     0.001s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+Time spent in analysis thread:   589.890s
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Exception in thread "main" java.util.ConcurrentModificationException
+	at java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:719)
+	at java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:742)
+	at java.util.Collections$UnmodifiableCollection$1.next(Collections.java:1044)
+	at com.google.common.collect.Iterators$7.computeNext(Iterators.java:674)
+	at com.google.common.collect.AbstractIterator.tryToComputeNext(AbstractIterator.java:143)
+	at com.google.common.collect.AbstractIterator.hasNext(AbstractIterator.java:138)
+	at org.sosy_lab.cpachecker.cpa.arg.ARGStatistics.getAllCounterexamples(ARGStatistics.java:296)
+	at org.sosy_lab.cpachecker.cpa.arg.ARGStatistics.printStatistics(ARGStatistics.java:181)
+	at org.sosy_lab.cpachecker.core.algorithm.ParallelAlgorithm$ParallelAlgorithmStatistics.printSubStatistics(ParallelAlgorithm.java:569)
+	at org.sosy_lab.cpachecker.core.algorithm.ParallelAlgorithm$ParallelAlgorithmStatistics.printStatistics(ParallelAlgorithm.java:545)
+	at org.sosy_lab.cpachecker.core.MainCPAStatistics.printSubStatistics(MainCPAStatistics.java:391)
+	at org.sosy_lab.cpachecker.core.MainCPAStatistics.printStatistics(MainCPAStatistics.java:280)
+	at org.sosy_lab.cpachecker.core.CPAcheckerResult.printStatistics(CPAcheckerResult.java:106)
+	at org.sosy_lab.cpachecker.cmdline.CPAMain.printResultAndStatistics(CPAMain.java:407)
+	at org.sosy_lab.cpachecker.cmdline.CPAMain.main(CPAMain.java:169)

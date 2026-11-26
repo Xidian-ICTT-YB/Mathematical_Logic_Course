@@ -1,0 +1,200 @@
+Running CPAchecker with Java heap of size 10000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Running CPAchecker with the following extra VM options:  -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/014/attempt-c9a8d1a4272b4577b6498063cad164f5/tmp
+Picked up JAVA_TOOL_OPTIONS: -XX:-UsePerfData -Djava.io.tmpdir=/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/014/attempt-c9a8d1a4272b4577b6498063cad164f5/tmp
+Using the following resource limits: CPU-time limit of 900s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+line 3312: Function pointer *(hdev->ll_driver->start) with type int (*)(struct hid_device *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3296: Function pointer *(hdev->ll_driver->parse) with type int (*)(struct hid_device *) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+line 3927: Function pointer *(hdev->hid_output_raw_report) with type int (*)(struct hid_device *, __u8 *, size_t , unsigned char) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __hid_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_get_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)
+
+Error: line 3701: Unsupported feature (recursion): magicmouse_raw_event(hdev, report, data + 2UL, (int)(*(data + 1UL))); (line was originally magicmouse_raw_event(hdev, report, data + 2UL, (int )*(data + 1UL));) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         10
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.219s
+  Time for path formula creation:        0.205s
+Time for strengthen operator:            0.013s
+Time for prec operator:                  0.004s
+Time for merge operator:                 0.008s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    1
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                   1782 (count: 695, min: 0, max: 17, avg: 2.56)
+Number of global variables:                            1408 (count: 695, min: 0, max: 10, avg: 2.03)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     699
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.018s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                21
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   28
+Number of deterministic Assumptions:                      2
+Level of Determinism:                              7%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.000s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          699 (count: 699, min: 1, max: 1, avg: 1.00) [1 x 699]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            687
+Max size of waitlist:            9
+Average size of waitlist:        1
+Number of computed successors:   699
+Max successors for one state:    2
+Number of times merged:          5
+Number of times stopped:         5
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.424s (Max:     0.424s)
+  Time for choose from waitlist:      0.003s
+  Time for precision adjustment:      0.061s
+  Time for transfer relation:         0.335s
+  Time for merge operator:            0.010s
+  Time for stop operator:             0.002s
+  Time for adding to reached set:     0.003s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.441s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.176
+  Visited lines:          609
+  Total lines:            1000
+  Line coverage:          0.609
+  Visited conditions:     27
+  Total conditions:       158
+  Condition coverage:     0.171
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1232
+Number of CFA edges:             1354
+Number of relevant variables:    122
+Number of functions:             34
+Number of loops:                 5
+Size of reached set:             695
+  Number of reached locations:   690 (56%)
+    Avg states per location:     1
+    Max states per location:     2 (at node N51)
+  Number of reached functions:   6 (18%)
+  Number of partitions:          695
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        9
+
+Time for analysis setup:          2.070s
+  Time for loading CPAs:          0.553s
+  Time for loading parser:        0.219s
+  Time for CFA construction:      1.203s
+    Time for parsing file(s):     0.444s
+    Time for AST to CFA:          0.366s
+    Time for CFA sanity check:    0.069s
+    Time for post-processing:     0.269s
+      Time for var class.:        0.136s
+Time for Analysis:                0.583s
+CPU time for analysis:            0.600s
+Total time for CPAchecker:        2.655s
+Total CPU time for CPAchecker:    2.700s
+Time for statistics:              0.023s
+
+Time for Garbage Collector:       0.117s (in 2 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                214MB (   205 MiB) max;    121MB (   115 MiB) avg;    264MB (   252 MiB) peak
+Used non-heap memory:             33MB (    31 MiB) max;     25MB (    23 MiB) avg;     34MB (    32 MiB) peak
+Used in PS Old Gen pool:          23MB (    22 MiB) max;      6MB (     5 MiB) avg;     23MB (    22 MiB) peak
+Allocated heap memory:          2058MB (  1963 MiB) max;   1920MB (  1831 MiB) avg
+Allocated non-heap memory:        35MB (    33 MiB) max;     26MB (    25 MiB) avg
+Total process virtual memory:  13185MB ( 12574 MiB) max;  13169MB ( 12559 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/014/attempt-c9a8d1a4272b4577b6498063cad164f5/output".

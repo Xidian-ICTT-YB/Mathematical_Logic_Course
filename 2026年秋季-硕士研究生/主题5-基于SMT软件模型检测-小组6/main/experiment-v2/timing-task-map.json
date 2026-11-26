@@ -1,0 +1,2308 @@
+{
+  "batch": "v2-20261113-125655-b19929",
+  "task_id_order": "tasks50-frozen.json list order, starting at T01",
+  "cpu_unit": "seconds",
+  "wall_unit": "seconds",
+  "tasks": [
+    {
+      "task_id": "T01",
+      "short_name": "md-mod",
+      "expected": "SAFE",
+      "program": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--md--md-mod.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-challenges/linux-3.8-rc1-32_7a-drivers--md--md-mod.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_sha256": "c2c29a690455df3390d8a10d9812ef6c6143828ebada197c415266ca6f34c9be",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 7.28,
+          "wall_seconds": 9.154771537985653,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/001/attempt-df2c79c44a7149478a684cc84a116a4f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/001/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.13,
+          "wall_seconds": 860.1831502181012,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/002/attempt-52849f86fd8d4e3d95f0ee99814d917a/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/002/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 72.76,
+          "wall_seconds": 73.2913000062108,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/003/attempt-be714993cd78445e950da8366ec4176e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/003/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 72.79,
+          "wall_seconds": 73.34034312400036,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/004/attempt-e7ebd69523014a26b47acb24853ae0c7/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/004/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T02",
+      "short_name": "sound",
+      "expected": "SAFE",
+      "program": "ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd.c",
+      "source_file": "experiment-v2/inputs/c/ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd.c",
+      "source_sha256": "af960e36da617cbecfd5f889090f6037a9802ffe4db24d5136f3c0e50f9b0406",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 13.93,
+          "wall_seconds": 14.662414246005937,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/008/attempt-409de9242e644ab7ae15fb42a3c2c754/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/008/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.04,
+          "wall_seconds": 901.0724845689256,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/005/attempt-e34a505067d547aeb0250f26ba43fc3e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/005/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 4.01,
+          "wall_seconds": 4.524739776039496,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/006/attempt-7e4971a3d90f4f9cbec1e0ca33a11bac/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/006/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.3,
+          "wall_seconds": 4.944965908071026,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/007/attempt-69f94289e3294e5b836b01d804476bd1/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/007/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T03",
+      "short_name": "pcd",
+      "expected": "SAFE",
+      "program": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--block--paride--pcd.ko-main.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--block--paride--pcd.ko-main.cil.out.c",
+      "source_sha256": "39ec26f06f0cb02e2c27a01b019713e679f4dd6c5ad396d38619667f5ede66be",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.3,
+          "wall_seconds": 926.3164079349954,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/011/attempt-c75625add13f4ec3a0207d06dc04a469/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/011/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.55,
+          "wall_seconds": 871.1890797689557,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/012/attempt-a747d1cf9aed4b07885b2a715bfec61e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/012/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 354.88,
+          "wall_seconds": 356.08385707391426,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/009/attempt-1b0e0703e81546b199dbc22c7f653174/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/009/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 712.51,
+          "wall_seconds": 713.8393362569623,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/010/attempt-1cf6f00645f045cb9bcc214abce8e41a/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/010/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T04",
+      "short_name": "magicmouse",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.0/module_get_put-drivers-hid-hid-magicmouse.ko_true-unreach-call.cil.out.i.pp.i",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.0/module_get_put-drivers-hid-hid-magicmouse.ko_true-unreach-call.cil.out.i.pp.i",
+      "source_sha256": "573729a2986dc47b40846f118e18b518c7414f31416943d5f9bf9ab16122235c",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 2.7,
+          "wall_seconds": 3.502376116812229,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/014/attempt-c9a8d1a4272b4577b6498063cad164f5/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/014/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 906.03,
+          "wall_seconds": 895.5769647008274,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/015/attempt-53b8022e6d5745978831075d4a1484e2/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/015/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 2.23,
+          "wall_seconds": 2.8967259319033474,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/016/attempt-7a271e94064344de96955a14843d61c8/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/016/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 2.13,
+          "wall_seconds": 2.761926701059565,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/013/attempt-7b6ebb52d232450d8c59154ff7566504/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/013/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T05",
+      "short_name": "cdc_mbim",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--usb--cdc_mbim.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "ccda17f1a5ebec3f9b4cce32cd43374f19ff65bbe2bca6641153ead5118f86df",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 4.53,
+          "wall_seconds": 5.643172884127125,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/017/attempt-39332dc1747a49199037f89054f66035/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/017/result.json"
+        },
+        "k-induction": {
+          "status": "ERROR",
+          "cpu_seconds": 6.07,
+          "wall_seconds": 6.684194162022322,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/018/attempt-41c3eee869b445f59f3554ee3928546e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/018/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 4.81,
+          "wall_seconds": 5.754999957047403,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/019/attempt-67d6872c35294c6ab4dbac08825cccd3/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/019/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.69,
+          "wall_seconds": 5.260445635998622,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/020/attempt-9b1d8667d8794cbe912915a0f11643e3/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/020/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T06",
+      "short_name": "enic",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--cisco--enic--enic.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--cisco--enic--enic.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "5faee35c171ae8a1730bd9beae76d32a940a596b8cbe03ea7b0d825d7a5ffb77",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 902.42,
+          "wall_seconds": 904.3212238680571,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/024/attempt-9f6953d883ac4174adc6bb3bf5660cba/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/024/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 899.9,
+          "wall_seconds": 852.5426997758914,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/021/attempt-9642174273694efa8045e8e75ed5809e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/021/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 181.51,
+          "wall_seconds": 183.29948432487436,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/022/attempt-d0f40db77f994e028e7d0ad23f2cb565/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/022/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 206.79,
+          "wall_seconds": 207.74773777788505,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/023/attempt-c12a1c33cc1a46438c767b3bf98fc57e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/023/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T07",
+      "short_name": "pata_marvell",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--ata--pata_marvell.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--ata--pata_marvell.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_sha256": "ff55f9adf7612eb7761a222adf76d027352321d4db65b966bdb67ac5d5c497bd",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 902.8,
+          "wall_seconds": 906.0120021339972,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/027/attempt-f216abbdcd904ef8996f0292388e8207/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/027/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 4.54,
+          "wall_seconds": 5.114633759018034,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/028/attempt-7c168090101249109d1e130655ac6951/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/028/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 3.61,
+          "wall_seconds": 6.17349203187041,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/025/attempt-0ddc3890c2c6456f93c09334a505b3bb/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/025/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 3.81,
+          "wall_seconds": 6.435803693020716,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/026/attempt-818ee11a22374f8490162c4ee5352241/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/026/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T08",
+      "short_name": "he",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.7.3/linux-3.10-rc1-43_1a-bitvector-drivers--atm--he.ko-ldv_main0_true-unreach-call.cil.out.c",
+      "source_sha256": "b426d31357b917a2d7fcf358053007ecc2b8fd3604a58453abf7d0616c8f314b",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 5.04,
+          "wall_seconds": 5.5434700809419155,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/030/attempt-e517ea6538364ecd9facd225a65d219c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/030/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 903.93,
+          "wall_seconds": 890.760927682044,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/031/attempt-13c4bad0f5c64aa1a0cad5c858609bbe/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/031/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 7.52,
+          "wall_seconds": 8.288012825883925,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/032/attempt-8a84382debbd40fe970dae339b69eedf/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/032/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 7.57,
+          "wall_seconds": 8.228994709206745,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/029/attempt-06aae5454c6c4dbc97327a4fd1053c57/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/029/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T09",
+      "short_name": "tm6000",
+      "expected": "SAFE",
+      "program": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--tm6000--tm6000.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "39803413519879046e6696d050606020f7a710e9e256639fb04e4c1454b18b51",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 168.84,
+          "wall_seconds": 169.65858458797447,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/033/attempt-5bf210bf15b647399941d289ccdab68a/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/033/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 917.06,
+          "wall_seconds": 885.0623048001435,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/034/attempt-c9575e15c8044b1990e43ec173d2c0e0/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/034/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.06,
+          "wall_seconds": 903.9560376000591,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/035/attempt-dee0991a04fb4a25afb4bc4f57057074/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/035/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.03,
+          "wall_seconds": 903.6084283620585,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/036/attempt-2d5ef2c098604d79a06114058043a545/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/036/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T10",
+      "short_name": "osst",
+      "expected": "SAFE",
+      "program": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-challenges/linux-3.8-rc1-32_7a-drivers--scsi--osst.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_sha256": "f2270f469b34fdde321afcafc8ade79bf0a64768a62d3cf09b390ab671de9ea5",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 5.22,
+          "wall_seconds": 5.711945502087474,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/040/attempt-d78a5d6dd2754d53b8169b0be9d8832e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/040/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 918.35,
+          "wall_seconds": 885.982139875181,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/037/attempt-cb667007282a49a195650b72887aa9d3/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/037/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 4.69,
+          "wall_seconds": 5.287670924793929,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/038/attempt-2343c99836414ea4afcb394804baa197/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/038/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.79,
+          "wall_seconds": 5.46184754697606,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/039/attempt-c57b13a9f5044bbfb79867c42bd6232e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/039/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T11",
+      "short_name": "bnx2x",
+      "expected": "UNSAFE",
+      "program": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--broadcom--bnx2x--bnx2x.ko-ldv_main3_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--broadcom--bnx2x--bnx2x.ko-ldv_main3_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+      "source_sha256": "27614344ad519114d225edd8174d24b71f1e5eedf87ef5142b64d9d2b9744dbb",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 33.1,
+          "wall_seconds": 32.934006206924096,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/043/attempt-330f8e71c1304c4298eadd5e6dc8d8be/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/043/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 899.95,
+          "wall_seconds": 864.5855936338194,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/044/attempt-c59f3b45df024b25811ff148eb9e8845/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/044/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.73,
+          "wall_seconds": 902.3147160010412,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/041/attempt-e7f164967af94e49a1c9f9121574e342/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/041/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.69,
+          "wall_seconds": 901.6673879581504,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/042/attempt-ee09206fbfa14108930b507b954e54a9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/042/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T12",
+      "short_name": "gdth",
+      "expected": "UNSAFE",
+      "program": "ldv-commit-tester/m0_false-unreach-call_drivers-scsi-gdth-ko--111_1a--5934df9-1.c",
+      "source_file": "experiment-v2/inputs/c/ldv-commit-tester/m0_false-unreach-call_drivers-scsi-gdth-ko--111_1a--5934df9-1.c",
+      "source_sha256": "af5344402b984d2c920384cd61458def7b8a84b82f6e94de10f352125914b419",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 5.14,
+          "wall_seconds": 5.696638823021203,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/046/attempt-894b938ebb9f483580f7392b55c9830d/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/046/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 899.97,
+          "wall_seconds": 957.8790609641001,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/047/attempt-d551293f59e34e83b142369eeec14e1b/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/047/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 4.42,
+          "wall_seconds": 4.818659971002489,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/048/attempt-dc3dd197b2e1452e85275a0550b71dd6/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/048/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.62,
+          "wall_seconds": 5.28295638714917,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/045/attempt-671fa8accbc24f318caf93f4a87b3980/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/045/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T13",
+      "short_name": "ecryptfs",
+      "expected": "UNSAFE",
+      "program": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-fs--ecryptfs--ecryptfs.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-fs--ecryptfs--ecryptfs.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_sha256": "ce0ae37225fed77d33032076118c2264a8e099dc5cef257f013e926fb8cc0713",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 4.21,
+          "wall_seconds": 4.7918097749352455,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/049/attempt-49f864d153394882aa2d05055c812071/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/049/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 893.2000526981428,
+          "raw_verdict": null,
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/050/attempt-5a48e2cb1d6c461ea0bdfde75f44c153/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/050/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 3.99,
+          "wall_seconds": 4.418074536835775,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/051/attempt-8ceee4b3975b453cb64616ad6432fbc6/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/051/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.19,
+          "wall_seconds": 4.863962637959048,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/052/attempt-b251f6c91cd14b1b87d5273f63c05ab8/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/052/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T14",
+      "short_name": "pktcdvd",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.0/module_get_put-drivers-block-pktcdvd.ko_false-unreach-call.cil.out.i.pp.i",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.0/module_get_put-drivers-block-pktcdvd.ko_false-unreach-call.cil.out.i.pp.i",
+      "source_sha256": "6e71b0cc52d48f21dd94cf691648bf50e3ff842479a8016f0a85aa82b8a7a90c",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 5.16,
+          "wall_seconds": 5.653407125966623,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/056/attempt-2e95cd0eabe848be8e2754d2da16d82d/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/056/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.34,
+          "wall_seconds": 898.6233264440671,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/053/attempt-4093126cb2cf4b82bc208ebb769ba183/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/053/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 46.87,
+          "wall_seconds": 47.35407262388617,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/054/attempt-da739fc843e84d98be2566a137c1c526/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/054/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 48.63,
+          "wall_seconds": 49.052961907116696,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/055/attempt-c333b830991841be8c6ed2dd836ff954/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/055/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T15",
+      "short_name": "idmouse",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--usb--misc--idmouse.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--usb--misc--idmouse.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "89a00ccc9e0ec8631bbea70a2d9a232f2d1bda76e84724918cb5b41267f9c4d1",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 27.83,
+          "wall_seconds": 1029.6281592270825,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/059/attempt-29e162cf763e4829b57c0e61966671fa/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/059/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 899.91,
+          "wall_seconds": 861.3257152738515,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/060/attempt-cdac2377176a448980009cbf2c013b8c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/060/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "MEMORY_LIMIT",
+          "cpu_seconds": 826.64,
+          "wall_seconds": 827.3697150140069,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "MEMORY_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/057/attempt-4873151cbdb94fb0afcb7e970d2e0229/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/057/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.12,
+          "wall_seconds": 900.2932413639501,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/058/attempt-20544a53b44f44228143bef8a965bb39/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/058/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T16",
+      "short_name": "at76c50x-usb",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.16-rc1/205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--wireless--at76c50x-usb.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.16-rc1/205_9a_array_unsafes_linux-3.16-rc1.tar.xz-205_9a-drivers--net--wireless--at76c50x-usb.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "2aaeffa8dad6a087f1b3088725337c43fef23e3f3837a48dfa128dec02d1a01f",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.43,
+          "wall_seconds": 902.6780022550374,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/062/attempt-1565b60ba85f46ed8048d1fc3ab22bbd/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/062/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.02,
+          "wall_seconds": 453.9467037280556,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/063/attempt-e901fa5dd40249dca201a96cd20e0d3f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/063/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.17,
+          "wall_seconds": 869.1542971050367,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/064/attempt-1c690438e12f49b8ab467365fdcd9a88/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/064/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.59,
+          "wall_seconds": 901.5287548049819,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/061/attempt-32f99463503445a3bcac50d6340ef6bd/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/061/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T17",
+      "short_name": "mousedev",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--input--mousedev.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--input--mousedev.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_sha256": "80798fb2c12827a576721fc26abdbb1fe29723f3195411789b53bfaeeb538a86",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 5.44,
+          "wall_seconds": 3.5369105038698763,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/065/attempt-3046a4b492d747778ad2663f8397b48b/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/065/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.08,
+          "wall_seconds": 1313.168392742984,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/066/attempt-218559e3e8944bcbb7157fd211f19e89/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/066/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 13.5,
+          "wall_seconds": 1013.9534445370082,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/067/attempt-7b1c2e1d4dc54efd80285dab72add74c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/067/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 14.31,
+          "wall_seconds": 1013.5610069287941,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/068/attempt-57474a96e4384e9eac3be36b872c4ec4/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/068/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T18",
+      "short_name": "vhost_net",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+      "source_sha256": "b4e3eecb9ac4a92891e53976980f7b3e16509d9b27d261af87f52247a5616dd6",
+      "runs": {
+        "bmc": {
+          "status": "UNSAFE",
+          "cpu_seconds": 8.95,
+          "wall_seconds": 9.289082288974896,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/072/attempt-cf4eab4b394b4aca92b0502ba25eda9b/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/072/result.json"
+        },
+        "k-induction": {
+          "status": "MEMORY_LIMIT",
+          "cpu_seconds": null,
+          "wall_seconds": 39.75954258698039,
+          "raw_verdict": null,
+          "runner_stop_reason": "MEMORY_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/069/attempt-1da3d4666684440a98d2a756bf37df93/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/069/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "MEMORY_LIMIT",
+          "cpu_seconds": null,
+          "wall_seconds": 32.261598837096244,
+          "raw_verdict": null,
+          "runner_stop_reason": "MEMORY_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/070/attempt-b582800195524512bf002fdc7816700c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/070/result.json"
+        },
+        "impact": {
+          "status": "MEMORY_LIMIT",
+          "cpu_seconds": null,
+          "wall_seconds": 32.92557956115343,
+          "raw_verdict": null,
+          "runner_stop_reason": "MEMORY_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/071/attempt-3a9e6cc31ceb46d5b9c270701f9f9a68/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/071/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T19",
+      "short_name": "comedi",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "e00f7970885b2f435417080d06eb443acbe5e9382a19f6ad3be964b72c777f05",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 8.66,
+          "wall_seconds": 6.475334516027942,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/075/attempt-eb9e4fb2cdfb4a0e95a2622ccb53a5f4/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/075/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.16,
+          "wall_seconds": 652.8713772781193,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/076/attempt-80da6fa84b71445cac7649e2974a5690/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/076/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 5.03,
+          "wall_seconds": 3.1621340978890657,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/073/attempt-a7ccee2e195646a18933cbb4921c977c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/073/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.53,
+          "wall_seconds": 2.941477174172178,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/074/attempt-054db07b03c443a1a07407b9bab95d6e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/074/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T20",
+      "short_name": "cx88-blackbird",
+      "expected": "UNSAFE",
+      "program": "ldv-validator-v0.6/linux-stable-d47b389-1-32_7a-drivers--media--video--cx88--cx88-blackbird.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-validator-v0.6/linux-stable-d47b389-1-32_7a-drivers--media--video--cx88--cx88-blackbird.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "2e2ac1049400c1c7500cdb7abb07eaa9e5124a9dc5f04f90891c57497462bb77",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 6.29,
+          "wall_seconds": 4.199837211985141,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/078/attempt-9429c068f58244d3a44701ff02567a4c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/078/result.json"
+        },
+        "k-induction": {
+          "status": "ERROR",
+          "cpu_seconds": 524.83,
+          "wall_seconds": 353.6447393230628,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/079/attempt-d43f8e8fdf9345c6b4c4a665970a4a14/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/079/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 217.25,
+          "wall_seconds": 206.04635785799474,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/080/attempt-67c13655342742b6a4f784dcf079277c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/080/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 498.17,
+          "wall_seconds": 485.3151834560558,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/077/attempt-627f67e6df0b42f2a0993c80d0e8db6f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/077/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T21",
+      "short_name": "be2net",
+      "expected": "SAFE",
+      "program": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--emulex--benet--be2net.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-challenges/linux-3.8-rc1-32_7a-drivers--net--ethernet--emulex--benet--be2net.ko-ldv_main0_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_sha256": "01afc52a9bcc502dcec11f7e7d0c03035f11ab6232ddfb7a92dcbfeedb4a7ccb",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 526.17,
+          "wall_seconds": 689.5160274249502,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/081/attempt-a33555b81aec49fcb5ceb6b3d050bc00/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/081/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 506.3931336540263,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/082/attempt-f6e696d8bcc14666a2365ff53735308f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/082/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.43,
+          "wall_seconds": 887.0855923879426,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/083/attempt-780df06580bd4be39f6a52a9302f9cc2/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/083/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.12,
+          "wall_seconds": 886.1512871498708,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/084/attempt-308f54ab666d4b6487fd5bd5879bc24b/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/084/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T22",
+      "short_name": "ni_660x",
+      "expected": "SAFE",
+      "program": "ldv-commit-tester/m0_true-unreach-call_drivers-staging-comedi-drivers-ni_660x-ko--107_1a--adbbc36.c",
+      "source_file": "experiment-v2/inputs/c/ldv-commit-tester/m0_true-unreach-call_drivers-staging-comedi-drivers-ni_660x-ko--107_1a--adbbc36.c",
+      "source_sha256": "bcac59c010c5e559fd7efeed7a32f81577b9c0489a2841e1076c85a3c1de629b",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 907.22,
+          "wall_seconds": 808.3826381079853,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/088/attempt-34b5a0b670324b31bf0e29277fa4584d/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/088/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 112.71,
+          "wall_seconds": 58.21529395086691,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/085/attempt-b5fe3e2f34b14f0cb445dff2e24344be/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/085/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 4.47,
+          "wall_seconds": 3.09246295504272,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/086/attempt-7e31ab6b0afe4b5db555ed9829dc870f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/086/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 4.99,
+          "wall_seconds": 3.3092033199500293,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/087/attempt-ddf07ba7bd1b425ca4346ff3abf706f3/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/087/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T23",
+      "short_name": "b2c2-flexcop-usb",
+      "expected": "SAFE",
+      "program": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--media--usb--b2c2--b2c2-flexcop-usb.ko-main.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--media--usb--b2c2--b2c2-flexcop-usb.ko-main.cil.out.c",
+      "source_sha256": "b942931c7ecad367b63ab15c7a8073c8571e31345df36c1b5e3e79ea01abb128",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 902.27,
+          "wall_seconds": 892.1146167439874,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/091/attempt-beb9ba36d2b54e5ca3ac9508b9cd177b/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/091/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 9.97,
+          "wall_seconds": 5.681865245103836,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/092/attempt-bf84884f3cb74fae91e55b6bb5f107fd/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/092/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 3.89,
+          "wall_seconds": 2.8514889189973474,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/089/attempt-f6aadb93677445ccb37efe4d992b340f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/089/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 3.94,
+          "wall_seconds": 2.849323539994657,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/090/attempt-281bfb6bd1c6415aa0403967f80d7949/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/090/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T24",
+      "short_name": "drbd",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.0/module_get_put-drivers-block-drbd-drbd.ko_true-unreach-call.cil.out.i.pp.i",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.0/module_get_put-drivers-block-drbd-drbd.ko_true-unreach-call.cil.out.i.pp.i",
+      "source_sha256": "f891d160a7b04e861aeef4d35712aa701d63889019d2e4e2e8bd9f7b1cdec891",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 812.9058304720093,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/094/attempt-7f3af947daa544b2af2f816016620ab0/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/094/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 899.94,
+          "wall_seconds": 452.27355977194384,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/095/attempt-a099a2e3416a4fcc9b4b6ea7624a7f0f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/095/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 18.65,
+          "wall_seconds": 11.040044141002,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/096/attempt-1526db9b46db416bae77697512931b4e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/096/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 29.83,
+          "wall_seconds": 22.084546569967642,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/093/attempt-49de7f95bf384bb884ad8ebf70ff61d9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/093/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T25",
+      "short_name": "comedi",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-08_1a-drivers--staging--comedi--comedi.ko-entry_point_simplified_true-unreach-call.cil.out.c",
+      "source_sha256": "4c7af24283e3af5b1a43404867030fbce0a74a2e79d86bc1e928f7367e328555",
+      "runs": {
+        "bmc": {
+          "status": "SAFE",
+          "cpu_seconds": 4.33,
+          "wall_seconds": 2.932785354088992,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/097/attempt-f6ea2ab791ec4bc38b56f00ac28f7943/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/097/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 5.51,
+          "wall_seconds": 3.3726048469543457,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/098/attempt-5373b172ece347eda2977142ad197fe4/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/098/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 6.27,
+          "wall_seconds": 4.259459526045248,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/099/attempt-bb746cee77644748bf6e76ec10e19cc9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/099/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 7.74,
+          "wall_seconds": 5.36103308503516,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/100/attempt-a724f2897ab949b2a762bfa6510d48c9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/100/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T26",
+      "short_name": "usbtest",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--misc--usbtest.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--misc--usbtest.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "5530a1e6e38bfaafddc9148082176ce53c84c1fbece98602756bb4b5b11ead75",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.91,
+          "wall_seconds": 888.9170501618646,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/104/attempt-991bdaae551a40c7bed04ca61869bc9f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/104/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 907.18,
+          "wall_seconds": 456.4292507960927,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/101/attempt-ef2b625eb8ad49529693fb9b3af6e08c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/101/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 100.78,
+          "wall_seconds": 91.98204433801584,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/102/attempt-4c297a1f39694164a293da8251663ece/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/102/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 133.68,
+          "wall_seconds": 123.95915384986438,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/103/attempt-153a660132074095a3843f26b8df66ef/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/103/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T27",
+      "short_name": "block2mtd",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--mtd--devices--block2mtd.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--mtd--devices--block2mtd.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_sha256": "c8a3a0165fda886953d4584c17645c34682adf3e87f9bac1d6024c949aa345e4",
+      "runs": {
+        "bmc": {
+          "status": "SAFE",
+          "cpu_seconds": 1.85,
+          "wall_seconds": 1.549623595084995,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/107/attempt-32d893623d2c4cf1ae2f2f8473756ad9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/107/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 2.1,
+          "wall_seconds": 1.5512331060599536,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/108/attempt-83e7af5e348440efb7c6a6e24e33f1b2/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/108/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 1.9,
+          "wall_seconds": 1.559802140109241,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/105/attempt-2894038b9f0c4def917849f374b45281/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/105/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 1.99,
+          "wall_seconds": 1.5508833760395646,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/106/attempt-01e007a342c6457b8a2a42b1c8d01583/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/106/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T28",
+      "short_name": "ftdi-elan",
+      "expected": "SAFE",
+      "program": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--usb--misc--ftdi-elan.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--usb--misc--ftdi-elan.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "3ad2d1811acd73c9cf52144597c65a51932f49b89e19644c5bf8ae645bd1e015",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.25,
+          "wall_seconds": 787.5555135298055,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/110/attempt-3cb71996f82048378588dd782cb634ff/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/110/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 907.82,
+          "wall_seconds": 458.2541714271065,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/111/attempt-cee7ca044b4b43c3b76f5008985aec8c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/111/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 617.3562922051642,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/112/attempt-4c1847ae3a76452a9a608b2642000f65/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/112/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 756.535871891072,
+          "raw_verdict": null,
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/109/attempt-a18ea3a0316a43059e51c5598ac58a6c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/109/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T29",
+      "short_name": "usbcore",
+      "expected": "SAFE",
+      "program": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main1_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main1_sequence_infinite_withcheck_stateful_true-unreach-call.cil.out.c",
+      "source_sha256": "5a5402cc355c5bbfda9c989fcc3cdd7b79cace848ecc491b4ae9c121419f1396",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 8.56,
+          "wall_seconds": 4.875612632138655,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/113/attempt-9458132034954f6a9d213b25ab557d54/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/113/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.76,
+          "wall_seconds": 454.50362945417874,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/114/attempt-3164e3967ec14599b64046af50a872f3/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/114/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 8.3,
+          "wall_seconds": 4.873567098053172,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/115/attempt-199df595dc3e4a40aadb1b198987e624/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/115/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 7.97,
+          "wall_seconds": 4.686358659993857,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/116/attempt-9b4248d5447944988143dc60f9dcb2c7/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/116/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T30",
+      "short_name": "sound",
+      "expected": "SAFE",
+      "program": "ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd-1.c",
+      "source_file": "experiment-v2/inputs/c/ldv-commit-tester/main7_true-unreach-call_sound-oss-sound-ko--32_7a--c4cb1dd-1.c",
+      "source_sha256": "7f8c01a9388419e8db8109a98f4cc7d223e2ea6050a17d75de9f757c27e5ebc0",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 13.13,
+          "wall_seconds": 11.431148380041122,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/120/attempt-750f999bc10f4f308994cfe97ff069da/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/120/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.11,
+          "wall_seconds": 892.5872404789552,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/117/attempt-5e2c2c3b8c64435e8c3169571bf73585/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/117/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 4.49,
+          "wall_seconds": 3.1088732639327645,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/118/attempt-0337651f933046728664712d1e93bcc6/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/118/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 4.09,
+          "wall_seconds": 2.6684979759156704,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/119/attempt-e34786407b474efa8c2fd1cae3ccc762/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/119/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T31",
+      "short_name": "panel",
+      "expected": "SAFE",
+      "program": "ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--staging--panel--panel.ko-main.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_true-unreach-call_linux-3.8-rc1-drivers--staging--panel--panel.ko-main.cil.out.c",
+      "source_sha256": "d5f11e2111f367f725fddcdeb138fd6b76610ca0bb7abdb038453e55b8b644ed",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 900.5805824159179,
+          "raw_verdict": null,
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/123/attempt-38c22e78c50e4dc1a4cda9cb7a91b0fb/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/123/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.95,
+          "wall_seconds": 452.00856532296166,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/124/attempt-29a3486e46de4affbb1ce173d307f998/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/124/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 577.5194528100546,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/121/attempt-38399a48af7e480a9441a553d7149285/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/121/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 599.5210988710169,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/122/attempt-abf491d459774950b5b5cc64919a50d2/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/122/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T32",
+      "short_name": "dc395x",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.0/usb_urb-drivers-scsi-dc395x.ko_true-unreach-call.cil.out.i.pp.i",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.0/usb_urb-drivers-scsi-dc395x.ko_true-unreach-call.cil.out.i.pp.i",
+      "source_sha256": "79cb968fd84a3672de47b53cc8a05480516d92e3d794a9cc98184dc3a67fd93c",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 831.1208472370636,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/126/attempt-886a848582d5497fbefc31b6b1f70de5/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/126/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.89,
+          "wall_seconds": 453.78249246883206,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/127/attempt-7b8492a4b77d4735ab4a4146d51de105/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/127/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 98.49,
+          "wall_seconds": 87.73312439210713,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/128/attempt-4a4ac829820345a89934362cc2f91052/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/128/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 124.06,
+          "wall_seconds": 111.51667986507528,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/125/attempt-03b9a1024eaf4d53bffe7571cdb1b689/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/125/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T33",
+      "short_name": "wlcore_spi",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--wireless--ti--wlcore--wlcore_spi.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--net--wireless--ti--wlcore--wlcore_spi.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "e3d26ff11ecf4eaf1fb8417fa270a841782d68ba6053049467fcef9c578a31ac",
+      "runs": {
+        "bmc": {
+          "status": "JAVA_MEMORY_ERROR",
+          "cpu_seconds": null,
+          "wall_seconds": 269.717144388007,
+          "raw_verdict": null,
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/129/attempt-074575e01f374184b9b0f0a3e4803e99/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/129/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 9.97,
+          "wall_seconds": 5.725293630966917,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/130/attempt-0de013eb55dd4b599117ce7eb45d0e46/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/130/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 3.51,
+          "wall_seconds": 2.423550958978012,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/131/attempt-62f35e6d75db452a8b5ef933cf166f53/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/131/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 3.65,
+          "wall_seconds": 2.6472515198402107,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/132/attempt-6185c41b02c74a48bd2bcb92e9b3567e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/132/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T34",
+      "short_name": "qlcnic",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--qlogic--qlcnic--qlcnic.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.16-rc1/43_2a_consumption_linux-3.16-rc1.tar.xz-43_2a-drivers--net--ethernet--qlogic--qlcnic--qlcnic.ko-entry_point_true-unreach-call.cil.out.c",
+      "source_sha256": "472637da2b83d8747195b60cbf131622cf3833f6a27001e00b26b534c5f1cb00",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 905.1251033791341,
+          "raw_verdict": null,
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/136/attempt-18cdad14a3f04af191df196fd0a8223f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/136/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 905.97,
+          "wall_seconds": 457.95000780490227,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/133/attempt-650d01c00d214d6f98bf3f622b271369/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/133/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 12.13,
+          "wall_seconds": 7.050993478856981,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/134/attempt-de1e511570e843229b7a47c1e5b66867/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/134/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 11.57,
+          "wall_seconds": 6.637682064902037,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/135/attempt-7712128c78c446d1bf40256ba31a38ff/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/135/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T35",
+      "short_name": "mtouch",
+      "expected": "SAFE",
+      "program": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--input--touchscreen--mtouch.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--input--touchscreen--mtouch.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_sha256": "de83b2ceb277b7b5876f83c3f6ae34431f7514bc55d5814513f07f110ec775f3",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 903.62,
+          "wall_seconds": 900.3108756048605,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/139/attempt-37bf802ee96a48c5ba13d497fbfa571c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/139/result.json"
+        },
+        "k-induction": {
+          "status": "SAFE",
+          "cpu_seconds": 3.13,
+          "wall_seconds": 2.208892032969743,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/140/attempt-aa9ebf64b9c74609a9a88b24baa32644/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/140/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "SAFE",
+          "cpu_seconds": 2.74,
+          "wall_seconds": 1.9907228639349341,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/137/attempt-bd16dae5dcae44a6b87c5d1ab11154b7/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/137/result.json"
+        },
+        "impact": {
+          "status": "SAFE",
+          "cpu_seconds": 2.84,
+          "wall_seconds": 2.2113587739877403,
+          "raw_verdict": "TRUE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/138/attempt-206b8618d74a41dea7713c7db14e9b82/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/138/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T36",
+      "short_name": "usbcore",
+      "expected": "UNSAFE",
+      "program": "ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main11_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-challenges/linux-3.8-rc1-32_7a-drivers--usb--core--usbcore.ko-ldv_main11_sequence_infinite_withcheck_stateful_false-unreach-call.cil.out.c",
+      "source_sha256": "61133311cad36635f85747fca78b8d8f58e846fed23ceb0069f5a996c29b5e82",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 8.49,
+          "wall_seconds": 5.093949255067855,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/142/attempt-b7d92943c4d3482a8430949ca989b082/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/142/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 909.24,
+          "wall_seconds": 458.8690553191118,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/143/attempt-dae174bf6662444cb4eeeb3d2d682130/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/143/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 8.62,
+          "wall_seconds": 5.0968145010992885,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/144/attempt-d3b17f3f6ab4453ea5fdfc26835f1e66/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/144/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 8.1,
+          "wall_seconds": 4.87102780607529,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/141/attempt-4f99409d11fa43bd8bc2f6a2c4bfd0fd/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/141/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T37",
+      "short_name": "ni_6527",
+      "expected": "UNSAFE",
+      "program": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_6527-ko--107_1a--adbbc36-1.c",
+      "source_file": "experiment-v2/inputs/c/ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_6527-ko--107_1a--adbbc36-1.c",
+      "source_sha256": "4101c982ac868c1178eeeb3f6259356e3c8f7e62a6b7d31dc5a508ab4079ebd7",
+      "runs": {
+        "bmc": {
+          "status": "UNSAFE",
+          "cpu_seconds": 2.65,
+          "wall_seconds": 2.4314569148700684,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/145/attempt-120c93f8d1984889b1827e9f832dc24f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/145/result.json"
+        },
+        "k-induction": {
+          "status": "UNSAFE",
+          "cpu_seconds": 4.65,
+          "wall_seconds": 3.5374113351572305,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/146/attempt-783c70250ca347ecbe351fc93dae3396/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/146/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "UNSAFE",
+          "cpu_seconds": 2.46,
+          "wall_seconds": 1.991601720219478,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/147/attempt-4968b8e6a3dc4e63a1d556b5357c4495/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/147/result.json"
+        },
+        "impact": {
+          "status": "UNSAFE",
+          "cpu_seconds": 2.38,
+          "wall_seconds": 1.7719278919976205,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/148/attempt-868cbb3179ac4210935240a96948d30e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/148/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T38",
+      "short_name": "cpia2",
+      "expected": "UNSAFE",
+      "program": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--usb--cpia2--cpia2.ko-main.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--usb--cpia2--cpia2.ko-main.cil.out.c",
+      "source_sha256": "760891352be5d66a512b3b3ede54433c56bedec529bf0698ec1905881c691818",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 11.38,
+          "wall_seconds": 6.8689628129359335,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/152/attempt-9989ede06d4f4fe687a86ee933c5aa0a/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/152/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.18,
+          "wall_seconds": 786.7669514908921,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/149/attempt-98deb4acd09f4cdabd8b4a367779d8c6/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/149/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 16.72,
+          "wall_seconds": 12.857291326858103,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/150/attempt-c4581b808b3d4d58a9c2b731a453fc6c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/150/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 16.2,
+          "wall_seconds": 12.70709879999049,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/151/attempt-da6e84f3b6eb4b7c9fd5db1989362a8d/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/151/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T39",
+      "short_name": "ems_usb",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.0/usb_urb-drivers-net-can-usb-ems_usb.ko_false-unreach-call.cil.out.i.pp.i",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.0/usb_urb-drivers-net-can-usb-ems_usb.ko_false-unreach-call.cil.out.i.pp.i",
+      "source_sha256": "176ff0a3e24d9b3f482bc5e76856765ac7c98d4b9a6721d131f3ffa58dffe692",
+      "runs": {
+        "bmc": {
+          "status": "UNKNOWN",
+          "cpu_seconds": 5.83,
+          "wall_seconds": 372.9463051620405,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/155/attempt-bcd5b2ae17564e83a0fe5fe205041a65/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/155/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 633.27,
+          "wall_seconds": 615.363352969056,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/156/attempt-1705f1d970024ce3b19fa48de57956c8/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/156/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.38,
+          "wall_seconds": 876.996986025013,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/153/attempt-22e0cb9850eb4425a81891c61cfe0238/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/153/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.09,
+          "wall_seconds": 885.5451847400982,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/154/attempt-14948408511a4a06af0689eb852750ea/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/154/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T40",
+      "short_name": "cx231xx",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--cx231xx--cx231xx.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--media--usb--cx231xx--cx231xx.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "243b0a9a3680d190fd792080440ccb0fc8ad4a8bc643bcd729f9b3107ee9793c",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 70.65,
+          "wall_seconds": 64.86843078490347,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/158/attempt-1ceaf93b6786494c850826f04248c7ce/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/158/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.92,
+          "wall_seconds": 454.36530878487974,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/159/attempt-2a60a73f0c0b46148f0aab8b0deeb4a4/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/159/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 599.7018672230188,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/160/attempt-564514e952c14c00b50b354b071df1a6/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/160/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.3,
+          "wall_seconds": 838.4515033590142,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/157/attempt-7e718f59890049829a3f99f28d21dcb0/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/157/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T41",
+      "short_name": "pch_udc",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.16-rc1/43_2a_bitvector_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--gadget--pch_udc.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.16-rc1/43_2a_bitvector_linux-3.16-rc1.tar.xz-43_2a-drivers--usb--gadget--pch_udc.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "4245701cc6bcf5577de9007fa80c42c06c36d1b575dd8ed35f6a8e48c9855ab2",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": null,
+          "wall_seconds": 749.2756121219136,
+          "raw_verdict": null,
+          "runner_stop_reason": "CPU_HARD_LIMIT",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/161/attempt-4c97f0682f714d8bbbfad4229ac3337e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/161/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 904.32,
+          "wall_seconds": 664.214304890018,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/162/attempt-0ca90dacfd6641c88c4a51082b935197/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/162/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 3.35,
+          "wall_seconds": 2.404018255881965,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/163/attempt-1f520f1b39484d0ea0fa1d715f0f3248/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/163/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 3.23,
+          "wall_seconds": 2.183189039118588,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/164/attempt-a5b1806a9beb4c359f361b4bc2fa48f8/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/164/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T42",
+      "short_name": "microtek",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--usb--image--microtek.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--usb--image--microtek.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+      "source_sha256": "e917b6cda39e3d09c4b1f7ea83cada7aed1569c4c3fcaaa2ecc685f72bf141d3",
+      "runs": {
+        "bmc": {
+          "status": "UNSAFE",
+          "cpu_seconds": 3.46,
+          "wall_seconds": 2.619964161887765,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/168/attempt-e63eaf54fd984d078f0c724cf0fe4a4a/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/168/result.json"
+        },
+        "k-induction": {
+          "status": "UNSAFE",
+          "cpu_seconds": 5.17,
+          "wall_seconds": 3.496805279981345,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/165/attempt-e1c5c8f1b3ce4f70900dff6c1c6f539a/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/165/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "UNSAFE",
+          "cpu_seconds": 3.06,
+          "wall_seconds": 2.403239622944966,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/166/attempt-a735d55feac7450e9e1dc5328c55c656/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/166/result.json"
+        },
+        "impact": {
+          "status": "UNSAFE",
+          "cpu_seconds": 2.97,
+          "wall_seconds": 2.405826188158244,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/167/attempt-10ae79a3d9954e7994cf63063d81de42/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/167/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T43",
+      "short_name": "vmwgfx",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.7.3/main17_false-unreach-call_drivers-gpu-drm-vmwgfx-vmwgfx-ko--32_7a--linux-3.5.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.7.3/main17_false-unreach-call_drivers-gpu-drm-vmwgfx-vmwgfx-ko--32_7a--linux-3.5.c",
+      "source_sha256": "ba987e5f8491a00f59d8a862c0d194fdc4e914fde96f810c23b43e7042dd1e11",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 5.92,
+          "wall_seconds": 3.7146442881785333,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/171/attempt-902e124b0875477aa95facac6189a869/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/171/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 910.09,
+          "wall_seconds": 459.5159498259891,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/172/attempt-60fff4533c744787a71c73b9831a80da/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/172/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 6.08,
+          "wall_seconds": 3.717086240882054,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/169/attempt-063031db565f4d4ea6c4ad6d875dba4f/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/169/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 5.86,
+          "wall_seconds": 3.711519988020882,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/170/attempt-722ccf47f318400b8e930041cc301c45/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/170/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T44",
+      "short_name": "cpia2",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--cpia2--cpia2.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-32_7a-drivers--media--usb--cpia2--cpia2.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "87e1fc2462d29f487dcad5b3a96516ba4b8e7e92b8fdd1d98b1e892a1b20f953",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 11.54,
+          "wall_seconds": 6.99288954702206,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/174/attempt-dd04879cdd8f464ab2c19ebb34e8772d/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/174/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.16,
+          "wall_seconds": 710.7835994148627,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/175/attempt-5ee73f3f0ab941ff95d733f1ab828f4d/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/175/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 17.12,
+          "wall_seconds": 13.53880658512935,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/176/attempt-e1fd6e16b9094a2f9df04224976279ac/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/176/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 17.45,
+          "wall_seconds": 13.299619706114754,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/173/attempt-5396cef1396548c8b2c5df0cb5c3c390/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/173/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T45",
+      "short_name": "ipmi_si",
+      "expected": "UNSAFE",
+      "program": "ldv-validator-v0.6/linux-stable-90a4845-1-110_1a-drivers--char--ipmi--ipmi_si.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-validator-v0.6/linux-stable-90a4845-1-110_1a-drivers--char--ipmi--ipmi_si.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "acc1f5641f60f8379e61f71df4b36c9159ce9f40c9b5c0f1ca61ed3234a23df8",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 9.13,
+          "wall_seconds": 5.4638716811314225,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/177/attempt-db1754069026455cb7d6ca5f4d505566/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/177/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 902.73,
+          "wall_seconds": 455.9288907358423,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/178/attempt-1c4b4de0f9d0433c84c3d0571f7db7ea/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/178/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 259.52,
+          "wall_seconds": 248.38011870905757,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/179/attempt-30ed68876f254d4087f217c54586896c/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/179/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 148.93,
+          "wall_seconds": 143.22710822802037,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/180/attempt-515cb4f8d76d4941bca9dea41960876e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/180/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T46",
+      "short_name": "s3c-hwmon",
+      "expected": "UNSAFE",
+      "program": "ldv-validator-v0.8/linux-stable-af3071a-1-130_7a-drivers--hwmon--s3c-hwmon.ko-entry_point_ldv-val-v0.8_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-validator-v0.8/linux-stable-af3071a-1-130_7a-drivers--hwmon--s3c-hwmon.ko-entry_point_ldv-val-v0.8_false-unreach-call.cil.out.c",
+      "source_sha256": "8408df814adc4064a7d0800a22151865d714cb2f576ec1f664ea10856115cea9",
+      "runs": {
+        "bmc": {
+          "status": "UNKNOWN",
+          "cpu_seconds": 3.23,
+          "wall_seconds": 2.835250814910978,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/184/attempt-dad814dee94b4148b3053c559265a060/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/184/result.json"
+        },
+        "k-induction": {
+          "status": "UNKNOWN",
+          "cpu_seconds": 50.31,
+          "wall_seconds": 36.63551867194474,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/181/attempt-601f6405763949a1b088148216d4d1e9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/181/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.19,
+          "wall_seconds": 909.8031142889522,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/182/attempt-7e44856c97c64124a15df816033e9fb4/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/182/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 901.02,
+          "wall_seconds": 899.3968561359216,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/183/attempt-965571b888a548a3a6d36f3c2cb0785e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/183/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T47",
+      "short_name": "virtio_blk",
+      "expected": "UNSAFE",
+      "program": "ldv-commit-tester/m0_false-unreach-call_drivers-block-virtio_blk-ko--101_1a--39a1d13.c",
+      "source_file": "experiment-v2/inputs/c/ldv-commit-tester/m0_false-unreach-call_drivers-block-virtio_blk-ko--101_1a--39a1d13.c",
+      "source_sha256": "26dfda5cba04bf6fea7c3241b16eab6aa882526ae79d3b9b24ddb3ce4d57b64b",
+      "runs": {
+        "bmc": {
+          "status": "UNSAFE",
+          "cpu_seconds": 3.58,
+          "wall_seconds": 2.8392806958872825,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/187/attempt-331915d4a69b4fd9b585183be21c3cc0/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/187/result.json"
+        },
+        "k-induction": {
+          "status": "UNSAFE",
+          "cpu_seconds": 6.75,
+          "wall_seconds": 4.582594094099477,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/188/attempt-9ea75808411140ec97258331c13ff477/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/188/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "UNSAFE",
+          "cpu_seconds": 3.87,
+          "wall_seconds": 2.8394484049640596,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/185/attempt-4f26d011f4f64ce98757bf1eb048a8b3/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/185/result.json"
+        },
+        "impact": {
+          "status": "UNSAFE",
+          "cpu_seconds": 3.48,
+          "wall_seconds": 2.622986080823466,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/186/attempt-fcebe64ba3b643978a2601d98834cd10/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/186/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T48",
+      "short_name": "rc-core",
+      "expected": "UNSAFE",
+      "program": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--rc--rc-core.ko-main.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-drivers--media--rc--rc-core.ko-main.cil.out.c",
+      "source_sha256": "1fdeaa65a794e0294e91315d2354ccd20f0a35865d63a2ef4faba880f743f8bb",
+      "runs": {
+        "bmc": {
+          "status": "UNSAFE",
+          "cpu_seconds": 11.14,
+          "wall_seconds": 44.721737198065966,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/190/attempt-b00dd0a9a3e64b21a764e9c2bd637f42/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/190/result.json"
+        },
+        "k-induction": {
+          "status": "UNSAFE",
+          "cpu_seconds": 281.44,
+          "wall_seconds": 162.18994021811523,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/191/attempt-efa8e1aff23c4383a3b03c8fec2b2c23/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/191/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "UNSAFE",
+          "cpu_seconds": 5.38,
+          "wall_seconds": 8.09480652702041,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/192/attempt-ddba735541e340f8be8a3d8a911e1b69/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/192/result.json"
+        },
+        "impact": {
+          "status": "UNSAFE",
+          "cpu_seconds": 6.19,
+          "wall_seconds": 8.933373342035338,
+          "raw_verdict": "FALSE",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/189/attempt-ce58b10b33be438a99f135953c23bd15/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/189/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T49",
+      "short_name": "keyspan_remote",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.0/usb_urb-drivers-input-misc-keyspan_remote.ko_false-unreach-call.cil.out.i.pp.i",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.0/usb_urb-drivers-input-misc-keyspan_remote.ko_false-unreach-call.cil.out.i.pp.i",
+      "source_sha256": "9cbeea38879b85252dbabff4d7ac85c6552bcf62095bb41c83f6a7c246bee2e0",
+      "runs": {
+        "bmc": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 903.01,
+          "wall_seconds": 894.5444150248077,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/193/attempt-14dd80265f07496c9a17189e15c33a8e/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/193/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 899.97,
+          "wall_seconds": 454.3808960400056,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/194/attempt-8e3589179c5d48358fc219451f8987b9/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/194/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.15,
+          "wall_seconds": 884.0719090639614,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/195/attempt-bd71e63bf2254626bf3bb4e9dd1cb140/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/195/result.json"
+        },
+        "impact": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 900.13,
+          "wall_seconds": 887.5553367610555,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/196/attempt-d540f4d268d34b3e90fbbef125f7cd26/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/196/result.json"
+        }
+      }
+    },
+    {
+      "task_id": "T50",
+      "short_name": "usbtouchscreen",
+      "expected": "UNSAFE",
+      "program": "ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--input--touchscreen--usbtouchscreen.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_file": "experiment-v2/inputs/c/ldv-linux-3.12-rc1/linux-3.12-rc1.tar.xz-144_2a-drivers--input--touchscreen--usbtouchscreen.ko-entry_point_false-unreach-call.cil.out.c",
+      "source_sha256": "0808d17b5d0cb166da0daf2b644fe12bee2eafd21b3f38b865664815dfad33c2",
+      "runs": {
+        "bmc": {
+          "status": "ERROR",
+          "cpu_seconds": 3.79,
+          "wall_seconds": 2.651986734010279,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/200/attempt-853648f0bb8343819f1b57018cf3f223/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/200/result.json"
+        },
+        "k-induction": {
+          "status": "TIMEOUT",
+          "cpu_seconds": 908.64,
+          "wall_seconds": 737.250178034883,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/197/attempt-1909a94cc9c94014ae02c0984960d3da/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/197/result.json"
+        },
+        "predicateAnalysis": {
+          "status": "ERROR",
+          "cpu_seconds": 3.65,
+          "wall_seconds": 2.65123635600321,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/198/attempt-346c5a5ea7de4b3eb525d5a3591a3b24/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/198/result.json"
+        },
+        "impact": {
+          "status": "ERROR",
+          "cpu_seconds": 3.62,
+          "wall_seconds": 2.652433074079454,
+          "raw_verdict": "UNKNOWN",
+          "runner_stop_reason": "",
+          "log": "experiment-v2/evidence/v2-20261113-125655-b19929/199/attempt-e0138faa561640828d58cd57dc8f1f73/run.log",
+          "result": "experiment-v2/evidence/v2-20261113-125655-b19929/199/result.json"
+        }
+      }
+    }
+  ]
+}

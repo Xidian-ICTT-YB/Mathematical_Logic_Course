@@ -1,0 +1,54 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 35,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 37,
+      "text": "Error: line 3701: Unsupported feature (recursion): magicmouse_raw_event(hdev, report, data + 2UL, (int)(*(data + 1UL))); (line was originally magicmouse_raw_event(hdev, report, data + 2UL, (int )*(data + 1UL));) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 41,
+      "text": "Number of abstractions:            1 (0% of all post computations)"
+    },
+    {
+      "line": 62,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 69,
+      "text": "  Time for abstraction:                  0.000s (Max:     0.000s, Count: 1)"
+    },
+    {
+      "line": 96,
+      "text": "Attempted forced coverings:             0"
+    },
+    {
+      "line": 174,
+      "text": "Total CPU time for CPAchecker:    2.130s"
+    }
+  ],
+  "wall_seconds": 2.761926701059565,
+  "peak_group_rss": 322609152,
+  "sampled_group_cpu_peak_seconds": 2.59,
+  "cpa_cpu_seconds": 2.13,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/013/attempt-7b6ebb52d232450d8c59154ff7566504/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-linux-3.0/module_get_put-drivers-hid-hid-magicmouse.ko_true-unreach-call.cil.out.i.pp.i",
+    "algorithm": "impact"
+  },
+  "expected": "SAFE",
+  "wrong_result": false
+}

@@ -1,0 +1,62 @@
+{
+  "status": "ERROR",
+  "raw_verdict": "UNKNOWN",
+  "all_verdicts": [
+    "UNKNOWN"
+  ],
+  "exit_code": 0,
+  "runner_stop_reason": "",
+  "internal_cpu_timeout": false,
+  "diagnostics": [
+    {
+      "line": 217,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 219,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 221,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (TargetLocationProvider:CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 223,
+      "text": "Recursion detected. Defaulting to selecting all locations as potential target locations. (TargetLocationProvider:TargetLocationProviderImpl.tryGetAutomatonTargetLocations, INFO)"
+    },
+    {
+      "line": 229,
+      "text": "Recursion detected, aborting. To ignore recursion, add -skipRecursion to the command line. (CallstackCPA:CallstackTransferRelation.getAbstractSuccessorsForEdge, INFO)"
+    },
+    {
+      "line": 231,
+      "text": "Error: line 4683: Unsupported feature (recursion): rc = ecryptfs_fasync(fd, lower_file, flag); (line was originally pointer call(ecryptfs_fasync) rc = (*((lower_file->f_op)->fasync))(fd, lower_file, flag);) (CallstackTransferRelation.getAbstractSuccessorsForEdge, SEVERE)"
+    }
+  ],
+  "metric_evidence": [
+    {
+      "line": 235,
+      "text": "Number of abstractions:            0 (0% of all post computations)"
+    },
+    {
+      "line": 244,
+      "text": "Number of predicates discovered:          0"
+    },
+    {
+      "line": 369,
+      "text": "Total CPU time for CPAchecker:    4.210s"
+    }
+  ],
+  "wall_seconds": 4.7918097749352455,
+  "peak_group_rss": 740589568,
+  "sampled_group_cpu_peak_seconds": 4.77,
+  "cpa_cpu_seconds": 4.21,
+  "log": "/data/shizn/cpachecker-reproduction/results/v2-20261113-125655-b19929/049/attempt-49f864d153394882aa2d05055c812071/run.log",
+  "entry": {
+    "repeat": 1,
+    "task": "ldv-consumption/32_7a_cilled_false-unreach-call_linux-3.8-rc1-32_7a-fs--ecryptfs--ecryptfs.ko-ldv_main1_sequence_infinite_withcheck_stateful.cil.out.c",
+    "algorithm": "bmc"
+  },
+  "expected": "UNSAFE",
+  "wrong_result": false
+}
