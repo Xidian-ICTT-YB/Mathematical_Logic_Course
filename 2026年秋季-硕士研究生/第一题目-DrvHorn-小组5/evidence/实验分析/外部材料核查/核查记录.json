@@ -1,0 +1,18 @@
+{
+  "sourceArchive": "DrvHorn课程作业材料.zip",
+  "note": "外部材料提供的记录；未执行压缩包中的脚本",
+  "sharedCaseIRChecks": {
+    "tpm_bios_measurements_ops": {
+      "irBytesEqual": true,
+      "sha256": "067cfa99fa67fb688df7c1a6e7dcc286406229b7249b8dc0b82e7f6f8b0a6971"
+    },
+    "ged_driver": {
+      "irBytesEqual": true,
+      "sha256": "acdc4c5e32bc655e7ffb4a407a8924420b65f70d06e5a4548046be52c4b71dbf"
+    },
+    "acpi_wmi_driver": {
+      "irBytesEqual": true,
+      "sha256": "83f3cf7de35a33fedbc9f898eddb1d2e62e2f419fdf31dfb9301a2cae7715111"
+    }
+  }
+}

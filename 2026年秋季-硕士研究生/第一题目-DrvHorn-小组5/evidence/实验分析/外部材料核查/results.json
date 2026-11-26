@@ -1,0 +1,153 @@
+{
+  "date": "2026-10-15",
+  "image_digest": "sha256:536168e391d7c08c8247276dafc4a518ac68a1a5fcea44068f5c03b5b345f80c",
+  "kernel_bc_sha256": "18260fd2c2d7591b49239fa7edb74e5c3e0ade166edc239ddcaf402d9b311f82",
+  "z3": "4.8.9",
+  "results": [
+    {
+      "driver": "platform_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 63,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "acpi_wmi_driver",
+      "expected": "unsat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 76,
+      "classification": "误报"
+    },
+    {
+      "driver": "ns2_led_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 81,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "gti_wdt_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 87,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "stm32_iwdg_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 87,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "hisi_thermal_driver",
+      "expected": "sat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 78,
+      "classification": "真实缺陷"
+    },
+    {
+      "driver": "ptp_qoriq_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 79,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "ptp_dte_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 70,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "xvtc_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 72,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "xtpg_driver",
+      "expected": "sat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 71,
+      "classification": "真实缺陷"
+    },
+    {
+      "driver": "xvip_composite_driver",
+      "expected": "sat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 110,
+      "classification": "真实缺陷"
+    },
+    {
+      "driver": "i8042_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 71,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "unimac_mdio_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 75,
+      "classification": "无缺陷"
+    },
+    {
+      "driver": "apple_nvme_driver",
+      "expected": "sat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 104,
+      "classification": "真实缺陷"
+    },
+    {
+      "driver": "edma_driver",
+      "expected": "sat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 88,
+      "classification": "真实缺陷"
+    },
+    {
+      "driver": "acpi_fan_driver",
+      "expected": "sat",
+      "actual": "sat",
+      "exit_code": 0,
+      "seconds": 84,
+      "classification": "真实缺陷"
+    },
+    {
+      "driver": "ged_driver",
+      "expected": "unsat",
+      "actual": "unsat",
+      "exit_code": 0,
+      "seconds": 69,
+      "classification": "无缺陷"
+    }
+  ],
+  "extra_case": {
+    "driver": "tpm_bios_measurements_ops",
+    "actual": "sat",
+    "exit_code": 0,
+    "seconds": 73
+  },
+  "all_expected_mismatches": [
+    "acpi_wmi_driver"
+  ]
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DrvHorn 三例证据速查</title>
+  <link rel="stylesheet" href="../reading.css">
+</head>
+<body>
+<main>
+  <nav><a href="../../index.html">返回证据索引</a></nav>
+  <h1>DrvHorn 三例证据速查</h1>
+  <p>下文的行号以提交包内的文件为准。每个案例都可从源码定位到实际查询，并核对本机的重求解输出。</p>
+
+  <section>
+    <h2>TPM · 真实缺陷</h2>
+    <p>在源码第 42–52 行，驱动取得引用后遇到打开失败，直接返回。第 61 行的释放位于正常关闭的回调中。沿打开失败这条路径，模型计数从基准 1 增至 2，返回前没有恢复。</p>
+    <pre><code>(query main@get_device.exit.i.i.split)</code></pre>
+    <p>本机重求解结果为 <code>sat</code>。<a href="源码/tpm-common.c">源码第 42–52、61 行</a> · <a href="ir/tpm_bios_measurements_ops/solver.smt2">查询第 4296 行</a> · <a href="ir/tpm_bios_measurements_ops/solver.stdout.txt">重求解输出</a></p>
+  </section>
+
+  <section>
+    <h2>GED · 未报告缺陷</h2>
+    <p>源码第 141–160 行有分配和资源解析失败的出口。前端日志第 25 行提示没有找到断言，中间 IR 第 26432 行的失败处理函数直接返回。</p>
+    <pre><code>(query false)</code></pre>
+    <p>本机重求解结果为 <code>unsat</code>，对应这次实际送入后端的查询。<a href="源码/evged.c">源码第 141–160 行</a> · <a href="ir/ged_driver/stderr.txt">前端日志第 25 行</a> · <a href="ir/ged_driver/instrumented.ll">中间 IR 第 26432 行</a> · <a href="ir/ged_driver/solver.smt2">查询第 3 行</a> · <a href="ir/ged_driver/solver.stdout.txt">重求解输出</a></p>
+  </section>
+
+  <section>
+    <h2>WMI · 已知误报</h2>
+    <p>沿这条候选路径，遍历开始时的链表为空。源码会直接结束遍历。中间 IR 第 26729 行的非确定条件允许模型继续进入循环，补充轨迹记录了随后一次释放将所选对象的计数从 1 降至 0。</p>
+    <pre><code>(query main@acpi_wmi_probe.exit.i.split)</code></pre>
+    <p>本机重求解结果为 <code>sat</code>。循环走向和具体取值来自补充材料中的轨迹。<a href="源码/wmi.c">源码第 1308–1314、1326–1337 行</a> · <a href="ir/acpi_wmi_driver/instrumented.ll">中间 IR 第 26729 行</a> · <a href="ir/acpi_wmi_driver/solver.smt2">查询第 7894 行</a> · <a href="ir/acpi_wmi_driver/solver.stdout.txt">重求解输出</a> · <a href="外部材料核查/wmi.trace.txt">补充轨迹第 1606–1615、1644–1673 行</a></p>
+  </section>
+</main>
+</body>
+</html>

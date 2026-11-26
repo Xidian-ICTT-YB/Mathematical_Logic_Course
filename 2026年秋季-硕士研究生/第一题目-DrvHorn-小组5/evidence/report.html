@@ -1,0 +1,879 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DrvHorn 实验结果与分析</title><link rel="stylesheet" href="reading.css"></head>
+<body><main><nav><a href="../index.html">返回证据索引</a></nav>
+<h1>DrvHorn 实验结果与分析</h1>
+<p>实验日期：2026 年 10 月 19 日。</p>
+<p>本文整理研究生任务中 DrvHorn 的三个代表性实验，从论文的验证方法出发，解释引用计数断言、求解器输出及其与 Linux 驱动源代码的对应关系。</p>
+<h2>1. 实验目标与范围</h2>
+<p>论文 <em>Automatic Detection of Reference Counting Bugs in Linux Kernel Drivers</em> 提出 DrvHorn，通过内核 API 建模、程序切片、断言插入和约束 Horn 子句（Constrained Horn Clauses，CHC）求解，检测驱动初始化失败路径中的引用计数错误。</p>
+<p>本次选择作者提供的三类案例：</p>
+<ol>
+<li>真实缺陷：<code>tpm_bios_measurements_ops</code>。</li>
+<li>未发现缺陷：<code>ged_driver</code>。</li>
+<li>已知误报：<code>acpi_wmi_driver</code>。</li>
+</ol>
+<p>先完成三个代表性案例，并额外导出了中间 LLVM IR 和求解轨迹用于分析。随后在本机补跑了作者全部 17 个轻量平台驱动，结果见第 3.1 节。当前未运行论文的完整平台驱动基准，不能据此估计工具总体准确率、误报率或性能。</p>
+<p>资料：</p>
+<ul>
+<li><a href="%E4%BB%BB%E5%8A%A1%E8%AF%B4%E6%98%8E.md">本地任务说明</a></li>
+<li><a href="%E8%AE%BA%E6%96%87/DrvHorn_arXiv_2605.13246v2.pdf">本地论文 PDF</a></li>
+<li><a href="https://arxiv.org/abs/2605.13246">论文页面</a></li>
+<li><a href="https://github.com/joehattori/drvhorn">作者 GitHub 项目</a></li>
+<li><a href="https://github.com/joehattori/drvhorn#evaluation">作者轻量实验说明</a></li>
+</ul>
+<h2>2. 实验环境与执行方法</h2>
+<h3>2.1 环境</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>宿主机</td>
+<td>Windows，使用 WSL2</td>
+</tr>
+<tr>
+<td>WSL 发行版</td>
+<td><code>DrvHorn-Ubuntu22.04</code>，Ubuntu 22.04.5 LTS</td>
+</tr>
+<tr>
+<td>WSL 资源限制</td>
+<td>内存 4 GB，4 个处理器，交换空间 4 GB</td>
+</tr>
+<tr>
+<td>Docker Engine</td>
+<td>29.9.1</td>
+</tr>
+<tr>
+<td>LLVM / Clang</td>
+<td>14.0.0，容器内</td>
+</tr>
+<tr>
+<td>Z3</td>
+<td>4.8.9，容器内</td>
+</tr>
+<tr>
+<td>输入</td>
+<td>作者镜像内的 <code>/drvhorn/simple_kernel.bc</code>，精简内核 bitcode</td>
+</tr>
+<tr>
+<td>单案例超时</td>
+<td>500 秒</td>
+</tr>
+<tr>
+<td>容器网络</td>
+<td><code>--network none</code>，实验分析过程不依赖联网</td>
+</tr>
+</tbody></table>
+<p>固定使用的镜像为：</p>
+<pre><code class="language-text">joehattori/drvhorn@sha256:536168e391d7c08c8247276dafc4a518ac68a1a5fcea44068f5c03b5b345f80c
+</code></pre>
+<p>本地 DrvHorn 源码版本为 <code>e0fc1580329ec9851b40fa02e8ccdd43ca4ce5a9</code>。用于解释案例的 Linux 源码按照项目固定的内核提交 <code>ffc253263a1375a65fa6c9f62a893e9767fbebfa</code>（Linux v6.6）下载。实验输入是作者提供的现成 bitcode，本次没有重新编译完整 Linux 内核。</p>
+<p>环境记录见 <a href="%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/setup-state.json">setup-state.json</a>。</p>
+<h3>2.2 执行命令</h3>
+<p>在 PowerShell 中，可通过现有脚本重新运行三个代表性案例：</p>
+<pre><code class="language-powershell">&amp; &#39;.\环境配置\Run-Experiments.ps1&#39; -Suite Selected -TimeoutSeconds 500
+</code></pre>
+<p>容器内部对应的三个核心命令为：</p>
+<pre><code class="language-bash">/drvhorn/build/run/bin/sea kernel \
+  --file-operations=tpm_bios_measurements_ops /drvhorn/simple_kernel.bc
+
+/drvhorn/build/run/bin/sea kernel \
+  --platform-driver=ged_driver /drvhorn/simple_kernel.bc
+
+/drvhorn/build/run/bin/sea kernel \
+  --platform-driver=acpi_wmi_driver /drvhorn/simple_kernel.bc
+</code></pre>
+<p>首次运行记录保存在 <a href="experiment-results/20261019-152023/summary.json">实验汇总 JSON</a>。随后通过 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/capture_cases.py">中间代码导出脚本</a> 再次运行三项分析，加入 <code>--save-temps</code>、<code>--out-ll</code> 和 <code>--show-invars</code>，保存 IR 和求解轨迹；三次重跑均以退出码 0 完成，输出类别与首次一致。完整命令见 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/capture-results.json">导出运行记录</a>。</p>
+<h2>3. 实际实验结果</h2>
+<table>
+<thead>
+<tr>
+<th>分析对象</th>
+<th>作者案例分类</th>
+<th>作者预期正确结果</th>
+<th>本次实际输出</th>
+<th>是否复现作者描述的工具行为</th>
+<th>首次运行总耗时</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>tpm_bios_measurements_ops</code></td>
+<td>真实缺陷</td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>是</td>
+<td>12.321 秒</td>
+</tr>
+<tr>
+<td><code>ged_driver</code></td>
+<td>无缺陷案例</td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>是</td>
+<td>11.923 秒</td>
+</tr>
+<tr>
+<td><code>acpi_wmi_driver</code></td>
+<td>误报案例</td>
+<td><code>unsat</code></td>
+<td><code>sat</code></td>
+<td>是，复现其已知误报</td>
+<td>12.123 秒</td>
+</tr>
+</tbody></table>
+<p>三项首次运行退出码均为 0，未触发 500 秒超时。这里的耗时包括容器启动、预处理和求解，不能写成单独的 Z3 求解耗时。</p>
+<p>“复现作者描述的工具行为”与“输出符合案例真实分类”是两个概念。WMI 的 <code>sat</code> 复现了作者说明的误报，不能据此认定它是一个成功发现的真实漏洞。</p>
+<p>原始标准输出：</p>
+<ul>
+<li><a href="experiment-results/20261019-152023/tpm_bios_measurements_ops.stdout.txt">TPM 输出</a></li>
+<li><a href="experiment-results/20261019-152023/ged_driver.stdout.txt">GED 输出</a></li>
+<li><a href="experiment-results/20261019-152023/acpi_wmi_driver.stdout.txt">WMI 输出</a></li>
+</ul>
+<h3>3.1 本机补跑全部 17 个轻量案例</h3>
+<p>补跑日期：2026 年 10 月 19 日。以下结果来自本机独立执行，不是从外部报告复制。记录为 <a href="experiment-results/20261019-175330/summary.json">本机完整轻量实验汇总</a>。</p>
+<p>执行途中发生一次交互中断，前 16 项结果已保存；最后一项 GED 单独补跑并合并记录，使用 <code>.retry</code> 日志，汇总中保留了说明。</p>
+<table>
+<thead>
+<tr>
+<th>驱动</th>
+<th>作者预期</th>
+<th>本机输出</th>
+<th>耗时（秒）</th>
+<th>与外部材料输出一致</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>platform_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>10.761</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>acpi_wmi_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>sat</code></td>
+<td>12.254</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>ns2_led_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>10.713</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>gti_wdt_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>11.936</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>stm32_iwdg_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>12.557</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>hisi_thermal_driver</code></td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>11.630</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>ptp_qoriq_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>12.190</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>ptp_dte_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>11.389</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>xvtc_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>11.450</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>xtpg_driver</code></td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>11.535</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>xvip_composite_driver</code></td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>14.147</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>i8042_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>11.670</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>unimac_mdio_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>11.564</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>apple_nvme_driver</code></td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>11.845</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>edma_driver</code></td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>12.734</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>acpi_fan_driver</code></td>
+<td><code>sat</code></td>
+<td><code>sat</code></td>
+<td>11.938</td>
+<td>是</td>
+</tr>
+<tr>
+<td><code>ged_driver</code></td>
+<td><code>unsat</code></td>
+<td><code>unsat</code></td>
+<td>16.949</td>
+<td>是</td>
+</tr>
+</tbody></table>
+<p>共 17 项，7 个 <code>sat</code>、10 个 <code>unsat</code>，全部退出码为 0，无执行错误或超时。17 项输出与外部材料逐项一致；16 项符合作者 expected 标签，WMI 为唯一已知误报。耗时仍为命令端到端耗时，不是纯求解时间。</p>
+<p>加上先前单独运行的 TPM，当前已覆盖作者 17 个轻量平台驱动及 1 个 TPM 文件操作案例。</p>
+<h2>4. 论文中的引用计数断言</h2>
+<h3>4.1 被验证的性质</h3>
+<p>引用计数记录一个对象被持有的引用数量。获取引用和释放引用通常需要配对，例如：</p>
+<pre><code class="language-c">get_device(dev);  /* 获取一个引用 */
+put_device(dev);  /* 释放一个引用 */
+</code></pre>
+<p>论文第 3.1 节关注的核心性质是：如果驱动初始化失败，这次初始化造成的引用计数变化应恢复平衡。初始化入口可以是平台驱动的 <code>.probe</code>，也可以是文件操作的 <code>.open</code>。</p>
+<p>对于被跟踪对象 o，记进入和退出初始化时的计数分别为 r_in(o) 和 r_out(o)，则：</p>
+<pre><code class="language-text">Δ(o) = r_out(o) - r_in(o)
+
+初始化失败 ⇒ 对每个被跟踪对象 o，Δ(o) = 0
+</code></pre>
+<p>在只涉及获取与释放操作的简化情况下：</p>
+<pre><code class="language-text">Δ(o) = 获取引用次数 - 释放引用次数
+</code></pre>
+<p>必须针对同一个对象判断平衡；给对象 A 获取一次引用、给对象 B 释放一次引用，并不能互相抵消。</p>
+<p>初始化成功后，驱动可以持有引用，交给后续的关闭、移除或其他释放流程处理。因此，本实验检查的是失败出口的平衡性质，不能要求成功返回前也释放所有引用。</p>
+<h3>4.2 为什么 IR 中检查的是“等于 1”</h3>
+<p>本次导出的模型将相关 <code>kref</code> 初始化为 1，通过模型操作增加或减少计数。失败出口的检查等价于：</p>
+<pre><code class="language-c">ret = initialization();
+if (ret != 0) {
+    assert(model_refcount == 1);
+}
+</code></pre>
+<p>这里的 1 是模型的检查基准，表示相关操作应恢复到工具要求的平衡状态。它不是“所有真实内核对象的引用计数永远为 1”，也不是要求失败时所有对象计数都变成 0。</p>
+<p>本地工具源码中的对应关系为：</p>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>实现位置</th>
+<th>对应逻辑</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>建模计数初始化</td>
+<td><a href="drvhorn/lib/Transforms/Kernel/KernelSetup.cc">KernelSetup.cc，第 95 行</a></td>
+<td>将模型计数设为 1</td>
+</tr>
+<tr>
+<td>建模获取引用</td>
+<td><a href="drvhorn/lib/Transforms/Kernel/KernelSetup.cc">KernelSetup.cc，第 114 行</a></td>
+<td>加 1</td>
+</tr>
+<tr>
+<td>建模释放引用</td>
+<td><a href="drvhorn/lib/Transforms/Kernel/KernelSetup.cc">KernelSetup.cc，第 135 行</a></td>
+<td>减 1</td>
+</tr>
+<tr>
+<td>构造计数断言</td>
+<td><a href="drvhorn/lib/Transforms/Kernel/AssertKrefs.cc">AssertKrefs.cc，第 54 行</a></td>
+<td>比较计数是否等于 1</td>
+</tr>
+<tr>
+<td>文件打开失败进入检查</td>
+<td><a href="drvhorn/lib/Transforms/Kernel/FileOperations.cc">FileOperations.cc，第 101 行</a></td>
+<td>调用 <code>.open</code>，非零返回进入失败出口</td>
+</tr>
+<tr>
+<td>平台驱动初始化失败进入检查</td>
+<td><a href="drvhorn/lib/Transforms/Kernel/Platform.cc">Platform.cc，第 63 行</a></td>
+<td>调用 <code>.probe</code>，非零返回进入失败出口</td>
+</tr>
+</tbody></table>
+<h2>5. 求解结果的逻辑含义</h2>
+<p>DrvHorn 的分析过程可以概括为：</p>
+<pre><code class="language-text">Linux 驱动 / LLVM bitcode
+  → 内核 API 建模、切片、构造初始化入口
+  → 在失败出口插入引用计数断言
+  → SeaHorn 编码为约束 Horn 子句
+  → Z3 求解错误状态是否可达
+  → 输出 sat / unsat，并回到源码确认
+</code></pre>
+<p>求解器查询的是“能否到达断言失败”，而不是直接查询“程序是否安全”。概念上，其查询为：</p>
+<pre><code class="language-text">是否存在路径 π 和对象 o，使得：
+初始化沿 π 失败返回，并且 Δ(o) ≠ 0？
+</code></pre>
+<p>因此，结果含义为：</p>
+<table>
+<thead>
+<tr>
+<th>输出</th>
+<th>正确解释</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>sat</code></td>
+<td>在转换后的模型中，错误状态可达，存在一条候选反例路径；仍需源码确认</td>
+</tr>
+<tr>
+<td><code>unsat</code></td>
+<td>在当前模型和剩余检查范围内，错误状态不可达</td>
+</tr>
+<tr>
+<td><code>unknown</code></td>
+<td>求解器未能给出确定结论</td>
+</tr>
+<tr>
+<td>超时</td>
+<td>分析没有在设定时限内完成，不能当作安全结论</td>
+</tr>
+</tbody></table>
+<p>例如，下面是说明原理的 Horn 规则示意，并非本次运行导出的原始子句：</p>
+<pre><code class="language-text">Reach(下一位置, r+1) ← Reach(当前位置, r) 且执行 get
+Reach(下一位置, r-1) ← Reach(当前位置, r) 且执行 put
+Bad ← Reach(失败出口, r) 且 r ≠ 1
+query Bad
+</code></pre>
+<p><code>sat</code> 表示存在可达的 <code>Bad</code> 状态。由于模型可能丢失真实代码中的约束关系，候选路径不一定在实际程序中可执行，这正是需要区分真实缺陷与误报的原因。</p>
+<h3>5.1 实际查询文件，而不只是概念示意</h3>
+<p>2026 年 10 月 21 日，使用此前本机保存的三个案例的 <code>tmp/simple_kernel.pp.ms.ul.o.bc</code>，在同一固定镜像内重新调用 SeaHorn 后端，导出实际 CHC 文件和后端 LLVM IR。此步骤没有重新编译内核，也没有改变驱动模型，不替换第 3 节的原始端到端耗时。</p>
+<p>三项后端求解均以退出码 0 完成，输出与首次运行相同。命令及结果见 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E9%80%BB%E8%BE%91%E8%AF%81%E6%8D%AE%E5%AF%BC%E5%87%BA%E8%AE%B0%E5%BD%95.json">逻辑证据导出记录</a>。</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>实际 CHC 文件中的查询</th>
+<th>重求解结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TPM</td>
+<td><code>(query main@get_device.exit.i.i.split)</code></td>
+<td><code>sat</code></td>
+</tr>
+<tr>
+<td>GED</td>
+<td><code>(query false)</code></td>
+<td><code>unsat</code></td>
+</tr>
+<tr>
+<td>WMI</td>
+<td><code>(query main@acpi_wmi_probe.exit.i.split)</code></td>
+<td><code>sat</code></td>
+</tr>
+</tbody></table>
+<p>TPM 和 WMI 的零参数关系表示相应错误终点是否可达，不能仅凭名字将其当作普通的成功返回位置；需要结合下面的后端 IR，看到终点之前实际要求断言为假并执行 <code>seahorn.fail()</code>。GED 的查询则直接化为逻辑常量 <code>false</code>，没有剩余错误终点。</p>
+<h2>6. 真实缺陷案例：TPM</h2>
+<h3>6.1 源代码中的问题</h3>
+<p>此案例对应论文附录 A.1。原始内核文件为 <code>drivers/char/tpm/eventlog/common.c</code>，本地副本是 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E6%BA%90%E7%A0%81/tpm-common.c">TPM 源码</a>。</p>
+<p><code>tpm_bios_measurements_ops</code> 将 <code>.open</code> 指向 <code>tpm_bios_measurements_open()</code>，将 <code>.release</code> 指向 <code>tpm_bios_measurements_release()</code>。</p>
+<p>关键位置如下：</p>
+<table>
+<thead>
+<tr>
+<th>行号</th>
+<th>语句或操作</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>42</td>
+<td><code>get_device(&amp;chip-&gt;dev)</code></td>
+<td>获取设备引用</td>
+</tr>
+<tr>
+<td>46</td>
+<td><code>err = seq_open(file, seqops)</code></td>
+<td>打开序列文件，可能失败</td>
+</tr>
+<tr>
+<td>47–50</td>
+<td><code>if (!err) { ... }</code></td>
+<td>只处理成功情况</td>
+</tr>
+<tr>
+<td>52</td>
+<td><code>return err</code></td>
+<td>错误时直接返回</td>
+</tr>
+<tr>
+<td>61</td>
+<td><code>put_device(&amp;chip-&gt;dev)</code></td>
+<td>位于正常关闭的释放回调中</td>
+</tr>
+</tbody></table>
+<p>将源码中与问题相关的部分简化为：</p>
+<pre><code class="language-c">get_device(&amp;chip-&gt;dev);
+
+err = seq_open(file, seqops);
+if (!err) {
+    seq = file-&gt;private_data;
+    seq-&gt;private = chip;
+}
+return err;
+</code></pre>
+<p>如果 <code>seq_open()</code> 失败，前面获取的引用没有在错误返回前释放。此时 <code>.open</code> 本身已经失败，正常打开后关闭文件的 <code>.release</code> 回调不会替这条失败路径完成清理。因此，不能因为文件中存在 <code>put_device()</code> 就认为引用已经配对。</p>
+<h3>6.2 与引用计数断言和求解结果的对应</h3>
+<p>用模型计数表示这条错误路径：</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>操作</th>
+<th>模型计数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>进入初始化</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>get_device()</code></td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>seq_open()</code> 返回错误</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td><code>.open</code> 返回非零，进入失败检查</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>检查 <code>model_refcount == 1</code></td>
+<td>不成立</td>
+</tr>
+</tbody></table>
+<p>因此，存在一个净增引用未归还的失败路径，求解结果为 <code>sat</code>。</p>
+<p>在 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/instrumented.ll">TPM 中间 IR，第 26607 行</a> 中，<code>drvhorn.fail</code> 调用 <code>drvhorn.assert_kref</code>。后者的关键逻辑如下：</p>
+<pre><code class="language-llvm">%2 = load i32, i32* %1, align 4
+%3 = icmp eq i32 %2, 1
+br i1 %3, label %ret, label %err
+
+err:
+  call void @verifier.error()
+  unreachable
+</code></pre>
+<p>这段 IR 明确建立了源码引用计数与求解目标的联系：计数不等于 1，就到达 <code>verifier.error()</code>。导出运行的 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/stdout.txt">求解轨迹</a> 包含：</p>
+<pre><code class="language-text">sat
+main@get_device.exit.i.i.split
+main@get_device.exit.i.i.split --&gt; query!0
+</code></pre>
+<p>轨迹中的名称是优化后 IR 的位置，不能把它们直接视为完整的 C 源码调用栈；需要结合上述源码和计数模型还原含义。</p>
+<h3>6.3 已有修复与证据范围</h3>
+<p><a href="https://github.com/torvalds/linux/commit/5d8e2971e817bb64225fc0b6327a78752f58a9aa">Linux 修复提交 5d8e297</a> 在失败分支补上释放操作：</p>
+<pre><code class="language-c">if (!err) {
+    seq = file-&gt;private_data;
+    seq-&gt;private = chip;
+} else {
+    put_device(&amp;chip-&gt;dev);
+}
+</code></pre>
+<p>补充的 <code>put_device()</code> 正好对应失败路径中缺少的引用归还。此案例的证据链为：源码失败分支遗漏释放、模型断言可违反、工具输出 <code>sat</code>，且已有内核修复补齐该操作。</p>
+<p>本次没有运行打补丁后的版本，所以不能把“修复后输出 <code>unsat</code>”列为已完成的实验结果。</p>
+<h3>6.4 把“源码—断言—求解结果”连成完整推导</h3>
+<p><strong>检查对象与时机。</strong> 被检查的是 <code>chip-&gt;dev</code> 内嵌的 <code>kref</code>。原始 C 文件没有手写这条断言，它由 DrvHorn 添加。生成的 <code>main</code> 初始化该计数，并把其地址保存在 <code>drvhorn.kref.struct.file_operations</code>；调用 <code>.open</code> 后，只有返回值非零才调用 <code>drvhorn.fail</code>。失败检查再读出同一个地址，交给 <code>drvhorn.assert_kref</code>。因此，获取引用和最后检查关联的是同一个设备，而不是两个对象的计数混算。</p>
+<p>相关入口见 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/instrumented.ll">TPM 模型 main，第 26555 行</a>。其含义可写为以下等价伪代码；这不是原始内核 C 代码：</p>
+<pre><code class="language-c">c_chip = 1;                         // 工具设置的模型基准
+err = tpm_bios_measurements_open();  // 内部 get_device 使 c_chip 加 1
+if (err != 0)
+    assert(c_chip == 1);            // DrvHorn 添加的失败出口检查
+</code></pre>
+<p><strong>源码路径如何给出断言反例。</strong> 选择源码第 42 行已经获取引用、第 46 行 <code>seq_open</code> 失败的路径，则 <code>c_chip = 1 + 1 = 2</code>；第 52 行直接错误返回，没有中间的 put，所以断言计算的是 <code>2 == 1</code>，结果为假。第 61 行的 put 属于另一个释放回调，不在这条打开失败的执行路径上，不能用它抵消这里的 get。</p>
+<p><strong>为什么求解器输出 sat。</strong> <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/solver.final.ll">后端 IR 第 28132 行</a> 把检查变成：</p>
+<pre><code class="language-llvm">%_11 = load i32, i32* %_10, align 4
+%_12 = icmp eq i32 %_11, 1
+call void @verifier.assume.not(i1 %_12)
+call void @seahorn.fail()
+</code></pre>
+<p><code>assume.not</code> 表示只保留比较不成立的执行。因此，求解器寻找的正是“失败返回且计数不等于 1”的路径。对于上述 <code>c_chip = 2</code> 的状态，该路径满足所有相关条件，能够执行到错误终点。<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/solver.smt2">实际 SMT 文件第 4296 行</a> 查询该终点，输出 <code>sat</code>；<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/solver.stdout.txt">本机重求解输出</a> 保留了该结果。</p>
+<p>将这一条路径概括为逻辑条件，就是 <code>open_failed ∧ c_chip != 1</code>。源码允许打开失败，又确实没有归还已经取得的引用，因此模型反例对应真实缺陷。</p>
+<h2>7. 未发现缺陷案例：GED</h2>
+<h3>7.1 源代码入口</h3>
+<p>原始文件为 <code>drivers/acpi/evged.c</code>，本地副本是 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E6%BA%90%E7%A0%81/evged.c">GED 源码</a>。<code>ged_driver</code> 在第 188 行将 <code>.probe</code> 指向第 141 行的 <code>ged_probe()</code>。</p>
+<p>该函数主要分配驱动数据、遍历 ACPI 资源并保存驱动数据。在该入口的直接代码中，没有与 TPM 类似的显式 <code>get_device()</code> 后错误返回遗漏释放的结构。</p>
+<h3>7.2 为什么本次 <code>unsat</code> 需要谨慎解释</h3>
+<p>进一步检查发现，<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/ged_driver/stderr.txt">GED 日志</a> 明确提示：</p>
+<pre><code class="language-text">WARNING: no assertion was found so either program does not have assertions or frontend discharged them.
+</code></pre>
+<p>同时，<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/ged_driver/instrumented.ll">GED 中间 IR，第 26432 行</a> 中的失败检查函数已经为空：</p>
+<pre><code class="language-llvm">define void @drvhorn.fail(%struct.platform_device.1459* %0) {
+entry:
+  ret void
+}
+</code></pre>
+<p>这说明交给后续求解流程的模型中，没有剩余的引用计数断言。日志给出的可能性是原本没有相关断言，或断言已由前端处理；仅凭该日志不能进一步区分。</p>
+<p>因此，本次结果应表述为：</p>
+<blockquote>
+<p>GED 案例输出 <code>unsat</code>，与作者示例一致；但本次预处理后没有剩余的引用计数断言，因此其含义是当前检查模型没有可达的断言违反，不能扩大为已经证明整个 GED 驱动完全正确。</p>
+</blockquote>
+<p>该案例说明，解读 <code>unsat</code> 不仅需要看求解结果，还需要确认验证条件是否实际保留到了求解阶段。</p>
+<h3>7.3 区分“初始化失败”与“引用计数断言失败”</h3>
+<p>GED 也使用“probe 失败时检查引用平衡”的通用验证目标，但本次最终模型没有保留下来的具体计数断言。因此，不能虚构一条实际存在的 <code>assert(c == 1)</code>，再宣称求解器对它证明了复杂不变量。</p>
+<p>源码与模型的对应为：</p>
+<table>
+<thead>
+<tr>
+<th>原始源码操作</th>
+<th>模型中的对应</th>
+<th>是否意味着引用计数错误</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>第 146–148 行分配失败</td>
+<td><code>ged_probe</code> 可以返回 -12</td>
+<td>只是初始化失败，不自动构成引用错误</td>
+</tr>
+<tr>
+<td>第 150 行保存 <code>&amp;pdev-&gt;dev</code></td>
+<td>地址赋值，不是 <code>get_device</code></td>
+<td>保存指针本身不增加引用计数</td>
+</tr>
+<tr>
+<td>第 152–156 行资源解析失败</td>
+<td><code>ged_probe</code> 可以返回 -22</td>
+<td>同样只是初始化失败</td>
+</tr>
+<tr>
+<td>probe 返回非零</td>
+<td><code>main</code> 进入 <code>drvhorn.fail</code></td>
+<td>进入失败出口后，还要有被违反的断言才算告警</td>
+</tr>
+<tr>
+<td><code>drvhorn.fail</code> 只有 <code>ret void</code></td>
+<td>不会从该函数到达错误标记</td>
+<td>本次没有剩余错误分支</td>
+</tr>
+</tbody></table>
+<p>例如，源码分配失败返回 <code>-ENOMEM</code>，验证入口确实会进入 <code>fail</code>。但是这里的 <code>fail</code> 是工具构造的“失败返回处理函数”，其名称不代表已经发生断言违反；它的函数体直接返回，没有调用 <code>verifier.error()</code>。</p>
+<p>本机新导出的 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/ged_driver/solver.smt2">GED 实际 SMT 文件</a> 查询为：</p>
+<pre><code class="language-smt2">(query false)
+</code></pre>
+<p>逻辑常量 false 不可能成立，因此 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/ged_driver/solver.stdout.txt">本机求解输出</a> 为 <code>unsat</code>。这不是“probe 不会失败”，也不是“整个驱动永远安全”；它说明本次转换后的验证程序没有可达的引用计数错误。</p>
+<h2>8. 误报案例：WMI</h2>
+<h3>8.1 源代码中的对象管理与清理</h3>
+<p>原始文件为 <code>drivers/platform/x86/wmi.c</code>，本地副本是 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E6%BA%90%E7%A0%81/wmi.c">WMI 源码</a>。<code>acpi_wmi_driver</code> 的 <code>.probe</code> 指向第 1450 行的 <code>acpi_wmi_probe()</code>。</p>
+<p>该入口会创建设备并调用 <code>parse_wdg()</code>，其中涉及多对象、链表和错误清理。关键位置如下：</p>
+<table>
+<thead>
+<tr>
+<th>行号</th>
+<th>操作</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1219</td>
+<td><code>device_initialize(&amp;wblock-&gt;dev.dev)</code></td>
+<td>初始化设备对象</td>
+</tr>
+<tr>
+<td>1330</td>
+<td><code>device_add(&amp;wblock-&gt;dev.dev)</code></td>
+<td>尝试添加设备</td>
+</tr>
+<tr>
+<td>1337</td>
+<td><code>put_device(&amp;wblock-&gt;dev.dev)</code></td>
+<td>对应添加失败分支中的清理</td>
+</tr>
+<tr>
+<td>1482</td>
+<td><code>device_create(...)</code></td>
+<td>创建 WMI 总线设备</td>
+</tr>
+<tr>
+<td>1490</td>
+<td><code>parse_wdg(wmi_bus_dev, acpi_device)</code></td>
+<td>解析并创建相关对象</td>
+</tr>
+<tr>
+<td>1499</td>
+<td><code>device_unregister(wmi_bus_dev)</code></td>
+<td>错误清理路径中的设备注销</td>
+</tr>
+</tbody></table>
+<p>这些位置说明源码存在相应清理结构，但仅仅看到清理调用，不能证明每一条实际路径上的对象关系和引用都正确。</p>
+<h3>8.2 本次求解观察</h3>
+<p><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/instrumented.ll">WMI 中间 IR，第 26954 行</a> 中，失败出口调用两个模型存储检查函数：</p>
+<pre><code class="language-llvm">call void @drvhorn.check_storage.struct.device.189()
+call void @drvhorn.check_storage.custom.7()
+</code></pre>
+<p>模型中的 <code>drvhorn.assert_kref</code> 同样执行计数是否等于 1 的检查。<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/stdout.txt">导出的求解轨迹</a> 为：</p>
+<pre><code class="language-text">sat
+main@_54
+main@_54 --&gt; main@_54
+main@_54 --&gt; main@acpi_wmi_probe.exit.i.split
+main@acpi_wmi_probe.exit.i.split --&gt; query!0
+</code></pre>
+<p>这表明转换后的模型存在到达错误查询的路径，但轨迹没有提供足以完整还原 C 源码执行的对象身份、计数值和分支条件。</p>
+<h3>8.3 为什么称为误报，初次分析能确定到什么程度</h3>
+<p><a href="https://github.com/joehattori/drvhorn#evaluation">作者 README 的 Evaluation 部分</a> 明确将 <code>acpi_wmi_driver</code> 作为“正确预期是 <code>unsat</code>，工具却输出 <code>sat</code>”的误报示例。本次结果与该描述一致。</p>
+<p>论文第 4.4 节讨论了两类一般性误报来源：</p>
+<ol>
+<li>程序切片忽略部分间接信息流，使原本有关联的条件或状态丢失联系。</li>
+<li>SeaHorn 对指针、别名和内存关系的保守抽象，使模型包含真实程序中不可执行的路径。</li>
+</ol>
+<p>这些因素可以解释为什么模型有错误路径，而真实源码未必有相应缺陷。初次分析仅有前述简略轨迹，没有足够证据确定 WMI 具体丢失的约束。论文附录 B.1 具体分析的是 <code>acer_platform_probe</code>，不能将那个案例的根因直接套用到 WMI。后续收到的外部详细轨迹提供了补充证据，见第 8.4 节。</p>
+<p>因此，初次分析可以确认“复现了作者标注的 WMI 误报”，不能仅凭 <code>sat</code> 将其当作新的真实引用泄漏。</p>
+<h3>8.4 外部材料交叉核查：一条具体的 WMI 虚假反例</h3>
+<p>随后对用户提供的 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E5%A4%96%E9%83%A8%E6%9D%90%E6%96%99%E6%A0%B8%E6%9F%A5/%E6%A0%B8%E6%9F%A5%E8%AE%B0%E5%BD%95.json">另一份实验材料压缩包（见核查记录）</a> 进行了只读核查，没有执行其中脚本。材料中的三份案例 IR 与本机此前导出的文件逐字节相同，三份内核源码也逐字节相同；内核 bitcode 的 SHA-256 一致。因此，可以对照其详细反例解释同一份 WMI 验证模型。</p>
+<p>外部记录已另行保存，避免与本机运行结果混淆：</p>
+<ul>
+<li><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E5%A4%96%E9%83%A8%E6%9D%90%E6%96%99%E6%A0%B8%E6%9F%A5/wmi.trace.txt">外部 WMI 详细轨迹</a></li>
+<li><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E5%A4%96%E9%83%A8%E6%9D%90%E6%96%99%E6%A0%B8%E6%9F%A5/results.json">外部实验结果</a></li>
+<li><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E5%A4%96%E9%83%A8%E6%9D%90%E6%96%99%E6%A0%B8%E6%9F%A5/%E6%A0%B8%E6%9F%A5%E8%AE%B0%E5%BD%95.json">IR 一致性核查记录</a></li>
+</ul>
+<p>核对得到如下路径：</p>
+<table>
+<thead>
+<tr>
+<th>轨迹行号</th>
+<th>观察</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1505–1515</td>
+<td>创建选中的 <code>custom.7</code> 模型对象，计数初始化为 1</td>
+<td>建立受检查对象及其基准</td>
+</tr>
+<tr>
+<td>1560–1588</td>
+<td>创建相关分支选择失败，结果为 -5</td>
+<td>没有走成功初始化和入链分支</td>
+</tr>
+<tr>
+<td>1606–1615</td>
+<td>链表头与 next 的符号地址均为 761，但非确定循环条件取 false，继续进入循环体</td>
+<td>模型允许空链表进入注册遍历</td>
+</tr>
+<tr>
+<td>1644–1673</td>
+<td>从链表位置恢复对象地址，执行计数减 1，得到 0</td>
+<td>模型在不应进入的循环体内执行 put</td>
+</tr>
+<tr>
+<td>1730–1753</td>
+<td>选择下标 0 的对象，读取计数 0，违反 <code>count == 1</code> 并到达 <code>seahorn.fail</code></td>
+<td>解释此次 <code>sat</code> 的具体触发过程</td>
+</tr>
+</tbody></table>
+<p>这里的地址数字是反例中的符号取值，不是真实内核运行时地址。</p>
+<p>对应源代码第 1308–1314 行，候选对象创建失败后被释放并 <code>continue</code>，只有成功对象才执行 <code>list_add_tail</code>。第 1326 行的链表遍历不会把空链表头作为有效设备处理。然而，<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/instrumented.ll">同一模型 IR 的第 26729 行</a> 使用 <code>verifier.nondetvalue.1()</code> 决定是否进入循环，使模型允许空链表仍进入循环体；抽象内存的对象关联进一步让该次 put 影响受检查对象。</p>
+<p>因此，新增证据支持一条具体误报解释：链表结束条件及对象关系在模型中没有得到完整保留，导致源码不可行的执行在模型中可行。该反例体现的是模型计数从 1 降至 0，而不是 TPM 那样的计数从 1 升至 2。</p>
+<p>此结论来自对外部轨迹与本机相同 IR 的交叉核查。本机尚未独立重新生成这份详细轨迹，也未修正模型后进行对照求解；不能据此声称已经消除 WMI 的全部误报。</p>
+<h3>8.5 把“断言确实违反”与“反例在源码中不可行”分别解释</h3>
+<p><strong>断言检查哪个对象。</strong> WMI 的失败出口检查模型对象存储区。对于这份反例，选中的是 <code>drvhorn.storage.custom.7</code> 的下标 0，检查该对象内嵌设备的 kref。该地址由 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/instrumented.ll">第 27008 行开始的存储检查函数</a> 计算，再传给 <code>drvhorn.assert_kref</code>。这不是仅检查父总线设备的计数。</p>
+<p>检查过程可写成以下等价伪代码：</p>
+<pre><code class="language-c">err = acpi_wmi_probe();
+if (err != 0 &amp;&amp; target_index != -1) {
+    obj = storage_custom_7[target_index];
+    assert(obj.device.kref == 1);
+}
+</code></pre>
+<p>这是说明选中子对象检查的模型伪代码，省略了其他存储区检查。<code>target_index == -1</code> 表示没有选中对象，不能把“未选中对象”误写成对某个对象计数的证明。</p>
+<p><strong>为什么该模型得到 sat。</strong> 外部详细反例中的状态变化为：</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>路径条件与操作</th>
+<th>选中对象的模型计数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>生成选中的抽象对象</td>
+<td>1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>候选设备创建失败，未走成功入链分支</td>
+<td>1</td>
+</tr>
+<tr>
+<td>3</td>
+<td>链表为空，但非确定条件选择继续进入注册循环</td>
+<td>1</td>
+</tr>
+<tr>
+<td>4</td>
+<td>注册分支选择失败，对模型关联的对象执行 put</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>probe 非零返回，读取下标 0 对象的计数</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>比较 <code>0 == 1</code></td>
+<td>为假，进入错误标记</td>
+</tr>
+</tbody></table>
+<p>因此，这条模型路径违反的条件是 <code>probe_failed ∧ c_selected != 1</code>，具体为计数 0 不等于基准 1。它表示该模型路径多执行了一次释放，不能把所有 <code>sat</code> 都解释成“遗漏释放造成泄漏”。</p>
+<p>本机新导出的 <a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/solver.final.ll">WMI 后端 IR 第 27389 行</a> 同样显示读取计数、比较是否等于 1、通过 <code>assume.not</code> 保留比较失败的执行，然后调用 <code>seahorn.fail()</code>。<a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/solver.smt2">实际 SMT 文件第 7894 行</a> 查询：</p>
+<pre><code class="language-smt2">(query main@acpi_wmi_probe.exit.i.split)
+</code></pre>
+<p><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/solver.stdout.txt">本机重求解输出</a> 为 <code>sat</code>。这一步确认的是验证模型错误状态可达，不是确认原始源码存在同样的执行。</p>
+<p><strong>为什么这条 sat 路径不能映射为真实源码缺陷。</strong> 原始源码第 1308–1311 行在创建失败后 <code>continue</code>，绕过第 1314 行入链操作；第 1326 行遍历的是已入链对象。当反例中的链表为空时，真实链表循环应直接结束，不会执行第 1337 行的 put。</p>
+<p>关键差异不是 put 语句本身，而是它的执行前提：源码要求先存在可遍历的链表元素，模型却允许链表为空仍进入循环体，并通过抽象对象关联改变受检查对象的计数。因此，模型中的 <code>0 != 1</code> 是一次真实的模型断言违反，但该执行被源码的链表条件排除；这解释了这条候选反例为何属于误报。</p>
+<p>WMI 的详细取值仍引用外部轨迹；本节新增的本机独立证据是实际 CHC、后端 IR 和重求解结果。两类证据的来源不能混写。</p>
+<h2>9. 综合分析与结论</h2>
+<p>三个案例共同展示了从论文性质到工具输出，再回到源代码核查的过程：</p>
+<table>
+<thead>
+<tr>
+<th>案例</th>
+<th>断言及模型情况</th>
+<th>求解结果</th>
+<th>源码分析后的结论</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TPM</td>
+<td>失败出口检查计数恢复基准；存在获取后未归还的路径</td>
+<td><code>sat</code></td>
+<td>对应真实的遗漏释放，已有修复</td>
+</tr>
+<tr>
+<td>GED</td>
+<td>本次预处理后无剩余引用计数断言</td>
+<td><code>unsat</code></td>
+<td>工具未报告错误；结论限于本次模型</td>
+</tr>
+<tr>
+<td>WMI</td>
+<td>模型检查对象存储中的计数；错误查询可达</td>
+<td><code>sat</code></td>
+<td>与作者已知误报一致；外部详细轨迹支持空链表仍进入循环的具体虚假反例</td>
+</tr>
+</tbody></table>
+<p>从论文方法的角度，本次实验支持以下认识：</p>
+<ul>
+<li>引用计数检查需要结合具体对象和控制流，尤其是失败出口，不能只统计源码中 <code>get</code> 与 <code>put</code> 的出现次数。</li>
+<li><code>sat</code> 表示模型中的错误状态可达，源码分析负责判断候选路径是否对应真实缺陷。</li>
+<li><code>unsat</code> 的意义取决于模型和实际保留的验证条件；没有剩余断言时，不能将结果解释为对整个驱动的全面证明。</li>
+<li>本次已复现三类代表性行为并补跑全部 17 个轻量平台驱动。外部详细轨迹支持一条具体 WMI 虚假反例；尚未完成论文完整基准、TPM 修复后对照运行、WMI 详细反例在本机重新生成，以及模型修正后对照求解。</li>
+</ul>
+<h2>10. 本地证据索引</h2>
+<table>
+<thead>
+<tr>
+<th>内容</th>
+<th>位置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>论文</td>
+<td><a href="%E8%AE%BA%E6%96%87/DrvHorn_arXiv_2605.13246v2.pdf">论文 PDF</a></td>
+</tr>
+<tr>
+<td>实验脚本</td>
+<td><a href="%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Run-Experiments.ps1">Run-Experiments.ps1</a></td>
+</tr>
+<tr>
+<td>首次运行结果及耗时</td>
+<td><a href="experiment-results/20261019-152023/summary.json">summary.json</a></td>
+</tr>
+<tr>
+<td>IR 导出脚本</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/capture_cases.py">capture_cases.py</a></td>
+</tr>
+<tr>
+<td>IR 导出命令记录</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/capture-results.json">capture-results.json</a></td>
+</tr>
+<tr>
+<td>实际 CHC 导出与后端重求解命令</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E9%80%BB%E8%BE%91%E8%AF%81%E6%8D%AE%E5%AF%BC%E5%87%BA%E8%AE%B0%E5%BD%95.json">逻辑证据导出记录.json</a></td>
+</tr>
+<tr>
+<td>TPM 实际 CHC</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/solver.smt2">solver.smt2</a></td>
+</tr>
+<tr>
+<td>GED 实际 CHC</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/ged_driver/solver.smt2">solver.smt2</a></td>
+</tr>
+<tr>
+<td>WMI 实际 CHC</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/solver.smt2">solver.smt2</a></td>
+</tr>
+<tr>
+<td>TPM 源码</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E6%BA%90%E7%A0%81/tpm-common.c">tpm-common.c</a></td>
+</tr>
+<tr>
+<td>GED 源码</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E6%BA%90%E7%A0%81/evged.c">evged.c</a></td>
+</tr>
+<tr>
+<td>WMI 源码</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/%E6%BA%90%E7%A0%81/wmi.c">wmi.c</a></td>
+</tr>
+<tr>
+<td>TPM 模型 IR</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/tpm_bios_measurements_ops/instrumented.ll">instrumented.ll</a></td>
+</tr>
+<tr>
+<td>GED 模型 IR</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/ged_driver/instrumented.ll">instrumented.ll</a></td>
+</tr>
+<tr>
+<td>WMI 模型 IR</td>
+<td><a href="%E5%AE%9E%E9%AA%8C%E5%88%86%E6%9E%90/ir/acpi_wmi_driver/instrumented.ll">instrumented.ll</a></td>
+</tr>
+</tbody></table>
+<p>源码行号和 IR 行号均针对当前本地副本；更换内核、工具版本或重新导出 IR 后，行号可能变化。</p>
+</main></body></html>
