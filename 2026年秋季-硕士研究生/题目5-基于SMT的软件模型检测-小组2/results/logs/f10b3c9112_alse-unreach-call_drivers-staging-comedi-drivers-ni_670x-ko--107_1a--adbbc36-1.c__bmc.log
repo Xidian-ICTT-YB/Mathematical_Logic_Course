@@ -1,0 +1,270 @@
+Running CPAchecker with Java heap of size 5000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            6 (1% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         6 (100%)
+  Times precision was empty:       6 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         22
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       34
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.351s
+  Time for path formula creation:        0.346s
+Time for strengthen operator:            0.013s
+Time for prec operator:                  0.011s
+  Time for abstraction:                  0.001s (Max:     0.001s, Count: 6)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.012s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                    775 (count: 554, min: 0, max: 9, avg: 1.40)
+Number of global variables:                             219 (count: 554, min: 0, max: 1, avg: 0.40)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     564
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.035s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                25
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   46
+Number of deterministic Assumptions:                      2
+Level of Determinism:                              4%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.012s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          564 (count: 570, min: 0, max: 1, avg: 0.99) [0 x 6, 1 x 564]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            554
+Max size of waitlist:            9
+Average size of waitlist:        2
+Number of computed successors:   564
+Max successors for one state:    2
+Number of times merged:          11
+Number of times stopped:         11
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.735s (Max:     0.735s)
+  Time for choose from waitlist:      0.008s
+  Time for precision adjustment:      0.108s
+  Time for transfer relation:         0.539s
+  Time for merge operator:            0.031s
+  Time for stop operator:             0.003s
+  Time for adding to reached set:     0.027s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           0.736s
+Time for final sat check:                0.047s
+Time for error path creation:            0.229s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    1
+Number of infeasible paths:         0 (0%)
+Time for counterexample checks:         1.892s
+Time for running CBMC:                  1.725s
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.333
+  Visited lines:          395
+  Total lines:            650
+  Line coverage:          0.608
+  Visited conditions:     39
+  Total conditions:       142
+  Condition coverage:     0.275
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     895
+Number of CFA edges:             966
+Number of relevant variables:    121
+Number of functions:             33
+Number of loops:                 8
+Size of reached set:             554
+  Number of reached locations:   506 (57%)
+    Avg states per location:     1
+    Max states per location:     6 (at node N644)
+  Number of reached functions:   11 (33%)
+  Number of partitions:          554
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       6
+
+Time for analysis setup:          2.732s
+  Time for loading CPAs:          0.783s
+  Time for loading parser:        0.419s
+  Time for CFA construction:      1.420s
+    Time for parsing file(s):     0.476s
+    Time for AST to CFA:          0.423s
+    Time for CFA sanity check:    0.125s
+    Time for post-processing:     0.409s
+      Time for var class.:        0.180s
+Time for Analysis:                3.257s
+CPU time for analysis:            2.710s
+Time for analyzing result:        0.004s
+Total time for CPAchecker:        6.010s
+Total CPU time for CPAchecker:    7.730s
+Time for statistics:              0.169s
+
+Time for Garbage Collector:       0.193s (in 6 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                 84MB (    80 MiB) max;     47MB (    45 MiB) avg;    101MB (    96 MiB) peak
+Used non-heap memory:             34MB (    33 MiB) max;     29MB (    28 MiB) avg;     35MB (    34 MiB) peak
+Used in PS Old Gen pool:          22MB (    21 MiB) max;     13MB (    12 MiB) avg;     22MB (    21 MiB) peak
+Allocated heap memory:           170MB (   162 MiB) max;    143MB (   137 MiB) avg
+Allocated non-heap memory:        36MB (    35 MiB) max;     31MB (    30 MiB) avg
+Total process virtual memory:   8977MB (  8561 MiB) max;   8771MB (  8365 MiB) avg
+
+Verification result: FALSE. Property violation (__VERIFIER_error(); called in line 2223) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+
+Using the following resource limits: CPU-time limit of 170s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 1684: Dead code detected: [size > 8192UL] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1684: Dead code detected: [!(size > 8192UL)] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1685: Dead code detected: tmp = kmalloc_large(size, flags); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1690: Dead code detected: [(flags & 1U) == 0U] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1690: Dead code detected: [!((flags & 1U) == 0U)] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1691: Dead code detected: tmp___0 = kmalloc_slab(size); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1693: Dead code detected: [!(((unsigned long)s) == ((unsigned long)((struct kmem_cache *)0)))] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1694: Dead code detected: return (16); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1698: Dead code detected: ret = kmem_cache_alloc_notrace(s, flags); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+lines 1494-1499: Function pointer *((void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ))it_func) with type void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_handler_precall to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_driver_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __pci_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_unregister_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_driver_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_unsetup to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function free_irq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_list_devices to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_license to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_author to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_description to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Error found, creating error path (BMCAlgorithm.analyzeCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+

@@ -1,0 +1,248 @@
+Running CPAchecker with Java heap of size 5000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            16 (1% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            15 (94%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         1 (6%)
+  Times precision was empty:       16 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         76
+  BDD entailment checks:           10
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       48
+Number of predicates discovered:          0
+
+Number of path formula cache hits:   418 (28%)
+
+Time for post operator:                  1.144s
+  Time for path formula creation:        1.114s
+    Actual computation:                  1.086s
+Time for strengthen operator:            0.027s
+Time for prec operator:                  0.030s
+  Time for abstraction:                  0.006s (Max:     0.002s, Count: 16)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.137s
+Time for coverage check:                 0.004s
+  Time for BDD entailment checks:        0.004s
+Total time for SMT solver (w/o itp):     0.000s
+
+Number of BDD nodes:                               202
+Size of BDD node table:                            233021
+Size of BDD cache:                                 23311
+Size of BDD node cleanup queue:                           0 (count: 27, min: 0, max: 0, avg: 0.00)
+Time for BDD node cleanup:                             0.001s
+Time for BDD garbage collection:                       0.000s (in 0 runs)
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.074s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         1098 (count: 1098, min: 1, max: 1, avg: 1.00) [1 x 1098]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            435
+Max size of waitlist:            20
+Average size of waitlist:        11
+Number of computed successors:   480
+Max successors for one state:    2
+Number of times merged:          33
+Number of times stopped:         43
+Number of times breaked:         1
+
+Total time for CPA algorithm:         1.859s (Max:     1.859s)
+  Time for choose from waitlist:      0.011s
+  Time for precision adjustment:      0.127s
+  Time for transfer relation:         1.448s
+  Time for merge operator:            0.160s
+  Time for stop operator:             0.016s
+  Time for adding to reached set:     0.061s
+
+Static Predicate Refiner statistics
+-----------------------------------
+Number of predicates found statically:                    0 (count: 0, min: 0, max: 0, avg: 0.00)
+
+Total time for static refinement:                      0.331s
+  Time for path feasibility check:                     0.138s
+
+Predicate-Abstraction Refiner statistics
+----------------------------------------
+Number of predicate refinements:                   0
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                1
+Number of successful refinements:     0
+Number of failed refinements:         0
+Max. size of reached set before ref.: 438
+Max. size of reached set after ref.:  0
+Avg. size of reached set before ref.: 438.00
+Avg. size of reached set after ref.:  NaN
+
+Total time for CEGAR algorithm:       2.242s
+Time for refinements:                 0.383s
+Average time for refinement:          0.383s
+Max time for refinement:              0.383s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    1
+Number of infeasible paths:         0 (0%)
+Time for counterexample checks:         0.366s
+Time for running CBMC:                  0.322s
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.513
+  Visited lines:          503
+  Total lines:            744
+  Line coverage:          0.676
+  Visited conditions:     66
+  Total conditions:       200
+  Condition coverage:     0.330
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1115
+Number of CFA edges:             1235
+Number of relevant variables:    135
+Number of functions:             39
+Number of loops:                 5
+Size of reached set:             438
+  Number of reached locations:   215 (19%)
+    Avg states per location:     2
+    Max states per location:     22 (at node N263)
+  Number of reached functions:   20 (51%)
+  Number of partitions:          438
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       1
+  Size of final wait list        3
+
+Time for analysis setup:          3.004s
+  Time for loading CPAs:          0.823s
+  Time for loading parser:        0.419s
+  Time for CFA construction:      1.599s
+    Time for parsing file(s):     0.537s
+    Time for AST to CFA:          0.492s
+    Time for CFA sanity check:    0.127s
+    Time for post-processing:     0.400s
+      Time for var class.:        0.222s
+Time for Analysis:                2.610s
+CPU time for analysis:            3.970s
+Time for analyzing result:        0.002s
+Total time for CPAchecker:        5.628s
+Total CPU time for CPAchecker:    9.510s
+Time for statistics:              0.098s
+
+Time for Garbage Collector:       0.206s (in 6 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                 66MB (    63 MiB) max;     39MB (    37 MiB) avg;     81MB (    77 MiB) peak
+Used non-heap memory:             35MB (    33 MiB) max;     28MB (    27 MiB) avg;     35MB (    33 MiB) peak
+Used in PS Old Gen pool:          22MB (    21 MiB) max;     16MB (    15 MiB) avg;     27MB (    26 MiB) peak
+Allocated heap memory:           170MB (   162 MiB) max;    145MB (   138 MiB) avg
+Allocated non-heap memory:        36MB (    34 MiB) max;     30MB (    29 MiB) avg
+Total process virtual memory:   8977MB (  8561 MiB) max;   8700MB (  8297 MiB) avg
+
+Verification result: FALSE. Property violation (__VERIFIER_error(); called in line 2422) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+
+Using the following resource limits: CPU-time limit of 170s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 1700: Dead code detected: [size > 8192UL] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1700: Dead code detected: [!(size > 8192UL)] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1701: Dead code detected: tmp = kmalloc_large(size, flags); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1706: Dead code detected: [(flags & 1U) == 0U] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1706: Dead code detected: [!((flags & 1U) == 0U)] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1707: Dead code detected: tmp___0 = kmalloc_slab(size); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1709: Dead code detected: [!(((unsigned long)s) == ((unsigned long)((struct kmem_cache *)0)))] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1710: Dead code detected: return (16); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1714: Dead code detected: ret = kmem_cache_alloc_notrace(s, flags); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+lines 1510-1515: Function pointer *((void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ))it_func) with type void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit) and JFactory 1.21. (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with PredicateAbstractionRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_handler_precall to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_driver_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __pci_register_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_unregister_driver to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_driver_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_buf_put to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_event to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function free_irq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_unsetup to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_list_devices to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_setup to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __raw_spin_lock_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function request_threaded_irq to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_license to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Error path found, starting counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+

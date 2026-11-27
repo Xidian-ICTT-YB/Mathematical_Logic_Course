@@ -1,0 +1,423 @@
+Running CPAchecker with Java heap of size 5000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.146s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        30047 (count: 30155, min: 0, max: 1, avg: 1.00) [0 x 108, 1 x 30047]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            13626
+Max size of waitlist:            15
+Average size of waitlist:        5
+Number of computed successors:   14830
+Max successors for one state:    2
+Number of times merged:          3830
+Number of times stopped:         4867
+Number of times breaked:         0
+
+Total time for CPA algorithm:        61.306s (Max:    52.789s)
+  Time for choose from waitlist:      0.046s
+  Time for precision adjustment:      0.140s
+  Time for transfer relation:         7.023s
+  Time for merge operator:           37.148s
+  Time for stop operator:            16.652s
+  Time for adding to reached set:     0.065s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            0 (0% of all post computations)
+Number of strengthen sat checks:   0
+Number of coverage checks:         2234
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       0
+Number of predicates discovered:          0
+
+
+Time for post operator:                  1.383s
+  Time for path formula creation:        1.319s
+Time for strengthen operator:            0.037s
+Time for prec operator:                  0.020s
+Time for merge operator:                 0.299s
+Time for coverage check:                 0.001s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           7
+Maximum loop iteration reached:                    8
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                 237581 (count: 15290, min: 0, max: 20, avg: 15.54)
+Number of global variables:                           74887 (count: 15290, min: 0, max: 5, avg: 4.90)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                   16535
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.146s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                21
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                 2658
+Number of deterministic Assumptions:                   1828
+Level of Determinism:                              69%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.033s
+Automaton transfers with branching:                0
+Automaton transfer successors:                        16535 (count: 16535, min: 1, max: 1, avg: 1.00) [1 x 16535]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            16384
+Max size of waitlist:            93
+Average size of waitlist:        30
+Number of computed successors:   16535
+Max successors for one state:    2
+Number of times merged:          1117
+Number of times stopped:         1117
+Number of times breaked:         0
+
+Total time for CPA algorithm:         3.099s (Max:     0.812s)
+  Time for choose from waitlist:      0.016s
+  Time for precision adjustment:      0.447s
+  Time for transfer relation:         2.149s
+  Time for merge operator:            0.366s
+  Time for stop operator:             0.022s
+  Time for adding to reached set:     0.040s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           3.127s
+Time for final sat check:                0.023s
+Time for bounding assertions check:      3.724s
+Time for induction formula creation:    45.577s
+Time for induction check:                9.283s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.050
+  Visited lines:          0
+  Total lines:            486
+  Line coverage:          0.000
+  Visited conditions:     0
+  Total conditions:       46
+  Condition coverage:     0.000
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     602
+Number of CFA edges:             637
+Number of relevant variables:    79
+Number of functions:             20
+Number of loops:                 5
+Size of reached set:             1
+  Number of reached locations:   1 (0%)
+    Avg states per location:     1
+    Max states per location:     1 (at node N297)
+  Number of reached functions:   1 (5%)
+  Number of partitions:          1
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       0
+  Size of final wait list        1
+
+Time for analysis setup:          2.128s
+  Time for loading CPAs:          0.248s
+  Time for loading parser:        0.438s
+  Time for CFA construction:      1.403s
+    Time for parsing file(s):     0.497s
+    Time for AST to CFA:          0.410s
+    Time for CFA sanity check:    0.100s
+    Time for post-processing:     0.386s
+      Time for var class.:        0.194s
+Time for Analysis:               63.412s
+CPU time for analysis:          166.690s
+Total time for CPAchecker:       65.559s
+Total CPU time for CPAchecker:  170.430s
+Time for statistics:              0.176s
+
+Time for Garbage Collector:       4.250s (in 61 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               1883MB (  1796 MiB) max;    772MB (   736 MiB) avg;   2265MB (  2160 MiB) peak
+Used non-heap memory:             52MB (    49 MiB) max;     48MB (    46 MiB) avg;     52MB (    49 MiB) peak
+Used in PS Old Gen pool:         437MB (   417 MiB) max;    160MB (   152 MiB) avg;    437MB (   417 MiB) peak
+Allocated heap memory:          2075MB (  1979 MiB) max;   1460MB (  1392 MiB) avg
+Allocated non-heap memory:        53MB (    51 MiB) max;     51MB (    48 MiB) avg
+Total process virtual memory:   9516MB (  9075 MiB) max;   9256MB (  8828 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+
+Using the following resource limits: CPU-time limit of 170s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 170s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 170s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function led_classdev_register to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Assuming external function led_classdev_register to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_return_value to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function led_classdev_unregister to be a pure function. (Parallel analysis 1:InductionStepCase:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Adjusting interestingVariableLimit to 1 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 2 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Starting induction check... (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting interestingVariableLimit to 4 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting maxLoopIterations to 2 (Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function led_classdev_unregister to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting interestingVariableLimit to 5 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting maximum formula depth to 3 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$FormulaDepthAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 7 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 8 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Starting induction check... (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting interestingVariableLimit to 10 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 14 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 22 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 26 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 34 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 38 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting interestingVariableLimit to 46 (Parallel analysis 2:InvariantsCPA:InvariantsCPA$InterestingVariableLimitAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting abstraction strategy to NEVER (Parallel analysis 2:InvariantsCPA:InvariantsCPA$AbstractionStrategyAdjuster.adjustConditions, INFO)
+
+Adjusting precision for CPA org.sosy_lab.cpachecker.cpa.invariants.InvariantsCPA@616da84d (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Updating reached set provided to other analyses (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Adjusting maxLoopIterations to 3 (Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Starting induction check... (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting maxLoopIterations to 4 (Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Starting induction check... (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting maxLoopIterations to 5 (Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Starting induction check... (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting maxLoopIterations to 6 (Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Starting induction check... (Parallel analysis 1:KInductionProver.check, INFO)
+
+Adjusting maxLoopIterations to 7 (Parallel analysis 1:BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (Parallel analysis 1:AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Running algorithm to create induction hypothesis (Parallel analysis 1:KInductionProver.check, INFO)
+
+Analysis was terminated (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Warning: Analysis interrupted (AbstractFuture.get, WARNING)
+
+Shutdown requested (The CPU-time limit of 170s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Analysis was terminated (Parallel analysis 1:ParallelAlgorithm.runParallelAnalysis, INFO)
+
