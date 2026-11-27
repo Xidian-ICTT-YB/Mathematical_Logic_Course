@@ -1,0 +1,530 @@
+[
+ {
+  "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--media--rc--keymaps--rc-msi-digivox-iii.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "true",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   5.709320106,
+   6.871733003,
+   6.445630754,
+   5.996661056
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "A_agree_safe",
+  "bytes": 10519
+ },
+ {
+  "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--scsi--scsi_wait_scan.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "true",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   5.678904756,
+   7.503478541,
+   5.445531709,
+   5.240269319
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "A_agree_safe",
+  "bytes": 8161
+ },
+ {
+  "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--cpufreq--cpufreq_powersave.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "true",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   5.840663781,
+   7.504691856,
+   7.050530311,
+   7.160196505
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "A_agree_safe",
+  "bytes": 19181
+ },
+ {
+  "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--watchdog--iTCO_vendor_support.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "true",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   6.249765237,
+   7.779639359,
+   7.021069214,
+   6.251899344
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "A_agree_safe",
+  "bytes": 17360
+ },
+ {
+  "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--w1--slaves--w1_smem.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "true",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   6.202455315,
+   7.862344573,
+   6.989995648,
+   6.034440722
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "A_agree_safe",
+  "bytes": 25765
+ },
+ {
+  "task": "ldv-linux-3.4-simple/43_1a_cilled_true-unreach-call_ok_nondet_linux-43_1a-drivers--auxdisplay--ks0108.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "true",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   6.399126568,
+   7.91746219,
+   7.050018053,
+   6.725372971
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "A_agree_safe",
+  "bytes": 26856
+ },
+ {
+  "task": "ldv-commit-tester/m0_false-unreach-call_drivers-hwmon-s3c-hwmon-ko--130_7a--af3071a-1.c",
+  "truth": "false",
+  "status": [
+   "false(reach)",
+   "false(reach)",
+   "false(reach)",
+   "false(reach)"
+  ],
+  "ct": [
+   10.71486035,
+   29.612615919,
+   10.768483911,
+   10.41498006
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "B_agree_unsafe",
+  "bytes": 36625
+ },
+ {
+  "task": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_670x-ko--107_1a--adbbc36-1.c",
+  "truth": "false",
+  "status": [
+   "false(reach)",
+   "false(reach)",
+   "false(reach)",
+   "false(reach)"
+  ],
+  "ct": [
+   12.72956265,
+   46.070295393,
+   10.933993539,
+   10.737671224
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "B_agree_unsafe",
+  "bytes": 60459
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_7_cilled_false-unreach-call_const_ok_linux-32_1-drivers--usb--image--microtek.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "false",
+  "status": [
+   "false(reach)",
+   "false(reach)",
+   "false(reach)",
+   "false(reach)"
+  ],
+  "ct": [
+   19.265571993,
+   47.390299516,
+   16.028076911,
+   16.288198872
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "B_agree_unsafe",
+  "bytes": 210157
+ },
+ {
+  "task": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_6527-ko--107_1a--adbbc36-1.c",
+  "truth": "false",
+  "status": [
+   "false(reach)",
+   "false(reach)",
+   "false(reach)",
+   "false(reach)"
+  ],
+  "ct": [
+   12.438419061,
+   50.012576458,
+   10.872730097,
+   11.172277193
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "B_agree_unsafe",
+  "bytes": 66619
+ },
+ {
+  "task": "ldv-commit-tester/m0_false-unreach-call_drivers-staging-comedi-drivers-ni_65xx-ko--107_1a--adbbc36-1.c",
+  "truth": "false",
+  "status": [
+   "false(reach)",
+   "false(reach)",
+   "false(reach)",
+   "false(reach)"
+  ],
+  "ct": [
+   15.202474066,
+   52.727887568,
+   14.817844385,
+   14.634422538
+  ],
+  "k": [
+   "1",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "B_agree_unsafe",
+  "bytes": 81191
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--media--rc--keymaps--rc-npgtech.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   913.472444745,
+   6.902478542,
+   6.754687868,
+   6.724909105
+  ],
+  "k": [
+   "",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "C2_only_kind",
+  "bytes": 9272
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--watchdog--iTCO_vendor_support.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   905.376111629,
+   8.479484363,
+   7.673763981,
+   7.535282412
+  ],
+  "k": [
+   "1410",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "C2_only_kind",
+  "bytes": 31803
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--staging--speakup--speakup_txprt.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   903.084780562,
+   8.553231139,
+   7.877079156,
+   7.674610225
+  ],
+  "k": [
+   "581",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "C2_only_kind",
+  "bytes": 25441
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--cpufreq--cpufreq_powersave.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   909.936063811,
+   8.746354126,
+   7.597930142,
+   7.567072321
+  ],
+  "k": [
+   "100",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "C2_only_kind",
+  "bytes": 21869
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--w1--slaves--w1_smem.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "true",
+   "true",
+   "true"
+  ],
+  "ct": [
+   913.153527105,
+   8.846892286,
+   7.754440872,
+   8.07123768
+  ],
+  "k": [
+   "2519",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "C2_only_kind",
+  "bytes": 29280
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--leds--leds-ot200.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "TIMEOUT",
+   "true",
+   "true"
+  ],
+  "ct": [
+   917.360940024,
+   902.950924517,
+   8.964443585,
+   10.190728553
+  ],
+  "k": [
+   "24",
+   "9",
+   null,
+   null
+  ],
+  "bucket": "C4_only_pred_impact",
+  "bytes": 56717
+ },
+ {
+  "task": "ldv-linux-3.0/module_get_put-drivers-net-pppox.ko_true-unreach-call.cil.out.i.pp.i",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "TIMEOUT",
+   "true",
+   "true"
+  ],
+  "ct": [
+   905.926720496,
+   908.598983647,
+   10.473758639,
+   10.756972343
+  ],
+  "k": [
+   "44",
+   "31",
+   null,
+   null
+  ],
+  "bucket": "C4_only_pred_impact",
+  "bytes": 141980
+ },
+ {
+  "task": "ldv-linux-3.4-simple/32_1_cilled_true-unreach-call_ok_nondet_linux-3.4-32_1-drivers--w1--slaves--w1_ds2433.ko-ldv_main0_sequence_infinite_withcheck_stateful.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "TIMEOUT",
+   "true",
+   "true"
+  ],
+  "ct": [
+   941.437751789,
+   902.123687785,
+   13.150641577,
+   13.677548712
+  ],
+  "k": [
+   "5",
+   "2",
+   null,
+   null
+  ],
+  "bucket": "C4_only_pred_impact",
+  "bytes": 56182
+ },
+ {
+  "task": "ldv-commit-tester/m0_true-unreach-call_drivers-hwmon-ibmpex-ko--130_7a--d631323.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "TIMEOUT",
+   "true",
+   "true"
+  ],
+  "ct": [
+   974.980793855,
+   1000.58695151,
+   13.153878601,
+   12.314613221
+  ],
+  "k": [
+   "4",
+   "1",
+   null,
+   null
+  ],
+  "bucket": "C4_only_pred_impact",
+  "bytes": 72658
+ },
+ {
+  "task": "ldv-linux-4.2-rc1/linux-4.2-rc1.tar.xz-08_1a-drivers--net--ppp--pppox.ko-entry_point_true-unreach-call.cil.out.c",
+  "truth": "true",
+  "status": [
+   "TIMEOUT",
+   "TIMEOUT",
+   "true",
+   "true"
+  ],
+  "ct": [
+   904.490882336,
+   907.921511983,
+   13.681180653,
+   13.927655473
+  ],
+  "k": [
+   "39",
+   "26",
+   null,
+   null
+  ],
+  "bucket": "C4_only_pred_impact",
+  "bytes": 186394
+ },
+ {
+  "task": "ldv-linux-3.7.3/main1_false-unreach-call_drivers-vhost-vhost_net-ko--32_7a--linux-3.7.3.c",
+  "truth": "false",
+  "status": [
+   "false(reach)",
+   "OUT OF MEMORY",
+   "OUT OF MEMORY",
+   "OUT OF MEMORY"
+  ],
+  "ct": [
+   72.321085059,
+   401.469417853,
+   124.6027511,
+   128.861815573
+  ],
+  "k": [
+   "1",
+   "",
+   null,
+   null
+  ],
+  "bucket": "C3_only_bmc_unsafe",
+  "bytes": 381959
+ }
+]

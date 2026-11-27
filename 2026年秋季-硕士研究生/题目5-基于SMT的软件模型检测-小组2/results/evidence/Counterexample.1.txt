@@ -1,0 +1,967 @@
+none:	N275 -{INIT GLOBAL VARS}-> N422
+line 1:	N422 -{void __VERIFIER_error();}-> N423
+line 6:	N423 -{typedef unsigned char __u8;}-> N424
+line 7:	N424 -{typedef unsigned short __u16;}-> N425
+line 8:	N425 -{typedef unsigned int __u32;}-> N426
+line 9:	N426 -{typedef unsigned long long __u64;}-> N427
+line 10:	N427 -{typedef unsigned char u8;}-> N428
+line 11:	N428 -{typedef unsigned short u16;}-> N429
+line 12:	N429 -{typedef unsigned int u32;}-> N430
+line 13:	N430 -{typedef long long s64;}-> N431
+line 14:	N431 -{typedef unsigned long long u64;}-> N432
+line 15:	N432 -{typedef unsigned short __kernel_mode_t;}-> N433
+line 16:	N433 -{typedef unsigned int __kernel_size_t;}-> N434
+line 17:	N434 -{typedef int __kernel_ssize_t;}-> N435
+line 18:	N435 -{typedef long __kernel_time_t;}-> N436
+line 19:	N436 -{typedef int __kernel_clockid_t;}-> N437
+line 20:	N437 -{typedef long long __kernel_loff_t;}-> N438
+line 21:	N438 -{typedef __u32 __kernel_dev_t;}-> N439
+line 22:	N439 -{typedef __kernel_dev_t dev_t;}-> N440
+line 23:	N440 -{typedef __kernel_mode_t mode_t;}-> N441
+line 24:	N441 -{typedef __kernel_clockid_t clockid_t;}-> N442
+line 25:	N442 -{typedef _Bool bool;}-> N443
+line 26:	N443 -{typedef __kernel_loff_t loff_t;}-> N444
+line 27:	N444 -{typedef __kernel_size_t size_t;}-> N445
+line 28:	N445 -{typedef __kernel_ssize_t ssize_t;}-> N446
+line 29:	N446 -{typedef unsigned int gfp_t;}-> N447
+line 30:	N447 -{typedef u32 phys_addr_t;}-> N448
+line 31:	N448 -{typedef phys_addr_t resource_size_t;}-> N449
+lines 32-34:	N449 -{struct __anonstruct_atomic_t_6 {   int counter; } ;}-> N450
+line 35:	N450 -{typedef struct __anonstruct_atomic_t_6 atomic_t;}-> N451
+lines 36-39:	N451 -{struct list_head {   struct list_head *next;   struct list_head *prev; } ;}-> N452
+lines 40-48:	N452 -{struct resource {   resource_size_t start;   resource_size_t end;   const char *name;   unsigned long flags;   struct resource *parent;   struct resource *sibling;   struct resource *child; } ;}-> N453
+line 49:	N453 -{struct device ;}-> N454
+line 50:	N454 -{struct task_struct ;}-> N455
+line 51:	N455 -{struct lockdep_map ;}-> N456
+line 52:	N456 -{struct thread_info ;}-> N457
+line 53:	N457 -{struct module ;}-> N458
+line 54:	N458 -{struct completion ;}-> N459
+line 55:	N459 -{typedef atomic_t atomic_long_t;}-> N460
+lines 56-61:	N460 -{struct stack_trace {   unsigned int nr_entries;   unsigned int max_entries;   unsigned long *entries;   int skip; } ;}-> N461
+lines 62-64:	N461 -{struct lockdep_subclass_key {   char __one_byte; } ;}-> N462
+lines 65-67:	N462 -{struct lock_class_key {   struct lockdep_subclass_key subkeys[8U]; } ;}-> N463
+lines 68-84:	N463 -{struct lock_class {   struct list_head hash_entry;   struct list_head lock_entry;   struct lockdep_subclass_key *key;   unsigned int subclass;   unsigned int dep_gen_id;   unsigned long usage_mask;   struct stack_trace usage_traces[13U];   struct list_head locks_after;   struct list_head locks_before;   unsigned int version;   unsigned long ops;   const char *name;   int name_version;   unsigned long contention_point[4U];   unsigned long contending_point[4U]; } ;}-> N464
+lines 85-91:	N464 -{struct lockdep_map {   struct lock_class_key *key;   struct lock_class *class_cache[2U];   const char *name;   int cpu;   unsigned long ip; } ;}-> N465
+line 92:	N465 -{struct sock ;}-> N466
+line 93:	N466 -{struct kobject ;}-> N467
+lines 94-98:	N467 -{enum kobj_ns_type {   KOBJ_NS_TYPE_NONE = 0,   KOBJ_NS_TYPE_NET = 1,   KOBJ_NS_TYPES = 2 } ;}-> N468
+lines 99-104:	N468 -{struct kobj_ns_type_operations {   enum kobj_ns_type type;   const void * (*current_ns)();   const void * (*netlink_ns)(struct sock *);   const void * (*initial_ns)(); } ;}-> N469
+lines 105-110:	N469 -{struct attribute {   const char *name;   mode_t mode;   struct lock_class_key *key;   struct lock_class_key skey; } ;}-> N470
+lines 111-115:	N470 -{struct attribute_group {   const char *name;   mode_t  (*is_visible)(struct kobject *, struct attribute *, int);   struct attribute **attrs; } ;}-> N471
+line 116:	N471 -{struct file ;}-> N472
+line 117:	N472 -{struct vm_area_struct ;}-> N473
+lines 118-127:	N473 -{struct bin_attribute {   struct attribute attr;   size_t size;   void *private;   ssize_t  (*read)(struct file *, struct kobject *, struct bin_attribute *, char *, loff_t , size_t );   ssize_t  (*write)(struct file *, struct kobject *, struct bin_attribute *, char *, loff_t , size_t );   int (*mmap)(struct file *, struct kobject *, struct bin_attribute *, struct vm_area_struct *); } ;}-> N474
+lines 128-131:	N474 -{struct sysfs_ops {   ssize_t  (*show)(struct kobject *, struct attribute *, char *);   ssize_t  (*store)(struct kobject *, struct attribute *, const char *, size_t ); } ;}-> N475
+line 132:	N475 -{struct sysfs_dirent ;}-> N476
+line 133:	N476 -{struct timespec ;}-> N477
+lines 134-141:	N477 -{struct __anonstruct_futex_9 {   u32 *uaddr;   u32 val;   u32 flags;   u32 bitset;   u64 time;   u32 *uaddr2; } ;}-> N478
+lines 142-146:	N478 -{struct __anonstruct_nanosleep_10 {   clockid_t index;   struct timespec *rmtp;   u64 expires; } ;}-> N479
+line 147:	N479 -{struct pollfd ;}-> N480
+lines 148-154:	N480 -{struct __anonstruct_poll_11 {   struct pollfd *ufds;   int nfds;   int has_timeout;   unsigned long tv_sec;   unsigned long tv_nsec; } ;}-> N481
+lines 155-159:	N481 -{union __anonunion_ldv_2937_8 {   struct __anonstruct_futex_9 futex;   struct __anonstruct_nanosleep_10 nanosleep;   struct __anonstruct_poll_11 poll; } ;}-> N482
+lines 160-163:	N482 -{struct restart_block {   long int (*fn)(struct restart_block *);   union __anonunion_ldv_2937_8 ldv_2937; } ;}-> N483
+lines 164-170:	N483 -{struct vfp_hard_struct {   __u64 fpregs[16U];   __u32 fpexc;   __u32 fpscr;   __u32 fpinst;   __u32 fpinst2; } ;}-> N484
+lines 171-173:	N484 -{union vfp_state {   struct vfp_hard_struct hard; } ;}-> N485
+lines 174-176:	N485 -{struct fp_hard_struct {   unsigned int save[35U]; } ;}-> N486
+lines 177-179:	N486 -{struct fp_soft_struct {   unsigned int save[35U]; } ;}-> N487
+lines 180-183:	N487 -{union fp_state {   struct fp_hard_struct hard;   struct fp_soft_struct soft; } ;}-> N488
+lines 184-188:	N488 -{struct crunch_state {   unsigned int mvdx[16U][2U];   unsigned int mvax[4U][3U];   unsigned int dspsc[2U]; } ;}-> N489
+line 189:	N489 -{struct exec_domain ;}-> N490
+line 190:	N490 -{typedef unsigned long mm_segment_t;}-> N491
+lines 191-203:	N491 -{struct cpu_context_save {   __u32 r4;   __u32 r5;   __u32 r6;   __u32 r7;   __u32 r8;   __u32 r9;   __u32 sl;   __u32 fp;   __u32 sp;   __u32 pc;   __u32 extra[2U]; } ;}-> N492
+lines 204-220:	N492 -{struct thread_info {   unsigned long flags;   int preempt_count;   mm_segment_t addr_limit;   struct task_struct *task;   struct exec_domain *exec_domain;   __u32 cpu;   __u32 cpu_domain;   struct cpu_context_save cpu_context;   __u32 syscall;   __u8 used_cp[16U];   unsigned long tp_value;   struct crunch_state crunchstate;   union fp_state fpstate;   union vfp_state vfpstate;   struct restart_block restart_block; } ;}-> N493
+lines 221-223:	N493 -{struct __anonstruct_arch_spinlock_t_12 {   volatile unsigned int slock; } ;}-> N494
+line 224:	N494 -{typedef struct __anonstruct_arch_spinlock_t_12 arch_spinlock_t;}-> N495
+lines 225-231:	N495 -{struct raw_spinlock {   arch_spinlock_t raw_lock;   unsigned int magic;   unsigned int owner_cpu;   void *owner;   struct lockdep_map dep_map; } ;}-> N496
+lines 232-235:	N496 -{struct __anonstruct_ldv_3075_15 {   u8 __padding[1U];   struct lockdep_map dep_map; } ;}-> N497
+lines 236-239:	N497 -{union __anonunion_ldv_3076_14 {   struct raw_spinlock rlock;   struct __anonstruct_ldv_3075_15 ldv_3075; } ;}-> N498
+lines 240-242:	N498 -{struct spinlock {   union __anonunion_ldv_3076_14 ldv_3076; } ;}-> N499
+line 243:	N499 -{typedef struct spinlock spinlock_t;}-> N500
+lines 244-246:	N500 -{struct kref {   atomic_t refcount; } ;}-> N501
+lines 247-250:	N501 -{struct __wait_queue_head {   spinlock_t lock;   struct list_head task_list; } ;}-> N502
+line 251:	N502 -{typedef struct __wait_queue_head wait_queue_head_t;}-> N503
+line 252:	N503 -{struct kset ;}-> N504
+line 253:	N504 -{struct kobj_type ;}-> N505
+lines 254-267:	N505 -{struct kobject {   const char *name;   struct list_head entry;   struct kobject *parent;   struct kset *kset;   struct kobj_type *ktype;   struct sysfs_dirent *sd;   struct kref kref;   unsigned char state_initialized;   unsigned char state_in_sysfs;   unsigned char state_add_uevent_sent;   unsigned char state_remove_uevent_sent;   unsigned char uevent_suppress; } ;}-> N506
+lines 268-274:	N506 -{struct kobj_type {   void (*release)(struct kobject *);   const struct sysfs_ops *sysfs_ops;   struct attribute **default_attrs;   const struct kobj_ns_type_operations * (*child_ns_type)(struct kobject *);   const void * (*namespace)(struct kobject *); } ;}-> N507
+lines 275-280:	N507 -{struct kobj_uevent_env {   char *envp[32U];   int envp_idx;   char buf[2048U];   int buflen; } ;}-> N508
+lines 281-285:	N508 -{struct kset_uevent_ops {   const int (*filter)(struct kset *, struct kobject *);   const const char * (*name)(struct kset *, struct kobject *);   const int (*uevent)(struct kset *, struct kobject *, struct kobj_uevent_env *); } ;}-> N509
+lines 286-291:	N509 -{struct kset {   struct list_head list;   spinlock_t list_lock;   struct kobject kobj;   const struct kset_uevent_ops *uevent_ops; } ;}-> N510
+line 292:	N510 -{struct klist_node ;}-> N511
+lines 293-297:	N511 -{struct klist_node {   void *n_klist;   struct list_head n_node;   struct kref n_ref; } ;}-> N512
+lines 298-301:	N512 -{struct timespec {   __kernel_time_t tv_sec;   long tv_nsec; } ;}-> N513
+line 302:	N513 -{typedef void (*ctor_fn_t)();}-> N514
+line 303:	N514 -{struct page ;}-> N515
+lines 304-312:	N515 -{struct mutex {   atomic_t count;   spinlock_t wait_lock;   struct list_head wait_list;   struct thread_info *owner;   const char *name;   void *magic;   struct lockdep_map dep_map; } ;}-> N516
+lines 313-315:	N516 -{union ktime {   s64 tv64; } ;}-> N517
+line 316:	N517 -{typedef union ktime ktime_t;}-> N518
+line 317:	N518 -{struct tvec_base ;}-> N519
+lines 318-329:	N519 -{struct timer_list {   struct list_head entry;   unsigned long expires;   struct tvec_base *base;   void (*function)(unsigned long);   unsigned long data;   int slack;   int start_pid;   void *start_site;   char start_comm[16U];   struct lockdep_map lockdep_map; } ;}-> N520
+line 330:	N520 -{struct work_struct ;}-> N521
+lines 331-336:	N521 -{struct work_struct {   atomic_long_t data;   struct list_head entry;   void (*func)(struct work_struct *);   struct lockdep_map lockdep_map; } ;}-> N522
+line 337:	N522 -{typedef __u32 Elf32_Addr;}-> N523
+line 338:	N523 -{typedef __u16 Elf32_Half;}-> N524
+line 339:	N524 -{typedef __u32 Elf32_Word;}-> N525
+lines 340-347:	N525 -{struct elf32_sym {   Elf32_Word st_name;   Elf32_Addr st_value;   Elf32_Word st_size;   unsigned char st_info;   unsigned char st_other;   Elf32_Half st_shndx; } ;}-> N526
+line 348:	N526 -{typedef struct elf32_sym Elf32_Sym;}-> N527
+line 349:	N527 -{struct kernel_param ;}-> N528
+lines 350-354:	N528 -{struct kernel_param_ops {   int (*set)(const char *, const struct kernel_param *);   int (*get)(char *, const struct kernel_param *);   void (*free)(void *); } ;}-> N529
+line 355:	N529 -{struct kparam_string ;}-> N530
+line 356:	N530 -{struct kparam_array ;}-> N531
+lines 357-361:	N531 -{union __anonunion_ldv_6603_22 {   void *arg;   const struct kparam_string *str;   const struct kparam_array *arr; } ;}-> N532
+lines 362-368:	N532 -{struct kernel_param {   const char *name;   const struct kernel_param_ops *ops;   u16 perm;   u16 flags;   union __anonunion_ldv_6603_22 ldv_6603; } ;}-> N533
+lines 369-372:	N533 -{struct kparam_string {   unsigned int maxlen;   char *string; } ;}-> N534
+lines 373-379:	N534 -{struct kparam_array {   unsigned int max;   unsigned int *num;   const struct kernel_param_ops *ops;   unsigned int elemsize;   void *elem; } ;}-> N535
+lines 380-383:	N535 -{struct completion {   unsigned int done;   wait_queue_head_t wait; } ;}-> N536
+line 384:	N536 -{struct tracepoint ;}-> N537
+lines 385-388:	N537 -{struct tracepoint_func {   void *func;   void *data; } ;}-> N538
+lines 389-395:	N538 -{struct tracepoint {   const char *name;   int state;   void (*regfunc)();   void (*unregfunc)();   struct tracepoint_func *funcs; } ;}-> N539
+line 396:	N539 -{struct unwind_table ;}-> N540
+lines 397-399:	N540 -{struct mod_arch_specific {   struct unwind_table *unwind[5U]; } ;}-> N541
+lines 400-403:	N541 -{struct kernel_symbol {   unsigned long value;   const char *name; } ;}-> N542
+lines 404-412:	N542 -{struct module_attribute {   struct attribute attr;   ssize_t  (*show)(struct module_attribute *, struct module *, char *);   ssize_t  (*store)(struct module_attribute *, struct module *, const char *, size_t );   void (*setup)(struct module *, const char *);   int (*test)(struct module *);   void (*free)(struct module *); } ;}-> N543
+line 413:	N543 -{struct module_param_attrs ;}-> N544
+lines 414-419:	N544 -{struct module_kobject {   struct kobject kobj;   struct module *mod;   struct kobject *drivers_dir;   struct module_param_attrs *mp; } ;}-> N545
+line 420:	N545 -{struct exception_table_entry ;}-> N546
+lines 421-425:	N546 -{enum module_state {   MODULE_STATE_LIVE = 0,   MODULE_STATE_COMING = 1,   MODULE_STATE_GOING = 2 } ;}-> N547
+lines 426-429:	N547 -{struct module_ref {   unsigned int incs;   unsigned int decs; } ;}-> N548
+line 430:	N548 -{struct module_sect_attrs ;}-> N549
+line 431:	N549 -{struct module_notes_attrs ;}-> N550
+line 432:	N550 -{struct ftrace_event_call ;}-> N551
+lines 433-494:	N551 -{struct module {   enum module_state state;   struct list_head list;   char name[60U];   struct module_kobject mkobj;   struct module_attribute *modinfo_attrs;   const char *version;   const char *srcversion;   struct kobject *holders_dir;   const struct kernel_symbol *syms;   const unsigned long *crcs;   unsigned int num_syms;   struct kernel_param *kp;   unsigned int num_kp;   unsigned int num_gpl_syms;   const struct kernel_symbol *gpl_syms;   const unsigned long *gpl_crcs;   const struct kernel_symbol *unused_syms;   const unsigned long *unused_crcs;   unsigned int num_unused_syms;   unsigned int num_unused_gpl_syms;   const struct kernel_symbol *unused_gpl_syms;   const unsigned long *unused_gpl_crcs;   const struct kernel_symbol *gpl_future_syms;   const unsigned long *gpl_future_crcs;   unsigned int num_gpl_future_syms;   unsigned int num_exentries;   struct exception_table_entry *extable;   int (*init)();   void *module_init;   void *module_core;   unsigned int init_size;   unsigned int core_size;   unsigned int init_text_size;   unsigned int core_text_size;   unsigned int init_ro_size;   unsigned int core_ro_size;   struct mod_arch_specific arch;   unsigned int taints;   Elf32_Sym *symtab;   Elf32_Sym *core_symtab;   unsigned int num_symtab;   unsigned int core_num_syms;   char *strtab;   char *core_strtab;   struct module_sect_attrs *sect_attrs;   struct module_notes_attrs *notes_attrs;   char *args;   const struct tracepoint **tracepoints_ptrs;   unsigned int num_tracepoints;   const char **trace_bprintk_fmt_start;   unsigned int num_trace_bprintk_fmt;   struct ftrace_event_call **trace_events;   unsigned int num_trace_events;   struct list_head source_list;   struct list_head target_list;   struct task_struct *waiter;   void (*exit)();   struct module_ref *refptr;   ctor_fn_t  (**ctors)();   unsigned int num_ctors; } ;}-> N552
+lines 495-497:	N552 -{struct pm_message {   int event; } ;}-> N553
+line 498:	N553 -{typedef struct pm_message pm_message_t;}-> N554
+lines 499-517:	N554 -{struct dev_pm_ops {   int (*prepare)(struct device *);   void (*complete)(struct device *);   int (*suspend)(struct device *);   int (*resume)(struct device *);   int (*freeze)(struct device *);   int (*thaw)(struct device *);   int (*poweroff)(struct device *);   int (*restore)(struct device *);   int (*suspend_noirq)(struct device *);   int (*resume_noirq)(struct device *);   int (*freeze_noirq)(struct device *);   int (*thaw_noirq)(struct device *);   int (*poweroff_noirq)(struct device *);   int (*restore_noirq)(struct device *);   int (*runtime_suspend)(struct device *);   int (*runtime_resume)(struct device *);   int (*runtime_idle)(struct device *); } ;}-> N555
+lines 518-523:	N555 -{enum rpm_status {   RPM_ACTIVE = 0,   RPM_RESUMING = 1,   RPM_SUSPENDED = 2,   RPM_SUSPENDING = 3 } ;}-> N556
+lines 524-530:	N556 -{enum rpm_request {   RPM_REQ_NONE = 0,   RPM_REQ_IDLE = 1,   RPM_REQ_SUSPEND = 2,   RPM_REQ_AUTOSUSPEND = 3,   RPM_REQ_RESUME = 4 } ;}-> N557
+line 531:	N557 -{struct wakeup_source ;}-> N558
+lines 532-566:	N558 -{struct dev_pm_info {   pm_message_t power_state;   unsigned char can_wakeup;   unsigned char async_suspend;   unsigned char in_suspend;   spinlock_t lock;   struct list_head entry;   struct completion completion;   struct wakeup_source *wakeup;   struct timer_list suspend_timer;   unsigned long timer_expires;   struct work_struct work;   wait_queue_head_t wait_queue;   atomic_t usage_count;   atomic_t child_count;   unsigned char disable_depth;   unsigned char ignore_children;   unsigned char idle_notification;   unsigned char request_pending;   unsigned char deferred_resume;   unsigned char run_wake;   unsigned char runtime_auto;   unsigned char no_callbacks;   unsigned char irq_safe;   unsigned char use_autosuspend;   unsigned char timer_autosuspends;   enum rpm_request request;   enum rpm_status runtime_status;   int runtime_error;   int autosuspend_delay;   unsigned long last_busy;   unsigned long active_jiffies;   unsigned long suspended_jiffies;   unsigned long accounting_timestamp; } ;}-> N559
+lines 567-569:	N559 -{struct dev_power_domain {   struct dev_pm_ops ops; } ;}-> N560
+lines 570-572:	N560 -{struct dev_archdata { } ;}-> N561
+lines 573-575:	N561 -{struct pdev_archdata { } ;}-> N562
+line 576:	N562 -{struct device_private ;}-> N563
+line 577:	N563 -{struct device_driver ;}-> N564
+line 578:	N564 -{struct driver_private ;}-> N565
+line 579:	N565 -{struct class ;}-> N566
+line 580:	N566 -{struct subsys_private ;}-> N567
+line 581:	N567 -{struct bus_type ;}-> N568
+line 582:	N568 -{struct device_node ;}-> N569
+lines 583-587:	N569 -{struct bus_attribute {   struct attribute attr;   ssize_t  (*show)(struct bus_type *, char *);   ssize_t  (*store)(struct bus_type *, const char *, size_t ); } ;}-> N570
+line 588:	N570 -{struct device_attribute ;}-> N571
+line 589:	N571 -{struct driver_attribute ;}-> N572
+lines 590-604:	N572 -{struct bus_type {   const char *name;   struct bus_attribute *bus_attrs;   struct device_attribute *dev_attrs;   struct driver_attribute *drv_attrs;   int (*match)(struct device *, struct device_driver *);   int (*uevent)(struct device *, struct kobj_uevent_env *);   int (*probe)(struct device *);   int (*remove)(struct device *);   void (*shutdown)(struct device *);   int (*suspend)(struct device *, pm_message_t );   int (*resume)(struct device *);   const struct dev_pm_ops *pm;   struct subsys_private *p; } ;}-> N573
+line 605:	N573 -{struct of_device_id ;}-> N574
+lines 606-621:	N574 -{struct device_driver {   const char *name;   struct bus_type *bus;   struct module *owner;   const char *mod_name;   bool suppress_bind_attrs;   const struct of_device_id *of_match_table;   int (*probe)(struct device *);   int (*remove)(struct device *);   void (*shutdown)(struct device *);   int (*suspend)(struct device *, pm_message_t );   int (*resume)(struct device *);   const struct attribute_group **groups;   const struct dev_pm_ops *pm;   struct driver_private *p; } ;}-> N575
+lines 622-626:	N575 -{struct driver_attribute {   struct attribute attr;   ssize_t  (*show)(struct device_driver *, char *);   ssize_t  (*store)(struct device_driver *, const char *, size_t ); } ;}-> N576
+line 627:	N576 -{struct class_attribute ;}-> N577
+lines 628-645:	N577 -{struct class {   const char *name;   struct module *owner;   struct class_attribute *class_attrs;   struct device_attribute *dev_attrs;   struct bin_attribute *dev_bin_attrs;   struct kobject *dev_kobj;   int (*dev_uevent)(struct device *, struct kobj_uevent_env *);   char * (*devnode)(struct device *, mode_t *);   void (*class_release)(struct class *);   void (*dev_release)(struct device *);   int (*suspend)(struct device *, pm_message_t );   int (*resume)(struct device *);   const struct kobj_ns_type_operations *ns_type;   const void * (*namespace)(struct device *);   const struct dev_pm_ops *pm;   struct subsys_private *p; } ;}-> N578
+line 646:	N578 -{struct device_type ;}-> N579
+lines 647-651:	N579 -{struct class_attribute {   struct attribute attr;   ssize_t  (*show)(struct class *, struct class_attribute *, char *);   ssize_t  (*store)(struct class *, struct class_attribute *, const char *, size_t ); } ;}-> N580
+lines 652-659:	N580 -{struct device_type {   const char *name;   const struct attribute_group **groups;   int (*uevent)(struct device *, struct kobj_uevent_env *);   char * (*devnode)(struct device *, mode_t *);   void (*release)(struct device *);   const struct dev_pm_ops *pm; } ;}-> N581
+lines 660-665:	N581 -{struct device_attribute {   struct attribute attr;   ssize_t  (*show)(struct device *, struct device_attribute *, char *);   ssize_t  (*store)(struct device *, struct device_attribute *, const char *, size_t ); } ;}-> N582
+lines 666-669:	N582 -{struct device_dma_parameters {   unsigned int max_segment_size;   unsigned long segment_boundary_mask; } ;}-> N583
+line 670:	N583 -{struct dma_coherent_mem ;}-> N584
+lines 671-697:	N584 -{struct device {   struct device *parent;   struct device_private *p;   struct kobject kobj;   const char *init_name;   struct device_type *type;   struct mutex mutex;   struct bus_type *bus;   struct device_driver *driver;   void *platform_data;   struct dev_pm_info power;   struct dev_power_domain *pwr_domain;   u64 *dma_mask;   u64 coherent_dma_mask;   struct device_dma_parameters *dma_parms;   struct list_head dma_pools;   struct dma_coherent_mem *dma_mem;   struct dev_archdata archdata;   struct device_node *of_node;   dev_t devt;   spinlock_t devres_lock;   struct list_head devres_head;   struct klist_node knode_class;   struct class *class;   const struct attribute_group **groups;   void (*release)(struct device *); } ;}-> N585
+lines 698-712:	N585 -{struct wakeup_source {   char *name;   struct list_head entry;   spinlock_t lock;   struct timer_list timer;   unsigned long timer_expires;   ktime_t total_time;   ktime_t max_time;   ktime_t last_time;   unsigned long event_count;   unsigned long active_count;   unsigned long relax_count;   unsigned long hit_count;   unsigned char active; } ;}-> N586
+line 713:	N586 -{struct kmem_cache ;}-> N587
+lines 714-719:	N587 -{struct kmem_cache_cpu {   void **freelist;   struct page *page;   int node;   unsigned int stat[19U]; } ;}-> N588
+lines 720-727:	N588 -{struct kmem_cache_node {   spinlock_t list_lock;   unsigned long nr_partial;   struct list_head partial;   atomic_long_t nr_slabs;   atomic_long_t total_objects;   struct list_head full; } ;}-> N589
+lines 728-730:	N589 -{struct kmem_cache_order_objects {   unsigned long x; } ;}-> N590
+lines 731-751:	N590 -{struct kmem_cache {   struct kmem_cache_cpu *cpu_slab;   unsigned long flags;   unsigned long min_partial;   int size;   int objsize;   int offset;   struct kmem_cache_order_objects oo;   struct kmem_cache_order_objects max;   struct kmem_cache_order_objects min;   gfp_t allocflags;   int refcount;   void (*ctor)(void *);   int inuse;   int align;   int reserved;   const char *name;   struct list_head list;   struct kobject kobj;   struct kmem_cache_node *node[1U]; } ;}-> N591
+line 752:	N591 -{typedef unsigned long kernel_ulong_t;}-> N592
+lines 753-758:	N592 -{struct of_device_id {   char name[32U];   char type[32U];   char compatible[128U];   void *data; } ;}-> N593
+lines 759-762:	N593 -{struct platform_device_id {   char name[20U];   kernel_ulong_t driver_data; } ;}-> N594
+line 763:	N594 -{struct mfd_cell ;}-> N595
+lines 764-773:	N595 -{struct platform_device {   const char *name;   int id;   struct device dev;   u32 num_resources;   struct resource *resource;   const struct platform_device_id *id_entry;   struct mfd_cell *mfd_cell;   struct pdev_archdata archdata; } ;}-> N596
+lines 774-782:	N596 -{struct platform_driver {   int (*probe)(struct platform_device *);   int (*remove)(struct platform_device *);   void (*shutdown)(struct platform_device *);   int (*suspend)(struct platform_device *, pm_message_t );   int (*resume)(struct platform_device *);   struct device_driver driver;   const struct platform_device_id *id_table; } ;}-> N597
+lines 783-786:	N597 -{struct sensor_device_attribute {   struct device_attribute dev_attr;   int index; } ;}-> N598
+line 787:	N598 -{struct s3c_adc_client ;}-> N599
+lines 788-792:	N599 -{struct s3c_hwmon_chcfg {   const char *name;   unsigned int mult;   unsigned int div; } ;}-> N600
+lines 793-795:	N600 -{struct s3c_hwmon_pdata {   struct s3c_hwmon_chcfg *in[8U]; } ;}-> N601
+lines 796-801:	N601 -{struct s3c_hwmon_attr {   struct sensor_device_attribute in;   struct sensor_device_attribute label;   char in_name[12U];   char label_name[12U]; } ;}-> N602
+lines 802-807:	N602 -{struct s3c_hwmon {   struct mutex lock;   struct s3c_adc_client *client;   struct device *hwmon_dev;   struct s3c_hwmon_attr attrs[8U]; } ;}-> N603
+line 808:	N603 -{long int ldv_is_err(const void *ptr);}-> N604
+line 809:	N604 -{long int ldv_ptr_err(const void *ptr);}-> N605
+line 810:	N605 -{int snprintf(char *, size_t , const char *, ...);}-> N606
+line 811:	N606 -{void __mutex_init(struct mutex *, const char *, struct lock_class_key *);}-> N607
+line 812:	N607 -{int mutex_lock_interruptible_nested(struct mutex *, unsigned int);}-> N608
+line 813:	N608 -{void mutex_unlock(struct mutex *);}-> N609
+line 814:	N609 -{extern struct module __this_module;}-> N610
+	((signed long long int)(&__this_module)) == 70368744177056LL;
+	((signed long long int)(&(__this_module.list))) == 70368744177060LL;
+	(&(__this_module.name)) == 70368744177076LL;
+	((signed long long int)(&(__this_module.mkobj))) == 70368744177136LL;
+	((signed long long int)(&(__this_module.mkobj.kobj))) == 70368744177136LL;
+	((signed long long int)(&(__this_module.mkobj.kobj.entry))) == 70368744177144LL;
+	((signed long long int)(&(__this_module.mkobj.kobj.kref))) == 70368744177192LL;
+	((signed long long int)(&(__this_module.mkobj.kobj.kref.refcount))) == 70368744177192LL;
+	((signed long long int)(&(__this_module.arch))) == 70368744177436LL;
+	(&(__this_module.arch.unwind)) == 70368744177436LL;
+	((signed long long int)(&(__this_module.source_list))) == 70368744177580LL;
+	((signed long long int)(&(__this_module.target_list))) == 70368744177596LL;
+line 815:	N610 -{int ldv_device_create_file_5(struct device *ldv_func_arg1, const struct device_attribute *ldv_func_arg2);}-> N611
+line 816:	N611 -{int ldv_device_create_file_6(struct device *ldv_func_arg1, const struct device_attribute *ldv_func_arg2);}-> N612
+line 817:	N612 -{void device_remove_file(struct device *, const struct device_attribute *);}-> N613
+line 818:	N613 -{void * dev_get_drvdata(const struct device *);}-> N614
+line 819:	N614 -{void dev_set_drvdata(struct device *, void *);}-> N615
+line 820:	N615 -{int dev_printk(const char *, const struct device *, const char *, ...);}-> N616
+line 821:	N616 -{int dev_err(const struct device *, const char *, ...);}-> N617
+line 822:	N617 -{int dev_warn(const struct device *, const char *, ...);}-> N618
+line 823:	N618 -{int ldv_device_create_file_dev_attr_of_sensor_device_attribute(const struct device_attribute *attr);}-> N619
+line 824:	N619 -{void kfree(const void *);}-> N620
+line 825:	N620 -{void * __kmalloc(size_t , gfp_t );}-> N621
+lines 826-834:	N621 -{void * kmalloc(size_t size, gfp_t flags);}-> N622
+lines 835-843:	N622 -{void * kzalloc(size_t size, gfp_t flags);}-> N623
+line 844:	N623 -{long int PTR_ERR(const void *ptr);}-> N624
+line 845:	N624 -{long int IS_ERR(const void *ptr);}-> N625
+line 846:	N625 -{int platform_driver_register(struct platform_driver *);}-> N626
+line 847:	N626 -{void platform_driver_unregister(struct platform_driver *);}-> N627
+lines 848-856:	N627 -{void * platform_get_drvdata(const struct platform_device *pdev);}-> N628
+lines 857-865:	N628 -{void platform_set_drvdata(struct platform_device *pdev, void *data);}-> N629
+line 866:	N629 -{struct device * hwmon_device_register(struct device *);}-> N630
+line 867:	N630 -{void hwmon_device_unregister(struct device *);}-> N631
+line 868:	N631 -{int s3c_adc_read(struct s3c_adc_client *, unsigned int);}-> N632
+lines 869-873:	N632 -{struct s3c_adc_client * s3c_adc_register(struct platform_device *, void (*)(struct s3c_adc_client *, unsigned int), void (*)(struct s3c_adc_client *, unsigned int, unsigned int, unsigned int *), unsigned int);}-> N633
+line 874:	N633 -{void s3c_adc_release(struct s3c_adc_client *);}-> N634
+lines 875-891:	N634 -{int s3c_hwmon_read_ch(struct device *dev, struct s3c_hwmon *hwmon, int channel);}-> N635
+lines 892-899:	N635 -{int s3c_hwmon_add_raw(struct device *dev);}-> N636
+lines 900-907:	N636 -{void s3c_hwmon_remove_raw(struct device *dev);}-> N637
+lines 908-942:	N637 -{ssize_t  s3c_hwmon_ch_show(struct device *dev, struct device_attribute *attr, char *buf);}-> N638
+lines 943-960:	N638 -{ssize_t  s3c_hwmon_label_show(struct device *dev, struct device_attribute *attr, char *buf);}-> N639
+lines 961-1000:	N639 -{int s3c_hwmon_create_attr(struct device *dev, struct s3c_hwmon_chcfg *cfg, struct s3c_hwmon_attr *attrs, int channel);}-> N640
+lines 1001-1010:	N640 -{void s3c_hwmon_remove_attr(struct device *dev, struct s3c_hwmon_attr *attrs);}-> N641
+lines 1011-1132:	N641 -{int s3c_hwmon_probe(struct platform_device *dev);}-> N642
+lines 1133-1158:	N642 -{int s3c_hwmon_remove(struct platform_device *dev);}-> N643
+lines 1159-1161:	N643 -{struct platform_driver s3c_hwmon_driver = { &s3c_hwmon_probe, &s3c_hwmon_remove, 0, 0, 0, { "s3c-hwmon", 0, &__this_module, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 0 };}-> N644
+	((signed long long int)(&s3c_hwmon_driver)) == 140737488355328LL;
+	((signed long long int)(&(s3c_hwmon_driver.driver))) == 140737488355368LL;
+lines 1162-1170:	N644 -{int s3c_hwmon_init();}-> N645
+lines 1171-1179:	N645 -{void s3c_hwmon_exit();}-> N646
+line 1180:	N646 -{void ldv_check_final_state();}-> N647
+line 1181:	N647 -{void ldv_check_return_value(int);}-> N648
+line 1182:	N648 -{void ldv_check_return_value_probe(int);}-> N649
+line 1183:	N649 -{void ldv_initialize();}-> N650
+line 1184:	N650 -{void ldv_handler_precall();}-> N651
+line 1185:	N651 -{int __VERIFIER_nondet_int();}-> N652
+line 1186:	N652 -{int LDV_IN_INTERRUPT = 0;}-> N653
+lines 1187-1254:	N653 -{int main();}-> N654
+line 1291:	N654 -{long int ldv__builtin_expect(long exp, long c);}-> N655
+lines 1292-1299:	N655 -{void ldv_error();}-> N656
+lines 1316-1323:	N656 -{void * ldv_err_ptr(long error);}-> N657
+lines 1332-1350:	N657 -{long int ldv_is_err_or_null(const void *ptr);}-> N658
+line 1351:	N658 -{int ldv_count_1 = 0;}-> N659
+	ldv_count_1 == 0;
+line 1352:	N659 -{int ldv_count_2 = 0;}-> N660
+	ldv_count_2 == 0;
+lines 1353-1361:	N660 -{void ldv_sysfs();}-> N661
+line 1362:	N661 -{int ldv_call_dev_attr_of_sensor_device_attribute = 0;}-> N662
+	ldv_call_dev_attr_of_sensor_device_attribute == 0;
+none:	N662 -{Function start dummy edge}-> N276
+line 1189:	N276 -{struct platform_device *var_group1;}-> N277
+	var_group1 == 0LL;
+	((signed long long int)(&(var_group1->dev))) == 12LL;
+	((signed long long int)(&(var_group1->dev.kobj))) == 28LL;
+	((signed long long int)(&(var_group1->dev.kobj.entry))) == 36LL;
+	((signed long long int)(&(var_group1->dev.kobj.kref))) == 84LL;
+	((signed long long int)(&(var_group1->dev.kobj.kref.refcount))) == 84LL;
+	((signed long long int)(&(var_group1->dev.mutex))) == 116LL;
+	((signed long long int)(&(var_group1->dev.mutex.count))) == 116LL;
+	((signed long long int)(&(var_group1->dev.mutex.wait_lock))) == 120LL;
+	((signed long long int)(&(var_group1->dev.mutex.wait_lock.ldv_3076))) == 120LL;
+	((signed long long int)(&(var_group1->dev.mutex.wait_list))) == 192LL;
+	((signed long long int)(&(var_group1->dev.mutex.dep_map))) == 232LL;
+	(&(var_group1->dev.mutex.dep_map.class_cache)) == 240LL;
+	((signed long long int)(&(var_group1->dev.power))) == 308LL;
+	((signed long long int)(&(var_group1->dev.power.power_state))) == 308LL;
+	((signed long long int)(&(var_group1->dev.power.lock))) == 315LL;
+	((signed long long int)(&(var_group1->dev.power.lock.ldv_3076))) == 315LL;
+	((signed long long int)(&(var_group1->dev.power.entry))) == 387LL;
+	((signed long long int)(&(var_group1->dev.power.completion))) == 403LL;
+	((signed long long int)(&(var_group1->dev.power.completion.wait))) == 407LL;
+	((signed long long int)(&(var_group1->dev.power.completion.wait.lock))) == 407LL;
+	((signed long long int)(&(var_group1->dev.power.completion.wait.lock.ldv_3076))) == 407LL;
+	((signed long long int)(&(var_group1->dev.power.completion.wait.task_list))) == 479LL;
+	((signed long long int)(&(var_group1->dev.power.suspend_timer))) == 507LL;
+	((signed long long int)(&(var_group1->dev.power.suspend_timer.entry))) == 507LL;
+	(&(var_group1->dev.power.suspend_timer.start_comm)) == 571LL;
+	((signed long long int)(&(var_group1->dev.power.suspend_timer.lockdep_map))) == 587LL;
+	(&(var_group1->dev.power.suspend_timer.lockdep_map.class_cache)) == 595LL;
+	((signed long long int)(&(var_group1->dev.power.work))) == 643LL;
+	((signed long long int)(&(var_group1->dev.power.work.data))) == 643LL;
+	((signed long long int)(&(var_group1->dev.power.work.entry))) == 647LL;
+	((signed long long int)(&(var_group1->dev.power.work.lockdep_map))) == 671LL;
+	(&(var_group1->dev.power.work.lockdep_map.class_cache)) == 679LL;
+	((signed long long int)(&(var_group1->dev.power.wait_queue))) == 723LL;
+	((signed long long int)(&(var_group1->dev.power.wait_queue.lock))) == 723LL;
+	((signed long long int)(&(var_group1->dev.power.wait_queue.lock.ldv_3076))) == 723LL;
+	((signed long long int)(&(var_group1->dev.power.wait_queue.task_list))) == 795LL;
+	((signed long long int)(&(var_group1->dev.power.usage_count))) == 811LL;
+	((signed long long int)(&(var_group1->dev.power.child_count))) == 815LL;
+	((signed long long int)(&(var_group1->dev.dma_pools))) == 916LL;
+	((signed long long int)(&(var_group1->dev.archdata))) == 940LL;
+	((signed long long int)(&(var_group1->dev.devres_lock))) == 952LL;
+	((signed long long int)(&(var_group1->dev.devres_lock.ldv_3076))) == 952LL;
+	((signed long long int)(&(var_group1->dev.devres_head))) == 1024LL;
+	((signed long long int)(&(var_group1->dev.knode_class))) == 1040LL;
+	((signed long long int)(&(var_group1->dev.knode_class.n_node))) == 1048LL;
+	((signed long long int)(&(var_group1->dev.knode_class.n_ref))) == 1064LL;
+	((signed long long int)(&(var_group1->dev.knode_class.n_ref.refcount))) == 1064LL;
+	((signed long long int)(&(var_group1->archdata))) == 1128LL;
+line 1190:	N277 -{int res_s3c_hwmon_probe_10;}-> N278
+line 1191:	N278 -{int ldv_s_s3c_hwmon_driver_platform_driver;}-> N279
+line 1192:	N279 -{int tmp;}-> N280
+line 1193:	N280 -{int tmp___0;}-> N281
+line 1194:	N281 -{int tmp___1;}-> N282
+line 1197:	N282 -{ldv_s_s3c_hwmon_driver_platform_driver = 0;}-> N283
+	ldv_s_s3c_hwmon_driver_platform_driver == 0;
+line 1198:	N283 -{LDV_IN_INTERRUPT = 1;}-> N284
+line 1199:	N284 -{ldv_initialize()}-> N419
+none:	N419 -{Function start dummy edge}-> N420
+line 1387:	N420 -{return;}-> N418
+line 1199:	N418 -{Return edge from ldv_initialize to main: ldv_initialize();}-> N285
+line 1200:	N285 -{ldv_handler_precall();}-> N286
+line 1201:	N286 -{s3c_hwmon_init()}-> N264
+none:	N264 -{Function start dummy edge}-> N265
+line 1164:	N265 -{int tmp;}-> N266
+line 1167:	N266 -{tmp = platform_driver_register(&s3c_hwmon_driver);}-> N267
+	tmp == 0;
+line 1168:	N267 -{return tmp;}-> N263
+	tmp = 0
+line 1201:	N263 -{Return edge from s3c_hwmon_init to main: tmp = s3c_hwmon_init();}-> N287
+line 1202:	N287 -{[!(tmp != 0)]}-> N290
+	tmp == 0;
+none:	N290 -{}-> N288
+line 1207:	N288 -{Goto: ldv_9953}-> N326
+line 1240:	N326 -{tmp___1 = __VERIFIER_nondet_int();}-> N327
+	tmp___1 == 2;
+line 1241:	N327 -{[tmp___1 != 0]}-> N329
+	tmp___1 == 2;
+line 1242:	N329 -{Goto: ldv_9952}-> N293
+lines 1208-1209:	N293 -{Label: ldv_9952}-> N294
+line 1209:	N294 -{tmp___0 = __VERIFIER_nondet_int();}-> N295
+	tmp___0 == 0;
+lines 1210-1237:	N295 -{switch (tmp___0)}-> N296
+line 1211:	N296 -{[tmp___0 == 0]}-> N299
+	tmp___0 == 0;
+line 1212:	N299 -{[ldv_s_s3c_hwmon_driver_platform_driver == 0]}-> N302
+	ldv_s_s3c_hwmon_driver_platform_driver == 0;
+line 1213:	N302 -{s3c_hwmon_probe(var_group1)}-> N131
+none:	N131 -{Function start dummy edge}-> N132
+	dev == 0LL;
+	((signed long long int)(&(dev->dev))) == 12LL;
+	((signed long long int)(&(dev->dev.kobj))) == 28LL;
+	((signed long long int)(&(dev->dev.kobj.entry))) == 36LL;
+	((signed long long int)(&(dev->dev.kobj.kref))) == 84LL;
+	((signed long long int)(&(dev->dev.kobj.kref.refcount))) == 84LL;
+	((signed long long int)(&(dev->dev.mutex))) == 116LL;
+	((signed long long int)(&(dev->dev.mutex.count))) == 116LL;
+	((signed long long int)(&(dev->dev.mutex.wait_lock))) == 120LL;
+	((signed long long int)(&(dev->dev.mutex.wait_lock.ldv_3076))) == 120LL;
+	((signed long long int)(&(dev->dev.mutex.wait_list))) == 192LL;
+	((signed long long int)(&(dev->dev.mutex.dep_map))) == 232LL;
+	(&(dev->dev.mutex.dep_map.class_cache)) == 240LL;
+	((signed long long int)(&(dev->dev.power))) == 308LL;
+	((signed long long int)(&(dev->dev.power.power_state))) == 308LL;
+	((signed long long int)(&(dev->dev.power.lock))) == 315LL;
+	((signed long long int)(&(dev->dev.power.lock.ldv_3076))) == 315LL;
+	((signed long long int)(&(dev->dev.power.entry))) == 387LL;
+	((signed long long int)(&(dev->dev.power.completion))) == 403LL;
+	((signed long long int)(&(dev->dev.power.completion.wait))) == 407LL;
+	((signed long long int)(&(dev->dev.power.completion.wait.lock))) == 407LL;
+	((signed long long int)(&(dev->dev.power.completion.wait.lock.ldv_3076))) == 407LL;
+	((signed long long int)(&(dev->dev.power.completion.wait.task_list))) == 479LL;
+	((signed long long int)(&(dev->dev.power.suspend_timer))) == 507LL;
+	((signed long long int)(&(dev->dev.power.suspend_timer.entry))) == 507LL;
+	(&(dev->dev.power.suspend_timer.start_comm)) == 571LL;
+	((signed long long int)(&(dev->dev.power.suspend_timer.lockdep_map))) == 587LL;
+	(&(dev->dev.power.suspend_timer.lockdep_map.class_cache)) == 595LL;
+	((signed long long int)(&(dev->dev.power.work))) == 643LL;
+	((signed long long int)(&(dev->dev.power.work.data))) == 643LL;
+	((signed long long int)(&(dev->dev.power.work.entry))) == 647LL;
+	((signed long long int)(&(dev->dev.power.work.lockdep_map))) == 671LL;
+	(&(dev->dev.power.work.lockdep_map.class_cache)) == 679LL;
+	((signed long long int)(&(dev->dev.power.wait_queue))) == 723LL;
+	((signed long long int)(&(dev->dev.power.wait_queue.lock))) == 723LL;
+	((signed long long int)(&(dev->dev.power.wait_queue.lock.ldv_3076))) == 723LL;
+	((signed long long int)(&(dev->dev.power.wait_queue.task_list))) == 795LL;
+	((signed long long int)(&(dev->dev.power.usage_count))) == 811LL;
+	((signed long long int)(&(dev->dev.power.child_count))) == 815LL;
+	((signed long long int)(&(dev->dev.dma_pools))) == 916LL;
+	((signed long long int)(&(dev->dev.archdata))) == 940LL;
+	((signed long long int)(&(dev->dev.devres_lock))) == 952LL;
+	((signed long long int)(&(dev->dev.devres_lock.ldv_3076))) == 952LL;
+	((signed long long int)(&(dev->dev.devres_head))) == 1024LL;
+	((signed long long int)(&(dev->dev.knode_class))) == 1040LL;
+	((signed long long int)(&(dev->dev.knode_class.n_node))) == 1048LL;
+	((signed long long int)(&(dev->dev.knode_class.n_ref))) == 1064LL;
+	((signed long long int)(&(dev->dev.knode_class.n_ref.refcount))) == 1064LL;
+	((signed long long int)(&(dev->archdata))) == 1128LL;
+line 1013:	N132 -{struct s3c_hwmon_pdata *pdata;}-> N133
+	dev == 0LL;
+	((signed long long int)(&(dev->dev))) == 12LL;
+	((signed long long int)(&(dev->dev.kobj))) == 28LL;
+	((signed long long int)(&(dev->dev.kobj.entry))) == 36LL;
+	((signed long long int)(&(dev->dev.kobj.kref))) == 84LL;
+	((signed long long int)(&(dev->dev.kobj.kref.refcount))) == 84LL;
+	((signed long long int)(&(dev->dev.mutex))) == 116LL;
+	((signed long long int)(&(dev->dev.mutex.count))) == 116LL;
+	((signed long long int)(&(dev->dev.mutex.wait_lock))) == 120LL;
+	((signed long long int)(&(dev->dev.mutex.wait_lock.ldv_3076))) == 120LL;
+	((signed long long int)(&(dev->dev.mutex.wait_list))) == 192LL;
+	((signed long long int)(&(dev->dev.mutex.dep_map))) == 232LL;
+	(&(dev->dev.mutex.dep_map.class_cache)) == 240LL;
+	((signed long long int)(&(dev->dev.power))) == 308LL;
+	((signed long long int)(&(dev->dev.power.power_state))) == 308LL;
+	((signed long long int)(&(dev->dev.power.lock))) == 315LL;
+	((signed long long int)(&(dev->dev.power.lock.ldv_3076))) == 315LL;
+	((signed long long int)(&(dev->dev.power.entry))) == 387LL;
+	((signed long long int)(&(dev->dev.power.completion))) == 403LL;
+	((signed long long int)(&(dev->dev.power.completion.wait))) == 407LL;
+	((signed long long int)(&(dev->dev.power.completion.wait.lock))) == 407LL;
+	((signed long long int)(&(dev->dev.power.completion.wait.lock.ldv_3076))) == 407LL;
+	((signed long long int)(&(dev->dev.power.completion.wait.task_list))) == 479LL;
+	((signed long long int)(&(dev->dev.power.suspend_timer))) == 507LL;
+	((signed long long int)(&(dev->dev.power.suspend_timer.entry))) == 507LL;
+	(&(dev->dev.power.suspend_timer.start_comm)) == 571LL;
+	((signed long long int)(&(dev->dev.power.suspend_timer.lockdep_map))) == 587LL;
+	(&(dev->dev.power.suspend_timer.lockdep_map.class_cache)) == 595LL;
+	((signed long long int)(&(dev->dev.power.work))) == 643LL;
+	((signed long long int)(&(dev->dev.power.work.data))) == 643LL;
+	((signed long long int)(&(dev->dev.power.work.entry))) == 647LL;
+	((signed long long int)(&(dev->dev.power.work.lockdep_map))) == 671LL;
+	(&(dev->dev.power.work.lockdep_map.class_cache)) == 679LL;
+	((signed long long int)(&(dev->dev.power.wait_queue))) == 723LL;
+	((signed long long int)(&(dev->dev.power.wait_queue.lock))) == 723LL;
+	((signed long long int)(&(dev->dev.power.wait_queue.lock.ldv_3076))) == 723LL;
+	((signed long long int)(&(dev->dev.power.wait_queue.task_list))) == 795LL;
+	((signed long long int)(&(dev->dev.power.usage_count))) == 811LL;
+	((signed long long int)(&(dev->dev.power.child_count))) == 815LL;
+	((signed long long int)(&(dev->dev.dma_pools))) == 916LL;
+	((signed long long int)(&(dev->dev.archdata))) == 940LL;
+	((signed long long int)(&(dev->dev.devres_lock))) == 952LL;
+	((signed long long int)(&(dev->dev.devres_lock.ldv_3076))) == 952LL;
+	((signed long long int)(&(dev->dev.devres_head))) == 1024LL;
+	((signed long long int)(&(dev->dev.knode_class))) == 1040LL;
+	((signed long long int)(&(dev->dev.knode_class.n_node))) == 1048LL;
+	((signed long long int)(&(dev->dev.knode_class.n_ref))) == 1064LL;
+	((signed long long int)(&(dev->dev.knode_class.n_ref.refcount))) == 1064LL;
+	((signed long long int)(&(dev->archdata))) == 1128LL;
+line 1014:	N133 -{struct s3c_hwmon *hwmon;}-> N134
+line 1015:	N134 -{int ret;}-> N135
+line 1016:	N135 -{int i;}-> N136
+line 1017:	N136 -{void *tmp;}-> N137
+line 1018:	N137 -{struct lock_class_key __key;}-> N138
+line 1019:	N138 -{long tmp___0;}-> N139
+line 1020:	N139 -{long tmp___1;}-> N140
+line 1021:	N140 -{long tmp___2;}-> N141
+line 1022:	N141 -{long tmp___3;}-> N142
+line 1023:	N142 -{struct s3c_hwmon_chcfg *cfg;}-> N143
+line 1026:	N143 -{pdata = (struct s3c_hwmon_pdata *)(dev->dev.platform_data);}-> N144
+	pdata == 2LL;
+	(&(pdata->in)) == 2LL;
+line 1027:	N144 -{ret = 0;}-> N145
+	ret == 0;
+line 1028:	N145 -{[!(((unsigned long)pdata) == ((unsigned long)((struct s3c_hwmon_pdata *)0)))]}-> N148
+	(unsigned long)pdata == 2
+(unsigned long)((struct s3c_hwmon_pdata *)0) == 0
+none:	N148 -{}-> N146
+line 1034:	N146 -{kzalloc(800U, 208U)}-> N7
+none:	N7 -{Function start dummy edge}-> N8
+	size == 800U;
+	flags == 208U;
+line 837:	N8 -{void *tmp;}-> N9
+	size == 800U;
+	flags == 208U;
+line 840:	N9 -{kmalloc(size, flags | 32768U)}-> N1
+none:	N1 -{Function start dummy edge}-> N2
+	size == 800U;
+	flags == 32976U;
+line 828:	N2 -{void *tmp___2;}-> N3
+	size == 800U;
+	flags == 32976U;
+line 831:	N3 -{tmp___2 = __kmalloc(size, flags);}-> N4
+	tmp___2 == 4611686018427387904LL;
+line 832:	N4 -{return tmp___2;}-> N0
+	tmp___2 = 4611686018427387904
+line 840:	N0 -{Return edge from kmalloc to kzalloc: tmp = kmalloc(size, flags | 32768U);}-> N10
+line 841:	N10 -{return tmp;}-> N6
+	tmp = 4611686018427387904
+line 1034:	N6 -{Return edge from kzalloc to s3c_hwmon_probe: tmp = kzalloc(800U, 208U);}-> N151
+line 1035:	N151 -{hwmon = (struct s3c_hwmon *)tmp;}-> N152
+	hwmon == 4611686018427387904LL;
+	((signed long long int)(&(hwmon->lock))) == 4611686018427387904LL;
+	((signed long long int)(&(hwmon->lock.count))) == 4611686018427387904LL;
+	((signed long long int)(&(hwmon->lock.wait_lock))) == 4611686018427387908LL;
+	((signed long long int)(&(hwmon->lock.wait_lock.ldv_3076))) == 4611686018427387908LL;
+	((signed long long int)(&(hwmon->lock.wait_list))) == 4611686018427387980LL;
+	((signed long long int)(&(hwmon->lock.dep_map))) == 4611686018427388020LL;
+	(&(hwmon->lock.dep_map.class_cache)) == 4611686018427388028LL;
+	(&(hwmon->attrs)) == 4611686018427388088LL;
+	((signed long long int)(&((hwmon->attrs)[0]))) == 4611686018427388088LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).in))) == 4611686018427388088LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).in.dev_attr))) == 4611686018427388088LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).in.dev_attr.attr))) == 4611686018427388088LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).in.dev_attr.attr.skey))) == 4611686018427388106LL;
+	(&(((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388106LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388106LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388107LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388108LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388109LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388110LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388111LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388112LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388113LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).label))) == 4611686018427388144LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).label.dev_attr))) == 4611686018427388144LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).label.dev_attr.attr))) == 4611686018427388144LL;
+	((signed long long int)(&(((hwmon->attrs)[0]).label.dev_attr.attr.skey))) == 4611686018427388162LL;
+	(&(((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388162LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388162LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388163LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388164LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388165LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388166LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388167LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388168LL;
+	((signed long long int)(&((((hwmon->attrs)[0]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388169LL;
+	(&(((hwmon->attrs)[0]).in_name)) == 4611686018427388200LL;
+	(&(((hwmon->attrs)[0]).label_name)) == 4611686018427388212LL;
+	((signed long long int)(&((hwmon->attrs)[1]))) == 4611686018427388224LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).in))) == 4611686018427388224LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).in.dev_attr))) == 4611686018427388224LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).in.dev_attr.attr))) == 4611686018427388224LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).in.dev_attr.attr.skey))) == 4611686018427388242LL;
+	(&(((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388242LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388242LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388243LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388244LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388245LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388246LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388247LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388248LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388249LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).label))) == 4611686018427388280LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).label.dev_attr))) == 4611686018427388280LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).label.dev_attr.attr))) == 4611686018427388280LL;
+	((signed long long int)(&(((hwmon->attrs)[1]).label.dev_attr.attr.skey))) == 4611686018427388298LL;
+	(&(((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388298LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388298LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388299LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388300LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388301LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388302LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388303LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388304LL;
+	((signed long long int)(&((((hwmon->attrs)[1]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388305LL;
+	(&(((hwmon->attrs)[1]).in_name)) == 4611686018427388336LL;
+	(&(((hwmon->attrs)[1]).label_name)) == 4611686018427388348LL;
+	((signed long long int)(&((hwmon->attrs)[2]))) == 4611686018427388360LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).in))) == 4611686018427388360LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).in.dev_attr))) == 4611686018427388360LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).in.dev_attr.attr))) == 4611686018427388360LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).in.dev_attr.attr.skey))) == 4611686018427388378LL;
+	(&(((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388378LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388378LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388379LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388380LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388381LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388382LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388383LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388384LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388385LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).label))) == 4611686018427388416LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).label.dev_attr))) == 4611686018427388416LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).label.dev_attr.attr))) == 4611686018427388416LL;
+	((signed long long int)(&(((hwmon->attrs)[2]).label.dev_attr.attr.skey))) == 4611686018427388434LL;
+	(&(((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388434LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388434LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388435LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388436LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388437LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388438LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388439LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388440LL;
+	((signed long long int)(&((((hwmon->attrs)[2]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388441LL;
+	(&(((hwmon->attrs)[2]).in_name)) == 4611686018427388472LL;
+	(&(((hwmon->attrs)[2]).label_name)) == 4611686018427388484LL;
+	((signed long long int)(&((hwmon->attrs)[3]))) == 4611686018427388496LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).in))) == 4611686018427388496LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).in.dev_attr))) == 4611686018427388496LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).in.dev_attr.attr))) == 4611686018427388496LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).in.dev_attr.attr.skey))) == 4611686018427388514LL;
+	(&(((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388514LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388514LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388515LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388516LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388517LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388518LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388519LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388520LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388521LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).label))) == 4611686018427388552LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).label.dev_attr))) == 4611686018427388552LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).label.dev_attr.attr))) == 4611686018427388552LL;
+	((signed long long int)(&(((hwmon->attrs)[3]).label.dev_attr.attr.skey))) == 4611686018427388570LL;
+	(&(((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388570LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388570LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388571LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388572LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388573LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388574LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388575LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388576LL;
+	((signed long long int)(&((((hwmon->attrs)[3]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388577LL;
+	(&(((hwmon->attrs)[3]).in_name)) == 4611686018427388608LL;
+	(&(((hwmon->attrs)[3]).label_name)) == 4611686018427388620LL;
+	((signed long long int)(&((hwmon->attrs)[4]))) == 4611686018427388632LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).in))) == 4611686018427388632LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).in.dev_attr))) == 4611686018427388632LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).in.dev_attr.attr))) == 4611686018427388632LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).in.dev_attr.attr.skey))) == 4611686018427388650LL;
+	(&(((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388650LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388650LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388651LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388652LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388653LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388654LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388655LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388656LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388657LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).label))) == 4611686018427388688LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).label.dev_attr))) == 4611686018427388688LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).label.dev_attr.attr))) == 4611686018427388688LL;
+	((signed long long int)(&(((hwmon->attrs)[4]).label.dev_attr.attr.skey))) == 4611686018427388706LL;
+	(&(((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388706LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388706LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388707LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388708LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388709LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388710LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388711LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388712LL;
+	((signed long long int)(&((((hwmon->attrs)[4]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388713LL;
+	(&(((hwmon->attrs)[4]).in_name)) == 4611686018427388744LL;
+	(&(((hwmon->attrs)[4]).label_name)) == 4611686018427388756LL;
+	((signed long long int)(&((hwmon->attrs)[5]))) == 4611686018427388768LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).in))) == 4611686018427388768LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).in.dev_attr))) == 4611686018427388768LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).in.dev_attr.attr))) == 4611686018427388768LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).in.dev_attr.attr.skey))) == 4611686018427388786LL;
+	(&(((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388786LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388786LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388787LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388788LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388789LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388790LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388791LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388792LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388793LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).label))) == 4611686018427388824LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).label.dev_attr))) == 4611686018427388824LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).label.dev_attr.attr))) == 4611686018427388824LL;
+	((signed long long int)(&(((hwmon->attrs)[5]).label.dev_attr.attr.skey))) == 4611686018427388842LL;
+	(&(((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388842LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388842LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388843LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388844LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388845LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388846LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388847LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388848LL;
+	((signed long long int)(&((((hwmon->attrs)[5]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388849LL;
+	(&(((hwmon->attrs)[5]).in_name)) == 4611686018427388880LL;
+	(&(((hwmon->attrs)[5]).label_name)) == 4611686018427388892LL;
+	((signed long long int)(&((hwmon->attrs)[6]))) == 4611686018427388904LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).in))) == 4611686018427388904LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).in.dev_attr))) == 4611686018427388904LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).in.dev_attr.attr))) == 4611686018427388904LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).in.dev_attr.attr.skey))) == 4611686018427388922LL;
+	(&(((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)) == 4611686018427388922LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388922LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388923LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388924LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388925LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388926LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388927LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388928LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388929LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).label))) == 4611686018427388960LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).label.dev_attr))) == 4611686018427388960LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).label.dev_attr.attr))) == 4611686018427388960LL;
+	((signed long long int)(&(((hwmon->attrs)[6]).label.dev_attr.attr.skey))) == 4611686018427388978LL;
+	(&(((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)) == 4611686018427388978LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388978LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388979LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388980LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388981LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388982LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388983LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388984LL;
+	((signed long long int)(&((((hwmon->attrs)[6]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388985LL;
+	(&(((hwmon->attrs)[6]).in_name)) == 4611686018427389016LL;
+	(&(((hwmon->attrs)[6]).label_name)) == 4611686018427389028LL;
+	((signed long long int)(&((hwmon->attrs)[7]))) == 4611686018427389040LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).in))) == 4611686018427389040LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).in.dev_attr))) == 4611686018427389040LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).in.dev_attr.attr))) == 4611686018427389040LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).in.dev_attr.attr.skey))) == 4611686018427389058LL;
+	(&(((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)) == 4611686018427389058LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427389058LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427389059LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427389060LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427389061LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427389062LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427389063LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427389064LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427389065LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).label))) == 4611686018427389096LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).label.dev_attr))) == 4611686018427389096LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).label.dev_attr.attr))) == 4611686018427389096LL;
+	((signed long long int)(&(((hwmon->attrs)[7]).label.dev_attr.attr.skey))) == 4611686018427389114LL;
+	(&(((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)) == 4611686018427389114LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427389114LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427389115LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427389116LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427389117LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427389118LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427389119LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427389120LL;
+	((signed long long int)(&((((hwmon->attrs)[7]).label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427389121LL;
+	(&(((hwmon->attrs)[7]).in_name)) == 4611686018427389152LL;
+	(&(((hwmon->attrs)[7]).label_name)) == 4611686018427389164LL;
+line 1036:	N152 -{[!(((unsigned long)hwmon) == ((unsigned long)((struct s3c_hwmon *)0)))]}-> N155
+	(unsigned long)hwmon == 4611686018427387904
+(unsigned long)((struct s3c_hwmon *)0) == 0
+none:	N155 -{}-> N153
+line 1042:	N153 -{platform_set_drvdata(dev, (void *)hwmon)}-> N19
+none:	N19 -{Function start dummy edge}-> N20
+line 862:	N20 -{dev_set_drvdata(&(pdev->dev), data);}-> N21
+line 863:	N21 -{return;}-> N18
+line 1042:	N18 -{Return edge from platform_set_drvdata to s3c_hwmon_probe: platform_set_drvdata(dev, (void *)hwmon);}-> N158
+line 1043:	N158 -{__mutex_init(&(hwmon->lock), "&hwmon->lock", &__key);}-> N159
+line 1044:	N159 -{hwmon->client = s3c_adc_register(dev, 0, 0, 0U);}-> N160
+	(hwmon->client) == 0LL;
+line 1045:	N160 -{const void *__CPAchecker_TMP_0 = (const void *)(hwmon->client);}-> N161
+	__CPAchecker_TMP_0 == 0LL;
+line 1045:	N161 -{IS_ERR(__CPAchecker_TMP_0)}-> N346
+none:	N346 -{Function start dummy edge}-> N347
+	ptr == 0LL;
+line 1266:	N347 -{long tmp;}-> N348
+	ptr == 0LL;
+line 1269:	N348 -{ldv_is_err(ptr)}-> N373
+none:	N373 -{Function start dummy edge}-> N374
+	ptr == 0LL;
+line 1313:	N374 -{return ((unsigned long)ptr) > 2012UL;}-> N372
+	ptr == 0LL;
+	((unsigned long)ptr) > 2012UL = 0
+line 1269:	N372 -{Return edge from ldv_is_err to IS_ERR: tmp = ldv_is_err(ptr);}-> N349
+line 1270:	N349 -{return tmp;}-> N345
+	tmp = 0
+line 1045:	N345 -{Return edge from IS_ERR to s3c_hwmon_probe: tmp___1 = IS_ERR(__CPAchecker_TMP_0);}-> N162
+line 1046:	N162 -{[!(tmp___1 != 0L)]}-> N165
+	tmp___1 == 0L;
+none:	N165 -{}-> N163
+line 1054:	N163 -{s3c_hwmon_add_raw(&(dev->dev))}-> N37
+none:	N37 -{Function start dummy edge}-> N38
+line 897:	N38 -{return 0;}-> N36
+line 1054:	N36 -{Return edge from s3c_hwmon_add_raw to s3c_hwmon_probe: ret = s3c_hwmon_add_raw(&(dev->dev));}-> N171
+line 1055:	N171 -{[!(ret != 0)]}-> N174
+	ret == 0;
+none:	N174 -{}-> N172
+line 1060:	N172 -{hwmon->hwmon_dev = hwmon_device_register(&(dev->dev));}-> N176
+	(hwmon->hwmon_dev) == 0LL;
+	((signed long long int)(&(hwmon->hwmon_dev->kobj))) == 16LL;
+	((signed long long int)(&(hwmon->hwmon_dev->kobj.entry))) == 24LL;
+	((signed long long int)(&(hwmon->hwmon_dev->kobj.kref))) == 72LL;
+	((signed long long int)(&(hwmon->hwmon_dev->kobj.kref.refcount))) == 72LL;
+	((signed long long int)(&(hwmon->hwmon_dev->mutex))) == 104LL;
+	((signed long long int)(&(hwmon->hwmon_dev->mutex.count))) == 104LL;
+	((signed long long int)(&(hwmon->hwmon_dev->mutex.wait_lock))) == 108LL;
+	((signed long long int)(&(hwmon->hwmon_dev->mutex.wait_lock.ldv_3076))) == 108LL;
+	((signed long long int)(&(hwmon->hwmon_dev->mutex.wait_list))) == 180LL;
+	((signed long long int)(&(hwmon->hwmon_dev->mutex.dep_map))) == 220LL;
+	(&(hwmon->hwmon_dev->mutex.dep_map.class_cache)) == 228LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power))) == 296LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.power_state))) == 296LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.lock))) == 303LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.lock.ldv_3076))) == 303LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.entry))) == 375LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.completion))) == 391LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.completion.wait))) == 395LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.completion.wait.lock))) == 395LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.completion.wait.lock.ldv_3076))) == 395LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.completion.wait.task_list))) == 467LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.suspend_timer))) == 495LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.suspend_timer.entry))) == 495LL;
+	(&(hwmon->hwmon_dev->power.suspend_timer.start_comm)) == 559LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.suspend_timer.lockdep_map))) == 575LL;
+	(&(hwmon->hwmon_dev->power.suspend_timer.lockdep_map.class_cache)) == 583LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.work))) == 631LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.work.data))) == 631LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.work.entry))) == 635LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.work.lockdep_map))) == 659LL;
+	(&(hwmon->hwmon_dev->power.work.lockdep_map.class_cache)) == 667LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.wait_queue))) == 711LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.wait_queue.lock))) == 711LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.wait_queue.lock.ldv_3076))) == 711LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.wait_queue.task_list))) == 783LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.usage_count))) == 799LL;
+	((signed long long int)(&(hwmon->hwmon_dev->power.child_count))) == 803LL;
+	((signed long long int)(&(hwmon->hwmon_dev->dma_pools))) == 904LL;
+	((signed long long int)(&(hwmon->hwmon_dev->archdata))) == 928LL;
+	((signed long long int)(&(hwmon->hwmon_dev->devres_lock))) == 940LL;
+	((signed long long int)(&(hwmon->hwmon_dev->devres_lock.ldv_3076))) == 940LL;
+	((signed long long int)(&(hwmon->hwmon_dev->devres_head))) == 1012LL;
+	((signed long long int)(&(hwmon->hwmon_dev->knode_class))) == 1028LL;
+	((signed long long int)(&(hwmon->hwmon_dev->knode_class.n_node))) == 1036LL;
+	((signed long long int)(&(hwmon->hwmon_dev->knode_class.n_ref))) == 1052LL;
+	((signed long long int)(&(hwmon->hwmon_dev->knode_class.n_ref.refcount))) == 1052LL;
+line 1061:	N176 -{const void *__CPAchecker_TMP_2 = (const void *)(hwmon->hwmon_dev);}-> N177
+	__CPAchecker_TMP_2 == 0LL;
+line 1061:	N177 -{IS_ERR(__CPAchecker_TMP_2)}-> N346
+none:	N346 -{Function start dummy edge}-> N347
+	ptr == 0LL;
+line 1266:	N347 -{long tmp;}-> N348
+	tmp == 0L;
+	ptr == 0LL;
+line 1269:	N348 -{ldv_is_err(ptr)}-> N373
+none:	N373 -{Function start dummy edge}-> N374
+	ptr == 0LL;
+line 1313:	N374 -{return ((unsigned long)ptr) > 2012UL;}-> N372
+	ptr == 0LL;
+	((unsigned long)ptr) > 2012UL = 0
+line 1269:	N372 -{Return edge from ldv_is_err to IS_ERR: tmp = ldv_is_err(ptr);}-> N349
+line 1270:	N349 -{return tmp;}-> N345
+	tmp = 0
+line 1061:	N345 -{Return edge from IS_ERR to s3c_hwmon_probe: tmp___3 = IS_ERR(__CPAchecker_TMP_2);}-> N178
+line 1062:	N178 -{[!(tmp___3 != 0L)]}-> N181
+	tmp___3 == 0L;
+none:	N181 -{}-> N179
+line 1070:	N179 -{i = 0;}-> N187
+	i == 0;
+line 1071:	N187 -{Goto: ldv_9894}-> N224
+line 1115:	N224 -{[((unsigned int)i) <= 7U]}-> N226
+	(unsigned int)i == 0
+line 1116:	N226 -{Goto: ldv_9893}-> N189
+lines 1072-1073:	N189 -{Label: ldv_9893}-> N190
+line 1073:	N190 -{cfg = (pdata->in)[i];}-> N191
+	cfg == 2LL;
+line 1074:	N191 -{[!(((unsigned long)cfg) == ((unsigned long)((struct s3c_hwmon_chcfg *)0)))]}-> N194
+	(unsigned long)cfg == 2
+(unsigned long)((struct s3c_hwmon_chcfg *)0) == 0
+none:	N194 -{}-> N192
+line 1079:	N192 -{[(cfg->mult) > 65535U]}-> N197
+	(cfg->mult) == 131072U;
+lines 1080-1081:	N197 -{dev_warn((const struct device *)(&(dev->dev)), "channel %d multiplier too large\n", i);}-> N199
+none:	N199 -{}-> N196
+line 1085:	N196 -{[!((cfg->div) == 0U)]}-> N202
+	(cfg->div) == 2U;
+none:	N202 -{}-> N200
+lines 1091-1092:	N200 -{s3c_hwmon_create_attr(&(dev->dev), (pdata->in)[i], ((struct s3c_hwmon_attr *)(&(hwmon->attrs))) + ((unsigned int)i), i)}-> N91
+none:	N91 -{Function start dummy edge}-> N92
+	cfg == 2LL;
+	(cfg->mult) == 131072U;
+	(cfg->div) == 2U;
+	attrs == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in))) == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in.dev_attr))) == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in.dev_attr.attr))) == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in.dev_attr.attr.skey))) == 4611686018427388106LL;
+	(&(attrs->in.dev_attr.attr.skey.subkeys)) == 4611686018427388106LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388106LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388107LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388108LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388109LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388110LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388111LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388112LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388113LL;
+	((signed long long int)(&(attrs->label))) == 4611686018427388144LL;
+	((signed long long int)(&(attrs->label.dev_attr))) == 4611686018427388144LL;
+	((signed long long int)(&(attrs->label.dev_attr.attr))) == 4611686018427388144LL;
+	((signed long long int)(&(attrs->label.dev_attr.attr.skey))) == 4611686018427388162LL;
+	(&(attrs->label.dev_attr.attr.skey.subkeys)) == 4611686018427388162LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388162LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388163LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388164LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388165LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388166LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388167LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388168LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388169LL;
+	(&(attrs->in_name)) == 4611686018427388200LL;
+	(&(attrs->label_name)) == 4611686018427388212LL;
+	channel == 0;
+line 964:	N92 -{struct sensor_device_attribute *attr;}-> N93
+	cfg == 2LL;
+	(cfg->mult) == 131072U;
+	(cfg->div) == 2U;
+	attrs == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in))) == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in.dev_attr))) == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in.dev_attr.attr))) == 4611686018427388088LL;
+	((signed long long int)(&(attrs->in.dev_attr.attr.skey))) == 4611686018427388106LL;
+	(&(attrs->in.dev_attr.attr.skey.subkeys)) == 4611686018427388106LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388106LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388107LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388108LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388109LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388110LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388111LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388112LL;
+	((signed long long int)(&((attrs->in.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388113LL;
+	((signed long long int)(&(attrs->label))) == 4611686018427388144LL;
+	((signed long long int)(&(attrs->label.dev_attr))) == 4611686018427388144LL;
+	((signed long long int)(&(attrs->label.dev_attr.attr))) == 4611686018427388144LL;
+	((signed long long int)(&(attrs->label.dev_attr.attr.skey))) == 4611686018427388162LL;
+	(&(attrs->label.dev_attr.attr.skey.subkeys)) == 4611686018427388162LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388162LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388163LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388164LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388165LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388166LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388167LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388168LL;
+	((signed long long int)(&((attrs->label.dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388169LL;
+	(&(attrs->in_name)) == 4611686018427388200LL;
+	(&(attrs->label_name)) == 4611686018427388212LL;
+	channel == 0;
+line 965:	N93 -{int ret;}-> N94
+line 968:	N94 -{snprintf((char *)(&(attrs->in_name)), 12U, "in%d_input", channel);}-> N95
+line 969:	N95 -{attr = &(attrs->in);}-> N96
+	attr == 4611686018427388088LL;
+	((signed long long int)(&(attr->dev_attr))) == 4611686018427388088LL;
+	((signed long long int)(&(attr->dev_attr.attr))) == 4611686018427388088LL;
+	((signed long long int)(&(attr->dev_attr.attr.skey))) == 4611686018427388106LL;
+	(&(attr->dev_attr.attr.skey.subkeys)) == 4611686018427388106LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[0]))) == 4611686018427388106LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[1]))) == 4611686018427388107LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[2]))) == 4611686018427388108LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[3]))) == 4611686018427388109LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[4]))) == 4611686018427388110LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[5]))) == 4611686018427388111LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[6]))) == 4611686018427388112LL;
+	((signed long long int)(&((attr->dev_attr.attr.skey.subkeys)[7]))) == 4611686018427388113LL;
+line 970:	N96 -{attr->index = channel;}-> N97
+	(attr->index) == 0;
+line 971:	N97 -{attr->dev_attr.attr.name = (const char *)(&(attrs->in_name));}-> N98
+line 972:	N98 -{attr->dev_attr.attr.mode = 292U;}-> N99
+line 973:	N99 -{attr->dev_attr.show = &s3c_hwmon_ch_show;}-> N100
+line 974:	N100 -{ldv_device_create_file_5(dev, (const struct device_attribute *)(&(attr->dev_attr)))}-> N352
+none:	N352 -{Function start dummy edge}-> N353
+line 1275:	N353 -{int tmp;}-> N354
+line 1278:	N354 -{ldv_device_create_file_dev_attr_of_sensor_device_attribute(ldv_func_arg2)}-> N406
+none:	N406 -{Function start dummy edge}-> N407
+line 1368:	N407 -{[ldv_call_dev_attr_of_sensor_device_attribute == 0]}-> N409
+	ldv_call_dev_attr_of_sensor_device_attribute == 0;
+line 1369:	N409 -{ldv_count_2 = ldv_count_2 + 1;}-> N411
+	ldv_count_2 == 1;
+line 1370:	N411 -{ldv_call_dev_attr_of_sensor_device_attribute = 1;}-> N412
+	ldv_call_dev_attr_of_sensor_device_attribute == 1;
+line 1371:	N412 -{[!(ldv_count_1 >= ldv_count_2)]}-> N415
+	ldv_count_1 == 0;
+ldv_count_2 == 1;
+line 1374:	N415 -{ldv_error()}-> N364
+none:	N364 -{Function start dummy edge}-> N365
+line 1297:	N365 -{Label: ERROR}-> N366
+line 1297:	N366 -{__VERIFIER_error();}-> N367

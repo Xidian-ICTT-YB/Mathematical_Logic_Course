@@ -1,0 +1,357 @@
+Running CPAchecker with Java heap of size 5000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+Parallel Algorithm statistics
+-----------------------------
+Number of algorithms used:        2
+Successful analysis: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+
+
+Statistics for: config/invariantGeneration-no-out.properties
+============================================================
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.137s
+Automaton transfers with branching:                0
+Automaton transfer successors:                         3355 (count: 3382, min: 0, max: 1, avg: 0.99) [0 x 27, 1 x 3355]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            1832
+Max size of waitlist:            75
+Average size of waitlist:        42
+Number of computed successors:   2029
+Max successors for one state:    2
+Number of times merged:          575
+Number of times stopped:         635
+Number of times breaked:         0
+
+Total time for CPA algorithm:         8.906s (Max:     8.906s)
+  Time for choose from waitlist:      0.025s
+  Time for precision adjustment:      0.134s
+  Time for transfer relation:         6.810s
+  Time for merge operator:            1.610s
+  Time for stop operator:             0.159s
+  Time for adding to reached set:     0.063s
+
+
+Statistics for: config/induction-noAI/sv-comp16--k-induction-noAI.properties
+============================================================================
+
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            6 (1% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         6 (100%)
+  Times precision was empty:       6 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         32
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       36
+Number of predicates discovered:          0
+
+
+Time for post operator:                  2.369s
+  Time for path formula creation:        2.345s
+Time for strengthen operator:            0.061s
+Time for prec operator:                  0.070s
+  Time for abstraction:                  0.011s (Max:     0.011s, Count: 6)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.071s
+Time for coverage check:                 0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           1
+Maximum loop iteration reached:                    2
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                   2271 (count: 736, min: 0, max: 11, avg: 3.09)
+Number of global variables:                            1206 (count: 736, min: 0, max: 3, avg: 1.64)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                     751
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                0.203s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                33
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                   60
+Number of deterministic Assumptions:                      2
+Level of Determinism:                              3%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.101s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          751 (count: 757, min: 0, max: 1, avg: 0.99) [0 x 6, 1 x 751]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            736
+Max size of waitlist:            10
+Average size of waitlist:        3
+Number of computed successors:   751
+Max successors for one state:    2
+Number of times merged:          16
+Number of times stopped:         16
+Number of times breaked:         0
+
+Total time for CPA algorithm:         4.752s (Max:     4.752s)
+  Time for choose from waitlist:      0.044s
+  Time for precision adjustment:      0.617s
+  Time for transfer relation:         3.683s
+  Time for merge operator:            0.113s
+  Time for stop operator:             0.052s
+  Time for adding to reached set:     0.087s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:           4.773s
+Time for final sat check:                0.143s
+Time for error path creation:            1.021s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    1
+Number of infeasible paths:         0 (0%)
+Time for counterexample checks:         2.775s
+Time for running CBMC:                  2.173s
+
+
+Other statistics
+================
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.300
+  Visited lines:          492
+  Total lines:            1080
+  Line coverage:          0.456
+  Visited conditions:     53
+  Total conditions:       248
+  Condition coverage:     0.214
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1479
+Number of CFA edges:             1857
+Number of relevant variables:    240
+Number of functions:             50
+Number of loops:                 9
+Size of reached set:             736
+  Number of reached locations:   645 (44%)
+    Avg states per location:     1
+    Max states per location:     9 (at node N353)
+  Number of reached functions:   15 (30%)
+  Number of partitions:          736
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       6
+
+Time for analysis setup:          6.375s
+  Time for loading CPAs:          0.818s
+  Time for loading parser:        0.480s
+  Time for CFA construction:      5.032s
+    Time for parsing file(s):     1.441s
+    Time for AST to CFA:          2.012s
+    Time for CFA sanity check:    0.507s
+    Time for post-processing:     1.068s
+      Time for var class.:        0.572s
+Time for Analysis:               12.914s
+CPU time for analysis:           40.510s
+Time for analyzing result:        0.004s
+Total time for CPAchecker:       19.308s
+Total CPU time for CPAchecker:   53.890s
+Time for statistics:              0.246s
+
+Time for Garbage Collector:       0.698s (in 8 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                209MB (   199 MiB) max;     64MB (    61 MiB) avg;    214MB (   204 MiB) peak
+Used non-heap memory:             45MB (    43 MiB) max;     34MB (    32 MiB) avg;     45MB (    43 MiB) peak
+Used in PS Old Gen pool:          19MB (    18 MiB) max;     15MB (    15 MiB) avg;     22MB (    21 MiB) peak
+Allocated heap memory:           265MB (   253 MiB) max;    179MB (   171 MiB) avg
+Allocated non-heap memory:        47MB (    45 MiB) max;     35MB (    33 MiB) avg
+Total process virtual memory:   9251MB (  8822 MiB) max;   8910MB (  8498 MiB) avg
+
+Verification result: FALSE. Property violation (__VERIFIER_error(); called in line 2944) found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+
+Using the following resource limits: CPU-time limit of 170s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+line 1709: Dead code detected: [size > 8192UL] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1709: Dead code detected: [!(size > 8192UL)] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1710: Dead code detected: tmp = kmalloc_large(size, flags); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1715: Dead code detected: [(flags & 1U) == 0U] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1715: Dead code detected: [!((flags & 1U) == 0U)] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1716: Dead code detected: tmp___0 = kmalloc_slab(size); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1718: Dead code detected: [!(((unsigned long)s) == ((unsigned long)((struct kmem_cache *)0)))] (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1719: Dead code detected: return (16); (CFACreationUtils.addEdgeToCFA, INFO)
+
+line 1723: Dead code detected: ret = kmem_cache_alloc_notrace(s, flags); (CFACreationUtils.addEdgeToCFA, INFO)
+
+Inline assembler ignored, analysis is probably unsound! (CFABuilder.createCFA, WARNING)
+
+lines 1519-1524: Function pointer *((void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ))it_func) with type void (*)(void *, unsigned long, const void *, size_t , size_t , gfp_t ) is called, but no possible target functions were found. (CFunctionPointerResolver.replaceFunctionPointerCall, WARNING)
+
+The following configuration options were specified but are not used:
+ properties 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Using the following resource limits: CPU-time limit of 170s (Parallel analysis 2:ResourceLimitChecker.fromConfiguration, INFO)
+
+Using the following resource limits: CPU-time limit of 170s (Parallel analysis 1:ResourceLimitChecker.fromConfiguration, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (Parallel analysis 1:InductionStepCase:PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (Parallel analysis 1:InductionStepCase:ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Creating formula for program (Parallel analysis 1:AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_handler_precall to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_driver_register to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __pci_register_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function pci_unregister_driver to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_driver_unregister to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_buf_put to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function comedi_event to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function free_irq to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_unsetup to be a pure function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function mite_list_devices to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_license to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_author to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_module_description to be a constant function. (Parallel analysis 1:PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (Parallel analysis 1:AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Error found, creating error path (Parallel analysis 1:BMCAlgorithm.analyzeCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found, starting counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+Error path found and confirmed by counterexample check with CBMC. (Parallel analysis 1:CounterexampleCheckAlgorithm.checkCounterexample, INFO)
+
+config/induction-noAI/sv-comp16--k-induction-noAI.properties finished successfully. (ParallelAlgorithm.handleFutureResults, INFO)
+
+Analysis was terminated (Parallel analysis 2:ParallelAlgorithm.runParallelAnalysis, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/ErrorPath.txt) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/witness.graphml.gz) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/ErrorPath.txt) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/witness.graphml.gz) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/ErrorPath.txt) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/witness.graphml.gz) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/ErrorPath.txt) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/witness.graphml.gz) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/ErrorPath.txt) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/witness.graphml.gz) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/ErrorPath.txt) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+
+Warning: Could not write information about the error path to file (Unable to create parent directories of ./output/witness.graphml.gz) (Parallel analysis 1:ARGCPA:Files.createParentDirs, WARNING)
+

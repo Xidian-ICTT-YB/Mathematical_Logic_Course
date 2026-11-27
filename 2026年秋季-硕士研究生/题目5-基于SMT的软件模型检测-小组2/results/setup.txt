@@ -1,0 +1,13 @@
+date: 2026-11-02T06:06:07Z
+host: Darwin lonelinesdeMacBook-Air.local 25.3.0 Darwin Kernel Version 25.3.0: Wed Jan 28 20:56:42 PST 2026; root:xnu-12377.91.3~2/RELEASE_ARM64_T8142 arm64
+cpu: 10 cores, mem: 17179869184 bytes
+docker: 29.2.1 / arm64
+container: Linux 81d78a3ccc93 6.12.76-linuxkit #1 SMP Fri Mar  6 10:10:19 UTC 2026 x86_64 GNU/Linux
+openjdk version "1.8.0_504"
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_504-b01)
+OpenJDK 64-Bit Server VM (Temurin)(build 25.504-b01, mixed mode)
+--- smoke: MathSAT5 BMC on example-safe.c ---
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+Total time for CPAchecker:        2.205s
+Total CPU time for CPAchecker:    2.790s
+Verification result: TRUE. No property violation found by chosen configuration.

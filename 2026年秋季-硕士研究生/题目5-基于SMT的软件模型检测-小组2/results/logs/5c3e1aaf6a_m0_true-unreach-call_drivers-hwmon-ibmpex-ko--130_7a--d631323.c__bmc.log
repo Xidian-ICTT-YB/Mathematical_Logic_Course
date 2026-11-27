@@ -1,0 +1,266 @@
+Running CPAchecker with Java heap of size 5000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            817 (0% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            0 (0%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         817 (100%)
+  Times precision was empty:       817 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         68760
+  BDD entailment checks:           0
+Number of SMT sat checks:          0
+  trivial:                         0
+  cached:                          0
+
+Max ABE block size:                       608
+Number of predicates discovered:          0
+
+
+Time for post operator:                 26.285s
+  Time for path formula creation:       26.155s
+Time for strengthen operator:            0.217s
+Time for prec operator:                  0.180s
+  Time for abstraction:                  0.034s (Max:     0.003s, Count: 817)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                81.980s
+Time for coverage check:                 0.007s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+Bounds CPA statistics
+---------------------
+Bound k:                                           4
+Maximum loop iteration reached:                    5
+
+
+ValueAnalysisCPA statistics
+---------------------------
+Number of variables:                                3240041 (count: 297799, min: 0, max: 23, avg: 10.88)
+Number of global variables:                          885393 (count: 297799, min: 0, max: 5, avg: 2.97)
+
+ValueAnalysisPrecisionAdjustment statistics
+-------------------------------------------
+Number of abstraction computations:                  333875
+Total time for liveness abstraction:                   0.000s
+Total time for abstraction computation:                1.565s
+Total time for path thresholds:                        0.000s
+Number of tracked memory locations:                63
+
+ValueAnalysisTransferRelation statistics
+----------------------------------------
+Number of Assumptions:                                71924
+Number of deterministic Assumptions:                  23778
+Level of Determinism:                              33%
+
+ConstraintsStrengthenOperator statistics
+----------------------------------------
+Total time for strengthening by ConstraintsCPA:     0.000s
+Replaced symbolic expressions: 0
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.518s
+  Time for transition matches:                         0.197s
+  Time for transition assertions:                      0.000s
+  Time for transition actions:                         0.003s
+Automaton transfers with branching:                0
+Automaton transfer successors:                       333875 (count: 334692, min: 0, max: 1, avg: 1.00) [0 x 817, 1 x 333875]
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            316672
+Max size of waitlist:            2635
+Average size of waitlist:        1192
+Number of computed successors:   333875
+Max successors for one state:    2
+Number of times merged:          34380
+Number of times stopped:         34380
+Number of times breaked:         0
+
+Total time for CPA algorithm:       113.236s (Max:    81.378s)
+  Time for choose from waitlist:      0.146s
+  Time for precision adjustment:      4.818s
+  Time for transfer relation:        31.373s
+  Time for merge operator:           75.253s
+  Time for stop operator:             0.320s
+  Time for adding to reached set:     0.546s
+
+BMC algorithm statistics
+------------------------
+Time for BMC formula creation:         121.493s
+Time for final sat check:                1.224s
+Time for bounding assertions check:     18.839s
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.778
+  Visited lines:          740
+  Total lines:            826
+  Line coverage:          0.896
+  Visited conditions:     109
+  Total conditions:       130
+  Condition coverage:     0.838
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     1098
+Number of CFA edges:             1168
+Number of relevant variables:    149
+Number of functions:             45
+Number of loops:                 10
+Size of reached set:             297799
+  Number of reached locations:   972 (89%)
+    Avg states per location:     306
+    Max states per location:     3614 (at node N562)
+  Number of reached functions:   35 (78%)
+  Number of partitions:          297799
+    Avg size of partitions:      1
+    Max size of partitions:      1
+  Number of target states:       673
+  Size of final wait list        1652
+
+Time for analysis setup:          2.916s
+  Time for loading CPAs:          0.802s
+  Time for loading parser:        0.409s
+  Time for CFA construction:      1.587s
+    Time for parsing file(s):     0.505s
+    Time for AST to CFA:          0.542s
+    Time for CFA sanity check:    0.115s
+    Time for post-processing:     0.379s
+      Time for var class.:        0.212s
+Time for Analysis:              134.649s
+CPU time for analysis:          165.330s
+Total time for CPAchecker:      137.584s
+Total CPU time for CPAchecker:  170.550s
+Time for statistics:              8.185s
+
+Time for Garbage Collector:       4.626s (in 49 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:               1811MB (  1727 MiB) max;    764MB (   729 MiB) avg;   2003MB (  1911 MiB) peak
+Used non-heap memory:             43MB (    41 MiB) max;     41MB (    39 MiB) avg;     44MB (    42 MiB) peak
+Used in PS Old Gen pool:         251MB (   239 MiB) max;    121MB (   115 MiB) avg;    295MB (   281 MiB) peak
+Allocated heap memory:          1934MB (  1844 MiB) max;   1447MB (  1380 MiB) avg
+Allocated non-heap memory:        45MB (    43 MiB) max;     44MB (    42 MiB) avg
+Total process virtual memory:   9540MB (  9098 MiB) max;   9280MB (  8850 MiB) avg
+
+Verification result: UNKNOWN, incomplete analysis.
+More details about the verification run can be found in the directory "./output".
+
+Using the following resource limits: CPU-time limit of 170s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (AssumptionStorageCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (ValueAnalysisCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Assuming external function ldv_handler_precall to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_smi_watcher_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_smi_watcher_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function device_remove_file to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function list_del to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_set_drvdata to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hwmon_device_unregister to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_destroy_user to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_free_recv_msg to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function complete to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function dev_err to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_create_user to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __mutex_init to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __init_waitqueue_head to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_validate_addr to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ipmi_request_settime to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function wait_for_completion to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function _dev_info to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function hwmon_device_register to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __list_add to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function memcmp to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_final_state to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 2 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 3 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Starting satisfiability check... (AbstractBMCAlgorithm.boundedModelCheck, INFO)
+
+Starting assertions check... (AbstractBMCAlgorithm.checkBoundingAssertions, INFO)
+
+Adjusting maxLoopIterations to 4 (BoundsCPA:BoundsCPA.adjustPrecision, INFO)
+
+Creating formula for program (AbstractBMCAlgorithm.run, INFO)
+
+Shutdown requested (The CPU-time limit of 170s has elapsed.), waiting for termination. (ForceTerminationOnShutdown$1.shutdownRequested, WARNING)
+
+Warning: Analysis interrupted (The CPU-time limit of 170s has elapsed.) (ShutdownNotifier.shutdownIfNecessary, WARNING)
+

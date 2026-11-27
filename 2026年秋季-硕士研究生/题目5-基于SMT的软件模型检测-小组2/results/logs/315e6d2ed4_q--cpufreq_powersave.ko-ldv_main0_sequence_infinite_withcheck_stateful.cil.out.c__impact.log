@@ -1,0 +1,187 @@
+Running CPAchecker with Java heap of size 5000M.
+Running CPAchecker with default stack size (1024k). Specify a larger value with -stack if needed.
+PredicateCPA statistics
+-----------------------
+Number of abstractions:            2 (1% of all post computations)
+  Times abstraction was reused:    0
+  Because of function entry/exit:  0 (0%)
+  Because of loop head:            2 (100%)
+  Because of join nodes:           0 (0%)
+  Because of threshold:            0 (0%)
+  Because of target state:         0 (0%)
+  Times precision was empty:       2 (100%)
+  Times precision was {false}:     0 (0%)
+  Times result was cached:         0 (0%)
+  Times cartesian abs was used:    0 (0%)
+  Times boolean abs was used:      0 (0%)
+  Times result was 'false':        0 (0%)
+Number of strengthen sat checks:   0
+Number of coverage checks:         9
+  BDD entailment checks:           1
+Number of SMT sat checks:          1
+  trivial:                         1
+  cached:                          0
+
+Max ABE block size:                       40
+Number of predicates discovered:          0
+
+
+Time for post operator:                  0.189s
+  Time for path formula creation:        0.188s
+Time for strengthen operator:            0.002s
+Time for prec operator:                  0.005s
+  Time for abstraction:                  0.001s (Max:     0.001s, Count: 2)
+    Solving time:                        0.000s (Max:     0.000s)
+    Model enumeration time:              0.000s
+    Time for BDD construction:           0.000s (Max:     0.000s)
+Time for merge operator:                 0.021s
+Time for coverage check:                 0.000s
+  Time for BDD entailment checks:        0.000s
+Total time for SMT solver (w/o itp):     0.000s
+
+
+PrecisionBootstrap statistics
+-----------------------------
+Init. function predicates:                         0
+Init. global predicates:                           0
+Init. location predicates:                         0
+
+Invariant Generation statistics
+-------------------------------
+
+AutomatonAnalysis (SVCOMP) statistics
+-------------------------------------
+Number of states:                                  1
+Total time for successor computation:                  0.015s
+Automaton transfers with branching:                0
+Automaton transfer successors:                          246 (count: 246, min: 1, max: 1, avg: 1.00) [1 x 246]
+
+Predicate Forced Covering statistics
+------------------------------------
+Attempted forced coverings:             0
+No of times elment was already covered: 0
+
+CPA algorithm statistics
+------------------------
+Number of iterations:            56
+Max size of waitlist:            6
+Average size of waitlist:        3
+Number of computed successors:   59
+Max successors for one state:    2
+Number of times merged:          4
+Number of times stopped:         4
+Number of times breaked:         0
+
+Total time for CPA algorithm:         0.305s (Max:     0.305s)
+  Time for choose from waitlist:      0.005s
+  Time for forced covering:           0.001s
+  Time for precision adjustment:      0.024s
+  Time for transfer relation:         0.242s
+  Time for merge operator:            0.023s
+  Time for stop operator:             0.003s
+  Time for adding to reached set:     0.004s
+
+Static Predicate Refiner statistics
+-----------------------------------
+
+Impact Refiner statistics
+-------------------------
+Number of predicate refinements:                   0
+
+CEGAR algorithm statistics
+--------------------------
+Number of refinements:                0
+
+Counterexample-Check Algorithm statistics
+-----------------------------------------
+Number of counterexample checks:    0
+
+Code Coverage
+-----------------------------
+  Function coverage:      0.333
+  Visited lines:          204
+  Total lines:            232
+  Line coverage:          0.879
+  Visited conditions:     12
+  Total conditions:       24
+  Condition coverage:     0.500
+
+CPAchecker general statistics
+-----------------------------
+Number of program locations:     294
+Number of CFA edges:             301
+Number of relevant variables:    27
+Number of functions:             12
+Number of loops:                 1
+Size of reached set:             56
+  Number of reached locations:   52 (18%)
+    Avg states per location:     1
+    Max states per location:     2 (at node N83)
+  Number of reached functions:   4 (33%)
+  Number of partitions:          55
+    Avg size of partitions:      1
+    Max size of partitions:      2 (with key [N120 (before line 640), Function main called from node N84, stack depth 1 [52066604], stack [main]])
+  Number of target states:       0
+
+Time for analysis setup:          2.371s
+  Time for loading CPAs:          0.625s
+  Time for loading parser:        0.572s
+  Time for CFA construction:      0.917s
+    Time for parsing file(s):     0.395s
+    Time for AST to CFA:          0.200s
+    Time for CFA sanity check:    0.040s
+    Time for post-processing:     0.187s
+      Time for var class.:        0.107s
+Time for Analysis:                0.311s
+CPU time for analysis:            0.470s
+Time for analyzing result:        0.000s
+Total time for CPAchecker:        2.707s
+Total CPU time for CPAchecker:    4.740s
+Time for statistics:              0.053s
+
+Time for Garbage Collector:       0.161s (in 5 runs)
+Garbage Collector(s) used:    PS MarkSweep, PS Scavenge
+Used heap memory:                 60MB (    57 MiB) max;     30MB (    29 MiB) avg;     75MB (    71 MiB) peak
+Used non-heap memory:             30MB (    28 MiB) max;     23MB (    21 MiB) avg;     32MB (    30 MiB) peak
+Used in PS Old Gen pool:          19MB (    18 MiB) max;      9MB (     8 MiB) avg;     21MB (    20 MiB) peak
+Allocated heap memory:           167MB (   160 MiB) max;    122MB (   116 MiB) avg
+Allocated non-heap memory:        33MB (    31 MiB) max;     24MB (    23 MiB) avg
+Total process virtual memory:   8693MB (  8290 MiB) max;   8670MB (  8268 MiB) avg
+
+Verification result: TRUE. No property violation found by chosen configuration.
+More details about the verification run can be found in the directory "./output".
+
+Using the following resource limits: CPU-time limit of 170s (ResourceLimitChecker.fromConfiguration, INFO)
+
+CPAchecker 1.6.1-svn 23022 (OpenJDK 64-Bit Server VM 1.8.0_504) started (CPAchecker.run, INFO)
+
+Dead code detected: Label switch_break is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+Dead code detected: Label switch_break is not reachable. (CFAFunctionBuilder.leave, INFO)
+
+MathSAT5 is available for research and evaluation purposes only. It can not be used in a commercial environment, particularly as part of a commercial product, without written permission. MathSAT5 is provided as is, without any warranty. Please write to mathsat@fbk.eu for additional questions regarding licensing MathSAT5 or obtaining more up-to-date versions. (PredicateCPA:JavaSMT:Mathsat5SolverContext.<init>, WARNING)
+
+Using predicate analysis with MathSAT5 version 5.3.12 (fd820dac73f2) (Aug  8 2016 11:12:19, gmp 5.1.3, gcc 5.3.0, 64-bit). (PredicateCPA:PredicateCPA.<init>, INFO)
+
+Using refinement for predicate analysis with ImpactRefinementStrategy strategy. (PredicateCPA:PredicateCPARefiner.<init>, INFO)
+
+The following configuration options were specified but are not used:
+ counterexample.checker.config 
+ (CPAchecker.printConfigurationWarnings, WARNING)
+
+Starting analysis ... (CPAchecker.runAlgorithm, INFO)
+
+Assuming external function ldv_initialize to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cpufreq_register_governor to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function cpufreq_unregister_governor to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __dynamic_pr_debug to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function __cpufreq_driver_target to be a pure function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Assuming external function ldv_check_final_state to be a constant function. (PredicateCPA:ExpressionToFormulaVisitor.visit, INFO)
+
+Stopping analysis ... (CPAchecker.runAlgorithm, INFO)
+
