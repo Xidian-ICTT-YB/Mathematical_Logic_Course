@@ -1,0 +1,5 @@
+bootstrap rc=0 duration_s=45.779
+prepare-source rc=0 duration_s=14.339
+build-all rc=0 duration_s=139.588
+run-experiments rc=0 duration_s=7.519
+validate-artifacts rc=0 duration_s=0.106

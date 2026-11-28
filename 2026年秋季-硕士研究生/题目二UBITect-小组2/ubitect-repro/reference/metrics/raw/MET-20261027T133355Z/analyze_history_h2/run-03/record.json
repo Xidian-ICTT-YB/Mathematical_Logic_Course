@@ -1,0 +1,16 @@
+{
+  "stage": "analyze_history_h2",
+  "repeat": 3,
+  "argv": [
+    "/work/build/ubitect-original/ubitect",
+    "-ubi-analysis",
+    "@bitcode.list"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T133355Z/analyze_history_h2/run-03",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.1198,
+  "max_rss_kb": 38272,
+  "time_log": "/work/metrics/raw/MET-20261027T133355Z/analyze_history_h2/run-03/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T133355Z/analyze_history_h2/run-03/command.log"
+}

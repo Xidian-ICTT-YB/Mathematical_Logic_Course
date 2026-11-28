@@ -1,0 +1,2 @@
+cd /work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export
+/work/build/klee-original/bin/klee '-json={"aliasNum": 4, "argNo": -1, "bc": "/work/artifacts/B_no_dedup_reporting/backlog.bc", "blacklist": ["backlog.llbc-test-1", "backlog.llbc-test-4"], "fieldNo": -1, "function": "test", "lineNo": 26, "rank": "NORMAL_PTR", "type": "stack", "use": "backlog.llbc-test-3", "warning": "  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49", "whitelist": ["backlog.llbc-test-0"]}' ./built-in.bc

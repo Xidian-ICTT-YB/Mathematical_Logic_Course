@@ -1,0 +1,22 @@
+{
+  "stage": "bbtag_history_h1",
+  "repeat": 2,
+  "argv": [
+    "/work/.venv-linux/bin/python",
+    "-I",
+    "/work/scripts/getbclist_py3.py",
+    "--llvm-dir",
+    "/opt/llvm7",
+    "--plugin",
+    "/work/build/bbtag/bbTaglib.so",
+    "--workdir",
+    "/work/metrics/raw/MET-20261027T1330Z/bbtag_history_h1/run-02"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T1330Z/bbtag_history_h1/run-02",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.2317,
+  "max_rss_kb": 38468,
+  "time_log": "/work/metrics/raw/MET-20261027T1330Z/bbtag_history_h1/run-02/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T1330Z/bbtag_history_h1/run-02/command.log"
+}

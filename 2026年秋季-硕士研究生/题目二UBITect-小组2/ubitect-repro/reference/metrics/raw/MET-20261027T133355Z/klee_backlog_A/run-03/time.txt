@@ -1,0 +1,23 @@
+	Command being timed: "/work/build/klee-original/bin/klee.noexport -json={"aliasNum": 4, "argNo": -1, "bc": "/work/artifacts/A_original_default_dedup/backlog.bc", "blacklist": ["backlog.llbc-test-1", "backlog.llbc-test-3", "backlog.llbc-test-4"], "fieldNo": -1, "function": "test", "lineNo": 25, "rank": "NORMAL_PTR", "type": "stack", "use": "backlog.llbc-test-2", "warning": "  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46", "whitelist": ["backlog.llbc-test-0"]} ./built-in.bc"
+	User time (seconds): 0.14
+	System time (seconds): 0.00
+	Percent of CPU this job got: 95%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.15
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 48684
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 252
+	Minor (reclaiming a frame) page faults: 3295
+	Voluntary context switches: 358
+	Involuntary context switches: 45
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

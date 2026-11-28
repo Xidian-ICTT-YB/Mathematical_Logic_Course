@@ -1,0 +1,457 @@
+{
+  "analysis_manifest": "/work/artifacts/analysis/manifest.json",
+  "bbtag_sha256": "420b4afa16f567ca1971f01306b5bbf3dffe66da625ef975b15ddaa0fe9a3eb6",
+  "cases": [
+    {
+      "analyzer": "/work/build/ubitect-original/ubitect",
+      "analyzer_sha256": "e0e4377cb291553af1ec84fe0a254a6c7b8d6e414bc079f71e93a6e9cf3d13ef",
+      "candidate_count": 1,
+      "candidate_lines": [
+        25
+      ],
+      "candidate_uses": [
+        "backlog.llbc-test-2"
+      ],
+      "candidates": [
+        {
+          "bc_line": "/work/artifacts/A_original_default_dedup/backlog.bc:",
+          "export": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export",
+              "duration_s": 0.226,
+              "exit_code": 0,
+              "log": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/klee.log",
+              "shell": "/work/build/klee-original/bin/klee '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": true,
+            "confirmed": true,
+            "confirmed_lines": [
+              25
+            ],
+            "duration_s": 0.226,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/A_original_default_dedup/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export",
+              "duration_s": 0.077,
+              "exit_code": 0,
+              "log": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/A_original_default_dedup/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": true,
+            "smt_replay": {
+              "exit_code": 0,
+              "model": "[backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]",
+              "query": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/query.smt2",
+              "result": "sat",
+              "z3_version": "4.8.8"
+            },
+            "timed_out": false
+          },
+          "index": 1,
+          "lineNo": 25,
+          "original": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee.noexport",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-original",
+              "duration_s": 0.225,
+              "exit_code": 0,
+              "log": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-original/klee.log",
+              "shell": "/work/build/klee-original/bin/klee.noexport '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": true,
+            "confirmed": true,
+            "confirmed_lines": [
+              25
+            ],
+            "duration_s": 0.225,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/A_original_default_dedup/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-original",
+              "duration_s": 0.069,
+              "exit_code": 0,
+              "log": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-original/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/A_original_default_dedup/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": false,
+            "smt_replay": null,
+            "timed_out": false
+          },
+          "same_confirmation": true,
+          "use": "backlog.llbc-test-2"
+        }
+      ],
+      "case": "A",
+      "config_note": "upstream warningReported() default; unmodified KLEE",
+      "confirmed_count_default_reporting": 1,
+      "confirmed_count_smt_export_build": 1,
+      "confirmed_lines_default_reporting": [
+        25
+      ],
+      "confirmed_lines_smt_export_build": [
+        25
+      ],
+      "title": "original_default_dedup"
+    },
+    {
+      "analyzer": "/work/build/ubitect-nodedup/ubitect",
+      "analyzer_sha256": "22a373d72a5592108075166b76e3158a9a30f5038fa78645c28edb07d9daaccb",
+      "candidate_count": 2,
+      "candidate_lines": [
+        25,
+        26
+      ],
+      "candidate_uses": [
+        "backlog.llbc-test-2",
+        "backlog.llbc-test-3"
+      ],
+      "candidates": [
+        {
+          "bc_line": "/work/artifacts/B_no_dedup_reporting/backlog.bc:",
+          "export": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-smt-export",
+              "duration_s": 0.222,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-smt-export/klee.log",
+              "shell": "/work/build/klee-original/bin/klee '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": true,
+            "confirmed": true,
+            "confirmed_lines": [
+              25
+            ],
+            "duration_s": 0.222,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/B_no_dedup_reporting/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-smt-export",
+              "duration_s": 0.076,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-smt-export/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/B_no_dedup_reporting/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": true,
+            "smt_replay": {
+              "exit_code": 0,
+              "model": "[backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]",
+              "query": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-smt-export/query.smt2",
+              "result": "sat",
+              "z3_version": "4.8.8"
+            },
+            "timed_out": false
+          },
+          "index": 1,
+          "lineNo": 25,
+          "original": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee.noexport",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-original",
+              "duration_s": 0.224,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-original/klee.log",
+              "shell": "/work/build/klee-original/bin/klee.noexport '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": true,
+            "confirmed": true,
+            "confirmed_lines": [
+              25
+            ],
+            "duration_s": 0.224,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/B_no_dedup_reporting/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-original",
+              "duration_s": 0.071,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-original/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/B_no_dedup_reporting/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": false,
+            "smt_replay": null,
+            "timed_out": false
+          },
+          "same_confirmation": true,
+          "use": "backlog.llbc-test-2"
+        },
+        {
+          "bc_line": "/work/artifacts/B_no_dedup_reporting/backlog.bc:",
+          "export": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 26, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export",
+              "duration_s": 0.225,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/klee.log",
+              "shell": "/work/build/klee-original/bin/klee '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 26, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": true,
+            "confirmed": true,
+            "confirmed_lines": [
+              26
+            ],
+            "duration_s": 0.225,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/B_no_dedup_reporting/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export",
+              "duration_s": 0.078,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/B_no_dedup_reporting/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": true,
+            "smt_replay": {
+              "exit_code": 0,
+              "model": "[alloca = 18446744073709551615,\n backlog.llbc-test-3 = 1,\n backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]",
+              "query": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/query.smt2",
+              "result": "sat",
+              "z3_version": "4.8.8"
+            },
+            "timed_out": false
+          },
+          "index": 2,
+          "lineNo": 26,
+          "original": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee.noexport",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 26, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-original",
+              "duration_s": 0.229,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-original/klee.log",
+              "shell": "/work/build/klee-original/bin/klee.noexport '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 26, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": true,
+            "confirmed": true,
+            "confirmed_lines": [
+              26
+            ],
+            "duration_s": 0.229,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/B_no_dedup_reporting/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-original",
+              "duration_s": 0.069,
+              "exit_code": 0,
+              "log": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-original/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/B_no_dedup_reporting/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": false,
+            "smt_replay": null,
+            "timed_out": false
+          },
+          "same_confirmation": true,
+          "use": "backlog.llbc-test-3"
+        }
+      ],
+      "case": "B",
+      "config_note": "teaching build with -DUBITECT_NO_DEDUP; reporting granularity only",
+      "confirmed_count_default_reporting": 2,
+      "confirmed_count_smt_export_build": 2,
+      "confirmed_lines_default_reporting": [
+        25,
+        26
+      ],
+      "confirmed_lines_smt_export_build": [
+        25,
+        26
+      ],
+      "title": "no_dedup_reporting"
+    },
+    {
+      "analyzer": "/work/build/ubitect-original/ubitect",
+      "analyzer_sha256": "e0e4377cb291553af1ec84fe0a254a6c7b8d6e414bc079f71e93a6e9cf3d13ef",
+      "candidate_count": 0,
+      "candidate_lines": [],
+      "candidate_uses": [],
+      "candidates": [],
+      "case": "C",
+      "config_note": "source-level control: backlog initialized to NULL",
+      "confirmed_count_default_reporting": 0,
+      "confirmed_count_smt_export_build": 0,
+      "confirmed_lines_default_reporting": [],
+      "confirmed_lines_smt_export_build": [],
+      "title": "null_initialization_fix"
+    },
+    {
+      "analyzer": "/work/build/ubitect-original/ubitect",
+      "analyzer_sha256": "e0e4377cb291553af1ec84fe0a254a6c7b8d6e414bc079f71e93a6e9cf3d13ef",
+      "candidate_count": 1,
+      "candidate_lines": [
+        25
+      ],
+      "candidate_uses": [
+        "backlog.llbc-test-3"
+      ],
+      "candidates": [
+        {
+          "bc_line": "/work/artifacts/D_short_circuit_control/backlog.bc:",
+          "export": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/D_short_circuit_control/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\", \"backlog.llbc-test-5\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-smt-export",
+              "duration_s": 0.171,
+              "exit_code": 0,
+              "log": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-smt-export/klee.log",
+              "shell": "/work/build/klee-original/bin/klee '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/D_short_circuit_control/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\", \"backlog.llbc-test-5\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": false,
+            "confirmed": false,
+            "confirmed_lines": [],
+            "duration_s": 0.171,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/D_short_circuit_control/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-smt-export",
+              "duration_s": 0.068,
+              "exit_code": 0,
+              "log": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-smt-export/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/D_short_circuit_control/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": false,
+            "smt_replay": null,
+            "timed_out": false
+          },
+          "index": 1,
+          "lineNo": 25,
+          "original": {
+            "command": {
+              "argv": [
+                "/work/build/klee-original/bin/klee.noexport",
+                "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/D_short_circuit_control/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\", \"backlog.llbc-test-5\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+                "./built-in.bc"
+              ],
+              "cwd": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-original",
+              "duration_s": 0.227,
+              "exit_code": 0,
+              "log": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-original/klee.log",
+              "shell": "/work/build/klee-original/bin/klee.noexport '-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/D_short_circuit_control/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\", \"backlog.llbc-test-5\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}' ./built-in.bc",
+              "timed_out": false
+            },
+            "confirm_result_exists": false,
+            "confirmed": false,
+            "confirmed_lines": [],
+            "duration_s": 0.227,
+            "exit_code": 0,
+            "link": {
+              "argv": [
+                "/opt/llvm7/bin/llvm-link",
+                "-o",
+                "built-in.bc",
+                "/work/artifacts/D_short_circuit_control/backlog.bc"
+              ],
+              "cwd": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-original",
+              "duration_s": 0.069,
+              "exit_code": 0,
+              "log": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/klee-original/llvm-link.log",
+              "shell": "/opt/llvm7/bin/llvm-link -o built-in.bc /work/artifacts/D_short_circuit_control/backlog.bc",
+              "timed_out": false
+            },
+            "smt_exported": false,
+            "smt_replay": null,
+            "timed_out": false
+          },
+          "same_confirmation": true,
+          "use": "backlog.llbc-test-3"
+        }
+      ],
+      "case": "D",
+      "config_note": "source-level control: if(a && backlog)",
+      "confirmed_count_default_reporting": 0,
+      "confirmed_count_smt_export_build": 0,
+      "confirmed_lines_default_reporting": [],
+      "confirmed_lines_smt_export_build": [],
+      "title": "short_circuit_control"
+    }
+  ],
+  "container_arch": "x86_64",
+  "generated_at": "2026-11-12T08:02:56.361080+00:00",
+  "klee_export_build_sha256": "af8ac3d92aacdc280084bc153157659b17e7bd811ce708b97c88e5169e6386f0",
+  "klee_original_sha256": "31123473af87384260025d30b50d633c649f64c09360fe46af3dc37711e1bf8b",
+  "llvm_has_rtti": "NO",
+  "llvm_version": "7.0.0",
+  "ubitect_nodedup_sha256": "22a373d72a5592108075166b76e3158a9a30f5038fa78645c28edb07d9daaccb",
+  "ubitect_original_sha256": "e0e4377cb291553af1ec84fe0a254a6c7b8d6e414bc079f71e93a6e9cf3d13ef",
+  "upstream_commit": "fb97a1554f6fc3a5e8b35f680a8bfe2b82a79848",
+  "z3_real_query_versions": "4.8.8"
+}

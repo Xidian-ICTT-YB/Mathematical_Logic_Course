@@ -1,0 +1,6 @@
+source=/work/source/UBITect
+commit=fb97a1554f6fc3a5e8b35f680a8bfe2b82a79848
+patch_sha256=5d3431280d597cfa508b76252f92f1a46e2e4e15a86bebb3f673ff7eb3411113  0001-cmake-object-shared-target.patch
+patch_sha256=9161a3cc0fd27859d06f6fcf84b4d8ab428cdbe20bfde6d468587cde81e60ea1  0002-no-dedup-reporting.patch
+patch_sha256=ffbb818e03619b28f621514cd5e7e0e35aa1675bd9971d664058fd65b2e0e62e  0003-smt-export-before-check.patch
+prepared_at_utc=2026-11-12T08:00:29Z

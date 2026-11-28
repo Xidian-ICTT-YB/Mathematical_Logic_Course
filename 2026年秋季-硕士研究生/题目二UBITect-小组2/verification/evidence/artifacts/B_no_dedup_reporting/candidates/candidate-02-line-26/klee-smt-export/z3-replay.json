@@ -1,0 +1,6 @@
+{
+  "model": "[alloca = 18446744073709551615,\n backlog.llbc-test-3 = 1,\n backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]",
+  "query": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/query.smt2",
+  "result": "sat",
+  "z3_version": "4.8.8"
+}

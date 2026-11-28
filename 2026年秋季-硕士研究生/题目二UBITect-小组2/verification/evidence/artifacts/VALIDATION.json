@@ -1,0 +1,340 @@
+{
+  "checks": [
+    {
+      "check": "four_cases_present",
+      "detail": "['A', 'B', 'C', 'D']",
+      "ok": true
+    },
+    {
+      "check": "A_source_present",
+      "detail": "/work/artifacts/A_original_default_dedup/backlog.c",
+      "ok": true
+    },
+    {
+      "check": "A_bitcode_present",
+      "detail": "backlog.bc + backlog.llbc",
+      "ok": true
+    },
+    {
+      "check": "A_ir_present",
+      "detail": "/work/artifacts/A_original_default_dedup/backlog.ll",
+      "ok": true
+    },
+    {
+      "check": "A_stage1_present",
+      "detail": "/work/artifacts/A_original_default_dedup/stage1.log",
+      "ok": true
+    },
+    {
+      "check": "A_warnings_parsed",
+      "detail": "/work/artifacts/A_original_default_dedup/warnings.parsed.json",
+      "ok": true
+    },
+    {
+      "check": "A_candidate_count_consistent",
+      "detail": "1 candidates",
+      "ok": true
+    },
+    {
+      "check": "A_c1_warning_raw",
+      "detail": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/warning.json",
+      "ok": true
+    },
+    {
+      "check": "A_c1_original_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "A_c1_original_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "A_c1_original_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "A_c1_export_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "A_c1_export_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "A_c1_export_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "A_c1_same_confirmation",
+      "detail": "[25] vs [25]",
+      "ok": true
+    },
+    {
+      "check": "A_raw_confirm_present",
+      "detail": "case-level concatenation of raw candidate files",
+      "ok": true
+    },
+    {
+      "check": "B_source_present",
+      "detail": "/work/artifacts/B_no_dedup_reporting/backlog.c",
+      "ok": true
+    },
+    {
+      "check": "B_bitcode_present",
+      "detail": "backlog.bc + backlog.llbc",
+      "ok": true
+    },
+    {
+      "check": "B_ir_present",
+      "detail": "/work/artifacts/B_no_dedup_reporting/backlog.ll",
+      "ok": true
+    },
+    {
+      "check": "B_stage1_present",
+      "detail": "/work/artifacts/B_no_dedup_reporting/stage1.log",
+      "ok": true
+    },
+    {
+      "check": "B_warnings_parsed",
+      "detail": "/work/artifacts/B_no_dedup_reporting/warnings.parsed.json",
+      "ok": true
+    },
+    {
+      "check": "B_candidate_count_consistent",
+      "detail": "2 candidates",
+      "ok": true
+    },
+    {
+      "check": "B_c1_warning_raw",
+      "detail": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/warning.json",
+      "ok": true
+    },
+    {
+      "check": "B_c1_original_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c1_original_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c1_original_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "B_c1_export_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c1_export_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c1_export_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "B_c1_same_confirmation",
+      "detail": "[25] vs [25]",
+      "ok": true
+    },
+    {
+      "check": "B_c2_warning_raw",
+      "detail": "/work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/warning.json",
+      "ok": true
+    },
+    {
+      "check": "B_c2_original_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c2_original_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c2_original_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "B_c2_export_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c2_export_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "B_c2_export_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "B_c2_same_confirmation",
+      "detail": "[26] vs [26]",
+      "ok": true
+    },
+    {
+      "check": "B_raw_confirm_present",
+      "detail": "case-level concatenation of raw candidate files",
+      "ok": true
+    },
+    {
+      "check": "C_source_present",
+      "detail": "/work/artifacts/C_null_initialization_fix/backlog.c",
+      "ok": true
+    },
+    {
+      "check": "C_bitcode_present",
+      "detail": "backlog.bc + backlog.llbc",
+      "ok": true
+    },
+    {
+      "check": "C_ir_present",
+      "detail": "/work/artifacts/C_null_initialization_fix/backlog.ll",
+      "ok": true
+    },
+    {
+      "check": "C_stage1_present",
+      "detail": "/work/artifacts/C_null_initialization_fix/stage1.log",
+      "ok": true
+    },
+    {
+      "check": "C_warnings_parsed",
+      "detail": "/work/artifacts/C_null_initialization_fix/warnings.parsed.json",
+      "ok": true
+    },
+    {
+      "check": "C_candidate_count_consistent",
+      "detail": "0 candidates",
+      "ok": true
+    },
+    {
+      "check": "D_source_present",
+      "detail": "/work/artifacts/D_short_circuit_control/backlog.c",
+      "ok": true
+    },
+    {
+      "check": "D_bitcode_present",
+      "detail": "backlog.bc + backlog.llbc",
+      "ok": true
+    },
+    {
+      "check": "D_ir_present",
+      "detail": "/work/artifacts/D_short_circuit_control/backlog.ll",
+      "ok": true
+    },
+    {
+      "check": "D_stage1_present",
+      "detail": "/work/artifacts/D_short_circuit_control/stage1.log",
+      "ok": true
+    },
+    {
+      "check": "D_warnings_parsed",
+      "detail": "/work/artifacts/D_short_circuit_control/warnings.parsed.json",
+      "ok": true
+    },
+    {
+      "check": "D_candidate_count_consistent",
+      "detail": "1 candidates",
+      "ok": true
+    },
+    {
+      "check": "D_c1_warning_raw",
+      "detail": "/work/artifacts/D_short_circuit_control/candidates/candidate-01-line-25/warning.json",
+      "ok": true
+    },
+    {
+      "check": "D_c1_original_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "D_c1_original_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "D_c1_original_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "D_c1_export_llvm_link_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "D_c1_export_klee_rc0",
+      "detail": "rc=0",
+      "ok": true
+    },
+    {
+      "check": "D_c1_export_command_present",
+      "detail": "real KLEE argv preserved",
+      "ok": true
+    },
+    {
+      "check": "D_c1_same_confirmation",
+      "detail": "[] vs []",
+      "ok": true
+    },
+    {
+      "check": "D_confirm_absence_documented",
+      "detail": "no fabricated confirm_result.json",
+      "ok": true
+    },
+    {
+      "check": "real_smt_exports_present",
+      "detail": "3 real exports",
+      "ok": true
+    },
+    {
+      "check": "real_smt_has_sat_model",
+      "detail": "at least one SAT replay with model",
+      "ok": true
+    },
+    {
+      "check": "independent_a_zero_and_nonzero_unsat",
+      "detail": "teaching reconstruction, clearly separate from KLEE exports",
+      "ok": true
+    },
+    {
+      "check": "z3_version_pinned",
+      "detail": "4.8.8",
+      "ok": true
+    },
+    {
+      "check": "container_arch_x86_64",
+      "detail": "x86_64",
+      "ok": true
+    },
+    {
+      "check": "llvm_rtti_off",
+      "detail": "NO",
+      "ok": true
+    },
+    {
+      "check": "original_export_klee_differ",
+      "detail": "the preserved no-export binary is a distinct build",
+      "ok": true
+    }
+  ],
+  "ok": true
+}

@@ -1,0 +1,76 @@
+{
+  "binaries_sha256": {
+    "bbtag": "420b4afa16f567ca1971f01306b5bbf3dffe66da625ef975b15ddaa0fe9a3eb6",
+    "klee_export": "af8ac3d92aacdc280084bc153157659b17e7bd811ce708b97c88e5169e6386f0",
+    "klee_original": "31123473af87384260025d30b50d633c649f64c09360fe46af3dc37711e1bf8b",
+    "ubitect_nodedup": "22a373d72a5592108075166b76e3158a9a30f5038fa78645c28edb07d9daaccb",
+    "ubitect_original": "e0e4377cb291553af1ec84fe0a254a6c7b8d6e414bc079f71e93a6e9cf3d13ef"
+  },
+  "container": {
+    "arch": "x86_64",
+    "os_release": "Ubuntu 24.04.5 LTS",
+    "uname": "Linux 7.0.14-linuxkit x86_64"
+  },
+  "finished_utc": "2026-11-12T08:02:56Z",
+  "pipeline_exit_code": 0,
+  "run_id": "RUN-20261112T075709Z",
+  "stage_timings": [
+    {
+      "duration_s": 45.779,
+      "exit_code": 0,
+      "stage": "bootstrap"
+    },
+    {
+      "duration_s": 14.339,
+      "exit_code": 0,
+      "stage": "prepare-source"
+    },
+    {
+      "duration_s": 139.588,
+      "exit_code": 0,
+      "stage": "build-all"
+    },
+    {
+      "duration_s": 7.519,
+      "exit_code": 0,
+      "stage": "run-experiments"
+    },
+    {
+      "duration_s": 0.106,
+      "exit_code": 0,
+      "stage": "validate-artifacts"
+    }
+  ],
+  "stages": [
+    {
+      "exit_code": null,
+      "stage": "bootstrap"
+    },
+    {
+      "exit_code": null,
+      "stage": "prepare-source"
+    },
+    {
+      "exit_code": null,
+      "stage": "build-all"
+    },
+    {
+      "exit_code": null,
+      "stage": "run-experiments"
+    },
+    {
+      "exit_code": null,
+      "stage": "validate-artifacts"
+    }
+  ],
+  "started_utc": "2026-11-12T07:59:28Z",
+  "toolchain": {
+    "clang": "clang version 7.0.0 (tags/RELEASE_700/final)",
+    "cmake": "cmake version 3.31.10",
+    "llvm": "7.0.0",
+    "llvm_has_rtti": "NO",
+    "python": "Python 3.12.16",
+    "uv": "uv 0.13.6 (x86_64-unknown-linux-gnu)",
+    "z3": "4.8.8"
+  }
+}

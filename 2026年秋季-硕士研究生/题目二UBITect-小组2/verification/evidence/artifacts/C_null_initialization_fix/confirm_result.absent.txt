@@ -1,0 +1,1 @@
+No KLEE confirm_result.json was produced (no candidate was confirmed).

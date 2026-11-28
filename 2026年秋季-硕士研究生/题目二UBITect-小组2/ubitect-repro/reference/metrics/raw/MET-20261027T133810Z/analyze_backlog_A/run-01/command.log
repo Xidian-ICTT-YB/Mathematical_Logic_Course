@@ -1,0 +1,21 @@
+$ /work/build/ubitect-original/ubitect -ubi-analysis @bitcode.list
+Total 1 file(s)
+[CallGraph] Initializing 1 modules .
+[CallGraph / 1] [/work/metrics/raw/MET-20261027T133810Z/analyze_backlog_A/run-01/backlog.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph / 2] [/work/metrics/raw/MET-20261027T133810Z/analyze_backlog_A/run-01/backlog.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+Finalizing ...
+[CallGraph] Done!
+
+1 functions in total.
+partition size : 0, sccSize = 0, rec size = 0, biggest = 0
+FuncAnalysis for F :test module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+ [[Code] /work/metrics/raw/MET-20261027T133810Z/analyze_backlog_A/run-01/backlog.c: +25]
+1 Functions Finished.

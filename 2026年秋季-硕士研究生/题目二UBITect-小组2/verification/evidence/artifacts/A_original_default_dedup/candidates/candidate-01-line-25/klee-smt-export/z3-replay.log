@@ -1,0 +1,8 @@
+$ /work/.venv-linux/bin/python -I /work/scripts/replay_z3.py /work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/query.smt2 --json-out /work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/z3-replay.json
+query: /work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/query.smt2
+z3_version: 4.8.8
+result: sat
+model:
+[backlog.llbc-test-2 = 1,
+ input_0 = 0,
+ backlog.llbc-test-0 = 1]

@@ -1,0 +1,9 @@
+case,version,candidate,line,target,original_klee_s,export_klee_s,original_rc,export_rc,confirmed,smt_exported,source
+A,A,1,25,True,0.225,0.165,0,0,True,True,artifacts/A_original_default_dedup/candidates/candidate-01-line-25/result.json
+B,B,1,25,True,0.167,0.166,0,0,True,True,artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/result.json
+B,B,2,26,True,0.217,0.226,0,0,True,True,artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/result.json
+D,D,1,25,True,0.174,0.172,0,0,False,False,artifacts/D_short_circuit_control/candidates/candidate-01-line-25/result.json
+ahci_xgene_h1,h1,1,825,True,0.223,0.227,0,0,True,True,history/ahci_xgene/runs/HIST-20261027T133810Z/h1/candidates/candidate-01-line-825/result.json
+ahci_xgene_h1,h1,2,825,True,0.22,0.216,0,0,True,True,history/ahci_xgene/runs/HIST-20261027T133810Z/h1/candidates/candidate-02-line-825/result.json
+ahci_xgene_h2,h2,1,824,True,0.225,0.217,0,0,False,False,history/ahci_xgene/runs/HIST-20261027T133810Z/h2/candidates/candidate-01-line-824/result.json
+ahci_xgene_h2,h2,2,824,True,0.219,0.226,0,0,False,False,history/ahci_xgene/runs/HIST-20261027T133810Z/h2/candidates/candidate-02-line-824/result.json

@@ -1,0 +1,19 @@
+{
+  "created_by": "docker run",
+  "id": "94bb2282931cededdd6ffd106c62a6b9ab92f3ad690217661028be709c117076",
+  "image": "ubitect-repro-delivery-20261112b:base",
+  "image_id": "sha256:7fae0074c7fc173c536af1459c16c8f1dd9518258cda9a744021d9edc6beff3b",
+  "label": {
+    "com.ubitect.repro.managed": "true",
+    "com.ubitect.repro.project": "ubitect-repro"
+  },
+  "last_action": "docker start",
+  "mount": {
+    "destination": "/work",
+    "source": "/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro"
+  },
+  "name": "ubitect-repro-delivery-20261112b-demo",
+  "platform": "linux/amd64",
+  "recorded_at_utc": "2026-11-12T08:03:41.781458+00:00",
+  "workdir": "/work"
+}

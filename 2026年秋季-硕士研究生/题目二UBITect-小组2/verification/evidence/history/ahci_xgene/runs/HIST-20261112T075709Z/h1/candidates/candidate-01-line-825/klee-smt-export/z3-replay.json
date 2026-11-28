@@ -1,0 +1,6 @@
+{
+  "model": "[%128 G22_30865600L1 = 18446744073709551615,\n %85 G24_33099760L1 = 18446744073709547520,\n %68 G24_33099752L1 = 18446744073709547520,\n %51 G24_33099744L1 = 18446744073709547520,\n ahci_xgene_h1.llbc-xgene_ahci_probe-21 = 1,\n ahci_xgene_h1.llbc-xgene_ahci_probe-10 = 1,\n ahci_xgene_h1.llbc-xgene_ahci_probe-8 = 1,\n ahci_xgene_h1.llbc-xgene_ahci_probe-6 = 1,\n ahci_xgene_h1.llbc-history_entry_failure-2 = 1,\n input_0 = 0,\n ahci_xgene_h1.llbc-xgene_ahci_probe-0 = 1]",
+  "query": "/work/history/ahci_xgene/runs/HIST-20261112T075709Z/h1/candidates/candidate-01-line-825/klee-smt-export/query.smt2",
+  "result": "sat",
+  "z3_version": "4.8.8"
+}

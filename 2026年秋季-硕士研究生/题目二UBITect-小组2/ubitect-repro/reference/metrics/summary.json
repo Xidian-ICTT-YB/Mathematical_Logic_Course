@@ -1,0 +1,533 @@
+{
+  "run_id": "MET-20261027T133810Z",
+  "functional": [
+    {
+      "case": "A",
+      "version": "A",
+      "report_mode": "upstream warningReported() default; unmodified KLEE",
+      "warning_objects": 1,
+      "independent_use_points": 1,
+      "target_warning_objects": 1,
+      "target_confirmed_objects": 1,
+      "target_confirmed_use_points": 1,
+      "klee_candidates_run": 1,
+      "timeouts": 0,
+      "errors": 0,
+      "solver_status": "sat",
+      "repeat_consistency": "A:3/3"
+    },
+    {
+      "case": "B",
+      "version": "B",
+      "report_mode": "teaching build with -DUBITECT_NO_DEDUP; reporting granularity only",
+      "warning_objects": 2,
+      "independent_use_points": 2,
+      "target_warning_objects": 2,
+      "target_confirmed_objects": 2,
+      "target_confirmed_use_points": 2,
+      "klee_candidates_run": 2,
+      "timeouts": 0,
+      "errors": 0,
+      "solver_status": "sat",
+      "repeat_consistency": "not repeated this round"
+    },
+    {
+      "case": "C",
+      "version": "C",
+      "report_mode": "source-level control: backlog initialized to NULL",
+      "warning_objects": 0,
+      "independent_use_points": 0,
+      "target_warning_objects": 0,
+      "target_confirmed_objects": 0,
+      "target_confirmed_use_points": 0,
+      "klee_candidates_run": 0,
+      "timeouts": 0,
+      "errors": 0,
+      "solver_status": "none",
+      "repeat_consistency": "not repeated this round"
+    },
+    {
+      "case": "D",
+      "version": "D",
+      "report_mode": "source-level control: if(a && backlog)",
+      "warning_objects": 1,
+      "independent_use_points": 1,
+      "target_warning_objects": 1,
+      "target_confirmed_objects": 0,
+      "target_confirmed_use_points": 0,
+      "klee_candidates_run": 1,
+      "timeouts": 0,
+      "errors": 0,
+      "solver_status": "none",
+      "repeat_consistency": "not repeated this round"
+    },
+    {
+      "case": "ahci_xgene_h1",
+      "version": "h1",
+      "report_mode": "historical function-level failure-only harness",
+      "warning_objects": 2,
+      "independent_use_points": 1,
+      "target_warning_objects": 2,
+      "target_confirmed_objects": 2,
+      "target_confirmed_use_points": 1,
+      "klee_candidates_run": 2,
+      "timeouts": 0,
+      "errors": 0,
+      "solver_status": "sat",
+      "repeat_consistency": "h1:3/3"
+    },
+    {
+      "case": "ahci_xgene_h2",
+      "version": "h2",
+      "report_mode": "historical function-level failure-only harness",
+      "warning_objects": 2,
+      "independent_use_points": 1,
+      "target_warning_objects": 2,
+      "target_confirmed_objects": 0,
+      "target_confirmed_use_points": 0,
+      "klee_candidates_run": 2,
+      "timeouts": 0,
+      "errors": 0,
+      "solver_status": "none",
+      "repeat_consistency": "h2:3/3"
+    }
+  ],
+  "resources": {
+    "stage_summary": {
+      "compile_backlog_A": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.236,
+            0.2394,
+            0.2348
+          ],
+          "median": 0.236,
+          "min": 0.2348,
+          "max": 0.2394
+        },
+        "max_rss_kb": {
+          "values": [
+            53868,
+            53908,
+            53952
+          ],
+          "median": 53908,
+          "min": 53868,
+          "max": 53952
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "bbtag_backlog_A": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.1777,
+            0.1796,
+            0.1757
+          ],
+          "median": 0.1777,
+          "min": 0.1757,
+          "max": 0.1796
+        },
+        "max_rss_kb": {
+          "values": [
+            38396,
+            38180,
+            38396
+          ],
+          "median": 38396,
+          "min": 38180,
+          "max": 38396
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "analyze_backlog_A": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.0674,
+            0.067,
+            0.0673
+          ],
+          "median": 0.0673,
+          "min": 0.067,
+          "max": 0.0674
+        },
+        "max_rss_kb": {
+          "values": [
+            14448,
+            14320,
+            14460
+          ],
+          "median": 14448,
+          "min": 14320,
+          "max": 14460
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "klee_backlog_A": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.218,
+            0.1704,
+            0.1695
+          ],
+          "median": 0.1704,
+          "min": 0.1695,
+          "max": 0.218
+        },
+        "max_rss_kb": {
+          "values": [
+            48744,
+            48996,
+            48668
+          ],
+          "median": 48744,
+          "min": 48668,
+          "max": 48996
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "replay_backlog_A": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.2735,
+            0.2781,
+            0.2811
+          ],
+          "median": 0.2781,
+          "min": 0.2735,
+          "max": 0.2811
+        },
+        "max_rss_kb": {
+          "values": [
+            59692,
+            59788,
+            59768
+          ],
+          "median": 59768,
+          "min": 59692,
+          "max": 59788
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "compile_history_h1": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.23,
+            0.2289,
+            0.2303
+          ],
+          "median": 0.23,
+          "min": 0.2289,
+          "max": 0.2303
+        },
+        "max_rss_kb": {
+          "values": [
+            55140,
+            55184,
+            55272
+          ],
+          "median": 55184,
+          "min": 55140,
+          "max": 55272
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "bbtag_history_h1": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.1749,
+            0.2327,
+            0.232
+          ],
+          "median": 0.232,
+          "min": 0.1749,
+          "max": 0.2327
+        },
+        "max_rss_kb": {
+          "values": [
+            38680,
+            38600,
+            38508
+          ],
+          "median": 38600,
+          "min": 38508,
+          "max": 38680
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "analyze_history_h1": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.1187,
+            0.1247,
+            0.1306
+          ],
+          "median": 0.1247,
+          "min": 0.1187,
+          "max": 0.1306
+        },
+        "max_rss_kb": {
+          "values": [
+            38224,
+            38096,
+            37948
+          ],
+          "median": 38096,
+          "min": 37948,
+          "max": 38224
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "klee_history_h1": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.2235,
+            0.2308,
+            0.2308
+          ],
+          "median": 0.2308,
+          "min": 0.2235,
+          "max": 0.2308
+        },
+        "max_rss_kb": {
+          "values": [
+            49936,
+            49952,
+            49916
+          ],
+          "median": 49936,
+          "min": 49916,
+          "max": 49952
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "replay_history_h1": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.2797,
+            0.2759,
+            0.2915
+          ],
+          "median": 0.2797,
+          "min": 0.2759,
+          "max": 0.2915
+        },
+        "max_rss_kb": {
+          "values": [
+            60440,
+            60396,
+            60544
+          ],
+          "median": 60440,
+          "min": 60396,
+          "max": 60544
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "compile_history_h2": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.23,
+            0.2278,
+            0.2239
+          ],
+          "median": 0.2278,
+          "min": 0.2239,
+          "max": 0.23
+        },
+        "max_rss_kb": {
+          "values": [
+            55200,
+            55204,
+            55204
+          ],
+          "median": 55204,
+          "min": 55200,
+          "max": 55204
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "bbtag_history_h2": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.1777,
+            0.2293,
+            0.178
+          ],
+          "median": 0.178,
+          "min": 0.1777,
+          "max": 0.2293
+        },
+        "max_rss_kb": {
+          "values": [
+            38508,
+            38536,
+            38468
+          ],
+          "median": 38508,
+          "min": 38468,
+          "max": 38536
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "analyze_history_h2": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.1179,
+            0.1174,
+            0.1165
+          ],
+          "median": 0.1174,
+          "min": 0.1165,
+          "max": 0.1179
+        },
+        "max_rss_kb": {
+          "values": [
+            38016,
+            38292,
+            38076
+          ],
+          "median": 38076,
+          "min": 38016,
+          "max": 38292
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      },
+      "klee_history_h2": {
+        "n": 3,
+        "wall_s": {
+          "values": [
+            0.2256,
+            0.228,
+            0.2261
+          ],
+          "median": 0.2261,
+          "min": 0.2256,
+          "max": 0.228
+        },
+        "max_rss_kb": {
+          "values": [
+            50040,
+            49716,
+            49792
+          ],
+          "median": 49792,
+          "min": 49716,
+          "max": 50040
+        },
+        "exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "timeouts": 0
+      }
+    },
+    "cgroup": {
+      "start": {
+        "current": 35442688,
+        "peak": 53096448,
+        "max": null
+      },
+      "end": {
+        "current": 70168576,
+        "peak": 110284800,
+        "max": null
+      }
+    },
+    "vm_config": {
+      "cpus": 6,
+      "memory_mib": 8192,
+      "disk_size_mib": 102400,
+      "source": "Docker Desktop settings"
+    },
+    "build_first_time": "unavailable; cold image/KLEE build was not re-run in this round",
+    "disk_bytes": {
+      "artifacts": 301100,
+      "history": 15326162,
+      "metrics": 7518584,
+      "build": 100753241
+    },
+    "measurement_note": "max_rss_kb is per-process GNU time peak; cgroup values are container lifetime/current, not per-stage peaks; VM configuration is not measured usage. build_first_time is unavailable rather than zero.",
+    "candidate_timings_file": "metrics/candidate_timings.csv"
+  },
+  "raw_dir": "/work/metrics/raw/MET-20261027T133810Z"
+}

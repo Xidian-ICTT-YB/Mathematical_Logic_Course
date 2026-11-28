@@ -1,0 +1,17 @@
+{
+  "stage": "replay_history_h1",
+  "repeat": 2,
+  "argv": [
+    "/work/.venv-linux/bin/python",
+    "-I",
+    "/work/scripts/replay_z3.py",
+    "/work/metrics/raw/MET-20261027T133810Z/replay_history_h1/run-02/query.smt2"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T133810Z/replay_history_h1/run-02",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.2759,
+  "max_rss_kb": 60396,
+  "time_log": "/work/metrics/raw/MET-20261027T133810Z/replay_history_h1/run-02/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T133810Z/replay_history_h1/run-02/command.log"
+}

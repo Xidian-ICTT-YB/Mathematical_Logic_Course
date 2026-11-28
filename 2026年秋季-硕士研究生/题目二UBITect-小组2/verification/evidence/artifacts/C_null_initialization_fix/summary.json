@@ -1,0 +1,15 @@
+{
+  "analyzer": "/work/build/ubitect-original/ubitect",
+  "analyzer_sha256": "e0e4377cb291553af1ec84fe0a254a6c7b8d6e414bc079f71e93a6e9cf3d13ef",
+  "candidate_count": 0,
+  "candidate_lines": [],
+  "candidate_uses": [],
+  "candidates": [],
+  "case": "C",
+  "config_note": "source-level control: backlog initialized to NULL",
+  "confirmed_count_default_reporting": 0,
+  "confirmed_count_smt_export_build": 0,
+  "confirmed_lines_default_reporting": [],
+  "confirmed_lines_smt_export_build": [],
+  "title": "null_initialization_fix"
+}

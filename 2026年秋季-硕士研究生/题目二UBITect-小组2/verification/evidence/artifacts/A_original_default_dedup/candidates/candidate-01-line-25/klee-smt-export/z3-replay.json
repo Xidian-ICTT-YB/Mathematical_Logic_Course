@@ -1,0 +1,6 @@
+{
+  "model": "[backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]",
+  "query": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/query.smt2",
+  "result": "sat",
+  "z3_version": "4.8.8"
+}

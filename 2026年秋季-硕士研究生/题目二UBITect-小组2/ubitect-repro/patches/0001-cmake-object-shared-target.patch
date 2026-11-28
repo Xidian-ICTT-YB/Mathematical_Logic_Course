@@ -1,0 +1,15 @@
+diff --git a/src/lib/CMakeLists.txt b/src/lib/CMakeLists.txt
+index a486b9af..e9dab1e2 100644
+--- a/src/lib/CMakeLists.txt
++++ b/src/lib/CMakeLists.txt
+@@ -32,7 +32,9 @@ set (UBITectSourceCodes
+ 
+ # Build libraries.
+ add_library (UBITectObj OBJECT ${UBITectSourceCodes})
+-add_library (UBITect SHARED $<TARGET_OBJECTS:UBITectObj>)
++# Compatibility: CMake 3.31 emits an invalid dependency rule for an object-only
++# SHARED target.  The tutorial executable links UBITectStatic; this unused
++# shared target is omitted.  Analysis sources and flags are unchanged.
+ add_library (UBITectStatic STATIC $<TARGET_OBJECTS:UBITectObj>)
+ 
+ # Build executable ubitect.

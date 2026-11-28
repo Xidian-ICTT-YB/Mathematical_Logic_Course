@@ -1,0 +1,34 @@
+diff --git a/KLEE/klee/lib/Encode/Encode.cpp b/KLEE/klee/lib/Encode/Encode.cpp
+index 147fba0e..fb3f7bdf 100644
+--- a/KLEE/klee/lib/Encode/Encode.cpp
++++ b/KLEE/klee/lib/Encode/Encode.cpp
+@@ -9,6 +9,7 @@
+ 
+ #include <llvm/Support/CommandLine.h>
+ #include <llvm/Support/raw_ostream.h>
++#include <cstdlib>
+ #include <fstream>
+ #include <iostream>
+ 
+@@ -345,6 +346,21 @@ namespace klee {
+ #endif
+                         z3_solverr.add(constraintexpr[i]);
+                     }
++                    // Diagnostic-only export: emit the assertions that already
++                    // exist immediately before the real check().  This branch
++                    // neither adds a constraint nor changes the solver result.
++                    const char *smtDump = std::getenv("UBITECT_SMT_DUMP");
++                    if (smtDump && *smtDump) {
++                        std::ofstream smtOut(smtDump, std::ios::out | std::ios::trunc);
++                        smtOut << "; UBITect confirmation query, exported before check()\n";
++                        smtOut << "; candidate lineNo=" << json["lineNo"]
++                               << " use=" << useList[i] << "\n";
++                        smtOut << z3_solverr.to_smt2();
++                        smtOut.flush();
++                        if (!smtOut) {
++                            std::cerr << "[SMT] failed to write " << smtDump << "\n";
++                        }
++                    }
+                     check_result result = z3_solverr.check();
+                     if (result == z3::sat) {
+                         model m = z3_solverr.get_model();

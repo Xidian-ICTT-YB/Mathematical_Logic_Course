@@ -1,0 +1,17 @@
+{
+  "stage": "replay_backlog_A",
+  "repeat": 3,
+  "argv": [
+    "/work/.venv-linux/bin/python",
+    "-I",
+    "/work/scripts/replay_z3.py",
+    "/work/metrics/raw/MET-20261027T133810Z/replay_backlog_A/run-03/query.smt2"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T133810Z/replay_backlog_A/run-03",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.2811,
+  "max_rss_kb": 59768,
+  "time_log": "/work/metrics/raw/MET-20261027T133810Z/replay_backlog_A/run-03/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T133810Z/replay_backlog_A/run-03/command.log"
+}
