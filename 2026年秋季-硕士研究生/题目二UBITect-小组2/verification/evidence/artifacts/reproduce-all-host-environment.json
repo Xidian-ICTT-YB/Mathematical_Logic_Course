@@ -1,0 +1,76 @@
+{
+  "exit_code": 0,
+  "finished_utc": "2026-11-12T08:03:04Z",
+  "host": {
+    "disk": {
+      "argv": [
+        "df",
+        "-h",
+        "/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro"
+      ],
+      "available": true,
+      "exit_code": 0,
+      "output": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s5   228Gi   123Gi    79Gi    61%    1.0M  825M    0%   /System/Volumes/Data"
+    },
+    "docker_cli": {
+      "argv": [
+        "docker",
+        "--version"
+      ],
+      "available": true,
+      "exit_code": 0,
+      "output": "Docker version 29.9.2, build a82e528"
+    },
+    "docker_server": {
+      "argv": [
+        "docker",
+        "version",
+        "--format",
+        "{{.Server.Version}} {{.Server.Arch}}"
+      ],
+      "available": true,
+      "exit_code": 0,
+      "output": "29.9.2 arm64"
+    },
+    "machine": "arm64",
+    "python3": {
+      "argv": [
+        "python3",
+        "--version"
+      ],
+      "available": true,
+      "exit_code": 0,
+      "output": "Python 3.9.6"
+    },
+    "sw_vers": {
+      "argv": [
+        "sw_vers"
+      ],
+      "available": true,
+      "exit_code": 0,
+      "output": "ProductName:\t\tmacOS\nProductVersion:\t\t27.3\nBuildVersion:\t\t26C5035r"
+    },
+    "uname": "Darwin kotorideMac-Mini.local 27.3.0 Darwin Kernel Version 27.3.0: Fri Oct 30 02:04:06 PDT 2026; root:xnu-13432.60.57~99/RELEASE_ARM64_T8152 arm64",
+    "uv": {
+      "argv": [
+        "uv",
+        "--version"
+      ],
+      "available": true,
+      "exit_code": 0,
+      "output": "uv 0.13.6 (329bf9448 2026-10-26 aarch64-apple-darwin)"
+    }
+  },
+  "image": {
+    "architecture": "amd64",
+    "created": "2026-10-27T08:22:35.573505881Z",
+    "id": "sha256:7fae0074c7fc173c536af1459c16c8f1dd9518258cda9a744021d9edc6beff3b",
+    "os": "linux",
+    "reference": "ubitect-repro-delivery-20261112b:base",
+    "size": 3588969133
+  },
+  "mode": "A-D + H1/H2",
+  "project": "/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro",
+  "run_id": "RUN-20261112T075709Z",
+  "started_utc": "2026-11-12T07:57:10Z"
+}

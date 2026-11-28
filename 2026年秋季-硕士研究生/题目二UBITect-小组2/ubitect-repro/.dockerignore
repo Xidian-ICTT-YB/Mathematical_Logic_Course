@@ -1,0 +1,6 @@
+# Keep the build context tiny and explicitly exclude every credential/config
+# directory.  Only the two pinned toolchain archives below enter the image.
+*
+!Dockerfile
+!downloads/clang+llvm-7.0.0-x86_64-linux-gnu-ubuntu-16.04.tar.xz
+!downloads/uv-x86_64-unknown-linux-gnu-0.13.6.tar.gz

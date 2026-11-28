@@ -1,0 +1,56 @@
+{
+  "build_logs": [
+    {
+      "path": "logs/build-klee-original.log",
+      "mtime": "2026-10-27T16:28:52.512129",
+      "bytes": 14637
+    },
+    {
+      "path": "logs/test-force-build.log",
+      "mtime": "2026-10-27T16:38:04.117091",
+      "bytes": 5816
+    },
+    {
+      "path": "logs/docker-build-base.log",
+      "mtime": "2026-10-27T16:22:59.237077",
+      "bytes": 66687
+    },
+    {
+      "path": "logs/build-ubitect-original.log",
+      "mtime": "2026-10-27T16:27:00.329500",
+      "bytes": 1712
+    },
+    {
+      "path": "logs/build-all.log",
+      "mtime": "2026-10-27T16:42:24.491351",
+      "bytes": 2043
+    },
+    {
+      "path": "logs/build-klee-smt-export.log",
+      "mtime": "2026-10-27T16:30:30.947832",
+      "bytes": 1570
+    },
+    {
+      "path": "logs/build-ubitect-nodedup.log",
+      "mtime": "2026-10-27T16:29:26.892718",
+      "bytes": 3192
+    },
+    {
+      "path": "logs/build-bbtag.log",
+      "mtime": "2026-10-27T16:25:11.051556",
+      "bytes": 625
+    }
+  ],
+  "vm_process_samples": [
+    {
+      "line": "16763  77632       05:22 /Applications/Docker.app/Contents/MacOS/com.docker.virtualization --kernel /Applications/Docker.app/Contents/Resources/linuxkit/kernel --cmdline init=/initd loglevel=1 root=/dev/vdb rootfstype=erofs ro vsyscall=emulate panic=0 eth0.dhcp eth1.dhcp linuxkit.unified_cgroup_hierarchy=1 console=hvc0   virtio_net.disable_csum=1 slub_min_order=2 page_reporting.page_reporting_order=2 vpnkit.connect=connect://2/1999 --boot /Applications/Docker.app/Contents/Resources/linuxkit/desk",
+      "pid": "16763",
+      "rss_kb": 77632,
+      "elapsed": "05:22"
+    }
+  ],
+  "cold_build_seconds": null,
+  "cold_build_note": "not remeasured in this round; existing Docker image and KLEE/UBITect build reused; logs and image timestamps retained",
+  "sampled_at_utc": "2026-10-27T13:37:12.440446+00:00",
+  "vm_sample_note": "single ps RSS sample in KiB, not a peak; not comparable to per-process GNU time RSS"
+}

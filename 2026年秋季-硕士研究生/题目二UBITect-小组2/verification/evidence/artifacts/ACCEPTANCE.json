@@ -1,0 +1,278 @@
+{
+  "checks": [
+    {
+      "check": "four_cases_present",
+      "detail": "['A', 'B', 'C', 'D']",
+      "ok": true
+    },
+    {
+      "check": "A_candidates",
+      "detail": "candidates=1 expected=1",
+      "ok": true
+    },
+    {
+      "check": "A_confirmed_original",
+      "detail": "lines=[25] expected=[25]",
+      "ok": true
+    },
+    {
+      "check": "A_confirmed_export",
+      "detail": "lines=[25] expected=[25]",
+      "ok": true
+    },
+    {
+      "check": "A_candidate_dirs",
+      "detail": "dirs=1",
+      "ok": true
+    },
+    {
+      "check": "A_query_count",
+      "detail": "query.smt2 files=1 expected=1",
+      "ok": true
+    },
+    {
+      "check": "A_queries_sat",
+      "detail": "[{\"query\": \"artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/query.smt2\", \"result\": \"sat\", \"model\": \"[backlog.llbc-test-2 = 1,\\n input_0 = 0,\\n backlog.llbc-test-0 = 1]\", \"z3_version\": \"4.8.8\"}]",
+      "ok": true
+    },
+    {
+      "check": "A_query_lines",
+      "detail": "lines=[25] expected [25]",
+      "ok": true
+    },
+    {
+      "check": "A_line25_original_confirm",
+      "detail": "[25]",
+      "ok": true
+    },
+    {
+      "check": "A_line25_export_confirm",
+      "detail": "[25]",
+      "ok": true
+    },
+    {
+      "check": "A_real_query_present",
+      "detail": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/klee-smt-export/query.smt2",
+      "ok": true
+    },
+    {
+      "check": "A_query_target_line25",
+      "detail": "query header",
+      "ok": true
+    },
+    {
+      "check": "A_query_input0_64bit",
+      "detail": "KLEE encoder declares input_0 as 64-bit",
+      "ok": true
+    },
+    {
+      "check": "A_query_status_metadata",
+      "detail": "metadata only; not a solver result",
+      "ok": true
+    },
+    {
+      "check": "A_z3_sat",
+      "detail": "sat",
+      "ok": true
+    },
+    {
+      "check": "A_z3_model_input0_zero",
+      "detail": "[backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]",
+      "ok": true
+    },
+    {
+      "check": "A_z3_version",
+      "detail": "4.8.8",
+      "ok": true
+    },
+    {
+      "check": "A_use_block_line25",
+      "detail": "{\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+      "ok": true
+    },
+    {
+      "check": "B_candidates",
+      "detail": "candidates=2 expected=2",
+      "ok": true
+    },
+    {
+      "check": "B_confirmed_original",
+      "detail": "lines=[25, 26] expected=[25, 26]",
+      "ok": true
+    },
+    {
+      "check": "B_confirmed_export",
+      "detail": "lines=[25, 26] expected=[25, 26]",
+      "ok": true
+    },
+    {
+      "check": "B_candidate_dirs",
+      "detail": "dirs=2",
+      "ok": true
+    },
+    {
+      "check": "B_query_count",
+      "detail": "query.smt2 files=2 expected=2",
+      "ok": true
+    },
+    {
+      "check": "B_queries_sat",
+      "detail": "[{\"query\": \"artifacts/B_no_dedup_reporting/candidates/candidate-01-line-25/klee-smt-export/query.smt2\", \"result\": \"sat\", \"model\": \"[backlog.llbc-test-2 = 1,\\n input_0 = 0,\\n backlog.llbc-test-0 = 1]\", \"z3_version\": \"4.8.8\"}, {\"query\": \"artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/query.smt2\", \"result\": \"sat\", \"model\": \"[alloca = 18446744073709551615,\\n backlog.llbc-test-3 = 1,\\n backlog.llbc-test-2 = 1,\\n input_0 = 0,\\n backlog.llbc-test-0 = 1]\", \"z3_version\": \"4.8.8\"}]",
+      "ok": true
+    },
+    {
+      "check": "B_query_lines",
+      "detail": "lines=[25, 26] expected [25, 26]",
+      "ok": true
+    },
+    {
+      "check": "B_no_dedup_build",
+      "detail": "teaching build with -DUBITECT_NO_DEDUP; reporting granularity only",
+      "ok": true
+    },
+    {
+      "check": "B_line25_confirm",
+      "detail": "[25] / [25]",
+      "ok": true
+    },
+    {
+      "check": "B_line26_confirm",
+      "detail": "[26] / [26]",
+      "ok": true
+    },
+    {
+      "check": "C_candidates",
+      "detail": "candidates=0 expected=0",
+      "ok": true
+    },
+    {
+      "check": "C_confirmed_original",
+      "detail": "lines=[] expected=[]",
+      "ok": true
+    },
+    {
+      "check": "C_confirmed_export",
+      "detail": "lines=[] expected=[]",
+      "ok": true
+    },
+    {
+      "check": "C_candidate_dirs",
+      "detail": "dirs=0",
+      "ok": true
+    },
+    {
+      "check": "C_query_count",
+      "detail": "query.smt2 files=0 expected=0",
+      "ok": true
+    },
+    {
+      "check": "C_source_null_init",
+      "detail": "backlog.c",
+      "ok": true
+    },
+    {
+      "check": "C_no_warnings",
+      "detail": "warnings.absent.txt",
+      "ok": true
+    },
+    {
+      "check": "D_candidates",
+      "detail": "candidates=1 expected=1",
+      "ok": true
+    },
+    {
+      "check": "D_confirmed_original",
+      "detail": "lines=[] expected=[]",
+      "ok": true
+    },
+    {
+      "check": "D_confirmed_export",
+      "detail": "lines=[] expected=[]",
+      "ok": true
+    },
+    {
+      "check": "D_candidate_dirs",
+      "detail": "dirs=1",
+      "ok": true
+    },
+    {
+      "check": "D_query_count",
+      "detail": "query.smt2 files=0 expected=0",
+      "ok": true
+    },
+    {
+      "check": "D_source_short_circuit",
+      "detail": "backlog.c",
+      "ok": true
+    },
+    {
+      "check": "D_no_confirmation",
+      "detail": "confirm_result.absent.txt",
+      "ok": true
+    },
+    {
+      "check": "D_no_target_query",
+      "detail": "KLEE did not export a target query",
+      "ok": true
+    },
+    {
+      "check": "history_run_present",
+      "detail": "HIST-20261112T075709Z",
+      "ok": true
+    },
+    {
+      "check": "H1_target_objects",
+      "detail": "2",
+      "ok": true
+    },
+    {
+      "check": "H1_confirmed_objects",
+      "detail": "2",
+      "ok": true
+    },
+    {
+      "check": "H1_use_points",
+      "detail": "[825]",
+      "ok": true
+    },
+    {
+      "check": "H1_query_count",
+      "detail": "2",
+      "ok": true
+    },
+    {
+      "check": "H1_query_sat",
+      "detail": "[\"sat\", \"sat\"]",
+      "ok": true
+    },
+    {
+      "check": "H1_query_model_input0_zero",
+      "detail": "[\"[%128 G22_30865600L1 = 18446744073709551615,\\n %85 G24_33099760L1 = 18446744073709547520,\\n %68 G24_33099752L1 = 18446744073709547520,\\n %51 G24_33099744L1 = 18446744073709547520,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-21 = 1,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-10 = 1,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-8 = 1,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-6 = 1,\\n ahci_xgene_h1.llbc-history_entry_failure-2 = 1,\\n input_0 = 0,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-0 = 1]\", \"[%128 G22_30866288L1 = 18446744073709551615,\\n %85 G24_33099776L1 = 18446744073709547520,\\n %68 G24_33099768L1 = 18446744073709547520,\\n %51 G24_33099760L1 = 18446744073709547520,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-21 = 1,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-10 = 1,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-8 = 1,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-6 = 1,\\n ahci_xgene_h1.llbc-history_entry_failure-2 = 1,\\n input_0 = 0,\\n ahci_xgene_h1.llbc-xgene_ahci_probe-0 = 1]\"]",
+      "ok": true
+    },
+    {
+      "check": "H2_target_objects",
+      "detail": "2",
+      "ok": true
+    },
+    {
+      "check": "H2_confirmed_objects",
+      "detail": "0",
+      "ok": true
+    },
+    {
+      "check": "H2_no_target_query",
+      "detail": "0 queries",
+      "ok": true
+    },
+    {
+      "check": "history_commits",
+      "detail": "8134233e8d346aaa1c929dc510e75482ae318bce / 8ba559fd09bcf4e87faad3efa465dacf04c076c9",
+      "ok": true
+    }
+  ],
+  "generated_at_utc": "2026-11-12T08:03:04.598568+00:00",
+  "history_run": "HIST-20261112T075709Z",
+  "ok": true,
+  "run_id": "RUN-20261112T075709Z"
+}

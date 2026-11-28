@@ -1,0 +1,7 @@
+case,version,report_mode,warning_objects,independent_use_points,target_warning_objects,target_confirmed_objects,target_confirmed_use_points,klee_candidates_run,timeouts,errors,solver_status,repeat_consistency
+A,A,upstream warningReported() default; unmodified KLEE,1,1,1,1,1,1,0,0,sat,A:3/3
+B,B,teaching build with -DUBITECT_NO_DEDUP; reporting granularity only,2,2,2,2,2,2,0,0,sat,not repeated this round
+C,C,source-level control: backlog initialized to NULL,0,0,0,0,0,0,0,0,none,not repeated this round
+D,D,source-level control: if(a && backlog),1,1,1,0,0,1,0,0,none,not repeated this round
+ahci_xgene_h1,h1,historical function-level failure-only harness,2,1,2,2,1,2,0,0,sat,h1:3/3
+ahci_xgene_h2,h2,historical function-level failure-only harness,2,1,2,0,0,2,0,0,none,h2:3/3

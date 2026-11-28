@@ -1,0 +1,24 @@
+{
+  "stage": "compile_history_h2",
+  "repeat": 3,
+  "argv": [
+    "/opt/llvm7/bin/clang",
+    "-emit-llvm",
+    "-O0",
+    "-g",
+    "-fno-short-wchar",
+    "-DCONFIG_ACPI",
+    "-DHISTORY_ACPI_FAILURE_ONLY",
+    "-c",
+    "ahci_xgene_h2.c",
+    "-o",
+    "ahci_xgene_h2.llbc"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T133355Z/compile_history_h2/run-03",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.2311,
+  "max_rss_kb": 55204,
+  "time_log": "/work/metrics/raw/MET-20261027T133355Z/compile_history_h2/run-03/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T133355Z/compile_history_h2/run-03/command.log"
+}

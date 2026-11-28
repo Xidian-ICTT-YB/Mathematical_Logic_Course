@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-10-27T13:19:26.553217+00:00",
+  "history_run": "/work/history/ahci_xgene/runs/HIST-20261027T1322Z",
+  "inputs": {
+    "backlog": {
+      "source": "/work/metrics/raw/MET-20261027T1330Z/work/backlog/backlog.c",
+      "llbc": "/work/metrics/raw/MET-20261027T1330Z/work/backlog/backlog.llbc",
+      "bc": "/work/metrics/raw/MET-20261027T1330Z/work/backlog/backlog.bc",
+      "builtin": "/work/metrics/raw/MET-20261027T1330Z/work/backlog/built-in.bc",
+      "warning": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/warning.json",
+      "query": "/work/artifacts/analysis/real-exports/A_candidate-01-line-25.smt2"
+    },
+    "h1": {
+      "source": "/work/metrics/raw/MET-20261027T1330Z/work/h1/ahci_xgene_h1.c",
+      "llbc": "/work/metrics/raw/MET-20261027T1330Z/work/h1/ahci_xgene_h1.llbc",
+      "bc": "/work/metrics/raw/MET-20261027T1330Z/work/h1/ahci_xgene_h1.bc",
+      "builtin": "/work/metrics/raw/MET-20261027T1330Z/work/h1/built-in.bc",
+      "warning": "/work/metrics/raw/MET-20261027T1330Z/work/h1/klee-warning.json",
+      "query": "/work/history/ahci_xgene/runs/HIST-20261027T1322Z/h1/candidates/candidate-01-line-825/klee-smt-export/query.smt2"
+    },
+    "h2": {
+      "source": "/work/metrics/raw/MET-20261027T1330Z/work/h2/ahci_xgene_h2.c",
+      "llbc": "/work/metrics/raw/MET-20261027T1330Z/work/h2/ahci_xgene_h2.llbc",
+      "bc": "/work/metrics/raw/MET-20261027T1330Z/work/h2/ahci_xgene_h2.bc",
+      "builtin": "/work/metrics/raw/MET-20261027T1330Z/work/h2/built-in.bc",
+      "warning": "/work/metrics/raw/MET-20261027T1330Z/work/h2/klee-warning.json",
+      "query": null
+    }
+  },
+  "cgroup_start": {
+    "current": 37109760,
+    "peak": 53010432,
+    "max": null
+  },
+  "cold_build": "unavailable; existing image/toolchain reused (not re-installed)"
+}

@@ -1,0 +1,10 @@
+$ /work/.venv-linux/bin/python -I /work/scripts/replay_z3.py /work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/query.smt2 --json-out /work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/z3-replay.json
+query: /work/artifacts/B_no_dedup_reporting/candidates/candidate-02-line-26/klee-smt-export/query.smt2
+z3_version: 4.8.8
+result: sat
+model:
+[alloca = 18446744073709551615,
+ backlog.llbc-test-3 = 1,
+ backlog.llbc-test-2 = 1,
+ input_0 = 0,
+ backlog.llbc-test-0 = 1]

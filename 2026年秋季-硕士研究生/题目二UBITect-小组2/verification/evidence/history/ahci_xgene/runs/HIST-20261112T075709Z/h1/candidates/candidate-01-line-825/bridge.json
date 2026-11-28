@@ -1,0 +1,9 @@
+{
+  "calibration_confirm": false,
+  "calibration_exit_code": 0,
+  "calibration_timed_out": false,
+  "function": "xgene_ahci_probe -> history_entry_failure",
+  "klee_instruction": "  %138 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !263",
+  "raw_warning_instruction": "  %137 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !296",
+  "ssa_changed": true
+}

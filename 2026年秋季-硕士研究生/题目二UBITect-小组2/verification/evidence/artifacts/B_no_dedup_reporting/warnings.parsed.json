@@ -1,0 +1,49 @@
+[
+  {
+    "bc_line": "/work/artifacts/B_no_dedup_reporting/backlog.bc:",
+    "raw_warning": "{\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+    "warning": {
+      "aliasNum": 4,
+      "argNo": -1,
+      "bc": "/work/artifacts/B_no_dedup_reporting/backlog.bc",
+      "blacklist": [
+        "backlog.llbc-test-1",
+        "backlog.llbc-test-3",
+        "backlog.llbc-test-4"
+      ],
+      "fieldNo": -1,
+      "function": "test",
+      "lineNo": 25,
+      "rank": "NORMAL_PTR",
+      "type": "stack",
+      "use": "backlog.llbc-test-2",
+      "warning": "  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46",
+      "whitelist": [
+        "backlog.llbc-test-0"
+      ]
+    }
+  },
+  {
+    "bc_line": "/work/artifacts/B_no_dedup_reporting/backlog.bc:",
+    "raw_warning": "{\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/B_no_dedup_reporting/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 26, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-3\", \"warning\": \"  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+    "warning": {
+      "aliasNum": 4,
+      "argNo": -1,
+      "bc": "/work/artifacts/B_no_dedup_reporting/backlog.bc",
+      "blacklist": [
+        "backlog.llbc-test-1",
+        "backlog.llbc-test-4"
+      ],
+      "fieldNo": -1,
+      "function": "test",
+      "lineNo": 26,
+      "rank": "NORMAL_PTR",
+      "type": "stack",
+      "use": "backlog.llbc-test-3",
+      "warning": "  %10 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !49",
+      "whitelist": [
+        "backlog.llbc-test-0"
+      ]
+    }
+  }
+]

@@ -1,0 +1,2 @@
+$ /work/.venv-linux/bin/python -I /work/scripts/getbclist_py3.py --llvm-dir /opt/llvm7 --plugin /work/build/bbtag/bbTaglib.so --workdir /work/history/ahci_xgene/runs/HIST-20261112T075709Z/h1
++ /opt/llvm7/bin/opt -load /work/build/bbtag/bbTaglib.so -bbtag ahci_xgene_h1.llbc -o ahci_xgene_h1.bc

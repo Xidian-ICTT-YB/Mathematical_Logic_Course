@@ -1,0 +1,16 @@
+$ /work/.venv-linux/bin/python -I /work/scripts/replay_z3.py /work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-01/query.smt2
+query: /work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-01/query.smt2
+z3_version: 4.8.8
+result: sat
+model:
+[%128 G22_30865600L1 = 18446744073709551615,
+ %85 G24_33099760L1 = 18446744073709547520,
+ %68 G24_33099752L1 = 18446744073709547520,
+ %51 G24_33099744L1 = 18446744073709547520,
+ ahci_xgene_h1.llbc-xgene_ahci_probe-21 = 1,
+ ahci_xgene_h1.llbc-xgene_ahci_probe-10 = 1,
+ ahci_xgene_h1.llbc-xgene_ahci_probe-8 = 1,
+ ahci_xgene_h1.llbc-xgene_ahci_probe-6 = 1,
+ ahci_xgene_h1.llbc-history_entry_failure-2 = 1,
+ input_0 = 0,
+ ahci_xgene_h1.llbc-xgene_ahci_probe-0 = 1]

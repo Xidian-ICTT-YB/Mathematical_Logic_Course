@@ -1,0 +1,4 @@
+# Host-only documentation/chart/PDF tooling. Installed with uv into .venv-host.
+matplotlib==3.11.2
+reportlab==5.1.0
+pypdf==6.21.3

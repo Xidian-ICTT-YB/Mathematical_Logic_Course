@@ -1,0 +1,32 @@
+From 8134233e8d346aaa1c929dc510e75482ae318bce Mon Sep 17 00:00:00 2001
+From: Dan Carpenter <dan.carpenter@oracle.com>
+Date: Thu, 10 Mar 2016 10:45:32 +0300
+Subject: [PATCH] ata: ahci_xgene: dereferencing uninitialized pointer in probe
+
+If the call to acpi_get_object_info() fails then "info" hasn't been
+initialized.  In that situation, we already know that "version" should
+be XGENE_AHCI_V1 so we don't actually need to dereference "info".
+
+Fixes: c9802a4be661 ('ata: ahci_xgene: Add AHCI Support for 2nd HW version of APM X-Gene SoC AHCI SATA Host controller.')
+Signed-off-by: Dan Carpenter <dan.carpenter@oracle.com>
+Signed-off-by: Tejun Heo <tj@kernel.org>
+---
+ drivers/ata/ahci_xgene.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/ata/ahci_xgene.c b/drivers/ata/ahci_xgene.c
+index 8e3f7faf00d383..73b19b27713855 100644
+--- a/drivers/ata/ahci_xgene.c
++++ b/drivers/ata/ahci_xgene.c
+@@ -821,9 +821,9 @@ static int xgene_ahci_probe(struct platform_device *pdev)
+ 				dev_warn(&pdev->dev, "%s: Error reading device info. Assume version1\n",
+ 					__func__);
+ 				version = XGENE_AHCI_V1;
+-			}
+-			if (info->valid & ACPI_VALID_CID)
++			} else if (info->valid & ACPI_VALID_CID) {
+ 				version = XGENE_AHCI_V2;
++			}
+ 		}
+ 	}
+ #endif

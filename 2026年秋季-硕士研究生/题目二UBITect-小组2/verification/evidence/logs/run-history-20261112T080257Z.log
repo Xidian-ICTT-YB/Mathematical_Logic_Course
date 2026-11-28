@@ -1,0 +1,33 @@
+
+=== host ===
+project=/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro
+image=ubitect-repro-delivery-20261112b:base
+history_run_id=HIST-20261112T075709Z
+log=/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro/logs/run-history-20261112T080257Z.log
+Darwin kotorideMac-Mini.local 27.3.0 Darwin Kernel Version 27.3.0: Fri Oct 30 02:04:06 PDT 2026; root:xnu-13432.60.57~99/RELEASE_ARM64_T8152 arm64
+ProductName:		macOS
+ProductVersion:		27.3
+BuildVersion:		26C5035r
+
+=== toolchain ===
+toolchain present; reusing /Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro/build
+
+=== H1/H2 container run ===
+h1: candidates=2 target=2 target_confirmed=2 lines=[825]
+h2: candidates=2 target=2 target_confirmed=0 lines=[]
+run_dir=/work/history/ahci_xgene/runs/HIST-20261112T075709Z
+HISTORICAL TARGET CHECK: PASS
+container_exit=0
+
+=== host record ===
+host environment: /Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro/history/ahci_xgene/runs/HIST-20261112T075709Z/host-environment.json
+
+=== result ===
+h1: candidates=2 target_objects=2 confirmed_objects=2 use_points=[825]
+h2: candidates=2 target_objects=2 confirmed_objects=0 use_points=[]
+H1 target confirmed: True
+H2 target confirmed: False
+history_run=HIST-20261112T075709Z
+run_dir=/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro/history/ahci_xgene/runs/HIST-20261112T075709Z
+log=/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro/logs/run-history-20261112T080257Z.log
+H1/H2 REPRODUCTION: PASS (run_id=HIST-20261112T075709Z)

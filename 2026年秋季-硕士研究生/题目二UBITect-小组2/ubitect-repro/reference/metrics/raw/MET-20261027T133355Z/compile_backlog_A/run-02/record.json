@@ -1,0 +1,22 @@
+{
+  "stage": "compile_backlog_A",
+  "repeat": 2,
+  "argv": [
+    "/opt/llvm7/bin/clang",
+    "-emit-llvm",
+    "-O0",
+    "-g",
+    "-fno-short-wchar",
+    "-c",
+    "backlog.c",
+    "-o",
+    "backlog.llbc"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T133355Z/compile_backlog_A/run-02",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.2251,
+  "max_rss_kb": 53888,
+  "time_log": "/work/metrics/raw/MET-20261027T133355Z/compile_backlog_A/run-02/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T133355Z/compile_backlog_A/run-02/command.log"
+}

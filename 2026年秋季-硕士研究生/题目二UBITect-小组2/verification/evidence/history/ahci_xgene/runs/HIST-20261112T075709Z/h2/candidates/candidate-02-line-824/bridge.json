@@ -1,0 +1,9 @@
+{
+  "calibration_confirm": false,
+  "calibration_exit_code": 0,
+  "calibration_timed_out": false,
+  "function": "xgene_ahci_probe -> history_entry_failure",
+  "klee_instruction": null,
+  "raw_warning_instruction": "  %140 = and i32 %139, 1, !dbg !299",
+  "ssa_changed": false
+}

@@ -1,0 +1,1 @@
+$ /opt/llvm7/bin/clang -emit-llvm -O0 -g -fno-short-wchar -DCONFIG_ACPI -DHISTORY_ACPI_FAILURE_ONLY -c ahci_xgene_h1.c -o ahci_xgene_h1.llbc

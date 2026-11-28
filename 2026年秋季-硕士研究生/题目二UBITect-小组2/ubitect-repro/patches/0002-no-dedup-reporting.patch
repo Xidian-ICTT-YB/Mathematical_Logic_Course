@@ -1,0 +1,27 @@
+diff --git a/src/lib/ConstraintCollect.cpp b/src/lib/ConstraintCollect.cpp
+index 9fd9a988..c667963c 100644
+--- a/src/lib/ConstraintCollect.cpp
++++ b/src/lib/ConstraintCollect.cpp
+@@ -195,6 +195,14 @@ NodeIndex FuncAnalysis::processStruct(const Value* v, const StructType* stType,
+ }
+ bool FuncAnalysis::warningReported(llvm::Instruction *I, NodeIndex idx)
+ {
++#ifdef UBITECT_NO_DEDUP
++    // Teaching-only reporting granularity switch.  The qualifier analysis and
++    // its warning conditions are unchanged; every detected use is emitted
++    // instead of merging later uses of the same abstract location.
++    (void)I;
++    (void)idx;
++    return false;
++#else
+ #ifdef GROUP_BY_NAME
+     if (idx > nodeFactory.getConstantIntNode()) {
+         std::string varName = nodeFactory.getNodeName(idx);
+@@ -244,6 +252,7 @@ bool FuncAnalysis::warningReported(llvm::Instruction *I, NodeIndex idx)
+     }
+     return false;
+ #endif
++#endif
+ }
+ void FuncAnalysis::calStackVar() {
+     int numDecl = 0;

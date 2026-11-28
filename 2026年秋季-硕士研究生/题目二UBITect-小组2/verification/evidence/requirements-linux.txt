@@ -1,0 +1,5 @@
+# Linux/amd64 container-only build dependencies.  Installed with uv into
+# /work/.venv-linux; never shared with the macOS host virtualenv.
+cmake==3.31.10
+z3-solver==4.8.8.0
+setuptools==75.8.0

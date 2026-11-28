@@ -1,0 +1,108 @@
+=== PAGE 9 ===
+UBITect: A Precise and Scalable Method to Detect Use-Before-Initialization Bugs in Linux Kernel ESEC/FSE ’20, November 8–13, 2020, Virtual Event, USA
+Table 2: Evaluation I: UBI bugs patched since 2013. All of
+the uninitialized variables are located on stack. UbiTect can
+successfully detect all of them.
+Commit or CVE No Type UbiTect
+bde6f9d intra-procedural Yes
+1a92b2b intra-procedural Yes
+8134233 inter-procedural Yes
+c94a3d4 inter-procedural Yes
+da5efff inter-procedural Yes
+CVE 2010-2963 inter-procedural Yes
+7814657 inter-procedural Yes
+6fd4b15 inter-procedural Yes
+and check for a bitcast operation. If we cannot find one, we treat
+the object as having a single field (i.e., void type).
+•Security related functions: As mentioned in section 2, we can use
+qualifiers to explicitly express security policies we want to en-
+force. For example, copy_to_user() copies the kernel data to the
+user space. To avoid information leakage because of uninitialized
+data, we manually create a summary for this function, requiring
+the source object to be fully initialized.
+6 EVALUATION
+Our experiments are systematically performed with the objective
+of answering the following research questions:
+•RQ1: Can UbiTect detect previously known bugs?
+•RQ2: Can UbiTect detect new bugs?
+•RQ3: Compared with UbiTect, how do other open sourced static
+analyzers perform for finding UBI bugs in the Linux kernel?
+Experimental Setup. To answer these three questions, we first
+gathered eight previously patched Linux kernel UBI bugs studied
+in [15] and validate our tool. Then, we apply UbiTect to the x86_64
+Linux kernel, version 4.14, with allyesconfig. It was tested on
+machines with Intel(R) Xeon(R) E5-2695v4 processors and 256GB
+RAM. The operating system is the 64 bit Ubuntu 16.04 LTS.
+Data Availability. Linux kernel is an open sourced project. We
+will also open source UbiTect for aiding the reproducibility of the
+experimental results.
+6.1 Detecting Known UBI Bugs
+To answer RQ1, we evaluate UbiTect in terms of finding eight previ-
+ously patched Linux kernel UBI bugs studied in [15]. Table 2 shows
+the results i.e., UbiTect can detect all of them. Two of these bugs
+can be detected by intra-procedural analysis but the rest require
+inter-procedural analysis.
+6.2 Detecting New UBI Bugs
+It took UbiTect about a week to fully analyze the entire Linux
+kernel with 616,893 functions. Specifically, it took 7 and 205 days
+of CPU time for qualifier inference and symbolic execution (SE),
+respectively. After qualifier inference, for each function, generated
+warnings were immediately fed into SE, which ran on more than
+30 CPU cores, on average (and was complete in a week of real
+time). The qualifier inference component generated 147,643 poten-
+tial uninitialized use of stack variables. Each warning represents
+a unique use of an uninitialized variable, meaning that repeated
+accesses to the same uninitialized variable in different statements
+and accesses to different fields of the same object are considered as
+different warnings. Since our modeling of heap variables is very
+conservative and the number of warnings for stack variables is
+already large enough, we exclude the warnings relating to writing
+uninitialized values to heap variables.
+UbiTect’s under-constrained symbolic execution (SE) compo-
+nents filtered 4,150 warnings as false positives because it was unable
+to find a feasible path based on the guidance. 1,190 cases could not
+be handled by our SE component due to a mixture of 32-bit and
+64-bit pointers. We then manually inspected 190 bugs where our SE
+component can find a feasible path within 2 minutes. 6 of the 190
+bugs are due to the use of uninitialized function pointers, 125 are
+due to use of uninitialized data pointers, and 59 are related to use
+of uninitialized data (that affect control flow). Our manual analysis
+confirmed 78 of them as true positives, yielding a false positive rate
+of 59%. We interpret a reported bug as a false positive if the path
+returned by SE is infeasible, or the variable is actually initialized
+along the path.
+To confirm our manual inspection results with kernel main-
+tainers, we tried to create patches for the 78 true positive cases.
+During this process, we found that the buggy code of 9 cases have
+been removed in the mainline due to feature updates and 11 are
+already fixed in the mainline. We also found that many bugs were
+related to missing checks over the return value [13] of the function
+regmap_read(). Further (manual) checks over the remaining callers
+led to an additional 60 bugs. We submitted patches for all the un-
+fixed 118 cases to Linux developers. 52 bugs have been confirmed,
+35 cases were categorized as “will not happen in reality,” and the
+remaining 31 are still in process (we are awaiting feedback). The
+detailed list of the confirmed bugs is shown in Table 3. We point
+out here that among the 52 bugs, 37 of them were reported auto-
+matically while 15 are identified from the additional manual check.
+In fact, if we extend the time and memory limitations for symbolic
+execution, we expect that these cases can be reported automatically
+as well.
+For 112 warnings we deemed as false positives, we also analyzed
+the root causes.The major ones include (1) Incomplete black and
+whitelist (39 cases): when the path crosses multiple functions. (2)
+Imprecise indirect call resolution (26 cases): the indirect call target is
+infeasible. (3) LLVM optimization (16 cases): wherein LLVM converts
+a struct with two u32 types, directly to a u64 type; this optimization
+makes certain function summaries inaccurate. (4) The limitations
+of under-constrained symbolic execution: we treat input arguments
+as unconstrained symbolic values; however, in reality, such uncon-
+strained inputs are impossible according to the program logic (e.g.,
+constraints incurred outside the scope of the symbolic execution).
+and (5) Assembly code (10 cases).
+6.3 Sensitivity and Precision
+We showcase how different sensitivity levels affect UbiTect’s qual-
+ifier inference. First, we use a simple syntax analysis as the baseline,
+where we check for stack variables that are not initialized immedi-
+ately after their declaration. This baseline flagged 1,373,174 abstract
+locations (expanded to be field-sensitive) out of 2,179,399 as not

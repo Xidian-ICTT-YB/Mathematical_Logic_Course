@@ -1,0 +1,11 @@
+--- raw-warning.json
++++ klee-warning.json
+@@ -39,7 +39,7 @@
+     "ahci_xgene_h2.llbc-xgene_ahci_probe-46"
+   ],
+   "fieldNo": -1,
+-  "function": "xgene_ahci_probe",
++  "function": "history_entry_failure",
+   "lineNo": 824,
+   "rank": "NORMAL_PTR",
+   "type": "stack",

@@ -1,0 +1,852 @@
+{
+  "run_id": "MET-20261027T133235Z",
+  "started_utc": "2026-10-27T13:32:42.513910+00:00",
+  "finished_utc": "2026-10-27T13:32:51.239063+00:00",
+  "container_arch": "x86_64",
+  "records": [
+    {
+      "stage": "compile_backlog_A",
+      "repeat": 1,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-c",
+        "backlog.c",
+        "-o",
+        "backlog.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2308,
+      "max_rss_kb": 53900,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-01/command.log"
+    },
+    {
+      "stage": "compile_backlog_A",
+      "repeat": 2,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-c",
+        "backlog.c",
+        "-o",
+        "backlog.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2246,
+      "max_rss_kb": 53976,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-02/command.log"
+    },
+    {
+      "stage": "compile_backlog_A",
+      "repeat": 3,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-c",
+        "backlog.c",
+        "-o",
+        "backlog.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2338,
+      "max_rss_kb": 53856,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_backlog_A/run-03/command.log"
+    },
+    {
+      "stage": "bbtag_backlog_A",
+      "repeat": 1,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-01"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1726,
+      "max_rss_kb": 38124,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-01/command.log"
+    },
+    {
+      "stage": "bbtag_backlog_A",
+      "repeat": 2,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-02"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1733,
+      "max_rss_kb": 38188,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-02/command.log"
+    },
+    {
+      "stage": "bbtag_backlog_A",
+      "repeat": 3,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-03"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1721,
+      "max_rss_kb": 38396,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_backlog_A/run-03/command.log"
+    },
+    {
+      "stage": "analyze_backlog_A",
+      "repeat": 1,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.0667,
+      "max_rss_kb": 14432,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-01/command.log"
+    },
+    {
+      "stage": "analyze_backlog_A",
+      "repeat": 2,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.0665,
+      "max_rss_kb": 14348,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-02/command.log"
+    },
+    {
+      "stage": "analyze_backlog_A",
+      "repeat": 3,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.0748,
+      "max_rss_kb": 14284,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-03/command.log"
+    },
+    {
+      "stage": "klee_backlog_A",
+      "repeat": 1,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2274,
+      "max_rss_kb": 48880,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-01/command.log"
+    },
+    {
+      "stage": "klee_backlog_A",
+      "repeat": 2,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.178,
+      "max_rss_kb": 48852,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-02/command.log"
+    },
+    {
+      "stage": "klee_backlog_A",
+      "repeat": 3,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 4, \"argNo\": -1, \"bc\": \"/work/artifacts/A_original_default_dedup/backlog.bc\", \"blacklist\": [\"backlog.llbc-test-1\", \"backlog.llbc-test-3\", \"backlog.llbc-test-4\"], \"fieldNo\": -1, \"function\": \"test\", \"lineNo\": 25, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"backlog.llbc-test-2\", \"warning\": \"  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46\", \"whitelist\": [\"backlog.llbc-test-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1709,
+      "max_rss_kb": 48728,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_backlog_A/run-03/command.log"
+    },
+    {
+      "stage": "replay_backlog_A",
+      "repeat": 1,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/replay_z3.py",
+        "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-01/query.smt2"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2752,
+      "max_rss_kb": 59856,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-01/command.log"
+    },
+    {
+      "stage": "replay_backlog_A",
+      "repeat": 2,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/replay_z3.py",
+        "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-02/query.smt2"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2804,
+      "max_rss_kb": 59688,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-02/command.log"
+    },
+    {
+      "stage": "replay_backlog_A",
+      "repeat": 3,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/replay_z3.py",
+        "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-03/query.smt2"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2789,
+      "max_rss_kb": 59940,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/replay_backlog_A/run-03/command.log"
+    },
+    {
+      "stage": "compile_history_h1",
+      "repeat": 1,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-DCONFIG_ACPI",
+        "-DHISTORY_ACPI_FAILURE_ONLY",
+        "-c",
+        "ahci_xgene_h1.c",
+        "-o",
+        "ahci_xgene_h1.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2322,
+      "max_rss_kb": 55204,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-01/command.log"
+    },
+    {
+      "stage": "compile_history_h1",
+      "repeat": 2,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-DCONFIG_ACPI",
+        "-DHISTORY_ACPI_FAILURE_ONLY",
+        "-c",
+        "ahci_xgene_h1.c",
+        "-o",
+        "ahci_xgene_h1.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2335,
+      "max_rss_kb": 55204,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-02/command.log"
+    },
+    {
+      "stage": "compile_history_h1",
+      "repeat": 3,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-DCONFIG_ACPI",
+        "-DHISTORY_ACPI_FAILURE_ONLY",
+        "-c",
+        "ahci_xgene_h1.c",
+        "-o",
+        "ahci_xgene_h1.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.234,
+      "max_rss_kb": 55192,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h1/run-03/command.log"
+    },
+    {
+      "stage": "bbtag_history_h1",
+      "repeat": 1,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-01"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2284,
+      "max_rss_kb": 38680,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-01/command.log"
+    },
+    {
+      "stage": "bbtag_history_h1",
+      "repeat": 2,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-02"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1769,
+      "max_rss_kb": 38680,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-02/command.log"
+    },
+    {
+      "stage": "bbtag_history_h1",
+      "repeat": 3,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-03"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1763,
+      "max_rss_kb": 38492,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h1/run-03/command.log"
+    },
+    {
+      "stage": "analyze_history_h1",
+      "repeat": 1,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1322,
+      "max_rss_kb": 38160,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-01/command.log"
+    },
+    {
+      "stage": "analyze_history_h1",
+      "repeat": 2,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.119,
+      "max_rss_kb": 37792,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-02/command.log"
+    },
+    {
+      "stage": "analyze_history_h1",
+      "repeat": 3,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1163,
+      "max_rss_kb": 38112,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h1/run-03/command.log"
+    },
+    {
+      "stage": "klee_history_h1",
+      "repeat": 1,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 2, \"argNo\": -1, \"bc\": \"/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h1/ahci_xgene_h1.bc\", \"blacklist\": [\"ahci_xgene_h1.llbc-xgene_ahci_probe-1\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-3\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-5\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-7\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-9\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-12\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-15\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-16\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-17\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-19\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-24\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-25\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-26\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-27\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-28\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-29\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-30\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-31\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-32\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-33\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-34\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-35\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-36\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-37\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-38\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-39\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-40\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-41\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-42\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-43\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-44\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-45\"], \"fieldNo\": -1, \"function\": \"history_entry_failure\", \"lineNo\": 825, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"ahci_xgene_h1.llbc-xgene_ahci_probe-23\", \"warning\": \"  %138 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !263\", \"whitelist\": [\"ahci_xgene_h1.llbc-xgene_ahci_probe-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2207,
+      "max_rss_kb": 49896,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-01/command.log"
+    },
+    {
+      "stage": "klee_history_h1",
+      "repeat": 2,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 2, \"argNo\": -1, \"bc\": \"/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h1/ahci_xgene_h1.bc\", \"blacklist\": [\"ahci_xgene_h1.llbc-xgene_ahci_probe-1\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-3\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-5\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-7\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-9\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-12\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-15\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-16\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-17\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-19\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-24\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-25\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-26\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-27\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-28\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-29\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-30\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-31\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-32\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-33\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-34\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-35\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-36\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-37\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-38\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-39\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-40\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-41\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-42\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-43\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-44\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-45\"], \"fieldNo\": -1, \"function\": \"history_entry_failure\", \"lineNo\": 825, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"ahci_xgene_h1.llbc-xgene_ahci_probe-23\", \"warning\": \"  %138 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !263\", \"whitelist\": [\"ahci_xgene_h1.llbc-xgene_ahci_probe-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2204,
+      "max_rss_kb": 49852,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-02/command.log"
+    },
+    {
+      "stage": "klee_history_h1",
+      "repeat": 3,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 2, \"argNo\": -1, \"bc\": \"/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h1/ahci_xgene_h1.bc\", \"blacklist\": [\"ahci_xgene_h1.llbc-xgene_ahci_probe-1\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-3\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-5\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-7\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-9\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-12\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-15\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-16\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-17\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-19\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-24\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-25\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-26\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-27\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-28\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-29\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-30\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-31\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-32\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-33\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-34\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-35\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-36\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-37\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-38\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-39\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-40\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-41\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-42\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-43\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-44\", \"ahci_xgene_h1.llbc-xgene_ahci_probe-45\"], \"fieldNo\": -1, \"function\": \"history_entry_failure\", \"lineNo\": 825, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"ahci_xgene_h1.llbc-xgene_ahci_probe-23\", \"warning\": \"  %138 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !263\", \"whitelist\": [\"ahci_xgene_h1.llbc-xgene_ahci_probe-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2229,
+      "max_rss_kb": 49968,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h1/run-03/command.log"
+    },
+    {
+      "stage": "replay_history_h1",
+      "repeat": 1,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/replay_z3.py",
+        "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-01/query.smt2"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2763,
+      "max_rss_kb": 60500,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-01/command.log"
+    },
+    {
+      "stage": "replay_history_h1",
+      "repeat": 2,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/replay_z3.py",
+        "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-02/query.smt2"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2753,
+      "max_rss_kb": 60480,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-02/command.log"
+    },
+    {
+      "stage": "replay_history_h1",
+      "repeat": 3,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/replay_z3.py",
+        "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-03/query.smt2"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2758,
+      "max_rss_kb": 60484,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/replay_history_h1/run-03/command.log"
+    },
+    {
+      "stage": "compile_history_h2",
+      "repeat": 1,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-DCONFIG_ACPI",
+        "-DHISTORY_ACPI_FAILURE_ONLY",
+        "-c",
+        "ahci_xgene_h2.c",
+        "-o",
+        "ahci_xgene_h2.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2284,
+      "max_rss_kb": 55008,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-01/command.log"
+    },
+    {
+      "stage": "compile_history_h2",
+      "repeat": 2,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-DCONFIG_ACPI",
+        "-DHISTORY_ACPI_FAILURE_ONLY",
+        "-c",
+        "ahci_xgene_h2.c",
+        "-o",
+        "ahci_xgene_h2.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2279,
+      "max_rss_kb": 55200,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-02/command.log"
+    },
+    {
+      "stage": "compile_history_h2",
+      "repeat": 3,
+      "argv": [
+        "/opt/llvm7/bin/clang",
+        "-emit-llvm",
+        "-O0",
+        "-g",
+        "-fno-short-wchar",
+        "-DCONFIG_ACPI",
+        "-DHISTORY_ACPI_FAILURE_ONLY",
+        "-c",
+        "ahci_xgene_h2.c",
+        "-o",
+        "ahci_xgene_h2.llbc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2273,
+      "max_rss_kb": 55060,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/compile_history_h2/run-03/command.log"
+    },
+    {
+      "stage": "bbtag_history_h2",
+      "repeat": 1,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-01"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1796,
+      "max_rss_kb": 38504,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-01/command.log"
+    },
+    {
+      "stage": "bbtag_history_h2",
+      "repeat": 2,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-02"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1745,
+      "max_rss_kb": 38472,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-02/command.log"
+    },
+    {
+      "stage": "bbtag_history_h2",
+      "repeat": 3,
+      "argv": [
+        "/work/.venv-linux/bin/python",
+        "-I",
+        "/work/scripts/getbclist_py3.py",
+        "--llvm-dir",
+        "/opt/llvm7",
+        "--plugin",
+        "/work/build/bbtag/bbTaglib.so",
+        "--workdir",
+        "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-03"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2305,
+      "max_rss_kb": 38508,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/bbtag_history_h2/run-03/command.log"
+    },
+    {
+      "stage": "analyze_history_h2",
+      "repeat": 1,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.117,
+      "max_rss_kb": 38280,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-01/command.log"
+    },
+    {
+      "stage": "analyze_history_h2",
+      "repeat": 2,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1244,
+      "max_rss_kb": 38120,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-02/command.log"
+    },
+    {
+      "stage": "analyze_history_h2",
+      "repeat": 3,
+      "argv": [
+        "/work/build/ubitect-original/ubitect",
+        "-ubi-analysis",
+        "@bitcode.list"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.1188,
+      "max_rss_kb": 38416,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/analyze_history_h2/run-03/command.log"
+    },
+    {
+      "stage": "klee_history_h2",
+      "repeat": 1,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 2, \"argNo\": -1, \"bc\": \"/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h2/ahci_xgene_h2.bc\", \"blacklist\": [\"ahci_xgene_h2.llbc-xgene_ahci_probe-1\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-3\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-5\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-7\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-9\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-12\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-15\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-16\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-17\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-19\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-22\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-24\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-25\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-26\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-27\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-28\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-29\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-30\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-31\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-32\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-33\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-34\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-35\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-36\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-37\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-38\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-39\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-40\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-41\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-42\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-43\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-44\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-45\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-46\"], \"fieldNo\": -1, \"function\": \"history_entry_failure\", \"lineNo\": 824, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"ahci_xgene_h2.llbc-xgene_ahci_probe-23\", \"warning\": \"  %137 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !296\", \"whitelist\": [\"ahci_xgene_h2.llbc-xgene_ahci_probe-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-01",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.227,
+      "max_rss_kb": 49640,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-01/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-01/command.log"
+    },
+    {
+      "stage": "klee_history_h2",
+      "repeat": 2,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 2, \"argNo\": -1, \"bc\": \"/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h2/ahci_xgene_h2.bc\", \"blacklist\": [\"ahci_xgene_h2.llbc-xgene_ahci_probe-1\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-3\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-5\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-7\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-9\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-12\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-15\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-16\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-17\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-19\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-22\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-24\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-25\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-26\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-27\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-28\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-29\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-30\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-31\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-32\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-33\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-34\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-35\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-36\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-37\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-38\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-39\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-40\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-41\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-42\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-43\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-44\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-45\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-46\"], \"fieldNo\": -1, \"function\": \"history_entry_failure\", \"lineNo\": 824, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"ahci_xgene_h2.llbc-xgene_ahci_probe-23\", \"warning\": \"  %137 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !296\", \"whitelist\": [\"ahci_xgene_h2.llbc-xgene_ahci_probe-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-02",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.228,
+      "max_rss_kb": 49636,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-02/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-02/command.log"
+    },
+    {
+      "stage": "klee_history_h2",
+      "repeat": 3,
+      "argv": [
+        "/work/build/klee-original/bin/klee.noexport",
+        "-json={\"aliasNum\": 2, \"argNo\": -1, \"bc\": \"/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h2/ahci_xgene_h2.bc\", \"blacklist\": [\"ahci_xgene_h2.llbc-xgene_ahci_probe-1\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-3\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-5\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-7\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-9\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-12\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-15\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-16\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-17\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-19\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-22\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-24\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-25\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-26\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-27\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-28\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-29\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-30\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-31\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-32\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-33\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-34\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-35\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-36\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-37\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-38\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-39\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-40\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-41\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-42\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-43\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-44\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-45\", \"ahci_xgene_h2.llbc-xgene_ahci_probe-46\"], \"fieldNo\": -1, \"function\": \"history_entry_failure\", \"lineNo\": 824, \"rank\": \"NORMAL_PTR\", \"type\": \"stack\", \"use\": \"ahci_xgene_h2.llbc-xgene_ahci_probe-23\", \"warning\": \"  %137 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !296\", \"whitelist\": [\"ahci_xgene_h2.llbc-xgene_ahci_probe-0\"]}",
+        "./built-in.bc"
+      ],
+      "cwd": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-03",
+      "exit_code": 0,
+      "timed_out": false,
+      "wall_s": 0.2237,
+      "max_rss_kb": 49756,
+      "time_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-03/time.txt",
+      "command_log": "/work/metrics/raw/MET-20261027T133235Z/klee_history_h2/run-03/command.log"
+    }
+  ],
+  "cgroup_start": {
+    "current": 35184640,
+    "peak": 52785152,
+    "max": null
+  },
+  "cgroup_end": {
+    "current": 70238208,
+    "peak": 110243840,
+    "max": null
+  },
+  "prep": {
+    "started_utc": "2026-10-27T13:32:42.513910+00:00",
+    "history_run": "/work/history/ahci_xgene/runs/HIST-20261027T133235Z",
+    "inputs": {
+      "backlog": {
+        "source": "/work/metrics/raw/MET-20261027T133235Z/work/backlog/backlog.c",
+        "llbc": "/work/metrics/raw/MET-20261027T133235Z/work/backlog/backlog.llbc",
+        "bc": "/work/metrics/raw/MET-20261027T133235Z/work/backlog/backlog.bc",
+        "builtin": "/work/metrics/raw/MET-20261027T133235Z/work/backlog/built-in.bc",
+        "warning": "/work/artifacts/A_original_default_dedup/candidates/candidate-01-line-25/warning.json",
+        "query": "/work/artifacts/analysis/real-exports/A_candidate-01-line-25.smt2"
+      },
+      "h1": {
+        "source": "/work/metrics/raw/MET-20261027T133235Z/work/h1/ahci_xgene_h1.c",
+        "llbc": "/work/metrics/raw/MET-20261027T133235Z/work/h1/ahci_xgene_h1.llbc",
+        "bc": "/work/metrics/raw/MET-20261027T133235Z/work/h1/ahci_xgene_h1.bc",
+        "builtin": "/work/metrics/raw/MET-20261027T133235Z/work/h1/built-in.bc",
+        "warning": "/work/metrics/raw/MET-20261027T133235Z/work/h1/klee-warning.json",
+        "query": "/work/history/ahci_xgene/runs/HIST-20261027T133235Z/h1/candidates/candidate-01-line-825/klee-smt-export/query.smt2"
+      },
+      "h2": {
+        "source": "/work/metrics/raw/MET-20261027T133235Z/work/h2/ahci_xgene_h2.c",
+        "llbc": "/work/metrics/raw/MET-20261027T133235Z/work/h2/ahci_xgene_h2.llbc",
+        "bc": "/work/metrics/raw/MET-20261027T133235Z/work/h2/ahci_xgene_h2.bc",
+        "builtin": "/work/metrics/raw/MET-20261027T133235Z/work/h2/built-in.bc",
+        "warning": "/work/metrics/raw/MET-20261027T133235Z/work/h2/klee-warning.json",
+        "query": null
+      }
+    },
+    "cgroup_start": {
+      "current": 35184640,
+      "peak": 52785152,
+      "max": null
+    },
+    "cold_build": "unavailable; existing image/toolchain reused (not re-installed)"
+  }
+}

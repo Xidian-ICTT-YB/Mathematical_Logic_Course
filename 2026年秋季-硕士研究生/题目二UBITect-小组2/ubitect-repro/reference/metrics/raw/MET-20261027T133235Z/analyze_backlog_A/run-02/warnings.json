@@ -1,0 +1,2 @@
+/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-02/backlog.bc:
+{"aliasNum": 4, "argNo": -1, "bc": "/work/metrics/raw/MET-20261027T133235Z/analyze_backlog_A/run-02/backlog.bc", "blacklist": ["backlog.llbc-test-1", "backlog.llbc-test-3", "backlog.llbc-test-4"], "fieldNo": -1, "function": "test", "lineNo": 25, "rank": "NORMAL_PTR", "type": "stack", "use": "backlog.llbc-test-2", "warning": "  %8 = load %struct.test_struct*, %struct.test_struct** %2, align 8, !dbg !46", "whitelist": ["backlog.llbc-test-0"]}

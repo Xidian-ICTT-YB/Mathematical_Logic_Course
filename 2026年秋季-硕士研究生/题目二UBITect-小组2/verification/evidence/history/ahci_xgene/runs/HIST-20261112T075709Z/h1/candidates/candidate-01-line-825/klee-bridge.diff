@@ -1,0 +1,17 @@
+--- raw-warning.json
++++ klee-warning.json
+@@ -37,12 +37,12 @@
+     "ahci_xgene_h1.llbc-xgene_ahci_probe-45"
+   ],
+   "fieldNo": -1,
+-  "function": "xgene_ahci_probe",
++  "function": "history_entry_failure",
+   "lineNo": 825,
+   "rank": "NORMAL_PTR",
+   "type": "stack",
+   "use": "ahci_xgene_h1.llbc-xgene_ahci_probe-23",
+-  "warning": "  %137 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !296",
++  "warning": "  %138 = load %struct.acpi_device_info*, %struct.acpi_device_info** %13, align 8, !dbg !263",
+   "whitelist": [
+     "ahci_xgene_h1.llbc-xgene_ahci_probe-0"
+   ]

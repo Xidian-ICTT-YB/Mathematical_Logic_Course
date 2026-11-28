@@ -1,0 +1,8 @@
+$ /work/.venv-linux/bin/python -I /work/scripts/replay_z3.py /work/metrics/raw/MET-20261027T1330Z/replay_backlog_A/run-02/query.smt2
+query: /work/metrics/raw/MET-20261027T1330Z/replay_backlog_A/run-02/query.smt2
+z3_version: 4.8.8
+result: sat
+model:
+[backlog.llbc-test-2 = 1,
+ input_0 = 0,
+ backlog.llbc-test-0 = 1]

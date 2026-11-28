@@ -1,0 +1,81 @@
+{
+  "sha": "8134233e8d346aaa1c929dc510e75482ae318bce",
+  "node_id": "MDY6Q29tbWl0MjMyNTI5ODo4MTM0MjMzZThkMzQ2YWFhMWM5MjlkYzUxMGU3NTQ4MmFlMzE4YmNl",
+  "commit": {
+    "author": {
+      "name": "Dan Carpenter",
+      "email": "dan.carpenter@oracle.com",
+      "date": "2016-03-10T07:45:32Z"
+    },
+    "committer": {
+      "name": "Tejun Heo",
+      "email": "tj@kernel.org",
+      "date": "2016-03-11T17:40:34Z"
+    },
+    "message": "ata: ahci_xgene: dereferencing uninitialized pointer in probe\n\nIf the call to acpi_get_object_info() fails then \"info\" hasn't been\ninitialized.  In that situation, we already know that \"version\" should\nbe XGENE_AHCI_V1 so we don't actually need to dereference \"info\".\n\nFixes: c9802a4be661 ('ata: ahci_xgene: Add AHCI Support for 2nd HW version of APM X-Gene SoC AHCI SATA Host controller.')\nSigned-off-by: Dan Carpenter <dan.carpenter@oracle.com>\nSigned-off-by: Tejun Heo <tj@kernel.org>",
+    "tree": {
+      "sha": "305ea06f72fcf8516634350c2fc76d1969eaf86d",
+      "url": "https://api.github.com/repos/torvalds/linux/git/trees/305ea06f72fcf8516634350c2fc76d1969eaf86d"
+    },
+    "url": "https://api.github.com/repos/torvalds/linux/git/commits/8134233e8d346aaa1c929dc510e75482ae318bce",
+    "comment_count": 0,
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "url": "https://api.github.com/repos/torvalds/linux/commits/8134233e8d346aaa1c929dc510e75482ae318bce",
+  "html_url": "https://github.com/torvalds/linux/commit/8134233e8d346aaa1c929dc510e75482ae318bce",
+  "comments_url": "https://api.github.com/repos/torvalds/linux/commits/8134233e8d346aaa1c929dc510e75482ae318bce/comments",
+  "author": null,
+  "committer": {
+    "login": "htejun",
+    "id": 1051723,
+    "node_id": "MDQ6VXNlcjEwNTE3MjM=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1051723?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/htejun",
+    "html_url": "https://github.com/htejun",
+    "followers_url": "https://api.github.com/users/htejun/followers",
+    "following_url": "https://api.github.com/users/htejun/following{/other_user}",
+    "gists_url": "https://api.github.com/users/htejun/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/htejun/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/htejun/subscriptions",
+    "organizations_url": "https://api.github.com/users/htejun/orgs",
+    "repos_url": "https://api.github.com/users/htejun/repos",
+    "events_url": "https://api.github.com/users/htejun/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/htejun/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "8ba559fd09bcf4e87faad3efa465dacf04c076c9",
+      "url": "https://api.github.com/repos/torvalds/linux/commits/8ba559fd09bcf4e87faad3efa465dacf04c076c9",
+      "html_url": "https://github.com/torvalds/linux/commit/8ba559fd09bcf4e87faad3efa465dacf04c076c9"
+    }
+  ],
+  "stats": {
+    "total": 4,
+    "additions": 2,
+    "deletions": 2
+  },
+  "files": [
+    {
+      "sha": "73b19b2771385517b094d5fd548f3abf91751b2f",
+      "filename": "drivers/ata/ahci_xgene.c",
+      "status": "modified",
+      "additions": 2,
+      "deletions": 2,
+      "changes": 4,
+      "blob_url": "https://github.com/torvalds/linux/blob/8134233e8d346aaa1c929dc510e75482ae318bce/drivers%2Fata%2Fahci_xgene.c",
+      "raw_url": "https://github.com/torvalds/linux/raw/8134233e8d346aaa1c929dc510e75482ae318bce/drivers%2Fata%2Fahci_xgene.c",
+      "contents_url": "https://api.github.com/repos/torvalds/linux/contents/drivers%2Fata%2Fahci_xgene.c?ref=8134233e8d346aaa1c929dc510e75482ae318bce",
+      "patch": "@@ -821,9 +821,9 @@ static int xgene_ahci_probe(struct platform_device *pdev)\n \t\t\t\tdev_warn(&pdev->dev, \"%s: Error reading device info. Assume version1\\n\",\n \t\t\t\t\t__func__);\n \t\t\t\tversion = XGENE_AHCI_V1;\n-\t\t\t}\n-\t\t\tif (info->valid & ACPI_VALID_CID)\n+\t\t\t} else if (info->valid & ACPI_VALID_CID) {\n \t\t\t\tversion = XGENE_AHCI_V2;\n+\t\t\t}\n \t\t}\n \t}\n #endif"
+    }
+  ]
+}

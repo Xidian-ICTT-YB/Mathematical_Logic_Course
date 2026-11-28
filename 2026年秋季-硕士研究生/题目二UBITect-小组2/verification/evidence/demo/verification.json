@@ -1,0 +1,344 @@
+{
+  "tested_at_utc": "2026-11-12T08:03:12.408332+00:00",
+  "run_stamp": "20261112T080312Z",
+  "log_dir": "logs/demo-verification-20261112T080312Z",
+  "archived_previous_record": null,
+  "all_pass": true,
+  "commands_all_rc0": true,
+  "evidence_all_pass": true,
+  "commands": [
+    {
+      "command": [
+        "./DEMO.sh",
+        "start"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/01-start.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "start"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/02-start.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "status"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/03-status.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "check"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/04-check.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "source",
+        "tutorial"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/05-source-tutorial.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "compile",
+        "tutorial"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/06-compile-tutorial.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "candidates",
+        "tutorial"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/07-candidates-tutorial.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "verify",
+        "tutorial"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/08-verify-tutorial.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "constraints",
+        "tutorial"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/09-constraints-tutorial.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "compare",
+        "tutorial"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/10-compare-tutorial.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "source",
+        "history"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/11-source-history.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "compile",
+        "history"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/12-compile-history.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "candidates",
+        "history"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/13-candidates-history.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "verify",
+        "history"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/14-verify-history.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "constraints",
+        "history"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/15-constraints-history.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "compare",
+        "history"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/16-compare-history.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "resources"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/17-resources.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "summary"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/18-summary.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "stop"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/19-stop.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "status"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/20-status.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "start"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/21-start.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "status"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/22-status.log"
+    },
+    {
+      "command": [
+        "./DEMO.sh",
+        "stop"
+      ],
+      "exit_code": 0,
+      "log": "logs/demo-verification-20261112T080312Z/23-stop.log"
+    }
+  ],
+  "evidence": [
+    {
+      "check": "state",
+      "pass": true,
+      "detail": "demo/state.json=True"
+    },
+    {
+      "check": "tutorial_naming",
+      "pass": true,
+      "detail": "demo/runs/DEMO-20261112T080318Z/tutorial"
+    },
+    {
+      "check": "naming_migration_recorded",
+      "pass": true,
+      "detail": "version=1 from=tutorial_run run=DEMO-20261112T080318Z/tutorial backup=demo/state.pre-tutorial-migration-20261112T080318Z.json"
+    },
+    {
+      "check": "tutorial_compare",
+      "pass": true,
+      "detail": "A=(1, 1, [25]); B=(2, 2, [25, 26]); C=(0, 0, []); D=(1, 0, [])"
+    },
+    {
+      "check": "tutorial_A_query",
+      "pass": true,
+      "detail": "demo/runs/DEMO-20261112T080318Z/tutorial/A/candidate-01/klee-smt-export/query.smt2"
+    },
+    {
+      "check": "tutorial_A_sat",
+      "pass": true,
+      "detail": "z3=sat model=[backlog.llbc-test-2 = 1,\n input_0 = 0,\n backlog.llbc-test-0 = 1]"
+    },
+    {
+      "check": "tutorial_same_query",
+      "pass": true,
+      "detail": "replay_query=/work/demo/runs/DEMO-20261112T080318Z/tutorial/A/candidate-01/klee-smt-export/query.smt2"
+    },
+    {
+      "check": "history_compare",
+      "pass": true,
+      "detail": "h1={'bridge_found': 2, 'candidates': 2, 'confirmed_objects': 2, 'confirmed_use_points': [825], 'queries': 2, 'target_objects': 2, 'z3_results': ['sat', 'sat']}; h2={'bridge_found': 0, 'candidates': 2, 'confirmed_objects': 0, 'confirmed_use_points': [], 'queries': 0, 'target_objects': 2, 'z3_results': []}"
+    },
+    {
+      "check": "history_H2_no_query",
+      "pass": true,
+      "detail": "h2 target queries=0 (expected 0)"
+    },
+    {
+      "check": "container_record",
+      "pass": true,
+      "detail": "demo/container.json"
+    },
+    {
+      "check": "container_identity",
+      "pass": true,
+      "detail": "record_id=94bb2282931cededdd6ffd106c62a6b9ab92f3ad690217661028be709c117076 live_id=94bb2282931cededdd6ffd106c62a6b9ab92f3ad690217661028be709c117076 name=ubitect-repro-delivery-20261112b-demo"
+    },
+    {
+      "check": "container_platform",
+      "pass": true,
+      "detail": "platform=linux/amd64"
+    },
+    {
+      "check": "container_mount",
+      "pass": true,
+      "detail": "mount={'destination': '/work', 'source': '/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro'}"
+    },
+    {
+      "check": "container_id_consistent",
+      "pass": true,
+      "detail": "unique_ids=1 live_id=94bb2282931cededdd6ffd106c62a6b9ab92f3ad690217661028be709c117076"
+    },
+    {
+      "check": "artifacts_preserved_after_stop",
+      "pass": true,
+      "detail": "9/9 files present after stop"
+    },
+    {
+      "check": "state_preserved_after_stop",
+      "pass": true,
+      "detail": "tutorial_run=DEMO-20261112T080318Z/tutorial history_run=HIST-20261112T080325Z/history"
+    },
+    {
+      "check": "formal_evidence_intact",
+      "pass": true,
+      "detail": "VALIDATION.ok=True latest_formal_history=HIST-20261112T075709Z"
+    },
+    {
+      "check": "container_stopped_at_end",
+      "pass": true,
+      "detail": "running=false"
+    }
+  ],
+  "state": {
+    "history_run": "HIST-20261112T080325Z/history",
+    "history_step": "compare",
+    "naming_migration": {
+      "applied_at_utc": "2026-11-12T08:03:18.386537+00:00",
+      "backup": "demo/state.pre-tutorial-migration-20261112T080318Z.json",
+      "chosen_from": "tutorial_run",
+      "chosen_run": "DEMO-20261112T080318Z/tutorial",
+      "chosen_step": "source",
+      "example_run_exists": false,
+      "note": "tutorial_run is authoritative after this migration; example_run remains historical metadata and is not read for the current run.",
+      "old_tutorial_run_exists": true,
+      "physical_path_preserved": true,
+      "previous_example_run": null,
+      "previous_example_step": null,
+      "previous_tutorial_run": "DEMO-20261112T080318Z/tutorial",
+      "previous_tutorial_step": "source",
+      "version": 1
+    },
+    "tutorial_run": "DEMO-20261112T080318Z/tutorial",
+    "tutorial_step": "compare"
+  },
+  "container": {
+    "created_by": "docker run",
+    "id": "94bb2282931cededdd6ffd106c62a6b9ab92f3ad690217661028be709c117076",
+    "image": "ubitect-repro-delivery-20261112b:base",
+    "image_id": "sha256:7fae0074c7fc173c536af1459c16c8f1dd9518258cda9a744021d9edc6beff3b",
+    "label": {
+      "com.ubitect.repro.managed": "true",
+      "com.ubitect.repro.project": "ubitect-repro"
+    },
+    "last_action": "docker start",
+    "mount": {
+      "destination": "/work",
+      "source": "/Users/kotoriminami/kfc/ubitect-acceptance2-20261112/UBITect_REPRO_DELIVERY/ubitect-repro"
+    },
+    "name": "ubitect-repro-delivery-20261112b-demo",
+    "platform": "linux/amd64",
+    "recorded_at_utc": "2026-11-12T08:03:41.781458+00:00",
+    "workdir": "/work"
+  },
+  "run_ids": {
+    "tutorial": "DEMO-20261112T080318Z/tutorial",
+    "history": "HIST-20261112T080325Z/history"
+  }
+}

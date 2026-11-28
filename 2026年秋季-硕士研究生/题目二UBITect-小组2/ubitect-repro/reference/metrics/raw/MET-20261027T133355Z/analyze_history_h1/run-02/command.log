@@ -1,0 +1,244 @@
+$ /work/build/ubitect-original/ubitect -ubi-analysis @bitcode.list
+Total 1 file(s)
+[CallGraph] Initializing 1 modules .
+[CallGraph / 1] [/work/metrics/raw/MET-20261027T133355Z/analyze_history_h1/run-02/ahci_xgene_h1.bc]
+	 [CHANGED]
+[CallGraph] Updated in 1 modules.
+[CallGraph / 2] [/work/metrics/raw/MET-20261027T133355Z/analyze_history_h1/run-02/ahci_xgene_h1.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph / 3] [/work/metrics/raw/MET-20261027T133355Z/analyze_history_h1/run-02/ahci_xgene_h1.bc]
+
+[CallGraph] Updated in 0 modules.
+[CallGraph] Postprocessing ...
+Finalizing ...
+[CallGraph] Done!
+
+20 functions in total.
+partition size : 2, sccSize = 19, rec size = 0, biggest = 1
+FuncAnalysis for F :xgene_ahci_irq_intr module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+1 Functions Finished.
+FuncAnalysis for F :ahci_platform_get_resources module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+2 Functions Finished.
+FuncAnalysis for F :devm_kzalloc module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+3 Functions Finished.
+FuncAnalysis for F :platform_get_resource module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+4 Functions Finished.
+FuncAnalysis for F :devm_ioremap_resource module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+5 Functions Finished.
+FuncAnalysis for F :of_match_device module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+6 Functions Finished.
+FuncAnalysis for F :acpi_match_device module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+7 Functions Finished.
+FuncAnalysis for F :stub_log module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+8 Functions Finished.
+FuncAnalysis for F :acpi_get_object_info module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+9 Functions Finished.
+FuncAnalysis for F :xgene_ahci_mux_select module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+10 Functions Finished.
+FuncAnalysis for F :xgene_ahci_is_memram_inited module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+11 Functions Finished.
+FuncAnalysis for F :ahci_platform_enable_clks module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+12 Functions Finished.
+FuncAnalysis for F :ahci_platform_disable_clks module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+13 Functions Finished.
+FuncAnalysis for F :ahci_platform_enable_resources module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+14 Functions Finished.
+FuncAnalysis for F :xgene_ahci_hw_init module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+15 Functions Finished.
+FuncAnalysis for F :ahci_platform_init_host module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+16 Functions Finished.
+FuncAnalysis for F :ahci_platform_disable_resources module found.inside initSummary:
+Inside qualifier inference:
+begin to summarize funcs.
+inside summarize Funcs:
+17 Functions Finished.
+FuncAnalysis for F :xgene_ahci_probe module found.inside initSummary:
+Inside qualifier inference:
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 16 %17, i8* align 16 bitcast ([2 x %struct.ata_port_info*]* @xgene_ahci_probe.ppi to i8*), i64 16, i1 false), !dbg !140
+process memcpy funcs
+  %19 = call %struct.ahci_host_priv* @ahci_platform_get_resources(%struct.platform_device* %18), !dbg !144
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %27 = call i8* @devm_kzalloc(%struct.device* %26, i64 64, i32 0), !dbg !152
+  %42 = call %struct.resource* @platform_get_resource(%struct.platform_device* %41, i32 512, i32 1), !dbg !172
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %45 = call i8* @devm_ioremap_resource(%struct.device* %43, %struct.resource* %44), !dbg !176
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %59 = call %struct.resource* @platform_get_resource(%struct.platform_device* %58, i32 512, i32 2), !dbg !186
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %62 = call i8* @devm_ioremap_resource(%struct.device* %60, %struct.resource* %61), !dbg !190
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %76 = call %struct.resource* @platform_get_resource(%struct.platform_device* %75, i32 512, i32 3), !dbg !200
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %79 = call i8* @devm_ioremap_resource(%struct.device* %77, %struct.resource* %78), !dbg !204
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %93 = call %struct.resource* @platform_get_resource(%struct.platform_device* %92, i32 512, i32 4), !dbg !214
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %98 = call i8* @devm_ioremap_resource(%struct.device* %96, %struct.resource* %97), !dbg !224
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %109 = call %struct.of_device_id* @of_match_device(%struct.of_device_id* getelementptr inbounds ([1 x %struct.of_device_id], [1 x %struct.of_device_id]* @xgene_ahci_of_match, i32 0, i32 0), %struct.device* %108), !dbg !236
+process  funcs
+inside processFuncs:
+end of process funcs.
+  %122 = call %struct.acpi_device_id* @acpi_match_device(%struct.acpi_device_id* getelementptr inbounds ([3 x %struct.acpi_device_id], [3 x %struct.acpi_device_id]* @xgene_ahci_acpi_match, i32 0, i32 0), %struct.device* %121), !dbg !268
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void (i8*, ...) @stub_log(i8* getelementptr inbounds ([46 x i8], [46 x i8]* @.str, i32 0, i32 0)), !dbg !273
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  %134 = call i32 @acpi_get_object_info(i64 %133, %struct.acpi_device_info** %13), !dbg !287
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void (i8*, ...) @stub_log(i8* getelementptr inbounds ([48 x i8], [48 x i8]* @.str.1, i32 0, i32 0), i8* getelementptr inbounds ([17 x i8], [17 x i8]* @__func__.xgene_ahci_probe, i32 0, i32 0)), !dbg !292
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  call void (i8*, ...) @stub_log(i8* getelementptr inbounds ([28 x i8], [28 x i8]* @.str.2, i32 0, i32 0), i8* %144, i8* %147), !dbg !304
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  %149 = call i32 @xgene_ahci_mux_select(%struct.xgene_ahci_context* %148), !dbg !307
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void (i8*, ...) @stub_log(i8* getelementptr inbounds ([36 x i8], [36 x i8]* @.str.3, i32 0, i32 0), i32 %151), !dbg !310
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  %153 = call i32 @xgene_ahci_is_memram_inited(%struct.xgene_ahci_context* %152), !dbg !315
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void (i8*, ...) @stub_log(i8* getelementptr inbounds ([35 x i8], [35 x i8]* @.str.4, i32 0, i32 0)), !dbg !317
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  %156 = call i32 @ahci_platform_enable_clks(%struct.ahci_host_priv* %155), !dbg !321
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void @ahci_platform_disable_clks(%struct.ahci_host_priv* %159), !dbg !328
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  %161 = call i32 @ahci_platform_enable_resources(%struct.ahci_host_priv* %160), !dbg !330
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void @xgene_ahci_hw_init(%struct.ahci_host_priv* %164), !dbg !337
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  %181 = call i32 @ahci_platform_init_host(%struct.platform_device* %174, %struct.ahci_host_priv* %175, %struct.ata_port_info* %180, %struct.scsi_host_template* @ahci_platform_sht), !dbg !358
+process  funcs
+inside processFuncs:
+end of process funcs.
+  call void (i8*, ...) @stub_log(i8* getelementptr inbounds ([41 x i8], [41 x i8]* @.str.5, i32 0, i32 0)), !dbg !364
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+  call void @ahci_platform_disable_resources(%struct.ahci_host_priv* %184), !dbg !367
+process  funcs
+inside processFuncs:
+return void.
+end of process funcs.
+begin to summarize funcs.
+inside summarize Funcs:
+ [[Code] /work/metrics/raw/MET-20261027T133355Z/analyze_history_h1/run-02/ahci_xgene_h1.c: +825]
+ [[Code] /work/metrics/raw/MET-20261027T133355Z/analyze_history_h1/run-02/ahci_xgene_h1.c: +825]
+18 Functions Finished.
+FuncAnalysis for F :history_entry_failure module found.inside initSummary:
+Inside qualifier inference:
+  %5 = call i32 @xgene_ahci_probe(%struct.platform_device* @global_pdev), !dbg !125
+process  funcs
+inside processFuncs:
+end of process funcs.
+begin to summarize funcs.
+inside summarize Funcs:
+19 Functions Finished.
+FuncAnalysis for F :history_entry module found.inside initSummary:
+Inside qualifier inference:
+  %4 = call i32 @xgene_ahci_probe(%struct.platform_device* @global_pdev), !dbg !122
+process  funcs
+inside processFuncs:
+end of process funcs.
+begin to summarize funcs.
+inside summarize Funcs:
+20 Functions Finished.

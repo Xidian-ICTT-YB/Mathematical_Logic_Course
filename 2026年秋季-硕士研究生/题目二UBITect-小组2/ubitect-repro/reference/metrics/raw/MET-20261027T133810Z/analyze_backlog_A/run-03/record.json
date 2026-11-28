@@ -1,0 +1,16 @@
+{
+  "stage": "analyze_backlog_A",
+  "repeat": 3,
+  "argv": [
+    "/work/build/ubitect-original/ubitect",
+    "-ubi-analysis",
+    "@bitcode.list"
+  ],
+  "cwd": "/work/metrics/raw/MET-20261027T133810Z/analyze_backlog_A/run-03",
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_s": 0.0673,
+  "max_rss_kb": 14460,
+  "time_log": "/work/metrics/raw/MET-20261027T133810Z/analyze_backlog_A/run-03/time.txt",
+  "command_log": "/work/metrics/raw/MET-20261027T133810Z/analyze_backlog_A/run-03/command.log"
+}
